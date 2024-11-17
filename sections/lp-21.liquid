@@ -1,0 +1,87 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+{% assign ss = section.settings %}
+
+<div class="lp-21">
+	{% if ss.title %}
+		<h2 class="lp-21__title">{{ ss.title }}</h2>
+	{% endif %}
+	{% if ss.description %}
+		<div class="lp-21__description">
+			<p>{{ ss.description }}</p>
+		</div>
+	{% endif %}
+
+	<div class="lp-21__form">
+		{% form 'contact' %}
+			{{ form.errors | default_errors }}
+			<input type="hidden" name="contact[page_title]" value="{{ page.title }}">
+			<input type="hidden" name="contact[page_url]" value="https://{{ request.host }}{{ request.path }}">
+			<input type="hidden" name="contact[page_type]" value="{{ page.template_suffix }}">
+
+			<div class="row">
+				<div class="col-md-6 col-12">
+					<label class="input-wrapper">
+						<span class="sr-only">Name</span>
+						<input type="text" name="contact[name]" placeholder="Name" required>
+					</label>
+
+					<label class="input-wrapper">
+						<span class="sr-only">Email</span>
+						<input type="email" name="contact[email]" placeholder="Email" required>
+					</label>
+				</div>
+				<div class="col-md-6 col-12">
+					<label class="input-wrapper">
+						<span class="sr-only">Message</span>
+						<textarea name="contact[body]" placeholder="Message" required></textarea>
+					</label>
+				</div>
+			</div>
+
+			<div class="form-buttons">
+				<button type="submit" class="btn lg outline wide">Send Message</button>
+			</div>
+
+			{% if ss.form_caption %}
+				<div class="lp-21__form-caption">
+					<p>{{ ss.form_caption }}</p>
+				</div>
+			{% endif %}
+		{% endform %}
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-21",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 21"
+    }
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "description",
+			"label": "Description"
+		},
+		{
+			"type": "text",
+			"id": "form_caption",
+			"label": "Form Caption"
+		}
+	]
+}
+{% endschema %}

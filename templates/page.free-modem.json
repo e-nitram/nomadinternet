@@ -1,0 +1,176 @@
+{
+  "sections": {
+    "8d5a2613-28de-4c3a-9865-4cb63771c31c": {
+      "type": "banner-slideshow",
+      "blocks": {
+        "2c40a2b7-b702-44a8-bb8c-00f1eee12a86": {
+          "type": "slide-item",
+          "settings": {
+            "show_gradient_color": false,
+            "show_bg_color": false,
+            "bg_color": "#00271f",
+            "content_image_radius": true,
+            "image": "shopify:\/\/shop_images\/Group_469459.png",
+            "image_mobile": "shopify:\/\/shop_images\/Group_469459_1.png",
+            "content_alignment": "inner--left",
+            "sub_heading": "FREE MODEM. FREE INTERNET.",
+            "sub_heading_color": "#008061",
+            "bold_color": "#ff4040",
+            "heading": "<p>Gift Friends a Free Modem, Unlock Your Free Unlimited Internet Access.<\/p>",
+            "heading_color": "#ffffff",
+            "desc": "<p>Gift Nomad Omega modem, earn monthly free internet per signup, secure lifetime free internet with five referrals!<\/p>",
+            "button_text1": "Start Sharing Now",
+            "button_link1": "#popupForm",
+            "text_color1": "#ffffff",
+            "button_bg_color1": "#008061",
+            "button_text_color1": "#ffffff",
+            "enable_new_tab1": false,
+            "button_text2": "",
+            "button_link2": "",
+            "text_color2": "#ffffff",
+            "button_bg_color2": "#e12727",
+            "button_text_color2": "#ffffff",
+            "enable_new_tab2": true,
+            "show_contract": false,
+            "contract_header": "Have Questions?",
+            "contract_phonenumber": "+1 210 598 5949"
+          }
+        }
+      },
+      "block_order": [
+        "2c40a2b7-b702-44a8-bb8c-00f1eee12a86"
+      ],
+      "settings": {}
+    },
+    "collabs": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {}
+    },
+    "52e14d99-cfe1-44d6-9f76-43a9e3377b25": {
+      "type": "multicolumns",
+      "blocks": {
+        "f659b2de-8787-4409-be02-93c6d48b90b4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_469455.png",
+            "sub_heading": "Step 1",
+            "heading": "Gift Free Modem",
+            "content": "<p>Start by gifting your friends the Nomad Omega Wireless modem.<\/p>",
+            "button_text": "Start Sharing Now",
+            "button_link": "#popupForm"
+          }
+        },
+        "e5c85315-bc92-476a-8940-83389fea9a89": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_469455_1.png",
+            "sub_heading": "Step 2",
+            "heading": "Get Rewarded",
+            "content": "<p>Receive a free month of Internet for each friend who signs up.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "0b902dd1-d172-44ab-8678-fbbba1fb4fdf": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_469455_2.png",
+            "sub_heading": "Step 3",
+            "heading": "Lifetime Access",
+            "content": "<p>Achieve free Internet for life with five active referrals!<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "f659b2de-8787-4409-be02-93c6d48b90b4",
+        "e5c85315-bc92-476a-8940-83389fea9a89",
+        "0b902dd1-d172-44ab-8678-fbbba1fb4fdf"
+      ],
+      "settings": {
+        "heading": "Unlock Free Internet with Friend Referrals",
+        "per_count": 3
+      }
+    },
+    "b8658601-21c6-46a3-869a-272d165b7dde": {
+      "type": "image-with-text",
+      "settings": {
+        "bg_color": "#013127",
+        "image_size": "small",
+        "image_alignment": "",
+        "image": "shopify:\/\/shop_images\/new_omega_free.png",
+        "heading": "Ready to Spread the Word?",
+        "description": "<p>Share your Nomad link today and bring high-speed internet to your friends, while unlocking exclusive rewards for yourself. <\/p>",
+        "button_text": "Start Sharing Now",
+        "button_link": "#popupForm",
+        "button_text_color": "#ffffff",
+        "button_border_color": "#008061",
+        "button_bg_color": "#008061"
+      }
+    },
+    "e7094f92-2baa-495b-a580-bafa9f95c2b8": {
+      "type": "features-content",
+      "blocks": {
+        "8104541b-36e5-4e87-87e1-329848795fa3": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Featured_icon_33f01cad-6e99-4fe7-b59c-6d9994cbd229.svg",
+            "heading": "Email Sharing",
+            "content": "Easily send the Nomad Omega Modem offer to friends via email. Just enter their email addresses, customize your message, and hit send. Here's a sample message to get you started.",
+            "button_text": "Start Sharing Now",
+            "button_link": "#popupForm",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#008061",
+            "button_bg_color": "#008061"
+          }
+        },
+        "99b94737-c6d7-4c6b-81c9-7e3990cb1898": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Featured_icon_1.svg",
+            "heading": "Social Media Sharing",
+            "content": "Share your personalized Nomad link on social media. Craft a unique message or use our suggested post to spread the word on your networks",
+            "button_text": "Start Sharing Now",
+            "button_link": "#popupForm",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#008061",
+            "button_bg_color": "#008061"
+          }
+        },
+        "337e948f-6558-4485-9cae-9ef8fc41ff76": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Featured_icon_2.svg",
+            "heading": "Direct Link Sharing",
+            "content": "Copy your unique Friend of Nomad link and share it directly via messaging apps, forums, or any digital platform. Personalize your message to add a personal touch.",
+            "button_text": "Start Sharing Now",
+            "button_link": "#popupForm",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#008061",
+            "button_bg_color": "#008061"
+          }
+        }
+      },
+      "block_order": [
+        "8104541b-36e5-4e87-87e1-329848795fa3",
+        "99b94737-c6d7-4c6b-81c9-7e3990cb1898",
+        "337e948f-6558-4485-9cae-9ef8fc41ff76"
+      ],
+      "settings": {
+        "bg_color": "#f3f3f3",
+        "heading": "Customizable Sharing Options for Your Free Modem Offer",
+        "content": "Multiple Sharing Methods: Make Each Referral Count",
+        "per_count": 3
+      }
+    }
+  },
+  "order": [
+    "8d5a2613-28de-4c3a-9865-4cb63771c31c",
+    "collabs",
+    "52e14d99-cfe1-44d6-9f76-43a9e3377b25",
+    "b8658601-21c6-46a3-869a-272d165b7dde",
+    "e7094f92-2baa-495b-a580-bafa9f95c2b8"
+  ]
+}

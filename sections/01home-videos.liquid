@@ -1,0 +1,133 @@
+<section class="image-and-video">
+  <div class="container">
+   {% if section.settings.heading != blank %} 
+      <div class="section-title">
+        <h2 class="page-title">{{ section.settings.heading }}</h2>
+      </div>
+   {% endif %}
+    <div class="video-list">
+
+    {% assign index_counter = 0 %} <!-- Initialize the counter -->
+
+{% for block in section.blocks %}
+
+	 <a data-fancybox="" href="{{ block.settings.video_link }}" class="text-reset text-left smaller font-weight-600 text-decoration-none position-relative">
+      <img src="{{ block.settings.video_image | img_url: 'master' }}" width="320" height="180" loading="lazy" /> 
+      <span class="slick-title">{{ block.settings.video_heading }}</span> 
+      <div class="video-play-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+          <rect x="4" y="4" width="43" height="43" rx="21.5" fill="white"/>
+          <rect x="2" y="2" width="47" height="47" rx="23.5" stroke="white" stroke-opacity="0.5" stroke-width="4"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 25.5C4 13.6259 13.6259 4 25.5 4C37.3742 4 47 13.6259 47 25.5C47 37.3742 37.3742 47 25.5 47C13.6259 47 4 37.3742 4 25.5ZM28.514 19.473L28.6772 19.5739C30.0406 20.4173 31.1774 21.1205 32.001 21.7756C32.849 22.45 33.5958 23.2472 33.8642 24.3584C34.0452 25.1074 34.0452 25.8932 33.8642 26.6422C33.5958 27.7532 32.849 28.5504 32.001 29.2248C31.1774 29.88 30.0406 30.5832 28.6772 31.4266L28.514 31.5276C27.2008 32.3402 26.0986 33.0218 25.1844 33.4452C24.2572 33.8746 23.2 34.1988 22.0976 33.8586C21.3689 33.6336 20.7216 33.2118 20.2104 32.65C19.4666 31.833 19.2214 30.765 19.1105 29.6976C18.9999 28.634 19 27.2596 19 25.5862V25.4142C19 23.7408 18.9999 22.3666 19.1105 21.3029C19.2214 20.2355 19.4666 19.1676 20.2104 18.3505C20.7216 17.7888 21.3689 17.3668 22.0976 17.142C23.2 16.8018 24.2572 17.1259 25.1844 17.5553C26.0986 17.9787 27.2006 18.6604 28.514 19.473Z" fill="#008061"/>
+        </svg>
+      </div>
+    </a>
+ {% assign index_counter = index_counter | plus: 1 %} <!-- Increment the counter -->
+{% endfor %} 
+
+   
+        
+        {% comment %}
+         <div class="video-box">
+            <img src="https://cdn.shopify.com/oxygen/10328473658/98362/x2hcgp3ch/build/_assets/video-image-1-AGNMEFKC.png" alt="thumbnail" class="hidden">
+           <iframe src="https://www.youtube.com/embed/VfE1e9t9Pz8?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="block h-full w-full"></iframe>
+            <button class="play-button hidden">
+               <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="icon">
+                     <circle id="Ellipse 12" cx="30" cy="30" r="30" fill="#00A77F"></circle>
+                     <path id="Vector" d="M30 10.25C18.9554 10.25 10 19.2054 10 30.25C10 41.2946 18.9554 50.25 30 50.25C41.0446 50.25 50 41.2946 50 30.25C50 19.2054 41.0446 10.25 30 10.25ZM36.433 30.558L26.683 37.6518C26.6296 37.6902 26.5666 37.7131 26.5009 37.7181C26.4353 37.723 26.3696 37.7097 26.311 37.6797C26.2524 37.6498 26.2032 37.6042 26.1688 37.5481C26.1344 37.4919 26.1162 37.4274 26.1161 37.3616V23.183C26.1159 23.1171 26.1339 23.0524 26.1682 22.996C26.2025 22.9397 26.2518 22.894 26.3105 22.8639C26.3692 22.8339 26.4351 22.8207 26.5008 22.8258C26.5666 22.8309 26.6297 22.8541 26.683 22.8929L36.433 29.9821C36.4791 30.0147 36.5167 30.0579 36.5426 30.108C36.5685 30.1581 36.5821 30.2137 36.5821 30.2701C36.5821 30.3265 36.5685 30.3821 36.5426 30.4322C36.5167 30.4823 36.4791 30.5255 36.433 30.558Z" fill="white"></path>
+                  </g>
+               </svg>
+            </button>
+         </div>
+         <div class="video-box">
+            <img src="https://cdn.shopify.com/oxygen/10328473658/98362/x2hcgp3ch/build/_assets/video-image-2-3VX426F6.png" alt="video thumnail" class="hidden">
+           <iframe src="https://www.youtube.com/embed/jq8a2Q0i10Q?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="block h-full w-full"></iframe>  
+           <button class="play-button hidden">
+               <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="icon">
+                     <circle id="Ellipse 12" cx="30" cy="30" r="30" fill="#00A77F"></circle>
+                     <path id="Vector" d="M30 10.25C18.9554 10.25 10 19.2054 10 30.25C10 41.2946 18.9554 50.25 30 50.25C41.0446 50.25 50 41.2946 50 30.25C50 19.2054 41.0446 10.25 30 10.25ZM36.433 30.558L26.683 37.6518C26.6296 37.6902 26.5666 37.7131 26.5009 37.7181C26.4353 37.723 26.3696 37.7097 26.311 37.6797C26.2524 37.6498 26.2032 37.6042 26.1688 37.5481C26.1344 37.4919 26.1162 37.4274 26.1161 37.3616V23.183C26.1159 23.1171 26.1339 23.0524 26.1682 22.996C26.2025 22.9397 26.2518 22.894 26.3105 22.8639C26.3692 22.8339 26.4351 22.8207 26.5008 22.8258C26.5666 22.8309 26.6297 22.8541 26.683 22.8929L36.433 29.9821C36.4791 30.0147 36.5167 30.0579 36.5426 30.108C36.5685 30.1581 36.5821 30.2137 36.5821 30.2701C36.5821 30.3265 36.5685 30.3821 36.5426 30.4322C36.5167 30.4823 36.4791 30.5255 36.433 30.558Z" fill="white"></path>
+                  </g>
+               </svg>
+            </button>
+         </div>
+{% endcomment %}
+
+        
+    </div>
+
+    {% if section.settings.button_link != blank and section.settings.button_text != blank %}
+      <a href="{{ section.settings.button_link }}" class="btn btn--one" target="_blank">
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Home Videos",
+    "presets": [
+      {
+        "name": "Home Videos"
+      }
+    ], 
+    "settings": [
+      {
+        "type": "header",
+        "content": "Button"
+      },
+      {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "header",
+        "content": "Video Block"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "video_block",
+        "name": "Video Block",
+        "settings": [
+          {
+            "type": "url",
+            "id": "video_link",
+            "label": "Video link"
+          },
+          {
+            "type": "image_picker",
+            "id": "video_image",
+            "label": "Video Image",
+            "info": "Select an image for the video"
+          },
+          {
+            "type": "text",
+            "id": "video_heading",
+            "label": "Video Heading"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,296 @@
+{
+  "wrapper": "div.landing.landing--1",
+  "sections": {
+    "lp-1": {
+      "type": "lp-1",
+      "blocks": {
+        "d88ef49e-a9a1-4be1-840b-8e4887684d70": {
+          "type": "button",
+          "settings": {
+            "text": "Place Order",
+            "url": "#shopify-section-template--14522174996538__0121f21c-3e33-45e6-889e-7e1cd49bdf07"
+          }
+        }
+      },
+      "block_order": [
+        "d88ef49e-a9a1-4be1-840b-8e4887684d70"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/lp-1-bg.jpg",
+        "title": "Start making the most of your Internet connection in rural areas now"
+      }
+    },
+    "96e86869-5fa7-4218-a02f-e7b4b675ce9d": {
+      "type": "lp-2",
+      "blocks": {
+        "be21481f-42f5-4929-94c5-4c9742205be3": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "0f91dbfe-9d18-4487-b94b-d3790e9715f1": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "be21481f-42f5-4929-94c5-4c9742205be3",
+        "0f91dbfe-9d18-4487-b94b-d3790e9715f1"
+      ],
+      "settings": {
+        "title": "How to Get Internet in Rural Areas"
+      }
+    },
+    "074a51d3-c1d5-4c00-b1fd-2fa1584baf25": {
+      "type": "lp-3",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/No_risk_banner.jpg",
+        "title": "No Risk, Money-Back Guarantee!",
+        "title_width": 1200,
+        "description": "What's better than wireless internet? try it risk-free and see for yourself.",
+        "description_width": 370,
+        "button_text": "Place order",
+        "button_url": "#shopify-section-template--14522174996538__0121f21c-3e33-45e6-889e-7e1cd49bdf07",
+        "button_color": "orange"
+      }
+    },
+    "9c99040b-4f64-4b8e-a2d1-3f3d4d72cd63": {
+      "type": "lp-4",
+      "blocks": {
+        "4b185843-ca2e-475e-af57-e5c05908befd": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4k_Video_Streaming.jpg",
+            "title": "4k Video Streaming",
+            "url": "\/"
+          }
+        },
+        "df293b9b-5f0f-4a3e-8593-0c164c554120": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Conferencing.jpg",
+            "title": "Video Conferencing",
+            "url": "\/"
+          }
+        },
+        "d333dcce-eec9-450e-8703-a8390ec5591f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Online_Gaming.jpg",
+            "title": "Online Gaming",
+            "url": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "4b185843-ca2e-475e-af57-e5c05908befd",
+        "df293b9b-5f0f-4a3e-8593-0c164c554120",
+        "d333dcce-eec9-450e-8703-a8390ec5591f"
+      ],
+      "settings": {
+        "title": "Have fun, work or relax at high Internet speed"
+      }
+    },
+    "4216a58a-6949-4019-9bb4-e2b834a439f2": {
+      "type": "lp-5",
+      "blocks": {
+        "6a624773-706c-45a5-ac66-d2d9d1c42c3c": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/It_s_time_to_upgrade.png",
+            "title": "It's time to upgrade",
+            "description": "Upgrade Your Home Network with a High-Speed Internet Connection"
+          }
+        },
+        "40570d53-e9c8-4e5d-8437-881949b5bc50": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Hight_Speeds_icon_blue.png",
+            "title": "High Speeds",
+            "description": "When connecting to Nomad Internet, speed is usually the most important factor"
+          }
+        },
+        "7e6c8663-0a89-4117-a591-61829ff9c3ff": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Suburban_coverage_icon_7bb4ea30-8392-4b6b-aeee-1ccc61d5bb4f.png",
+            "title": "Suburban coverage",
+            "description": "Connectivity Solutions for Sprawling Countryside Locations"
+          }
+        },
+        "ac7f340b-5427-4e82-8d13-ad9d9fc1789c": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Secure_connection_icon_icon_6c5b6b30-b8fa-417a-8caa-85b76ba89899.png",
+            "title": "Secure connection",
+            "description": "Fast and secure connection to an internet provider designed for rural areas"
+          }
+        }
+      },
+      "block_order": [
+        "6a624773-706c-45a5-ac66-d2d9d1c42c3c",
+        "40570d53-e9c8-4e5d-8437-881949b5bc50",
+        "7e6c8663-0a89-4117-a591-61829ff9c3ff",
+        "ac7f340b-5427-4e82-8d13-ad9d9fc1789c"
+      ],
+      "settings": {
+        "title": "Why Choose Nomad Internet",
+        "button_text": "Order Now",
+        "button_url": "#shopify-section-template--14522174996538__0121f21c-3e33-45e6-889e-7e1cd49bdf07"
+      }
+    },
+    "a75dad0f-4a6c-4651-afa4-770612ae6ba1": {
+      "type": "lp-3",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Community_Discussion_Banner.jpg",
+        "icon": "shopify:\/\/shop_images\/Community_Discussion_Icon_72a9c8ef-3217-433f-90b8-931757bbc714.png",
+        "title": "Find Answers in the Community Discussion Platform",
+        "title_width": 1200,
+        "description": "",
+        "description_width": 1200,
+        "button_text": "Join Now",
+        "button_url": "https:\/\/community.nomadinternet.com\/",
+        "button_color": "orange"
+      }
+    },
+    "0121f21c-3e33-45e6-889e-7e1cd49bdf07": {
+      "type": "lp-6",
+      "blocks": {
+        "be330e5a-b8fa-4b19-a42f-80a11107d73e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_AIR_90cef8e1-d840-4111-966f-466225b95d62.jpg",
+            "title": "Nomad AIR",
+            "description": "<ul><li>The Best-in-class 5G enabled Modem<\/li><li>Download Speed up to  Gbps<\/li><li>Connect up to 3 Devices<\/li><li>Enterprise-Grade Security<\/li><\/ul>",
+            "bottom_text": "as low as $299"
+          }
+        },
+        "aaf8787c-3e16-4a97-8cee-664e57e978dd": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Plan.jpg",
+            "title": "Nomad Plan",
+            "description": "<ul><li>Download speeds up to 100Mbps<\/li><li>Connect all Your Devices<\/li><li> 4G and 5G LTE<\/li><li>No Credit Check<\/li><\/ul>",
+            "bottom_text": "as low as $109"
+          }
+        },
+        "9d71d230-231b-4aef-8065-443950105b04": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Plan-1.jpg",
+            "title": "Nomad Community",
+            "description": "<p>Join our growing community! You will be able to take part in promotions, receive bonuses and have access to the support of friends.<\/p>",
+            "bottom_text": "Bonus"
+          }
+        }
+      },
+      "block_order": [
+        "be330e5a-b8fa-4b19-a42f-80a11107d73e",
+        "aaf8787c-3e16-4a97-8cee-664e57e978dd",
+        "9d71d230-231b-4aef-8065-443950105b04"
+      ],
+      "settings": {
+        "title": "Unlock The Potential of Your Internet With This Smart Kit",
+        "button_text": "Place Order",
+        "button_url": "\/cart\/39822341505082:1,39798048751674:1"
+      }
+    },
+    "2e366c83-7b3d-4ce6-aa6d-ba30d3ba7aa7": {
+      "type": "lp-3",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_6.jpg",
+        "left_image": "shopify:\/\/shop_images\/24-hours-support_1.png",
+        "right_image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2.png",
+        "title": "Conquer the world with Nomad's Internet Bag",
+        "title_width": 1200,
+        "description": "This is a one-stop solution for secure and reliable Internet access anytime, anywhere!",
+        "description_width": 1200,
+        "button_text": "Join Now",
+        "button_url": "shopify:\/\/pages\/ice",
+        "button_color": "blue"
+      }
+    },
+    "f6f180c3-2fa0-41f1-8f79-65f2420e3737": {
+      "type": "lp-7",
+      "blocks": {
+        "d0f1411e-6c1a-4c1a-a443-b9549d65eada": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Banner.jpg"
+          }
+        },
+        "d33ad90b-cc43-4720-9ac7-2bd510d4d20a": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ba_connection_banner.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "d0f1411e-6c1a-4c1a-a443-b9549d65eada",
+        "d33ad90b-cc43-4720-9ac7-2bd510d4d20a"
+      ],
+      "settings": {
+        "title": "What are rural internet options?"
+      }
+    },
+    "42a2ef23-c84b-48fc-b315-798df86e4f9f": {
+      "type": "lp-8",
+      "blocks": {
+        "0be8d1f8-d5d0-4bf4-bb9f-fa6de7b79d9d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Reviews_1_3.jpg",
+            "url": "",
+            "target_blank": false
+          }
+        },
+        "0153511b-2c43-420a-b9dc-e7bea89c3bc5": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Reviews_1.jpg",
+            "url": "",
+            "target_blank": false
+          }
+        },
+        "cd96a509-986a-453e-9221-d0ac12471df8": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Reviews_2.jpg",
+            "url": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "0be8d1f8-d5d0-4bf4-bb9f-fa6de7b79d9d",
+        "0153511b-2c43-420a-b9dc-e7bea89c3bc5",
+        "cd96a509-986a-453e-9221-d0ac12471df8"
+      ],
+      "settings": {
+        "title": "What Members Are Saying…"
+      }
+    }
+  },
+  "order": [
+    "lp-1",
+    "96e86869-5fa7-4218-a02f-e7b4b675ce9d",
+    "074a51d3-c1d5-4c00-b1fd-2fa1584baf25",
+    "9c99040b-4f64-4b8e-a2d1-3f3d4d72cd63",
+    "4216a58a-6949-4019-9bb4-e2b834a439f2",
+    "a75dad0f-4a6c-4651-afa4-770612ae6ba1",
+    "0121f21c-3e33-45e6-889e-7e1cd49bdf07",
+    "2e366c83-7b3d-4ce6-aa6d-ba30d3ba7aa7",
+    "f6f180c3-2fa0-41f1-8f79-65f2420e3737",
+    "42a2ef23-c84b-48fc-b315-798df86e4f9f"
+  ]
+}

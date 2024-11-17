@@ -1,0 +1,145 @@
+{
+  "sections": {
+    "specifications-heading": {
+      "type": "specifications-heading",
+      "settings": {}
+    },
+    "bd7cce4c-6b12-41e2-836f-4a794db93808": {
+      "type": "specifications",
+      "blocks": {
+        "20443f36-2a23-410f-affa-db0a6f0dab62": {
+          "type": "specification",
+          "disabled": true,
+          "settings": {
+            "title": "Nomad orbi",
+            "preview": "shopify:\/\/shop_images\/0012_1_1_1feb8916-605b-4caf-8dfb-492e77da082d.png",
+            "url": "",
+            "used_for": "for Travel and Residential",
+            "description_title": "NOMAD one MODEM",
+            "description": "<p>The powerful Nomad Cube is our indoor modem. advanced high-power directional antennas that extend the reach of cellular networks, while also supporting 5G sub-6GHz and 4G LTE fallback, for the perfect balance of network coverage and performance. It has a one-time Nomad Cube Modem cost of $199.<\/p>",
+            "complectation_title": "What's Included",
+            "complectation_text": "<p>Your Nomad Cube includes everything you need to connect to the Internet. The Nomad Cube modem itself, power supply, power cable and internet cable.<\/p>",
+            "complectation_1": "shopify:\/\/shop_images\/Group_1000007412.png",
+            "complectation_2": "shopify:\/\/shop_images\/Frame_1000006929_2150786b-ec37-45cd-9e94-30d675b53cea.png",
+            "complectation_3": "shopify:\/\/shop_images\/Group_1000007158_34a04b8d-5f9a-4a9a-9658-8dae811b7b88.png",
+            "tech_title": "Nomad orbi",
+            "tech_text": "<ul>\n  <li>\n    Technical Standard: <br>\n    LTE Category 18, 5G NR Sub 6\n  <\/li>\n\n  <li>\n    Network technology:<br>\n    4G LTE: B2, B4, B5, B13, B48, B66, DL 4x4 MIMO<br>\n    5G: n2, n5, n48*, n66, n77, 256 QAM, DL 4x4 MIMO\n  <\/li>\n\n  <li>\n    Cellular Modem:<br>\n    Carrier Aggregation: Yes (Uplink)<br>\n    LTE Performance Category: Cat 18<br>\n    Max Theoretical Speeds: 600 Mbps<br>\n    Download, 75 Mbps Upload\n  <\/li>\n<\/ul>\n\n<ul>\n  <li>Wi-Fi Standard: 802.11 a\/b\/g\/n\/ac\/ax<\/li>\n\n  <li>\n    Bands: Simultaneous 2.4 GHz<br>\n    and 5.0 GHz\n  <\/li>\n\n  <li>\n    Connectors\/ports:<br>\n    2 LAN port\n  <\/li>\n\n  <li>\n    Dimensions: 5.1” x 5.1” x 5.35”<br>\n    (130 mm x 130 mm x 136 mm)\n  <\/li>\n\n  <li>\n    Operating temperature: 41° to 104°F<br>\n    (+5°C to +40°C)\n  <\/li>\n<\/ul>"
+          }
+        },
+        "0ac33a31-0509-4ad1-bd20-a3c25e8ad273": {
+          "type": "specification",
+          "disabled": true,
+          "settings": {
+            "title": "Nomad Cube",
+            "preview": "shopify:\/\/shop_images\/0012_1_2.png",
+            "url": "shopify:\/\/pages\/preorder",
+            "used_for": "for Residential",
+            "description_title": "NOMAD cube INDOOR MODEM",
+            "description": "<p>The powerful Nomad Cube is our indoor modem. advanced high-power directional antennas that extend the reach of cellular networks, while also supporting 5G sub-6GHz and 4G LTE fallback, for the perfect balance of network coverage and performance. It has a one-time Nomad Cube Modem cost of $99.<\/p>",
+            "complectation_title": "What's Included",
+            "complectation_text": "<p>Your Nomad Cube includes everything you need to connect to the Internet. The Nomad Cube modem itself, power supply, power cable and internet cable.<\/p>",
+            "complectation_1": "shopify:\/\/shop_images\/Group_1000006990_f2e30930-7d29-4573-9a9e-1ac9092f862a.png",
+            "complectation_2": "shopify:\/\/shop_images\/Frame_1000006929.png",
+            "complectation_3": "shopify:\/\/shop_images\/Group_1000007158_3bad9290-3471-4cd0-aa1f-2b56f466a994.png",
+            "tech_title": "Nomad cube",
+            "tech_text": "<ul>\n  <li>Technical Standard: LTE Category 18, 5G NR Sub 6<\/li>\n  <li>\n    Network technology:<br>\n    4G LTE: B2, B4, B5, B13, B48, B66, DL 4x4 MIMO<br>\n    5G: n2, n5, n48*, n66, n77, 256 QAM, DL 4x4 MIMO\n  <\/li>\n  <li>\n    Cellular Modem:<br>\n    Carrier Aggregation: Yes (Uplink)<br>\n    LTE Performance Category: Cat 18<br>\n    Max Theoretical Speeds: 600 Mbps Download, 75 Mbps Upload\n  <\/li>\n<\/ul>\n\n<ul>\n  <li>Wi-Fi Standard: 802.11 a\/b\/g\/n\/ac\/ax<\/li>\n  <li>Bands: Simultaneous 2.4 GHz and 5.0 GHz<\/li>\n  <li>Connectors\/ports:\u20282 LAN port<\/li>\n  <li>\n    Dimensions: 5.1” x 5.1” x 5.35”<br>\n    (130 mm x 130 mm x 136 mm)\n  <\/li>\n  <li>Operating temperature: 41° to 104°F (+5°C to +40°C)<\/li>\n<\/ul>",
+            "tech_image": "shopify:\/\/shop_images\/Group_1000007391_c05effd7-acd5-4301-b5ca-e78df967344a.png"
+          }
+        },
+        "7536c41e-0738-4e7e-b7ee-3bc92c3e0658": {
+          "type": "specification",
+          "settings": {
+            "title": "Nomad Omega",
+            "preview": "shopify:\/\/shop_images\/1654x959_Trans_BG.png",
+            "url": "shopify:\/\/pages\/preorder",
+            "used_for": "for Residential",
+            "description_title": "NOMAD omega INDOOR MODEM",
+            "description": "<p>The powerful Nomad Omega is our indoor modem. advanced high-power directional antennas that extend the reach of cellular networks, while also supporting 5G sub-6GHz and 4G LTE fallback, for the perfect balance of network coverage and performance. It has a one-time Nomad Omega Modem cost of $99.<\/p>",
+            "complectation_title": "What's Included",
+            "complectation_text": "<p>Your Nomad Omega includes everything you need to connect to the Internet. The Nomad Omega modem itself, power supply, power cable and internet cable.<\/p>",
+            "complectation_1": "shopify:\/\/shop_images\/Group_1000006990_f2e30930-7d29-4573-9a9e-1ac9092f862a.png",
+            "complectation_2": "shopify:\/\/shop_images\/Frame_1000006929.png",
+            "complectation_3": "shopify:\/\/shop_images\/Group_1000007158_3bad9290-3471-4cd0-aa1f-2b56f466a994.png",
+            "tech_title": "Nomad Omega",
+            "tech_text": "<ul>\n  <li>Technical Standard: LTE Category 18, 5G NR Sub 6<\/li>\n  <li>\n    Network technology:<br>\n    4G LTE: B2, B4, B5, B13, B48, B66, DL 4x4 MIMO<br>\n    5G: n2, n5, n48*, n66, n77, 256 QAM, DL 4x4 MIMO\n  <\/li>\n  <li>\n    Cellular Modem:<br>\n    Carrier Aggregation: Yes (Uplink)<br>\n    LTE Performance Category: Cat 18<br>\n    Max Theoretical Speeds: 600 Mbps Download, 75 Mbps Upload\n  <\/li>\n<\/ul>\n\n<ul>\n  <li>Wi-Fi Standard: 802.11 a\/b\/g\/n\/ac\/ax<\/li>\n  <li>Bands: Simultaneous 2.4 GHz and 5.0 GHz<\/li>\n  <li>Connectors\/ports:\u20282 LAN port<\/li>\n  <li>\n    Dimensions: 5.1” x 5.1” x 5.35”<br>\n    (130 mm x 130 mm x 136 mm)\n  <\/li>\n  <li>Operating temperature: 41° to 104°F (+5°C to +40°C)<\/li>\n<\/ul>",
+            "tech_image": "shopify:\/\/shop_images\/Group_1000007391_c05effd7-acd5-4301-b5ca-e78df967344a.png"
+          }
+        },
+        "b4946fa5-1137-432f-be70-2a51c1c5a559": {
+          "type": "specification",
+          "settings": {
+            "title": "Nomad Air",
+            "preview": "shopify:\/\/shop_images\/NomadAir.png",
+            "url": "shopify:\/\/pages\/contacts",
+            "used_for": "For Travel and Residential",
+            "description_title": "NOMAD AIR INDOOR MODEM",
+            "description": "<p>The powerful Nomad Air is our indoor modem. advanced high-power directional antennas that extend the reach of cellular networks, while also supporting 5G sub-6GHz and 4G LTE fallback, for the perfect balance of network coverage and performance. It has a one-time Nomad Air Modem cost of $199.<\/p>",
+            "complectation_title": "What's Included",
+            "complectation_text": "<p>Your Nomad Air includes everything you need to connect to the Internet. The Nomad Air modem itself, power supply, power cable and internet cable.<\/p>",
+            "complectation_1": "shopify:\/\/shop_images\/nomad-air_bf324add-7b19-40b6-b4b3-3b26f581cf58.png",
+            "complectation_2": "shopify:\/\/shop_images\/Ethernet_Cable.png",
+            "complectation_3": "shopify:\/\/shop_images\/Power_Supply.png",
+            "complectation_4": "shopify:\/\/shop_images\/Power_Cable.png",
+            "tech_title": "Nomad AIR",
+            "tech_text": "<ul>\n  <li>Chipset: Qualcomm® Snapdragon™ SDX55<\/li>\n  <li>\n    Network technology:<br>\n    - 5G sub-6 GHz and 4G LTE Cat 22<br>\n    - 4x4 MIMO sub-6 GHz<br>\n    - 256 QAM<br>\n    - HSPA+\/UMTS<br>\n    - CBRS\n  <\/li>\n  <li>\n    Wi-Fi version: Wi-Fi 6 (802.11 a\/b\/g\/n\/ac\/ax)<br>\n    Wi-Fi connections: Up to 30 connected devices<br>\n    Wi-Fi bands: Real simultaneous dual-band Wi-Fi (2.4GHz &amp; 5GHz)\n  <\/li>\n  <li>\n    Connectors\/ports:<br>\n    - 1 LAN port<br>\n    - 1 USB-C port\n  <\/li>\n  <li>Dimensions: 6.3” x 2.8” x 2.4”(160 mm x 71.6 mm x 60 mm)<\/li>\n  <li>Weight: 12 oz (350 g)<\/li>\n  <li>Operating temperature: 32° to 113°F (0°C to 45°C)<\/li>\n  <li>SIM type: Dual SIM (4FF Nano)<\/li>\n<\/ul>\n\n<ul>\n  <li>\n    Security:<br>\n    Secure Boot<br>\n    Admin Security<br>\n    AES 256 Encryption<br>\n    Security Hardened Web Interface<br>\n    Session Timeout<br>\n    Wi-Fi On\/Off Control<br>\n    Incorrect Password Lockout<br>\n    Block Factory Reset<br>\n    Encrypted Configuration Backup\/Restore<br>\n    Advanced Firewall\n  <\/li>\n  <li>\n    Wi-Fi Security<br>\n    Wi-Fi Security (WPA\/WPA2\/WPA3)<br>\n    Wi-Fi Protected Setup (WPS 2.0)<br>\n    Wi-Fi Privacy Separation<br>\n    Configurable DNS<br>\n    MAC Address Filtering<br>\n    NAT Firewall<br>\n    Port Forwarding<br>\n    Port Filtering\n  <\/li>\n  <li>Anti CSRF (OWASP)<\/li>\n  <li>\n    Connectors\/ports:<br>\n    1 LANport<br>\n    1 USB-C port<br>\n    OpenVPN\n  <\/li>\n<\/ul>",
+            "tech_image": "shopify:\/\/shop_images\/nomad-air-lines.png"
+          }
+        },
+        "a0512be0-6d07-4a49-b79f-3b5df745f6ee": {
+          "type": "specification",
+          "settings": {
+            "title": "Nomad Raptor",
+            "preview": "shopify:\/\/shop_images\/Nomad_Raptor.png",
+            "url": "shopify:\/\/pages\/preorder",
+            "used_for": "for BUSINESS and Gamers",
+            "description_title": "NOMAD BUSINESS INDOOR MODEM",
+            "description": "<p>The Raptor will solve all your wireless business needs. advanced high-power directional antennas that extend the reach of cellular networks, while also supporting 5G sub-6GHz and 4G LTE fallback, for the perfect balance of network coverage and performance. It has a one-time Nomad Raptor Modem cost of $499<\/p>",
+            "complectation_title": "What's Included",
+            "complectation_text": "<p>Your Nomad Raptor includes everything you need to connect to the Internet. The Nomad Raptor modem itself, power supply, power cable and internet cable.<\/p>",
+            "complectation_1": "shopify:\/\/shop_images\/nomad-raptor.png",
+            "complectation_2": "shopify:\/\/shop_images\/Ethernet_Cable.png",
+            "complectation_3": "shopify:\/\/shop_images\/Power_Supply.png",
+            "complectation_4": "shopify:\/\/shop_images\/Power_Cable.png",
+            "tech_title": "Nomad RAPTOR",
+            "tech_text": "<ul>\n  <li>Chipset: Qualcomm® Snapdragon™ SDX55<\/li>\n  <li>\n    Network technology:<br>\n    - 5G sub-6 GHz and 4G LTE Cat 22<br>\n    - 4x4 MIMO sub-6 GHz<br>\n    - 256 QAM<br>\n    - HSPA+\/UMTS<br>\n    - CBRS\n  <\/li>\n  <li>\n    Wi-Fi version:<br>\n    Wi-Fi 6 (802.11 a\/b\/g\/n\/ac\/ax)<br>\n    Wi-Fi connections: Up to 128 connected devices<br>\n    Wi-Fi bands: Real simultaneous dual-band Wi-Fi (2.4GHz &amp; 5GHz)\n  <\/li>\n\n  <li>Connectors\/ports:- 3x LAN port- 1x WLAN port<\/li>\n\n  <li>Dimensions: 9 x 3 x 6.8 in (230 x 76 x 172.5 mm)<\/li>\n\n  <li>Weight: 59 oz (1,675 g)<\/li>\n\n  <li>Operating temperature: 32° to 113°F (0°C to 45°C)<\/li>\n\n  <li>SIM type: Dual SIM (4FF Nano)<\/li>\n<\/ul>\n<ul>\n  <li>\n    Security features:<br>\n    AES 256 Encryption<br>\n    Security hardened web interface<br>\n    Password hash<br>\n    Session timeout<br>\n    Wi-Fi on\/off control<br>\n    Incorrect password lockout<br>\n    Configurable DNS<br>\n    MAC address filtering NAT firewall<br>\n    Port forwarding<br>\n    Port filtering<br>\n    Anti CSRF (OWASP)<br>\n    OpenVPN<br>\n    IPsec VPN\n  <\/li>\n  <li>\n    Systems supported:<br>\n    Windows® 7, 8, 10<br>\n    Mac OS® X 10.10 or higher<br>\n    Linux® Ubuntu 14.04 or higher\n  <\/li>\n<\/ul>",
+            "tech_image": "shopify:\/\/shop_images\/nomad-raptor-lines.png"
+          }
+        },
+        "0806e5f7-9e18-43e5-8ad4-764daa4bf800": {
+          "type": "specification",
+          "disabled": true,
+          "settings": {
+            "title": "Nomad ARK",
+            "preview": "shopify:\/\/shop_images\/Nomad_ARK.png",
+            "url": "shopify:\/\/pages\/contacts",
+            "used_for": "for Residential (archived)",
+            "description_title": "NOMAD ARK outdoor MODEM",
+            "description": "<p>High-speed, wireless low-latency internet on an as-needed basis at any destination where Nomad Internet provides active coverage. $130\/mo with a one-time cost of $699 for a Nomad ARK Modem.<\/p>",
+            "complectation_title": "What's Included",
+            "complectation_text": "<p>Your Nomad ARK includes everything you need to connect to the Internet. The Nomad ARK modem itself, power supply, power cable and internet cable.<\/p>",
+            "complectation_1": "shopify:\/\/shop_images\/nomad-ark.png",
+            "complectation_2": "shopify:\/\/shop_images\/Ethernet_Cable.png",
+            "complectation_3": "shopify:\/\/shop_images\/Power_Supply.png",
+            "complectation_4": "shopify:\/\/shop_images\/Power_Cable.png",
+            "tech_title": "Nomad ARK",
+            "tech_text": "<ul>\n  <li>Chipset: Qualcomm® Snapdragon™ SDX55<\/li>\n  <li>\n    Network technology:<br>\n    - 5G sub-6 GHz and 4G LTE Cat 22<br>\n    - 4x4 MIMO Sub-6, 4X4 MIMO LTE\n  <\/li>\n\n  <li>\n    Download speeds: 4.14 Gbps Download \/<br>\n    660 Mbps Upload*\n  <\/li>\n  <li>Connectors\/ports: 5Gbps Ethernet LAN Port<\/li>\n\n  <li>Dimensions: 16.9 x 15.75 x 2.8 in (430 x 400 x 71.1 mm)<\/li>\n  <li>Weight: 9.3lbs (4.22 kg)<\/li>\n  <li>Operating temperature: -22° to 158°F<br>(-30°C to 70°C)<\/li>\n  <li>SIM type: Dual SIM (4FF Nano)<\/li>\n<\/ul>\n\n<ul>\n  <li>\n    Security:<br>\n    Third-party penetration testing verified<br>\n    Security hardened web interface – TLS, SSL<br>\n    Password hash<br>\n    Anti-CSRF<br>\n    Session timeout<br>\n    Incorrect password lockout<br>\n    Firewall with adjustable settings and rules<br>\n    Port filtering<br>\n    Port forwarding<br>\n    MAC filtering\n  <\/li>\n  <li>\n    Systems supported:<br>\n    Windows 10 and later<br>\n    MacOS 10.14 and later<br>\n    Linux® Ubuntu 18.04 LTS and later\n  <\/li>\n<\/ul>",
+            "tech_image": "shopify:\/\/shop_images\/nomad-ark-lines.png"
+          }
+        }
+      },
+      "block_order": [
+        "20443f36-2a23-410f-affa-db0a6f0dab62",
+        "0ac33a31-0509-4ad1-bd20-a3c25e8ad273",
+        "7536c41e-0738-4e7e-b7ee-3bc92c3e0658",
+        "b4946fa5-1137-432f-be70-2a51c1c5a559",
+        "a0512be0-6d07-4a49-b79f-3b5df745f6ee",
+        "0806e5f7-9e18-43e5-8ad4-764daa4bf800"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "specifications-heading",
+    "bd7cce4c-6b12-41e2-836f-4a794db93808"
+  ]
+}

@@ -1,0 +1,63 @@
+<section class="features-section">
+<div class="section-title">
+{% if section.settings.heading != blank %}
+  <h2 class="page-title">{{ section.settings.heading }} </h2>
+{% endif %}
+</div>
+<div class="logo-list" js-logo-list>
+  {% for block in section.blocks %}   
+	<div class="logoo">
+		<img src="{{ block.settings.image | img_url: 'master'}}" width="238" height="93" alt="logo1" loading="lazy">
+	  </div>
+   {% endfor %}
+
+   {% comment %}
+  <div>
+  <div class="logoo">
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Company_logo-10.png?v=1689940736" alt="logo1" loading="lazy">
+      </div>
+  </div>
+  {% endcomment %}
+
+</div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Home Featured",
+  "presets": [
+    {
+      "name": "Home Featured"
+    }
+  ],  
+  "settings": [
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo",
+          "info": "Select an image to feature on the home page"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

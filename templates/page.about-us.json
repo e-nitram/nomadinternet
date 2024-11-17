@@ -1,0 +1,92 @@
+{
+  "sections": {
+    "6e9d221d-379e-411e-9b05-6e1a414bc467": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+      }
+    },
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "5e66ea63-40ef-47fb-8230-16bde419ff64": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1-min.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "5e66ea63-40ef-47fb-8230-16bde419ff64"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "We are Nomad",
+        "description": "",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "c25540cb-dd56-4ecf-97dc-3c9211fb93cc": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "1",
+        "heading_text": "",
+        "text": "<p>At Nomad Internet, we believe access to the internet is a human right and that rural communities should have access to the same high-speed internet available in urban areas.<br\/><br\/>We launched in 2017 with the mission to serve the underserved, bringing people in rural communities and RV parks reliable access to the internet. These communities, particularly those in rural areas, have historically lacked access to basic utilities, both public and private, and we made it our goal to change that. When demand exploded during the COVID-19 pandemic, we quickly expanded, bringing our high-speed internet coverage to customers across all 50 states.<br\/><br\/>Today, as an established authorized reseller of Nation's largest network services, we are proud to provide high-speed, secure wireless internet to rural communities and on-the-road travelers nationwide. We transmit wireless internet access directly to you, without the need for traditional internet wires, so you have reliable connectivity wherever you are: at home, at work, or on the go.<br\/><br\/>We are constantly innovating and evolving to support people anywhere in the U.S. in their pursuit of achievements, whether big or small, at work, school, or in their day-to-day lives.<\/p>",
+        "text_2": "",
+        "text_align": "left"
+      }
+    },
+    "adf6afb1-86c4-462e-8c2b-e5143f4e5aba": {
+      "type": "awesome-text",
+      "disabled": true,
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "1",
+        "heading_text": "",
+        "text": "<p><a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-providing-highest-quality-164000514.html\" target=\"_blank\" title=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-providing-highest-quality-164000514.html\">Nomad Internet<\/a> provides Hi-Speed Wireless internet with No Credit Check, No Data Limit, it Works Anywhere You Are, and a 30-Day No Risk Trial. We are focused on providing High-Speed wireless Internet to rural communities nationwide! <br\/><br\/>Instead of using traditional Internet wires, we do it by transmitting <a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-introduces-nomad-air-201700462.html\" target=\"_blank\" title=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-introduces-nomad-air-201700462.html\">wireless<\/a> Internet access directly to your <a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-launches-c-band-213900255.html\" target=\"_blank\" title=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-launches-c-band-213900255.html\">home<\/a>, <a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internets-groundbreaking-4g-5g-165000214.html\" target=\"_blank\" title=\"https:\/\/finance.yahoo.com\/news\/nomad-internets-groundbreaking-4g-5g-165000214.html\">business<\/a>, and even while <a href=\"https:\/\/youtu.be\/dUQbSrDZUgQ?t=50)! (https:\/\/youtu.be\/dUQbSrDZUgQ?t=50\" target=\"_blank\" title=\"https:\/\/youtu.be\/dUQbSrDZUgQ?t=50)! (https:\/\/youtu.be\/dUQbSrDZUgQ?t=50\">traveling<\/a><br\/><br\/>In 2016, the <a href=\"https:\/\/www.un.org\/en\/chronicle\/article\/government-policy-internet-must-be-rights-based-and-user-centred\" target=\"_blank\"><span style=\"text-decoration:underline\">United Nations General Assembly <\/span><\/a>declared internet access a human right!  We believe rural communities should expect the same <a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-providing-highest-quality-164000514.html\" target=\"_blank\"><span style=\"text-decoration:underline\">high-quality<\/span><\/a> internet that those living in cities enjoy.<\/p><p>Nomad Internet is <a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-pioneers-transparency-launch-163000876.html\" target=\"_blank\"><span style=\"text-decoration:underline\">dedicated<\/span><\/a> to rural communities nationwide that are overlooked and underserved by traditional ISPs. We <a href=\"https:\/\/nativenewsonline.net\/advertise\/branded-voices\/jaden-garza-of-nomad-internet-the-story-of-a-small-business-owner-and-the-power-of-connection\" target=\"_blank\"><span style=\"text-decoration:underline\">started<\/span><\/a> with <a href=\"https:\/\/thestartupmag.com\/jaden-garza-nomad-internet-discusses-origins-company-became-success\/\" target=\"_blank\"><span style=\"text-decoration:underline\">humble<\/span><\/a> <a href=\"https:\/\/ipsnews.net\/business\/2022\/11\/07\/jaden-garza-how-the-feature-founder-of-nomad-internet-built-his-company-from-the-ground-up\/\"><span style=\"text-decoration:underline\">beginnings<\/span><\/a> in 2017 with the mission to <a href=\"https:\/\/www.einnews.com\/pr_news\/617413663\/belvedere-texas-based-nomad-internet-launches-nomad-5-for-life-program\"><span style=\"text-decoration:underline\">help<\/span><\/a> rural <a href=\"https:\/\/www.tmcnet.com\/topics\/articles\/2022\/11\/02\/453959-rural-communities-rv-parks-digital-nomads-how-founder.htm\"><span style=\"text-decoration:underline\">RV Parks<\/span><\/a> and individuals with WiFi internet. <\/p><p>At the start of 2020, beginning with the COVID Pandemic, the need for rural internet <a href=\"https:\/\/www.vanillaplus.com\/2023\/01\/18\/75941-nomad-internet-to-offer-high-quality-rural-internet-in-us\/\" target=\"_blank\"><span style=\"text-decoration:underline\">exploded<\/span><\/a>! Over the last few years, we have <a href=\"https:\/\/www.einnews.com\/pr_news\/612247072\/nomad-internet-america-s-largest-wireless-internet-service-provider-launched-new-plans\" target=\"_blank\"><span style=\"text-decoration:underline\">expanded<\/span><\/a> our high-speed internet coverage nationwide. We continue to <a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-introduces-innovative-nomad-202600395.html\" target=\"_blank\"><span style=\"text-decoration:underline\">innovate<\/span><\/a> with things like the new <a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-introduces-nomad-air-201700462.html\" target=\"_blank\"><span style=\"text-decoration:underline\">Nomad Air<\/span><\/a>, the industry's first <a href=\"https:\/\/apps.apple.com\/us\/app\/nomad-internet-talk\/id6444594379\" target=\"_blank\"><span style=\"text-decoration:underline\">mobile app<\/span><\/a>, and <a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-introduces-innovative-nomad-202600395.html\" target=\"_blank\"><span style=\"text-decoration:underline\">battery technology<\/span><\/a>.<\/p><p>We have been recognized by brands like <a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-providing-highest-quality-164000514.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAFnMHOnpDTH_lUuc5adwJXoDHi38v1krjnx-8hYrlNCLXC5fwE7l7sRW714UQPNm7IssaLg6HAw1CfRb7F8P273m4orF3XWOU5x4clmD4T3eplMxWE_76gaS7solYlKxbryYH-svC-nV9G3Chh_065Oc2G50vBn5zHIVvCYT-0um\" target=\"_blank\"><span style=\"text-decoration:underline\">YAHOO News<\/span><\/a>, the <a href=\"https:\/\/www.apnnews.com\/the-start-of-nomad-internet-where-jaden-garza-got-his-inspiration-and-how-the-company-scaled-its-services\/\" target=\"_blank\"><span style=\"text-decoration:underline\">Girl Scouts of America<\/span><\/a>, and <a href=\"https:\/\/www.cnet.com\/home\/internet\/nomad-internet-review\/\" target=\"_blank\"><span style=\"text-decoration:underline\">CNET<\/span><\/a>. And, we <a href=\"https:\/\/www.prnewswire.com\/news-releases\/nomad-internet-pioneers-transparency-with-launch-of-real-time-activation-page-301712026.html\"><span style=\"text-decoration:underline\">provide<\/span><\/a> internet service for celebrities such as <a href=\"https:\/\/www.imdb.com\/name\/nm0079273\/\" target=\"_blank\" title=\"https:\/\/www.imdb.com\/name\/nm0079273\/\"><span style=\"text-decoration:underline\">Paul Bettany<\/span><\/a> and <a href=\"https:\/\/www.wwe.com\/superstars\/seth-rollins\" target=\"_blank\"><span style=\"text-decoration:underline\">Seth Rollins<\/span><\/a>! <\/p><p>Nomad Internet is now available in all <a href=\"https:\/\/www.einpresswire.com\/article\/610753681\/nomad-internet-aims-to-bring-internet-service-to-60-million-rural-homes\" target=\"_blank\"><span style=\"text-decoration:underline\">50 states <\/span><\/a>and now <a href=\"https:\/\/www.newsanyway.com\/2022\/11\/23\/nomad-internet-and-jaden-garza-how-a-problem-solver-built-an-empire\/\" target=\"_blank\"><span style=\"text-decoration:underline\">dominate<\/span><\/a> rural and <a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-introduces-innovative-nomad-202600395.html\" target=\"_blank\"><span style=\"text-decoration:underline\">traveling<\/span><\/a> Internet for <a href=\"https:\/\/suiting-up.medium.com\/how-jaden-garza-of-nomad-internet-is-freeing-the-next-generation-of-digital-nomads-d7236a5a799a\" target=\"_blank\"><span style=\"text-decoration:underline\">digital nomads<\/span><\/a>.<\/p>",
+        "text_2": "",
+        "text_align": "left"
+      }
+    },
+    "397ae5bb-b3dc-4843-bf58-04c434c02dc3": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#101010",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 20,
+        "border-radius": 0,
+        "html": "<div class=\"row justify-center\">\n    <div class=\"col-lg-3 col-sm-6 col-12\">\n      <a href=\"https:\/\/finance.yahoo.com\/news\/nomad-internet-providing-highest-quality-164000514.html?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAAFnMHOnpDTH_lUuc5adwJXoDHi38v1krjnx-8hYrlNCLXC5fwE7l7sRW714UQPNm7IssaLg6HAw1CfRb7F8P273m4orF3XWOU5x4clmD4T3eplMxWE_76gaS7solYlKxbryYH-svC-nV9G3Chh_065Oc2G50vBn5zHIVvCYT-0um\" target=\"_blank\" rel=\"nofollow\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Frame_1000006954_18470da5-b36b-4891-83f4-121c3838c4e2.png?v=1677872639\" alt=\"yahoo\">\n      <\/a>\n    <\/div>\n    <div class=\"col-lg-3 col-sm-6 col-12\">\n      <a href=\"https:\/\/www.forbes.com\/home-improvement\/internet\/nomad-internet-review\/\" target=\"_blank\" rel=\"nofollow\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Frame_1000006957_a66c5b50-5cfb-4926-ad09-e95248f66fc3.png?v=1677872640\" alt=\"forbes\">\n      <\/a>\n    <\/div>\n    <div class=\"col-lg-3 col-sm-6 col-12\">\n      <a href=\"https:\/\/www.apnnews.com\/the-start-of-nomad-internet-where-jaden-garza-got-his-inspiration-and-how-the-company-scaled-its-services\/\" target=\"_blank\" rel=\"nofollow\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Frame_1000006956_ce55c959-9399-46c0-beef-f78cec4efd07.png?v=1677872639\" alt=\"girls scout\">\n      <\/a>\n    <\/div>\n    <div class=\"col-lg-3 col-sm-6 col-12\">\n      <a href=\"https:\/\/www.cnet.com\/home\/internet\/nomad-internet-review\/\" target=\"_blank\" rel=\"nofollow\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Frame_1000006955_9e3f60dc-4e19-47d7-b1d7-0a55fee6a6e1.png?v=1677872639\" alt=\"cnet\">\n      <\/a>\n    <\/div>\n    <div class=\"col-lg-3 col-sm-6 col-12\">\n      <a href=\"\" target=\"_blank\" rel=\"nofollow\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/RV.png?v=1678215220\" alt=\"logo\">\n      <\/a>\n    <\/div>\n    <div class=\"col-lg-3 col-sm-6 col-12\">\n      <a href=\"\" target=\"_blank\" rel=\"nofollow\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/TMCnet-1.png?v=1678215220\" alt=\"logo\">\n      <\/a>\n    <\/div>\n    <div class=\"col-lg-3 col-sm-6 col-12\">\n      <a href=\"\" target=\"_blank\" rel=\"nofollow\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/TMCnet.png?v=1678215220\" alt=\"logo\">\n      <\/a>\n    <\/div>\n    <div class=\"col-lg-3 col-sm-6 col-12\">\n      <a href=\"\" target=\"_blank\" rel=\"nofollow\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Medium.png?v=1678215220\" alt=\"logo\">\n      <\/a>\n    <\/div>\n    <div class=\"col-lg-3 col-sm-6 col-12\">\n      <a href=\"\" target=\"_blank\" rel=\"nofollow\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/AG.png?v=1678215220\" alt=\"logo\">\n      <\/a>\n    <\/div>\n    <div class=\"col-lg-3 col-sm-6 col-12\">\n      <a href=\"\" target=\"_blank\" rel=\"nofollow\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/inseego.png?v=1678215220\" alt=\"logo\">\n      <\/a>\n    <\/div>\n    <div class=\"col-lg-3 col-sm-6 col-12\">\n      <a href=\"\" target=\"_blank\" rel=\"nofollow\">\n        <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Green_17e609b6-bdf9-48e5-8905-d77fd9ea383a.png?v=1678215219\" alt=\"logo\">\n      <\/a>\n    <\/div>\n  <\/div>"
+      }
+    },
+    "24d07d67-f74e-47df-ac5c-22ce61e6e28b": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "6e9d221d-379e-411e-9b05-6e1a414bc467",
+    "awesome-first-screen",
+    "c25540cb-dd56-4ecf-97dc-3c9211fb93cc",
+    "adf6afb1-86c4-462e-8c2b-e5143f4e5aba",
+    "397ae5bb-b3dc-4843-bf58-04c434c02dc3",
+    "24d07d67-f74e-47df-ac5c-22ce61e6e28b"
+  ]
+}

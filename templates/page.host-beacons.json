@@ -1,0 +1,274 @@
+{
+  "sections": {
+    "banner_slideshow_LDkpqp": {
+      "type": "banner-slideshow",
+      "blocks": {
+        "slide_item_xqztay": {
+          "type": "slide-item",
+          "settings": {
+            "show_gradient_color": false,
+            "show_bg_color": false,
+            "bg_color": "#00271f",
+            "content_image_radius": true,
+            "image": "shopify:\/\/shop_images\/New_hero_wide-scaled.webp",
+            "image_mobile": "shopify:\/\/shop_images\/hero_mobile.webp",
+            "content_alignment": "inner--left",
+            "sub_heading": "Transform Connectivity, Boost Your Earnings",
+            "sub_heading_color": "#00a77f",
+            "bold_color": "#ff4040",
+            "heading": "<p>Boost Your Income: Earn $50 Upfront & $10 Monthly with Nomad Beacon<\/p>",
+            "heading_color": "#ffffff",
+            "desc": "<p>Join a Community of Innovators, Enhancing Connectivity and Earning<\/p>",
+            "button_text1": "Join Now – It’s Free!",
+            "button_link1": "https:\/\/beaconshare.com\/membership-account\/membership-checkout\/?level=2",
+            "text_color1": "#ffffff",
+            "button_bg_color1": "#008061",
+            "button_text_color1": "#ffffff",
+            "enable_new_tab1": true,
+            "button_text2": "",
+            "button_link2": "",
+            "text_color2": "#ffffff",
+            "button_bg_color2": "#008061",
+            "button_text_color2": "#ffffff",
+            "enable_new_tab2": true,
+            "show_contract": false,
+            "contract_header": "Have Questions?",
+            "contract_phonenumber": "+1 210 598 5949"
+          }
+        }
+      },
+      "block_order": [
+        "slide_item_xqztay"
+      ],
+      "settings": {}
+    },
+    "usp_banner_4QK6zk": {
+      "type": "usp-banner",
+      "blocks": {
+        "item_kCECYT": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\"><path d=\"M18.9989 10L4.99887 10M18.9989 10L20.863 13.1069C21.2808 13.8032 21.4897 14.1514 21.5982 14.5262C21.6943 14.8582 21.7323 15.2045 21.7105 15.5495C21.6859 15.9389 21.5575 16.324 21.3007 17.0944L21.0929 17.7179C20.6995 18.8981 20.5028 19.4882 20.1379 19.9245C19.8157 20.3098 19.402 20.608 18.9346 20.7918C18.4053 21 17.7833 21 16.5392 21L7.45851 21C6.21444 21 5.5924 21 5.06313 20.7918C4.59574 20.608 4.18199 20.3098 3.8598 19.9245C3.49495 19.4882 3.29824 18.8981 2.90483 17.7179L2.697 17.0944C2.44022 16.324 2.31182 15.9389 2.28722 15.5495C2.26542 15.2044 2.30342 14.8582 2.39955 14.5261C2.50804 14.1514 2.71693 13.8032 3.13471 13.1069L4.99887 10M18.9989 10L19.4161 8.53955C19.614 7.84717 19.7129 7.50097 19.6352 7.22708C19.5671 6.98715 19.4118 6.78132 19.1999 6.64996C18.9578 6.5 18.5978 6.5 17.8777 6.5L6.12004 6.5C5.39994 6.5 5.03989 6.5 4.79788 6.64996C4.58589 6.78132 4.43063 6.98715 4.36256 7.22708C4.28486 7.50097 4.38377 7.84717 4.5816 8.53955L4.99887 10M11.9989 6.5H8.46315C7.94219 6.5 7.44257 6.28929 7.07419 5.91421C6.70582 5.53914 6.49887 5.03043 6.49887 4.5C6.49887 3.96957 6.70582 3.46086 7.07419 3.08579C7.44257 2.71071 7.94219 2.5 8.46315 2.5C11.2132 2.5 11.9989 6.5 11.9989 6.5ZM11.9989 6.5H15.5346C16.0555 6.5 16.5552 6.28929 16.9235 5.91421C17.2919 5.53914 17.4989 5.03043 17.4989 4.5C17.4989 3.96957 17.2919 3.46086 16.9235 3.08579C16.5552 2.71071 16.0555 2.5 15.5346 2.5C12.7846 2.5 11.9989 6.5 11.9989 6.5Z\" stroke=\"#6AE5B4\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path><\/svg>",
+            "heading": "Lifetime Commission"
+          }
+        },
+        "item_tFWNCY": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\"><path d=\"M8.5 14.6667C8.5 15.9553 9.54467 17 10.8333 17H13C14.3807 17 15.5 15.8807 15.5 14.5C15.5 13.1193 14.3807 12 13 12H11C9.61929 12 8.5 10.8807 8.5 9.5C8.5 8.11929 9.61929 7 11 7H13.1667C14.4553 7 15.5 8.04467 15.5 9.33333M12 5.5V7M12 17V18.5M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z\" stroke=\"#6AE5B4\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path><\/svg>",
+            "heading": "Earn Passive Income"
+          }
+        },
+        "item_ydWEdn": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\"><path d=\"M6.20497 10.5573C5.72603 8.76903 6.08734 6.80257 7.2889 5.28317M17.7955 10.5573C18.2744 8.76899 17.9131 6.80253 16.7115 5.28312M2.34207 11.5991C1.50412 8.47432 2.20568 5.02269 4.44675 2.44531M21.6549 11.5991C22.4929 8.47436 21.7913 5.02273 19.5502 2.44536M12.0002 14.9994V8.99943M5.50022 18.4994H9.50022M5.20022 21.9994H18.8002C19.9203 21.9994 20.4804 21.9994 20.9082 21.7814C21.2845 21.5897 21.5905 21.2837 21.7822 20.9074C22.0002 20.4796 22.0002 19.9195 22.0002 18.7994V18.1994C22.0002 17.0793 22.0002 16.5193 21.7822 16.0915C21.5905 15.7151 21.2845 15.4092 20.9082 15.2174C20.4804 14.9994 19.9203 14.9994 18.8002 14.9994H5.20022C4.08012 14.9994 3.52006 14.9994 3.09224 15.2174C2.71592 15.4092 2.40996 15.7151 2.21821 16.0915C2.00022 16.5193 2.00022 17.0793 2.00022 18.1994V18.7994C2.00022 19.9195 2.00022 20.4796 2.21821 20.9074C2.40996 21.2837 2.71592 21.5897 3.09224 21.7814C3.52006 21.9994 4.08012 21.9994 5.20022 21.9994Z\" stroke=\"#6AE5B4\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path><\/svg>",
+            "heading": "Offer Cheap Hotspot"
+          }
+        }
+      },
+      "block_order": [
+        "item_kCECYT",
+        "item_tFWNCY",
+        "item_ydWEdn"
+      ],
+      "settings": {
+        "bg_color": "#003f30"
+      }
+    },
+    "home_step_section_qzqtbd": {
+      "type": "home-step-section",
+      "blocks": {
+        "item_fdTCQK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image1.svg",
+            "title": "Earn 50¢ on Every Scan",
+            "content": "Day and Night Profits: Earn 50¢ on Every Nomad Beacon"
+          }
+        },
+        "item_3e6EEa": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image2.svg",
+            "title": "Earn $50 on Every Sale",
+            "content": "Instant $50 commission per Hotspot sold."
+          }
+        },
+        "item_DNfz3N": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image3.svg",
+            "title": "Recurring $10\/Mo",
+            "content": "Earn $10\/Mo Per Sale Lifetime Commissions"
+          }
+        }
+      },
+      "block_order": [
+        "item_fdTCQK",
+        "item_3e6EEa",
+        "item_DNfz3N"
+      ],
+      "settings": {
+        "heading": "EARN EFFORTLESSLY, EXPLORE MORE.",
+        "heading_color": "#013127",
+        "show_bottom_line": true,
+        "bottom_content": "",
+        "bg_color": "#f1f1f1",
+        "text_color": "#02100d",
+        "show_arrow": false,
+        "show_bg_image": false
+      }
+    },
+    "text_with_content_aTnWGj": {
+      "type": "text-with-content",
+      "settings": {
+        "heading": "HOW NOMAD BEACON WORKS",
+        "content": "",
+        "bg_color": "#ffffff",
+        "text_color": "#013127"
+      }
+    },
+    "image_with_text_wEzECU": {
+      "type": "image-with-text",
+      "settings": {
+        "content_size": "container",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "image_size": "bigger",
+        "image_alignment": "",
+        "image": "shopify:\/\/shop_images\/Group-469509-1536x1474.webp",
+        "sub_heading": "Step 1",
+        "sub_heading_color": "#008061",
+        "heading": "Effortless Earnings: Sign Up for a Free Beacon Account, Display Your Nomad Beacon",
+        "description": "<p>Dive into effortless earning with Nomad Beacon Program. Sign up for a free Beacon account<br\/>and display your Nomad Beacon effortlessly. This program is an ideal path for generating<br\/>income with minimal effort, turning any visible area into a profit center.<\/p><ul><li><strong>Flexible Display Options:<\/strong> Effortlessly hang on walls, position in stands, or in key customer areas.<\/li><li><strong>Simple-to-Scan Beam Code:<\/strong> Always connects to your account for seamless access.<\/li><li><strong>Hassle-Free Setup:<\/strong> Opt for DIY printing or ready-made displays.<\/li><li><strong>Wide Earning Potential:<\/strong> Profit from scans all over the USA.<\/li><li><strong>Ongoing Commissions<\/strong> Consistent income from each customer connection.<\/li><\/ul>",
+        "button_text": "START EARNING TODAY",
+        "button_link": "https:\/\/beaconshare.com\/membership-account\/membership-checkout\/?level=2",
+        "button_text_color": "#ffffff",
+        "button_border_color": "#008061",
+        "button_bg_color": "#008061"
+      }
+    },
+    "image_with_text_BUTY6q": {
+      "type": "image-with-text",
+      "settings": {
+        "content_size": "container",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "image_size": "bigger",
+        "image_alignment": "image--reverse",
+        "image": "shopify:\/\/shop_images\/Frame-1171276810_1.webp",
+        "sub_heading": "Step 2",
+        "sub_heading_color": "#008061",
+        "heading": "Boost Your Income: Earn $50 Upfront & $10 Monthly with Nomad Beacon",
+        "description": "<p>Unleash the earning power of your Nomad Beacon. It’s uniquely yours, accessible to visitors anytime for scanning. This simple action ties them to you for life, unlocking a stream of Recurring Lifetime Commissions, no matter where they go in the USA.<\/p><ul><li><strong>Effortless Customer Scanning: <\/strong>Easy scanning proces<\/li><li><strong>Instant Customer Association: <\/strong>Scans link customers directly to your account.<\/li><li><strong>Diverse Modem Options: <\/strong>A range of modems for customer preference.<\/li><li><strong>Continuous Income Stream: <\/strong>Earn $50 initially plus $10 monthly commissions.<\/li><li><strong>Hassle-Free Management: <\/strong>We handle payments, shipping, activation, and support.<\/li><\/ul>",
+        "button_text": "START EARNING TODAY",
+        "button_link": "https:\/\/beaconshare.com\/membership-account\/membership-checkout\/?level=2",
+        "button_text_color": "#ffffff",
+        "button_border_color": "#008061",
+        "button_bg_color": "#008061"
+      }
+    },
+    "image_with_text_3tcFcK": {
+      "type": "image-with-text",
+      "settings": {
+        "content_size": "container",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "image_size": "bigger",
+        "image_alignment": "",
+        "image": "shopify:\/\/shop_images\/commission-2.webp",
+        "sub_heading": "Step 3",
+        "sub_heading_color": "#008061",
+        "heading": "Instant Nomad Beam Payouts: Earn and Access Funds Effortlessly",
+        "description": "<p>Nomad Beacon simplifies your earnings with instant payouts through the Nomad Beam Wallet. Monitor your visitor scans, commission balances, and more through an intuitive dashboard.<\/p><ul><li><strong>Quick Payouts: <\/strong>Access earnings instantly via the Nomad Beam Wallet.<\/li><li><strong>Comprehensive Dashboard:<\/strong> Track scans and commissions easily.<\/li><li><strong>Continuous Commissions:<\/strong> Earn $40 initially plus $10 monthly for each customer's lifetime.<\/li><li><strong>Nationwide Earnings: <\/strong>Profit from customers anywhere in the USA.<\/li><li><strong>Flexible Withdrawals:<\/strong> Use automatic payments, wire transfer, ACH, or Zelle.<\/li><\/ul>",
+        "button_text": "START EARNING TODAY",
+        "button_link": "https:\/\/beaconshare.com\/membership-account\/membership-checkout\/?level=2",
+        "button_text_color": "#ffffff",
+        "button_border_color": "#008061",
+        "button_bg_color": "#008061"
+      }
+    },
+    "image_text_banner_d88JmK": {
+      "type": "image-text-banner",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/image-14.webp",
+        "image": "shopify:\/\/shop_images\/NEW-1-scaled-1.webp",
+        "heading": "Connect and Earn: Offer Premium Internet, Boost Your Revenue!",
+        "description": "<p>Elevate guest experience with reliable internet, unlock new revenue through easy income streams, and effortlessly integrate for seamless earning in your space. <\/p>",
+        "button_text": "START EARNING TODAY",
+        "button_link": "https:\/\/beaconshare.com\/membership-account\/membership-checkout\/?level=2",
+        "enable_new_tab": true,
+        "text_color": "#ffffff",
+        "button_bg_color": "#008061",
+        "button_text_color": "#ffffff",
+        "show_gradient_color": true,
+        "show_contract": true,
+        "contract_header": "Have Questions?",
+        "contract_phonenumber": "+1 210 598 5949"
+      }
+    },
+    "custom_faq_section_fNFBD9": {
+      "type": "custom-faq-section",
+      "blocks": {
+        "accordion_hmD8LY": {
+          "type": "accordion",
+          "settings": {
+            "header": "What is a Beacon?",
+            "content": "<p>A Beacon is a digitally created QR code that never changes, always looks the same, exists forever, and that only you can control. The special created code tracks how many times your unique Beacon has been scanned and the amount of purchases that have been made using your Beacon.<\/p>"
+          }
+        },
+        "accordion_DjG9Jt": {
+          "type": "accordion",
+          "settings": {
+            "header": "How do I get my unique Beacon?",
+            "content": "<p>You can get your unique Beacon by signing up for a free account at www.BeaconShare.com and locating it in your dashboard.<\/p>"
+          }
+        },
+        "accordion_UixmGh": {
+          "type": "accordion",
+          "settings": {
+            "header": "What is Beacon Share? And, how does it work?",
+            "content": "<p>Beacon Share is a way for you, a Beamer, and Brands to connect for a common purpose. Beacon Share will show you an available Brand that wants to market. A unique Beacon is created for you and the chosen Brand to distribute to places of business with high foot traffic. The Brand will pay out commissions and\/or profit-shares to you as people scan or make a purchase with your unique Beacon. The Brand gets more exposure and you get paid! Win-win!<br\/><br\/>After you create your free account on www.BeaconShare.com, you can print your unique Beacon template as many times as you’d like! Once it’s printed, place it in a sign holder and put your Beacon at places of business with high foot traffic. You can purchase sign holders at any local office supplies store or on Amazon. Click here for an example of what a sign holder looks like.<br\/><br\/>Every unique scan by a mobile device provides an opportunity to receive commissions. When a purchase is made after scanning your unique Beacon, your Brand will pay out additional commissions! Please make sure you read your Brand’s specific commission structure for what they pay on scans, purchases and\/or profit-shares.<\/p>"
+          }
+        },
+        "accordion_JeBUkQ": {
+          "type": "accordion",
+          "settings": {
+            "header": "How do I get started?",
+            "content": "<p>To get started, create a free account at www.BeaconShare.com. Once you create your free account, fill out the registration form, and confirm your Membership Level, you will be directed to your dashboard. From your dashboard, you will see your print options for your uniquely created Beacon, statistics on how many times your Beacon was scanned, your total earnings, and more! It’s easy, head over to www.BeaconShare.com to get started.<\/p>"
+          }
+        },
+        "accordion_b6GVjc": {
+          "type": "accordion",
+          "settings": {
+            "header": "How much does it cost to be a Beamer on Beacon Share?",
+            "content": "<p>To be a Beamer on Beacon Share is entirely free! You do not need to pay for a monthly or annual subscription to be a Beamer.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_hmD8LY",
+        "accordion_DjG9Jt",
+        "accordion_UixmGh",
+        "accordion_JeBUkQ",
+        "accordion_b6GVjc"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions (FAQs)",
+        "sub_heading": ""
+      }
+    }
+  },
+  "order": [
+    "banner_slideshow_LDkpqp",
+    "usp_banner_4QK6zk",
+    "home_step_section_qzqtbd",
+    "text_with_content_aTnWGj",
+    "image_with_text_wEzECU",
+    "image_with_text_BUTY6q",
+    "image_with_text_3tcFcK",
+    "image_text_banner_d88JmK",
+    "custom_faq_section_fNFBD9"
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "wrapper": "div.cube.cube--template",
+  "sections": {
+    "banner_slideshow_EMNJbG": {
+      "type": "banner-slideshow",
+      "blocks": {
+        "slide_item_H9z8pE": {
+          "type": "slide-item",
+          "settings": {
+            "show_gradient_color": false,
+            "show_bg_color": false,
+            "bg_color": "#00271f",
+            "content_image_radius": true,
+            "content_alignment": "inner--left",
+            "sub_heading": "",
+            "sub_heading_color": "#00a77f",
+            "bold_color": "#ff4040",
+            "heading": "",
+            "heading_color": "#ffffff",
+            "desc": "",
+            "button_text1": "",
+            "button_link1": "",
+            "text_color1": "#ffffff",
+            "button_bg_color1": "#e12727",
+            "button_text_color1": "#ffffff",
+            "enable_new_tab1": true,
+            "button_text2": "",
+            "button_link2": "",
+            "text_color2": "#ffffff",
+            "button_bg_color2": "#e12727",
+            "button_text_color2": "#ffffff",
+            "enable_new_tab2": true,
+            "show_contract": true,
+            "contract_header": "Have Questions?",
+            "contract_phonenumber": "+1 210 598 5949"
+          }
+        },
+        "slide_item_jnmEU7": {
+          "type": "slide-item",
+          "settings": {
+            "show_gradient_color": true,
+            "show_bg_color": false,
+            "bg_color": "#00271f",
+            "content_image_radius": true,
+            "image": "shopify:\/\/shop_images\/hero_flex.webp",
+            "image_mobile": "shopify:\/\/shop_images\/hero_flex__mobile.png",
+            "content_alignment": "inner--left",
+            "sub_heading": "Pioneering Affordable High-Speed Internet",
+            "sub_heading_color": "#00a77f",
+            "bold_color": "#ff4040",
+            "heading": "<p>Nomad's Unmatched Flex Pay: A Class of Its Own<\/p>",
+            "heading_color": "#ffffff",
+            "desc": "<p>Join the only program that offers high-speed Internet at unbeatable prices, tailor-made for you.<\/p>",
+            "button_text1": "GET STARTED NOW",
+            "button_link1": "https:\/\/nomadinternet.com\/pages\/plans",
+            "text_color1": "#ffffff",
+            "button_bg_color1": "#008061",
+            "button_text_color1": "#ffffff",
+            "enable_new_tab1": true,
+            "button_text2": "",
+            "button_link2": "",
+            "text_color2": "#ffffff",
+            "button_bg_color2": "#e12727",
+            "button_text_color2": "#ffffff",
+            "enable_new_tab2": true,
+            "show_contract": true,
+            "contract_header": "Have Questions?",
+            "contract_phonenumber": "+1 210 598 5949"
+          }
+        }
+      },
+      "block_order": [
+        "slide_item_H9z8pE",
+        "slide_item_jnmEU7"
+      ],
+      "settings": {}
+    },
+    "usp_banner_GEKWz6": {
+      "type": "usp-banner",
+      "blocks": {
+        "item_eCitzA": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"60\" height=\"60\" viewbox=\"0 0 60 60\" fill=\"none\">\n      <path d=\"M35 27.498H20M25 37.498H20M40 17.498H20M50 29.998V16.998C50 12.7977 50 10.6975 49.1825 9.09312C48.4635 7.6819 47.3161 6.53455 45.9049 5.8155C44.3006 4.99805 42.2004 4.99805 38 4.99805H22C17.7996 4.99805 15.6994 4.99805 14.0951 5.8155C12.6839 6.53455 11.5365 7.6819 10.8175 9.09312C10 10.6975 10 12.7977 10 16.998V42.9981C10 47.1984 10 49.2986 10.8175 50.903C11.5365 52.3142 12.6839 53.4615 14.0951 54.1806C15.6994 54.9981 17.7996 54.9981 22 54.9981H30M40 39.9981L52.5 52.4981M52.5 39.9981L40 52.4981\" stroke=\"#00A77F\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n    <\/svg>",
+            "heading": "No Contract\/Cancel Anytime",
+            "content": "<p>Enjoy total freedom with our no-contract service. Cancel anytime without penalties or hassles – flexibility at your fingertips!<\/p>"
+          }
+        },
+        "item_tRgDFD": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"61\" height=\"60\" viewbox=\"0 0 61 60\" fill=\"none\">\n      <path d=\"M22.9995 29.998L27.9995 34.998L39.2495 23.748M23.5043 51.5002C24.3236 51.3919 25.1513 51.6141 25.8041 52.1169L28.8122 54.4252C29.8065 55.189 31.1897 55.189 32.1813 54.4252L35.3033 52.028C35.8866 51.5808 36.6226 51.3836 37.3503 51.4808L41.2556 51.9947C42.4971 52.1585 43.6942 51.4669 44.1748 50.3086L45.6774 46.6754C45.958 45.9948 46.4968 45.456 47.1773 45.1754L50.8103 43.6727C51.9686 43.1949 52.6602 41.9949 52.4963 40.7533L52.0019 36.9895C51.8936 36.1701 52.1158 35.3423 52.6185 34.6896L54.9266 31.6813C55.6905 30.6869 55.6905 29.3036 54.9266 28.312L52.5296 25.1898C52.0824 24.6065 51.8852 23.8704 51.9825 23.1427L52.4963 19.2372C52.6602 17.9956 51.9686 16.7984 50.8103 16.3179L47.1773 14.8151C46.4968 14.5346 45.958 13.9957 45.6774 13.3152L44.1748 9.68194C43.697 8.52364 42.4971 7.832 41.2556 7.99588L37.3503 8.50975C36.6226 8.60975 35.8866 8.41253 35.3061 7.9681L32.1841 5.57095C31.1897 4.80708 29.8065 4.80708 28.8149 5.57095L25.693 7.9681C25.1097 8.41253 24.3736 8.60975 23.6459 8.51531L19.7407 8.00143C18.4991 7.83755 17.302 8.5292 16.8215 9.6875L15.3216 13.3207C15.0383 13.9985 14.4995 14.5374 13.8217 14.8207L10.1887 16.3207C9.03047 16.8012 8.33886 17.9984 8.50273 19.24L9.01658 23.1455C9.11102 23.8732 8.91381 24.6093 8.4694 25.1898L6.07238 28.312C5.30856 29.3064 5.30856 30.6897 6.07238 31.6813L8.4694 34.8035C8.91659 35.3868 9.11379 36.1229 9.01658 36.8506L8.50273 40.7561C8.33886 41.9977 9.03047 43.1949 10.1887 43.6754L13.8217 45.1782C14.5022 45.4587 15.0411 45.9976 15.3216 46.6781L16.8243 50.3114C17.302 51.4697 18.5019 52.1613 19.7435 51.9974L23.5043 51.5002Z\" stroke=\"#00A77F\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n    <\/svg>",
+            "heading": "No Credit Check",
+            "content": "<p>Get started easily! We don’t run credit checks, ensuring quick and straightforward access to our services for everyone.<\/p>"
+          }
+        },
+        "item_WmNMKN": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"60\" height=\"60\" viewbox=\"0 0 60 60\" fill=\"none\">\n      <path d=\"M29.9995 48.75H30.0245M57.0155 21.7519C49.8984 15.23 40.4136 11.25 29.9992 11.25C19.5849 11.25 10.1001 15.23 2.98291 21.7519M11.8293 30.6074C16.6747 26.3391 23.0347 23.75 29.9995 23.75C36.9642 23.75 43.3243 26.3391 48.1696 30.6074M39.2453 39.4378C36.6976 37.4407 33.4874 36.25 29.9992 36.25C26.4582 36.25 23.2038 37.477 20.6379 39.529\" stroke=\"#00A77F\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n    <\/svg>",
+            "heading": "Unlimited Nationwide Data",
+            "content": "<p>Stay connected wherever you go. Our unlimited data plans cover the entire nation, so you're always in the fast lane, without data caps or limits.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_eCitzA",
+        "item_tRgDFD",
+        "item_WmNMKN"
+      ],
+      "settings": {
+        "bg_color": "#013127"
+      }
+    },
+    "flexpay_items_mt9RTm": {
+      "type": "flexpay-items",
+      "blocks": {
+        "item_VftaNw": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Frame_469279.svg",
+            "heading": "Comprehensive Subscription",
+            "content": "<p>All-in-One Internet Solution: Simplify your connectivity with a single subscription.<\/p>",
+            "hover_content": "<ul><li><strong>Complete Package:<\/strong> Setup, admin, tech support<\/li><li><strong>Smart Investment:<\/strong> More than modem rental; it's total internet care.<\/li><\/ul>"
+          }
+        },
+        "item_JF87mL": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Frame_469279_1.svg",
+            "heading": "Flexible Freedom",
+            "content": "<p><strong>No Strings Attached:<\/strong> Experience the liberty of no-contract internet.<\/p>",
+            "hover_content": "<ul><li><strong>Cancel Anytime:<\/strong> Hassle-free cancellation.<\/li><li><strong>No Extra Charges:<\/strong>  Return without fees.<\/li><\/ul>"
+          }
+        },
+        "item_hNQP9R": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/shield-dollar.svg",
+            "heading": "Risk-Free Trial",
+            "content": "<p><strong>Try Before You Commit:<\/strong> Test our service with a 7-day trial.<\/p>",
+            "hover_content": "<ul><li><strong>Satisfaction or Refund:<\/strong> Return if not satisfied.<\/li><li><strong>Quality Assurance:<\/strong> Dependable service trial.<\/li><\/ul>"
+          }
+        },
+        "item_LiPkQa": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/tool-01.svg",
+            "heading": "Easy Setup",
+            "content": "<p><strong>Quick and Simple:<\/strong> Hassle-free modem setup in seconds.<\/p>",
+            "hover_content": "<ul><li><strong>Self-Installation:<\/strong> No professional needed.<\/li><li><strong>Ready to Use:<\/strong>  Includes modem, WiFi, cable.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "item_VftaNw",
+        "item_JF87mL",
+        "item_hNQP9R",
+        "item_LiPkQa"
+      ],
+      "settings": {
+        "heading": "Why Choose Nomad Flex Pay",
+        "heading_color": "#013127",
+        "column_count": 4
+      }
+    },
+    "01home_icons_video_yXJzQa": {
+      "type": "01home-icons-video",
+      "settings": {}
+    },
+    "text_with_content_NFHxQ8": {
+      "type": "text-with-content",
+      "settings": {
+        "heading": "Getting Started With Nomad Flex Pay",
+        "content": "",
+        "bg_color": "#ffffff",
+        "text_color": "#013127"
+      }
+    },
+    "image_with_text_ifi8ey": {
+      "type": "image-with-text",
+      "settings": {
+        "content_size": "container-wrapper",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "image_size": "bigger",
+        "image_alignment": "image--reverse",
+        "image": "shopify:\/\/shop_images\/01_2e7f20fc-ee2b-4f6b-a0cb-42140876038d.webp",
+        "sub_heading": "Step 01",
+        "sub_heading_color": "#008061",
+        "heading": "Begin Your Affordable High-Speed Journey",
+        "description": "<p>Explore the most budget-friendly path to high-speed Internet. Browse our selection of modems, each an affordable gateway to reliable and rapid online access.<\/p><ul><li><strong>Cost-Effective Choices<\/strong>: Our range of modems is priced for affordability, ensuring you find the perfect fit for your budget.<\/li><li><strong>Informative Insights<\/strong>: Gain insights into each model, helping you choose the most economically advantageous option.<\/li><\/ul>",
+        "button_text": "GET STARTED NOW",
+        "button_link": "https:\/\/nomadinternet.com\/pages\/plans",
+        "button_text_color": "#ffffff",
+        "button_border_color": "#008061",
+        "button_bg_color": "#008061"
+      }
+    },
+    "image_with_text_nKtJnY": {
+      "type": "image-with-text",
+      "settings": {
+        "content_size": "container-wrapper",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "image_size": "bigger",
+        "image_alignment": "",
+        "image": "shopify:\/\/shop_images\/02_53653bb9-230f-4133-b80b-d9116009a018.webp",
+        "sub_heading": "STEP 02",
+        "sub_heading_color": "#008061",
+        "heading": "Unlock Affordable Flexibility",
+        "description": "<p>Select Nomad Flex Pay at checkout for an economical approach to high-speed Internet. This payment option is designed to be light on your wallet while providing robust internet connectivity.<\/p><ul><li><strong>Budget-Friendly Subscriptions<\/strong>: Enjoy the benefits of high-speed Internet with a subscription model that respects your financial boundaries.<\/li><li><strong>Comprehensive Yet Affordable<\/strong>: Get everything you need – from setup to support – at a cost that makes sense.<\/li><\/ul>",
+        "button_text": "GET STARTED NOW",
+        "button_link": "https:\/\/nomadinternet.com\/pages\/plans",
+        "button_text_color": "#ffffff",
+        "button_border_color": "#008061",
+        "button_bg_color": "#008061"
+      }
+    },
+    "image_with_text_rnEAF3": {
+      "type": "image-with-text",
+      "settings": {
+        "content_size": "container-wrapper",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "image_size": "bigger",
+        "image_alignment": "image--reverse",
+        "image": "shopify:\/\/shop_images\/03_8f8a590f-4182-4426-a1a0-2a02d78ce7ff.webp",
+        "sub_heading": "STEP 03",
+        "sub_heading_color": "#008061",
+        "heading": "Secure Setup, Sensible Spending",
+        "description": "<p>Post-order, we’ll require a simple identity verification step. This not only ensures transaction security but also aligns with our commitment to providing affordable, high-speed Internet access responsibly<\/p><ul><li><strong>Protection Without the Price Tag<\/strong>: Security is paramount, but it shouldn't come at a high cost. Our verification process is part of our affordable service promise.<\/li><li><strong>Efficient and Economical<\/strong>: Streamline your setup with an easy, cost-effective process that gets you connected faster.<\/li><\/ul>",
+        "button_text": "GET STARTED NOW",
+        "button_link": "https:\/\/nomadinternet.com\/pages\/plans",
+        "button_text_color": "#ffffff",
+        "button_border_color": "#008061",
+        "button_bg_color": "#008061"
+      }
+    },
+    "custom_faq_section_GJ4Pf8": {
+      "type": "custom-faq-section",
+      "blocks": {
+        "accordion_YBUxBH": {
+          "type": "accordion",
+          "settings": {
+            "header": "How does Nomad Flex Pay work?",
+            "content": "<p>Nomad Flex Pay revolutionizes rural internet access by offering an economically savvy modem rental service. This monthly subscription eliminates the need for costly purchases, ensuring you get high-speed internet at a fraction of the usual cost.<\/p><ul><li><strong>Rent Instead of Buy<\/strong>: Save money by renting a modem with a flexible, low-cost monthly plan.<\/li><li><strong>Nomad Flex Pay: <\/strong>More Than Just a Modem: The monthly fee for Nomad Flex Pay is a comprehensive package designed to provide a seamless and affordable high-speed internet experience. It goes beyond just the modem rental, offering a full spectrum of services to ensure your connectivity needs are met without financial burden.<\/li><li><strong>Extended Rental Period:<\/strong> Enjoy ongoing modem rental without the constraint of a fixed term.<\/li><li>All-Inclusive Services: The fee includes setup assistance, administrative support, and unlimited technical help.<\/li><li>Convenience Meets Affordability: This subscription service is tailored to your budget, offering high-speed internet access with full support, minus the hefty upfront costs.<\/li><\/ul>"
+          }
+        },
+        "accordion_J3qMee": {
+          "type": "accordion",
+          "settings": {
+            "header": "what does the monthly fee cover?",
+            "content": "<p>Nomad Flex Pay revolutionizes rural internet access by offering an economically savvy modem rental service. This monthly subscription eliminates the need for costly purchases, ensuring you get high-speed internet at a fraction of the usual cost.<\/p><ul><li><strong>Rent Instead of Buy<\/strong>: Save money by renting a modem with a flexible, low-cost monthly plan.<\/li><li><strong>Convenience Meets Affordability<\/strong>: Experience the ease of a subscription service that aligns with your budget, providing high-speed internet without the financial strain of a large upfront purchase plus full support.<\/li><\/ul>"
+          }
+        },
+        "accordion_CHt4Db": {
+          "type": "accordion",
+          "settings": {
+            "header": "How easy is it to set up Nomad Flex Pay?",
+            "content": "<p><strong>Experience Risk-Free Internet Access<\/strong>: Nomad Flex Pay offers a 7-day risk-free trial for all new subscribers. This period begins from the day you receive your modem, giving you ample time to assess the service's quality and suitability for your needs.<\/p><ul><li><strong>No-Risk Testing<\/strong>: Test the modem and internet service in your own space, ensuring it meets your expectations for high-speed connectivity.<\/li><li><strong>Hassle-Free Returns<\/strong>: If you're not completely satisfied during the trial period, you can return the modem for a full refund, no questions asked.<\/li><\/ul>"
+          }
+        },
+        "accordion_KzbDHA": {
+          "type": "accordion",
+          "settings": {
+            "header": "How easy is it to set up Nomad Flex Pay?",
+            "content": "<p>Streamlined and Straightforward Setup: Nomad Flex Pay is designed for effortless self-installation, ensuring you can quickly and easily start using your internet service.<\/p><ul><li>Quick Activation: The Flex Pay Modems are ready for action in under 60 seconds, making the setup process remarkably fast.<\/li><li>Complete Kit Included: Your Nomad Modem kit arrives with everything required, from the modem itself to the necessary cables, ensuring a smooth start.<\/li><\/ul>"
+          }
+        },
+        "accordion_tCYaw3": {
+          "type": "accordion",
+          "settings": {
+            "header": " Are there any contracts with Nomad Flex Pay?",
+            "content": "<p><strong>Flexibility Without Contracts<\/strong>: Nomad Flex Pay stands out for its no-contract approach, offering unmatched flexibility in internet services.<\/p><ul><li><strong>Cancel Anytime<\/strong>: You have the freedom to cancel your subscription whenever you choose, without facing any cancellation fees.<\/li><li><strong>Easy Return Policy<\/strong>: If you decide to cancel, simply return the modem. This policy emphasizes convenience and customer satisfaction.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_YBUxBH",
+        "accordion_J3qMee",
+        "accordion_CHt4Db",
+        "accordion_KzbDHA",
+        "accordion_tCYaw3"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions (FAQs)",
+        "sub_heading": "Here are our most frequently asked questions",
+        "bg_color": "",
+        "text_color": "#013127",
+        "accordion_color": "#282828"
+      }
+    },
+    "01home_signup_LkcmUe": {
+      "type": "01home-signup",
+      "settings": {
+        "heading": "Elevate Your Internet, Elevate Your Life",
+        "content": "Join Nomad's Flex Pay for Affordable, High-Speed Internet Access"
+      }
+    }
+  },
+  "order": [
+    "banner_slideshow_EMNJbG",
+    "usp_banner_GEKWz6",
+    "flexpay_items_mt9RTm",
+    "01home_icons_video_yXJzQa",
+    "text_with_content_NFHxQ8",
+    "image_with_text_ifi8ey",
+    "image_with_text_nKtJnY",
+    "image_with_text_rnEAF3",
+    "custom_faq_section_GJ4Pf8",
+    "01home_signup_LkcmUe"
+  ]
+}

@@ -1,0 +1,26 @@
+<section data-section-id="{{ section.id }}" data-section-type="page">
+  {{ page.content }}
+</section>
+
+{% schema %}
+{
+  "name": "Page Script",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Page Script"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if(window.innerWidth > 999){
+      document.querySelector('.internet-list').style.gridTemplateColumns = 'repeat(3, 1fr)';
+      document.querySelectorAll('.internet-box')[3].style.width = "152.5%";
+      document.querySelectorAll('.internet-box')[4].style.width = "152.5%";
+      document.querySelectorAll('.internet-box')[4].style.marginLeft = "52%";
+    }
+  })
+</script>

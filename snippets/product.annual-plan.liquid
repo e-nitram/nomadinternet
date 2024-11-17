@@ -1,0 +1,123 @@
+{% liquid
+  assign product_created_date = product.created_at | date: '%s'
+  assign current_date = 'now' | date: '%s'
+  assign seconds_in_30_days = 2592000
+  assign difference_in_seconds = current_date | minus: product_created_date
+  assign total_sold = 0
+  assign has_sale_tag = false
+  assign has_new_tag = false
+  assign has_hit_tag = false
+
+  for variant in product.variants
+    assign total_sold = total_sold | plus: variant.inventory_quantity
+  endfor
+
+  for tag in product.tags
+    if tag == 'sale'
+      assign has_sale_tag = true
+    elsif tag == 'new'
+      assign has_new_tag = true
+    elsif tag == 'hit'
+      assign has_hit_tag = true
+    endif
+  endfor
+%}
+
+<div class="product">
+  {% if product.featured_image %}
+    <div class="product__image">
+      <div class="product__labels">
+        {% if product.compare_at_price or has_sale_tag %}
+          <span class="product__label product__label--sale">Sale</span>
+        {% endif %}
+        {% if difference_in_seconds <= seconds_in_30_days or has_new_tag %}
+          <span class="product__label product__label--new">New</span>
+        {% endif %}
+        {% if total_sold >= 10 or has_hit_tag %}
+          <span class="product__label product__label--hit">Hit</span>
+        {% endif %}
+      </div>
+      {% assign fi = product.featured_image %}
+      <div class="ratio">
+        <img
+          src="{{ fi | image_url: width: 992 }}"
+          alt="{{ product.title }}"
+          loading="lazy"
+          width="{{ fi.width }}"
+          height="{{ fi.height }}"
+        >
+      </div>
+    </div>
+  {% endif %}
+  <div class="product__info">
+    <h3 class="product__title">{{ product.title }}</h3>
+    {% if product.price_varies %}
+      <div class="product__price">
+        <div class="product__from-price">From: {{ product.price }}</div>
+      </div>
+    {% else %}
+      <div class="product__price">
+        {% if product.compare_at_price %}
+          {% capture discount %}
+						{{ product.compare_at_price_max | minus: product.price }}
+					{% endcapture %}
+          <div class="product__retail-price">
+            Retail Annual Price:
+            <strong>
+              <s>{{ product.compare_at_price | money }}</s>
+            </strong>
+          </div>
+          <div class="product__saving-price">
+            Promotional Discount: <strong>-{{ discount | money }}</strong>
+          </div>
+        {% endif %}
+        <div class="product__actual-price">
+          {% if months == 12 %}
+            Annual Prepay Price: <strong>{{ product.price | money }}</strong>
+          {% elsif months == 6 %}
+            Bi-Annual Prepay Price: <strong>{{ product.price | money }}</strong>
+          {% endif %}
+        </div>
+        {% if product.compare_at_price %}
+          <div class="product__monthly-saving-price">
+            Reduces Monthly Price to:
+            <strong>
+              {% assign result_string = product.compare_at_price | minus: discount | divided_by: months | money %}
+              {% assign result_digit = result_string | replace: '$', '' %}
+              {{- result_digit | ceil | times: 100 | money -}}
+            </strong>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+    <form method="post" action="/cart/add" class="add-to-cart-form">
+      <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+      <input type="hidden" id="quantity" name="quantity" value="1">
+      <button type="submit" class="btn sm wide add-to-cart-btn">Add to Cart</button>
+      <a href="{{ product.url }}" class="btn sm outline wide">Learn More</a>
+    </form>
+    <div class="awesome-countdown" data-hours="48">
+      <div class="row align-center">
+        <div class="col">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="countdown"></div>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-bar-inner"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,188 @@
+<script>
+  // Find any GET param in current page url
+  function findGetParameter(parameterName) {
+    var result = null,
+      tmp = [];
+    var items = location.search.substr(1).split('&');
+    for (var index = 0; index < items.length; index++) {
+      tmp = items[index].split('=');
+      if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    }
+    return result;
+  }
+
+  // Input [name="checkout[shipping_address][address1]"]
+  var address1 = findGetParameter('checkout[shipping_address][address1]');
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // If an input we got above exists then we put fount addres1 into the field
+    var address1Input = document.getElementById('form-address-1');
+    if (address1Input) {
+      address1Input.value = address1;
+    }
+  });
+</script>
+
+{% liquid
+  assign modem_id = page.metafields.custom.modem_id
+  assign plan_price = page.metafields.custom.plan_price
+  assign sim_activation_id = page.metafields.custom.sim_activation_id
+%}
+
+{% for product in collections.all.products %}
+  {% if product.id == modem_id %}
+    {% assign modem_price = product.price %}
+  {% endif %}
+{% endfor %}
+
+<div class="preorder-page">
+  <div class="preorder-page__content">
+    <div class="preorder-page__preview hidden-md-d">
+      {% if page.metafields.custom.image %}
+        {{ page.metafields.custom.image | image_url: width: '1080' | image_tag }}
+      {% endif %}
+    </div>
+
+    <div class="preorder-page__form-place">
+      <h1 class="preorder-page__title">{{ page.title }}</h1>
+
+      {% if page.metafields.custom.subtitle != blank %}
+        <h2 class="preorder-page__subtitle">{{ page.metafields.custom.subtitle }}</h2>
+      {% endif %}
+
+      <div class="preorder-page__preview hidden-lg-u">
+        {% if page.metafields.custom.image %}
+          {{ page.metafields.custom.image | image_url: width: '960' | image_tag }}
+        {% endif %}
+      </div>
+
+      <div class="preorder-page__description">{{ page.content }}</div>
+
+      <form action="/cart/{{ page.metafields.custom.product_and_sim_activatin_ids }}" class="preorder-page__form">
+        <div class="form-group">
+          <h4 class="form-group__title">Contact Infirmation</h4>
+          <div class="row">
+            <div class="col">
+              <div class="form-control">
+                <input type="text" name="checkout[shipping_address][first_name]" placeholder="First Name" required>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-control">
+                <input type="text" name="checkout[shipping_address][last_name]" placeholder="Last Name" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-control">
+            <input type="email" name="checkout[email]" placeholder="Email" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h4 class="form-group__title">Shipping address</h4>
+          <div class="form-group__subtitle">
+            <span style="color:var(--theme-color)">Please enter a valid shipping address below</span>
+          </div>
+
+          <div class="form-control">
+            <input
+              type="text"
+              id="form-address-1"
+              name="checkout[shipping_address][address1]"
+              placeholder="Shipping Address"
+              required
+            >
+          </div>
+
+          <div class="form-control">
+            <input
+              type="text"
+              name="checkout[shipping_address][address2]"
+              placeholder="Shipping Address Line 2 (Optional, e.g. Apt / Building)"
+              required
+            >
+          </div>
+
+          <div class="form-control">
+            <input
+              type="text"
+              name="checkout[shipping_address][city]"
+              placeholder="City"
+              required
+            >
+          </div>
+
+          <div class="form-control">
+            <input
+              type="text"
+              name="checkout[shipping_address][province]"
+              placeholder="State / Province"
+              required
+            >
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="form-control">
+                <select name="checkout[shipping_address][country]" disabled required>
+                  <option value="United States" selected>United States</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-control">
+                <input type="text" name="checkout[shipping_address][zip]" placeholder="Zip / Postal Code" required>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-control checkbox-control">
+          <input type="checkbox" name="actual_address" id="actual_address">
+          <label for="actual_address">
+            This address cannot be validated, but I know it is correct. Please ship to this address.
+          </label>
+        </div>
+
+        <div class="preorder-page__form--billing-info">
+          <ul>
+            {% comment %}
+              <li>
+                <strong>Deposit</strong>
+                <span>99.00$</span>
+              </li>
+            {% endcomment %}
+            <li>
+              <strong>Service</strong>
+              <span>{{ plan_price | money }}/mo</span>
+            </li>
+            <li>
+              <strong>Hardware</strong>
+              <span>{{ modem_price | money }}</span>
+            </li>
+            <li>
+              <strong>Shipping & Handling</strong>
+              <span>Check with the manager</span>
+            </li>
+          </ul>
+
+          <div class="preorder-page__form--billing-footer">
+            <strong>Preliminary calculation</strong>
+            <span>{{ modem_price | money }}</span>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <button class="billing-btn" type="submit">Place Order</button>
+        </div>
+
+        <div class="preorder-page__privacy">
+          By placing this order, I agree to the Nomad Internet Terms Of Service and
+          <a href="/pages/privacy-policy">Privacy Policy</a> . You can cancel the recurring payment at any time via your
+          Nomad Internet Account. Nomad Internet may update its Service Terms and pricing as needed after providing the
+          required notice to you.
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,182 @@
+<div class="container">
+    <div class="section-title" style="margin-top: 20px;">
+        {% if section.settings.title != blank %} 
+            <h2 class="page-title" style="text-align: center;">{{ section.settings.title }}</h2>
+         {% endif %}
+        {% if section.settings.subtitle != blank %} 
+            <p>{{ section.settings.subtitle }}</p>
+        {% endif %}
+        {% if section.settings.popuptext != blank %}
+            <a class="open-popup">{{ section.settings.popuptext }}</a>
+        {% endif %}
+    </div>
+<div class="product-container">
+    <div class="product-card">
+        <div class="product-image">
+          {%- if section.settings.image_1 != blank -%}
+            {{- section.settings.image_1 | image_url: width: section.settings.width | image_tag: loading: 'lazy', alt: 'nomad 1' -}}
+          {% endif %}
+        </div>
+
+      <div class="product_details">
+        <div>
+          <h4 style="display: inline-flex; align-items: center;"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Rectangle_992.png?v=1715290447" width=9 height=9 alt="bullet_point 1" style="margin-right: 5px; height: 9px">{{ section.settings.heading_1 }}</h4>
+        </div>
+        <h1>{{ section.settings.subheading_1 }}</h1>
+        <p class="product-price">{{ section.settings.price_1 }} <span class="original-price">{{ section.settings.oprice_1 }}</span></p>
+          <a class="select-button" href="{{ section.settings.url_1 }}">SELECT</a>
+        </div>
+      </div>
+        
+    <div class="product-card popular">
+        <div class="product-image">
+          {%- if section.settings.image_2 != blank -%}
+            {{- section.settings.image_2 | image_url: width: section.settings.width | image_tag: loading: 'lazy', alt: 'nomad 2' -}}
+          {% endif %}
+        </div>
+
+      <div class="product_details">
+        <div></div>
+        <h4 style="display: inline-flex; align-items: center;"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Rectangle_992.png?v=1715290447" width=9 height=9 alt="bullet_point 2" style="margin-right: 5px; height: 9px">{{ section.settings.heading_2 }}</h4>
+        
+        <h1>{{ section.settings.subheading_2 }}</h1>
+        <p class="product-price">{{ section.settings.price_2 }} <span class="original-price">{{ section.settings.oprice_2 }}</span></p>
+          <a class="select-button" href="{{ section.settings.url_1 }}">SELECT</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            {%- if section.settings.image_3 != blank -%}
+              {{- section.settings.image_3 | image_url: width: section.settings.width | image_tag: loading: 'lazy', alt: 'nomad 3' -}}
+          {% endif %}
+        </div>
+
+      <div class="product_details">
+        <div>
+          <h4 style="display: inline-flex; align-items: center;"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Rectangle_992.png?v=1715290447" width=9 height=9 alt="bullet_point 3" style="margin-right: 5px; height: 9px">{{ section.settings.heading_3 }}</h4>
+        </div>
+        <h1>{{ section.settings.subheading_3 }}</h1>
+        <p class="product-price">{{ section.settings.price_3 }} <span class="original-price">{{ section.settings.oprice_3 }}</span></p>
+        <a class="select-button" href="{{ section.settings.url_1 }}">SELECT</a>
+      </div>
+        
+    </div>
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Explore Products",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "popuptext",
+        "label": "Popup Text"
+      },
+      {
+      "type": "image_picker",
+      "id": "image_1",
+      "label":"Image 1"
+      },
+      {
+        "type": "text",
+        "id": "heading_1",
+        "label": "Heading 1"
+      },
+      {
+        "type": "text",
+        "id": "subheading_1",
+        "label": "Subheading 1"
+      },
+      {
+        "type": "text",
+        "id": "price_1",
+        "label": "Price 1"
+      },
+      {
+        "type": "text",
+        "id": "oprice_1",
+        "label": "Original Price 1"
+      },
+      {
+        "type": "url",
+        "id": "url_1",
+        "label": "Url 1"
+      },
+      {
+      "type": "image_picker",
+      "id": "image_2",
+      "label":"Image 2"
+      },
+      {
+        "type": "text",
+        "id": "heading_2",
+        "label": "Heading 2"
+      },
+      {
+        "type": "text",
+        "id": "subheading_2",
+        "label": "Subheading 2"
+      },
+      {
+        "type": "text",
+        "id": "price_2",
+        "label": "Price 2"
+      },
+      {
+        "type": "text",
+        "id": "oprice_2",
+        "label": "Original Price 2"
+      },
+      {
+        "type": "url",
+        "id": "url_2",
+        "label": "Url 2"
+      },
+      {
+      "type": "image_picker",
+      "id": "image_3",
+      "label":"Image 3"
+      },
+      {
+        "type": "text",
+        "id": "heading_3",
+        "label": "Heading 3"
+      },
+      {
+        "type": "text",
+        "id": "subheading_3",
+        "label": "Subheading 3"
+      },
+      {
+        "type": "text",
+        "id": "price_3",
+        "label": "Price 3"
+      },
+      {
+        "type": "text",
+        "id": "oprice_3",
+        "label": "Original Price 3"
+      },
+      {
+        "type": "url",
+        "id": "url_3",
+        "label": "Url 3"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Explore Products"
+      }
+    ]
+  }
+{% endschema %}

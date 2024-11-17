@@ -1,0 +1,72 @@
+{{ '04how-it-works.css' | asset_url | stylesheet_tag }}
+
+<div class="how-it-works" style="background-color: {{ section.settings.bg_color }}; --text-color: {{ section.settings.text_color }};">
+  <div class="container">
+    <div class="list">
+      {% for block in section.blocks %}
+        {% if block.settings.image != blank and block.settings.title != blank %}
+          <div class="item">
+            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}"/>
+            <h3 class="title">{{ block.settings.title }}</h3>
+            {% if block.settings.content != blank %}
+              <div class="content">{{ block.settings.content }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "How it works",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Color settings"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#101010"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#fff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon-item",
+      "name": "Icon item",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How it works"
+    }
+  ]
+}
+{% endschema %}

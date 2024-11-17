@@ -1,0 +1,207 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function openTab(tabName) {
+  // handle active button state
+  $('#tab-holder .tab-' + tabName).addClass('active').siblings('.active').removeClass('active');
+  // handle tab content switching
+  $('.tab-content').hide().filter('#' + tabName).show()
+}
+
+var vars = {}, hash;
+    var q = document.URL.split('?')[1];
+    if(q != undefined){
+        q = q.split('&');
+        for(var i = 0; i < q.length; i++){
+            hash = q[i].split('=');
+            vars[hash[0]] = hash[1];
+        }
+}
+
+$(document).ready(function(){
+   var tabName = vars['passTab'];
+   // commented out because it won't work in this demo
+   // openTab(tabName);
+   openTab('xmas')
+})
+</script>
+
+<section class="sec_drop12">
+<div class="container">
+<div id="tab-holder">
+    <a href="#everyday1"><button class="tabs tab-everyday active" onclick="openTab('everyday1')"><span>Features</span></button></a>
+    <a href="#sunday"> <button class="tabs tab-sunday" onclick="openTab('sunday')"><span>Specifications</span></button></a>
+
+</div>   
+
+<div id="everyday1" class="tab-content active">
+  <div class="wire_flx">
+  <div class="wire_1">
+:: 2x2 MIMO Wi-Fi 6 supporting up to 30 wireless connections <br>
+:: 1 Gbps LAN port <br>
+:: 1 USB-C port <br>
+:: Remote configuration and management<br>
+  </div>
+  <div class="wire_2">
+  :: Easy-to-use smartphone app to optimize placement, simplify installation process, and manage settings <br>
+:: Enterprise-grade security-AES 256 encryption, password protection, primary and guest networks
+</div>
+  </div>
+</div>
+
+<div id="sunday" class="tab-content">
+<div class="wire_flx">
+  <div class="wire_1">
+ :: Chipset: Qualcomm® SnapdragonTM SDX55 <br>
+:: Network technology: <br>
+<ul class="list_123">
+<li>50 sub-6 GHz and 40 LTE Cat 22</li> 
+<li>4x4 MIMO sub-6 GHz</li>
+<li>256 QAM</li> 
+<li>HSPA+/UMTS</li> 
+<li>CBRS</li> 
+</ul>
+    <br>
+:: Wi-Fi version: Wi-Fi 6 (802.11 a/b/g/n/ac/ax) <br>
+Wi-Fi connections: Up to 30 connected devices <br>
+Wi-Fi bands: Real simultaneous dual-band <br>
+Wi-Fi (2.4GHz & 5GHz) <br>
+:: Connectors/ports: <br>
+    <ul class="list_123">
+<li>1 LAN port</li> 
+<li>1 USB-C port </li>
+    </ul><br>
+:: Dimensions: 6.3" x 2.8" x 2.4" (160 mm x 71.6 mm x 60 mm)<br> 
+:: Weight: 12 oz (350 g) <br>
+:: Operating temperature: 32° to 113°F (0°C to 45°C) <br>
+:: SIM type:  <br>
+    <ul class="list_123">
+<!-- <li>FX2000 - Single SIM (4FF Nano) </li> -->
+<li>Dual SIM (4FF Nano)</li>
+    </ul>
+  </div>
+  <div class="wire_2">
+ :: Security <br>
+    <ul class="list_123">
+<li>Secure Boot</li>
+<li>Admin Security</li>
+<li>AES 256 Encryption</li>
+<li>Security Hardened Web Interface</li>
+<li>Password Hash</li>
+<li>Session Timeout</li>
+<li>Wi-Fi On/Off Control</li>
+<li>Incorrect Password Lockout</li>
+<li>Block Factory Reset</li>
+<li>Encrypted Configuration Backup/Restore</li>
+<li>Advanced Firewall</li>
+    </ul> <br>
+:: Wi-Fi Security <br>
+Wi-Fi Security (WPA/WPA2/WPA3) <br>
+Wi-Fi Protected Setup (WPS 2.0) <br>
+Wi-Fi Privacy Separation <br>
+Configurable DNS <br>
+MAC Address Filtering <br>
+NAT Firewall <br>
+Port Forwarding <br>
+Port Filtering <br>
+:: Anti CSRF (OWASP) <br>
+:: OpenVPN<br>
+</div>
+  </div>
+</div>
+
+ <div id="xmas" class="tab-content">
+  <div class="wire_flx">
+  <div class="wire_1">
+  :: 2x2 MIMO Wi-Fi 6 supporting up to 30 wireless connections <br>
+:: 1 Gbps LAN port <br>
+:: 1 USB-C port <br>
+:: Remote configuration and management<br>
+  </div>
+  <div class="wire_2">
+  :: Easy-to-use smartphone app to optimize placement, simplify installation process, and manage settings <br>
+:: Enterprise-grade security-AES 256 encryption, password protection, primary and guest networks
+</div>
+  </div>
+</div> 
+</div>
+</section>
+<style>
+    .sec_drop12 {
+    background: #fff!important;
+    padding: 60px 0px 60px 0px;
+}
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+.tabs {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 64px;
+    letter-spacing: 0.5px;
+    color: #757575;
+    background: #fff;
+    border: none;
+}
+.tabs.active:hover {
+border-bottom: 5px solid #109D59;
+    transform: rotate(0.17deg);
+}
+  .wire_1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: 0.5px;
+    width: 100%;
+    max-width: 730px;
+    padding-top: 40px;
+    color: #8A8A8A;
+}
+  .wire_2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: 0.5px;
+    width: 100%;
+    max-width: 850px;
+    padding-top: 40px;
+    color: #8A8A8A;
+}
+  .wire_flx {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+  .list_123 li {
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-family: poppins;
+}
+  #tab-holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+/*     max-width: 1590px; */
+    border-top: 5px solid rgba(16, 157, 89, 0.2);
+    border-bottom: 5px solid rgba(16, 157, 89, 0.2);
+}
+ .sec_drop12 #tab-holder a {
+    background: #fff;
+    margin-top: 90px;
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+       max-width: 1590px;
+}
+</style>

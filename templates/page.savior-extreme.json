@@ -1,0 +1,366 @@
+{
+  "sections": {
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "5955b223-daf1-4da5-a1d9-0ddf13faaa70": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_42b45a7c-b8dd-40cb-9a5b-fe49ce717aa8.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "5955b223-daf1-4da5-a1d9-0ddf13faaa70"
+      ],
+      "settings": {
+        "title": "<span>Place a pre-order for<\/span> <br>Nomad Savior Extreme",
+        "description": "<p>The Nomad Savior Extreme is a self-contained system with a built-in Nomad Air! Take your internet connection completely off-grid with this solar powered battery. <\/p><p>*Ship in April 2023<\/p>",
+        "max_width": 1000,
+        "button_class": "solid",
+        "button_text": "order now",
+        "button_url": "shopify:\/\/pages\/preorder",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "b93c2e77-4702-4325-b4e2-cc1299560829": {
+      "type": "awesome-section",
+      "blocks": {
+        "3bf9f140-b5d8-4857-8c79-2de05b79bdcf": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Choose Your Plan",
+            "url": "#shopify-section-template--14541975060538__b2e34e50-c765-456a-ae31-7cf5deaad630",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "3bf9f140-b5d8-4857-8c79-2de05b79bdcf"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Group_1000007351.jpg",
+        "title_tag": "h2",
+        "title": "Completely Off-Grid",
+        "description": "<p>The Nomad Savior can be used outdoors anywhere, in any weather condition, and even without power!<\/p>"
+      }
+    },
+    "87a97ef4-c318-426b-a5d9-958d769daf68": {
+      "type": "awesome-section",
+      "blocks": {
+        "1761ed4c-23b6-472a-91c3-f1dd8a007425": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Choose Your Plan",
+            "url": "#shopify-section-template--14541975060538__b2e34e50-c765-456a-ae31-7cf5deaad630",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "1761ed4c-23b6-472a-91c3-f1dd8a007425"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/30.jpg",
+        "title_tag": "h2",
+        "title": "Charge your Other Devices Too!",
+        "description": "<p>The Nomad Savior Extreme has the ability to charge a variety of electronic devices including mobile phones and laptops, thanks to its 20W USB Type-C fast charge port and large-capacity battery.<\/p>"
+      }
+    },
+    "5e73c9c7-b848-4699-aeed-6010e280f675": {
+      "type": "awesome-section",
+      "blocks": {
+        "6869c770-0ebf-4fa6-8ff9-d13b9efc464e": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Choose Your Plan",
+            "url": "#shopify-section-template--14541975060538__b2e34e50-c765-456a-ae31-7cf5deaad630",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "6869c770-0ebf-4fa6-8ff9-d13b9efc464e"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/29_4c9edc2f-5be2-425b-9732-ba12c402f644.jpg",
+        "title_tag": "h2",
+        "title": "Mounts to Anything",
+        "description": "<p>The Nomad Savior Extreme has a standalone solar panel Li-Ion battery kit making it your trusted power-supply no matter where you are! Camping, working in the oil fields or at a construction site or even for RV’s and outdoor music festivals!<\/p>"
+      }
+    },
+    "d5c4823b-8639-4f73-ad01-1e23304996a5": {
+      "type": "awesome-section",
+      "blocks": {
+        "2542f75a-b86c-4beb-811b-34ba960af384": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Choose Your Plan",
+            "url": "#shopify-section-template--14541975060538__b2e34e50-c765-456a-ae31-7cf5deaad630",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "2542f75a-b86c-4beb-811b-34ba960af384"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/31_5f89b863-8b03-496f-bf01-3c73d67f6d43.jpg",
+        "title_tag": "h2",
+        "title": "Completely Waterproof",
+        "description": "<p>The Nomad Savior Extreme is completely waterproof, rugged, and can operate in temperatures all the way to 140°F. No matter the environment, you can trust in your Nomad Savior.<\/p><p>The outer components of your solar panel are protected with waterproof measures, and the inner core of the battery compartment is protected with a sealed rubber ring. Our team tested the waterproof performance and the Nomad Savior passed every time!<\/p>"
+      }
+    },
+    "1bd54244-a254-4c85-814d-4976a3e0091d": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "center",
+        "columns": "2",
+        "heading_text": "Comparison “Extreme”",
+        "text": "<p>Material: Monocrystalline Silicon<\/p><p>Item Dimensions LxWxH: 28.7 x 33 x 7 inches<\/p><p>Connector Type: MC4<\/p><p>* 38Ah Li-ion Battery<\/p><p>Rated capacity 38Ah\/456Wh<br\/>Nominal voltage 12V<br\/>Limited charge voltage 12.6V<br\/>Charge current 5A<br\/>Working temperature -4℉~+140℉<br\/>Weight 10.03 (lb)<br\/>Dimension 18.3*5.7*4.33 (inch)<\/p>",
+        "text_2": "<p>* 60W Monocrystalline Solar Panel<\/p><p>Max. power (Pmax) 60W<br\/>Max. power point voltage (Vmp) 18.0V<br\/>Max. power point current (Imp) 3.33A<br\/>Open circuit voltage (Voc) 21.1V<br\/>Short circuit current (Isc) 3.79A<br\/>Working temperature -4℉~+140℉<br\/>Weight 11.68 (lb)<br\/>Dimension 26.38*23.35*2.28 (inch) (The frame is included)<\/p>",
+        "text_align": "left"
+      }
+    },
+    "b2e34e50-c765-456a-ae31-7cf5deaad630": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#101010",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2 style=\"text-transform:uppercase\" class=\"text-center\">Systems in comparison<\/h2>"
+      }
+    },
+    "839bcb72-b892-4561-bc04-be4f055672f9": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "73cd03d8-46ba-4563-a40b-47d3943faa7b": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_2_c3056cd2-a1a6-44e2-a0e6-d172ac675e33.jpg",
+            "title_tag": "h2",
+            "title": "Nomad Savior Extreme $599",
+            "text": "<p>Features:<\/p><ol><li>Solar-powered convenience on-the-go: Lightweight and compact, this panel is perfect for travelers who need to stay connected.<\/li><li>Sun-powered plug and play: No installation needed. Simply place the panel in direct sunlight to start charging.<\/li><li>Uninterrupted off-the-grid experience: Stay connected in remote areas without worrying about losing signal or battery life.<\/li><li>Endless connectivity with up to data: Enjoy 5G and 4G LTE connectivity wherever you go in the US.<\/li><li>Rain or shine, it's fine: With waterproof protection, you can use this panel in any weather condition.<\/li><\/ol><p><em>*Tax and Shipping aren't included in price<\/em><\/p>",
+            "button_text": "order now",
+            "button_url": "shopify:\/\/pages\/preorder",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "d49c9ae3-42bb-42e7-95fd-df2288a1f1c1": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_2.jpg",
+            "title_tag": "h2",
+            "title": "Nomad Savior $499",
+            "text": "<p>Features:<\/p><ol><li>Power up the possibilities: reach remote locations and power up all your devices with ease, thanks to this solar panel's adaptability and versatility.<\/li><li>Simple setup, maximum results: installation is a breeze with this solar panel's complete accessory kit and clear instructions.<\/li><li>Work and play, without interruption: with a stable internet signal, you can stay connected and productive, no matter where you are.<\/li><li>Boundless coverage, up to potential: take advantage of 5G and 4G LTE coverage across the US, and never worry about running out of power.<\/li><li>Built to last, no matter what: this solar panel's weather-resistant design protects it from moisture and extreme temperatures, ensuring long-lasting performance.<\/li><\/ol><p><em>*Tax and Shipping aren't included in price<\/em><\/p>",
+            "button_text": "order now",
+            "button_url": "shopify:\/\/pages\/preorder",
+            "button_text_2": "Learn More",
+            "button_url_2": "shopify:\/\/pages\/nomad-savior"
+          }
+        }
+      },
+      "block_order": [
+        "73cd03d8-46ba-4563-a40b-47d3943faa7b",
+        "d49c9ae3-42bb-42e7-95fd-df2288a1f1c1"
+      ],
+      "custom_css": [
+        "em {display: inline-block; border-top: 1px dashed #444; padding: 0.8em 0 0; color: tomato;}"
+      ],
+      "settings": {
+        "columns_count": "2"
+      }
+    },
+    "8c7b41b4-1adf-4de2-98d0-f37b01da2c03": {
+      "type": "lp-8",
+      "blocks": {
+        "30d20d23-cb17-409b-9984-de817d0d8dbe": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8_93013238-1cc3-4e43-8064-de7ab2fb8a8b.jpg",
+            "url": "",
+            "target_blank": false
+          }
+        },
+        "e2dc76f5-732f-4479-995b-b93b9e4c3309": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9_541b1698-3831-4dbe-b4fd-6b8a9367f414.jpg",
+            "url": "",
+            "target_blank": false
+          }
+        },
+        "fcb262a1-1138-4f87-9b78-79ffc4ea93b5": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10_686ad082-f2f9-429b-8774-8e75c30b010c.jpg",
+            "url": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "30d20d23-cb17-409b-9984-de817d0d8dbe",
+        "e2dc76f5-732f-4479-995b-b93b9e4c3309",
+        "fcb262a1-1138-4f87-9b78-79ffc4ea93b5"
+      ],
+      "settings": {
+        "title": "Who suits Nomad Savior"
+      }
+    },
+    "102e9dbd-d85b-45b7-8a99-db0f47806e9d": {
+      "type": "lp-16",
+      "blocks": {
+        "c4dc470f-b6a1-4706-a28e-70f47c9c9033": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service<br\/> Provider. We are focused on providing High-Speed wireless Internet to <br\/>rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "1a037a05-75d2-41d1-98ab-be5923a923e2": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by <br\/>transmitting wireless Internet access directly to your home, business, <br\/>and even while traveling! We combine the latest technology with <br\/>Verizon’s service to provide high-speed internet to rural locations and <br\/>traveling nomads. We offer a variety <br\/>of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "25d1f870-3d9f-46e7-9681-551f9f2569d5": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "9a321a6a-1846-4206-bc22-c1141efabcd4": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet secure?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. <br\/>Multiple layers of encryption, enhanced Wi-Fi security, firewall <br\/>filtering, built-in VPN support, IT admin controls, and other features <br\/>deliver strong security at every level.<\/p>"
+          }
+        },
+        "f19b5554-6c52-4d47-a584-d482cadc43a0": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will <br\/>provide you with robust and reliable internet for all your gaming needs.<br\/> No matter your plan, you can expect fast internet with low ping rates <br\/>and latency.<\/p>"
+          }
+        },
+        "c54f3b9d-0c25-469d-81b2-aa6016f65073": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, <br\/>low-latency service they have at home to any location Nomad Internet has<br\/> coverage. Nomad Internet for RVers\/travelers will allow users to pause <br\/>and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c4dc470f-b6a1-4706-a28e-70f47c9c9033",
+        "1a037a05-75d2-41d1-98ab-be5923a923e2",
+        "25d1f870-3d9f-46e7-9681-551f9f2569d5",
+        "9a321a6a-1846-4206-bc22-c1141efabcd4",
+        "f19b5554-6c52-4d47-a584-d482cadc43a0",
+        "c54f3b9d-0c25-469d-81b2-aa6016f65073"
+      ],
+      "settings": {
+        "title": "Answers to the most frequently asked questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6": {
+      "type": "lp-20",
+      "blocks": {
+        "888c7849-52c8-4eeb-9b8e-9589d5f6cf19": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Christina_Callhoun.jpg",
+            "name": "Christina Calhoun",
+            "text": "Working in a rural area, wireless broad band providers are the only feasible option for a fast, reliable internet connection. I recently signed up with Nomad Internet and I couldn't be happier with it. They provided us with a modem which was easy to set up and it connects to their high-speed wireless service with no problems. My family and I can stream movies, play online games, even video chat without any interruptions - it's been a real game changer for us. Highly recommend Nomad Internet as your wireless broadband provider!",
+            "link": ""
+          }
+        },
+        "f4633798-4ebc-4171-9078-dba815e9023a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Lauren_Morris.jpg",
+            "name": "Lauren Morris",
+            "text": "I recently switched to Nomad Internet as my wireless broad band provider and I can only recommend it! It provides high speed with reliable coverage, even in the rural areas where I sometimes need to work remotely. Everything works great - no device issues, no service outages, and many opportunities for customization. It's a dream come true for remote workers like me. If you're looking for a wireless internet provider with reliable service then look no further than Nomad Internet - you won't be disappointed!",
+            "link": ""
+          }
+        },
+        "e3a6154a-bdb5-460e-8688-2e3cdb7682ef": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Michael_Hancock.jpg",
+            "name": "Michael Hancock",
+            "text": "I recently tried Nomad internet and it was great! As a digital nomad who is often on the go, I needed a reliable internet connection that would keep up with my mobile lifestyle. Nomad internet came to the rescue by providing high speed internet even in remote or rural areas. Their modems do an excellent job at providing a stable internet connection that can keep me connected even in the most isolated places. All in all I recommend Nomad internet for anyone looking for internet on the go providers.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "888c7849-52c8-4eeb-9b8e-9589d5f6cf19",
+        "f4633798-4ebc-4171-9078-dba815e9023a",
+        "e3a6154a-bdb5-460e-8688-2e3cdb7682ef"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "f9edaed5-c585-40ef-a402-bf4f5c319745": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "awesome-first-screen",
+    "b93c2e77-4702-4325-b4e2-cc1299560829",
+    "87a97ef4-c318-426b-a5d9-958d769daf68",
+    "5e73c9c7-b848-4699-aeed-6010e280f675",
+    "d5c4823b-8639-4f73-ad01-1e23304996a5",
+    "1bd54244-a254-4c85-814d-4976a3e0091d",
+    "b2e34e50-c765-456a-ae31-7cf5deaad630",
+    "839bcb72-b892-4561-bc04-be4f055672f9",
+    "8c7b41b4-1adf-4de2-98d0-f37b01da2c03",
+    "102e9dbd-d85b-45b7-8a99-db0f47806e9d",
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6",
+    "f9edaed5-c585-40ef-a402-bf4f5c319745"
+  ]
+}

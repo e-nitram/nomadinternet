@@ -1,0 +1,148 @@
+.raptor-table {
+  background-image: var(--bg-mobile-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.raptor-table::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000f2;
+  z-index: 0;
+}
+
+.raptor-table .container {
+  z-index: 1;
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.raptor-table .container .sub-heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.97px;
+  font-family: "Rajdhani";
+  margin-bottom: 12px;
+  color: #00b589;
+  text-transform: uppercase;
+}
+
+.raptor-table .container .heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  font-family: "Rajdhani";
+  margin: 0;
+  margin-bottom: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.raptor-table .table {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.raptor-table .table .table-wrapper {
+  max-width: calc(100vw - 48px);
+  width: 100%;
+  overflow-x: auto;
+}
+
+.raptor-table .table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.raptor-table table td, th {
+  border: 1px solid #FFFFFF30;
+  text-align: left;
+  padding: 12px 20px;
+  font-family: "DIN";
+  color: #fff;
+  font-size: 18px;
+  min-width: 110px;
+}
+
+.raptor-table table td.icon  {  
+  min-width: 200px;
+}
+
+.raptor-table table .sticky {
+  background-color: #282828;
+  color: #fff;
+  text-transform: uppercase;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+}
+
+.raptor-table table .sticky td {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.raptor-table table .sticky td.active.text {
+  background-color: #008061;
+  border-color: #008061;
+}
+
+
+.raptor-table table .table-column td.item.active {
+  background-color: #00806142;
+  border-color: #00806142;
+}
+
+@media (min-width: 1024px) {
+  .raptor-table {
+    background-image: var(--bg-image);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .raptor-table .table .table-wrapper {
+    overflow: visible;
+  }
+
+  .raptor-table .container .sub-heading {
+    font-size: 20px;
+    line-height: 26.52px;
+  }
+  
+  .raptor-table .container .heading {
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .raptor-table table .sticky td {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+
+  .raptor-table .sticky td.icon {
+    min-width: 250px;
+  }
+
+  .raptor-table table td {
+    min-width: 190px;
+  }
+}

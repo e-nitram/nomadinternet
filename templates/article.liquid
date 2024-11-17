@@ -1,0 +1,133 @@
+<div class="container">
+	{% render 'breadcrumb' %}
+
+	<div class="row">
+		<div class="col-xl-9 col-lg-8 col-12">
+			<article class="article article--single" itemscope itemtype="http://schema.org/Article">
+				<header class="article__header">
+					<h1 class="article__title">{{ article.title }}</h1>
+					<div class="article__meta">
+						{% capture author %}<strong>{{ article.author }}</strong>{% endcapture %}
+						{% capture date %}<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>{% endcapture %}
+						<p>{{ 'blogs.article.author_on_date_html' | t: author: author, date: date }}</p>
+					</div>
+
+					{% if article.image %}
+						<div class="article__preview">
+							{{ article | image_url: width: 900 | image_tag }}
+						</div>
+					{% endif %}
+				</header>
+
+				<div class="rte article__content" itemprop="articleBody">
+					{{ article.content }}
+				</div>
+			</article>
+
+			<div class="article__pagination">
+				<div class="row">
+					<div class="col-6">
+						<div class="text-right">
+							{% if blog.previous_article %}
+								{{ '← Older Post' | link_to: blog.previous_article }}
+							{% endif %}
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="text-left">
+							{% if blog.next_article %}
+								{{ 'Newer Post →' | link_to: blog.next_article }}
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="comments">
+				<div class="comments__title">
+					{{ article.comments_count }}
+					{% if article.comments_count == 1 %}
+						comment
+					{% else %}
+						comments
+					{% endif %}
+				</div>
+				<ul class="comments__list">
+					{% paginate article.comments by 20 %}
+						{% for comment in article.comments %}
+							<li class="comments__item comment">
+								<div class="comment__header">
+									<div class="comment__avatar">
+										{{ comment.author | truncate: 2, '' | upcase }}
+									</div>
+									<div class="comment__user">
+										<strong>{{ comment.author }}</strong>
+									</div>
+									<div class="comment__date">
+										<time datetime="{{ comment.created_at }}">{{ comment.created_at | date: format: 'short' }}</time>
+									</div>
+								</div>
+								<div class="comment__content">
+									{{ comment.content }}
+								</div>
+							</li>
+						{% endfor %}
+
+						{{ paginate | default_pagination }}
+					{% endpaginate %}
+				</ul>
+			</div>
+
+			<div class="comments__form">
+				{% form 'new_comment', article %}
+					<div class="comments__title">
+						Leave a comment
+					</div>
+
+					<div class="row v-gutters" style="--gutter-x: 20px; --gutter-y: 20px">
+						{% if form.errors %}
+							<div class="col-12">
+								{{ form.errors | default_errors }}
+							</div>
+						{% endif %}
+
+						<div class="col-lg-6 col-12">
+							<label class="input-wrapper">
+								<span class="sr-only">Name</span>
+								<input type="text" name="comment[author]" placeholder="Name" value="{{ form.author }}">
+							</label>
+						</div>
+
+						<div class="col-lg-6 col-12">
+							<label class="input-wrapper">
+								<span class="sr-only">Email</span>
+								<input type="email" name="comment[email]" placeholder="Email" value="{{ form.email }}">
+							</label>
+						</div>
+
+						<div class="col-12">
+							<label class="input-wrapper">
+								<span class="sr-only">Comment</span>
+								<textarea name="comment[body]" placeholder="Message">{{ form.body }}</textarea>
+							</label>
+						</div>
+
+						<div class="col-lg-6 col-12">
+							<div class="submit">
+								<input type="submit" value="Post comment" class="btn outline wide">
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-12">
+							<p class="comments__info">Please note, comments must be approved before they are published</p>
+						</div>
+					</div>
+				{% endform %}
+			</div>
+		</div>
+
+		<div class="col-xl-3 col-lg-4 col-12">
+			{% render 'blog-sidebar' %}
+		</div>
+	</div>
+</div>

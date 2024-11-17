@@ -1,0 +1,61 @@
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const title = new URLSearchParams(window.location.search).get('position')
+		console.log(title)
+		if (!title) window.location.href = '/pages/work-at-nomad'
+		document.querySelector('.work__title').innerText = title
+	})
+</script>
+
+<div class="work">
+	<div class="container">
+		<div class="work__heading">
+			<h1 class="work__title">Get work</h1>
+			<p class="work__subtitle">Fill out a short form. We will review your application and contact you as soon as possible.</p>
+		</div>
+
+		<form class="work__form">
+			<div class="row">
+				<div class="col-lg-6 col-12">
+					<label class="input-wrapper">
+						<span class="sr-only">Name</span>
+						<input type="text" required name="Name" placeholder="Name">
+					</label>
+					<label class="input-wrapper">
+						<span class="sr-only">Surname</span>
+						<input type="text" required name="Surname" placeholder="Surname">
+					</label>
+					<label class="input-wrapper">
+						<span class="sr-only">Current place of work</span>
+						<input type="text" required name="Current place of work" placeholder="Current place of work">
+					</label>
+					<label class="input-wrapper">
+						<span class="sr-only">Position</span>
+						<input type="text" required name="Position" placeholder="Position">
+					</label>
+					<label class="input-wrapper">
+						<span class="sr-only">Date of Birth</span>
+						<input type="text" required name="Date of Birth" placeholder="Date of Birth m.d.y">
+					</label>
+				</div>
+				<div class="col-lg-6 col-12">
+					<label class="input-wrapper">
+						<span class="sr-only">Email</span>
+						<input type="text" required name="Email" placeholder="Email">
+					</label>
+					<label class="input-wrapper">
+						<span class="sr-only">Phone</span>
+						<input type="text" required name="Phone" placeholder="Phone">
+					</label>
+					<label class="input-wrapper">
+						<span class="sr-only">Tell us about yourself</span>
+						<textarea placeholder="Tell us about yourself" required name="Tell us about yourself"></textarea>
+					</label>
+				</div>
+				<div class="col-lg-6 col-12 offset-lg-6">
+					<input type="submit" value="Send" class="btn outline wide">
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

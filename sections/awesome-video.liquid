@@ -1,0 +1,25 @@
+<div class="awesome-video">
+	<div class="ratio">
+		{{ section.settings.video }}
+	</div>
+</div>
+
+{% schema %}
+{
+	"name": "Awesome Video",
+	"class": "container",
+	"tag": "div",
+	"presets": [
+		{
+			"name": "Awesome Video"
+		}
+	],
+	"settings": [
+		{
+			"type": "textarea",
+			"id": "video",
+			"label": "Video Embed Code"
+		}
+	]
+}
+{% endschema %}

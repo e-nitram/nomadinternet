@@ -1,0 +1,107 @@
+{{ 'accessories.css' | asset_url | stylesheet_tag }}
+<div class="product-box-popup">
+<div class="product-content {{ product.handle }}">
+    <div class="top_heading">              
+      <h2>{{ product.title }}</h2>
+      <span>{{ product.price | money }}</span>              
+    </div>
+    <div class="product-image-slider">
+       {% for image in product.images %}
+        <div class="image">
+            <img src="{{ image | img_url: 'master' }}" alt="{{ image.alt | escape }}">	
+        </div>
+       {% endfor %}
+    </div>
+    <div class="buy-and-add-button">
+        <a class="buy-button" data-id="{{ product.selected_or_first_available_variant.id }}">Buy Now</a>
+        <a class="add-to-cart-button" data-id="{{ product.selected_or_first_available_variant.id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path d="M14.0413 7.21456C14.0413 8.08756 13.6945 8.92481 13.0772 9.54212C12.4599 10.1594 11.6226 10.5062 10.7496 10.5062C9.8766 10.5062 9.03935 10.1594 8.42205 9.54212C7.80474 8.92481 7.45794 8.08756 7.45794 7.21456M3.86444 6.72195L3.2884 13.6344C3.16465 15.1194 3.10278 15.8619 3.35379 16.4347C3.57434 16.9379 3.95645 17.3532 4.43963 17.6148C4.98958 17.9125 5.73464 17.9125 7.22476 17.9125H14.2745C15.7646 17.9125 16.5096 17.9125 17.0596 17.6148C17.5428 17.3532 17.9249 16.9379 18.1454 16.4347C18.3964 15.8619 18.3346 15.1194 18.2108 13.6344L17.6348 6.72195C17.5283 5.44426 17.4751 4.80542 17.1921 4.32189C16.943 3.8961 16.572 3.55472 16.1269 3.34179C15.6216 3.09998 14.9805 3.09998 13.6984 3.09998L7.8008 3.09998C6.51868 3.09998 5.87762 3.09998 5.37227 3.34178C4.92726 3.55472 4.55625 3.8961 4.30709 4.32189C4.02415 4.80541 3.97092 5.44426 3.86444 6.72195Z" stroke="black" stroke-opacity="0.8" stroke-width="1.23438" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Add to Cart
+        </a>
+    </div>              
+    <div class="product-title">
+        <div class="product-description">
+            <h3>Description</h3>
+            {{ product.description }}
+        </div>
+    </div>
+</div>
+</div>
+<!-- Add To Cart Popup Start -->
+<div class="add-to-cart-popup">
+    <div class="popup-content">
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                <path d="M19.3105 10.8925V7.285C19.3105 4.62852 17.157 2.47501 14.5005 2.47501C11.8441 2.47501 9.69054 4.62852 9.69054 7.285V10.8925M4.38993 12.5182L3.66843 20.2142C3.46329 22.4024 3.36072 23.4965 3.7238 24.3416C4.04276 25.084 4.60171 25.6978 5.31106 26.0846C6.11855 26.525 7.21744 26.525 9.41523 26.525H19.5859C21.7836 26.525 22.8825 26.525 23.69 26.0846C24.3994 25.6978 24.9583 25.084 25.2773 24.3416C25.6404 23.4965 25.5378 22.4024 25.3327 20.2142L24.6112 12.5182C24.4379 10.6705 24.3513 9.74656 23.9358 9.04806C23.5698 8.43289 23.0291 7.9405 22.3824 7.63354C21.6482 7.28501 20.7202 7.28501 18.8644 7.28501L10.1367 7.285C8.28084 7.285 7.3529 7.285 6.61866 7.63354C5.97201 7.9405 5.4313 8.43289 5.06532 9.04806C4.64977 9.74656 4.56316 10.6705 4.38993 12.5182Z" stroke="white" stroke-width="2.16018" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Product added to cart
+        </p>
+    </div>
+</div>
+<!-- Add To Cart Popup End -->                  
+
+
+<style>
+  .template-product{padding-top:56px!important;background-color:#fff!important;}
+  .product-box-popup .product-content{margin:0 auto;}
+</style>
+                  
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+<script src="{{ 'jquery.cookie.js' | asset_url }}"></script>
+<script src="{{ 'jquery.serialize-object.min.js' | asset_url }}"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+var $j = jQuery.noConflict(); 
+$j('.product-image-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    arrows: false,
+});
+$j('.buy_now_product, .buy-button').on('click', function(){
+$j.ajax({
+type: 'POST',
+url: '/cart/add.js',
+data: {
+  quantity: 1,
+  id: $j(this).attr("data-id")
+},
+dataType: 'json', 
+success: function (data) { 
+  document.location = '/checkout';
+} 
+});
+});  
+$j('.add_to_cart_product, .add-to-cart-button').on('click', function(){
+$j.ajax({
+type: 'POST',
+url: '/cart/add.js',
+data: {
+  quantity: 1,
+  id: $j(this).attr("data-id")
+},
+dataType: 'json', 
+success: function (data) { 
+  $j.ajax({
+    type: 'GET',
+    url: '/cart.js',
+    dataType: 'json',
+    success: function(cartData) {
+      $j('.header__cart-count').text(cartData.item_count);
+    }
+  });
+  $j('.add-to-cart-popup').addClass('active');
+  setTimeout(function(){ 
+     $j('.add-to-cart-popup').removeClass('active');
+  }, 2000);
+} 
+});
+});
+ 
+  
+</script>

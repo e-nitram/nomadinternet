@@ -1,0 +1,330 @@
+{{ '02plancss.css' | asset_url | stylesheet_tag }}
+{{ '02customisecss.css' | asset_url | stylesheet_tag }}
+{{ '02checkoutcss.css' | asset_url | stylesheet_tag }}
+
+<div id="plan">
+{% include '02plan-plan' %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+<script src="{{ 'jquery.cookie.js' | asset_url }}"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>function floatToString(t,r){var e=t.toFixed(r).toString();return e.match(/^\.\d+/)?"0"+e:e}function attributeToString(t){return"string"!=typeof t&&"undefined"===(t+="")&&(t=""),jQuery.trim(t)}"undefined"==typeof window.Shopify&&(window.Shopify={}),Shopify.money_format="${{amount}}",Shopify.onError=function(t,r){var e=eval("("+t.responseText+")");e.message?alert(e.message+"("+e.status+"): "+e.description):alert("Error : "+Shopify.fullMessagesFromErrors(e).join("; ")+".")},Shopify.fullMessagesFromErrors=function(t){var o=[];return jQuery.each(t,function(e,t){jQuery.each(t,function(t,r){o.push(e+" "+r)})}),o},Shopify.onCartUpdate=function(t){alert("There are now "+t.item_count+" items in the cart.")},Shopify.onCartShippingRatesUpdate=function(t,r){var e="";r.zip&&(e+=r.zip+", "),r.province&&(e+=r.province+", "),e+=r.country,alert("There are "+t.length+" shipping rates available for "+e+", starting at "+Shopify.formatMoney(t[0].price)+".")},Shopify.onItemAdded=function(t){alert(t.title+" was added to your shopping cart.")},Shopify.onProduct=function(t){alert("Received everything we ever wanted to know about "+t.title)},Shopify.formatMoney=function(t,r){function n(t,r){return void 0===t?r:t}function e(t,r,e,o){if(r=n(r,2),e=n(e,","),o=n(o,"."),isNaN(t)||null==t)return 0;var a=(t=(t/100).toFixed(r)).split(".");return a[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g,"$1"+e)+(a[1]?o+a[1]:"")}"string"==typeof t&&(t=t.replace(".",""));var o="",a=/\{\{\s*(\w+)\s*\}\}/,i=r||this.money_format;switch(i.match(a)[1]){case"amount":o=e(t,2);break;case"amount_no_decimals":o=e(t,0);break;case"amount_with_comma_separator":o=e(t,2,".",",");break;case"amount_with_space_separator":o=e(t,2," ",",");break;case"amount_with_period_and_space_separator":o=e(t,2," ",".");break;case"amount_no_decimals_with_comma_separator":o=e(t,0,".",",");break;case"amount_no_decimals_with_space_separator":o=e(t,0,".","");break;case"amount_with_space_separator":o=e(t,2,",","");break;case"amount_with_apostrophe_separator":o=e(t,2,"'",".")}return i.replace(a,o)},Shopify.resizeImage=function(t,r){try{if("original"==r)return t;var e=t.match(/(.*\/[\w\-\_\.]+)\.(\w{2,4})/);return e[1]+"_"+r+"."+e[2]}catch(o){return t}},Shopify.addItem=function(t,r,e){var o={type:"POST",url:"/cart/add.js",data:"quantity="+(r=r||1)+"&id="+t,dataType:"json",success:function(t){"function"==typeof e?e(t):Shopify.onItemAdded(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(o)},Shopify.addItemFromForm=function(t,r){var e={type:"POST",url:"/cart/add.js",data:jQuery("#"+t).serialize(),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onItemAdded(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.getCart=function(r){jQuery.getJSON("/cart.js",function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)})},Shopify.pollForCartShippingRatesForDestination=function(o,a,t){t=t||Shopify.onError;var n=function(){jQuery.ajax("/cart/async_shipping_rates",{dataType:"json",success:function(t,r,e){200===e.status?"function"==typeof a?a(t.shipping_rates,o):Shopify.onCartShippingRatesUpdate(t.shipping_rates,o):setTimeout(n,500)},error:t})};return n},Shopify.getCartShippingRatesForDestination=function(t,r,e){e=e||Shopify.onError;var o={type:"POST",url:"/cart/prepare_shipping_rates",data:Shopify.param({shipping_address:t}),success:Shopify.pollForCartShippingRatesForDestination(t,r,e),error:e};jQuery.ajax(o)},Shopify.getProduct=function(t,r){jQuery.getJSON("/products/"+t+".js",function(t){"function"==typeof r?r(t):Shopify.onProduct(t)})},Shopify.changeItem=function(t,r,e){var o={type:"POST",url:"/cart/change.js",data:"quantity="+r+"&id="+t,dataType:"json",success:function(t){"function"==typeof e?e(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(o)},Shopify.removeItem=function(t,r){var e={type:"POST",url:"/cart/change.js",data:"quantity=0&id="+t,dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.clear=function(r){var t={type:"POST",url:"/cart/clear.js",data:"",dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(t)},Shopify.updateCartFromForm=function(t,r){var e={type:"POST",url:"/cart/update.js",data:jQuery("#"+t).serialize(),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.updateCartAttributes=function(t,r){var o="";jQuery.isArray(t)?jQuery.each(t,function(t,r){var e=attributeToString(r.key);""!==e&&(o+="attributes["+e+"]="+attributeToString(r.value)+"&")}):"object"==typeof t&&null!==t&&jQuery.each(t,function(t,r){o+="attributes["+attributeToString(t)+"]="+attributeToString(r)+"&"});var e={type:"POST",url:"/cart/update.js",data:o,dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.updateCartNote=function(t,r){var e={type:"POST",url:"/cart/update.js",data:"note="+attributeToString(t),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},"1.4"<=jQuery.fn.jquery?Shopify.param=jQuery.param:(Shopify.param=function(t){var e=[],r=function(t,r){r=jQuery.isFunction(r)?r():r,e[e.length]=encodeURIComponent(t)+"="+encodeURIComponent(r)};if(jQuery.isArray(t)||t.jquery)jQuery.each(t,function(){r(this.name,this.value)});else for(var o in t)Shopify.buildParams(o,t[o],r);return e.join("&").replace(/%20/g,"+")},Shopify.buildParams=function(e,t,o){jQuery.isArray(t)&&t.length?jQuery.each(t,function(t,r){rbracket.test(e)?o(e,r):Shopify.buildParams(e+"["+("object"==typeof r||jQuery.isArray(r)?t:"")+"]",r,o)}):null!=t&&"object"==typeof t?Shopify.isEmptyObject(t)?o(e,""):jQuery.each(t,function(t,r){Shopify.buildParams(e+"["+t+"]",r,o)}):o(e,t)},Shopify.isEmptyObject=function(t){for(var r in t)return!1;return!0});</script>
+<script>
+var $j = jQuery.noConflict();
+
+
+var friend_name = '';
+var discount_code = '';  
+var status_rr_ref = false;
+var status_rr_friend_ref = false;  
+
+const urlParams = new URLSearchParams(window.location.search);
+ 
+const myParam = urlParams.get('rr_ref');
+const myParam_rr_friend_ref = urlParams.get('rr_friend_ref');
+if (window.location.href.indexOf("rr_ref=") > -1) {
+const settings = {
+"async": true,
+"crossDomain": true,
+"url": "https://programs.nomadinternet.com/api/v1/users/-actions/friend-details?referral_code="+myParam+"&referral_type=titus",
+"method": "GET",
+"headers": {
+"Accept": "application/vnd.api+json"
+},
+success: function(data){
+status_rr_ref = true;
+},  
+error: function(er){
+console.log(er);
+}
+};  
+$j.ajax(settings).done(function(response){
+friend_name = response.data.attributes.name;
+$j('.referral_customer_friendname').text(friend_name);
+$j('.referral_customer_friendname_modem').text(friend_name);
+$j(".referral-welcom-popup").addClass("active");
+$j('body').addClass('stopscroll');
+$j('.referral_customer_greeting_msg').show();
+
+fetch('/cart/update.js', {
+method: "POST",
+headers: {
+    'X-Requested-With': 'XMLHttpRequest',
+    'Content-Type': 'application/json;'
+},
+body: JSON.stringify({
+    "attributes": {
+      "rr_ref": myParam
+    }
+})
+});
+
+});
+
+}
+else if (window.location.href.indexOf("rr_friend_ref=") > -1) {
+const settings = {
+"async": true,
+"crossDomain": true,
+"url": "https://programs.nomadinternet.com/api/v1/users/-actions/friend-details?referral_code="+myParam_rr_friend_ref+"&referral_type=trojan",
+"method": "GET",
+"headers": {
+"Accept": "application/vnd.api+json"
+},
+success: function(data){
+status_rr_friend_ref = true;
+},  
+error: function(er){
+console.log(er);
+}
+};  
+$j.ajax(settings).done(function(response){
+friend_name = response.data.attributes.name;
+$j('.referral_invited_friendname').text(friend_name);
+$j(".referral-invitred-friend-popup").addClass("active");
+$j('body').addClass('stopscroll');
+$j('.referral_customer_greeting_msg').show();
+
+fetch('/cart/update.js', {
+method: "POST",
+headers: {
+    'X-Requested-With': 'XMLHttpRequest',
+    'Content-Type': 'application/json;'
+},
+body: JSON.stringify({
+    "attributes": {
+      "rr_friend_ref": myParam_rr_friend_ref
+    }
+})
+});
+
+});
+
+} 
+else{
+$j('.referral_customer_greeting_msg').hide();
+fetch('/cart/update.js', {
+method: "POST",
+headers: {
+    'X-Requested-With': 'XMLHttpRequest',
+    'Content-Type': 'application/json;'
+},
+body: JSON.stringify({
+    "attributes": {
+      "rr_ref": "",
+      "rr_friend_ref": "",
+      "rr_invited_emails": ""
+    }
+})
+});
+} 
+
+  
+$j(document).on('click','#plan1',function(e){
+e.preventDefault();
+$j.cookie("selected_plan", '100mbps');
+if (window.location.href.indexOf("rr_ref=") > -1){
+ var hash = window.location.href.split('?');
+ window.location.href = "/pages/configuration?"+hash[1];
+}
+else if (window.location.href.indexOf("rr_friend_ref=") > -1) { 
+ var hash = window.location.href.split('?');
+ window.location.href = "/pages/configuration?"+hash[1];
+}
+else{  
+ window.location.href = "/pages/configuration";
+}  
+});
+
+$j(document).on('click','#plan2',function(e){
+e.preventDefault();
+$j.cookie("selected_plan", '200mbps');  
+if (window.location.href.indexOf("rr_ref=") > -1){
+ var hash = window.location.href.split('?');
+ window.location.href = "/pages/configuration?"+hash[1];
+}
+else if (window.location.href.indexOf("rr_friend_ref=") > -1) { 
+ var hash = window.location.href.split('?');
+ window.location.href = "/pages/configuration?"+hash[1];
+}
+else{  
+ window.location.href = "/pages/configuration";
+}  
+}); 
+  
+$j('.review-list').slick({
+className: 'center',
+centerMode: true,
+infinite: true,
+slidesToShow: 3,
+speed: 500,
+arrows: false,
+  autoplaySpeed: 5000,
+  autoplay: true,
+dots: true,
+centerPadding: '0px',
+responsive: [
+{
+breakpoint: 1025,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 1,
+},
+},
+  {
+breakpoint: 640,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1,
+centerPadding: '0px',
+},
+},
+],
+});
+$j('.video-list').slick({
+dots: false,
+infinite: true,
+speed: 500,
+slidesToShow: 5,
+slidesToScroll: 1,
+arrows: true,
+prevArrow: '<i class="prev_arrow fa fa-angle-left" aria-hidden="true"></i>',
+nextArrow: '<i class="next_arrow fa fa-angle-right" aria-hidden="true"></i>',
+responsive: [
+{
+breakpoint: 1025,
+settings: {
+slidesToShow: 3,
+slidesToScroll: 1,
+},
+},
+  {
+breakpoint: 640,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 1,
+centerPadding: '0px',
+},
+},
+],  
+}); 
+$j('.review-list-slider').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  nextArrow: '<svg class="arrow-right" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.5 16.4941L29.5 25.4941L20.5 34.4941" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="49" y="49.4941" width="48" height="48" rx="24" transform="rotate(-180 49 49.4941)" stroke="white" stroke-width="2"/></svg>',
+  prevArrow: '<svg class="arrow-left" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.5 34.4941L20.5 25.4941L29.5 16.4941" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="1.49414" width="48" height="48" rx="24" stroke="white" stroke-width="2"/></svg>',
+  responsive: [
+  	{
+      breakpoint: 1300,
+      settings: {
+      	dots: false,
+      	arrows: true,	
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      	arrows: true,
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+      	arrows: false,
+        centerMode: true,
+        centerPadding: '15px',
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+      	arrows: false,
+        centerMode: true,
+        centerPadding: '15px',
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});    
+
+$j(document).on('click', '.accordion-header', function () {
+// Toggle the visibility of the content
+var isVisible = $j(this).next('.accordion-content').is(':visible');
+
+// Hide all accordion content
+$j('.accordion-content').slideUp();
+$j('.accordion').removeClass('open');
+// If the clicked header's content was not visible, show it
+if (!isVisible) {
+$j(this).next('.accordion-content').slideDown();
+$j(this).parents('.accordion').addClass('open');
+}
+});   
+
+$j(document).on('click','#referral-welcom-popup-btn',function(){
+$j(".referral-welcom-popup").removeClass("active");
+$j('body').removeClass('stopscroll');    
+});
+$j(document).on('click','#referral-invitred-popup-btn',function(){
+$j(".referral-invitred-friend-popup").removeClass("active");
+$j('body').removeClass('stopscroll');    
+});    
+$j(document).on('click','.how_it_work_btn',function(){
+//$j('.introducing-popup video').play();  
+$j(".introducing-popup").addClass("active");
+$j('body').addClass('stopscroll');  
+});
+$j(document).on('click','.faq_btn',function(){
+$j(".faq-popup").addClass("active");
+$j('body').addClass('stopscroll');  
+});  
+$j(document).on('click','.open-popup',function(){
+$j(".popup").addClass("active");
+$j('body').addClass('stopscroll');  
+});   
+$j(document).on('click','.close-button',function(){  
+$j('body').removeClass('stopscroll');  
+$j(".faq-popup").removeClass("active");
+$j(".introducing-popup").removeClass("active");
+$j(".popup").removeClass("active");
+$j(".referral-welcom-popup").removeClass("active");  
+$j('.referral-invitred-friend-popup').removeClass("active");  
+});  
+
+</script>
+
+
+{% schema %}
+{
+"name": "Plan 4in1",
+"presets": [
+{
+"name": "Plan 4in1"
+}
+], 
+"settings": []
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

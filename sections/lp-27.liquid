@@ -1,0 +1,53 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+{% assign ss = section.settings %}
+
+<div class="lp-27">
+	{% if ss.title %}
+		<h2 class="section__title lp-27__title">{{ ss.title }}</h2>
+	{% endif %}
+	{% if ss.description %}
+		<div class="section__description lp-27__description">
+			<p>{{ ss.description }}</p>
+		</div>
+	{% endif %}
+	{% if ss.content %}
+		<div class="lp-27__content">
+			{{ ss.content }}
+		</div>
+	{% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "lp-27",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 27"
+    }
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "description",
+			"label": "Description"
+		},
+		{
+			"type": "richtext",
+			"id": "content",
+			"label": "Content"
+		}
+	]
+}
+{% endschema %}

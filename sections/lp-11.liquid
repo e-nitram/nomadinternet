@@ -1,0 +1,92 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+<div class="lp-11">
+	<div class="lp-11__content">
+		<h1 class="lp-11__title">{{ section.settings.title }}</h1>
+
+		{% if section.blocks %}
+			<div class="row">
+				{% for card in section.blocks %}
+					<div class="col-md-6 col-12">
+						<div class="lp-11__card">
+							{% if card.settings.image %}
+								<div class="card__image">
+									<div class="ratio" style="--ratio: calc(272 / 300 * 100%)">
+										{% assign img = card.settings.image %}
+										{{ img | image_url: width: img.width | image_tag }}
+									</div>
+								</div>
+							{% endif %}
+							<div class="card__content">
+								<h3 class="card__title">{{ card.settings.title }}</h3>
+								{% if card.settings.learn_more_link %}
+									<a href="{{ card.settings.learn_more_link }}" class="card__learn-more-link">Learn More</a>
+								{% endif %}
+								{% if card.settings.button_text %}
+									<a href="{{ card.settings.button_url }}" class="btn red lg" id="button-{{ card.id }}">{{ card.settings.button_text }}</a>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		{% endif %}
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-11",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 11"
+    }
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		}
+	],
+	"blocks": [
+		{
+			"type": "card",
+			"name": "Card",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Titile"
+				},
+				{
+					"type": "url",
+					"id": "learn_more_link",
+					"label": "Learn More Link"
+				},
+				{
+					"type": "text",
+					"id": "button_text",
+					"label": "Button Text"
+				},
+				{
+					"type": "url",
+					"id": "button_url",
+					"label": "Button URL"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

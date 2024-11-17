@@ -1,0 +1,500 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/TOP_41de95f9-f7b5-47fa-b766-2e4a97005234.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in North Dakota"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Internet Service Providers in North Dakota: Always Available, Always Reliable. Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in North Dakota?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/mMmhOSJfN4U?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The internet provider with the most reliable Wi-Fi in North Dakota has been identified.",
+        "description": "Find your city in North Dakota",
+        "content": "Bismarck,\nDevils Lake,\nDickinson,\nFargo,\nGrand Forks,\nJamestown,\nMandan,\nMinot,\nRugby,\nValley City,\nWahpeton,\nWilliston"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BLOG_Dickinson-NORTH-DAKOTA-NORTH-DAKOTA-state.jpg",
+        "title_tag": "h2",
+        "title": "Maximizing Internet Connectivity for Remote Work in North Dakota's Rural Areas",
+        "description": "<p>Working remotely from North Dakota's rural areas can be a great and rewarding experience, but it can also be difficult to stay connected without consistent access to high speed internet. To make sure you get the most out of your time, here are a few tips on how to maximize internet connection for remote work in North Dakota:<\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p>Look into wireless internet services – don’t let unreliable connections stop you from being productive. With providers like Nomad Internet offering reliable <a href=\"https:\/\/nomadinternet.com\/pages\/wireless-internet\" title=\"wireless services\">wireless services<\/a> with no data caps, you won't have to worry about slow speeds or connection drops ever again!Invest in a strong signal booster – boosting your wifi signal is essential if you want to ensure that your work gets done efficiently and on time. <\/p>",
+        "text_2": "<p>Look for an antenna or repeater that provide a more powerful signal in remote areas with low signals.Use satellite internet – regular broadband connections are not available in some parts of <a href=\"\/pages\/states\" title=\"States\">North Dakota’s<\/a> rural areas, so satellite internet could be your best option for keeping up with work tasks and staying connected when needed.With these three tips, you'll be able to get the most out of working remotely from North Dakota's rural areas - no matter what kind of connectivity issues you may encounter!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/35.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/35.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Simone.jpg",
+            "name": "Simone Houghton",
+            "text": "I recently heard about Nomad Internet and decided to give it a try. I live in a rural area of North Dakota, and the service is exactly what I needed. The high speed internet works great for remote work, plus it's reliable and very affordable. The modems are also top-notch — they have wifi capabilities and can endure extreme temperatures without any issue. All in all, Nomad Internet offers an excellent quality of service that is difficult to beat, especially in more rural areas like mine. Highly recommended!",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Zendaya_Law.jpg",
+            "name": "Zendaya Law",
+            "text": "I'm a remote worker living in rural North Dakota and I've been using Nomad Internet for a few months now. Their service is reliable and the modem they sent me was easy to set up. What I love most is the high speed internet connection! Working from home, fast speeds are essential for me and Nomad Internet has delivered. I highly recommend them to anyone looking for an affordable and reliable way to stay connected.",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Marianna_Pratt.jpg",
+            "name": "Marianna Pratt",
+            "text": "I recently moved to rural North Dakota and was worried I wouldn't be able to find a reliable high speed internet connection. After researching, I discovered Nomad Air Modem. It's been great - providing fast speeds no matter where I am in the state. Plus, remote work has been made easy with their secure connection that doesn't drop out. Highly recommend for anyone living in a rural area needing an internet solution.",
+            "link": ""
+          }
+        },
+        "9df8966c-70c1-4781-afe8-689deee4e28c": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Whitley_Bolton.jpg",
+            "name": "Whitley Bolton",
+            "text": "I've been living in the rural areas of North Dakota for years and have always had issues with my internet connection. After trying multiple providers, I was starting to feel hopeless until I heard about Nomad Air Modem. This high speed internet service is perfect for remote work and has drastically improved my work-life balance. With its lightning-fast speeds, reliable connection quality, and reasonable price point, it's hard to beat! If you're looking for an internet provider in a rural area, I highly recommend Nomad Air Modem - you won't be disappointed.",
+            "link": ""
+          }
+        },
+        "062e6635-e23a-4196-a368-761e23258dba": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Gwen_Sheppard.jpg",
+            "name": "Gwen Sheppard",
+            "text": "Living in rural North Dakota, I never thought I'd find a way to get high-speed internet access. But then I found Nomad Air Modem! This modem has allowed me to work remotely and stay connected with family, friends and even the rest of the world. It works great in rural areas where traditional broadband services may not be available, plus it only takes minutes to set up. The speeds are amazing - much faster than anything I've ever experienced before. Plus, their customer service is top notch if you have any questions or need assistance. All-in-all, Nomad Air Modem is definitely a great option for those living in rural areas looking for an affordable, reliable and safe way to access fast internet.",
+            "link": ""
+          }
+        },
+        "70c8b641-9880-4620-8603-b3b61a4dc5b1": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Aubriella.jpg",
+            "name": "Gabrielle Decker",
+            "text": "Nomad Internet has been a lifesaver for me out here in rural North Dakota. I was able to get it installed quickly and easily, and the speeds are amazing. It's been a game-changer for being able to work remotely.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "9df8966c-70c1-4781-afe8-689deee4e28c",
+        "062e6635-e23a-4196-a368-761e23258dba",
+        "70c8b641-9880-4620-8603-b3b61a4dc5b1"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "4d04a8c1-bb55-4aa0-9d4c-6199e405fdd9": {
+          "type": "block",
+          "settings": {
+            "title": "What are some options for improving my rural North Dakota internet speed?",
+            "content": "<p>One option to consider is switching to a fixed wireless internet provider like Nomad Internet. Nomad offers plans with speeds up to 200 Mbps and a starting price of $99 per month (with a yearly plan). Rural areas in North Dakota may have fewer options for internet providers due to the high cost of infrastructure, so fixed wireless internet may be a good solution.<br\/><br\/>In addition to switching providers, optimizing your existing internet setup can also help improve your speed. Make sure your modem and router are up-to-date and placed in an open area away from walls or other obstructions. You can also try using a Wi-Fi extender to boost your signal if your internet connection is weak in certain areas of your home.<br\/><br\/>Overall, if you're experiencing slow internet speeds in rural North Dakota, it's worth considering switching to a provider like Nomad Internet that specializes in providing high-speed internet to rural areas. Their modems, such as the Nomad Air and Nomad Cube, can also help boost your signal for a more stable and fast internet connection.<\/p>"
+          }
+        },
+        "132d80e9-569e-4140-8484-50785775a960": {
+          "type": "block",
+          "settings": {
+            "title": "Is there 5G coverage from Nomad Internet throughout North Dakota?",
+            "content": "<p>Yes, Nomad Internet provides 5G coverage throughout North Dakota.<br\/><br\/>5G is the fifth generation of wireless technology that offers faster internet speeds, lower latency, and improved network reliability. With 5G coverage, users can enjoy faster download and upload speeds, better streaming quality, and improved online gaming experiences. Additionally, 5G can support a larger number of devices and has the potential to enable new technologies like autonomous vehicles and virtual reality.<br\/><br\/>With Nomad Air's advanced high-power directional antennas that extend the reach of cellular networks, users can enjoy the benefits of 5G sub-6GHz and 4G LTE fallback, providing a perfect balance of network coverage and performance across the rural areas of North Dakota. <br\/><br\/>Nomad Internet offers various tariff plans and modems, including Nomad Air and Nomad Cube, which amplify and accumulate the signal to provide stable and fast internet to all residents of the state.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "4d04a8c1-bb55-4aa0-9d4c-6199e405fdd9",
+        "132d80e9-569e-4140-8484-50785775a960"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

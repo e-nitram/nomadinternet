@@ -1,0 +1,114 @@
+<div class="icon-with-text-section">
+  <div class="container-wrapper">
+    <div class="heading-section">
+      <!--svg xmlns="http://www.w3.org/2000/svg" width="62" height="59" viewBox="0 0 62 59" fill="none"><ellipse cx="30.8099" cy="29.5" rx="30.8098" ry="29.5" fill="#109D59"/><path d="M50.8521 24.8218C39.5764 13.1712 22.0395 13.1754 10.7683 24.8218C10.3444 25.2598 10.3361 26.0013 10.746 26.4557L12.9252 28.8708C13.3159 29.3045 13.9447 29.3138 14.3508 28.8978C23.6376 19.3936 37.9815 19.3915 47.2702 28.8978C47.6763 29.3138 48.3051 29.3038 48.6959 28.8708L50.875 26.4557C51.2842 26.0013 51.2759 25.2598 50.8521 24.8218ZM30.8102 38.8365C28.5604 38.8365 26.737 40.8734 26.737 43.3867C26.737 45.9 28.5604 47.9369 30.8102 47.9369C33.06 47.9369 34.8834 45.9 34.8834 43.3867C34.8834 40.8734 33.06 38.8365 30.8102 38.8365ZM43.7088 32.8935C36.3732 25.6466 25.2389 25.6544 17.9116 32.8935C17.4725 33.3272 17.4585 34.0801 17.8753 34.5394L20.0672 36.956C20.4491 37.3769 21.0639 37.4053 21.4705 37.0129C26.8134 31.8533 34.8191 31.8647 40.1492 37.0129C40.5559 37.4053 41.1707 37.3776 41.5525 36.956L43.7444 34.5394C44.1619 34.0801 44.1473 33.3265 43.7088 32.8935Z" fill="white"/></svg-->
+      <h2>{{ section.settings.main_heading }}</h2>
+<!--       <h2>Why Choose Our Service</h2> -->
+    </div>
+    <div class="row">
+     {% if section.blocks.size > 0 %}
+      {% for block in section.blocks %}
+        <div class="col-3 items csit">
+           <div class="icon-text-wrapper">
+            <div class="svg-icon">{{ block.settings.svg_icon }}</div>
+            <div class="title">{{ block.settings.title }}</div>
+            <div class="description">{{ block.settings.description }}</div>
+              
+          <a class="button-link" href="{{ block.settings.button_url }}">
+            {{ block.settings.button_text }}
+          </a>
+        {% if block.settings.button_url1 != blank  %}
+              <a class="button-link" href="{{ block.settings.button_url1 }}" target="_blank" >
+            {{ block.settings.button_text1 }}
+          </a>
+          {% endif %}
+             
+           </div>
+        </div>
+      {% endfor %}
+      {% else %}
+        {% for i in (1..4) %}
+          <div class="col-4 items">
+           <div class="icon-text-wrapper">
+            <div class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none"><g clip-path="url(#clip0_328_384)"><path d="M49.8155 12.8889H42.775C42.3477 12.8889 41.9379 13.0586 41.6358 13.3608C41.3336 13.6629 41.1639 14.0727 41.1639 14.5C41.1639 14.9273 41.3336 15.3371 41.6358 15.6392C41.9379 15.9414 42.3477 16.1111 42.775 16.1111H49.9444V48.3333H8.05555V16.1111H15.1122C15.5395 16.1111 15.9493 15.9414 16.2514 15.6392C16.5536 15.3371 16.7233 14.9273 16.7233 14.5C16.7233 14.0727 16.5536 13.6629 16.2514 13.3608C15.9493 13.0586 15.5395 12.8889 15.1122 12.8889H8.18444C7.75057 12.8715 7.31767 12.942 6.91173 13.0961C6.50579 13.2503 6.1352 13.4849 5.8222 13.7858C5.5092 14.0868 5.26026 14.4479 5.09033 14.8475C4.9204 15.2471 4.83298 15.6769 4.83333 16.1111V48.3333C4.83298 48.7675 4.9204 49.1973 5.09033 49.5969C5.26026 49.9965 5.5092 50.3576 5.8222 50.6586C6.1352 50.9595 6.50579 51.1941 6.91173 51.3483C7.31767 51.5024 7.75057 51.5729 8.18444 51.5555H49.8155C50.2494 51.5729 50.6823 51.5024 51.0883 51.3483C51.4942 51.1941 51.8648 50.9595 52.1778 50.6586C52.4908 50.3576 52.7397 49.9965 52.9097 49.5969C53.0796 49.1973 53.167 48.7675 53.1667 48.3333V16.1111C53.167 15.6769 53.0796 15.2471 52.9097 14.8475C52.7397 14.4479 52.4908 14.0868 52.1778 13.7858C51.8648 13.4849 51.4942 13.2503 51.0883 13.0961C50.6823 12.942 50.2494 12.8715 49.8155 12.8889Z" fill="#109D59"/><path d="M16.5944 30.4016L27.8722 41.5022C28.1734 41.7974 28.5783 41.9627 29 41.9627C29.4217 41.9627 29.8266 41.7974 30.1278 41.5022L41.4056 30.4016C41.7111 30.1025 41.8853 29.6943 41.8898 29.2668C41.8943 28.8393 41.7288 28.4274 41.4297 28.1219C41.1306 27.8164 40.7224 27.6422 40.2949 27.6377C39.8673 27.6332 39.4555 27.7987 39.15 28.0978L30.6111 36.4916V6.44442C30.6111 6.01713 30.4414 5.60734 30.1392 5.3052C29.8371 5.00305 29.4273 4.83331 29 4.83331C28.5727 4.83331 28.1629 5.00305 27.8608 5.3052C27.5586 5.60734 27.3889 6.01713 27.3889 6.44442V36.4916L18.85 28.0978C18.5445 27.7987 18.1327 27.6332 17.7051 27.6377C17.2776 27.6422 16.8694 27.8164 16.5703 28.1219C16.2712 28.4274 16.1057 28.8393 16.1102 29.2668C16.1147 29.6943 16.2889 30.1025 16.5944 30.4016Z" fill="#109D59"/></g><defs><clipPath id="clip0_328_384"><rect width="58" height="58" fill="white"/></clipPath></defs></svg></div>
+            <div class="title">Arrives Pre-Installed</div>
+            <div class="description">Our devices are customized for your needs, and arrive ready to connect to your laptop, desktop, Smart TV and more.</div>
+           </div>
+          </div>
+        {% endfor %}
+     {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Icon With Text",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "main_heading",
+        "label": "Heading",
+        "default": "<p>Explore Nomad Internet Wireless</p>"
+      }
+    ],
+    "blocks": [
+     {
+        "type": "item",
+        "name": "Items",
+        "settings": [
+        {
+            "type": "html",
+            "id": "svg_icon",
+            "label": "SVG Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Arrives Pre-Installed"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description",
+          "default": "Our devices are customized for your needs, and arrive ready to connect to your laptop, desktop, Smart TV and more."
+        },
+          {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Label",
+        "default": "Learn More"
+      },
+          {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link"
+      },
+          {
+        "type": "text",
+        "id": "button_text1",
+        "label": "second Button Label",
+        "default": "Learn More"
+      },
+          {
+        "type": "url",
+        "id": "button_url1",
+        "label": "Button Link next tab"
+      }
+      ]
+    }
+   ],
+  "presets": [
+    {
+      "name": "Icon With Text"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

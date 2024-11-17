@@ -1,0 +1,46 @@
+<div class="container prime_banner">
+<a href="http://free.nomadinternet.com/">
+ <picture>
+  <source 
+    srcset="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/smile-desktop_39b52052-04e9-42e9-9bd3-f566fc362b35.png?v=1694320651"
+    media="(min-width: 1024px)"
+  />
+  <source 
+    srcset="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/smile-tablet_18340abc-99aa-4417-95ae-687d3282674b.png?v=1694320650"
+    media="(min-width: 767px)"
+  />
+  <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/smile-mobile_c5d5cf60-a324-48fa-ab9a-c52ff828f374.png?v=1694320650" loading="lazy" />
+</picture>
+</a>
+{% comment %}  
+<a href="http://free.nomadinternet.com/"><img class="desktop_image" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/smile-desktop_39b52052-04e9-42e9-9bd3-f566fc362b35.png?v=1694320651" loading="lazy" /></a>
+<a href="http://free.nomadinternet.com/"><img class="tablet_image" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/smile-tablet_18340abc-99aa-4417-95ae-687d3282674b.png?v=1694320650" loading="lazy" /></a>
+<a href="http://free.nomadinternet.com/"><img class="mobile_image" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/smile-mobile_c5d5cf60-a324-48fa-ab9a-c52ff828f374.png?v=1694320650" loading="lazy" /></a>
+{% endcomment %}
+</div>
+
+<style>
+.prime_banner img{width:100%;padding:0;margin-bottom:25px;}
+.prime_banner.container{padding:0!important;}  
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  .desktop_image{display:block;}
+  .tablet_image{display:none;}
+  .mobile_image{display:none;}
+}
+
+/* For Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desktop_image{display:none;}
+  .tablet_image{display:block;}
+  .mobile_image{display:none;}
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-width: 767px){
+  .desktop_image{display:none;}
+  .tablet_image{display:none;}
+  .mobile_image{display:block;}
+}
+  
+</style>

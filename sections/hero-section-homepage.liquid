@@ -1,0 +1,124 @@
+{% comment %}  <a class="aa" style="height:800px;" href="https://nomadinternet.com/pages/plan-options"></a> {% endcomment %}
+<div class="hero-section">
+  {% if section.settings.banner_image == blank %}
+    {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg hero-image'}}
+  {% endif %}
+
+  <div class="container-wrapper">
+    <div class="hero-wrapper">
+      <div class="spclofr-box">
+      <h2 class="main-heading">{{ section.settings.main_heading }}</h2>
+      </div>
+      <div class="description">{{ section.settings.description }}</div>
+      <div class="flx_bnr_btn">
+      <div class="main-button">
+        {% if section.settings.button_url != blank %}
+          <a class="button-link" href="{{ section.settings.button_url }}">
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
+      </div>
+         <div class="main-button2">
+        {% if section.settings.button_url != blank %}
+          <a class="button-link" href="{{ section.settings.button_url }}">
+            Learn More
+         </a>
+        {% endif %}
+
+           {% if section.settings.banner_image != blank %}
+          <a class="button-link lnk" href="{{ section.settings.button_url1 }}">
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/ezgif_1.png?v=1669889680">
+         </a>
+        {% endif %}
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  {% if section.settings.banner_image != blank %}
+    .hero-section {
+       background-image: url({{ section.settings.banner_image | img_url:'master' }});
+    }
+  {% endif %}
+
+  .hero-section .main-button a {
+     background-color: {{ section.settings.button_background }};
+     color: {{ section.settings.button_color }};
+  }
+         a.aa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+{% schema %}
+  {
+    "name": "Hero Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "banner_image",
+        "label": "Banner Image"
+      },
+      {
+        "type": "html",
+        "id": "main_heading",
+        "label": "Main Heading",
+        "default": "Main Section title"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>The Leading Wireless, High-Speed Internet Provider For Rural and Traveling Nomads</p>"
+      },
+       {
+        "type": "image_picker",
+        "id": "banner_image1",
+        "label": "Button Image"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Label",
+        "default": "Subscribe Now"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link"
+      },
+      {
+        "type": "url",
+        "id": "button_url1",
+        "label": "Button image Link"
+      },
+      {
+        "type": "color",
+        "id": "button_background",
+        "label": "Button background",
+        "default": "#109D59"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button color",
+        "default": "#FFFFFF"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

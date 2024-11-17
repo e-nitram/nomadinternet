@@ -1,0 +1,500 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/TOP_philadelphia-skyline-schuylkill-river_1.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in Pennsylvania"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Enjoy High-Speed Internet with Wireless Internet Service in Pennsylvania. Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in Pennsylvania?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/mMmhOSJfN4U?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The best internet provider for remote work in Pennsylvania has been identified.",
+        "description": "Find your city in Pennsylvania",
+        "content": "Abington,\nAliquippa,\nAllentown,\nAltoona,\nAmbridge,\nBedford,\nBethlehem,\nBloomsburg,\nBradford,\nBristol,\nCarbondale,\nCarlisle,\nChambersburg,\nChester,\nColumbia,\nEaston,\nErie,\nFranklin,\nGermantown,\nGettysburg,\nGreensburg,\nHanover,\nHarmony,\nHarrisburg,\nHazleton,\nHershey,\nHomestead,\nHonesdale,\nIndiana,\nJeannette,\nJim Thorpe,\nJohnstown,\nLancaster,\nLebanon,\nLevittown,\nLewistown,\nLock Haven,\nLower Southampton,\nMcKeesport,\nMeadville,\nMiddletown,\nMonroeville,\nNanticoke,\nNew Castle,\nNew Hope,\nNew Kensington,\nNorristown,\nOil City,\nPhiladelphia,\nPhoenixville,\nPittsburgh,\nPottstown,\nPottsville,\nReading,\nScranton,\nShamokin,\nSharon,\nState College,\nStroudsburg,\nSunbury,\nSwarthmore,\nTamaqua,\nTitusville,\nUniontown,\nWarren,\nWashington,\nWest Chester,\nWilkes-Barre,\nWilliamsport,\nYork"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BLOG_philadelphia-usa-may-4-2015-conwell-hall-temple-university-building-montgomevy-avenue-philadelphia-pennsylvania-usa.jpg",
+        "title_tag": "h2",
+        "title": "Staying Productive While Working Remotely in Pennsylvania's Cities",
+        "description": "<p>Working remotely in Pennsylvania can often be a challenge, especially with all the temptations of scenic leisure destinations and delicious local cuisine. But don’t let this deter you from staying productive! With the right attitudes and strategies, you can easily make the most out of your remote working experience.<\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p>Here are some funny yet helpful tips for staying productive while working remotely in <a href=\"\/pages\/states\" title=\"States\">Pennsylvania's<\/a> cities: Get dressed - don't be fooled by the comfort of pajamas; they won’t help keep you focused while working from home! As silly as it may seem, getting dressed as if you’re heading into an office will help put you into work mode and keep motivation levels up throughout the day.Procrastinate productively – we’ve all been guilty of procrastination at one time or another, so why not make it productive? Take a break to stretch or do jumping jacks, snack on healthy snacks like fruits or veggies and even binge watch an inspiring documentary to get those creative juices flowing again.<\/p>",
+        "text_2": "<p>All these activities will help increase productivity and efficiency later on once back to work!Take advantage of scenic spots – If you’re lucky enough to be working near one of Pennsylvania’s many stunning parks or lakes, take a break and breathe in some fresh air during your lunch break! Enjoying nature can help refresh the mind and reset your productivity for the rest of the day.With these funny yet helpful tips, you'll be able to stay productive while enjoying all that Pennsylvania has to offer!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/39.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/39.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/avah_dodd.jpg",
+            "name": "Avah Dodd",
+            "text": "I've just moved to rural Pennsylvania, so I've been exploring a few options for staying connected. One of the top solutions I've come across is nomad internet. They offer three plans – residential, business, and travel – that make sure you can access fast, reliable internet no matter where you are. On top of that, they also provide a 30-day free trial period so you can test their services before committing to anything. Their modems are designed to give you optimal performance with minimal setup required. What's more, they always have customer support available if you ever need help – no matter the time or place! All in all, nomad internet offers an incredible connection solution that keeps up with your lifestyle needs and wants.",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/teresa_kay.jpg",
+            "name": "Teresa Kay",
+            "text": "As a nomad, I'm always on the go and looking for reliable internet service. I recently found out about Nomad Internet, an internet provider that serves rural areas of Pennsylvania. They offer fast internet speeds that are perfect for remote work and their 30-day free trial means there's no commitment to sign up right away. Their three plans - residential, business, and travel - make it easy to find the right connection for your needs. For travelers like me, their travel plan offers data packages with no contract or monthly fees so I can stay connected wherever I go. With Nomad Internet I know my connection is secure and dependable.",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/rosalee_brooks.jpg",
+            "name": "Rosalee Brooks",
+            "text": "If you're looking to become a digital nomad, I suggest trying out Nomad Internet. From rural Pennsylvania, it provides fast internet for remote working, streaming and more. Plus, they offer a 30 day free trial so you can test the service before committing to a plan. Their air modem, Raptor, and Ark plans offer plenty of options to fit any budget. All their plans come with no contracts and are designed to be portable and reliable wherever your nomadic lifestyle takes you. So if you're in need of a top-notch internet connection that won't break the bank, look into Nomad Internet today!",
+            "link": ""
+          }
+        },
+        "6121150e-8509-46c1-9771-ad6b5a9b3dd6": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/paula_waters.jpg",
+            "name": "Paula Waters",
+            "text": "As a digital nomad living in rural Pennsylvania, I've been looking for an ISP that can provide fast, reliable internet so that I can work remotely. Nomad Internet has been the answer! They offer streaming without contracts and their previous ISPs didn't manage to meet my needs. The Nomad Air Modem is a great choice if you're looking for a reliable home connection without any extra equipment. The Nomad Raptor is perfect for those needing faster speeds with no data caps while the Nomad Ark is great for gaming and streaming. Ultimately, I'm happy with my decision to switch to Nomad Internet- it's allowed me to stay connected and productive from anywhere!",
+            "link": ""
+          }
+        },
+        "acd46d53-fddd-433f-ae6a-778219a2653b": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/rayne_o_sullivan.jpg",
+            "name": "Rayne O'Sullivan",
+            "text": "I've been living in rural Pennsylvania for years and it's always been a struggle to find reliable internet. But with Nomad, I'm never stuck waiting on a slow connection or signing long contracts. With the Nomad Air Modem I get fast streaming speeds, and no-contracts policy means I'm in control of my service. Plus, as a remote worker it's easy to take their modem with me wherever I go. As a photographer, I need strong connection speeds and Nomad delivers, making sure that my creative projects don't suffer from lag or buffering. Highly recommend!",
+            "link": ""
+          }
+        },
+        "53599b79-f88c-4b66-964f-70d2be3a0722": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/adele_bradshaw.jpg",
+            "name": "Adele Bradshaw",
+            "text": "As a remote worker living in rural Pennsylvania, I couldn't be happier with nomad internet. Their no contracts policy is a lifesaver and their customer service team is friendly and responsive. I opted for the nomad ark device, which was easy to set up and has been reliably streaming all my content without a hitch. The fast internet speeds allow me to work efficiently and quickly send photos as a photographer. Nomad internet is definitely worth the price!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "6121150e-8509-46c1-9771-ad6b5a9b3dd6",
+        "acd46d53-fddd-433f-ae6a-778219a2653b",
+        "53599b79-f88c-4b66-964f-70d2be3a0722"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "aba9e34a-d544-4292-852c-9aafe439d319": {
+          "type": "block",
+          "settings": {
+            "title": "How can I get better rural Pennsylvania internet speed?",
+            "content": "<p>Here are some techniques to improve your internet speed in rural Pennsylvania:<\/p><p><strong>Change your internet provider<\/strong><br\/>The first step is to consider changing your current rural internet provider. Look for providers that offer fixed wireless or satellite internet, as these tend to offer faster speeds compared to DSL or dial-up connections.<\/p><p><strong>Upgrade your equipment<\/strong><br\/>Make sure you have the right equipment for the job. If you have an older router or modem, consider upgrading to a newer, faster model. Also, try using a wired connection instead of a wireless connection if possible, as this can improve your internet speed.<\/p><p><strong>Optimize your internet usage<\/strong><br\/>Check if any programs or devices are using up your internet bandwidth unnecessarily. You can also try to limit the number of devices connected to your network, as too many devices can slow down your internet speed.<\/p><p><strong>Use a Wi-Fi extender<\/strong><br\/>If you have a large home or property, a Wi-Fi extender can help boost your signal and improve your internet speed.<\/p><p><strong>Consider Nomad Internet as an option<\/strong><br\/>If you are experiencing slow internet speeds in rural Pennsylvania, Nomad Internet may be a good option to consider. Our company offers high-speed fixed wireless internet plans starting at $99 per month, with speeds up to 200 Mbps. In addition, we provide modems such as the Nomad Air and Nomad Cube, which can boost your signal and improve the stability of your internet connection. However, it's important to do your research and check if we offer service in your specific area before signing up.<\/p>"
+          }
+        },
+        "b3ce39bc-f63c-4d77-96da-be774f11a16b": {
+          "type": "block",
+          "settings": {
+            "title": "Is 5G technology available from Nomad Internet throughout Pennsylvania?",
+            "content": "<p>Yes, Nomad Internet provides 5G services throughout Pennsylvania.<br\/><br\/>5G is the fifth generation of wireless network technology, which offers faster data speeds, lower latency, and greater network capacity than previous generations. With 5G, users can experience faster download and upload speeds, smoother streaming, and reduced lag time. It also supports the growing number of connected devices and applications, making it an essential technology for the future of the internet. <br\/><br\/>Nomad Internet's 5G services utilize advanced high-power directional antennas and support 5G sub-6GHz and 4G LTE fallback, ensuring the perfect balance of network coverage and performance. <br\/><br\/>Pennsylvania is a state with a diverse landscape, ranging from urban areas to rural communities. Nomad Internet's mission is to make high-speed wireless internet accessible for all residents, including those in remote rural areas. <br\/><br\/>With Nomad Internet's 5G services, users can enjoy fast and reliable internet connections, no matter where they are in Pennsylvania.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "aba9e34a-d544-4292-852c-9aafe439d319",
+        "b3ce39bc-f63c-4d77-96da-be774f11a16b"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

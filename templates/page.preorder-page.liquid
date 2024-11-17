@@ -1,0 +1,71 @@
+<div class="contacts">
+  <div class="container">
+    <h1 class="page__title">Pre-order Nomad</h1>
+
+    <div class="row justify-center">
+      <div class="col-md-8 col-12">
+        <div class="text-center">
+          <h3 class="contacts__title">Pre-order Form</h3>
+          <div class="contacts__description">
+            <p>
+              Nomad modems will be back in stock soon. Please fill out this form to reserve your spot in the queue. No
+              payment is required at this time.
+            </p>
+          </div>
+        </div>
+
+        <div class="contacts__form">
+          {% form 'contact' %}
+            {{ form.errors | default_errors }}
+            <input type="hidden" name="contact[page_title]" value="{{ page.title }}">
+            <input type="hidden" name="contact[page_url]" value="https://{{ request.host }}{{ request.path }}">
+            <input type="hidden" name="contact[page_type]" value="{{ page.template_suffix }}">
+
+            <label class="input-wrapper">
+              <span class="sr-only">Choose a modem</span>
+              <select name="contact[modem]" required>
+                <option value="">Choose a Modem</option>
+
+                <optgroup label="Nomad Residential 4G Plan">
+                  <option value="Nomad Rural One | Nomad Residential 4G Plan">Nomad Rural One</option>
+                </optgroup>
+
+                <optgroup label="Nomad Residential 5G Plan">
+                  <option value="Nomad Cube | Nomad Residential 5G Plan">Nomad Cube</option>
+                  <option value="Nomad Air | Nomad Residential 5G Plan">Nomad Air</option>
+                </optgroup>
+
+                <optgroup label="Nomad Travel 5G Plan">
+                  <option value="Nomad Cube | Nomad Travel 5G Plan">Nomad Cube</option>
+                  <option value="Nomad Air | Nomad Travel 5G Plan">Nomad Air</option>
+                </optgroup>
+              </select>
+            </label>
+
+            <label class="input-wrapper">
+              <span class="sr-only">Name</span>
+              <input type="text" name="contact[name]" placeholder="Name" required>
+            </label>
+
+            <label class="input-wrapper">
+              <span class="sr-only">Phone</span>
+              <input type="tel" name="contact[phone]" placeholder="Phone" required>
+            </label>
+
+            <label class="input-wrapper">
+              <span class="sr-only">E-mail</span>
+              <input type="mail" name="contact[email]" placeholder="E-mail" required>
+            </label>
+            <label class="input-wrapper">
+              <span class="sr-only">Message</span>
+              <textarea placeholder="Message" name="contact[body]" required></textarea>
+            </label>
+            <label class="input-wrapper">
+              <input type="submit" value="order now" class="btn outline lg wide">
+            </label>
+          {% endform %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,314 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "7a43deb4-392e-496d-b168-2e091f785316": {
+      "type": "lp-13",
+      "blocks": {
+        "0074aea9-2244-4e57-b987-edb849671aff": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_BTN_1.jpg",
+            "url": "shopify:\/\/pages\/specifications"
+          }
+        },
+        "8104a546-1237-4540-8ebf-6d538d97ed50": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_BTN_2.jpg",
+            "url": "shopify:\/\/pages\/rural-1"
+          }
+        },
+        "29929056-2401-4d3f-89d9-21668d153b11": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_BTN_3.jpg",
+            "url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "570b20d8-cc80-436d-a281-56997cda6fe3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_BTN_4.jpg",
+            "url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "33eaf22c-265a-43fa-b8f3-b257d5968b62": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_BTN_5.jpg",
+            "url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        }
+      },
+      "block_order": [
+        "0074aea9-2244-4e57-b987-edb849671aff",
+        "8104a546-1237-4540-8ebf-6d538d97ed50",
+        "29929056-2401-4d3f-89d9-21668d153b11",
+        "570b20d8-cc80-436d-a281-56997cda6fe3",
+        "33eaf22c-265a-43fa-b8f3-b257d5968b62"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/The_Benefits_of_Connected_Anywhere_You_Need_It.jpg",
+        "title": "The Benefits of Connected Anywhere You Need It",
+        "content": "<ul><li>Download speeds up to 100Mbps<\/li><li>4G and 5G LTE<\/li><li>Connect all Your Devices<\/li><li>No Credit Check<\/li><li>Works in remote areas<\/li><\/ul>",
+        "button_text": "Learn More",
+        "button_url": "\/pages\/plans#wizard-plans",
+        "form_image": "shopify:\/\/shop_images\/The_best_connection_option_For_You.jpg",
+        "form_title": "The best connection option For You",
+        "form_description": "<p>We will select and send you the best solution so that you do not have to look for it.<\/p>"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "How to Get Internet in Rural Areas"
+      }
+    },
+    "03aa1199-9b72-4053-b911-f0cad922498b": {
+      "type": "lp-14",
+      "blocks": {
+        "ad257757-e9a0-4a5a-ac50-28b1345d0d36": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming.jpg",
+            "title": "Streaming",
+            "button_text": "Learn More",
+            "button_url": "\/pages\/plans#wizard-plans"
+          }
+        },
+        "cf3ccac3-69c5-431a-9394-a18997dab02e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Web_Surfing.jpg",
+            "title": "Web Surfing",
+            "button_text": "Learn More",
+            "button_url": "\/pages\/plans#wizard-plans"
+          }
+        },
+        "5f663a6d-90bd-4c24-8628-e47eecdfe467": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gaming.jpg",
+            "title": "Gaming",
+            "button_text": "Learn More",
+            "button_url": "\/pages\/plans#wizard-plans"
+          }
+        },
+        "f858db4e-99cb-445f-a7ae-87924284cf55": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Communication.jpg",
+            "title": "Communication",
+            "button_text": "Learn More",
+            "button_url": "\/pages\/plans#wizard-plans"
+          }
+        }
+      },
+      "block_order": [
+        "ad257757-e9a0-4a5a-ac50-28b1345d0d36",
+        "cf3ccac3-69c5-431a-9394-a18997dab02e",
+        "5f663a6d-90bd-4c24-8628-e47eecdfe467",
+        "f858db4e-99cb-445f-a7ae-87924284cf55"
+      ],
+      "settings": {
+        "title": "Get Fast Wi Fi Internet for Rural Communities, Travelers, RVs & More"
+      }
+    },
+    "52bd89c2-ecde-4db4-ba07-55f66a3b317c": {
+      "type": "lp-5",
+      "blocks": {
+        "2619a953-675c-44b8-8232-322804a36530": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Secure_connection_icon_icon_6c5b6b30-b8fa-417a-8caa-85b76ba89899.png",
+            "title": "Up To 1TB",
+            "description": "Get 1 Terabyte Data without usage based throttling or high-speed data caps"
+          }
+        },
+        "203deee1-dc18-4104-b914-af5249538207": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Hight_Speeds_icon_blue.png",
+            "title": "High Speeds",
+            "description": "Fast 4G LTE speeds for browsing, streaming, and downloading"
+          }
+        },
+        "cf2e14a8-95b4-43d6-a00d-f0b6710e3ec8": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/stopwatch_2_1.png",
+            "title": "Minimal Latency",
+            "description": "Minimal latency response times for quick connectivity and less waiting"
+          }
+        },
+        "d8caaf9b-a40d-4790-93ac-4304f614b1c6": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/It_s_time_to_upgrade.png",
+            "title": "Expansive Wi-Fi",
+            "description": "Full Wi-Fi coverage and flexible connectivity throughout the entire house"
+          }
+        }
+      },
+      "block_order": [
+        "2619a953-675c-44b8-8232-322804a36530",
+        "203deee1-dc18-4104-b914-af5249538207",
+        "cf2e14a8-95b4-43d6-a00d-f0b6710e3ec8",
+        "d8caaf9b-a40d-4790-93ac-4304f614b1c6"
+      ],
+      "settings": {
+        "title": "Why Choose Nomad Internet",
+        "button_text": "Place Order",
+        "button_url": "\/pages\/plans#wizard-plans"
+      }
+    },
+    "f25c2f85-e2c7-435e-83e6-6b97203842b1": {
+      "type": "lp-15",
+      "blocks": {
+        "eee412e2-6743-4547-872b-b0337b702615": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rural_Internet_39e3caeb-421a-4640-9fd9-bf0d372c1dda.jpg",
+            "title": "Rural Internet →",
+            "url": "shopify:\/\/pages\/rural-1"
+          }
+        },
+        "10a72a2b-b5b9-4af3-baf2-6a6fdbebf284": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Travelers_RV_Internet.jpg",
+            "title": "Travelers & RV Internet →",
+            "url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "958dbe7f-e084-4a17-82a4-6333276e1d8c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_1.jpg",
+            "title": "Internet for Business →",
+            "url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "cc771b09-27d5-42b3-942b-c863d1ef2297": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Internet_for_Everyone.jpg",
+            "title": "Internet for Everyone →",
+            "url": "shopify:\/\/pages\/bring-your-own-device"
+          }
+        }
+      },
+      "block_order": [
+        "eee412e2-6743-4547-872b-b0337b702615",
+        "10a72a2b-b5b9-4af3-baf2-6a6fdbebf284",
+        "958dbe7f-e084-4a17-82a4-6333276e1d8c",
+        "cc771b09-27d5-42b3-942b-c863d1ef2297"
+      ],
+      "settings": {
+        "title": "Get the best internet in your area",
+        "description": "Connected anywhere you need it. Fast Internet for Rural Communities, Travelers, RVs & More"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High-Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "d88e818d-60c2-4f76-8bdd-f6e86987f93f": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet secure?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "d88e818d-60c2-4f76-8bdd-f6e86987f93f",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7"
+      ],
+      "settings": {
+        "title": "Answers to the most frequently asked questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "fddaf3e9-d590-419e-b9ff-dca0933a44f8": {
+      "type": "lp-17",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Talk_to_our_experts.jpg",
+        "title": "Talk to our experts",
+        "description": "If you have questions, you can ask our experts. Send a message with your question, our specialist will contact you and give a detailed answer to your question"
+      }
+    }
+  },
+  "order": [
+    "7a43deb4-392e-496d-b168-2e091f785316",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "03aa1199-9b72-4053-b911-f0cad922498b",
+    "52bd89c2-ecde-4db4-ba07-55f66a3b317c",
+    "f25c2f85-e2c7-435e-83e6-6b97203842b1",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "fddaf3e9-d590-419e-b9ff-dca0933a44f8"
+  ]
+}

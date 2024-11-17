@@ -1,0 +1,303 @@
+{
+  "sections": {
+    "6969714c-7423-4851-98b5-3e55fac05b3a": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "a960c3ff-3900-4ddc-9902-27d26d45f2c3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1000007450_0656d9bc-9484-43a7-a6a2-076d9bb44e6b.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "a960c3ff-3900-4ddc-9902-27d26d45f2c3"
+      ],
+      "custom_css": [
+        ".plan-first-screen__title {font-size: 2.3em;}",
+        ".plan-first-screen__description {margin-bottom: 0;}"
+      ],
+      "settings": {
+        "title": "NOMAD INTERNET, FROM OUR FOUNDING DAYS TO TODAY",
+        "description": "<p>Our journey to serving the underserved and solving the digital divide in America<\/p>",
+        "max_width": 770,
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "4f3733cd-99cd-48cd-bed3-faac53e10ac7": {
+      "type": "awesome-timeline",
+      "blocks": {
+        "af96c2e5-29b0-4faa-9e95-2829c2eb8ab1": {
+          "type": "timeline-item",
+          "settings": {
+            "color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Group_1000007423.jpg",
+            "title": "June 2017",
+            "excerpt": "<p>Nomad Internet founded<\/p>",
+            "description": ""
+          }
+        },
+        "18b4666b-5525-46da-8360-abbb35fe68da": {
+          "type": "timeline-item",
+          "settings": {
+            "color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Rectangle_1499.jpg",
+            "title": "July 2017 - March 2020",
+            "excerpt": "<p>We provided outdoor wifi access to over 50,000 customers across resorts, RV parks, and campgrounds in Texas. <\/p>",
+            "description": ""
+          }
+        },
+        "ed80b13e-997f-4d45-9ee1-a0eb8d828d9c": {
+          "type": "timeline-item",
+          "settings": {
+            "color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Group_1000007423_bdc48e2b-ce3d-4796-8fbc-a2eb8fd607c2.jpg",
+            "title": "April 2020 - December 2022",
+            "excerpt": "<p>We partner with resellers who have exclusive contracts with major carriers to offer affordable fixed wireless internet to on-the-road customers and rural communities in the U.S.<\/p><p><em>The lawsuit against Nomad by the state of Texas is related to this time period, when some resellers didn’t notify us that their contracts with carriers had been canceled. <\/em><\/p>",
+            "description": "<h3>BACKGROUND<\/h3><p><br\/>On March 30, 2023, the Office of the Texas Attorney General, Ken Paxton, filed a lawsuit<br\/>against Nomad Internet incorrectly alleging that Nomad Internet willingly scammed<br\/>customers, and filed a court order to enjoin operations and freeze company assets.<\/p><p>On April 14, 2023, Nomad Internet successfully reversed the injunction by providing the<br\/>court with evidence of legitimate business and services for thousands of customers who<br\/>rely on Nomad Internet for internet access.<\/p><p>Six days later, on April 20, the Attorney General’s office issued a press release recklessly<br\/>misrepresenting the facts of the case.<\/p><p>Despite attempts by Nomad Internet’s attorneys to correct the factual inaccuracies and<br\/>misleading framing of the case by the AG in the press release – including the reversal of<br\/>the court ordered freezing of Nomad Internet’s assets, which is not reflected in the<br\/>current press release – the AG’s office has refused to cooperate.<\/p><h3><br\/>FACTS<\/h3><ul><li>The Texas Attorney General’s case is related to Nomad’s operations between April<br\/> 2020 and December 2022, when the company provided fixed wireless programs<br\/>to customers through a network of resellers that Nomad Internet believed to have<br\/>legacy contracts, offering customers in rural communities, RV parks and other<br\/>underserved areas of the U.S. with unique access to fixed wireless programs that<br\/>were both reliable and affordable.<\/li><li>Nomad Internet was informed that some of these reseller’s legacy contracts had<br\/>been severed by carriers, at which point Nomad conducted an audit to identify<br\/>which resellers were providing unauthorized internet access to Nomad Internet<br\/>customers, and terminated agreements accordingly.<\/li><li>Nomad Internet, to date, has issued refunds to all customers who contacted<br\/>Nomad Internet after having been impacted by these terminated reseller<br\/>agreements.<\/li><li>No criminal charges have been brought against Nomad Internet or any person<br\/>associated with the company.<\/li><li>Nomad Internet has full legal authority to operate and continue providing internet<br\/>services to its customers. The lawsuit has no impact on the internet services<br\/>currently being provided to customers.<\/li><\/ul><h3><br\/>STATUS UPDATE<\/h3><ul><li>Nomad Internet attorney’s are working closely with the state of Texas to resolve<br\/>the claims made against the company and reach a resolution.<\/li><li>Nomad Internet attorneys are negotiating a favorable settlement, which is<br\/>expected to be finalized within the coming weeks.<\/li><li>Nomad Internet has hired a communications advisory firm to mitigate reputational<br\/>risk and manage stakeholder relationships.<\/li><li>Nomad Internet customer service representatives have been provided clear<br\/>instructions and messaging to field any consumer inquiries or press outreach<br\/>pertaining to the lawsuit.<\/li><\/ul>"
+          }
+        },
+        "54c428b9-2d88-4d36-b9f5-42fe97945bd6": {
+          "type": "timeline-item",
+          "settings": {
+            "color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Group_1000007423_07cd9808-a2b1-4709-928e-5f87974763b1.jpg",
+            "title": "November 2022",
+            "excerpt": "<p>Nomad signs a deal with Verizon Wireless to operate exclusively as an authorized reseller.<\/p>",
+            "description": ""
+          }
+        },
+        "07b16ac0-89bc-4ea4-bc36-132aecf47d0b": {
+          "type": "timeline-item",
+          "settings": {
+            "color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Group_1000007423_536fa801-2119-4928-b505-8407fe05113f.jpg",
+            "title": "March 30, 2023",
+            "excerpt": "<p>Office of Texas Attorney General (AG) files lawsuit against Nomad Internet incorrectly accusing Nomad of being a scam.<\/p><p>Texas AG files court order to try to stop Nomad operations and freeze company assets.<\/p>",
+            "description": ""
+          }
+        },
+        "3a41b61e-3a2e-4784-8b5d-e5413795a97e": {
+          "type": "timeline-item",
+          "disabled": true,
+          "settings": {
+            "color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Rectangle_1499_9e1b252f-8d16-42ee-a736-bb8a1913d973.jpg",
+            "title": "March 30, 2023",
+            "excerpt": "<p>Texas AG files court order to try to stop Nomad operations and freeze company assets.<\/p>",
+            "description": ""
+          }
+        },
+        "6ba025d6-ac6c-4227-a595-c8169ee9e952": {
+          "type": "timeline-item",
+          "settings": {
+            "color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Group_1000007423_facb4635-494e-4684-aec6-18d1e09a3612.jpg",
+            "title": "April 14, 2023",
+            "excerpt": "<p>Nomad successfully reverses order to stop operations by providing evidence of our legitimate business and services for thousands of customers who need Nomad for internet access.<\/p>",
+            "description": ""
+          }
+        },
+        "83f2a01e-3ca6-497d-9703-7fa05e6be45e": {
+          "type": "timeline-item",
+          "settings": {
+            "color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Group_1000007423_a02e288c-40c2-4289-8b89-a9aa14106c39.jpg",
+            "title": "April 20, 2023",
+            "excerpt": "<p>Texas AG issues press release with misinformation about Nomad’s business practices, the court’s reversed order that allowed Nomad to keep serving customers, and more.<\/p>",
+            "description": ""
+          }
+        },
+        "7cbe3fbb-a00c-44a1-a0d9-dbfc30991093": {
+          "type": "timeline-item",
+          "settings": {
+            "color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Group_1000007423_fbd031b6-189c-4967-ac28-06660f5156ae.jpg",
+            "title": "April 21, 2023",
+            "excerpt": "<p>Nomad CEO Robyn Weber issues a <a href=\"https:\/\/nomadinternet.com\/blogs\/countrynomad\/nomad-internet-remains-committed-to-delivering-high-speed-internet-to-americans\"><span style=\"text-decoration:underline\">statement<\/span><\/a> on how Nomad Internet is working with the AG’s office to resolve mistaken claims and hold unauthorized resellers accountable for duping customers, carriers, and partners, including Nomad.<\/p>",
+            "description": ""
+          }
+        },
+        "362989f0-f175-462f-aef9-00b36ad9fafb": {
+          "type": "timeline-item",
+          "settings": {
+            "color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Group_1000007423_87bbd2ad-bafe-4a35-8348-60db2b96a797.jpg",
+            "title": "PRESENT",
+            "excerpt": "<p>Nomad Internet continues to provide high-speed internet to over 10,000 customers across the country through Verizon Wireless.<\/p>",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "af96c2e5-29b0-4faa-9e95-2829c2eb8ab1",
+        "18b4666b-5525-46da-8360-abbb35fe68da",
+        "ed80b13e-997f-4d45-9ee1-a0eb8d828d9c",
+        "54c428b9-2d88-4d36-b9f5-42fe97945bd6",
+        "07b16ac0-89bc-4ea4-bc36-132aecf47d0b",
+        "3a41b61e-3a2e-4784-8b5d-e5413795a97e",
+        "6ba025d6-ac6c-4227-a595-c8169ee9e952",
+        "83f2a01e-3ca6-497d-9703-7fa05e6be45e",
+        "7cbe3fbb-a00c-44a1-a0d9-dbfc30991093",
+        "362989f0-f175-462f-aef9-00b36ad9fafb"
+      ],
+      "custom_css": [
+        ".timeline-item__excerpt em {display: block; font-size: 97%; background: #ffa9a9; padding: 0.8rem; color: #000; font-weight: bold;}"
+      ],
+      "settings": {
+        "title_tag": "h2",
+        "title": "nomad TIMELINE"
+      }
+    },
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6": {
+      "type": "lp-20",
+      "blocks": {
+        "463ca077-07d6-4981-94f0-a220199798e0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Jamie_Mullins.jpg",
+            "name": "Jamie Mullins",
+            "text": "When I first heard about Nomad Internet, I was excited because it promised to be one of the fastest internet providers. As someone living in a rural area where internet access could be spotty at times, this appealed to me. I'm so glad I decided to give Nomad Internet a try - it exceeded my expectations! Their service is consistently fast and reliable, allowing me to do everything online with ease. If you're looking for fastest internet providers in rural areas, Nomad Internet is definitely the way to go!",
+            "link": ""
+          }
+        },
+        "88a03539-2380-432d-b3e7-8dae99116c77": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Monica_O_brien.jpg",
+            "name": "Monica Obrien",
+            "text": "I recently switched to Nomad Internet and am so pleased with my decision! I live in a rural area, so good and cheap internet providers can be hard to come by. But Nomad offered me exactly what I needed: good speed at an affordable price that fits within my budget. I got an amazing unlimited residential plan for just $109! After comparing their speeds to Optimum and AT&T, I can confidently say that they are right up there with the biggest competitors. All in all, I'm very satisfied with this service and would definitely recommend it to others!",
+            "link": ""
+          }
+        },
+        "dbf86b5a-2297-41d6-be3d-626b97e1c732": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Liam_Silva.jpg",
+            "name": "Liam Silva",
+            "text": "I recently decided to switch to nomad internet as it proved to be one of the best cheap internet providers around. After some research, I chose their nomad air modem and it was worth it! The connection was fast and reliable even in my rural area. It's perfect for streaming movies and I never have a problem connecting multiple devices at once. Would highly recommend nomad internet to anyone looking for a great, low cost way to connect!",
+            "link": ""
+          }
+        },
+        "9cbbc67d-0f30-4fef-ab44-55e3235bcdc3": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Mackenzie_Bates.jpg",
+            "name": "Mackenzie Bates",
+            "text": "As a rural dweller looking to start remote working, I was in desperate need of wi-fi services providers. After trying out Astound Broadband and Viasat, I finally stumbled upon Nomad Internet. It offered me high speed internet, reliable wi-fi connection and all at an affordable price. After using their wi-fi services for just a few months, I must say that Nomad Internet has exceeded my expectations. Therefore, I highly recommend it to anyone looking for wi-fi services in the countryside. Four star service from Nomad!",
+            "link": ""
+          }
+        },
+        "0a2df3cd-18e1-4ff4-a1a7-5c0f08213346": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Sara_Martinez.jpg",
+            "name": "Sara Martinez",
+            "text": "Nomad Internet is one of the best wi-fi internet services providers in Vermont and I'm really pleased with what they offer. Originally I had some reservations about switching from CenturyLink because I was worried about having enough speed in my rural area but that was not the case with Nomad. They were able to provide a reliable and high speed wi-fi connection which allowed me to easily download or upload whatever I need in an efficient manner. Highly recommend taking a look at them if you're looking for wi-fi\/internet service!",
+            "link": ""
+          }
+        },
+        "6c45b147-0c49-4bbf-900e-389833e6da48": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Valerie_Hicks.jpg",
+            "name": "Valerie Hicks",
+            "text": "As a rural-dweller, I was always desperately hunting for the best internet providers in my area. Regularly, I would have to settle for Xfinity or Spectrum - but then I discovered Nomad Internet. With their high speed and convenient service, this quickly became my go-to internet provider within no time! It's been a real lifesaver especially now that my family has grown and works from home. I highly recommend Nomad Internet to anyone looking for reliable connections in rural areas!",
+            "link": ""
+          }
+        },
+        "03ff40d2-58f3-4573-95e7-e088544dcf99": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Lauren_Edwards.jpg",
+            "name": "Lauren Edwards",
+            "text": "I recently tried out NOMAD as a wireless internet service provider in my area and was pleasantly surprised. It is one of the best wireless internet service providers in my area I have ever used. My big family takes up a lot of bandwidth but with NOMAD’s high speed, everyone could stay connected without any issues. We experienced virtually no lag and never had to reset our equipment. I definitely give it five stars and highly recommend this wireless internet solution for anyone looking for rural internet needs!",
+            "link": ""
+          }
+        },
+        "5b301e92-0d49-4735-8bc0-41078f026aa8": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Tiffany_Cantu.jpg",
+            "name": "Tiffany Cantu",
+            "text": "Living in a rural area of Delaware with a big family, we need a fast and reliable internet service. After doing research on which internet providers were available in my area, I decided to choose Nomad Internet for its high speed and reasonably priced plans. My experience has been great! We have not experienced any buffering or connection drops which makes watching livestreams, downloading music and having multiple devices connected easy and enjoyable. And customer service is always prompt in responding which is an added bonus! Overall, I am very pleased with our decision to go with Nomad Internet.",
+            "link": ""
+          }
+        },
+        "af156844-1b33-499e-8b8b-deb56f25cd0a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Philip_Davis.jpg",
+            "name": "Phillip Davis",
+            "text": "I live in rural Texas and often found it hard to find wi fi internet providers in my area. But that changed when I discovered Nomad Internet. All I can say is wow! Thanks to this incredible service, I'm now able to stay connected with reliable and fast speeds even during peak usage hours. This has made my kids' education easier without any disruption. And the customer service at Nomad Internet is unbeatable - they are so friendly and always quick to answer any questions!",
+            "link": ""
+          }
+        },
+        "27aa185b-2dfe-42fe-b287-843fd9cc7523": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Rebecca_Brock.jpg",
+            "name": "Rebecca Brock",
+            "text": "I recently found out about Nomad Internet, and I’m so glad I did! As a rural resident of Idaho, I know thar finding best internet providers in my area can be difficult. But with Nomad, getting fast internet for my home has been a breeze. For the first time ever, my kids are able to get their online education without any hiccups. Plus, even though Sparklight and TekFinity were cheaper than Nomad’s monthly service fee, the dependability and speed that comes with Nomad make it invaluable! Definitely recommend if you live in a rural area!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "463ca077-07d6-4981-94f0-a220199798e0",
+        "88a03539-2380-432d-b3e7-8dae99116c77",
+        "dbf86b5a-2297-41d6-be3d-626b97e1c732",
+        "9cbbc67d-0f30-4fef-ab44-55e3235bcdc3",
+        "0a2df3cd-18e1-4ff4-a1a7-5c0f08213346",
+        "6c45b147-0c49-4bbf-900e-389833e6da48",
+        "03ff40d2-58f3-4573-95e7-e088544dcf99",
+        "5b301e92-0d49-4735-8bc0-41078f026aa8",
+        "af156844-1b33-499e-8b8b-deb56f25cd0a",
+        "27aa185b-2dfe-42fe-b287-843fd9cc7523"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "f9edaed5-c585-40ef-a402-bf4f5c319745": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "6969714c-7423-4851-98b5-3e55fac05b3a",
+    "4f3733cd-99cd-48cd-bed3-faac53e10ac7",
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6",
+    "f9edaed5-c585-40ef-a402-bf4f5c319745"
+  ]
+}

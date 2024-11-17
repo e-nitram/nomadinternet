@@ -1,0 +1,184 @@
+{
+  "sections": {
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "efefe1c8-6f11-47f4-bed9-5d883f60cb59": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero_air_bag_1.png",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "efefe1c8-6f11-47f4-bed9-5d883f60cb59"
+      ],
+      "custom_css": [
+        ".plan-first-screen__description {margin: 0 auto 1.222em;}"
+      ],
+      "settings": {
+        "title": "NOMAD AIR WIRELESS MODEM & TRAVEL BACKUP SYSTEM",
+        "description": "<p>The Nomad Air Travel System includes the Nomad Air Wireless Modem with up to 200Mbps of internet ANYWHERE & up to a WEEK of backup power!<\/p><p><\/p><p>Preorder Now, Ships in 2-6 Weeks <\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "Preorder Now",
+        "button_url": "\/cart\/40041930850362:1",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "e734d273-b24b-41b2-860b-7e87991bae70": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "center",
+        "columns": "1",
+        "heading_text": "ANNOUNCING THE NOMAD AIR TRAVEL BAG!",
+        "text": "<p>The Nomad Air Travel Bag System allows you to access high-speed Wifi Internet anywhere you go without wires! The Nomad Air Travel Bag includes up to \"one week\" back up battery, and wifi internet!<br\/><br\/>HOW IT WORKS: With the Nomad Air Travel Bag, you can bring high speed internet anywhere! All without power and completely off-grid!<\/p>",
+        "text_2": "",
+        "text_align": "center"
+      }
+    },
+    "31785f35-9a40-47fa-bdfb-b2ba1dedc49b": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"633\" height=\"1125\" src=\"https:\/\/www.youtube.com\/embed\/V6LgwMQX-pY?si=v-OXi5e9SiEE--Ofcontrols=0\" title=\"The Nomad Air Travel Bag\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+      }
+    },
+    "16e4c6a1-c823-4e09-9dee-407365986631": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "1",
+        "heading_text": "",
+        "text": "<p>Our Nomad Air Travel Bag lets you stay connected with high speed internet in the wilderness up to a week with the back up battery. It is great for everyone who loves the mountains and wilderness, researchers, campers, travelers, and more. Easily control your Nomad Air with a simple on and off switch that you can see from anywhere.<br\/><br\/>The Nomad Air works with the Nomad Internet Mobile App anywhere in the country!<\/p>",
+        "text_2": "",
+        "text_align": "center"
+      }
+    },
+    "f5ebd50a-05b0-4e8e-9fd9-60ac6a33bc00": {
+      "type": "awesome-heading",
+      "settings": {
+        "heading_size": "2",
+        "heading_text": "HOW DOES THE NOMAD AIR TRAVEL SYSTEM WORK?",
+        "text_align": "center"
+      }
+    },
+    "1a555d27-35d8-4a57-a376-c4ade3efa21b": {
+      "type": "bag-specification",
+      "settings": {
+        "image_one": "shopify:\/\/shop_images\/Front.png",
+        "image_two": "shopify:\/\/shop_images\/back.png",
+        "text": "<p>1. Nomad Air hotspot <\/p><p>2. Nomad Air travel bag<\/p><p>3. Up To One Week Backup Battery<\/p><p>4. On\/Off Switch with blue LED<\/p><p>5. Space saver power adapter <\/p><p>6. Fast AC wall charger<\/p>"
+      }
+    },
+    "31a63bbe-c87f-47df-bf63-afa91dda3b3c": {
+      "type": "awesome-heading",
+      "settings": {
+        "heading_size": "2",
+        "heading_text": "What is included?",
+        "text_align": "center"
+      }
+    },
+    "9709f705-84cb-4194-a1c9-82534f71afae": {
+      "type": "bag-item",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/air_1_9fbb40ee-f178-4219-9a8c-097897fd07b5.png",
+        "title": "NOMAD AIR MODEM",
+        "text": "The powerful Nomad Air is Nomad's powerful indoor modem. The Nomad Air features advanced high-power directional antennas that extend the reach of cellular networks, while also supporting 5G sub-6GHz and 4G LTE fallback for the perfect balance of network coverage and performance."
+      }
+    },
+    "8ce1cfbd-2974-425b-8680-2ad3606fd929": {
+      "type": "bag-item",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bag_1.png",
+        "title": "Travel Bag",
+        "text": "Traveling with the right gear can make a huge difference when you're trying to stay connected on the go. The Nomad Air Travel Bag is perfect for adventurers and techies alike, with plenty of space for both a battery and modem. Durable and lightweight, this bag also offers great value for money."
+      }
+    },
+    "0fe2f3c9-9295-47bb-ab88-035c3f62eba2": {
+      "type": "bag-item",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/single_1.png",
+        "title": "Battery",
+        "text": "This portable charger is compatible with most devices, allowing users to easily access their devices wherever they go. The Power Bank has a 60000mAh capacity which is ideal for outdoor camping or home emergency situations."
+      }
+    },
+    "9fa197df-beaa-45bb-8a1a-0704aeae06d2": {
+      "type": "bag-item",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Power_Switch.png",
+        "title": "POWER SWITCH",
+        "text": "The Convenient USB Power Switch is the perfect solution for all your power needs. This cable allows you to switch between USB on\/off quickly and easily – providing both data and power."
+      }
+    },
+    "c9ae0ebc-f3dc-4f93-88a0-2b1302e7fb84": {
+      "type": "bag-item",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Power_Adaptor.png",
+        "title": "Power Adaptor",
+        "text": "Are you always on the go but need continuous access to the internet? Power up your Nomad Modem with the convenience and ease of a cablecc USB 2.0 A Type! This Power Adaptor is an essential for anyone needing to travel and stay connected, providing an easy solution for powering and connecting a variety of devices quickly and without hassle."
+      }
+    },
+    "5c216a6e-e88e-4ccd-938e-537acf34fdd4": {
+      "type": "bag-item",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Power_Plug.png",
+        "title": "POWER PLUG",
+        "text": "The USB C Charger with 25W charges your devices up to 5X faster than traditional Power Adaptors. The 6FT USB C to USB C Charger Cable is the perfect companion for traveling and is compatible with the Nomad Modem."
+      }
+    },
+    "06f26d3b-804c-4134-82aa-448663f84cc8": {
+      "type": "bag-item",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/membership_in_the_Nomad_club.png",
+        "title": "GET YOUR NOMAD MEMBERSHIP",
+        "text": "Experience lightning-fast internet speeds and advanced wifi featuring state-of-the-art security. You will receive turbocharged Internet that powers rural, multi-floor homes, travelers, and vanlifers. Use all of your smart devices while streaming on multiple screens at once with speeds up to 200 Mbps."
+      }
+    },
+    "a2cd53ba-a134-4c1d-bca3-46415b44fccb": {
+      "type": "bag-item",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/membership_in_the_Nomad_club.png",
+        "title": "GET YOUR NOMAD MEMBERSHIP",
+        "text": "Join the Nomad Club Membership Community today and unlock access to exclusive benefits and offers! Members can enjoy discounts , as well as a range of other opportunities available through our robust online portal. Become a member now and join in on exciting conversations with like-minded people all around the World!"
+      }
+    },
+    "73417fb2-f2dd-4f1c-88ff-15ac69c38493": {
+      "type": "awesome-cta",
+      "custom_css": [
+        ".plan-first-screen__description {margin: 0 auto 1.222em;}"
+      ],
+      "settings": {
+        "heading_size": "2",
+        "heading_text": "Nomad Air Travel Bag for $399",
+        "bottom_description": "Preorder Now, Ships in 2-6 Weeks",
+        "btn_text": "Preorder Now",
+        "btn_url": "\/cart\/40041930850362:1",
+        "text_align": "center"
+      }
+    }
+  },
+  "order": [
+    "awesome-first-screen",
+    "e734d273-b24b-41b2-860b-7e87991bae70",
+    "31785f35-9a40-47fa-bdfb-b2ba1dedc49b",
+    "16e4c6a1-c823-4e09-9dee-407365986631",
+    "f5ebd50a-05b0-4e8e-9fd9-60ac6a33bc00",
+    "1a555d27-35d8-4a57-a376-c4ade3efa21b",
+    "31a63bbe-c87f-47df-bf63-afa91dda3b3c",
+    "9709f705-84cb-4194-a1c9-82534f71afae",
+    "8ce1cfbd-2974-425b-8680-2ad3606fd929",
+    "0fe2f3c9-9295-47bb-ab88-035c3f62eba2",
+    "9fa197df-beaa-45bb-8a1a-0704aeae06d2",
+    "c9ae0ebc-f3dc-4f93-88a0-2b1302e7fb84",
+    "5c216a6e-e88e-4ccd-938e-537acf34fdd4",
+    "06f26d3b-804c-4134-82aa-448663f84cc8",
+    "a2cd53ba-a134-4c1d-bca3-46415b44fccb",
+    "73417fb2-f2dd-4f1c-88ff-15ac69c38493"
+  ]
+}

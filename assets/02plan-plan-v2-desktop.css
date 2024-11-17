@@ -1,0 +1,1706 @@
+
+@media screen and (min-width: 990px){
+.omen_mobile_only{display:none!important;}
+.omen_desktop_only{display:block!important;}
+.mobile_raptor_info{display:none!important;}
+.desktop_raptor_info{display:block!important;}
+.footer-checkout.desktop-hide{display:none!important;}  
+.plan_section{
+  margin-top:50px; background:#fff;
+}  
+.slider-main-plan{display:none!important;}
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    img {
+      max-width: 100%;
+    }
+    .wireless-internet-modem .container {
+      display: block;
+      max-width: 1470px;
+      margin: 0 auto;
+      padding: 0 15px 100px;
+    }
+    .wireless-internet-modem .main-row {
+      display: flex;
+      gap: 50px;
+      overflow: inherit;
+      padding: 20px 24px;
+    }
+    .wireless-internet-modem .main-row .main-col {
+      display: block;
+      width: 50%;
+      float: left;
+    }
+
+.wireless-internet-modem .main-row .main-col:first-of-type {
+  width: 42%;
+  position: sticky;
+    top: 180px;
+    height: 450px;
+}
+.wireless-internet-modem .main-row .main-col:last-of-type {
+  width: 58%;
+}
+
+    .wireless-internet-modem .container .heading {
+      padding: 24px 0 12px;
+      margin: 0 0 18px;
+    }
+    .wireless-internet-modem .container .heading h1 {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: normal;
+      color: #222;
+      /*margin: 0 0 4px;*/
+      font-family: 'AktivGrotesk', sans-serif !important;;
+    }
+    .wireless-internet-modem .container .heading p {
+      display: flex;
+      padding: 4px 8px;
+      align-items: center;
+      gap: 8px;
+      border-radius: 500px;
+      color: #f5f5f5;
+      background-color: #ff4d00;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.12px;
+      width: max-content;
+      font-family: 'AktivGrotesk', sans-serif !important;;
+    }
+    .wireless-internet-modem .slider-main .img img {
+      margin: 0 auto;
+    }
+    .wireless-internet-modem .slick-next {
+      right: 30px;
+    }
+    .wireless-internet-modem .slick-prev {
+      left: 30px;
+    }
+    .wireless-internet-modem .slick-prev img {
+      transform: rotate(180deg);
+    }
+    .wireless-internet-modem .slick-next,
+    .wireless-internet-modem .slick-prev {
+      z-index: 1;
+      width: 34px;
+      height: 34px;
+    }
+    .wireless-internet-modem .slick-next:before,
+    .wireless-internet-modem .slick-prev:before {
+      content: none;
+    }
+    .wireless-internet-modem .slick-dots {
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .wireless-internet-modem .slick-dots li {
+      margin: 0;
+      height: 15px;
+    }
+    .wireless-internet-modem .slick-dots li button {
+      background: #a3a3a3;
+      border-radius: 50px;
+      padding: 0;
+      width: 5px;
+      height: 5px;
+      transition: 0.3s all;
+    }
+    .wireless-internet-modem .slick-dots li.slick-active button {
+      background-color: #000;
+      width: 12px;
+    }
+    .wireless-internet-modem .slick-dots li button:before {
+      content: none;
+    }
+    .wireless-internet-modem .steps {
+      margin: 33px 0 20px;
+    }
+    .wireless-internet-modem .steps .step-title h2,
+    .wireless-internet-modem .unlimited-plan .plan-title h2 {
+      color: #000;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: normal;
+      margin: 0 0 4px;
+      font-family: 'AktivGrotesk', sans-serif !important;;
+    }
+    .wireless-internet-modem .steps .step-title p,
+    .wireless-internet-modem .unlimited-plan .plan-title p {
+      color: #4D5166;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: -0.28px;
+      margin: 0 0 20px;
+      font-family: 'AktivGrotesk', sans-serif !important;;
+    }
+    .wireless-internet-modem .unlimited-plan .img {
+      text-align: center;
+      margin: 0 0 20px;
+    }
+    .wireless-internet-modem .modem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wireless-internet-modem .modem-grid.modem-grid--main {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .modem-main.top-modem.nomad-raptor img {
+      height: 120px;
+    }
+
+    @media (max-width: 1199px) {
+      .wireless-internet-modem .modem-grid.modem-grid--main {
+        grid-template-columns: repeat(2, 1fr);
+      } 
+
+      .modem-main.top-modem.nomad-raptor img {
+        height: 100px !important;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .wireless-internet-modem .modem-grid .modem-main.nomad-raptor {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 24px;
+        grid-column: 1 / 3;
+        align-items: center;
+      }
+      
+      .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .img {
+        width: 150px;
+        height: 95px;
+        margin: 0;
+      }
+       .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .monthly {
+        width: fit-content;
+      }
+      
+      .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .info {
+        text-align: left;
+        width: calc(100% - 110px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .wireless-internet-modem .slider-main .img img {
+        width: 100%;
+      }
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main {
+      text-align: center;
+      border: 1px solid #a0a0a0;
+      border-radius: 4px;
+      padding: 12px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      cursor: pointer;
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main.nomad-air .yellow-text {
+      margin:0;
+      margin-top: 10px;
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main.nomad-air .img img {
+      margin: 5px auto 10px;
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main.active {
+      border-color: #008061;
+      background-color: #0080610d;
+      border: 2px solid #008061;
+    }
+    .wireless-internet-modem .modem-grid .modem-main .info h2 {
+      display: block;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      font-family: 'AktivGrotesk', sans-serif !important;;
+      line-height: normal;
+      text-transform: capitalize;
+      color: #000;
+      margin: 0;
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main .info span {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: normal;
+      font-family: 'AktivGrotesk', sans-serif !important;;
+      line-height: normal;
+      color: #008061;
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .info span.description {
+      line-height: 13.96px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 0;
+      white-space: pre
+    }
+
+    .wireless-internet-modem .unlimited-plan {
+      display: block;
+      margin: 40px 0 0;
+    }
+    .wireless-internet-modem
+      .unlimited-plan
+      .modem-grid
+      .modem-main
+      .info
+      span {
+      color: #4D5166;
+    }
+    .wireless-internet-modem .unlimited-plan .modem-grid .modem-main .info p {
+         color: #4D5166;
+text-align: center;
+font-family: 'AktivGrotesk', sans-serif !important;;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+line-height: 15px;
+margin-top:10px
+    }
+    .wireless-internet-modem .modem-grid .modem-main .info p.price {
+      display: block;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: normal;
+      color: #4D5166;
+      margin: 0;
+      margin-top: 2px;
+      font-family: 'AktivGrotesk', sans-serif !important;;
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main .info p.price span {
+      color: #4D5166;
+      text-decoration: line-through;
+      font-size: 14px;
+      margin-left: 2px;
+    }
+    .wireless-internet-modem .modem-grid .modem-main span.yellow-text {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      font-family: 'AktivGrotesk', sans-serif !important;;
+      line-height: normal;
+      color: #A33100;
+      margin: 8px 0;
+    }
+
+    .wireless-internet-modem .help-info .help-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+    .wireless-internet-modem .help-info.plan-help-info .help-text {
+      margin: 24px 0;
+    }
+
+    .wireless-internet-modem .help-info .help-text p {
+      display: block;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: normal;
+      font-family: 'AktivGrotesk', sans-serif !important;;
+      line-height: 30px;
+      text-decoration-line: underline;
+      color: #525252;
+    }
+    .wireless-internet-modem .footer-checkout {
+      /*position: fixed;
+      bottom: 0;*/
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 24px 16px 12px;
+      border-top: 1px solid #e5e5e5;
+      z-index: 99;
+      background: #fff;
+      /* max-width: calc(1470px / 2 - 115px); */
+      
+     /* left: 50%;*/
+      /*margin: 0 50px;*/
+    }
+
+    .wireless-internet-modem .footer-checkout .product-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .wireless-internet-modem .footer-checkout .product-info h2 {
+      display: block;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: normal;
+      color: #000;
+      font-family: 'AktivGrotesk', sans-serif !important;;
+    }
+.sale_price{
+font-family: 'AktivGrotesk', sans-serif !important;;
+font-weight: bold;
+color:#000!important;;
+text-decoration:none!important;
+}
+.original_price{
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  font-weight: 500;
+}
+    .wireless-internet-modem .footer-checkout .product-info p.price {
+      display: block;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #000;
+    }
+
+    .wireless-internet-modem .footer-checkout .product-info p.price span {
+      color: #4D5166;
+      text-decoration: line-through;
+      /*display:block;*/
+    }
+
+    .wireless-internet-modem .footer-checkout .product-info span.yellow-text {
+      color: #ff4d00!important;
+      text-decoration: none!important;
+    }
+
+    .wireless-internet-modem .footer-checkout .product-info span.fee {
+      display: block;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #000;
+    }
+
+    .wireless-internet-modem .footer-checkout .payment-btn a {
+      display: flex;
+      padding: 12px;
+      border-radius: 8px;
+      border: 2px solid #017C5F;
+      text-decoration: none;
+      font-size: 16px;
+      font-style: normal;
+      font-family: 'AktivGrotesk', sans-serif !important;;
+      font-weight: normal;
+      line-height: 22.68px;
+      color: #000;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+    .wireless-internet-modem .footer-checkout .payment-btn.checkout-btn a {
+      background-color: #017C5F;
+      color: #fff;
+      min-width: 236px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: AktivGrotesk !important;
+    }
+    .wireless-internet-modem .payment-btns {
+     /* display: flex;*/
+      gap: 4px;
+    }
+    .hidden-popup-overlay {
+      content: "";
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #000000bf;
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s all;
+    }
+    .hidden-popup-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    .hidden-popup {
+      padding: 26px;
+      background: #fff;
+      border-radius: 30px;
+      position: fixed;
+      width: 100%;
+      bottom: -100%;
+      left: 50%;
+      z-index: 100;
+      transition: 0.5s all;
+      max-width: 1050px;
+      transform: translateX(-50%);
+    }
+    .hidden-popup.active {
+      bottom: 30%;
+    }
+
+    .hidden-popup .list-main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+  .hidden-popup.payment-popup .list-main {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+    .hidden-popup.monthly-popup .list-main {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .hidden-popup .close-btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 0 0 16px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .hidden-popup .close-btn:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: #4D5166;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 3px;
+      top: 0;
+    }
+    .hidden-popup .title h2 {
+      color: #222;
+      text-align: center;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: bold;
+  font-family: 'AktivGrotesk', sans-serif !important;
+      line-height: normal;
+      margin: 0 0 24px;
+    }
+    .hidden-popup .list {
+      padding: 16px 10px 16px 20px;
+      border-radius: 12px;
+      background: #e9f2e4;
+      margin: 0 0 12px;
+    }
+    .hidden-popup .list h2.list-title {
+      display: block;
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+     font-weight: bold;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+      line-height: normal;
+      margin: 0 0 16px;
+    }
+
+    .hidden-popup .list li {
+      list-style: none;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin: 0 0 10px;
+      font-size: 14px;
+      font-style: normal;
+     font-weight: normal;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+      line-height: normal;
+      color: #292929;
+      opacity: 0.8;
+    }
+
+    .hidden-popup .list li svg {
+      width: 20px;
+    }
+
+    .hidden-popup .list li p {
+      width: calc(100% - 28px);
+      line-height: 1.4;
+    }
+
+    .hidden-popup .list span.badge {
+      display: block;
+      text-align: right;
+      color: #ff4c00;
+      font-family: 'AktivGrotesk', sans-serif !important;;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: -0.24px;
+      background: #fff;
+      width: max-content;
+      padding: 8px;
+      border-radius: 500px;
+      margin-left: auto;
+    }
+
+    .hidden-popup .list span.badge.badge-transparent {
+      height: 30px;
+      background-color: transparent;
+    }
+   .modem-main .img img{
+     max-width:160px;
+     height: 100px;
+     object-fit: contain;
+     margin:0 auto;
+   }
+
+   @media (min-width: 991px) {
+    .modem-main .img img {
+      margin: 10px auto;
+    }
+   }
+
+    
+    /*.product-info{opacity:1;}
+    .product-info.hide_info{opacity:0;} */  
+    .wireless-internet-modem p{
+      font-family: 'AktivGrotesk', sans-serif !important;;
+      font-weight: 700;
+    }
+      .activation_text{
+color: var(--colors-gray-true-600, #525252);
+font-family: 'AktivGrotesk', sans-serif !important;; 
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+line-height: 30px;
+text-align:center;
+cursor: pointer;  
+}
+.activation_text span{text-decoration-line: underline;}   
+ .activation-popup ul{
+      display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #FFF;
+  padding: 23px 16px 25px 16px;
+  max-width:660px;
+  margin:0 auto;
+  list-style: disc;
+}
+.activation-popup ul li{
+  color: var(--gray-true-600, var(--colors-gray-true-600, #525252));
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+font-family: 'AktivGrotesk', sans-serif !important;;    
+line-height: 137.023%;
+}
+.activation-popup ul li b{
+color: #000;
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+font-family: 'AktivGrotesk', sans-serif !important;;    
+line-height: 137.023%; /* 16.443px */
+}
+  .footer_main_info{
+  font-size: 14px;
+font-style: normal;
+font-family: 'AktivGrotesk', sans-serif !important;;     
+font-weight: normal;
+}
+.footer_main_info svg {
+  width: 11.779px;
+  height: 11.779px;
+}
+.main_info{
+      display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+  color: #4D5166;
+font-family: 'AktivGrotesk', sans-serif !important;;
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+letter-spacing: -0.28px;
+  cursor: pointer;
+}
+.main_info svg{
+  width: 14.779px;
+height: 14.779px;
+} 
+.main-info-popup ul{
+      display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #FFF;
+  padding: 23px 16px 25px 16px;
+  max-width:660px;
+  margin:0 auto;
+  list-style: disc;
+}
+.main-info-popup ul li{
+  color: var(--gray-true-600, var(--colors-gray-true-600, #525252));
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+font-family: 'AktivGrotesk', sans-serif !important;;    
+line-height: 137.023%;
+}
+.main-info-popup ul li b{
+color: #000;
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+font-family: 'AktivGrotesk', sans-serif !important;;    
+line-height: 137.023%; /* 16.443px */
+}  
+.selected_info.hide{display:none;}  
+.unselected_info.hide{display:none;}
+.selected_info{display:block;}  
+.unselected_info{display:flex;}  
+.unselected_info{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+}
+.unselected_info span{
+display: flex;
+align-items: center;
+gap: 8px;
+color: var(--gray-true-800, var(--colors-gray-true-800, #292929));
+font-family: 'AktivGrotesk', sans-serif !important;; 
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+opacity:0.8;
+}  
+.unselected_info span svg{
+width: 18px;
+height: 18px;
+}  
+.free_price{font-size:16px;}  
+.plan-info-popup{max-width:800px;}
+.plan-info-popup.active{bottom:15%!important;}
+.plan-info-popup.active img {
+  margin: auto;
+  margin-bottom: 4px;
+}
+.plan-info-popup svg.plan_svg{
+max-width:500px;
+margin:16px auto 24px auto;
+}
+.plan-info-popup h3{
+  color: var(--Heading, #000);
+text-align: center;
+font-family: 'AktivGrotesk', sans-serif !important;; 
+font-size: 24px;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+margin-bottom:12px;  
+}
+.plan-info-popup span{
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: 'AktivGrotesk', sans-serif !important;; 
+}    
+.plan-info-popup .popup_checkout{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 0 20px;
+ flex-direction: column;
+}
+.plan-info-popup .popup_checkout a{
+  background-color: #017C5F;
+  color: #fff;
+  min-width: 300px;
+  cursor: pointer;
+ padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #017C5F;
+  text-decoration: none;
+  font-size: 20px;
+  font-style: normal;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  font-weight: bold;
+  text-align:center;
+  line-height: 22.68px;
+}
+
+.plan-info-popup p{
+color: #000;
+text-align: center;
+font-family: 'AktivGrotesk', sans-serif !important;; 
+font-size: 14px;
+font-style: normal;
+font-weight: normal;
+line-height: 137.023%; /* 16.443px */
+} 
+.wireless-internet-modem .container .heading em{
+color: #4D5166;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+letter-spacing: -0.28px;
+margin: 0 0 4px;
+font-family: 'AktivGrotesk', sans-serif !important;;
+}  
+
+}
+
+    @media screen and (min-width: 767px) and (max-width: 1400px) {
+      .wireless-internet-modem .footer-checkout {
+        /* max-width: calc(100vw / 2 - 30px); */
+        margin: 0;
+      }
+    }
+
+#icon-text {
+  display: flex; 
+  align-items: center;  
+  color: #008061;  
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.modem-main .info .monthly{
+  color: #4D5166 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  margin-bottom: 4px;
+}
+
+.plans-read-more {
+    pointer-events: visible;
+  margin-top: 8px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 14.5px;
+  font-family: AktivGrotesk!important;
+  text-decoration-line: underline;
+  color: #544d48;
+  font-weight: 700;
+}
+
+.wireless-internet-modem .slick-slide .img {
+  position: relative;
+  cursor: pointer;
+}
+
+.wireless-internet-modem .slick-slide .img span.slick-overlay {
+  top: 45%;
+  left: 50%;
+  opacity: 0.85;
+  position: absolute;
+}
+
+.wireless-internet-modem .slick-slide .img span.slick-overlay i {
+  font-size: 3rem;
+  color: #008061;
+}
+
+.checkout-btn.payment-btn .real-id-flow button {
+  background-color: #017c5f !important;
+  color: #fff !important;
+  min-width: 236px !important;
+  cursor: pointer !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  font-family: AktivGrotesk!important;
+  padding: 12px !important;
+}
+
+.ri-is-modal {
+  z-index: 99 !important;
+}
+
+.frame5252 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px;
+  position: relative;
+  border-top-width: 0.5px;
+  border-top-style: solid;
+  border-color: #cdccd1;
+}
+.frame5252 .text-wrapper {
+  position: relative;
+  flex: 1;
+  font-family: AktivGrotesk!important;
+  font-weight: bold;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19.6px;
+}
+.frame5252 .div {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+.frame5252 .img {
+  position: relative;
+  width: 19.33px;
+  height: 21.34px;
+  margin-top: -0.79px;
+}
+.frame5252 .img-2 {
+  position: relative;
+  width: 23.33px;
+  height: 23.33px;
+}
+.flex-read-more{
+color: var(--accent, #008061);
+font-family: AktivGrotesk!important;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+text-decoration-line: underline;
+display: contents;  
+}
+
+.frame3636 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+
+.frame3636 .div {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame3636 .img {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+
+.frame3636 .div-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.frame3636 .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: AktivGrotesk!important;
+  font-weight: bold;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 17px;
+  white-space: nowrap;
+}
+
+.frame3636 .p {
+  position: relative;
+  align-self: stretch;
+  font-weight: 400;
+  color: #797c8e;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+.flex-read-more-popup {max-width:450px;}
+@media (max-width: 990px) {
+  .ri-is-modal .ri-bg-white.ri-rounded-xl {
+    margin-top: 8rem !important;
+  }
+}
+
+.real-id-flow,.verify-id-prompt  {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+}
+
+.flex-checkout_icon{
+  position:relative;
+}
+.flex-checkout_popup{
+  top: -60px;
+  padding: 10px;
+  width: 123px;
+}
+.flex-checkout_popup h6{
+  margin-bottom:0!important;
+  font-size: 14px!important;
+  font-style: normal!important;
+  line-height: 17px!important; 
+}
+.flex-checkout_popup.customize-notify:after{
+    height: 24px;
+}
+
+.full_price_flex{
+  display: flex;
+padding: 12px 12px;
+align-items: center;
+align-content: center;
+gap: 8px;
+align-self: stretch;
+flex-wrap: wrap;
+border-bottom: .5px solid rgba(205, 204, 209, 1);
+margin-bottom: 8px;  
+}
+.full_price_flex span{
+color: var(--Heading, #000);
+font-family: AktivGrotesk!important;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+.frame4443 {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.frame4443 .div {
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+}
+
+.frame4443 .div-wrapper {
+  height: 40px;
+  align-items: center;
+  gap: 3.56px;
+  padding: 6px;
+  align-self: stretch;
+  width: 100%;
+  border: 1px solid;
+  border-color: #dddddd;
+  display: flex;
+  position: relative;
+}
+
+.frame4443 .text-wrapper {
+  position: relative;
+  flex: 1;
+  font-family: AktivGrotesk!important;
+  font-weight: bold;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16.8px;
+}
+
+.frame4443 .div-2 {
+  min-height: 38px;
+  align-items: center;
+  gap: 3.56px;
+  padding: 6px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  margin-top: -1px;
+  border: 1px solid;
+  border-color: #dddddd;
+  display: flex;
+  position: relative;
+}
+
+.frame4443 .yes {
+  position: relative;
+  flex: 1;
+  font-family: AktivGrotesk!important;
+  font-weight: 500;
+  color: #101828;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.frame4443 .div-3 {
+  width: 357px;
+  align-items: flex-start;
+  margin-left: -1px;
+  display: flex;
+  position: relative;
+}
+
+.frame4443 .div-4 {
+  padding: 8px 8px 4px;
+  background-color: #106595;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.frame4443 .coins {
+  position: relative;
+  width: 21px;
+  height: 21px;
+}
+
+.frame4443 .text-wrapper-2 {
+  width: fit-content;
+  white-space: nowrap;
+  position: relative;
+  font-family: AktivGrotesk!important;
+  font-weight: bold;
+  color: #f5f5f5;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19.2px;
+}
+
+.frame4443 .div-5 {
+  background-color: #1065950d;
+  display: flex;
+  min-height: 38px;
+  align-items: center;
+  gap: 3.56px;
+  padding: 6px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  margin-top: -1px;
+  border: 1px solid;
+  border-color: #dddddd;
+}
+
+.frame4443 .CHECK {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-image: url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/check-square.svg?v=1712487128');
+  background-size: 100% 100%;
+}
+
+.frame4443 .text-wrapper-3 {
+  font-family: AktivGrotesk!important;
+  font-size: 14px;
+  line-height: 21px;
+  position: relative;
+  flex: 1;
+  font-weight: 500;
+  color: #101828;
+  letter-spacing: 0;
+}
+
+.frame4443 .text-wrapper-4 {
+  font-family: AktivGrotesk!important;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  flex: 1;
+  font-weight: 500;
+  color: #101828;
+  letter-spacing: 0;
+}
+
+.frame4443 .div-6 {
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  flex-grow: 1;
+  margin-left: -1px;
+  display: flex;
+  position: relative;
+}
+
+.frame4443 .div-7 {
+  padding: 8px;
+  background-color: #da5b12;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.frame4443 .economy {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.frame4443 .text-wrapper-5 {
+  margin-right: -51.5px;
+  position: relative;
+  font-family: AktivGrotesk!important;
+  font-weight: bold;
+  color: #f5f5f5;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19.2px;
+}
+
+.frame4443 .div-8 {
+  background-color: #da5b120d;
+  display: flex;
+  min-height: 38px;
+  align-items: center;
+  gap: 3.56px;
+  padding: 6px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  margin-top: -1px;
+  border: 1px solid;
+  border-color: #dddddd;
+}
+.flex-real-id{display:block!important ;}
+.flex-real-id img{
+    max-width: 70px;
+    display: block;
+    height: 20px;
+    vertical-align: top;
+    margin-left: auto;
+    margin-top: 5px;
+}
+.frame0055 {
+  display: inline-flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  position: relative;
+}
+.frame0055 .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+.frame0055 .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: AktivGrotesk!important;
+  font-weight: 600 !important;
+  color: #525252;
+  font-size: 16px !important;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-decoration: underline;
+  white-space: nowrap;
+      cursor: pointer;
+}
+.frame0055 .switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+.frame0055 .switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.frame0055 .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #767676;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.frame0055 .slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 13px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.frame0055 input:checked + .slider {
+  background-color: #008061;
+}
+.frame0055 input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+.frame0055 input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+/* Rounded sliders */
+.frame0055 .slider.round {
+  border-radius: 34px;
+}
+.frame0055 .slider.round:before {
+  border-radius: 50%;
+}
+.third_payment_option{
+  display: flex;
+  flex-direction: column;
+}
+.master {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  max-width: 361px;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 0px 16px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 0.5px solid;
+  border-color: #a0a0a0;
+  margin:0 auto;
+}
+
+.master .contract {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #951067;
+}
+
+.master .coins-hand {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.master .one-time-equipment {
+  position: relative;
+  width: fit-content;
+  font-family: AktivGrotesk!important;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 13.5px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.master .frame {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 8px;
+  padding: 4px 12px;
+  align-self: stretch;
+  width: 100%;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.master .div {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.master .text-wrapper {
+  margin-top: -1px;
+  font-family: AktivGrotesk!important;
+  color: #000000;
+  font-size: 16px;
+  position: relative;
+  width: fit-content;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.master .text-wrapper-2 {
+  opacity: 0.8;
+  font-family: AktivGrotesk!important;
+  color: #282828;
+  font-size: 14px;
+  text-decoration: line-through;
+  position: relative;
+  width: fit-content;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.master .div-wrapper {
+  display: flex;
+  flex-direction: column;
+      width: auto;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 8px 12px 16px;
+  border-top-width: 0.5px;
+  border-top-style: solid;
+  border-color: #cdccd1;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.master .p {
+  position: relative;
+  align-self: stretch;
+  margin-top: -0.5px;
+  opacity: 0.8;
+  font-family: AktivGrotesk!important;
+  font-weight: 400;
+  color: #282828;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16.8px;
+}
+
+body .zsiq_custommain, body .zsiq_floatmain{z-index:99!important;}
+.steps-item.payment-type .price span{/*display:block;*/margin-left:3px!important;font-size:14px!important;margin-top:3px;}
+.own_price .price span {display: unset!important;}
+.refundable_price{color: #414141;
+font-family: AktivGrotesk!important;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;}
+
+.frameraptor {
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.frameraptor .sale {
+  position: relative;
+  width: 18.39px;
+  height: 18.39px;
+}
+.frameraptor .text-wrapper {
+  position: relative;
+  font-family: AktivGrotesk!important;
+  font-weight: bold;
+  color: #d6001c;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.frameraptor2{
+color: #008162!important;
+font-family: AktivGrotesk!important;
+font-size: 14px!important;
+font-style: normal!important;
+font-weight: 400!important;
+line-height: normal!important;
+}
+.wireless-internet-modem .modem-grid .modem-main.nomad-raptor .monthly{display:block!important;}
+.wireless-internet-modem .modem-grid .modem-main.nomad-raptor .monthly span{
+  color: #797C8E;
+font-family: AktivGrotesk!important;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.frame16188 {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  padding-top:16px!important;
+  padding-bottom:0px!important;
+}
+
+.frame16188 .sale {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.frame16188 .text-wrapper {
+  position: relative;
+  width: fit-content;
+font-family: AktivGrotesk!important;
+  font-weight: 600;
+  color: #d23030;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+.top-modem.nomad-raptor{order:3;}
+.top-modem.nomad-air{order:2;}
+.top-modem.nomad-omen{order:1;}
+
+
+@media (min-width: 767px) and (max-width: 991px){
+.frame4445 {
+    width: 100%;
+}  
+.frame4445 .div-4 {
+    width: 50%;
+}
+.frame4445 .div {
+    width: 50%;
+}  
+}
+.modem-help-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 12px;
+  gap: 12px;
+}
+.modem-help-grid .help-text {
+  padding: 6px 0;
+  color: #4D5166;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.verify-popup .sub-title,
+.coverage-popup .sub-title {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  color: #282828;
+  margin-bottom: 10px;
+}
+
+.verify-popup .addr-input,
+.coverage-popup .addr-input,
+.coverage-popup .phone-input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 0 12px;
+}
+
+.verify-success .verify-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.verify-popup button,
+.coverage-popup button,
+.verify-success button {
+  width: 100%;
+  margin-bottom: 20px;
+  /* font-family: "AktivGrotesk"; */
+}
+
+.verify-description {
+  font-weight: 400 !important;
+  color: #4D5166;
+}
+
+.verify-popup .small-description,
+.coverage-popup .small-description {
+  font-size: 10px;
+  color: #000;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.coverage-popup .coverage-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.coverage-popup .coverage-list .coverage-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #008061;
+  border-radius: 8px;
+  color: #008061;
+  padding: 24px 0;
+  cursor: pointer;
+}
+
+.coverage-popup .coverage-list .coverage-item:hover,
+.coverage-popup .coverage-list .coverage-item.active {
+  background-color: #008061;
+  color: #fff;
+}
+
+.coverage-popup .coverage-list .coverage-item:hover svg path,
+.coverage-popup .coverage-list .coverage-item.active svg path {
+  fill: #fff !important;
+}
+
+.verify-success button.btn {
+  margin-top: 24px;
+  width: 100%;
+}
+.modem-help-grid .help-info .help-text p {
+  text-decoration: none !important;
+  color: #fff !important;
+  font-weight: 700;
+}
+.modem-help-grid .modem-addr-verify {
+  background: #008061;
+  border-radius: 4px;
+  border: 2px solid #008061;
+}
+
+.modem-help-grid .modem-addr-verify path {
+  stroke: #fff !important;
+}
+
+.modem-help-grid .modem-help-info path {
+  stroke: #008061 !important;
+}
+
+.modem-help-grid .modem-help-info {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 2px solid #008061;
+}
+
+.modem-help-grid .modem-help-info .help-text p {
+  color: #008061 !important;
+}
+
+
+@media screen and (min-width: 990px) {
+  .verify-popup, .coverage-popup, .verify-success {
+    max-width: 600px;
+  }
+
+  .hidden-popup.active.coverage-popup {
+    bottom: 15%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .step-intro {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .step-intro .modem-help-grid {
+    width: 70%;
+  }
+
+  .step-intro .modem-help-info {
+    height: fit-content;
+  }
+
+  .step-intro .modem-help-grid {
+    gap: 4px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .step-intro {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .step-intro .modem-help-grid {
+    width: 60%;
+  }
+
+  .step-intro .modem-help-info {
+    height: fit-content;
+  }
+
+  .step-intro .modem-help-grid {
+    gap: 4px;
+  }
+}

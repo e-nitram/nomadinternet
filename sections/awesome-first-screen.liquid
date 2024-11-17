@@ -1,0 +1,171 @@
+{% assign ss = section.settings %}
+
+<div class="plan-first-screen">
+	<div class="swiper plan-first-screen__swiper">
+		<div class="swiper-wrapper">
+			{% for slide in section.blocks %}
+				<div class="swiper-slide">
+					<div class="hidden-sm-d ratio" style="--ratio: calc(562 / 1192 * 100%)">
+						{{ slide.settings.image | image_url: width: 1200 | image_tag }}
+					</div>
+					<div class="hidden-md-u ratio" style="--ratio: calc(562 / 1192 * 100%)">
+						{{ slide.settings.image | image_url: width: 1024 | image_tag }}
+					</div>
+					{% if slide.settings.link %}
+						<a href="{{ slide.settings.link }}" class="swiper-link"{% if slide.settings.target_blank %} target="_blank"{% endif %} id="slide-{{ slide.id }}">
+							<span class="sr-only">Go</span>
+						</a>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+
+		<div class="swiper-scrollbar"></div>
+	</div>
+
+	<div class="plan-first-screen__content">
+		{% if ss.title != blank %}
+			<h1 class="plan-first-screen__title">{{ ss.title }}</h1>
+		{% endif %}
+
+		{% if ss.description != blank %}
+			<div class="plan-first-screen__description" style="max-width: {{ ss.max_width }}px">{{ ss.description }}</div>
+		{% endif %}
+
+		{% if ss.button_text != blank %}
+			<div class="plan-first-screen__cta">
+          <a
+                  href="{{ ss.button_url | default: '#' }}"
+              class="{% if ss.button_url contains '/cart' %}cart_btn {% endif %}btn lg {{ ss.button_class }}"
+				 id="btn-{{ section.id }}" {% if ss.button_blank %} target="_blank" {% endif %} {% if ss.on_click != blank %} onclick="{{ ss.on_click }}" {% endif %} >
+					{{- ss.button_text -}}
+				</a>
+			</div>
+		{% endif %}
+	</div>
+</div>
+<script src="{{ 'jquery.cookie.js' | asset_url }}"></script>
+<script>
+/*var $j = jQuery.noConflict();  
+$j(".cart_btn").click(function(event){
+  event.preventDefault();
+  location.href = '/pages/plans';
+  var cart_link = $j(this).attr('data-href');
+   var discount_code = $j.cookie("discount_code");
+if (discount_code){  
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?discount_code="+discount_code+"&items=https://nomadinternet.com"+cart_link+"&jsonize=1";
+}
+else{
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?items=https://nomadinternet.com"+cart_link+"&jsonize=1";
+}
+  $j.ajax({
+    type: "GET",
+    url: url,
+    dataType: "json",
+    success: function(response){
+location.href = response[0];
+    }
+  });
+});*/
+</script>
+
+{% schema %}
+{
+  "name": "Awesome First Screen",
+  "tag": "div",
+  "class": "container",
+  "limit": 1,
+  "presets": [
+    {
+      "name": "Awesome First Screen"
+    }
+  ],
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+		},
+		{
+			"type": "range",
+			"id": "max_width",
+			"min": 300,
+			"max": 1000,
+			"step": 10,
+			"unit": "px",
+			"label": "Description Max Width",
+			"default": 550
+		},
+		{
+			"type": "select",
+			"id": "button_class",
+			"label": "Button Type",
+			"options": [
+				{
+					"label": "Solid",
+					"value": "solid"
+				},
+				{
+					"label": "Outline",
+					"value": "outline"
+				}
+			],
+			"default": "solid"
+		},
+		{
+			"type": "text",
+			"id": "button_text",
+			"label": "Button Text"
+		},
+		{
+			"type": "url",
+			"id": "button_url",
+			"label": "Button URL"
+		},
+		{
+			"type": "checkbox",
+			"id": "button_blank",
+			"label": "Button Target Blank",
+			"info": "Open in new tab"
+		},
+		{
+			"type": "text",
+			"id": "on_click",
+			"label": "On Click",
+			"info": "E.g. ga('send', 'event', 'button', 'click');"
+		}
+  ],
+  "blocks": [
+		{
+      "name": "Slide",
+      "limit": 30,
+			"type": "slide",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "url",
+					"id": "link",
+					"label": "URL"
+				},
+				{
+					"type": "checkbox",
+					"id": "target_blank",
+					"label": "Open in new tab"
+				}
+			]
+		}
+  ]
+}
+{% endschema %}

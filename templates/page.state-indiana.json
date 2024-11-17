@@ -1,0 +1,508 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/TOP_2023-02-02-Fort_Wayne.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in Indiana"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Stay Connected on the Go with Portable Internet Services in Indiana. Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in Indiana?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/3lEYGAziqvE?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The internet provider with the most consistent service in Indiana has been identified.",
+        "description": "Find your city in Indiana",
+        "content": "Anderson,\nBedford,\nBloomington,\nColumbus,\nConnersville,\nCorydon,\nCrawfordsville,\nEast Chicago,\nElkhart,\nElwood,\nEvansville,\nFort Wayne,\nFrench Lick,\nGary,\nGeneva,\nGoshen,\nGreenfield,\nHammond,\nHobart,\nHuntington,\nIndianapolis,\nJeffersonville,\nKokomo,\nLafayette,\nMadison,\nMarion,\nMichigan City,\nMishawaka,\nMuncie,\nNappanee,\nNashville,\nNew Albany,\nNew Castle,\nNew Harmony,\nPeru,\nPlymouth,\nRichmond,\nSanta Claus,\nShelbyville,\nSouth Bend,\nTerre Haute,\nValparaiso,\nVincennes,\nWabash,\nWest Lafayette"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BLOG_American_Legion_Mall_2Indiana-state-Indiana-state.jpg",
+        "title_tag": "h2",
+        "title": "The Benefits of Coworking Spaces for Remote Workers in Indiana",
+        "description": "<p>Working remotely has its benefits, but coworking spaces offer an even more comprehensive solution by allowing remote workers to enjoy social interaction, private offices, and all sorts of amenities – no matter where in <a href=\"\/pages\/states\" title=\"States\">Indiana<\/a> you may find yourself. Here are some tips on how to make the most out of these amazing spaces:Head over to Indianapolis and check out one of the many modern coworking spaces located around the city. <\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p>Expect top-notch facilities ranging from private offices and large conference halls to fully equipped kitchens - making it easy for any remote worker to stay productive without sacrificing their work\/life balance. Not only that, but there are also plenty of <a href=\"https:\/\/nomadinternet.com\/\" title=\"regional providers\">regional providers<\/a> offering reliable high-speed internet throughout the city - so staying connected while enjoying all Indy has to offer is now easier than ever before!Located close to Indianapolis is Fort Wayne - home to a number of coworking spaces catering specifically towards digital nomads and remote workers in search of a unique escape from their day-to-day routine. <\/p>",
+        "text_2": "<p>Not only do they get access to state-of-the-art facilities such as lounge areas and collaboration hubs – but can also benefit from widespread <a href=\"\/pages\/coverage-map\" title=\"Coverage Map\">coverage<\/a> across rural areas offered by Nomad Internet - providing unbeatable speeds no matter where your adventure may take you!Finally, explore Evansville - located at Indiana's southwestern border city - boasting plenty of inspiring spots for working remotely coupled with Nomad Internet’s reliable high-speed internet services throughout rural areas too – guaranteeing connection speeds will never be a problem again!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/13.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/13.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/molly_Lane.avif.jpg",
+            "name": "Molly Lane",
+            "text": "I've had a great experience with Nomad Internet, especially their most popular modem, the Nomad Air. I'm based in rural Indiana and it's been an absolute dream to have quick access to high-speed internet, no matter where I am. I'm able to effortlessly download content and stream seamlessly online. For me, this is invaluable when I'm working from home or on business trips in small towns with limited internet options. With Nomad Internet, I can use coworking spaces even when they're not connected to local fibre networks and embark on expeditions with reliable service to keep up with my work commitments.",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/amber_wright.avif.jpg",
+            "name": "Amber Wright",
+            "text": "I've been using nomad internet for the past year to stay connected while exploring remote parts of Indiana. When I'm out of range of cell phone networks, the Nomad Air modem provides quick access and a reliable download speed. Being able to work online has made my work performance a lot more productive and enjoyable. I've even discovered some great co-working spots along the way! The Nomad Air device connects with 4G LTE towers so I've never had an issue streaming music or video either. Overall, it's a great way to stay connected in rural areas and small towns and I'd highly recommend it for anyone looking for an easy, reliable solution for internet access on the go.",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/jocelyn_simpson.jpg",
+            "name": "Jocelyn Simpson",
+            "text": "I recently had the chance to experience nomad internet while traveling through rural Indiana. The modem was easy to set up and I was able to get quick access no matter where I was. Download speed was also surprisingly fast, so I had no problem staying connected and working online. It made my work expeditions much easier and more enjoyable, as well as providing a great opportunity for coworking with others who are also on the nomad air. I can’t recommend it enough- if you’re looking for an efficient way of staying connected while traveling, don’t hesitate to invest in a nomad internet modem!",
+            "link": ""
+          }
+        },
+        "6dde70a6-d13c-4a74-a994-5da616682b5e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Lauren_Bennet.jpg",
+            "name": "Lauren Bennet",
+            "text": "I'm a small town Indiana resident who loves to travel and work remotely. Thanks to Nomad Internet, I can take my work everywhere without missing a beat. Their modems are easy to set up, so all I have to do is plug in and get access to high-speed internet no matter where I am! Nomad Air is the best option for me, as it gives me reliable connection throughout rural areas that conventional ISPs don't cover. On top of fast download speeds and quick access, I'm always impressed with their customer service. It's refreshing knowing that I can count on them no matter where my nomadic lifestyle takes me.",
+            "link": ""
+          }
+        },
+        "548c0b08-f4f5-443c-af54-6913f07976f0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Megan_Graham.avif.jpg",
+            "name": "Megan Graham.avif",
+            "text": "I live in a rural area in Indiana and I was so excited to discover Nomad Internet! It provides quick access to the internet, with download speeds that are fast enough for remote work. The best part is that they have three modems to choose from - Nomad Air, Nomad Ark and Nomad Raptor - so there's something to fit any budget. I opted for the Nomad Ark and it works like a dream! It has an extended signal range, plus I get up to unlimited data usage and no contracts or extra fees - perfect for someone like me who travels a lot. With this modem, I can take my work anywhere and stay connected at all times. Thanks to Nomad Internet, my life is much more productive.",
+            "link": ""
+          }
+        },
+        "9fa0332e-2f89-450f-8223-7ae0a2d9479f": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/kelly_reid.jpg",
+            "name": "Kelly Reid",
+            "text": "Working in rural areas of Indiana can be challenging when it comes to access to the internet. I recently tried Nomad Internet and was pleasantly surprised at how quickly I was able to get online! With their modems, you can connect quickly, allowing for remote work and leisure activities with ease. The download speeds are fast and always reliable, so streaming or downloading content is never a problem. Nomad Internet has been a lifesaver for me, allowing me to stay connected even while living in a rural area!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "6dde70a6-d13c-4a74-a994-5da616682b5e",
+        "548c0b08-f4f5-443c-af54-6913f07976f0",
+        "9fa0332e-2f89-450f-8223-7ae0a2d9479f"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "abdf8f9e-c898-47bc-b9f0-067a028f8ffd": {
+          "type": "block",
+          "settings": {
+            "title": "How can I optimize my internet speed in Indiana's remote areas?",
+            "content": "<p>If you are looking to improve your internet speed in rural areas of Indiana, there are several options to consider. Our company, Nomad Internet, offers fixed wireless internet with speeds up to 200 Mbps. With plans starting at $99 per month (with an annual plan), you can enjoy faster internet without having to deal with the limited infrastructure and availability of traditional providers like DSL or dial-up.<br\/><br\/>Additionally, you can optimize your internet speed by upgrading your router or modem, clearing your browser cache and cookies, and reducing the number of devices connected to your network. Our modems are designed to accumulate and boost the internet signal, which can result in a more stable and faster connection.<br\/><br\/>It's also worth noting that the effectiveness of these solutions can vary depending on your location and other factors. Therefore, it's important to research and compare different options to find the best solution for your specific needs.<\/p>"
+          }
+        },
+        "893e82a4-f18b-4007-ba49-81675cc0d84b": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet offering 5G coverage in Indiana?",
+            "content": "<p>Yes, Nomad Internet does offer 5G coverage in Indiana.<br\/><br\/>5G technology provides faster download and upload speeds, lower latency, and greater network capacity compared to 4G LTE. With the advanced high-power directional antennas of the Nomad Air modem, Nomad Internet is able to extend the reach of cellular networks and provide high-speed, low-latency internet to residents of rural areas. In addition to 5G sub-6GHz, Nomad Internet also offers 4G LTE fallback for optimal network coverage and performance. <br\/><br\/>Nomad Internet offers various tariff plans to fit the needs of different customers, and their modems - Nomad Air and Nomad Cube - amplify and accumulate the signal to provide stable and fast internet.<\/p>"
+          }
+        },
+        "3fb3df9a-5d01-4c35-b8d1-9d7d64c8339b": {
+          "type": "block",
+          "settings": {
+            "title": "Which internet service packages does Nomad Internet have available in Indiana?",
+            "content": "<p>Nomad Internet offers several internet plans to customers in Indiana. When choosing a plan, consider what you plan to use the internet for - whether it's streaming movies and TV shows, online gaming, social media, or work-related tasks. <br\/><br\/>You should also think about how many devices you'll need to connect to the internet, as different plans may have varying limits on the number of devices. <br\/><br\/>Nomad Internet also offers plans designed specifically for businesses with a large number of employees or for restaurants, cafes, and other establishments that require reliable internet connectivity. <br\/><br\/>For those who require the fastest internet possible, there are also plans available that provide higher speeds. <br\/><br\/>To learn more about the available plans in Indiana, you can visit the Nomad Internet website or contact their customer service team.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "abdf8f9e-c898-47bc-b9f0-067a028f8ffd",
+        "893e82a4-f18b-4007-ba49-81675cc0d84b",
+        "3fb3df9a-5d01-4c35-b8d1-9d7d64c8339b"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

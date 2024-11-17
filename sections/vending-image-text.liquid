@@ -1,0 +1,55 @@
+<div class="machine-container">
+  <div class="vending-image">
+    {% if section.settings.image != blank %}
+      <img src="{{ section.settings.image | image_url }}" alt="{{ section.settings.image.alt }}" width="629" height="870">
+    {% endif %}
+  </div>
+  <div class="vending-content">
+    {% if section.settings.title != blank %}
+      <h2>{{ section.settings.title }}</h2>
+    {% endif %}
+    <div class="vending-button">
+      {% if section.settings.button_text != blank %}
+        {%- comment -%}
+        onclick="handlePopUpShowHide()"
+        {%- endcomment -%}
+        
+        <button
+          class="vending-button-link"
+          onclick="gotoStep1()"
+        >{{ section.settings.button_text }}</button>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Vending Image and Text",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Default Title"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Click Here"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

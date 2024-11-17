@@ -1,0 +1,90 @@
+<div class="bottom-text-section">
+   {% if section.settings.banner_image == blank %}
+    {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg hero-image'}}
+  {% endif %}
+  <div class="container-wrapper">
+    <div class="content-wrapper">
+      <h2 class="title">{{ section.settings.title }}</h2>
+      <div class="description">{{ section.settings.description }}</div>
+        {% if section.settings.button_url != blank %}
+          <div class="main-button">
+            <a href="{{ section.settings.button_url }}">
+              {{ section.settings.button_text }}
+            </a>
+          </div>
+       {% endif %}
+    </div>
+  </div>
+</div>
+
+<style>
+  {% if section.settings.banner_image != blank %}
+    .bottom-text-section {
+       background-image: url({{ section.settings.banner_image | img_url:'master' }});
+    }
+  {% endif %}
+
+  .bottom-text-section .main-button a {
+     background-color: {{ section.settings.button_background }};
+     color: {{ section.settings.button_color }};
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Bottom Text Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "banner_image",
+        "label": "Banner Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Pick the right device for you"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Let us recommend the right device for you, wherever you are or go. U.S. residents only.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Label",
+        "default": "HELP ME CHOOSE"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link"
+      },
+      {
+        "type": "color",
+        "id": "button_background",
+        "label": "Button background",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button color",
+        "default": "#000000"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Bottom Text Section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

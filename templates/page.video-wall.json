@@ -1,0 +1,395 @@
+{
+  "wrapper": "div.cube.cube--template",
+  "sections": {
+    "01home_signup_LkcmUe": {
+      "type": "01home-signup",
+      "disabled": true,
+      "settings": {
+        "heading": "Elevate Your Internet, Elevate Your Life",
+        "content": "Join Nomad's Flex Pay for Affordable, High-Speed Internet Access"
+      }
+    },
+    "youtube_videos_m8yePd": {
+      "type": "Youtube-videos",
+      "blocks": {
+        "video_Cbw3Jt": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=Qsd-reoqgmU",
+            "title": "CHEAPER and FASTER than our Starlink! | Travel & Rural - Nomad Internet"
+          }
+        },
+        "video_3AUVea": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=ESKrPFUfWVo",
+            "title": "HIGH SPEED NOMAD INTERNET AT OUR OFF GRID CAMP - NOMAD INTERNET IS IMPRESSIVE!"
+          }
+        },
+        "video_Fa9yXT": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=S10HSqWQ2JA",
+            "title": "OFF GRID INTERNET \/\/ Testing the Nomad Air Internet System"
+          }
+        },
+        "video_wPCiQT": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=pGRj7tyT9MQ",
+            "title": "High-Speed Adventures Anywhere, Anytime | Nomad Internet review"
+          }
+        },
+        "video_PfLNAV": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=mXj07GUPXpg",
+            "title": "Affordable SUPER FAST UNLIMITED INTERNET that goes with you! NoMad travel internet review"
+          }
+        },
+        "video_P3hFyL": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=qDYvrl39Vow",
+            "title": "INSANE AR-12 Shotgun Duck Hunting! (ALL DRAKE MIXED BAG)"
+          }
+        },
+        "video_tNerAj": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=AGmXp4wYfEc",
+            "title": "Nomad mobile internet"
+          }
+        },
+        "video_UNqqF3": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=HFgQmLCdGOg",
+            "title": "It Exists! 200Mbps Mobile Internet [Nomad Internet]"
+          }
+        },
+        "video_cTDJFa": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=ZdaKa6Y2rUI",
+            "title": "WiFi Internet in your Boat! | Nomad Internet Plans"
+          }
+        },
+        "video_WG9R3D": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=-X9vW-m2mQI",
+            "title": "Nomad Internet Kit \"Testing\/Review\""
+          }
+        },
+        "video_dW67Qt": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=D7dl_iEKxjk",
+            "title": "40 Year Old Cabover Semi Is A Mobile Hot Spot With Wi-Fi",
+            "video_thumbs": "shopify:\/\/shop_images\/D7dl_iEKxjk-MQ.jpg"
+          }
+        },
+        "video_6dY9LD": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=RqcMoMd-XBE",
+            "title": "Is Nomad Internet a Scam? or a Reliable Outdoor Wi-Fi Solution?"
+          }
+        },
+        "video_UPGgxf": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=CTHMAkl19yA",
+            "title": "Nomad Internet for travelers \/ RV \/ Van Life? - is it faster than Starlink"
+          }
+        },
+        "video_xXnTRQ": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=csJaJlfdQjY",
+            "title": "An internet solution that works for me. My honest review of devices tried including @NomadInternet"
+          }
+        },
+        "video_HLVMWi": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=Xh9QJk1ZMFM",
+            "title": "Nomad Internet First Impressions | Rural High Speed Internet Solution for Adventure Seekers"
+          }
+        },
+        "video_rynyRY": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=r-ELG6DTy0M",
+            "title": "OFF-GRID WITH NOMAD INTERNET | couple builds tiny house, homesteading off-grid rv life, rv living |"
+          }
+        },
+        "video_HxNjRk": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=Zs6hyNg-oUo",
+            "title": "Nomad Internet: We tried the ultimate mobile internet setup!",
+            "video_thumbs": "shopify:\/\/shop_images\/Zs6hyNg-oUo-MQ.jpg"
+          }
+        },
+        "video_xniGtU": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=Kt0rFen1nxY",
+            "title": "PORTABLE WIFI ANYWHERE!! Livestreaming BASS FISHING With NO CELL SERVICE! (NOMAD AIR)"
+          }
+        },
+        "video_zNADQ9": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=2xi8-zwlPFA",
+            "title": "# NÔMAD😱 INTERNET EM QUALQUER LUGAR? TEMOS! ATÉ NOSSA INTERNET E NÔMAD"
+          }
+        },
+        "video_Mt9MbN": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=9BH8Su5KfOI",
+            "title": "Never Be Without Internet Again! Introducing Nomad Internet! Portable and Super Fast"
+          }
+        },
+        "video_Pp8xwa": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=WK8RyKTw9hw",
+            "title": "GEAR N REVIEW Nomad Omega Internet Router. Internet For Your RV, Camper or Tiny Home!"
+          }
+        },
+        "video_Twwm4P": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=52r9nK0Z1aI",
+            "title": "Stay Connected Off Grid with Nomad Internet 🌐"
+          }
+        },
+        "video_jDEPmk": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=C4wAxFKOfjY",
+            "title": "The Only Unlimited Rual Internet Providers you will ever need Nomad (EPISODE 4310) Unboxing Video"
+          }
+        },
+        "video_76dRdD": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=g8vUlXbb6ZQ",
+            "title": "Portable Internet On The Go, Nomad Air",
+            "video_thumbs": "shopify:\/\/shop_images\/g8vUlXbb6ZQ-MQ.jpg"
+          }
+        },
+        "video_bF9jR9": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=egxFHO_PVqg",
+            "title": "Budget Friendly Mobile Internet for Content Creators (Under $100 a month)"
+          }
+        },
+        "video_gBVV77": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=qDYvrl39Vow",
+            "title": "Portable Internet Showdown: Nomad Air vs. Starlink"
+          }
+        },
+        "video_mdaAdM": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=HSqxNlLAmdM",
+            "title": "THE ONLY INTERNET YOU NEED FOR TRUCKERS AND VANLIFERS!",
+            "video_thumbs": "shopify:\/\/shop_images\/HSqxNlLAmdM-MQ.jpg"
+          }
+        },
+        "video_JNfNLt": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=Qja228GHSCM",
+            "title": "Internet in the middle of nowhere?? Nomad Internet Unboxing"
+          }
+        },
+        "video_Tnbmny": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_e3D-VI1riY",
+            "title": "Online While Off Grid with Nomad Internet!",
+            "video_thumbs": "shopify:\/\/shop_images\/e3D-VI1riY-MQ.jpg"
+          }
+        },
+        "video_gMFaAy": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=IkyEVMKAnnM",
+            "title": "NOMAD INTERNET: This. Changes. Everything!"
+          }
+        },
+        "video_q6AcKp": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=-aFZdaJrQ0k",
+            "title": "How We Get Fast Unlimited Wifi Anywhere In The U.S."
+          }
+        },
+        "video_X3k3yy": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=yMbI46Zx5As",
+            "title": "Our HONEST Review of the Nomad Air Internet..."
+          }
+        },
+        "video_U7AJfR": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=9BH8Su5KfOI",
+            "title": "Never Be Without Internet Again! Introducing Nomad Internet! Portable and Super Fast"
+          }
+        },
+        "video_R43T7J": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=YCJv5-geKaU",
+            "title": "Nomad Air Internet. an HONEST Review (Speed Test in the Middle of Nowhere!)"
+          }
+        },
+        "video_gWzjif": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=ekpgosH-Tig",
+            "title": "Living on the Road - How I Solved My Wi-Fi Problems with #NomadInternet!"
+          }
+        },
+        "video_7NFRbx": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=OC0_-ZHTHkQ",
+            "title": "Full Nomad Air Travel Review 2023"
+          }
+        },
+        "video_PPDbVD": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=daFKsIsBAik",
+            "title": "Reliable WiFi Across 25 States for Travelers & Digital Nomads"
+          }
+        },
+        "video_XWERwp": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=AC5QnzI2TWA",
+            "title": "Nomad Internet Review by Squatch America"
+          }
+        },
+        "video_h9xmiK": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=ak52LqXhSGM",
+            "title": "Watch Amy Groves Discuss Why Nomad Internet is the Best!"
+          }
+        },
+        "video_TKkCL6": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=jq8a2Q0i10Q",
+            "title": "Nomad Air Unlimited Unthrottled Hotspot, up to 200Mbps for Rural Home Internet or Travel!"
+          }
+        },
+        "video_XYd9cN": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=Wj49Vjm8Pd8",
+            "title": "Interview with Nomad Internet Technical Support Manager Don!"
+          }
+        },
+        "video_fqccMq": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=2mUTlV8mD60",
+            "title": "You Asked, We Listened. Nomad Internet is Hiring!"
+          }
+        },
+        "video_HUWj7H": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=Q6rd-Erl7uo",
+            "title": "*BREAKING* Nomad Internet: The Future CEO?"
+          }
+        },
+        "video_jK7Mc7": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=X5Tv2R5jkms",
+            "title": "Inside Nomad Internet: Mistakes, CEO, Future",
+            "video_thumbs": "shopify:\/\/shop_images\/thum_7.png"
+          }
+        },
+        "video_UpPz9L": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=m00gJp7gq9A",
+            "title": "Nomad Internet: Nomad Air On The Road"
+          }
+        }
+      },
+      "block_order": [
+        "video_Cbw3Jt",
+        "video_3AUVea",
+        "video_Fa9yXT",
+        "video_wPCiQT",
+        "video_PfLNAV",
+        "video_P3hFyL",
+        "video_tNerAj",
+        "video_UNqqF3",
+        "video_cTDJFa",
+        "video_WG9R3D",
+        "video_dW67Qt",
+        "video_6dY9LD",
+        "video_UPGgxf",
+        "video_xXnTRQ",
+        "video_HLVMWi",
+        "video_rynyRY",
+        "video_HxNjRk",
+        "video_xniGtU",
+        "video_zNADQ9",
+        "video_Mt9MbN",
+        "video_Pp8xwa",
+        "video_Twwm4P",
+        "video_jDEPmk",
+        "video_76dRdD",
+        "video_bF9jR9",
+        "video_gBVV77",
+        "video_mdaAdM",
+        "video_JNfNLt",
+        "video_Tnbmny",
+        "video_gMFaAy",
+        "video_q6AcKp",
+        "video_X3k3yy",
+        "video_U7AJfR",
+        "video_R43T7J",
+        "video_gWzjif",
+        "video_7NFRbx",
+        "video_PPDbVD",
+        "video_XWERwp",
+        "video_h9xmiK",
+        "video_TKkCL6",
+        "video_XYd9cN",
+        "video_fqccMq",
+        "video_HUWj7H",
+        "video_jK7Mc7",
+        "video_UpPz9L"
+      ],
+      "settings": {
+        "heading": "Nomad Video Wall",
+        "bg_color": "#0f0f0f",
+        "text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "01home_signup_LkcmUe",
+    "youtube_videos_m8yePd"
+  ]
+}

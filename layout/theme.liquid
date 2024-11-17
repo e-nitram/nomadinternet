@@ -1,0 +1,639 @@
+<!doctype html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9 no-js"> <![endif]-->
+<!-- [if (gt IE 9)|!(IE)]><! -->
+<html class="no-js">
+<!-- <![endif] -->
+<head>
+{% include 'dataLayer-allPages' %}
+
+<!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://gtm.nomadinternet.com/aztqwntb.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-58XQ8QH');</script>
+ <!-- End Google Tag Manager -->
+
+
+  <meta name="google-site-verification" content="_WW2gk9HfBtLPaF9M89gLYCRiYcrDf7OXMUSbQaFxkE" />
+  
+<!-- Basic page needs ================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="google-site-verification" content="rshMdv6J2Lh-Xw3rbf0AnqUm_suUUtRHRR3EpX0gn0E">
+<meta name="msvalidate.01" content="C37BFD2B29E39D1F346236C3B34F5369">
+
+{% if settings.favicon_enable %}
+  <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png">
+{% endif %}
+
+<!-- Title and description -->
+<title>
+  {{ page_title }}
+  {% if current_tags -%}
+    {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+  {%- endif %}
+  {% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}
+  {% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+</title>
+
+{% if page.template_suffix == 'noindex' or product.template_suffix == 'noindex' %}
+  <meta name="robots" content="noindex">
+{% endif %}
+
+{% if page_description %}
+  <meta name="description" content="{{ page_description | escape }}">
+{% endif %}
+
+<!-- Helpers ================================================== -->
+{% render 'social-meta-tags' %}
+<link rel="canonical" href="{{ canonical_url }}">
+<link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name="theme-color" content="#000000">
+
+{% render 'redirects' %}
+  
+
+<!-- CSS ================================================== -->
+{{ 'font-style.css' | asset_url | stylesheet_tag }}
+{{ 'fancybox.css' | asset_url | stylesheet_tag }}
+{{ 'mmenu-light.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'style.scss.css' | asset_url | stylesheet_tag }} {% endcomment %}
+{%- comment -%}{{ 'theme.css' | asset_url | stylesheet_tag }}{%- endcomment -%}
+{{ 'theme.css' | asset_url | stylesheet_tag }}
+{{ 'cart.css' | asset_url | stylesheet_tag }}
+{{ 'critical-style.css' | asset_url | stylesheet_tag }}
+{{ '01homecss.css' | asset_url | stylesheet_tag }}
+
+{% if template == 'page.flex-pay' %}
+  {{ 'page.flexpay.css' | asset_url | stylesheet_tag }}
+{% endif %}
+  
+{% comment %}NEW PAGE DESIGN{% endcomment %}
+{{ 'graphie-font.css' | asset_url | stylesheet_tag }}
+{{ '01global.css' | asset_url | stylesheet_tag }}
+<!-- {% if template == 'index' or page.handle == 'how-nomad-works' or page.handle == 'nomad-air' or page.handle == 'raptor' or page.handle == 'nomad-omega' or page.handle == 'nomad-raptor' or page.handle == 'reviews'  or page.handle == 'coverage-map' or template == 'page.host-beacons' or template == 'page.flex-pay' or template == 'page.nomad-landing' %}
+{{ '01homecss.css' | asset_url | stylesheet_tag }}
+{% endif %}   -->
+{% comment %}  
+{% if page.handle == "plans" %}
+{{ '01plancss.css' | asset_url | stylesheet_tag }}  
+{% endif %}
+{% endcomment %}
+{% if page.handle == "how-nomad-works" %}
+{{ 'how-nomad-works.css' | asset_url | stylesheet_tag }}  
+{% endif %} 
+<script src="{{ 'jquery.min.js' | asset_url }}"></script>
+  
+<!-- Header hook for plugins ================================================== -->
+{{ content_for_header }}
+
+<meta name="facebook-domain-verification" content="ybv2bpqlua5ayorxy2h11xe2yljlwk">
+
+{% comment %}
+<!-- Start of LittledataLayer -->
+{% render 'LittledataLayer' %}
+<!-- End of LittledataLayer -->
+{% endcomment %}
+{% comment %}
+{% render 'head-scripts' %}
+{% endcomment %}
+
+{% if template contains 'customers' %}
+{{ "shopify_common.js" | shopify_asset_url | script_tag }}
+{{ "customer_area.js"  | shopify_asset_url | script_tag }}
+{% endif %}
+{% comment %}
+<!-- start place for checkify storeScript -->
+<script data-checkify-url=https://pay.checkify.pro async='' src='https://pay.checkify.pro/static/js/shopify.js'></script>
+<!-- end -->
+{% endcomment %}
+
+<script>var w=window;var p = w.location.protocol;if(p.indexOf("http") < 0){p = "http"+":";}var d = document;var f = d.getElementsByTagName('script')[0],s = d.createElement('script');s.type = 'text/javascript'; s.async = false; if (s.readyState){s.onreadystatechange = function(){if (s.readyState=="loaded"||s.readyState == "complete"){s.onreadystatechange = null;try{loadwaprops('3z854825010b8d088fe5e5a5b89e0e96bf','3zbc3f55f0e5d7d2b38e459af453201667','3z70b1f8cb45af56f6b84b6b8e73fe4e0effa4d6e057d7adcc5b4a083e8cf64d1b','3zb9ed07860cda5c2c84b1a4fbe1549b0c743b9bcbf1c4a336b8fabe236f85054b',0.0);}catch(e){}}};}else {s.onload = function(){try{loadwaprops('3z854825010b8d088fe5e5a5b89e0e96bf','3zbc3f55f0e5d7d2b38e459af453201667','3z70b1f8cb45af56f6b84b6b8e73fe4e0effa4d6e057d7adcc5b4a083e8cf64d1b','3zb9ed07860cda5c2c84b1a4fbe1549b0c743b9bcbf1c4a336b8fabe236f85054b',0.0);}catch(e){}};};s.src =p+'//ma.zoho.com/hub/js/WebsiteAutomation.js'; f.parentNode.insertBefore(s, f);</script>
+  
+<script src="https://cdn.pagesense.io/js/hxocorp/6d67b522f58541e189e058fecb81afac.js" defer></script>
+  
+<script>(function(w,r){w._rwq=r;w[r]=w[r]||function(){(w[r].q=w[r].q||[]).push(arguments)}})(window,'rewardful');</script>
+<script defer src='https://r.wdfl.co/rw.js' data-rewardful='dab13a'></script>
+  
+{% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
+
+<script> window.referralJS = ((window.referralJS !== null && window.referralJS !== undefined) ? window.referralJS : {}); window.referralJS.scriptConfig = { parameters: { src: "//nomadinternet.referralrock.com/ReferralSdk/referral.js", transactionKey: "fea98424-a3b9-4265-ad3b-0acd86333b30" } }; (function(f,r,n,d,b,y){b=f.createElement(r),y=f.getElementsByTagName(r)[0];b.async=1;b.src=n+"?referrer="+encodeURIComponent(window.location.origin+window.location.pathname).replace(/[!'()*]/g,escape);b.id="RR_DIVID_V5";b.setAttribute("transactionKey",window.referralJS.scriptConfig.parameters.transactionKey);y.parentNode.insertBefore(b,y)})(document,"script",window.referralJS.scriptConfig.parameters.src); </script>
+<script>(function () {Grin = window.Grin || (window.Grin = []);var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = 'https://d38xvr37kwwhcm.cloudfront.net/js/grin-sdk.js';var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})();</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "jepdcywnts");
+</script>
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script> -->
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+{%- comment -%}
+<style>@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap')</style>
+{%- endcomment -%}
+</head>
+<body
+id="{{ page_title | handle }}"
+class="template-{{ page.template_suffix }} {% if template == 'index' %}home{% elsif template contains 'page.contact' %}contact{% elsif template contains 'page.test-annual' %}plans{% elsif template contains 'page.address' %}contact{% elsif template contains 'page.faq' %}contact{% elsif template contains 'page.plan' %}plans{% elsif template contains 'page.test-alternate' %}plans{% else %}{% endif %} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" style="{% if page.handle == 'primestore' %}padding-top:0px!important;{% endif %}{% if page.handle == 'ticket' %}background-color:#fff;{% endif %}"
+>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- ClickCease.com tracking-->
+<script type='text/javascript'>var script = document.createElement('script');
+script.async = true; script.type = 'text/javascript';
+var target = 'https://www.clickcease.com/monitor/stat.js';
+script.src = target;var elem = document.head;elem.appendChild(script);
+</script>
+<noscript>
+<a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com' alt='ClickCease'/></a>
+</noscript>
+<!-- ClickCease.com tracking-->
+
+{% unless page.handle == 'activate' %}  
+<div class="rr_loader">
+<div class="rr_loader_overlay"></div>
+{% if page.handle == 'plans' or page.handle == 'activate' %}  
+<h2>Checking out</h2>
+{% endif %} 
+ 
+<div class="rr_spinner"></div>
+{% if page.handle == 'coverage-map' %}  
+<h3>Checking availability</h3>
+{% endif %}  
+{% if page.handle == 'flex-pay' %}  
+<h2>Retrieving Your Order</h2>
+{% endif %}    
+</div>
+{% endunless %}
+  
+{% capture the_snippet_content %}{% render 'socialshopwave-helper' %}{% endcapture %}
+            {% unless the_snippet_content contains 'Liquid error' %}
+              {{ the_snippet_content }}
+            {% endunless %}
+
+
+<!-- Google Tag Manager (noscript) --> 
+<noscript><iframe src="https://gtm.nomadinternet.com/ns.html?id=GTM-58XQ8QH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+<!-- End Google Tag Manager (noscript) -->
+  
+
+{% if page.handle == 'cube' %}
+<div class="top_bar">
+<span>24hrs Cube Sale for $99!</span>
+</div>
+<style>
+.top_bar{
+position: fixed;
+top: 0;
+background-color: #00A77F;
+color: #fff;
+width: 100%;
+padding: 10px;
+text-align: center;
+font-weight: bold;
+z-index: 99999;
+}
+.header{top:47px;} 
+.plan-first-screen {
+    margin: 2rem 0 2.5rem;
+}    
+@media (min-width: 62rem){
+.plan-first-screen {
+    margin: 2rem 0 3.75rem;
+}
+}
+</style>
+{% endif %}  
+
+{% comment %}
+{% if page.handle == 'plans' %}
+{% include 'lookup-popup' %}
+{% endif %}
+{% endcomment %}
+
+  
+{% comment %} 
+{% unless page.handle == 'coverage-map' or page.handle == 'plans' %}
+{% include 'lookup-popup' %}
+{% endunless %}
+{% endcomment %}
+
+{% unless page.handle == 'primestore' or page.handle == 'activate' or page.handle == 'pre-activation' or page.handle == 'activate-thank-you' or template == 'page.nomad-vending-machine' %}
+  {% if page.handle == 'legendary' or page.handle == 'raptor' or template == 'page.video-wall' or template == 'page.nomad-landing' %}
+    <div class="header--darkness">
+  {% endif %}
+
+  {% section 'header' %}
+  
+  {% if page.handle == 'legendary' or page.handle == 'raptor' or template == 'page.video-wall' or template == 'page.nomad-landing' %}
+    </div>
+  {% endif %}
+{% endunless %}
+
+<main class="wrapper main-content" role="main">
+  {{ content_for_layout }}
+</main>
+
+{% if template == 'page.free-modem' %}
+  {% section 'free-modem-popup' %}  
+{% endif %}
+
+{% comment %}{% render 'infobar' %}{% endcomment %}
+{%- comment -%} or page.id == 101063983162{%- endcomment -%}
+{% unless page.handle == 'primestore' or page.handle == 'activate' or page.handle == 'pre-activation' or page.handle == 'activate-thank-you' %}
+{% section 'footer' %}
+{% endunless %}
+
+<script src="{{ 'mmenu-light.js' | asset_url }}" defer></script>
+<script src="{{ 'mmenu-light.polyfills.js' | asset_url }}" defer></script>
+<script src="{{ 'jquery.waypoints.min.js' | asset_url }}" defer></script>
+<script src="{{ 'fancybox.umd.js' | asset_url }}" async defer></script>
+<script src="{{ 'main.js' | asset_url }}" defer></script>
+<script src="{{ 'theme.js' | asset_url }}" defer></script>
+<script src="{{ 'custom.js' | asset_url }}" defer></script>
+
+
+<script>
+  // This will initiate Upscope connection. It's important it is added to all pages, even when the user is not logged in.
+  (function (w, u, d) {
+    var i = function () {
+      i.c(arguments);
+    };
+    i.q = [];
+    i.c = function (args) {
+      i.q.push(args);
+    };
+    var l = function () {
+      var s = d.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://code.upscope.io/EbL8AZDTjT.js';
+      var x = d.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    };
+    if (typeof u !== 'function') {
+      w.Upscope = i;
+      l();
+    }
+  })(window, window.Upscope, document);
+
+  Upscope('init');
+</script>
+
+<!-- Start of nomadtalk Zendesk Widget script -->
+{% if page.template_suffix != 'preorder-wizard-app' %}
+  <!-- Start of nomadtalk Zendesk Widget script -->
+  <!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=2ac792c7-fc91-4b2a-a858-f12a123f9061"> </script> -->
+  <!-- End of nomadtalk Zendesk Widget script -->
+{% endif %}
+<!-- End of nomadtalk Zendesk Widget script -->
+{% render 'automizely-recommendations' %}
+
+
+ 
+<!-- zoho sales iq -->
+<script defer type="text/javascript" id="zsiqchat">var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "cfafeed9bcf76b581fd99d38355ad2fff7ab03431e349ab5a2d2ff76d2c98ad189a6336d76d6f755953f10daa12e3418", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);</script>
+<script>
+var $j = jQuery.noConflict();  
+var newWindowWidth = $j(window).width();
+if (newWindowWidth < 767) {
+    $zoho.salesiq.ready=function()
+    {
+    $zoho.salesiq.floatwindow.visible("hide"); 
+    }
+} 
+
+$j('.tech_ticket').click(function(e){
+  e.preventDefault();
+  $zoho.salesiq.floatwindow.visible("show");
+});  
+  
+</script>
+
+  
+{% comment %}
+<script type="text/javascript" nonce="{place_your_nonce_value_here}" src="https://desk.zoho.com/portal/api/web/inapp/885009000000923181?orgId=820270157" defer > </script>
+{% endcomment %}  
+ {% include 'smile-initializer' %}
+<style>
+  @media only screen and (min-width: 100px) and (max-width: 555px) {
+  body div.zsiq-mobhgt[embedtheme].zsiq-newtheme {
+    height: 70% !important;
+  }
+}
+
+</style>
+
+{% if page.handle == 'reviews' %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+
+<script>
+var $j = $.noConflict();  
+$j(document).ready(function(){
+$j('.video-list').slick({
+dots: false,
+infinite: true,
+speed: 500,
+slidesToShow: 5,
+slidesToScroll: 1,
+arrows: true,
+prevArrow: '<i class="prev_arrow fa fa-angle-left" aria-hidden="true"></i>',
+nextArrow: '<i class="next_arrow fa fa-angle-right" aria-hidden="true"></i>',
+responsive: [
+{
+breakpoint: 1025,
+settings: {
+slidesToShow: 3,
+slidesToScroll: 1,
+},
+},
+  {
+breakpoint: 640,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 1,
+centerPadding: '0px',
+},
+},
+],  
+});
+  
+});
+</script>
+{% endif %}  
+
+<script>
+$j(document).ready(function(){
+$j('.redirect_ticket').click(function(){
+  //window.location.href = "/pages/ticket";
+  window.open('https://support.nomadinternet.com/', '_blank');
+});  
+});  
+</script>    
+
+{% if template == 'page.nomad-vending-machine' %}
+  {% assign param_id = '' %}
+  {% if page.url contains '/smarthub002' %}
+    {% assign param_id = 'smarthub2' %}
+  {% elsif page.url contains '/smarthub003' %}
+    {% assign param_id = 'smarthub3' %}
+  {% else %}
+    {% assign param_id = 'smarthub1' %}
+  {% endif %}
+
+{%- comment -%}
+  <script type="text/javascript" id="pap_x2s6df8d" src="https://nomad.postaffiliatepro.com/scripts/klxqkvjzv"></script>
+  <script type="text/javascript">
+    PostAffTracker.setAccountId('default1');
+    const paramId = {{ param_id | json }};
+    PostAffTracker.setParamNameUserId(paramId);
+
+    try {
+      PostAffTracker.track();
+    } catch (err) { }
+  </script>-->
+
+  <script type="text/javascript">
+  document.write(unescape("%3Cscript id='pap_x2s6df8d' src='" + (("https:" == document.location.protocol) ? "https://" : "https://") +
+  "reseller.nomadinternet.com/scripts/trackjs.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  
+  <script type="text/javascript">
+    PostAffTracker.setAccountId('default1');
+    try {
+      var AffiliateID={{ param_id | json }};
+      PostAffTracker.track();
+    } catch (err) { }
+  </script>
+{%- endcomment -%}
+
+{% if page.url == '/pages/smarthubsignup' %}
+  <script>
+    if (!window.location.href.includes('#a_aid=')) {
+      // const id = sessionStorage.getItem('param_id');
+
+      console.log('data = ', window.location)
+      let paramID = 'smarthub1';
+      if (window.location.pathname.includes('smarthub002')) {
+        paramID = 'smarthub2';
+      } else if(window.location.pathname.includes('smarthub003')) {
+        paramID = 'smarthub3';
+      }
+
+      const additional = `#a_aid=${paramID}&a_bid=ec4d33e9`;
+      const result_url = window.location.href + additional
+      window.history.pushState(null,"",result_url);
+    }
+  </script>
+{% endif %}
+{% else %}
+  {% comment %}
+  <script type="text/javascript" id="pap_x2s6df8d" src="https://nomad.postaffiliatepro.com/scripts/klxqkvjzv"></script>
+  <script type="text/javascript">
+    PostAffTracker.setAccountId('default1');
+    try {
+      PostAffTracker.track();
+    } catch (err) { }
+  </script>
+  {% endcomment %}
+{% endif %}
+
+
+<!-- Click Tracking Code -->
+{% comment %}
+<script id="pap_x2s6df8dpostaffiliatepro" src="https://nomad.postaffiliatepro.com/scripts/trackjs.php?pap_tracking_suffix=postaffiliatepro" type="text/javascript"></script>
+{% endcomment %}
+
+<!-- Sale Tracking Code -->
+{% comment %}
+<script id="pap_x2s6df8dbeacon" src="https://beacon.postaffiliatepro.com/scripts/trackjs.php?pap_tracking_suffix=beacon" type="text/javascript"></script>
+<script type="text/javascript">
+  PostAffTrackerbeacon.setAccountId('8a5c9bca');
+  try {
+    PostAffTrackerbeacon.track();
+  } catch (err) { }
+</script>
+<script id="pap_x2s6df8d" src="https://beacon.postaffiliatepro.com/scripts/trackjs.php" type="text/javascript"></script> <script type="text/javascript">
+    function papSale() {
+        console.log("postaff papSale()");
+        
+        var AffiliateID = "antonhxo-com";
+        window.AffiliateID = "antonhxo-com";
+        
+        var email = "bubonic.pestilence@gmail.com";
+
+        PostAffTracker.setAccountId("8a5c9bca");
+        var sale = PostAffTracker.createAction("registration");
+        sale.setProductID("Registration");
+        sale.setCampaignID("8b873a64");
+        sale.setAffiliateID("antonhxo-com")
+        sale.setOrderID(email);
+        sale.setData1(email);
+        PostAffTracker.register();
+        
+        console.log("postaff papSale() done");
+        jQuery("#bptexttt").html("postaff papSale() done5");
+    }
+    
+    jQuery(function() {
+        papSale();
+    });
+</script>
+  <script type="text/javascript" id="pap_x2s6df8d" src="https://network.beaconshare.com/scripts/trackjs.js"></script>
+<script type="text/javascript">
+PostAffTracker.setAccountId('default1');
+try {
+PostAffTracker.track();
+} catch (err) { }
+</script>
+{% endcomment %}
+
+
+{%- comment -%}
+<script id="pap_x2s6df8d" src="https://beacon.postaffiliatepro.com/scripts/trackjs.php" type="text/javascript"></script>
+{%- endcomment -%}
+<script id="pap_x2s6df8d" src="https://beacon.postaffiliatepro.com/scripts/trackjs.php" type="text/javascript"></script>
+{%- comment -%}
+<script id="pap_x2s6df8d" src="{{ 'track.js' | asset_url }}" type="text/javascript"></script>
+{%- endcomment -%}
+
+<script type="text/javascript">
+    papTrack();
+    function papTrack() {
+      var merchant_id = "8a5c9bca";
+      
+      PostAffTracker.setAccountId(merchant_id);
+      
+      try {
+          PostAffTracker.track();
+      } catch (err) {}
+    }
+</script>
+
+
+
+  {% if template == 'page.plansv2' %}
+    {%- comment -%}
+    {% section 'popup' %}
+    {%- endcomment -%}
+  {% endif %}
+
+  {% if template == 'page.nomad-vending-machine' %}
+    <style>
+      .header {
+        padding-top: 12px;
+        background-color: #000;
+        color: #fff;
+      }
+
+      .header .navigation ul li ul {
+        background-color: #000;
+      }
+
+      .header .header__cart, .header .nav-toggler {
+        color: #fff;
+      }
+
+      .header .login_link svg {
+        fill: #fff;
+      }
+    </style>
+  {% endif %}
+
+  {% if template == 'page.free-modem' or template == 'page.nomad-landing' or template == 'page.video-wall' or template == 'page.gaming-ui' or template == 'page.flex-pay' or template == 'page.google-maps' or template == 'page.nomad-vending-machine' or template == 'page.host-beacons' %}
+    {%- comment -%}
+    <style>
+      body {
+        padding-top: 68px !important;
+      }
+      .main-content {
+        margin: 0;
+      }
+
+      @media (max-width: 749px) {
+            body {
+        padding-top: 57px !important;
+      }
+      }
+    </style>
+    {%- endcomment -%}
+
+    {% if template == 'page.nomad-landing' %}
+      <style>
+        body {
+          padding-top: 115px !important;
+        }
+        .main-content {
+          margin: 0;
+        }
+
+        @media (max-width: 749px) {
+          body {
+            padding-top: 105px !important;
+          }
+        }
+      </style>
+    {% else %}
+      <style>
+        body {
+          padding-top: 115px !important;
+        }
+        .main-content {
+          margin: 0;
+        }
+
+        @media (max-width: 749px) {
+          body {
+            padding-top: 57px !important;
+          }
+        }
+      </style>
+    {% endif %}
+  {% elsif template == 'page.activate' %}
+    <style>
+      @media (max-width: 749px) {
+           body .siq_bR {
+             bottom: 100px;
+           }
+    }
+    </style>
+  {% endif %}
+  {% if page.handle == 'plans' %}
+  <style>
+    @media (min-width: 991px) {
+      .header {
+      transform: translateY(0) !important;
+    }
+    }
+  </style>
+{% endif %}
+  <style>
+    @media (min-width: 1200px) and (max-width: 1440px) {
+     #shopify-section-header .header__content {
+       gap: 4px;
+     }
+
+      #shopify-section-header .header__content .navigation:not(.mm-spn) a {
+        padding: 0.5em;
+      }
+    }
+  </style>
+  {% render 'tiktok-video-popup' %}
+
+  {% if template == 'page.nomad-landing' %}
+    {{ '04nomad-landing.css' | asset_url | stylesheet_tag }}
+  {% endif %}
+</body>
+</html>

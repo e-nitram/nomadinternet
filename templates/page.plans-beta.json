@@ -1,0 +1,177 @@
+{
+  "sections": {
+    "0516ca77-ad9b-42e3-97ef-130aac6982fe": {
+      "type": "02plan-page-4in1",
+      "settings": {}
+    },
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "disabled": true,
+      "settings": {
+        "title": "Order Nomad",
+        "description": "<p>High-speed, wireless low-latency broadband internet in remote and rural locations across the USA. $110\/mo with a one-time Nomad Air Modem cost of $299.<\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "e1dd84ae-131b-4013-91ba-727ad8e4d5b2": {
+      "type": "awesome-section",
+      "blocks": {
+        "b2d75515-dd8a-486b-a194-cc9424e0436d": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Join Now",
+            "url": "\/cart\/39814454247482:1,39798048751674:1",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "b2d75515-dd8a-486b-a194-cc9424e0436d"
+      ],
+      "disabled": true,
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1195.jpg",
+        "title_tag": "h2",
+        "title": "NOMAD RESIDENTIAL PLAN",
+        "description": "<p>High-speed, wireless low-latency broadband internet in remote and rural locations across the USA. $110\/mo with a one-time Nomad Air Modem cost of $299.<\/p>"
+      }
+    },
+    "4c2de0a6-50d5-4148-827d-75283eeb5622": {
+      "type": "awesome-section",
+      "blocks": {
+        "fef5f28f-d805-4d0c-aa21-c2348b970cb2": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Join Now",
+            "url": "\/cart\/39814454575162:1,39798048751674:1",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "fef5f28f-d805-4d0c-aa21-c2348b970cb2"
+      ],
+      "disabled": true,
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1197_7af46597-2230-4391-816e-993882dd995b.jpg",
+        "title_tag": "h2",
+        "title": "NOMAD BUSINESS PLAN",
+        "description": "<p>High-speed, wireless low-latency broadband internet to remote and rural businesses across the USA. $250\/mo with a one-time Nomad Raptor Modem cost of $499<\/p>"
+      }
+    },
+    "6f3e7b27-916e-431a-b1b0-e62b791723b7": {
+      "type": "awesome-section",
+      "blocks": {
+        "31051b32-751f-491d-a79c-0461817c156f": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Join Now",
+            "url": "\/cart\/39814892748858:1,39798048751674:1",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "31051b32-751f-491d-a79c-0461817c156f"
+      ],
+      "disabled": true,
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1199.jpg",
+        "title_tag": "h2",
+        "title": "NOMAD TRAVEL PLAN",
+        "description": "<p>High-speed, wireless low-latency internet on an as-needed basis at any destination where Nomad Internet provides active coverage. $130\/mo with a one-time cost of $299 for a Nomad Air Modem.<\/p>"
+      }
+    },
+    "4f3df374-15be-4de3-8e97-e1611c123290": {
+      "type": "awesome-section",
+      "blocks": {
+        "fb980ae1-3c86-4502-b4f2-cdb75e3d04dd": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Learn More",
+            "url": "shopify:\/\/pages\/bring-your-own-device",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "fb980ae1-3c86-4502-b4f2-cdb75e3d04dd"
+      ],
+      "disabled": true,
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BRING_YOUR_OWN_DEVICE.jpg",
+        "title_tag": "h2",
+        "title": "BRING YOUR OWN DEVICE",
+        "description": "<p>Immediately access high-speed, wireless low-latency internet for your own device at any destination where Nomad Internet provides active coverage for $150\/mo<\/p>"
+      }
+    },
+    "dafa1521-5d05-4f7c-a711-ea876dcc547f": {
+      "type": "awesome-section",
+      "blocks": {
+        "b23cae31-878e-4c65-9bda-ec6d251fb758": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "download for android",
+            "url": "https:\/\/play.google.com\/store\/apps\/details?id=co.shopney.everywhereinternet&hl=en_US&gl=US",
+            "blank": true,
+            "on_click": ""
+          }
+        },
+        "70a58da9-9bb2-4b38-8903-21abb3535fcd": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "download for ios",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379",
+            "blank": true,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "b23cae31-878e-4c65-9bda-ec6d251fb758",
+        "70a58da9-9bb2-4b38-8903-21abb3535fcd"
+      ],
+      "disabled": true,
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/010203.jpg",
+        "title_tag": "h2",
+        "title": "Download Nomad App",
+        "description": "<p>Download the Nomad App buy Modems and to Activate, Pause, Resume, and Deactivate your plans. <\/p>"
+      }
+    }
+  },
+  "order": [
+    "0516ca77-ad9b-42e3-97ef-130aac6982fe",
+    "awesome-first-screen",
+    "e1dd84ae-131b-4013-91ba-727ad8e4d5b2",
+    "4c2de0a6-50d5-4148-827d-75283eeb5622",
+    "6f3e7b27-916e-431a-b1b0-e62b791723b7",
+    "4f3df374-15be-4de3-8e97-e1611c123290",
+    "dafa1521-5d05-4f7c-a711-ea876dcc547f"
+  ]
+}

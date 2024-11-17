@@ -1,0 +1,185 @@
+.form-submit-section {
+  padding: 40px 0;
+}
+
+.form-submit-section * {
+  color: var(--text-color);
+}
+
+.form-submit-section .container {
+  background-color: #000;
+  padding: 40px;
+}
+
+.form-submit-section .container input,
+.form-submit-section .container textarea
+{
+  background: #212121;
+  border: 1px solid #3c3c3c;
+}
+
+.form-submit-section .form-submit-section__title {
+  font-size: 28px;
+  font-family: "DIN";
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-submit-section .form-submit-section__title::after {
+  content: " ";
+  width: 76px;
+  height: 3px;
+  display: block;
+  background: #008061;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.form-submit-section .form-submit-section__description {
+  font-family: "DIN";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  width: 100%;
+  max-width: 710px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.form-submit-section .form-submit-section__description * {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #D6D6D6;
+}
+
+.form-submit-section .form-submit-section__description *:last-of-type {
+  margin-bottom: 0px;
+}
+
+.form-submit-section .form-submit-section__description a {
+  color: #008061;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-submit-section__form-wrapper {
+  margin-bottom: 32px;
+}
+
+.form-submit-section .form-buttons {
+  text-align: center;
+}
+
+.form-submit-section .form-buttons button {
+  font-family: "DIN";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  width: 100%;
+}
+
+.form-submit-section .form-submit-section__form-caption {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 24px;
+}
+
+.form-submit-section .form-submit-section__form-caption * {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "DIN";
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.form-submit-section__form-wrapper .input-wrapper .label {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "DIN";
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.form-submit-section__form-wrapper .input-wrapper input {
+  font-family: "DIN";
+}
+
+.form-submit-section__form-wrapper .input-wrapper input::placeholder {
+  text-transform: capitalize;
+  font-family: "DIN";
+  color: #ffffffcc;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form-submit-section__form-wrapper textarea {
+  resize: vertical;
+}
+
+.form-submit-section__form-wrapper textarea::placeholder {
+  text-transform: capitalize;
+  font-family: "DIN";
+  color: #ffffffcc;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .form-submit-section {
+    padding: 64px 0;
+  }
+
+  .form-submit-section .container {
+    padding: 64px;
+  }
+
+  .form-submit-section .form-submit-section__title {
+    font-size: 36px;
+    line-height: 43.96px;
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .form-submit-section .form-submit-section__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .form-submit-section__form-wrapper {
+    margin-bottom: 48px;
+  }
+
+  .form-submit-section .form-buttons button {
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 400px;
+  }
+
+  .form-submit-section .form-submit-section__form-caption * {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .form-submit-section .form-submit-section__form-caption {
+    margin-top: 36px;
+  }
+
+  .form-submit-section .form-buttons button {
+    width: auto;
+  }
+}

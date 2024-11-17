@@ -1,0 +1,141 @@
+<section class="cube-choose" id="cube-choose-plans">
+	<h2 class="cube-choose__title">Choose a Wireless High-Speed data plan</h2>
+
+	<div class="row v-gutters justify-center" style="--gutter-y: 50px; --gutter-x: 20px">
+		<div class="col-md-4 col-auto">
+			<div class="cube-choose__item">
+				<img
+					src="{{ 'tmp-cyp-01.jpg' | asset_url }}"
+					alt="Nomad Residential"
+					width="562"
+					height="362"
+					loading="lazy"
+					class="item__image"
+				>
+
+				<div class="item__content">
+					<h3 class="item__title">Nomad Residential</h3>
+					<div class="item__description">
+						<p>Up to Unlimited Hi-Speed Wireless Data for “home use.”</p>
+
+						<p data-collapse="... View more" data-collapse-height="0">
+							<strong>Features:</strong><br>
+							- Download speeds up to 100Mbps<br>
+							- Up to Unlimited 4G and 5G LTE<br>
+							- Connect all Your Devices<br>
+							- No Credit Check<br>
+							- No Data Limit<br>
+							- Anywhere You Are<br>
+							- 30-Day No Risk Trial
+						</p>
+					</div>
+
+					<div class="item__price">$109 a month</div>
+
+					<a data-href="/cart/39851927470138:1,39798048751674:1,39848884633658:1" class="buy_btn btn outline wide" id="cube-btn-1">Choose</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-auto">
+			<div class="cube-choose__item">
+				<img
+					src="{{ 'tmp-cyp-02.jpg' | asset_url }}"
+					alt="Nomad Travel"
+					width="562"
+					height="362"
+					loading="lazy"
+					class="item__image"
+				>
+
+				<div class="item__content">
+					<h3 class="item__title">Nomad Travel</h3>
+					<div class="item__description">
+						<p>Up to Unlimited Hi-Speed Wireless Data for “travel use.”</p>
+
+						<p data-collapse="... View more" data-collapse-height="0">
+							<strong>Features:</strong><br>
+							- Download speeds up to 100Mbps<br>
+							- Up to Unlimited 4G and 5G LTE<br>
+							- Connect all Your Devices<br>
+							- No Credit Check<br>
+							- No Data Limit<br>
+							- Anywhere You Are<br>
+							- 30-Day No Risk Trial<br>
+							<span style="color: var(--theme-color)">- Pause Plan (eta Q1 2023)</span>
+						</p>
+					</div>
+
+					<div class="item__price">$129 a month</div>
+
+					<a data-href="/cart/39851927470138:1,39798048751674:1,39848885616698:1" class="buy_btn btn outline wide" id="cube-btn-2">Choose</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 col-auto">
+			<div class="cube-choose__item">
+				<img
+					src="{{ 'tmp-cyp-03.jpg' | asset_url }}"
+					alt="Nomad Business"
+					width="562"
+					height="362"
+					loading="lazy"
+					class="item__image"
+				>
+
+				<div class="item__content">
+					<h3 class="item__title">Nomad Business</h3>
+					<div class="item__description">
+						<p>Up to Unlimited Hi-Speed Wireless Data for “office use.”</p>
+
+						<p data-collapse="... View more" data-collapse-height="0">
+							<strong>Features:</strong><br>
+							<span style="color: var(--theme-color)">- Download speeds up to 200Mbps</span><br>
+							- Up to Unlimited 4G and 5G LTE<br>
+							- Connect all Your Devices<br>
+							- No Credit Check<br>
+							- No Data Limit<br>
+							- Anywhere You Are<br>
+							- 30-Day No Risk Trial
+						</p>
+					</div>
+
+					<div class="item__price">$199 a month</div>
+
+					<a data-href="/cart/39851927470138:1,39798048751674:1,39848886435898:1" class="buy_btn btn outline wide" id="cube-btn-3">Choose</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+var $j = jQuery.noConflict();  
+$j(".buy_btn").click(function(event){
+  event.preventDefault();
+  var cart_link = $j(this).attr('data-href'),
+    url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?items=https://nomadinternet.com"+cart_link+" &jsonize=1";
+  $j.ajax({
+    type: "GET",
+    url: url,
+    dataType: "json",
+    success: function(response){
+location.href = response[0];
+    }
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "cube-choose",
+  "class": "container",
+  "tag": "div",
+  "limit": 1,
+  "presets": [
+    {
+      "name": "Cube Choose"
+    }
+	]
+}
+{% endschema %}

@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "076557c0-fa2c-4aff-a9b0-de78f5eeee87": {
+      "type": "nomad-air",
+      "settings": {}
+    },
+    "e183faf9-4741-4ac2-b35e-509d843d7da2": {
+      "type": "01home-signup",
+      "settings": {}
+    }
+  },
+  "order": [
+    "076557c0-fa2c-4aff-a9b0-de78f5eeee87",
+    "e183faf9-4741-4ac2-b35e-509d843d7da2"
+  ]
+}

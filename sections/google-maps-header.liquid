@@ -1,0 +1,25 @@
+<div class="google-maps-header">
+  {% if section.settings.icon != blank %}
+    <img src="{{ section.settings.icon | img_url: 'master' }}"/>
+  {% endif %}
+  <h3>{{ section.settings.heading }}</h3>
+</div>
+
+{% schema %}
+{
+  "name": "Google maps header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "icon",
+      "label": "Icon"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Nomad internet smart hub<br>Tracker"
+    }
+  ]
+}
+{% endschema %}

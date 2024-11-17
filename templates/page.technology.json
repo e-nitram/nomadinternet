@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "0975878f-a215-43f8-8e59-cfa2167f05a9": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+      }
+    },
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "bf6bbb75-d9da-4bb2-807d-4cd8de1e89bd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/delphinus_star_constellation_night_sky_cluster_stars_deep_space-min-min.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "bf6bbb75-d9da-4bb2-807d-4cd8de1e89bd"
+      ],
+      "settings": {
+        "title": "the best internet for you and your business",
+        "description": "<p>Nomad Internet is the countries largest WISP using wireless cell towers to deliver broadband internet capable of supporting streaming, online gaming, video calls and more<\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "1e40d889-5ec6-4a04-abec-00c45cc42f14": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "center",
+        "columns": "1",
+        "heading_text": "HOW nomad internet WORKS",
+        "text": "<p>At Nomad, we provide a network connection to those that live in rural communities and\/or those that travel regularly.<\/p>",
+        "text_2": "",
+        "text_align": "center"
+      }
+    },
+    "128400a6-2251-44de-a8ea-131229f9a84a": {
+      "type": "awesome-circle-section",
+      "blocks": {
+        "4674ca76-4752-4b33-9538-28ffb4222dcb": {
+          "type": "awesome-circle-card",
+          "settings": {
+            "title": "Connect with multiple devices",
+            "text": "Nomad AIR allows you to connect with up to 30 devices at a time, making it perfect for families, groups, and businesses."
+          }
+        },
+        "e03b6425-8be1-4bbe-bd8c-4055f8f96599": {
+          "type": "awesome-circle-card",
+          "settings": {
+            "title": "Perfect for travel",
+            "text": "Great for travel, Nomad Air offers breakthrough 5G and 4G LTE speeds"
+          }
+        },
+        "b6e1f680-fec9-4ddb-a8c2-c613e0b81343": {
+          "type": "awesome-circle-card",
+          "settings": {
+            "title": "Dual sim compatibility",
+            "text": "Utilizing dual SIM cards and connecting to the most reliable 5G networks. Say hello to a world of limitless possibilities."
+          }
+        }
+      },
+      "block_order": [
+        "4674ca76-4752-4b33-9538-28ffb4222dcb",
+        "e03b6425-8be1-4bbe-bd8c-4055f8f96599",
+        "b6e1f680-fec9-4ddb-a8c2-c613e0b81343"
+      ],
+      "settings": {
+        "reversed": false,
+        "image_bg": "shopify:\/\/shop_images\/colourful-horizon-lights-sky_1-min.jpg",
+        "image": "shopify:\/\/shop_images\/gray21.png"
+      }
+    },
+    "136f1865-f3b8-4c95-b261-68f3202855ab": {
+      "type": "awesome-section",
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1195_de17db58-a35d-4491-bb45-6e7bb856c6f6.jpg",
+        "title_tag": "h2",
+        "title": "EASY SET UP",
+        "description": "<p>Nomad Internet for RVs ships immediately and arrives with everything you need to get online in a matter of minutes.<\/p><p>Your Nomad Internet RV kit arrives with everything you need to get online in minutes including your Nomad Internet Service, Nomad Air with built-in WiFi router and power cable.<\/p>"
+      }
+    },
+    "4c32c8a4-fbe4-49c9-ad6f-28ded64a4d96": {
+      "type": "awesome-section",
+      "blocks": {
+        "beaf9254-52bf-4321-8efa-66bdf61fb6e5": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "download for android",
+            "url": "https:\/\/play.google.com\/store\/apps\/details?id=co.shopney.everywhereinternet&hl=en_US&gl=US",
+            "blank": true,
+            "on_click": ""
+          }
+        },
+        "ff671f13-b7b7-4a6a-82d3-2c3208e0157a": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "download for ios",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379",
+            "blank": true,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "beaf9254-52bf-4321-8efa-66bdf61fb6e5",
+        "ff671f13-b7b7-4a6a-82d3-2c3208e0157a"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/010203.jpg",
+        "title_tag": "h2",
+        "title": "Download Nomad App",
+        "description": "<p>Download the Nomad App buy Modems and to Activate, Pause, Resume, and Deactivate your plans. <\/p>"
+      }
+    }
+  },
+  "order": [
+    "0975878f-a215-43f8-8e59-cfa2167f05a9",
+    "awesome-first-screen",
+    "1e40d889-5ec6-4a04-abec-00c45cc42f14",
+    "128400a6-2251-44de-a8ea-131229f9a84a",
+    "136f1865-f3b8-4c95-b261-68f3202855ab",
+    "4c32c8a4-fbe4-49c9-ad6f-28ded64a4d96"
+  ]
+}

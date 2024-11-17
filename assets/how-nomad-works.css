@@ -1,0 +1,534 @@
+.how-it-work-banner{
+	background-image: url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/work-banner-bg.png?v=1696662504');
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 125px 0;
+}
+.how-it-work-banner .container {
+    max-width: calc(80rem + var(--gutter-x));
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+.how-it-work-banner .section-content h3 {
+    color: #00A77F;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin: 0 0 24px;
+  margin:0;
+}
+.how-it-work-banner .section-content h2 {
+    color: #fff;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: -1.2px;
+    margin: 0 0 16px;
+    max-width: 695px;
+}
+.how-it-work-banner .section-content p {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0.9;
+    max-width: 623px;
+    margin: 0 0 16px;
+}
+.how-it-work-banner .section-content ul {
+    display: flex;
+    gap: 16px;
+    margin: 0 0 24px;
+}
+.how-it-work-banner .section-content ul li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.how-it-work-banner .section-content a {
+    display: inline-block;
+    padding: 14px 51px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 8px;
+    background: #008061;
+    text-decoration: none;
+}
+/*.how-it-work-banner .section-content a:hover{
+	background-color: #000;
+}*/
+/* How It Work Banner CSS end */
+
+/* How Nomad Work CSS start */
+.how-nomad-work{
+	padding: 64px 0;
+      background: #fff;
+}
+.how-nomad-work .container{
+	max-width: 1415px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: block;
+}
+.how-nomad-work .section-title {
+    text-align: center;
+    margin: 0 0 48px;
+}
+.how-nomad-work .section-title h2 {
+    color: #013127;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    text-transform: capitalize;
+    padding: 0 0 9px;
+    position: relative;
+}
+.how-nomad-work .section-title h2:after {
+    content: '';
+    width: 76px;
+    background-color: #00A77F;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    right: 0;
+    margin: 0 auto;
+}
+.how-nomad-work .section-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px;
+}
+.how-nomad-work .section-content .left-content {
+   display: flex;
+padding: 40px;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+flex: 1 0 0;
+  border-radius: var(--radius-3xl, 20px);
+border: 1px solid var(--gray-true-300, #D6D6D6);
+background: var(--dark-green, #013127);
+}
+.how-nomad-work .section-content .left-content h2 {
+   color: var(--white, #FFF);
+text-align: center;
+font-family: Graphie;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 46.5px;
+letter-spacing: 0.32px;
+text-transform: capitalize;
+margin:0;  
+}
+/*.how-nomad-work .section-content .left-content p {
+    color: #282828;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 28.5px;
+    opacity: 0.8;
+    margin: 0 0 24px;
+}
+.how-nomad-work .section-content .left-content a {
+    display: inline-block;
+    padding: 18px 16px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 8px;
+    background: #00A77F;
+  text-decoration: none;
+}*/
+/*.how-nomad-work .section-content .left-content a:hover{
+	background-color: #000;
+}*/
+.how-nomad-work .section-content .right-content {
+   /* border-radius: 13.633px;
+    border: 1px solid #D6D6D6;
+    overflow: hidden;*/
+    height: 100%;
+    padding: 75px 48px 75px 42px;
+}
+.how-nomad-work .section-content .right-content iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 12.924px;
+    border: 0.948px solid #D6D6D6;
+}
+/* How Nomad Work CSS end */
+
+/* Started Nomad Internet CSS Start */
+.started-nomad-internet{
+	padding: 64px 0;
+  background:#fff;
+}
+.started-nomad-internet .container{
+	max-width: 1415px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: block;
+}
+.started-nomad-internet .section-content {
+    display: flex;
+}
+.started-nomad-internet .section-content .left-content {
+    width: 35.4%;
+}
+.started-nomad-internet .section-content .right-content {
+    width: 64.6%;
+    padding-left: 48px;
+}
+.started-nomad-internet .section-content .left-content h2 {
+    color: #013127;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -0.48px;
+    text-transform: capitalize;
+    margin: 8px 0 20px;
+}
+.started-nomad-internet .section-content .left-content ul {
+    margin: 0 0 24px;
+}
+.started-nomad-internet .section-content .left-content ul li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 0 12px;
+}
+.started-nomad-internet .section-content .left-content ul li:last-child {
+    margin: 0;
+}
+.started-nomad-internet .section-content .left-content a {
+    border-radius: 8px;
+    background: #00A77F;
+    padding: 18px 51px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+  text-decoration: none;
+}
+/*.started-nomad-internet .section-content .left-content a:hover{
+	background-color: #000;
+}*/
+.started-nomad-internet .section-content .right-content .plan-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.started-nomad-internet .section-content .right-content .plan-list .plan-box {
+    padding: 24px;
+    border-radius: 23.658px;
+    border: 1px solid #D6D6D6;
+}
+.started-nomad-internet .section-content .right-content .plan-list .plan-box span {
+    width: 47.171px;
+    border-radius: 5896.415px;
+    border: 3px solid #00A77F;
+    height: 47.171px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00A77F;
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 38px;
+    margin: 0 0 20px;
+}
+.started-nomad-internet .section-content .right-content .plan-list .plan-box h3 {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 12px 0 16px;
+}
+.started-nomad-internet .section-content .right-content .plan-list .plan-box p {
+    color: #282828;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0.8;
+}
+.started-nomad-internet .section-content .right-content .plan-list .plan-box a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0 0;
+    color: #00A77F;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-decoration: none;
+}
+/* Started Nomad Internet CSS end */
+
+@media screen and (max-width: 1024px){
+	.how-it-work-banner .section-content h2{
+		font-size: 2.8125rem;
+		line-height: normal;
+	}
+	.how-it-work-banner .section-content p{
+		font-size: 1.125rem;
+	}
+	.how-nomad-work .section-content .left-content h2{
+		font-size: 1.875rem;
+		line-height: 40px;
+	}
+	.started-nomad-internet .section-content .left-content h2{
+		font-size: 2.5rem;
+		line-height: 50px;
+	}
+	.started-nomad-internet .section-content .right-content .plan-list .plan-box p{
+		font-size: 1rem;
+	}
+	.started-nomad-internet .section-content .right-content .plan-list .plan-box h3{
+		font-size: 1.25rem;
+	}
+}
+@media screen and (max-width: 991px){
+	.how-it-work-banner{
+		padding: 100px 0;
+	}
+	.how-nomad-work,
+	.started-nomad-internet{
+		padding: 50px 0;
+	}
+	.started-nomad-internet .section-content .right-content .plan-list{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.started-nomad-internet .section-content .right-content,
+	.started-nomad-internet .section-content .left-content{
+		width: 50%;
+	}
+	.started-nomad-internet .section-content .right-content{
+		padding-left: 20px;
+	}
+	.started-nomad-internet .section-content .left-content h2{
+		font-size: 2.1875rem;
+		line-height: 45px;
+	}
+	.how-nomad-work .section-content .left-content{
+		padding: 20px;
+	}
+	.how-nomad-work .section-content .left-content p{
+		font-size: 1rem;
+	}
+	.how-nomad-work .section-content .left-content a,
+	.started-nomad-internet .section-content .left-content ul li{
+		font-size: 1.125rem;
+	}
+}
+@media screen and (max-width: 767px){
+	.how-it-work-banner .section-content ul{
+		flex-wrap: wrap;
+	}
+	.how-it-work-banner .section-content h2{
+		font-size: 2rem;
+		line-height: normal;
+	}
+	.how-it-work-banner .section-content p,
+	.how-it-work-banner .section-content ul li{
+		font-size: 1rem;
+		line-height: 26px;
+	}
+	.how-it-work-banner .section-content a{
+		font-size: 1.125rem;
+	}
+	.how-nomad-work .section-title h2{
+		font-size: 1.875rem;
+		line-height: 40px;
+	}
+	.how-nomad-work .section-content{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.how-nomad-work .section-content .right-content{
+		position: relative;
+    	padding-top: 56.25%;
+	}
+	.how-nomad-work .section-content .right-content iframe{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+	.started-nomad-internet .section-content{
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+	.started-nomad-internet .section-content .right-content, .started-nomad-internet .section-content .left-content{
+		width: 100%;
+	}
+	.started-nomad-internet .section-content .right-content{
+		padding: 0;
+	}
+	.started-nomad-internet .section-content .left-content ul li{
+		font-size: 1rem;
+	}
+}
+
+
+.usp_banner{
+  width: 100%;
+  padding: 32px 64px;
+  background: var(--dark-green, #013127);
+   border-top: 0.5px solid var(--colors-gray-true-300, #0C5443);
+}
+.usp_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: calc(80rem + var(--gutter-x));
+    margin: 0 auto;
+ 
+}
+.usp_container .usp_block{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.usp_container .usp_block svg{
+  width: 60px;
+  height: 60px;
+}
+.usp_container .usp_block span{
+  color: var(--white, #FFF);
+  font-family: Graphie;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px; /* 88.462% */
+}
+
+@media screen and (max-width: 767px) {
+   .usp_banner{
+    padding: 32px 16px;
+}
+  .usp_container {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--dark-green, #013127);
+    flex-direction: column;
+    gap: 12px;
+}
+  .usp_container .usp_block svg {
+    width: 100%;
+    height: 30px;
+    max-width: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.usp_container .usp_block span {
+    color: var(--white, #FFF);
+    font-family: Graphie;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+} 
+}
+
+.how-it-work-banner .section-content{padding:0 15px;}
+
+
+.step_main{
+  display: flex;
+padding: var(--spacing-none, 0px);
+flex-direction: column;
+align-items: flex-start;
+gap: var(--spacing-xl, 16px);
+}
+.step_block{
+  display: flex;
+max-width: 576px;
+width:100%;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--spacing-xl, 16px);
+border-radius: 23.658px;
+border: 1px solid #37574F;  
+}
+.step_inner{
+display: flex;
+padding: var(--spacing-none, 0px);
+align-items: flex-start;
+gap: var(--spacing-xl, 16px);
+align-self: stretch;  
+}
+.step_text{
+  display: flex;
+padding: var(--spacing-none, 0px);
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+flex: 1 0 0;
+}
+.step_text h3{
+  color: var(--white, #FFF);
+font-family: Graphie;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 133.333% */
+margin:0;  
+}
+.step_text p{
+  color: #fff;
+font-family: Graphie;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+opacity: 0.8;  
+margin:0;  
+}
+.step_text a{
+display: flex;
+padding: var(--spacing-none, 0px);
+align-items: center;
+gap: var(--spacing-md, 8px);
+color: #00DAA6;
+text-align: center;
+font-family: Graphie;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px;
+margin-top:10px;  
+}
+.step_text a svg{
+  width: 24px;
+height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .how-nomad-work .section-content .left-content {
+    padding: 16px;
+}
+  .step_block{padding:16px;}
+  .step_inner{
+        flex-direction: column;
+  }
+}

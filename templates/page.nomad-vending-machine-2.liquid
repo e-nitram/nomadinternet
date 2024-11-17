@@ -1,0 +1,190 @@
+{{ 'vending-machine.css' | asset_url | stylesheet_tag }}
+
+<div class="vending-page">
+  {%- comment -%}
+  <div class="vending-header">
+    <a href="/" class="logo logo--header">
+      <img src="{{ 'logo.svg' | asset_url }}" alt="Nomad Internet" loading="lazy" width="180" height="auto">
+    </a>
+  </div>
+  {%- endcomment -%}
+  {% section 'vending-banner-slideshow' %}
+  {% section 'usp-banner' %}
+
+  {%- comment -%}
+    {% section 'vending-image-text' %}
+    {% section 'vending-steps' %}
+    {% section 'vending-machine-step' %}
+  {%- endcomment -%}
+  {% section 'vending-new-step' %}
+
+  {% section 'lp-16' %}
+  
+  <div class="vendor-popup" id="vendor-popup">
+    <div class="vending-pop-content">
+      <div id="drag-close" onclick="handlePopUpShowHide()"></div>
+      <div class="hr">
+      </div>
+      <div class="vending-close" onclick="handlePopUpShowHide()" onclick="gotoStep1()">
+        <img src="{{ 'x-close.svg' | asset_url }}" alt="close" width="30" height="30">
+      </div>
+      <div class="vending-speed">
+        <img src="{{ 'speed-meter.svg' | asset_url }}" alt="speed-meter" width="260" height="165">
+      </div>
+      <p class="speed-vending-mssg">Run speed tests, browse freely, and enjoy a complimentary GB on us!</p>
+      <div class="vending-credits">
+        <div class="line-vending-credit">
+          <p class="vending-title">SSID</p>
+          <p class="vending-value">Nomad Internet</p>
+          <p class="vending-title">PASSWORD</p>
+          <p class="vending-value">smarthub001</p>
+        </div>
+      </div>
+
+      <div class="vending-button passcodebtn">
+        {%- comment -%}
+        <button id="passcode-copy" class="vending-button-link" onclick="handleCopy(this, 'smarthub001')">
+        {%- endcomment -%}
+        <button id="passcode-copy" class="vending-button-link" onclick="gotoStep1()">
+          <span  class="copy">
+            <img src="{{ 'copy-05.svg' | asset_url }}" alt="copy" width="21" height="21">
+          </span>
+          <span class="copy">Copy password</span>
+          <span  class="copied">
+            <img src="{{ 'file-04.svg' | asset_url }}" alt="copy" width="21" height="21">
+          </span>
+          <span class="copied">Password COPIED</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="vending-video-popup hidden" id="vending-video-popup">
+    <div class="vending-video-popup__bg" onclick="closePopup()"></div>
+    <div class="vending-video-popup__content">
+      <button class="vending-video-popup__btn" onclick="closePopup()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1" style="
+          width: 30px;
+          height: 30px;
+          fill: #fff;
+          stroke: #fff;
+        "><path d="M20 20L4 4m16 0L4 20"></path></svg>
+      </button>
+      <iframe width="100%" height="500px" src="https://www.youtube.com/embed/-HIGjWvEnpg?si=DLkzrndN1T6gjbEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  const video = document.querySelector('#vending-video-popup .vending-video-popup__content iframe');
+  const srcLink = video.src;
+
+  function handleCopy(target, value) {
+    navigator.clipboard.writeText(value);
+    target.parentElement.classList.add('copying');
+    setTimeout(() => {
+      target.parentElement.classList.remove('copying');
+    }, 3000);
+  }
+
+  function handlePopUpShowHide() {
+    document.querySelector("#vendor-popup").classList.toggle('active');
+  }
+
+  document.querySelector("#vendor-popup").addEventListener('click', function (event){
+    const popupContent = document.querySelector('.vending-pop-content');
+    if (event.target !== popupContent && !popupContent.contains(event.target)) {
+    this.classList.remove('active');
+  }
+  });
+
+  function gotoStep1() {
+    // const steps = document.querySelectorAll('.nomad-vending-machine__step.accordion .accordion-header');
+    // steps.forEach((step, index) => {
+    //   if (index == 0 && !step.classList.contains('active')) {
+    //     step.click();
+    //   }
+    // });
+
+    const videoPopup = document.querySelector('#vending-video-popup');
+    if (videoPopup) {
+      videoPopup.classList.remove('hidden');
+      video.src += '&autoplay=1';
+    }
+  }
+
+  function closePopup() {
+    const videoPopup = document.querySelector('#vending-video-popup');
+    if (videoPopup) {
+      video.src = srcLink;
+      videoPopup.classList.add('hidden');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const popContainer = document.querySelector("#vendor-popup");
+    const draghundle = document.querySelector('#drag-close');
+
+    draghundle.addEventListener('touchstart', function (e) {
+        startY = e.touches[0].clientY;
+        popContainer.style.transition = 'none';
+    });
+
+    draghundle.addEventListener('touchmove', function (e) {
+        const touchY = e.touches[0].clientY;
+        const moveY = touchY - startY;
+
+        if (moveY > 0) {
+            popContainer.style.top = `${moveY}px`;
+        }
+    });
+
+    draghundle.addEventListener('touchend', function () {
+        popContainer.style.removeProperty('transition');
+        if (parseInt(popContainer.style.top) > window.innerHeight / 4) {
+            popContainer.classList.remove('active');
+            popContainer.style.removeProperty('top');
+        } else {
+            popContainer.style.removeProperty('top');
+        }
+    });
+
+    $j(document).on('click', '.accordion-header', function () {
+      // Toggle the visibility of the content
+      var isVisible = $j(this).next('.accordion-content').is(':visible');
+
+      $j('.accordion-content').slideUp();
+      $j('.accordion').removeClass('open');
+      $j('.accordion .accordion-header').removeClass('active');
+
+      // Hide all accordion content
+      if (!isVisible) {
+        $j(this).next('.accordion-content').slideDown();
+        $j(this).parents('.accordion').addClass('open');
+        $j(this).parents('.accordion').find('.accordion-header').addClass('active');
+      } else {
+        if ($j(this).hasClass('is-last')) {
+          var $firstContent = $j(this).parent().parent().find('.accordion').first();
+          var $content = $firstContent.find('.accordion-content');
+          var $header = $firstContent.find('.accordion-header');
+
+          $content.slideDown();
+          $header.addClass('active');
+          $firstContent.addClass('open');
+
+        } else {
+          var $nextContent = $j(this).parent().next();
+          var $content = $nextContent.find('.accordion-content');
+          var $header = $nextContent.find('.accordion-header');
+
+          $content.slideDown();
+          $header.addClass('active');
+          $nextContent.addClass('open');
+        }
+      }
+      
+      // If the clicked header's content was not visible, show it
+    }); 
+  });
+</script>
+

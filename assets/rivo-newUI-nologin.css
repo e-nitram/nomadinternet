@@ -1,0 +1,33 @@
+/*    LOGIN POPUP STYLE    */
+#loginpopup {
+  font-family: Plus Jakarta Sans;
+}
+#loginpopup .modal-content {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+#loginpopup .close {
+  color: #00a77f;
+}
+#loginpopup .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00a77f;
+  font-family: Plus Jakarta Sans;
+  margin-bottom: 2rem;
+}
+#loginpopup .forgot-password {
+  margin-bottom: 5px;
+}
+#loginpopup #CustomerLoginForm .btn,
+#loginpopup #CustomerRegisterForm .btn,
+#loginpopup #CustomerResetForm .btn,
+#loginpopup #RecoverPasswordForm .btn {
+  margin-bottom: 10px;
+  border-radius: 10.154px;
+  background: linear-gradient(124deg, #00a77f 0%, #005c46 100%);
+}
+#loginpopup .card-sub-title {
+  color: #000;
+  margin-bottom: 10px;
+}

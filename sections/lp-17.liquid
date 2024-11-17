@@ -1,0 +1,81 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+{% assign ss = section.settings %}
+
+<div class="lp-17">
+	{% if ss.title %}
+		<h2 class="lp-17__title">{{ ss.title }}</h2>
+	{% endif %}
+
+	<div class="lp-17__content" style="background-image: url({{ ss.image | image_url }})">
+		<div class="lp-17__description">
+			<p>{{ ss.description }}</p>
+		</div>
+
+		{% form 'contact' %}
+			{{ form.errors | default_errors }}
+
+			<div class="row">
+				<div class="col-md-6 col-12">
+					<label class="input-wrapper">
+						<span class="sr-only">Name</span>
+						<input type="text" name="contact[name]" placeholder="NAME" required>
+					</label>
+
+					<label class="input-wrapper">
+						<span class="sr-only">Email</span>
+						<input type="email" name="contact[email]" placeholder="EMAIL" required>
+					</label>
+
+					<label class="input-wrapper">
+						<span class="sr-only">ZIP CODE</span>
+						<input type="text" name="contact[zip_code]" placeholder="ZIP CODE" required>
+					</label>
+				</div>
+
+				<div class="col-md-6 col-12">
+					<label class="input-wrapper">
+						<span class="sr-only">Your Question</span>
+						<textarea name="contact[body]" placeholder="YOUR QUESTION" required></textarea>
+					</label>
+
+					<button type="submit" id="button-{{ section.id }}" class="btn lg red wide">Keep Me Posted</button>
+				</div>
+			</div>
+		{% endform %}
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-17",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 17"
+    }
+	],
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Image"
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "description",
+			"label": "Description"
+		}
+	]
+}
+{% endschema %}

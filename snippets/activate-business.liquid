@@ -1,0 +1,728 @@
+{{ 'activatebusiness.css' | asset_url | stylesheet_tag }}
+{{ 'accessories.css' | asset_url | stylesheet_tag }}
+
+<form id="activation_form" action="https://np.nomadinternet.com/subscribe3.php" method="post">
+  
+<section class="modem-section">
+    <div class="container">
+        <div class="modem-select screen-1 steps" style="display:none">
+            <a>
+                <img class="logo" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo-dark.svg?v=1696358125">
+            </a>
+            <div class="section-title">
+                <h3>Let’s Activate Your Modem!</h3>
+                <p>First, Which of our modems did you order?</p>
+            </div>
+            <div class="modem-list">
+                <div class="box box-1 active" data-id="air">
+                    <a href="javascript:">
+                        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/modem_3ad80672-d8df-4bec-8939-f29cfef4f682.png?v=1697834637">
+                        <p>Inseego FX2000e</p>
+                    </a>
+                </div>
+                <div class="box box-2" data-id="omega">
+                    <a href="javascript:">
+                        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/modem-1_d14c97d5-86fd-4355-a44c-dde80230f039.png?v=1697834638">
+                        <p>ASK-NCQ1338E</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box box-3" data-id="own">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+  <path d="M9.0487 16.1412C8.34998 13.5323 8.87709 10.6635 10.63 8.4468M25.9581 16.1412C26.6569 13.5323 26.1297 10.6634 24.3768 8.44673M3.41311 17.6611C2.19062 13.1024 3.21413 8.06678 6.48364 4.30664M31.5887 17.6611C32.8112 13.1024 31.7876 8.06684 28.5181 4.3067M17.5034 22.6219V13.8685M8.02055 27.728H13.8562M7.58288 32.8342H27.424C29.0581 32.8342 29.8751 32.8342 30.4993 32.5162C31.0483 32.2364 31.4947 31.7901 31.7744 31.2411C32.0924 30.6169 32.0924 29.7998 32.0924 28.1657V27.2904C32.0924 25.6562 32.0924 24.8392 31.7744 24.215C31.4947 23.666 31.0483 23.2196 30.4993 22.9399C29.8751 22.6219 29.0581 22.6219 27.424 22.6219H7.58287C5.94875 22.6219 5.13169 22.6219 4.50754 22.9399C3.95851 23.2196 3.51215 23.666 3.23241 24.215C2.91439 24.8392 2.91439 25.6562 2.91439 27.2904V28.1657C2.91439 29.7998 2.91439 30.6169 3.23241 31.2411C3.51215 31.7901 3.95851 32.2364 4.50754 32.5162C5.13169 32.8342 5.94875 32.8342 7.58288 32.8342Z" stroke="#00A77F" stroke-width="2.91781" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+              <p class="own_modem_text">Bring Your Own Device</p>
+            </div>
+            <div class="proceed-button">
+                <a class="proceed-button-a" data-id="air">Proceed</a>
+            </div>
+        </div>
+
+        <div class="air-info screen-2 steps" style="display:none">
+            <a href="javascript:;" class="back-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_5121_10496)">
+                        <path d="M5 12H19" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 12L11 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 12L11 6" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_5121_10496">
+                            <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg> Back
+            </a>
+            <a>
+                <img class="logo" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo-dark.svg?v=1696358125">
+            </a>
+            <div class="section-title">
+                <h2>IMEI & SIM ID</h2>
+                <p>You will need the SIM ID number located on the bottom of the SIM card tray and the IMEI number from the bottom of your Nomad Air modem on the next page.</p>
+            </div>
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/1.webp?v=1698242200">
+            <div class="got-it-button">
+                <a data-id="air">Got it</a>
+            </div>
+        </div>
+
+        <div class="omega-info screen-3 steps" style="display:none">
+            <a href="javascript:;" class="back-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_5121_10496)">
+                        <path d="M5 12H19" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 12L11 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 12L11 6" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_5121_10496">
+                            <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg> Back
+            </a>
+            <a>
+                <img class="logo" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo-dark.svg?v=1696358125">
+            </a>
+            <div class="section-title">
+                <h2>IMEI & SIM ID</h2>
+                <p>You will need the SIM ID located on the bottom of the SIM card tray and the IMEI number from the bottom of your Nomad Omega modem on the next page.</p>
+            </div>
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/2.webp?v=1698242199">
+            <div class="got-it-button">
+                <a data-id="air">Got it</a>
+            </div>
+        </div>
+
+        <div class="air-info-form screen-4 steps" style="display:none">
+            <a href="javascript:;" class="back-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_5121_10496)">
+                        <path d="M5 12H19" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 12L11 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 12L11 6" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_5121_10496">
+                            <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg> Back
+            </a>
+            <a>
+                <img class="logo" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo-dark.svg?v=1696358125">
+            </a>
+            <div class="section-title">
+                <h2>Modem Information</h2>
+                <p>Input Modem IMEI and SIM ICCID</p>
+            </div>
+            <div class="form-details">
+                    <div class="email-input">
+                        <div class="title">
+                            <label>Email Address</label>
+                        </div>
+                        <input type="text" id="email" name="email" placeholder="Enter your email">
+                        <div class="email-info">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                            <path d="M7.5 5.5V8M7.5 10.5H7.50625M13.75 8C13.75 11.4518 10.9518 14.25 7.5 14.25C4.04822 14.25 1.25 11.4518 1.25 8C1.25 4.54822 4.04822 1.75 7.5 1.75C10.9518 1.75 13.75 4.54822 13.75 8Z" stroke="#525252" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                           <span>Please use email that you used for modem purchase</span>   
+                        </div>
+                    </div>
+                    <div class="imei-input">
+                        <div class="title">
+                            <label>Modem IMEI</label>
+                            <a href="javascript:;" class="imei-popup-open">Where is IMEI?</a>
+                        </div>
+                        <input type="text" id="imei" name="imei" placeholder="Enter Modem IMEI" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                    </div>
+                    <div class="iccid-input">
+                        <div class="title">
+                            <label>SIM ID</label>
+                            <a href="javascript:;" class="iccid-popup-open">Where is SIM ID?</a>
+                        </div>
+                        <input type="text" id="iccid" name="iccid" placeholder="Enter SIM ID" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                    </div>
+
+<div class="checkbox-container">
+    <!-- Checkbox input -->
+    <input type="checkbox" class="custom-checkbox" id="termsCheckbox">
+
+    <!-- Text for terms and conditions -->
+    <label for="termsCheckbox" class="terms-text">I understand that Nomad Business cannot provide support for any “Unsupported Devices”. And, any other 3rd party Modems may not be compatible with this plan. <a href="https://opendevelopment.verizonwireless.com/device-showcase?count=0&searchBox=&page=0&pageSize=12&loading=false&moreToShow=true&sms=&operatingsystem=&simType=&eUICC=&architectureType=&voiceCapable=&wiFi=&ethernetPort=&uSBPort=&rJ11=&services=FWA&wea=&securityLevel=" target="_blank" class="link_text">Click here</a> for a list of compatible devices.</label>
+  </div>
+
+                              
+                    <p class="modem-info-error" style="color:red;text-align:center;"></p>
+              
+                    <a href="#" class="modem_proceed">Proceed</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<span class="hidden-popup-overlay"></span> 
+<div class="air-imei-popup">
+    <div class="popup-details">
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="4" viewBox="0 0 54 4" fill="none">
+            <path d="M1.98047 2H51.9805" stroke="#797C8E" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <a href="javascript:;" class="close-popup">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5" stroke="#797C8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <div class="section-title">
+            <h2>NOMAD AIR IMEI</h2>
+            <p>IMEI number can be located at the bottom of your Nomad Air modem</p>
+        </div>
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Air_IMEI.png?v=1698241986" style="margin:0 auto;max-height:250px;width:auto;">
+    </div>
+</div>
+
+<div class="air-iccid-popup">
+    <div class="popup-details">
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="4" viewBox="0 0 54 4" fill="none">
+            <path d="M1.98047 2H51.9805" stroke="#797C8E" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <a href="javascript:;" class="close-popup">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5" stroke="#797C8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <div class="section-title">
+            <h2>SIM CARD ID</h2>
+            <p>SIM ID can be located at the bottom of the SIM card tray</p>
+        </div>
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Air_SIM.png?v=1698241987" style="margin:0 auto;max-height:250px;width:auto;">
+    </div>
+</div>
+
+<div class="omega-imei-popup">
+    <div class="popup-details">
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="4" viewBox="0 0 54 4" fill="none">
+            <path d="M1.98047 2H51.9805" stroke="#797C8E" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <a href="javascript:;" class="close-popup">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5" stroke="#797C8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <div class="section-title">
+            <h2>NOMAD OMEGA IMEI</h2>
+            <p>IMEI number can be located at the bottom of your Nomad Omega modem</p>
+        </div>
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omega_IMEI.png?v=1698241987" style="margin:0 auto;max-height:250px;width:auto;">
+    </div>
+</div>
+
+<div class="omega-iccid-popup">
+    <div class="popup-details">
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="4" viewBox="0 0 54 4" fill="none">
+            <path d="M1.98047 2H51.9805" stroke="#797C8E" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <a href="javascript:;" class="close-popup">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5" stroke="#797C8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <div class="section-title">
+            <h2>SIM CARD ID</h2>
+            <p>SIM ID can be located at the bottom of the SIM card tray</p>
+        </div>
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omega_SIM.png?v=1698241987" style="margin:0 auto;max-height:250px;width:auto;">
+    </div>
+</div>
+
+
+    <section class="step-section">
+		<div class="container">
+			<div class="step-details">
+				<div class="step-1">
+					<div class="section-title">
+						<h3>Activate Your Unlimited Data Plan</h3>
+						<p>No contract, no credit check</p>
+					</div>
+					<div class="image-slider">
+                      <div class="image">
+							<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/plan_card-1_1.png?v=1698323335">
+						</div>
+						<div class="image">
+							<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/plan_card_1.png?v=1698323335">
+						</div>
+						
+					</div>
+					<div class="plan-details">
+						<div class="plan-box active" slide-id="0" data-id="40026043580474" data-plan-name="npb-fixed-100mbps" data-plan="100mbps" data-price="79.95">
+                            <span style="font-size: 12px;height: 26px;color: #ff0000;margin-bottom: 0;"></span>
+							<h3>Nomad Connect 100</h3>
+							<span>$79.95/Mo <s>$99.95</s></span>
+							<p>Download up to 100Mbps, 1080p HD video streaming, Good gaming latency</p>
+						</div>
+						<div class="plan-box" slide-id="1" data-id="40026067009594" data-plan-name="npb-fixed-200mbps" data-plan="200mbps" data-price="129.95">
+                            <span style="font-size: 12px;height: 26px;color: #ff0000;margin-bottom: 0;">Popular</span>
+							<h3>Nomad Connect 200</h3>
+							<span>$129.95/Mo <s>$149.95</s>{% comment %}<b>$40 off</b>{% endcomment %}</span>
+							<p>Download up to 200Mbps, 4k HD video streaming, Excellent gaming latency</p>
+						</div>
+					</div>
+					<div class="choosing-plan">
+						<a class="choosing-plan-popup-open">
+							Need help choosing a plan?
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+							  <g clip-path="url(#clip0_5041_24816)">
+							    <path d="M8.00212 4.91585L8.00212 7.37907M8.00212 9.84229L7.99596 9.84229M1.84408 7.37907C1.84408 3.97808 4.60112 1.22103 8.00212 1.22103C11.4031 1.22103 14.1602 3.97808 14.1602 7.37907C14.1602 10.7801 11.4031 13.5371 8.00212 13.5371C4.60112 13.5371 1.84408 10.7801 1.84408 7.37907Z" stroke="#525252" stroke-width="1.23161" stroke-linecap="round" stroke-linejoin="round"/>
+							  </g>
+							  <defs>
+							    <clipPath id="clip0_5041_24816">
+							      <rect width="14.7793" height="14.7793" fill="white" transform="translate(15.3906 14.7695) rotate(180)"/>
+							    </clipPath>
+							  </defs>
+							</svg>
+						</a>
+					</div>
+				</div>
+                                    {% comment %}
+				<div class="step-2">
+					<div class="section-title">
+						<h3>Step 2: Select Features</h3>
+						<p>Enjoy free 30 day trial on all addons</p>
+					</div>
+					<div class="free-trial-details">
+						<div class="free-trial-box addon-box-1 active">
+							<h4>Free 30 Day Trial</h4>
+							<h3>Nomad Prime Upgrade</h3>
+							<span>$19.95/Mo</span>
+							<p>Free modem replacement, 3 -years price guarantee, Nomad’s 24/7 phone priority support. </p>
+							<a class="prime-popup-open">Details</a>
+						</div>
+						<div class="free-trial-box addon-box-2 active">
+							<h4>Free 30 Day Trial</h4>
+							<h3>Nomad Travel Upgrade</h3>
+							<span>$19.95/Mo</span>
+							<p>Access to the Nomad travel mobile app, pause & resume your billing anytime & ability to travel and use while in motion. </p>
+							<a class="upgrade-popup-open">Details</a>
+						</div>
+					</div>
+				</div>
+                                    {% endcomment %}
+			</div>
+		</div>
+
+        <div class="outer-container">
+		<div class="plan-checkout">
+			<div class="left-content">
+				<h3 class="selected_plan">Nomad Connect 100</h3>
+				<p><span class="selected_plan_sale">$79.95/Mo</span><s class="selected_plan_original">$99.95</s></p>
+			</div>
+			<div class="right-content">
+                <input type="hidden" class="selected_plan" name="plan" value="">
+                <input type="hidden" class="selected_addon1" name="addons[]" value="">
+                <input type="hidden" class="selected_addon2" name="addons[]" value=""> 
+                <!-- <input type="hidden" class="" name="addons[]" value="wifi-activation"> -->
+                <input type="hidden" class="" name="coupon_code" value="">
+                  
+                <input type="submit" class="customise_continue" value="Checkout">
+				
+			</div>
+		</div>
+      </div>
+	</section>
+
+{% comment %}
+      <div id="accessories_product" class="steps" style="display:none;">
+        <div class="accessories_product_top">
+        <div class="back_btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+        <path d="M12.5 15.984L7.5 10.984L12.5 5.98401" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Back</span>   
+        </div>
+        <span class="center_title">You may also like</span>
+        <input type="submit" class="continue_btn" value="Continue">
+        </div>
+        <div class="tabs-stage">
+        <div id="tab-1" class="tabing-details">  
+        <div class="product-list for-omega" style="display:none;">
+        {% for product in collections.nomad-omega-accessories.products %}
+        {% for tag in product.tags %}
+        {% if tag contains 'modem_' %}
+             {% assign modem = tag | split:'_' %}
+             {% break %}
+        {% endif %}  
+        {% endfor %}
+        {% for tag in product.tags %}
+        {% if tag contains 'category_' %}
+             {% assign tag = tag | split:'_' %}
+             {% break %}
+        {% endif %}  
+        {% endfor %}  
+        <div class="product-box" data-modem="{{ modem[1] }}" data-category="{{ tag[1] }}">
+        {% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}  
+        <div class="preorder-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+            <path id="Fill-21" fill-rule="evenodd" clip-rule="evenodd" d="M2.96663 6.25067H6.69996V4.384H2.96663V6.25067ZM7.16663 7.184H2.49996C2.24236 7.184 2.03329 6.97493 2.03329 6.71733V3.91733C2.03329 3.65973 2.24236 3.45067 2.49996 3.45067H7.16663C7.42423 3.45067 7.63329 3.65973 7.63329 3.91733V6.71733C7.63329 6.97493 7.42423 7.184 7.16663 7.184ZM9.49996 6.25067H11.3666V4.384H9.49996V6.25067ZM12.3 6.25067H15.2782L14.3449 4.384H12.3V6.25067ZM5.70783 9.984H8.56663V3.91733C8.56663 3.65973 8.77569 3.45067 9.03329 3.45067H15.2045C15.3566 3.45067 15.4948 3.37973 15.5834 3.25653C15.6721 3.13333 15.6964 2.98027 15.6478 2.83653L15.337 1.9032C15.2736 1.71187 15.0953 1.584 14.8937 1.584H1.09996V9.984H2.09209C2.30023 9.17947 3.03196 8.584 3.89996 8.584C4.76796 8.584 5.49969 9.17947 5.70783 9.984ZM9.49996 9.984H11.3666V7.184H9.49996V9.984ZM16.9078 9.984H17.4333C17.6909 9.984 17.9 9.77493 17.9 9.51733V8.28253C17.9 8.09307 17.7824 7.91947 17.6069 7.8504L15.9437 7.184H12.3V9.984H13.2921C13.5002 9.17947 14.232 8.584 15.1 8.584C15.968 8.584 16.6997 9.17947 16.9078 9.984ZM3.89996 9.51733C3.38569 9.51733 2.96663 9.9364 2.96663 10.4507C2.96663 10.9649 3.38569 11.384 3.89996 11.384C4.41423 11.384 4.83329 10.9649 4.83329 10.4507C4.83329 9.9364 4.41423 9.51733 3.89996 9.51733ZM15.1 9.51733C14.5857 9.51733 14.1666 9.9364 14.1666 10.4507C14.1666 10.9649 14.5857 11.384 15.1 11.384C15.6142 11.384 16.0333 10.9649 16.0333 10.4507C16.0333 9.9364 15.6142 9.51733 15.1 9.51733ZM15.1 12.3173C14.232 12.3173 13.5002 11.7219 13.2921 10.9173H5.70783C5.49969 11.7219 4.76796 12.3173 3.89996 12.3173C3.03196 12.3173 2.30023 11.7219 2.09209 10.9173H0.633293C0.375693 10.9173 0.166626 10.7083 0.166626 10.4507V1.11733C0.166626 0.859732 0.375693 0.650665 0.633293 0.650665H14.8937C15.4976 0.650665 16.0314 1.03613 16.2228 1.60827L16.5336 2.5416C16.6773 2.97373 16.6073 3.43293 16.3404 3.80253C16.1098 4.1236 15.7664 4.3252 15.3828 4.3728L16.3712 6.3496L17.9532 6.98333C18.487 7.1952 18.8333 7.70573 18.8333 8.28253V9.51733C18.8333 10.2892 18.2052 10.9173 17.4333 10.9173H16.9078C16.6997 11.7219 15.968 12.3173 15.1 12.3173Z" fill="#00A77F"/>
+          </svg>
+          <span>Delivered in 2 to 4 weeks</span>   
+        </div>
+              {% endif %}
+        <a href="{{ product.url }}" class="" data-product="{{ product.handle }}">
+            <div class="image">
+                <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}">
+            </div>
+            <div class="product-title">
+                <div class="review">
+                    <span>{{ tag[1] }}</span>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                            <path d="M5.05764 0.509114C5.18396 0.12032 5.734 0.120319 5.86033 0.509113L6.83279 3.50203C6.88928 3.6759 7.05131 3.79363 7.23414 3.79363H10.3811C10.7899 3.79363 10.9598 4.31674 10.6291 4.55703L8.08319 6.40676C7.93529 6.51422 7.8734 6.70469 7.92989 6.87857L8.90235 9.87148C9.02868 10.2603 8.58368 10.5836 8.25296 10.3433L5.70703 8.49357C5.55912 8.38611 5.35884 8.38611 5.21094 8.49357L2.66501 10.3433C2.33428 10.5836 1.88929 10.2603 2.01562 9.87148L2.98808 6.87857C3.04457 6.7047 2.98268 6.51422 2.83478 6.40676L0.288849 4.55703C-0.0418788 4.31675 0.128092 3.79363 0.536894 3.79363H3.68383C3.86665 3.79363 4.02868 3.6759 4.08518 3.50203L5.05764 0.509114Z" fill="#FFA800"/>
+                        </svg>
+                        4.5 (20)
+                    </p>
+                </div>
+                <h3>{{ product.title | escape }}</h3>
+                <p>{{ product.price | money }}</p>
+                <a class="buy_now_product" data-id="{{ product.selected_or_first_available_variant.id }}">{% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}Add to Cart{% else %}}Add to Cart{% endif %}</a>
+            </div>
+        </a>
+        </div>
+        {% endfor %} 
+        </div>
+        
+        <div class="product-list for-air" style="display:none;">
+        {% for product in collections.nomad-air-accessories.products %}
+        {% for tag in product.tags %}
+        {% if tag contains 'modem_' %}
+             {% assign modem = tag | split:'_' %}
+             {% break %}
+        {% endif %}  
+        {% endfor %}
+        {% for tag in product.tags %}
+        {% if tag contains 'category_' %}
+             {% assign tag = tag | split:'_' %}
+             {% break %}
+        {% endif %}  
+        {% endfor %}  
+        <div class="product-box" data-modem="{{ modem[1] }}" data-category="{{ tag[1] }}">
+        {% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}  
+        <div class="preorder-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+            <path id="Fill-21" fill-rule="evenodd" clip-rule="evenodd" d="M2.96663 6.25067H6.69996V4.384H2.96663V6.25067ZM7.16663 7.184H2.49996C2.24236 7.184 2.03329 6.97493 2.03329 6.71733V3.91733C2.03329 3.65973 2.24236 3.45067 2.49996 3.45067H7.16663C7.42423 3.45067 7.63329 3.65973 7.63329 3.91733V6.71733C7.63329 6.97493 7.42423 7.184 7.16663 7.184ZM9.49996 6.25067H11.3666V4.384H9.49996V6.25067ZM12.3 6.25067H15.2782L14.3449 4.384H12.3V6.25067ZM5.70783 9.984H8.56663V3.91733C8.56663 3.65973 8.77569 3.45067 9.03329 3.45067H15.2045C15.3566 3.45067 15.4948 3.37973 15.5834 3.25653C15.6721 3.13333 15.6964 2.98027 15.6478 2.83653L15.337 1.9032C15.2736 1.71187 15.0953 1.584 14.8937 1.584H1.09996V9.984H2.09209C2.30023 9.17947 3.03196 8.584 3.89996 8.584C4.76796 8.584 5.49969 9.17947 5.70783 9.984ZM9.49996 9.984H11.3666V7.184H9.49996V9.984ZM16.9078 9.984H17.4333C17.6909 9.984 17.9 9.77493 17.9 9.51733V8.28253C17.9 8.09307 17.7824 7.91947 17.6069 7.8504L15.9437 7.184H12.3V9.984H13.2921C13.5002 9.17947 14.232 8.584 15.1 8.584C15.968 8.584 16.6997 9.17947 16.9078 9.984ZM3.89996 9.51733C3.38569 9.51733 2.96663 9.9364 2.96663 10.4507C2.96663 10.9649 3.38569 11.384 3.89996 11.384C4.41423 11.384 4.83329 10.9649 4.83329 10.4507C4.83329 9.9364 4.41423 9.51733 3.89996 9.51733ZM15.1 9.51733C14.5857 9.51733 14.1666 9.9364 14.1666 10.4507C14.1666 10.9649 14.5857 11.384 15.1 11.384C15.6142 11.384 16.0333 10.9649 16.0333 10.4507C16.0333 9.9364 15.6142 9.51733 15.1 9.51733ZM15.1 12.3173C14.232 12.3173 13.5002 11.7219 13.2921 10.9173H5.70783C5.49969 11.7219 4.76796 12.3173 3.89996 12.3173C3.03196 12.3173 2.30023 11.7219 2.09209 10.9173H0.633293C0.375693 10.9173 0.166626 10.7083 0.166626 10.4507V1.11733C0.166626 0.859732 0.375693 0.650665 0.633293 0.650665H14.8937C15.4976 0.650665 16.0314 1.03613 16.2228 1.60827L16.5336 2.5416C16.6773 2.97373 16.6073 3.43293 16.3404 3.80253C16.1098 4.1236 15.7664 4.3252 15.3828 4.3728L16.3712 6.3496L17.9532 6.98333C18.487 7.1952 18.8333 7.70573 18.8333 8.28253V9.51733C18.8333 10.2892 18.2052 10.9173 17.4333 10.9173H16.9078C16.6997 11.7219 15.968 12.3173 15.1 12.3173Z" fill="#00A77F"/>
+          </svg>
+          <span>Delivered in 2 to 4 weeks</span>   
+        </div>
+              {% endif %}
+        <a href="{{ product.url }}" class="" data-product="{{ product.handle }}">
+            <div class="image">
+                <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}">
+            </div>
+            <div class="product-title">
+                <div class="review">
+                    <span>{{ tag[1] }}</span>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                            <path d="M5.05764 0.509114C5.18396 0.12032 5.734 0.120319 5.86033 0.509113L6.83279 3.50203C6.88928 3.6759 7.05131 3.79363 7.23414 3.79363H10.3811C10.7899 3.79363 10.9598 4.31674 10.6291 4.55703L8.08319 6.40676C7.93529 6.51422 7.8734 6.70469 7.92989 6.87857L8.90235 9.87148C9.02868 10.2603 8.58368 10.5836 8.25296 10.3433L5.70703 8.49357C5.55912 8.38611 5.35884 8.38611 5.21094 8.49357L2.66501 10.3433C2.33428 10.5836 1.88929 10.2603 2.01562 9.87148L2.98808 6.87857C3.04457 6.7047 2.98268 6.51422 2.83478 6.40676L0.288849 4.55703C-0.0418788 4.31675 0.128092 3.79363 0.536894 3.79363H3.68383C3.86665 3.79363 4.02868 3.6759 4.08518 3.50203L5.05764 0.509114Z" fill="#FFA800"/>
+                        </svg>
+                        4.5 (20)
+                    </p>
+                </div>
+                <h3>{{ product.title | escape }}</h3>
+                <p>{{ product.price | money }}</p>
+                <a class="buy_now_product" data-id="{{ product.selected_or_first_available_variant.id }}">{% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}Add to Cart{% else %}}Add to Cart{% endif %}</a>
+            </div>
+        </a>
+        </div>
+        {% endfor %} 
+        </div>
+        
+                              
+        </div>
+        </div>
+                              
+        </div>
+          {% endcomment %}                          
+
+	<div class="which-internet-plan-popup">
+		<div class="popup-details">
+			<svg xmlns="http://www.w3.org/2000/svg" width="54" height="4" viewBox="0 0 54 4" fill="none">
+			  	<path d="M1.98047 2H51.9805" stroke="#797C8E" stroke-width="3" stroke-linecap="round"/>
+			</svg>
+			<a href="javascript:;" class="close-popup">
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+				  	<path d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5" stroke="#797C8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+			<div class="plan-services">
+				<h2>Which internet plan is right for you?</h2>
+				<div class="plan-box">
+					<span>Popular</span>
+					<h3>Nomad Connect 200</h3>
+					<ul>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							  	<path d="M9.99967 16.25H10.008M19.005 7.25063C16.6326 5.07666 13.471 3.75 9.99958 3.75C6.52813 3.75 3.36653 5.07666 0.994141 7.25063M3.94295 10.2025C5.55805 8.77971 7.67807 7.91667 9.99965 7.91667C12.3212 7.91667 14.4413 8.77971 16.0564 10.2025M13.0816 13.1459C12.2324 12.4802 11.1623 12.0833 9.99958 12.0833C8.81925 12.0833 7.73444 12.4923 6.87915 13.1763" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							High-speed download up to <b>200Mbps</b>
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							  	<path d="M14.166 17.5L9.99935 14.1667L5.83268 17.5M5.66602 14.1667H14.3327C15.7328 14.1667 16.4329 14.1667 16.9677 13.8942C17.4381 13.6545 17.8205 13.272 18.0602 12.8016C18.3327 12.2669 18.3327 11.5668 18.3327 10.1667V6.5C18.3327 5.09987 18.3327 4.3998 18.0602 3.86502C17.8205 3.39462 17.4381 3.01217 16.9677 2.77248C16.4329 2.5 15.7328 2.5 14.3327 2.5H5.66602C4.26588 2.5 3.56582 2.5 3.03104 2.77248C2.56063 3.01217 2.17818 3.39462 1.9385 3.86502C1.66602 4.3998 1.66602 5.09987 1.66602 6.5V10.1667C1.66602 11.5668 1.66602 12.2669 1.9385 12.8016C2.17818 13.272 2.56063 13.6545 3.03104 13.8942C3.56582 14.1667 4.26588 14.1667 5.66602 14.1667Z" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							Ultra HD 4k video streaming
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							  	<path d="M4.9993 9.16602H8.33263M6.66597 7.49935V10.8327M12.4993 9.99935H12.5076M14.9993 8.33268H15.0076M8.70676 4.16602H11.2918C13.4792 4.16602 14.5729 4.16602 15.4314 4.58054C16.1873 4.94551 16.8153 5.53025 17.2332 6.25818C17.7078 7.08493 17.7857 8.17585 17.9416 10.3577L18.1466 13.2281C18.2471 14.6355 17.1324 15.8327 15.7214 15.8327C14.9998 15.8327 14.3155 15.5122 13.8536 14.9578L13.541 14.5827C13.255 14.2395 13.112 14.0679 12.9492 13.9293C12.6079 13.6387 12.1947 13.4451 11.7529 13.369C11.5422 13.3327 11.3189 13.3327 10.8722 13.3327H9.12643C8.67974 13.3327 8.4564 13.3327 8.24566 13.369C7.80388 13.4451 7.3907 13.6387 7.04939 13.9293C6.88658 14.0679 6.7436 14.2395 6.45763 14.5827L6.145 14.9578C5.68305 15.5122 4.99876 15.8327 4.27718 15.8327C2.86616 15.8327 1.75148 14.6355 1.85201 13.2281L2.05704 10.3577C2.21288 8.17585 2.29081 7.08493 2.76544 6.25818C3.18334 5.53025 3.81134 4.94551 4.56718 4.58054C5.42565 4.16602 6.51935 4.16602 8.70676 4.16602Z" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							Excellent gaming latency
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							  	<path d="M11.6654 9.16602H6.66536M8.33203 12.4993H6.66536M13.332 5.83268H6.66536M16.6654 9.99935V5.66602C16.6654 4.26588 16.6654 3.56582 16.3929 3.03104C16.1532 2.56063 15.7707 2.17818 15.3003 1.9385C14.7656 1.66602 14.0655 1.66602 12.6654 1.66602H7.33203C5.9319 1.66602 5.23183 1.66602 4.69706 1.9385C4.22665 2.17818 3.8442 2.56063 3.60451 3.03104C3.33203 3.56582 3.33203 4.26588 3.33203 5.66602V14.3327C3.33203 15.7328 3.33203 16.4329 3.60451 16.9677C3.8442 17.4381 4.22665 17.8205 4.69706 18.0602C5.23183 18.3327 5.9319 18.3327 7.33203 18.3327H9.9987M13.332 13.3327L17.4987 17.4993M17.4987 13.3327L13.332 17.4993" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							No contract, no credit check
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							  	<path d="M8.82084 11.1779C8.16996 10.527 8.16996 9.47171 8.82084 8.82084C9.47171 8.16996 10.527 8.16996 11.1779 8.82084C11.8287 9.47171 11.8287 10.527 11.1779 11.1779M6.46382 13.5349C4.51119 11.5823 4.51119 8.41644 6.46382 6.46381C8.41644 4.51119 11.5823 4.51119 13.5349 6.46381C15.4875 8.41644 15.4875 11.5823 13.5349 13.5349M4.10679 15.8919C0.852424 12.6375 0.852423 7.36116 4.10679 4.10679C7.36116 0.852423 12.6375 0.852423 15.8919 4.10679C19.1463 7.36116 19.1463 12.6375 15.8919 15.8919" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							Unlimited & unthrottled
+						</li>
+					</ul>
+				</div>
+				<div class="plan-box">
+					<h3>Nomad Connect 100</h3>
+					<ul>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							  	<path d="M9.99967 16.25H10.008M19.005 7.25063C16.6326 5.07666 13.471 3.75 9.99958 3.75C6.52813 3.75 3.36653 5.07666 0.994141 7.25063M3.94295 10.2025C5.55805 8.77971 7.67807 7.91667 9.99965 7.91667C12.3212 7.91667 14.4413 8.77971 16.0564 10.2025M13.0816 13.1459C12.2324 12.4802 11.1623 12.0833 9.99958 12.0833C8.81925 12.0833 7.73444 12.4923 6.87915 13.1763" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							High-speed download up to <b>100Mbps</b>
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							  	<path d="M14.166 17.5L9.99935 14.1667L5.83268 17.5M5.66602 14.1667H14.3327C15.7328 14.1667 16.4329 14.1667 16.9677 13.8942C17.4381 13.6545 17.8205 13.272 18.0602 12.8016C18.3327 12.2669 18.3327 11.5668 18.3327 10.1667V6.5C18.3327 5.09987 18.3327 4.3998 18.0602 3.86502C17.8205 3.39462 17.4381 3.01217 16.9677 2.77248C16.4329 2.5 15.7328 2.5 14.3327 2.5H5.66602C4.26588 2.5 3.56582 2.5 3.03104 2.77248C2.56063 3.01217 2.17818 3.39462 1.9385 3.86502C1.66602 4.3998 1.66602 5.09987 1.66602 6.5V10.1667C1.66602 11.5668 1.66602 12.2669 1.9385 12.8016C2.17818 13.272 2.56063 13.6545 3.03104 13.8942C3.56582 14.1667 4.26588 14.1667 5.66602 14.1667Z" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							1080p HD video streaming
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							  	<path d="M4.9993 9.16602H8.33263M6.66597 7.49935V10.8327M12.4993 9.99935H12.5076M14.9993 8.33268H15.0076M8.70676 4.16602H11.2918C13.4792 4.16602 14.5729 4.16602 15.4314 4.58054C16.1873 4.94551 16.8153 5.53025 17.2332 6.25818C17.7078 7.08493 17.7857 8.17585 17.9416 10.3577L18.1466 13.2281C18.2471 14.6355 17.1324 15.8327 15.7214 15.8327C14.9998 15.8327 14.3155 15.5122 13.8536 14.9578L13.541 14.5827C13.255 14.2395 13.112 14.0679 12.9492 13.9293C12.6079 13.6387 12.1947 13.4451 11.7529 13.369C11.5422 13.3327 11.3189 13.3327 10.8722 13.3327H9.12643C8.67974 13.3327 8.4564 13.3327 8.24566 13.369C7.80388 13.4451 7.3907 13.6387 7.04939 13.9293C6.88658 14.0679 6.7436 14.2395 6.45763 14.5827L6.145 14.9578C5.68305 15.5122 4.99876 15.8327 4.27718 15.8327C2.86616 15.8327 1.75148 14.6355 1.85201 13.2281L2.05704 10.3577C2.21288 8.17585 2.29081 7.08493 2.76544 6.25818C3.18334 5.53025 3.81134 4.94551 4.56718 4.58054C5.42565 4.16602 6.51935 4.16602 8.70676 4.16602Z" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							Good gaming latency
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							  	<path d="M11.6654 9.16602H6.66536M8.33203 12.4993H6.66536M13.332 5.83268H6.66536M16.6654 9.99935V5.66602C16.6654 4.26588 16.6654 3.56582 16.3929 3.03104C16.1532 2.56063 15.7707 2.17818 15.3003 1.9385C14.7656 1.66602 14.0655 1.66602 12.6654 1.66602H7.33203C5.9319 1.66602 5.23183 1.66602 4.69706 1.9385C4.22665 2.17818 3.8442 2.56063 3.60451 3.03104C3.33203 3.56582 3.33203 4.26588 3.33203 5.66602V14.3327C3.33203 15.7328 3.33203 16.4329 3.60451 16.9677C3.8442 17.4381 4.22665 17.8205 4.69706 18.0602C5.23183 18.3327 5.9319 18.3327 7.33203 18.3327H9.9987M13.332 13.3327L17.4987 17.4993M17.4987 13.3327L13.332 17.4993" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							No contract, no credit check
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							  	<path d="M8.82084 11.1779C8.16996 10.527 8.16996 9.47171 8.82084 8.82084C9.47171 8.16996 10.527 8.16996 11.1779 8.82084C11.8287 9.47171 11.8287 10.527 11.1779 11.1779M6.46382 13.5349C4.51119 11.5823 4.51119 8.41644 6.46382 6.46381C8.41644 4.51119 11.5823 4.51119 13.5349 6.46381C15.4875 8.41644 15.4875 11.5823 13.5349 13.5349M4.10679 15.8919C0.852424 12.6375 0.852423 7.36116 4.10679 4.10679C7.36116 0.852423 12.6375 0.852423 15.8919 4.10679C19.1463 7.36116 19.1463 12.6375 15.8919 15.8919" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							Unlimited & unthrottled
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+                                  
+
+	<div class="details-popup prime-popup">
+		<svg xmlns="http://www.w3.org/2000/svg" width="54" height="4" viewBox="0 0 54 4" fill="none">
+		  	<path d="M1.98047 2H51.9805" stroke="#797C8E" stroke-width="3" stroke-linecap="round"/>
+		</svg>
+		<a href="javascript:;" class="close-popup">
+			<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+			  	<path d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5" stroke="#797C8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</a>
+		<div class="popup-details">
+			<h2>Nomad Prime Upgrade</h2>
+			<ul>
+				<li>
+					<svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M27.1332 3.9241L14.189 0.0407988C14.0078 -0.0135996 13.8146 -0.0135996 13.6333 0.0407988L0.688939 3.9241C0.280049 4.04675 0 4.42316 0 4.8501V19.0888C0 20.9408 0.749783 22.8366 2.2284 24.7236C3.35769 26.1648 4.92009 27.612 6.87206 29.025C10.1512 31.3987 13.3803 32.8548 13.5161 32.9156C13.6418 32.9718 13.7765 33 13.9112 33C14.0459 33 14.1806 32.9719 14.3062 32.9156C14.442 32.8548 17.671 31.3987 20.9502 29.025C22.9021 27.612 24.4645 26.1648 25.5938 24.7236C27.0724 22.8367 27.8221 20.9409 27.8221 19.0888V4.8501C27.8221 4.42316 27.5422 4.04675 27.1332 3.9241Z" fill="#00A77F"/>
+						<g clip-path="url(#clip0_5052_26004)">
+						<path d="M15.5935 21.4254C15.7444 20.4945 15.1121 19.6176 14.1812 19.4666C13.2503 19.3157 12.3734 19.948 12.2225 20.8789C12.0716 21.8098 12.7039 22.6868 13.6347 22.8377C14.5656 22.9886 15.4426 22.3563 15.5935 21.4254Z" fill="white"/>
+						<path d="M22.5658 12.4982C20.1048 10.0372 16.9399 8.91211 13.9089 8.91211C10.8778 8.91211 7.7129 10.0372 5.25191 12.4982C4.57178 13.1791 4.5749 14.2335 5.24557 14.907C6.0831 15.7538 7.17966 15.4167 7.67069 14.9093C9.33766 13.2445 11.5529 12.3277 13.9089 12.3277C16.2648 12.3277 18.4801 13.2445 20.147 14.9093C20.638 15.4167 21.7346 15.7538 22.5721 14.907C23.2428 14.2335 23.2459 13.1791 22.5658 12.4982Z" fill="white"/>
+						<path d="M13.9112 14.1797C12.2132 14.1797 10.3912 14.811 8.9794 16.2225C8.29057 16.9113 8.30428 17.9705 8.98627 18.6453C9.66342 19.3179 10.717 19.315 11.394 18.6381C12.0663 17.9657 12.9603 17.5954 13.9112 17.5954C14.8621 17.5954 15.7561 17.9657 16.4285 18.6381C17.1054 19.315 18.159 19.3179 18.8361 18.6453C19.5181 17.9705 19.5318 16.9113 18.843 16.2225C17.4312 14.811 15.6093 14.1797 13.9112 14.1797Z" fill="white"/>
+						</g>
+						<defs>
+						<clipPath id="clip0_5052_26004">
+						<rect width="18.3333" height="18.3333" fill="white" transform="translate(4.74219 6.7207)"/>
+						</clipPath>
+						</defs>
+					</svg>
+					<div class="content">
+						<h3>Modem Replacement & Insurance</h3>
+						<p>Nomad's Free Modem Replacement & Protection covers accidental and warranty malfunctions, including electrical and antenna damage. Enjoy unlimited incidents of accidental damage protection with a $0 deductible</p>
+					</div>
+				</li>
+				<li>
+					<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.6447 19.6015H21.3535C22.6095 19.6015 23.6312 18.5796 23.6312 17.3238V9.08272C23.6312 7.82695 22.6095 6.80523 21.3535 6.80523H21.1754V4.67649C21.1757 2.09791 19.0778 0 16.4992 0C13.9206 0 11.8227 2.09791 11.8227 4.67649V6.80523H11.6447C10.3889 6.80523 9.36719 7.82695 9.36719 9.08297V17.3238C9.36719 18.5798 10.3889 19.6015 11.6447 19.6015ZM17.4865 13.5896V14.476C17.4865 15.0214 17.0444 15.4635 16.4992 15.4635C15.9538 15.4635 15.5116 15.0214 15.5116 14.476V13.5896C15.1764 13.3078 14.9632 12.8857 14.9632 12.4133C14.9632 11.565 15.6509 10.8775 16.4992 10.8775C17.3475 10.8775 18.035 11.5652 18.035 12.4133C18.035 12.8857 17.8218 13.3078 17.4865 13.5896ZM13.7976 4.67649C13.7976 3.18694 15.0094 1.97485 16.4992 1.97485C17.9888 1.97485 19.2008 3.18668 19.2008 4.67649V6.80523H13.7976V4.67649Z" fill="#00A77F"/>
+						<rect x="1.19922" y="20.6758" width="30.5992" height="11.2245" rx="2.96096" fill="#00A77F"/>
+						<path d="M11.6677 27.7591V28.7871H7.74616V27.7093L9.08096 26.6564C10.1836 25.7859 10.4987 25.4128 10.4987 24.9485C10.4987 24.4842 10.1505 24.2272 9.52866 24.2272C8.89857 24.2272 8.29335 24.476 7.87052 24.9071H7.81249V23.68C8.25189 23.3733 8.89028 23.1992 9.52037 23.1992C10.8966 23.1992 11.6677 23.8044 11.6677 24.8905C11.6677 25.7693 11.2365 26.3662 9.88516 27.3279L9.29652 27.7425V27.7591H11.6677ZM16.8194 27.7922V28.7871H15.667V27.7922H12.7736V26.8222L15.6173 23.2821H16.8194V26.7642H17.5241V27.7922H16.8194ZM15.667 24.6666L14.0172 26.7642H15.667V24.6666ZM25.0636 28.7871H23.8366V24.6418H23.82L22.2282 28.7871H21.1172L19.5751 24.7578H19.5586V28.7871H18.373V23.2821H20.2135L21.6893 27.1207H21.7059L23.1816 23.2821H25.0636V28.7871Z" fill="white"/>
+					</svg>
+					<div class="content">
+						<h3>3 Year Price Guarantee</h3>
+						<p>Secure your monthly rate plan price for 24 months, shielding you from inflation and rising internet costs. Enjoy inflation-free internet stability!</p>
+					</div>
+				</li>
+				<li>
+					<svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M28.093 7.22595H26.2028C24.5952 3.40879 21.0553 0.634807 16.98 0.10501C12.9415 -0.433388 8.97345 1.12105 6.37746 4.25014C5.61432 5.17011 5.00897 6.17026 4.56574 7.22595H2.70703C1.21431 7.22595 0 8.44026 0 9.93298V13.5424C0 15.0351 1.21431 16.2494 2.70703 16.2494H6.41272L6.02501 15.0659C4.89618 11.6187 5.53155 8.09653 7.76713 5.40273C9.96398 2.75471 13.3187 1.44439 16.7456 1.89382C20.3699 2.36592 23.5157 4.929 24.7622 8.42522L24.7698 8.44549C24.9707 8.9795 25.1117 9.52849 25.1927 10.0934C25.4632 11.7809 25.3091 13.4912 24.7477 15.0395L24.7438 15.0503C23.3505 19.0061 19.6031 21.6634 15.4176 21.6634C13.9152 21.6634 12.693 22.8778 12.693 24.3705C12.693 25.8632 13.9073 27.0775 15.4 27.0775C16.8927 27.0775 18.107 25.8632 18.107 24.3705V23.1535C21.71 22.2971 24.7364 19.7431 26.191 16.2493H28.093C29.5857 16.2493 30.8 15.035 30.8 13.5423V9.93292C30.8 8.4402 29.5857 7.22595 28.093 7.22595Z" fill="#00A77F"/>
+						<path d="M15.5607 3.62891C11.2878 3.62891 7.78125 7.13545 7.78125 11.4084C7.78125 15.6813 11.2878 19.1879 15.5607 19.1879C19.8337 19.1879 23.3402 15.6813 23.3402 11.4084C23.3402 7.13545 19.8337 3.62891 15.5607 3.62891ZM19.4286 6.89595L20.0732 7.54053L19.4286 8.1851L18.784 7.54053L19.4286 6.89595ZM17.4072 5.75906L18.2494 6.10804L17.9009 6.95026L17.0586 6.60128L17.4072 5.75906ZM21.4865 11.4084C21.4865 14.6758 18.8281 17.3342 15.5607 17.3342C12.2933 17.3342 9.63495 14.6758 9.63495 11.4084C9.63495 8.14101 12.2933 5.48261 15.5607 5.48261H16.0166V7.30593H15.1049V6.41475C12.7052 6.63197 10.8105 8.55371 10.5901 10.9526H11.4583V11.8642H10.5697C10.7874 14.2656 12.7036 16.1817 15.1049 16.3994V15.5108H16.0166V16.379C18.4154 16.1586 20.3372 14.2639 20.5544 11.8642H19.6632V10.9526H21.4865V11.4084ZM16.0166 8.21759V11.5971L13.148 14.4657L12.5035 13.8211L15.1049 11.2196V8.21759H16.0166ZM20.3678 9.91047L20.0189 9.06825L20.8611 8.7197L21.2101 9.56192L20.3678 9.91047Z" fill="#00A77F"/>
+					</svg>
+					<div class="content">
+						<h3>24/7 Phone Priority Support</h3>
+						<p>Enjoy one-on-one phone and remote support with Nomad's 24/7 Priority Support. Customers receive first response within 4 hours, priority issue resolution, and development planning priority.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="details-popup upgrade-popup">
+		<svg xmlns="http://www.w3.org/2000/svg" width="54" height="4" viewBox="0 0 54 4" fill="none">
+		  	<path d="M1.98047 2H51.9805" stroke="#797C8E" stroke-width="3" stroke-linecap="round"/>
+		</svg>
+		<a href="javascript:;" class="close-popup">
+			<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+			  	<path d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5" stroke="#797C8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</a>
+		<div class="popup-details">
+			<h2>Nomad Travel Upgrade</h2>
+			<ul>
+				<li>
+					<svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M29.0405 0H7.41459C4.39383 0 1.99095 2.40288 1.99095 5.42364C1.99095 8.30709 4.25652 10.6413 7.07132 10.8473L4.39383 18.9483L1.78499 19.3603C0.75519 19.5663 0 20.4588 0 21.5572V24.3034C0 25.3332 0.686536 26.2257 1.71634 26.4316C1.85365 23.6855 4.18787 21.4886 7.00267 21.4886C9.81747 21.4886 12.1517 23.7541 12.289 26.5002H15.7217H16.4082V14.28C16.4082 13.1815 17.3007 12.2203 18.4678 12.2203H23.205C24.3034 12.2203 25.2646 13.1128 25.2646 14.28V21.5572C27.8048 21.8319 29.7957 23.8228 30.0017 26.4316C30.8255 26.0884 31.3748 25.3332 31.3748 24.372V10.8473V4.05056V2.19692C31.2374 0.961151 30.2762 0 29.0405 0ZM13.5934 17.3694L6.72805 18.5365L8.65036 12.7696H13.5934V17.3694Z" fill="#00A77F"/>
+						<path d="M23.7547 14.2803C23.7547 13.937 23.4801 13.5938 23.0682 13.5938H18.3311C17.9878 13.5938 17.6445 13.937 17.6445 14.2803V26.5693H19.3609C19.4982 24.0291 21.3518 22.0381 23.7547 21.6262V14.2803Z" fill="#00A77F"/>
+						<path d="M6.93375 30.0003C8.71582 30.0003 10.1605 28.5557 10.1605 26.7736C10.1605 24.9915 8.71582 23.5469 6.93375 23.5469C5.15168 23.5469 3.70703 24.9915 3.70703 26.7736C3.70703 28.5557 5.15168 30.0003 6.93375 30.0003Z" fill="#00A77F"/>
+						<path d="M24.6486 30.0003C26.4307 30.0003 27.8753 28.5557 27.8753 26.7736C27.8753 24.9915 26.4307 23.5469 24.6486 23.5469C22.8665 23.5469 21.4219 24.9915 21.4219 26.7736C21.4219 28.5557 22.8665 30.0003 24.6486 30.0003Z" fill="#00A77F"/>
+					</svg>
+					<div class="content">
+						<h3>Travel with Modem</h3>
+						<p>Ideal for RVs, Campers, and Nomads on the move. Use your modem at multiple locations, even on the go at speeds up to 70 mph. Stay connected across the USA with Nomad!</p>
+					</div>
+				</li>
+				<li>		
+					<svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14.2315 0C6.38425 0 0 6.38425 0 14.2315C0 22.0788 6.38425 28.4631 14.2315 28.4631C22.0788 28.4631 28.4631 22.0788 28.4631 14.2315C28.4631 6.38425 22.0788 0 14.2315 0ZM14.2315 12.9783C16.3909 12.9783 18.1476 14.735 18.1476 16.8943C18.1476 18.6154 17.0311 20.0796 15.4848 20.6035V22.6403H12.9783V20.6035C11.432 20.0796 10.3155 18.6154 10.3155 16.8943H12.822C12.822 17.6716 13.4543 18.3039 14.2315 18.3039C15.0088 18.3039 15.6411 17.6716 15.6411 16.8943C15.6411 16.1171 15.0088 15.4848 14.2315 15.4848C12.0722 15.4848 10.3155 13.7281 10.3155 11.5687C10.3155 9.8477 11.432 8.3835 12.9783 7.85956V5.82272H15.4848V7.85956C17.0311 8.3835 18.1476 9.8477 18.1476 11.5687H15.6411C15.6411 10.7915 15.0088 10.1592 14.2315 10.1592C13.4543 10.1592 12.822 10.7915 12.822 11.5687C12.822 12.346 13.4543 12.9783 14.2315 12.9783Z" fill="#00A77F"/>
+						<rect x="18" y="17" width="12" height="12" rx="6" fill="white"/>
+						<path d="M18.375 22.9995C18.375 19.8931 20.8931 17.375 23.9995 17.375C27.1058 17.375 29.624 19.8931 29.624 22.9995C29.624 26.1058 27.1058 28.624 23.9995 28.624C20.8931 28.624 18.375 26.1058 18.375 22.9995ZM22.6277 25.6833C23.2251 25.6833 23.7094 25.199 23.7094 24.6016V21.3973C23.7094 20.7999 23.2251 20.3156 22.6277 20.3156C22.0303 20.3156 21.546 20.7999 21.546 21.3973V24.6016C21.546 25.199 22.0303 25.6833 22.6277 25.6833ZM25.3194 25.6833C25.9168 25.6833 26.4011 25.199 26.4011 24.6016V21.3973C26.4011 20.7999 25.9168 20.3156 25.3194 20.3156C24.722 20.3156 24.2377 20.7999 24.2377 21.3973V24.6016C24.2377 25.199 24.722 25.6833 25.3194 25.6833Z" fill="#00A77F" stroke="#00A77F" stroke-width="0.749932"/>
+						<rect x="18" y="17" width="12" height="12" rx="6" stroke="white" stroke-width="2.2498"/>
+					</svg>
+					<div class="content">
+						<h3>Pause & Resume Billing</h3>
+						<p>Pause your payments anytime. If you're away and won't need Nomad, temporarily suspend your service on your modem. No plan charges during the pause.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="thankyou-popup">
+		<div class="popup-content">
+			<svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111" fill="none">
+			  	<path d="M103.184 35.355C101.924 32.375 100.404 29.545 98.6289 26.88C98.5339 26.995 98.4339 27.1 98.3239 27.205C97.6439 27.845 96.9789 28.5 96.3139 29.16C97.8339 31.51 99.1489 33.995 100.254 36.6C102.784 42.585 104.069 48.945 104.069 55.505C104.069 62.065 102.784 68.42 100.254 74.41C97.8089 80.19 94.3039 85.385 89.8439 89.85C85.3839 94.31 80.1889 97.81 74.4039 100.26C68.4189 102.79 62.0589 104.075 55.4989 104.075C48.9389 104.075 42.5839 102.79 36.5939 100.26C30.8139 97.815 25.6189 94.31 21.1539 89.85C16.6939 85.39 13.1939 80.195 10.7439 74.41C8.21391 68.425 6.92891 62.065 6.92891 55.505C6.92891 48.945 8.21391 42.59 10.7439 36.6C13.1889 30.815 16.6939 25.625 21.1539 21.16C25.6239 16.7 30.8189 13.195 36.5989 10.75C42.5839 8.22 48.9439 6.935 55.5039 6.935C62.0639 6.935 68.4189 8.22 74.4089 10.75C80.1889 13.195 85.3839 16.7 89.8489 21.16C90.3489 21.66 90.8389 22.17 91.3139 22.69C92.1739 22.175 93.0339 21.675 93.9039 21.19C93.9839 21.145 94.0639 21.105 94.1439 21.07C93.4889 20.33 92.8039 19.61 92.1039 18.91C87.3539 14.16 81.8189 10.425 75.6539 7.82C69.2689 5.12 62.4889 3.75 55.5039 3.75C48.5189 3.75 41.7389 5.12 35.3589 7.815C29.1989 10.42 23.6639 14.155 18.9089 18.905C14.1539 23.655 10.4239 29.19 7.81891 35.355C5.12391 41.735 3.75391 48.515 3.75391 55.5C3.75391 62.485 5.12391 69.265 7.81891 75.645C10.4239 81.805 14.1589 87.34 18.9089 92.095C23.6589 96.85 29.1939 100.58 35.3589 103.185C41.7389 105.885 48.5189 107.255 55.5039 107.255C62.4889 107.255 69.2689 105.885 75.6489 103.185C81.8089 100.58 87.3439 96.845 92.0989 92.095C96.8489 87.345 100.584 81.81 103.189 75.645C105.889 69.265 107.259 62.485 107.259 55.5C107.259 48.515 105.884 41.735 103.184 35.355Z" fill="#017C5F"/>
+			  	<path d="M31.5661 51.7055C32.4661 50.9955 33.5961 50.6005 34.7411 50.6005C35.5311 50.6005 36.3261 50.7905 37.0361 51.1405L52.4261 58.8505C59.4411 50.1205 65.9361 43.0155 72.2311 37.1755C77.2911 32.4855 82.3661 28.4655 87.6111 25.0155C79.5461 16.5255 68.1461 11.2305 55.5111 11.2305C31.0611 11.2305 11.2461 31.0505 11.2461 55.4955C11.2461 79.9405 31.0561 99.7655 55.5061 99.7655C79.9561 99.7655 99.7711 79.9455 99.7711 55.5005C99.7711 47.0105 97.3811 39.0805 93.2411 32.3455C88.5211 37.4305 84.1211 43.1005 79.6911 49.7755C74.1961 58.0555 69.1461 67.1955 64.2611 76.0305C63.3511 77.6755 61.8311 80.4255 58.8161 81.2905C58.2261 81.4605 57.6161 81.5455 56.9961 81.5455C54.3561 81.5455 52.1511 80.0505 50.3411 78.5855C43.9161 73.3955 38.7961 67.7655 33.3761 61.8055C32.5911 60.9455 31.7811 60.0505 30.9711 59.1705C30.0111 58.1255 29.5311 56.7155 29.6411 55.3055C29.7511 53.8955 30.4561 52.5805 31.5661 51.7055Z" fill="#017C5F"/>
+			  	<path d="M53.2523 62.6197L35.6873 53.8197C34.9523 53.4497 34.0673 53.5397 33.4223 54.0497C32.4573 54.8147 32.3423 56.2347 33.1723 57.1447C39.3573 63.8947 45.0273 70.4397 52.2173 76.2497C53.8773 77.5947 55.9273 78.9897 57.9823 78.4047C59.7223 77.9047 60.7523 76.1597 61.6323 74.5747C72.0173 55.7897 81.1873 39.3147 96.2573 25.0197C96.9072 24.4047 96.1423 23.3647 95.3623 23.8047C80.6373 32.0497 67.8723 44.1397 53.2523 62.6197Z" fill="#017C5F"/>
+			</svg>
+			<h2>Nomad Modem Activation Complete!</h2>
+			<p>Your request has been received. Please allow approximately 2 hours for activation. Thank you for choosing Nomad Internet!</p>
+		</div>
+		<div class="done-button">
+			<a href="javascript:;" class="thankyou-popup-close">Done</a>
+		</div>
+	</div>
+
+</form> 
+{% comment %}
+<!-- Add To Cart Popup Start -->
+<div class="add-to-cart-popup">
+    <div class="popup-content">
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                <path d="M19.3105 10.8925V7.285C19.3105 4.62852 17.157 2.47501 14.5005 2.47501C11.8441 2.47501 9.69054 4.62852 9.69054 7.285V10.8925M4.38993 12.5182L3.66843 20.2142C3.46329 22.4024 3.36072 23.4965 3.7238 24.3416C4.04276 25.084 4.60171 25.6978 5.31106 26.0846C6.11855 26.525 7.21744 26.525 9.41523 26.525H19.5859C21.7836 26.525 22.8825 26.525 23.69 26.0846C24.3994 25.6978 24.9583 25.084 25.2773 24.3416C25.6404 23.4965 25.5378 22.4024 25.3327 20.2142L24.6112 12.5182C24.4379 10.6705 24.3513 9.74656 23.9358 9.04806C23.5698 8.43289 23.0291 7.9405 22.3824 7.63354C21.6482 7.28501 20.7202 7.28501 18.8644 7.28501L10.1367 7.285C8.28084 7.285 7.3529 7.285 6.61866 7.63354C5.97201 7.9405 5.4313 8.43289 5.06532 9.04806C4.64977 9.74656 4.56316 10.6705 4.38993 12.5182Z" stroke="white" stroke-width="2.16018" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Product added to cart
+        </p>
+    </div>
+</div>
+<!-- Add To Cart Popup End -->             
+
+<style>
+  .added_to_cart{
+border: none!important;
+background: var(--colors-gray-true-200, #E5E5E5)!important;
+color: var(--gray-true-500, var(--colors-gray-true-500, #737373))!important;
+}  
+#accessories_product{padding-top:0px!important;}
+.accessories_product_top{
+  display: flex;
+padding: 20px;
+align-items: center;
+gap: 24px;
+border-bottom: 1px solid #E8E8E8;
+background: var(--white, #FFF);
+justify-content: space-between;
+align-self: stretch;  
+}
+.accessories_product_top .back_btn{
+  display: flex;
+align-items: center;
+gap: 4px;
+  cursor: pointer;
+}
+.accessories_product_top .back_btn svg{
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+}  
+.accessories_product_top .back_btn span{
+  color: var(--accent, #00A77F);
+font-family: 'AktivGrotesk'!important;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+}
+.accessories_product_top .center_title{
+ color: var(--Heading, #000);
+font-family: 'AktivGrotesk'!important;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal; 
+}  
+.accessories_product_top .continue_btn{
+color: var(--accent, #00A77F);
+font-family: 'AktivGrotesk'!important;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+line-height: normal; 
+  cursor: pointer;
+    background: none!important;
+    border: none!important;
+    min-width: unset!important;
+    padding: 0!important;
+    width: unset!important;  
+}
+.add-to-cart-popup.active .popup-content{opacity: 1;visibility: visible;}  
+.add-to-cart-popup .popup-content{top:50px;}  
+.add-to-cart-popup .popup-content p{width:100%;}  
+@media screen and (min-width: 767px){
+#accessories_product {
+    padding-top: 40px!important;
+    max-width: 500px;
+    margin: 0 auto;
+}
+}
+</style>
+{% endcomment %}

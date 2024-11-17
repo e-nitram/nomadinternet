@@ -1,0 +1,60 @@
+{
+  "wrapper": "div.states.states--template",
+  "sections": {
+    "27bdb435-3357-4732-90ae-1abd29a4646f": {
+      "type": "lp-13",
+      "blocks": {
+        "04c272d9-aa78-43e0-ba99-31a6a65ef637": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_BTN_1.jpg",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "04c272d9-aa78-43e0-ba99-31a6a65ef637"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/The_Benefits_of_Connected_Anywhere_You_Need_It.jpg",
+        "title": "The Benefits of Connected Anywhere You Need It",
+        "content": "<ul><li>Download speeds up to 100Mbps<\/li><li>Up to Unlimited 4G and 5G LTE<\/li><li>Connect all Your Devices<\/li><li>No Credit Check<\/li><li>Works in remote areas<\/li><\/ul>",
+        "button_text": "Learn More",
+        "button_url": "shopify:\/\/pages\/plans",
+        "form_image": "shopify:\/\/shop_images\/The_best_connection_option_For_You.jpg",
+        "form_title": "The best connection option For You",
+        "form_description": "<p>We will select and send you the best solution so that you do not have to look for it.<\/p>"
+      }
+    },
+    "c59d83a2-64f6-487a-a258-43f6f5e93f03": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "1",
+        "title_align": "center",
+        "columns": "1",
+        "heading_text": "High-Speed Wireless Internet In Your Area",
+        "text": "<p>Choose a state and find out what kind of <a href=\"\/pages\/wireless-internet\" title=\"Wireless internet\">Internet<\/a> is possible in the place where you are.<\/p>",
+        "text_2": "",
+        "text_align": "center"
+      }
+    },
+    "8f9de4c1-068d-4bd4-8b23-388e3a31ecad": {
+      "type": "map",
+      "settings": {}
+    },
+    "9793aaee-d42a-4498-87f5-6fcb53ae9c37": {
+      "type": "lp-27",
+      "settings": {
+        "title": "What internet will you get?",
+        "description": "Choose a state and find out what kind of Internet is possible in the place where you are.",
+        "content": "<ul><li><a href=\"\/pages\/state-alabama-residential-wireless-internet-service\" title=\"Alabama\">Alabama<\/a><\/li><li><a href=\"\/pages\/state-alaska-residential-wireless-internet-service\" title=\"Alaska\">Alaska<\/a><\/li><li><a href=\"\/pages\/state-arizona-residential-wireless-internet-service\" title=\"Arizona\">Arizona<\/a><\/li><li><a href=\"\/pages\/state-arkansas-residential-wireless-internet-service\" title=\"Arkansas\">Arkansas<\/a><\/li><li><a href=\"\/pages\/state-california-residential-wireless-internet-service\" title=\"California\">California<\/a><\/li><li><a href=\"\/pages\/state-colorado-residential-wireless-internet-service\" title=\"Colorado\">Colorado<\/a><\/li><li><a href=\"\/pages\/state-connecticut-residential-wireless-internet-service\" title=\"Connecticut\">Connecticut<\/a><\/li><li><a href=\"\/pages\/state-delaware-residential-wireless-internet-service\" title=\"Delaware\">Delaware<\/a><\/li><li><a href=\"\/pages\/state-florida-residential-wireless-internet-service\" title=\"Florida\">Florida<\/a><\/li><li><a href=\"\/pages\/state-georgia-residential-wireless-internet-service\" title=\"Georgia\">Georgia<\/a><\/li><li><a href=\"\/pages\/state-hawaii-residential-wireless-internet-service\" title=\"Hawaii\">Hawaii<\/a><\/li><li><a href=\"\/pages\/state-idaho-residential-wireless-internet-service\" title=\"Idaho\">Idaho<\/a><\/li><li><a href=\"\/pages\/state-illinois-residential-wireless-internet-service\" title=\"Illinois\">Illinois<\/a><\/li><li><a href=\"\/pages\/state-indiana-residential-wireless-internet-service\" title=\"Indiana\">Indiana<\/a><\/li><li><a href=\"\/pages\/state-iowa-residential-wireless-internet-service\" title=\"Iowa\">Iowa<\/a><\/li><li><a href=\"\/pages\/state-kansas-residential-wireless-internet-service\" title=\"Kansas\">Kansas<\/a><\/li><li><a href=\"\/pages\/state-kentucky-residential-wireless-internet-service\" title=\"Kentucky\">Kentucky<\/a><\/li><li><a href=\"\/pages\/state-louisiana-residential-wireless-internet-service\" title=\"Louisiana\">Louisiana<\/a><\/li><li><a href=\"\/pages\/state-maine-residential-wireless-internet-service\" title=\"Maine\">Maine<\/a><\/li><li><a href=\"\/pages\/state-maryland-residential-wireless-internet-service\" title=\"Maryland\">Maryland<\/a><\/li><li><a href=\"\/pages\/state-massachusetts-residential-wireless-internet-service\" title=\"Massachusetts\">Massachusetts<\/a><\/li><li><a href=\"\/pages\/state-michigan-residential-wireless-internet-service\" title=\"Michigan\">Michigan<\/a><\/li><li><a href=\"\/pages\/state-minnesota-residential-wireless-internet-service\" title=\"Minnesota\">Minnesota<\/a><\/li><li><a href=\"\/pages\/state-mississippi-residential-wireless-internet-service\" title=\"Mississippi\">Mississippi<\/a><\/li><li><a href=\"\/pages\/state-missouri-residential-wireless-internet-service\" title=\"Missouri\">Missouri<\/a><\/li><li><a href=\"\/pages\/state-montana-residential-wireless-internet-service\" title=\"Montana\">Montana<\/a><\/li><li><a href=\"\/pages\/state-nebraska-residential-wireless-internet-service\" title=\"Nebraska\">Nebraska<\/a><\/li><li><a href=\"\/pages\/state-nevada-residential-wireless-internet-service\" title=\"Nevada\">Nevada<\/a><\/li><li><a href=\"\/pages\/state-new-hampshire-residential-wireless-internet-service\" title=\"New Hampshire\">New Hampshire<\/a><\/li><li><a href=\"\/pages\/state-new-jersey-residential-wireless-internet-service\" title=\"New Jersey\">New Jersey<\/a><\/li><li><a href=\"\/pages\/state-new-mexico-residential-wireless-internet-service\" title=\"New Mexico\">New Mexico<\/a><\/li><li><a href=\"\/pages\/state-new-york-residential-wireless-internet-service\" title=\"New York\">New York<\/a><\/li><li><a href=\"\/pages\/state-north-carolina-residential-wireless-internet-service\" title=\"North Carolina\">North Carolina<\/a><\/li><li><a href=\"\/pages\/state-north-dakota-residential-wireless-internet-service\" title=\"North Dakota\">North Dakota<\/a><\/li><li><a href=\"\/pages\/state-ohio-residential-wireless-internet-service\" title=\"Ohio\">Ohio<\/a><\/li><li><a href=\"\/pages\/state-oklahoma-residential-wireless-internet-service\" title=\"Oklahoma\">Oklahoma<\/a><\/li><li><a href=\"\/pages\/state-oregon-residential-wireless-internet-service\" title=\"Oregon\">Oregon<\/a><\/li><li><a href=\"\/pages\/state-pennsylvania-residential-wireless-internet-service\" title=\"Pennsylvania\">Pennsylvania<\/a><\/li><li><a href=\"\/pages\/state-rhode-island-residential-wireless-internet-service\" title=\"Rhode Island\">Rhode Island<\/a><\/li><li><a href=\"\/pages\/state-south-carolina-residential-wireless-internet-service\" title=\"South Carolina\">South Carolina<\/a><\/li><li><a href=\"\/pages\/state-south-dakota-residential-wireless-internet-service\" title=\"South Dakota\">South Dakota<\/a><\/li><li><a href=\"\/pages\/state-tennessee-residential-wireless-internet-service\" title=\"Tennessee\">Tennessee<\/a><\/li><li><a href=\"\/pages\/state-texas-residential-wireless-internet-service\" title=\"Texas\">Texas<\/a><\/li><li><a href=\"\/pages\/state-vermont-residential-wireless-internet-service\" title=\"Vermont\">Vermont<\/a><\/li><li><a href=\"\/pages\/state-virginia-residential-wireless-internet-service\" title=\"Virginia\">Virginia<\/a><\/li><li><a href=\"\/pages\/state-washington-residential-wireless-internet-service\" title=\"Washington\">Washington<\/a><\/li><li><a href=\"\/pages\/state-west-virginia-residential-wireless-internet-service\" title=\"West Virginia\">West Virginia<\/a><\/li><li><a href=\"\/pages\/state-wisconsin-residential-wireless-internet-service\" title=\"Wisconsin\">Wisconsin<\/a><\/li><li><a href=\"\/pages\/state-wyoming-residential-wireless-internet-service\" title=\"Wyoming\">Wyoming<\/a><\/li><li><a href=\"\/pages\/state-utah-residential-wireless-internet-service\" title=\"Utah\">Utah<\/a><\/li><\/ul>"
+      }
+    }
+  },
+  "order": [
+    "27bdb435-3357-4732-90ae-1abd29a4646f",
+    "c59d83a2-64f6-487a-a258-43f6f5e93f03",
+    "8f9de4c1-068d-4bd4-8b23-388e3a31ecad",
+    "9793aaee-d42a-4498-87f5-6fcb53ae9c37"
+  ]
+}

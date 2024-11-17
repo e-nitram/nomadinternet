@@ -1,0 +1,71 @@
+<section class="why-choose-section">
+   <div class="container">
+      <div class="section-title">
+      {% if section.settings.heading != blank %} 
+         <h2 class="page-title">{{ section.settings.heading }}</h2>
+      {% endif %}
+      </div>
+      <div class="internet-list">
+         {% for block in section.blocks %}
+			 <div class="internet-box">
+				{{ block.settings.icon_html }}
+				<h3>{{ block.settings.heading_text }}</h3>
+				<p>{{ block.settings.description_text }}</p>
+			 </div>
+		{% endfor %} 
+      </div>
+   </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Home Why Choose",
+  "presets": [
+    {
+      "name": "Home Why Choose"
+    }
+  ],  
+  "settings": [
+   {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "why_choose_block",
+      "name": "Why Choose Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading_text",
+          "label": "Heading",
+          "default": "Enter heading here"
+        },
+        {
+          "type": "textarea",
+          "id": "description_text",
+          "label": "Description",
+          "default": "Enter description here"
+        },
+        {
+          "type": "html",
+          "id": "icon_html",
+          "label": "Icon",
+          "default": "<i class='fas fa-check'></i>",
+          "info": "Enter the HTML code for the icon"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

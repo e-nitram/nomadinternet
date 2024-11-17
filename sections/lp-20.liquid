@@ -1,0 +1,275 @@
+{% comment %}
+  File name:
+  	lp - landing page
+  	number - section number
+{% endcomment %}
+
+<div class="lp-20">
+  <div class="lp-20__content">
+    {% if section.settings.title %}
+      <h2 class="lp-20__title">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.blocks %}
+      <div class="swiper lp-20__swiper">
+        <div class="swiper-wrapper">
+          {% for review in section.blocks %}
+            <div class="swiper-slide">
+              {% if review.settings.style == 'one' %}
+                <div class="lp-20__review review review--style-one" itemscope itemtype="https://schema.org/Review">
+                  <div class="sr-only" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Product">
+                    <h2 itemprop="name">{{ page.title }}</h2>
+                  </div>
+                  <div class="review__header">
+                    {% if review.settings.avatar %}
+                      <div class="review__avatar">
+                        <div class="ratio" style="--ratio: calc(1 / 1 * 100%)">
+                          {% assign img = review.settings.avatar %}
+                          {{ img | image_url: width: 100 | image_tag }}
+                        </div>
+                      </div>
+                    {% endif %}
+                    {% if review.settings.name %}
+                      <div class="review__name" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                        <span itemprop="name"
+                          ><strong>{{ review.settings.name }}</strong></span
+                        >
+                      </div>
+                    {% endif %}
+                    {% if review.settings.icon == 'facebook' %}
+                      <div class="review__icon">
+                        <img
+                          src="{{ 'facebook-review-icon.png' | asset_url }}"
+                          alt="facebook"
+                          loading="lazy"
+                          width="30"
+                          height="30"
+                        >
+                      </div>
+                    {% elsif review.settings.icon == 'google' %}
+                      <div class="review__icon">
+                        <img
+                          src="{{ 'google-review-icon.png' | asset_url }}"
+                          alt="google"
+                          loading="lazy"
+                          width="30"
+                          height="30"
+                        >
+                      </div>
+                    {% endif %}
+                  </div>
+                  <div class="review__rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                    <img src="{{ 'stars-rating.png' | asset_url }}" alt="Rating" loading="lazy" width="90" height="14">
+                    <meta itemprop="worstRating" content="1">
+                    <span itemprop="ratingValue" class="sr-only">5</span>
+                    <meta itemprop="bestRating" content="5">
+                  </div>
+
+                  <p class="sr-only" itemprop="datePublished">
+                    {{ page.published_at | date: format: 'month_day_year' }}
+                  </p>
+
+                  {% if review.settings.text %}
+                    <div class="review__text">
+                      <p itemprop="reviewBody">{{ review.settings.text }}</p>
+                    </div>
+                  {% endif %}
+                  {% if review.settings.link %}
+                    <a
+                      href="{{ review.settings.link }}"
+                      target="_blank"
+                      class="review__link"
+                      title="Click to read full review"
+                    >
+                      <span class="sr-only">Read More</span>
+                    </a>
+                  {% endif %}
+                </div>
+              {% elsif review.settings.style == 'two' %}
+                <div class="lp-20__review review review--style-two" itemscope itemtype="https://schema.org/Review">
+                  <div
+                    class="review__decorator"
+                    style="background-image: url({{ 'review-decorator.png' | asset_url }})"
+                  ></div>
+
+                  {% if review.settings.icon == 'facebook' %}
+                    <div class="review__icon">
+                      <img
+                        src="{{ 'facebook-review-icon.png' | asset_url }}"
+                        alt="facebook"
+                        loading="lazy"
+                        width="30"
+                        height="30"
+                      >
+                    </div>
+                  {% elsif review.settings.icon == 'google' %}
+                    <div class="review__icon">
+                      <img
+                        src="{{ 'google-review-icon.png' | asset_url }}"
+                        alt="google"
+                        loading="lazy"
+                        width="30"
+                        height="30"
+                      >
+                    </div>
+                  {% endif %}
+
+                  <div class="sr-only" itemprop="itemReviewed" itemscope itemtype="https://schema.org/Thing">
+                    <h2 itemprop="name">{{ page.title }}</h2>
+                  </div>
+
+                  {% if review.settings.text %}
+                    <div class="review__text">
+                      <p itemprop="reviewBody">{{ review.settings.text }}</p>
+                    </div>
+                  {% endif %}
+
+                  <div class="review__footer">
+                    <div class="review__user">
+                      {% if review.settings.name %}
+                        <div class="review__name" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                          <span itemprop="name"
+                            ><strong>{{ review.settings.name }}</strong></span
+                          >
+                        </div>
+                      {% endif %}
+
+                      <div
+                        class="review__rating"
+                        itemprop="reviewRating"
+                        itemscope
+                        itemtype="https://schema.org/Rating"
+                      >
+                        <img
+                          src="{{ 'stars-rating.png' | asset_url }}"
+                          alt="Rating"
+                          loading="lazy"
+                          width="90"
+                          height="14"
+                        >
+                        <meta itemprop="worstRating" content="1">
+                        <span itemprop="ratingValue" class="sr-only">5</span>
+                        <meta itemprop="bestRating" content="5">
+                      </div>
+                    </div>
+
+                    {% if review.settings.avatar %}
+                      <div class="review__avatar">
+                        <div class="ratio" style="--ratio: calc(220 / 150 * 100%)">
+                          {% assign img = review.settings.avatar %}
+                          {{ img | image_url: width: 150 | image_tag }}
+                        </div>
+                      </div>
+                    {% endif %}
+                  </div>
+
+                  <p class="sr-only" itemprop="datePublished">
+                    {{ page.published_at | date: format: 'month_day_year' }}
+                  </p>
+
+                  {% if review.settings.link %}
+                    <a
+                      href="{{ review.settings.link }}"
+                      target="_blank"
+                      class="review__link"
+                      title="Click to read full review"
+                    >
+                      <span class="sr-only">Read More</span>
+                    </a>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-20",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 20"
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Riview",
+      "settings": [
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Style",
+          "options": [
+            {
+              "value": "one",
+              "label": "One"
+            },
+            {
+              "value": "two",
+              "label": "Two"
+            }
+          ],
+          "default": "one"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "facebook",
+              "label": "Facebook"
+            },
+            {
+              "value": "google",
+              "label": "Google"
+            },
+            {
+              "value": "no",
+              "label": "No"
+            }
+          ],
+          "default": "no"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "Avatar"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Link to full review"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

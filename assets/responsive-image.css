@@ -1,0 +1,59 @@
+/*===== responsive image =====*/
+.o-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  image-rendering: auto;
+  transform: translate(-50%, -50%);
+}
+
+.o-img--contain {
+  object-fit: contain;
+} 
+
+.o-img__frame {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.o-img--fill {
+  width: 100%;
+  height: 100%;
+}
+
+.o-ar {
+  aspect-ratio: var(--mob-aspect-ratio);
+}
+
+.o-ar__item {
+  height: 100%;
+  width: 100%;
+}
+
+.o-ar--square {
+  aspect-ratio: 1;
+}
+
+.o-ar__footer {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+}
+
+.o-ar__mega {
+  width: 160px;
+}
+
+@media screen and (min-width: 768px) {
+  .o-ar {
+    aspect-ratio: var(--aspect-ratio);
+  }
+
+  .o-ar__footer {
+    width: fit-content;
+    margin: auto;
+  }
+}

@@ -1,0 +1,99 @@
+{% assign ss = section.settings %}
+
+<div class="awesome-cta" style="text-align:{{ ss.text_align }}">
+  {% if ss.heading_text %}
+    <h{{ ss.heading_size }} class="awesome-text-section__title">{{ ss.heading_text }}</h{{ ss.heading_size }}>
+  {% endif %}
+
+	<div class="plan-first-screen__cta" style="margin:{{ section.settings.cta_position }}">
+		<div class="plan-first-screen__description">{{ section.settings.bottom_description }}</div>
+		<a href="{{ section.settings.btn_url }}" class="btn lg">{{ section.settings.btn_text }}</a>
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "Awesome CTA",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "Awesome CTA"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        {
+          "label": "H1",
+          "value": "1"
+        },
+        {
+          "label": "H2",
+          "value": "2"
+        },
+        {
+          "label": "H3",
+          "value": "3"
+        },
+        {
+          "label": "H4",
+          "value": "4"
+        },
+        {
+          "label": "H5",
+          "value": "5"
+        },
+        {
+          "label": "H6",
+          "value": "6"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading text"
+    },
+    {
+			"type": "text",
+			"id": "bottom_description",
+			"label": "Button Description"
+		},
+		{
+			"type": "text",
+			"id": "btn_text",
+			"label": "Button text"
+		},
+		{
+			"type": "url",
+			"id": "btn_url",
+			"label": "Button URL"
+		},
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text align",
+      "default": "left",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,61 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+{% assign ss = section.settings %}
+
+<div class="container">
+	{% if ss.title %}
+		<h2 class="lp-22__title">{{ ss.title }}</h2>
+	{% endif %}
+	{% if ss.description %}
+		<div class="lp-22__description">
+			<p>{{ ss.description }}</p>
+		</div>
+	{% endif %}
+
+	{% if ss.content %}
+		{% assign lines = ss.content | strip_newlines | split: ',' %}
+		<div class="lp-22__content">
+			<ul>
+				{% for line in lines %}
+					{% assign line = line | strip %}
+					{% assign letter = line | slice: 0 %}
+					<li class="letter letter-{{ letter }}">{{ line }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	{% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "lp-22",
+  "class": "lp-22",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 22"
+    }
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "description",
+			"label": "Description"
+		},
+		{
+			"type": "textarea",
+			"id": "content",
+			"label": "Content"
+		}
+	]
+}
+{% endschema %}

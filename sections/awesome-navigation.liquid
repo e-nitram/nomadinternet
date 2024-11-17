@@ -1,0 +1,42 @@
+<div class="container">
+	<div class="row v-gutters justify-center">
+		{% for link in section.blocks %}
+			<div class="col-auto">
+				{% if link.settings.text %}
+					<a href="{{ link.settings.url | default: '#' }}"{% if request.path == link.settings.url %} class="active"{% endif %}>{{ link.settings.text }}</a>
+				{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+</div>
+
+{% schema %}
+{
+	"name": "Awesome Navigation",
+	"class": "awesome-navigation",
+	"tag": "div",
+	"presets": [
+		{
+			"name": "Awesome Navigation"
+		}
+	],
+	"blocks": [
+		{
+			"type": "link",
+			"name": "Link",
+			"settings": [
+				{
+					"type": "text",
+					"id": "text",
+					"label": "Text"
+				},
+				{
+					"type": "url",
+					"id": "url",
+					"label": "URL"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

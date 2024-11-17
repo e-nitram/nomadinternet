@@ -1,0 +1,61 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+<div class="lp-1">
+	<div class="lp-1__bg" style="background-image: url({{ section.settings.image | image_url }})"></div>
+	<div class="lp-1__content">
+		<h1 class="lp-1__title">{{ section.settings.title }}</h1>
+		<div class="text-center">
+			{% for btn in section.blocks %}
+				<a href="{{ btn.settings.url }}" id="button-{{ btn.id }}" class="btn lg red">{{ btn.settings.text }}</a>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-1",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 1"
+    }
+	],
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Image"
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		}
+	],
+	"blocks": [
+		{
+			"type": "button",
+			"name": "Button",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "text",
+					"label": "Text",
+					"id": "text"
+				},
+				{
+					"type": "url",
+					"label": "URL",
+					"id": "url"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

@@ -1,0 +1,246 @@
+{
+  "wrapper": "div.cube.cube--template",
+  "sections": {
+    "ee8a2532-9eeb-44c4-bcae-fa42507022ca": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "dfdae4ed-e77f-4d16-ba27-f368674cde6a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/First_screen_2c108294-a77c-40ce-bf9f-9f3df2f30185.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "dfdae4ed-e77f-4d16-ba27-f368674cde6a"
+      ],
+      "custom_css": [
+        "strong {color: var(--theme-color);}"
+      ],
+      "settings": {
+        "title": "Ships same day",
+        "description": "<p>if ordered before 12:00 p.m. central time<\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "Get started",
+        "button_url": "shopify:\/\/pages\/preorder",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "f89a2320-e90f-4f0a-bc4d-ab76e6c368d7": {
+      "type": "awesome-section",
+      "blocks": {
+        "0ba01916-a3ec-4641-a2a2-ce1a53191e20": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Learn More",
+            "url": "#",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "0ba01916-a3ec-4641-a2a2-ce1a53191e20"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/2_020750ad-4eef-48e8-864d-013a87c64d9e.jpg",
+        "title_tag": "h3",
+        "title": "Lorem ipsum",
+        "description": "<p>- Download speeds up to 100Mbps<br\/>- Unlimited 4G and 5G LTE<br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- No Data Limit<br\/>- Anywhere You Are<br\/>- 30-Day No Risk Trial<\/p>"
+      }
+    },
+    "604ddad5-1a4e-4d42-a535-627d0f07bd63": {
+      "type": "awesome-section",
+      "blocks": {
+        "e7f4e16e-7a8d-45b5-96af-c1f9a8e8e0c4": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Learn More",
+            "url": "#",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "e7f4e16e-7a8d-45b5-96af-c1f9a8e8e0c4"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/3_e0d0b49f-95f7-4a2d-af69-4b3a659eb86c.jpg",
+        "title_tag": "h3",
+        "title": "Lorem ipsum",
+        "description": "<p>- Download speeds up to 100Mbps<br\/>- Unlimited 4G and 5G LTE<br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- No Data Limit<br\/>- Anywhere You Are<br\/>- 30-Day No Risk Trial<\/p>"
+      }
+    },
+    "e66bd798-154b-44ed-8e68-abd93fad9d1d": {
+      "type": "awesome-section",
+      "blocks": {
+        "4f6a1d8c-d09c-42c8-b6a9-3501dd20c3d2": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Learn More",
+            "url": "#",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "4f6a1d8c-d09c-42c8-b6a9-3501dd20c3d2"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/2_623656f4-84b9-42af-8b38-a78bb6abd7e3.jpg",
+        "title_tag": "h3",
+        "title": "Lorem ipsum",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur. Purus fermentum at eros ipsum feugiat quisque nisi. Sed nunc tincidunt pellentesque purus. Duis velit morbi nec proin ipsum tincidunt. Consequat ut vitae felis ac mattis nibh. Mi suscipit dui quam nunc id arcu donec. Felis ac vulputate consectetur tristique in vitae feugiat adipiscing tortor. At vel metus turpis viverra lacus ac in. Aliquet aliquam diam sed phasellus et.Nec sed duis dapibus pellentesque. Nunc odio eleifend aliquet ultricies laoreet neque. Tincidunt est dignissim felis rhoncus.<\/p>"
+      }
+    },
+    "de745a58-df3d-405e-bf7e-a5807b8783c3": {
+      "type": "awesome-section",
+      "blocks": {
+        "f4c27120-16a7-4e25-ac66-29162a94e491": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Learn More",
+            "url": "#",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "f4c27120-16a7-4e25-ac66-29162a94e491"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/2_6e2d108c-ada5-4a4d-8b48-ebfd77cf0638.jpg",
+        "title_tag": "h3",
+        "title": "Lorem ipsum",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur. Purus fermentum at eros ipsum feugiat quisque nisi. Sed nunc tincidunt pellentesque purus. Duis velit morbi nec proin ipsum tincidunt. Consequat ut vitae felis ac mattis nibh. Mi suscipit dui quam nunc id arcu donec. Felis ac vulputate consectetur tristique in vitae feugiat adipiscing tortor. At vel metus turpis viverra lacus ac in. Aliquet aliquam diam sed phasellus et.Nec sed duis dapibus pellentesque. Nunc odio eleifend aliquet ultricies laoreet neque. Tincidunt est dignissim felis rhoncus.<\/p>"
+      }
+    },
+    "36d5c1df-2be0-4e61-a630-58551b6c7b57": {
+      "type": "lp-16",
+      "blocks": {
+        "06bb78f1-1e05-40ae-8e37-d8aa2c08e4d4": {
+          "type": "block",
+          "settings": {
+            "title": "What is C Band?",
+            "content": "<p>C Band - the latest 5G advance in cellular technology to revolutionize voice, text and data services for mobile devices. It provides enhanced coverage with fewer cell towers required resulting in wide area service capability! In addition its higher capacity supports faster transfer speeds of large amounts of data such as streaming video or downloads plus it is interference resistant which increases connection reliability. So get ready to join the C band revolution today!<\/p>"
+          }
+        },
+        "9ff6b91a-f975-4893-8abd-3af1403fcc29": {
+          "type": "block",
+          "settings": {
+            "title": "I live far away and my signal is weak, will Nomad Cube help me?",
+            "content": "<p>C Band is the latest in cellular technology, providing expanded coverage and enhanced capacity for all your digital needs. At its core it's a newly activated 5G frequency band offering improved voice, text, data services to mobile devices while also having built-in interference resistance capabilities: allowing you access over large areas without sacrificing speed or quality. It can easily handle streaming video files downloads with no latency - what more could you ask from an advanced bandwidth? Now that C Band has been activated sit back relax and enjoy wider connection networks than ever before!<\/p>"
+          }
+        },
+        "205ce91e-b025-4d15-a40c-dea3c4135239": {
+          "type": "block",
+          "settings": {
+            "title": "C Band is the new frequency range? Do I have it in my area?",
+            "content": "<p>C Band is the latest in cellular technology, providing expanded coverage and enhanced capacity for all your digital needs. At its core it's a newly activated 5G frequency band offering improved voice, text, data services to mobile devices while also having built-in interference resistance capabilities: allowing you access over large areas without sacrificing speed or quality. It can easily handle streaming video files downloads with no latency - what more could you ask from an advanced bandwidth? Now that C Band has been activated sit back relax and enjoy wider connection networks than ever before!<\/p>"
+          }
+        },
+        "ab55adaa-9340-4f5e-9f2b-0eab0805015c": {
+          "type": "block",
+          "settings": {
+            "title": "I already have a modem, can I bring my own device?",
+            "content": "<p>Most routers and modems currently available do not cover C band.<br\/>Are you still stuck with a router or modem that doesn't cover C Band? Worry no more! The Nomad Cube, an innovative device at an unbeatable price point, has arrived to solve all your needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "06bb78f1-1e05-40ae-8e37-d8aa2c08e4d4",
+        "9ff6b91a-f975-4893-8abd-3af1403fcc29",
+        "205ce91e-b025-4d15-a40c-dea3c4135239",
+        "ab55adaa-9340-4f5e-9f2b-0eab0805015c"
+      ],
+      "settings": {
+        "title": "Answers to the most frequently asked questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "2e224b5b-d021-44e2-bed2-2e3842c7dc2e": {
+      "type": "lp-20",
+      "blocks": {
+        "dde36221-29e8-47f3-9107-b2112aa34649": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/image_2023-02-25_00-45-49.png",
+            "name": "ILona Passino",
+            "text": "This is a great product! It has really boosted my internet signal and I can now watch Netflix in great quality. Thank you for making this!",
+            "link": ""
+          }
+        },
+        "acd5ff64-b3a2-42fa-af45-b8fad64c8b6e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/image_2023-02-25_00-47-00.png",
+            "name": "Micheal Robinson",
+            "text": "I thought I had gotten so far that it's normal for me to have a bad internet signal, the cell tower is far away, but the Nomad Cube modem has boosted the signal so much that I'm watching videos in great quality! Thank you guys for this novelty.",
+            "link": ""
+          }
+        },
+        "ae75418f-9951-46eb-bbb6-cfed1af4d490": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/image_2023-02-25_00-49-33.png",
+            "name": "Ana Tobio",
+            "text": "My kids are happy, they got great internet thanks to this Nomad modem. Steve watches TV, Sean plays online games, and the house is quiet and I can take time for myself.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "dde36221-29e8-47f3-9107-b2112aa34649",
+        "acd5ff64-b3a2-42fa-af45-b8fad64c8b6e",
+        "ae75418f-9951-46eb-bbb6-cfed1af4d490"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "42acd939-a18b-4565-8662-eb957410b191": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "ee8a2532-9eeb-44c4-bcae-fa42507022ca",
+    "f89a2320-e90f-4f0a-bc4d-ab76e6c368d7",
+    "604ddad5-1a4e-4d42-a535-627d0f07bd63",
+    "e66bd798-154b-44ed-8e68-abd93fad9d1d",
+    "de745a58-df3d-405e-bf7e-a5807b8783c3",
+    "36d5c1df-2be0-4e61-a630-58551b6c7b57",
+    "2e224b5b-d021-44e2-bed2-2e3842c7dc2e",
+    "42acd939-a18b-4565-8662-eb957410b191"
+  ]
+}

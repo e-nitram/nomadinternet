@@ -1,0 +1,555 @@
+{
+  "sections": {
+    "f781c5c0-6f99-4177-8cb6-2a04f8e558c1": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 20,
+        "border-radius": 0,
+        "html": "<h1 class=\"h2 text-center uppercase\">Current offers from Nomad <\/h1>"
+      }
+    },
+    "974b2847-3235-40de-9bbc-75cec310ad71": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2 class=\"h3 text-center uppercase\">Nomad® Modems<\/h2>"
+      }
+    },
+    "af5d3d85-2489-49fa-bdef-ca69206cb016": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "44334d6d-79eb-4211-a82d-5f7229f11c22": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_d662fca6-7279-48d2-b664-8044831036d2.jpg",
+            "title_tag": "h3",
+            "title": "The Nomad Cube",
+            "text": "<p><em>$399 Retail Membership<\/em><\/p><p><strong>$99 Today's Membership Fee<\/strong><\/p><p>Introducing the Nomad Cube Modem, your ultimate companion for seamless connectivity. Experience boundless freedom with nationwide 5G and 4G LTE <a href=\"\/pages\/coverage-map\" title=\"Coverage Map\">coverage<\/a>, perfect for busy professionals, avid gamers, or dedicated students. Boasting download speeds up to 100mb\/s, swift self-installation, and dual-band Wi-Fi 6 supporting 15 devices, the Nomad Cube Modem transforms your home into a digital sanctuary for work, study, entertainment, and more. Elevate your online experience with Nomad Cube today.<\/p>",
+            "button_text": "order now",
+            "button_url": "shopify:\/\/pages\/preorder",
+            "button_text_2": "Learn More",
+            "button_url_2": "shopify:\/\/pages\/nomad-residential-plan"
+          }
+        },
+        "d1c16041-c19b-41b2-b114-72349c296efc": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1260x1260_trans_BG-1.png",
+            "title_tag": "h3",
+            "title": "The Nomad Omega",
+            "text": "<p><em>$399 Retail Membership<\/em><\/p><p><strong>$99 Today's Membership Fee<\/strong><\/p><p>Introducing the Nomad Omega Modem, your ultimate companion for seamless connectivity. Experience boundless freedom with nationwide 5G and 4G LTE <a href=\"\/pages\/coverage-map\" title=\"Coverage Map\">coverage<\/a>, perfect for busy professionals, avid gamers, or dedicated students. Boasting download speeds up to 100mb\/s, swift self-installation, and dual-band Wi-Fi 6 supporting 15 devices, the Nomad Omega Modem transforms your home into a digital sanctuary for work, study, entertainment, and more. Elevate your online experience with Nomad Omega today.<\/p>",
+            "button_text": "order now",
+            "button_url": "shopify:\/\/pages\/preorder",
+            "button_text_2": "",
+            "button_url_2": "\/pages\/plans"
+          }
+        },
+        "8c01a436-8a1b-4e3d-a9ed-6e3dd1f52e08": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6-8.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Air",
+            "text": "<p><em>$599 Retail Membership Fee<\/em><br\/><strong>$249.95 Today's Membership Fee <\/strong><\/p><p>Discover the Nomad Air Modem, your versatile gateway to limitless connectivity. Designed for both home and <a href=\"https:\/\/nomadinternet.com\/pages\/nomad-travel-plan\" title=\"on-the-go\">on-the-go<\/a> use, it's perfect for digital nomads, families, or adventurous souls. Experience lightning-fast download speeds of up to 250mb\/s, hassle-free self-installation, and dual-band Wi-Fi 6 supporting 30 devices. The Nomad Air Modem empowers you to work, study, game, or stream movies, whether at home, in the car, or on a scenic hike. Unleash your potential with Nomad Air.<\/p>",
+            "button_text": "order now",
+            "button_url": "shopify:\/\/pages\/preorder",
+            "button_text_2": "",
+            "button_url_2": "\/pages\/plans"
+          }
+        },
+        "a1c404a4-f00a-43a2-bd0f-64479165d846": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7-4.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Raptor",
+            "text": "<p><em>$799 Retail Membership Fee<\/em><br\/><strong>$249.95 Today's Membership Fee <\/strong><\/p><p>Introducing the Nomad Raptor Modem, the ultimate connectivity solution for visionary entrepreneurs. Engineered to meet the demands of hotels, cafes, and <a href=\"https:\/\/nomadinternet.com\/pages\/nomad-enterprise\" title=\"bustling offices\">bustling offices<\/a>, this powerhouse offers blazing download speeds of up to 250mb\/s and effortless self-installation. With dual-band Wi-Fi 6 supporting an astounding 128 devices and multiple Ethernet LAN ports plus a 1 Mbps WAN port for wireless backup, the Nomad Raptor Modem is the indispensable partner for thriving businesses. Elevate your enterprise with the Raptor's unmatched performance.<\/p>",
+            "button_text": "pre-order",
+            "button_url": "shopify:\/\/pages\/preorder",
+            "button_text_2": "Learn More",
+            "button_url_2": "shopify:\/\/pages\/nomad-power-plan"
+          }
+        },
+        "96794d39-2e81-471f-8927-dacbeb7c346e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7_8615ab65-e304-4806-bffb-9884905c1313.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Ark",
+            "text": "<p>Introducing the Nomad Ark Modem, the epitome of outdoor connectivity for discerning <a href=\"https:\/\/nomadinternet.com\/pages\/nomad-residential-plan\" title=\"homeowners\">homeowners<\/a>. Experience unparalleled high-speed wireless internet with low latency, ensuring optimal performance wherever Nomad Internet's active coverage extends. Boasting an impressive 4.14 Gbps download and 660 Mbps upload, the Nomad Ark Modem redefines your outdoor digital experience. Equipped with dual SIM cards for enhanced flexibility, the Ark is the ultimate choice for homeowners seeking unparalleled outdoor connectivity. Embrace the future with Nomad Ark.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "",
+            "button_url_2": "\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "44334d6d-79eb-4211-a82d-5f7229f11c22",
+        "d1c16041-c19b-41b2-b114-72349c296efc",
+        "8c01a436-8a1b-4e3d-a9ed-6e3dd1f52e08",
+        "a1c404a4-f00a-43a2-bd0f-64479165d846",
+        "96794d39-2e81-471f-8927-dacbeb7c346e"
+      ],
+      "custom_css": [
+        "em {text-decoration: line-through; color: orange;}",
+        "strong {display: block; border-bottom: 1px dashed #555; margin-bottom: 1em; padding-bottom: 1em; color: var(--theme-color);}"
+      ],
+      "settings": {
+        "columns_count": "2"
+      }
+    },
+    "aef34ad9-a2b2-4b65-baa6-d0fa82271c9f": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#222222",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2 class=\"h3 text-center uppercase\">Nomad Plans<\/h2>"
+      }
+    },
+    "9666659f-0d0a-4bf9-947e-af75e706d6db": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "b6ad66a0-4491-4364-8253-d2ef98c7fb2d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6-6.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Residential Plan",
+            "text": "<p><strong>$109 a month<\/strong><\/p><p>Discover the Nomad Residential Plan, a versatile internet solution tailored for your home, covering work, study, gaming, and entertainment. Enjoy high-speed wireless data without restrictions, featuring download speeds up to 100 Mbps, and seamless 4G and 5G LTE connectivity. Effortlessly connect all your devices without credit checks or data limitations. Embrace the freedom of our plan, accessible wherever you dwell, and experience a worry-free 14-day trial. Welcome to your all-in-one home internet solution.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "67154c9d-3904-4ade-9e36-3aa1844a7dfd": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7-2.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Air Travel Plan",
+            "text": "<p><strong>$129 a month<\/strong><\/p><p>Introducing the Nomad Travel Plan, your ultimate internet companion for life on the go. Experience high-speed wireless data tailored for <a href=\"https:\/\/nomadinternet.com\/pages\/nomad-for-rv\" title=\"travel use\">travel use<\/a>. Enjoy download speeds up to 100Mbps, seamless 4G and 5G LTE connectivity, and effortless connection of all your devices, without credit checks or data limits. Stay connected wherever your journey takes you, and enjoy a risk-free 14-day trial. Embrace the flexibility with the upcoming Pause Plan feature for true digital freedom.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "87e0a644-8410-4461-bf7b-a6eceaeb4392": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6-2.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Power Plan",
+            "text": "<p><strong>$149 a month<\/strong><\/p><p>Elevate your business with the Nomad Business Plan, offering seamless internet connectivity tailored for office use. Benefit from <a href=\"https:\/\/nomadinternet.com\/pages\/nomad-power-plan\" title=\"high-speed wireless data\">high-speed wireless data<\/a> with download speeds up to 200Mbps. Stay connected with robust 4G and 5G LTE support and effortlessly link all your devices, without credit checks or data restrictions. The Nomad Business Plan empowers your enterprise, no matter where you operate, and comes with a worry-free 14-day trial to experience true digital excellence.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "b6ad66a0-4491-4364-8253-d2ef98c7fb2d",
+        "67154c9d-3904-4ade-9e36-3aa1844a7dfd",
+        "87e0a644-8410-4461-bf7b-a6eceaeb4392"
+      ],
+      "custom_css": [
+        "strong {display: block; border-bottom: 1px dashed #555; margin-bottom: 1em; padding-bottom: 1em; color: var(--theme-color);}"
+      ],
+      "settings": {
+        "columns_count": "2"
+      }
+    },
+    "a76d711b-a6e7-4d0b-b961-00c3e3fe806a": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#222222",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2 class=\"h3 text-center uppercase\">Nomad® Kits<\/h2>"
+      }
+    },
+    "be486961-5902-4a60-a6ff-c19d69080299": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "1af3821d-f532-4608-8eb1-9c0a2955249d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6-5.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Travel Bag",
+            "text": "<p>Introducing the Nomad Travel Bag, your passport to boundless connectivity on every adventure. Perfect for road trips, vacations, or wilderness expeditions, this innovative kit delivers high-speed <a href=\"https:\/\/nomadinternet.com\/pages\/nomad-wifi\" title=\"Wi-Fi\">Wi-Fi<\/a> without wires, powered by a week-long backup battery and a fast-charging solar panel. Stay effortlessly connected off-grid, as the built-in solar panel harnesses sunlight to keep your Nomad Air battery charged. Compatible with the Nomad Internet Mobile App, the Nomad Travel Bag is the essential companion for explorers, researchers, and wanderlust seekers. Embark on a connected journey with Nomad.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Learn More",
+            "button_url_2": "shopify:\/\/pages\/travel-bag-nomad"
+          }
+        },
+        "d86563d4-67a0-4d03-a5c6-284d167c283a": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7-1.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Savior",
+            "text": "<p>Embrace the Nomad Savior, your steadfast ally for off-grid escapades. This solar-powered battery system effortlessly charges essential devices, including smartphones and laptops, thanks to its high-capacity battery and 20W USB Type-C fast charge port. Adaptable and portable, the Nomad Savior caters to your unique needs, easily securing itself during wilderness hikes, mountain camping, or exploratory ventures. Built to withstand extreme weather and temperatures up to 140°F, the rugged, waterproof design ensures unwavering performance, no matter the adventure.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Learn More",
+            "button_url_2": "shopify:\/\/pages\/nomad-savior"
+          }
+        },
+        "dc48a39f-f05a-4f39-88e0-b5f9fea7de2f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6-1.jpg",
+            "title_tag": "h2",
+            "title": "Nomad Savior Extreme",
+            "text": "<p>Introducing the Nomad Savior Extreme, your unwavering power source for any off-grid adventure. Designed for diverse environments, from camping trips to oil fields, construction sites, or outdoor festivals, this robust device delivers uninterrupted energy through its standalone solar panel Li-Ion battery kit. Waterproof, rugged, and able to withstand temperatures up to 140°F, the Nomad Savior Extreme is your dependable partner in any setting. Ideal for home installation, country retreats, or campsites, trust in the unparalleled resilience of the Nomad Savior Extreme.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Learn More",
+            "button_url_2": "shopify:\/\/pages\/nomad-savior-extreme"
+          }
+        }
+      },
+      "block_order": [
+        "1af3821d-f532-4608-8eb1-9c0a2955249d",
+        "d86563d4-67a0-4d03-a5c6-284d167c283a",
+        "dc48a39f-f05a-4f39-88e0-b5f9fea7de2f"
+      ],
+      "settings": {
+        "columns_count": "2"
+      }
+    },
+    "70b8f182-be16-4e53-a229-e75d6904d32b": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#222222",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2 class=\"h3 text-center uppercase\">Nomad® Accessories<\/h2>"
+      }
+    },
+    "5272f23f-eab5-49fb-954b-b73189a6a158": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "195fb9a9-3d2e-453c-99c9-ce3a24452f66": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6-7.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Bag",
+            "text": "<p>Discover the Nomad Bag, your stylish and functional companion for staying connected on every escapade. This compact bag effortlessly houses your Nomad Air modem, battery with solar panel, and all necessary wires, ensuring seamless connectivity on the go. Ideal for adventurers and tech enthusiasts alike, the Nomad Bag offers durability, lightweight design, and exceptional value for money. Experience the convenience of carrying your modem and power bank with ease—choose the Nomad Bag for your next adventure.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "2b244bf5-bb09-459b-aab6-6bfdede25249": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7-3.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Battery",
+            "text": "<p>Introducing the Nomad Battery, the eco-friendly power solution for the modern wanderer. Harness the sun's energy with this 60,000mAh solar-powered charger, compatible with a wide array of devices. Perfect for outdoor camping or <a href=\"https:\/\/nomadinternet.com\/pages\/ice\" title=\"home emergencies\">home emergencies<\/a>, the Nomad Battery keeps you connected anywhere. Boasting 32 LED bulbs, four output, and two input ports, this versatile charger ensures continuous device access. Embrace sustainable energy and unbridled freedom with the portable and reliable Nomad Battery.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "ed7a50ec-c1e6-4d7d-889a-7ee392c98bb4": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6-3.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Cables",
+            "text": "<p>Introducing Nomad Cables, the essential trio for powering your Nomad Air modem. The Power Switch offers precise control over your device's power, while the Power Adapter ensures a reliable connection for those constantly on the move. The Power Plug delivers swift charging, keeping you connected and ready for action. Designed to effortlessly link your Nomad Air modem to chargers, Nomad Cables provide a seamless solution for staying connected, wherever your journey takes you.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "4ea3f3a5-5e09-4599-975e-f94f3e4ad707": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6-4.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Club",
+            "text": "<p>Introducing the Nomad Club, an elite membership for those utilizing the exceptional services of <a href=\"https:\/\/nomadinternet.com\/\" title=\"Nomad Internet\">Nomad Internet<\/a>. Catering to travelers, freelancers, and business professionals alike, our club offers unparalleled benefits and exclusive offers. Members enjoy special discounts and access to a user-friendly online portal, where they can connect with like-minded individuals from around the world. Don't miss this opportunity to enhance your Nomad Internet experience — join the Nomad Club today!<\/p>",
+            "button_text": "",
+            "button_url": "\/pages\/plans#wizard-plans",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "195fb9a9-3d2e-453c-99c9-ce3a24452f66",
+        "2b244bf5-bb09-459b-aab6-6bfdede25249",
+        "ed7a50ec-c1e6-4d7d-889a-7ee392c98bb4",
+        "4ea3f3a5-5e09-4599-975e-f94f3e4ad707"
+      ],
+      "settings": {
+        "columns_count": "2"
+      }
+    },
+    "102e9dbd-d85b-45b7-8a99-db0f47806e9d": {
+      "type": "lp-16",
+      "blocks": {
+        "c4dc470f-b6a1-4706-a28e-70f47c9c9033": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service<br\/> Provider. We are focused on providing High-Speed wireless Internet to <br\/>rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "1a037a05-75d2-41d1-98ab-be5923a923e2": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by <br\/>transmitting wireless Internet access directly to your home, business, <br\/>and even while traveling! We combine the latest technology with <br\/>Verizon’s service to provide high-speed internet to rural locations and <br\/>traveling nomads. We offer a variety <br\/>of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "25d1f870-3d9f-46e7-9681-551f9f2569d5": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "9a321a6a-1846-4206-bc22-c1141efabcd4": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet secure?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. <br\/>Multiple layers of encryption, enhanced Wi-Fi security, firewall <br\/>filtering, built-in VPN support, IT admin controls, and other features <br\/>deliver strong security at every level.<\/p>"
+          }
+        },
+        "f19b5554-6c52-4d47-a584-d482cadc43a0": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will <br\/>provide you with robust and reliable internet for all your gaming needs.<br\/> No matter your plan, you can expect fast internet with low ping rates <br\/>and latency.<\/p>"
+          }
+        },
+        "c54f3b9d-0c25-469d-81b2-aa6016f65073": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, <br\/>low-latency service they have at home to any location Nomad Internet has<br\/> coverage. Nomad Internet for RVers\/travelers will allow users to pause <br\/>and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c4dc470f-b6a1-4706-a28e-70f47c9c9033",
+        "1a037a05-75d2-41d1-98ab-be5923a923e2",
+        "25d1f870-3d9f-46e7-9681-551f9f2569d5",
+        "9a321a6a-1846-4206-bc22-c1141efabcd4",
+        "f19b5554-6c52-4d47-a584-d482cadc43a0",
+        "c54f3b9d-0c25-469d-81b2-aa6016f65073"
+      ],
+      "disabled": true,
+      "settings": {
+        "sub_title": "",
+        "title": "Answers to the most frequently asked questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/",
+        "bg_color": "",
+        "sub_title_color": "#00b589",
+        "title_color": "#fff"
+      }
+    },
+    "lp_16_7BJxag": {
+      "type": "lp-16",
+      "blocks": {
+        "block_LyexGt": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p><strong>Experience High-Speed Wireless Internet with Nomad<\/strong><\/p><ul><li><strong>Leading Provider:<\/strong> America's Largest Wireless Internet Service.<\/li><li><strong>Rural Connectivity:<\/strong> Specializing in High-Speed Internet for Rural Communities.<\/li><li><strong>Traveler-Friendly:<\/strong> Seamless Internet Access for On-the-Road Travelers.<\/li><li><strong>Low Start-Up Costs:<\/strong> Affordable Access to Quality Internet Service.<\/li><li><strong>Rapid Connection Speeds:<\/strong> Experience Fast and Reliable Internet Anywhere.<\/li><\/ul>"
+          }
+        },
+        "block_7BxChN": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p><strong>Revolutionize Your Internet Connection<\/strong><\/p><ul><li><strong>Wireless Connectivity:<\/strong> Direct to your home, business, or on-the-go<\/li><li><strong>Advanced Technology:<\/strong> Utilizing the latest innovations for optimal speed.<\/li><li><strong>Nationwide Network:<\/strong> Access high-speed internet even in rural areas other providers cannot reach.<\/li><li><strong>Tailored Plans:<\/strong> Variety of options to suit every unique need.<\/li><li><strong>Stay Connected Everywhere:<\/strong> Reliable service for both stationery and nomadic lifestyle<\/li><\/ul>"
+          }
+        },
+        "block_iYGJwE": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet compare to Starlink Roam?",
+            "content": "<p>Nomad Internet and Starlink Roam both provide internet access while on the road, but with distinct differences in pricing and hardware requirements. Nomad Internet offers this service with a minimal monthly fee ranging from $15-$25, in addition to the cost for the chosen internet speed plan. In contrast, Starlink Roam requires a larger initial investment, including a $2,500 dish and a $599 one-time fee for the standard Starlink dish. This makes Nomad Internet a more budget-friendly and flexible option for users needing internet access while traveling, compared to the substantial upfront cost of Starlink Roam.<\/p>"
+          }
+        },
+        "block_YmyNxb": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet as Good as Satellite-Based Internet?",
+            "content": "<p><strong>Advantages of Nomad Internet Over Traditional Satellite Services<\/strong><\/p><ul><li><strong>Enhanced Mobility:<\/strong> Nomad offers seamless connectivity for on-the-go lifestyles, unlike stationary satellite dishes.<\/li><li><strong>Faster Speeds:<\/strong> Experience higher speed internet with Nomad, often surpassing satellite internet's capabilities.<\/li><li><strong>Lower Latency:<\/strong> Benefit from reduced lag and more responsive internet, a significant advantage over satellite connections.<\/li><li><strong>No Cumbersome Dish:<\/strong> Avoid the need for a large, stationary satellite dish with Nomad's more compact and mobile setup.<\/li><li><strong>Wider Coverage:<\/strong> Nomad provides consistent internet access in areas where satellite signals may be obstructed or unreliable.<\/li><li><strong>Cost-Effective:<\/strong> Nomad often presents a more budget-friendly option, especially considering the high setup costs of satellite dishes.<\/li><\/ul>"
+          }
+        },
+        "block_TRQ99H": {
+          "type": "block",
+          "settings": {
+            "title": "High-Speed Internet with Nomad's Small Antennas vs. Large Dish Services",
+            "content": "<p>Understanding Nomad's High-Speed Internet Technology<\/p><ul><li><strong>Advanced Modem Technology:<\/strong> Nomad utilizes cutting-edge modems with powerful, compact antennas, optimized for high-speed data transmission.<\/li><li><strong>Efficient Signal Processing:<\/strong> Our modems are designed to efficiently process signals, ensuring fast internet speeds even with smaller antennas.<\/li><li><strong>Strategic Network Use:<\/strong> We leverage existing cellular networks, which allows for high-speed internet without the need for large satellite dishes.<\/li><li><strong>Size vs. Performance:<\/strong> Comparable to the evolution from bulky 90s mobile phones to today's sleek smartphones, Nomad's innovative design maximizes performance in a compact form.<\/li><li><strong>Versatility and Mobility:<\/strong> Unlike large dishes, our small antennas offer greater flexibility and mobility, suitable for both stationery and on-the-go use.<\/li><li><strong>Broadband Technologies:<\/strong> We incorporate the latest in broadband technologies, making the most of available cellular networks for faster and more reliable internet.<\/li><\/ul>"
+          }
+        },
+        "block_74q8GA": {
+          "type": "block",
+          "settings": {
+            "title": "What are the Contract Requirements for Nomad Internet?",
+            "content": "<p>No Contractual Obligations: Nomad Internet provides services without binding agreements, offering complete flexibility.<\/p><ul><li><strong>Flexible Subscription Plans:<\/strong> Choose a plan that aligns with your needs, with the liberty to modify, pause or cancel anytime.<\/li><\/ul>"
+          }
+        },
+        "block_igFeTP": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet Secure?",
+            "content": "<p>Yes, Nomad Internet prioritizes security for its users.<\/p><ul><li><strong>Advanced Security Features:<\/strong> Nomad Internet offers multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, and IT admin controls.<\/li><li><strong>Peace of Mind:<\/strong> Enjoy strong security measures at every level of usage with Nomad Internet.<\/li><\/ul>"
+          }
+        },
+        "block_REiKnx": {
+          "type": "block",
+          "settings": {
+            "title": "Can I Use Nomad Internet for Gaming and Streaming Across Multiple Devices?",
+            "content": "<p><strong>Yes:<\/strong> Nomad Internet is well-equipped for both gaming and streaming needs, even in remote locations.<\/p><ul><li><strong>Fast and Reliable Connectivity:<\/strong> Nomad Internet ensures fast internet speeds with low ping rates and latency, ideal for gaming and streaming.<\/li><li><strong>Multi-Device Support:<\/strong> Whether gaming solo or streaming content across multiple devices simultaneously, Nomad Internet offers robust performance for all your entertainment needs.<\/li><\/ul>"
+          }
+        },
+        "block_amC3nM": {
+          "type": "block",
+          "settings": {
+            "title": "Can I Use Nomad Internet for RVing, Off-Trail Hiking, and More?",
+            "content": "<p>Yes: Nomad Internet users can bring the same high-speed, low-latency service they have at home to any location covered by Nomad Internet.<\/p><ul><li><strong>Flexible Connectivity on the Go:<\/strong> Nomad Internet for RVers and travelers offers the convenience of pausing and un-pausing service based on individual travel needs.<\/li><li><strong>Ideal for Remote Adventures:<\/strong> Whether RVing, off-trail hiking, or exploring remote locations, Nomad Internet ensures reliable connectivity for work or leisure activities on the move.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "block_LyexGt",
+        "block_7BxChN",
+        "block_iYGJwE",
+        "block_YmyNxb",
+        "block_TRQ99H",
+        "block_74q8GA",
+        "block_igFeTP",
+        "block_REiKnx",
+        "block_amC3nM"
+      ],
+      "settings": {
+        "sub_title": "",
+        "title": "Answers to the most frequently asked questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/",
+        "bg_color": "",
+        "sub_title_color": "#00b589",
+        "title_color": "#fff"
+      }
+    },
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6": {
+      "type": "lp-20",
+      "blocks": {
+        "888c7849-52c8-4eeb-9b8e-9589d5f6cf19": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Emily_Dean.jpg",
+            "name": "Emily Dean",
+            "text": "I recently switched to Nomad Internet wi-fi provider, using their Modem Ark. I am absolutely thrilled with the decision! The transition was easy, and I can now enjoy high speed wi-fi in my rural area - something other providers could never provide to me. Additionally, their customer service is always prompt and helpful. If you’re looking for wi-fi coverage in a rural area or one without fiber or cable service, I highly recommend going with Nomad Internet. You definitely won’t regret it!",
+            "link": ""
+          }
+        },
+        "f4633798-4ebc-4171-9078-dba815e9023a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Ronald_Shaw.jpg",
+            "name": "Ronald Shaw",
+            "text": "I recently decided to switch to Nomad Internet for providing my family with reliable Internet in our rural home; and so far, it has been an absolutely splendid experience. From the phenomenal customer support team, to the lightning-fast speeds delivered via their Nomad Air Modem - I'm consistently impressed! This is easily one of best internet providers I've ever used, especially considering the availability of high-speed coverage in a rural home such as mine. Without a doubt, I'll continue using this service while recommending others to do the same.",
+            "link": ""
+          }
+        },
+        "e3a6154a-bdb5-460e-8688-2e3cdb7682ef": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Kenneth_Ellis.jpg",
+            "name": "Kenneth Ellis",
+            "text": "As a rural homeowner, I was ecstatic to find Nomads Internet among broadband wireless internet providers. With the purchase of their newest modem, the Nomad Air, I was finally able to access high speed internet in my home - something that had been lacking before. It was easy to install, user friendly and customer service has been great! Even with the weak cell signal by our house, we still get great reception and broadband speeds much faster than we expected. I highly recommend Nomad Internet for rural broadband services!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "888c7849-52c8-4eeb-9b8e-9589d5f6cf19",
+        "f4633798-4ebc-4171-9078-dba815e9023a",
+        "e3a6154a-bdb5-460e-8688-2e3cdb7682ef"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "f9edaed5-c585-40ef-a402-bf4f5c319745": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "f781c5c0-6f99-4177-8cb6-2a04f8e558c1",
+    "974b2847-3235-40de-9bbc-75cec310ad71",
+    "af5d3d85-2489-49fa-bdef-ca69206cb016",
+    "aef34ad9-a2b2-4b65-baa6-d0fa82271c9f",
+    "9666659f-0d0a-4bf9-947e-af75e706d6db",
+    "a76d711b-a6e7-4d0b-b961-00c3e3fe806a",
+    "be486961-5902-4a60-a6ff-c19d69080299",
+    "70b8f182-be16-4e53-a229-e75d6904d32b",
+    "5272f23f-eab5-49fb-954b-b73189a6a158",
+    "102e9dbd-d85b-45b7-8a99-db0f47806e9d",
+    "lp_16_7BJxag",
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6",
+    "f9edaed5-c585-40ef-a402-bf4f5c319745"
+  ]
+}

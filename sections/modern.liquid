@@ -1,0 +1,93 @@
+<div class="container container-wrapper">
+<div class="xfl">
+  <div class="llft col-5">
+    <h3>{{ section.settings.sb }}</h3>
+    <h2  class="title">{{ section.settings.sbm }}</h2>
+    <p>{{ section.settings.descr }}</p>
+    
+  </div>
+    <div class="llft col-5">
+     {% if section.blocks.size > 0 %}
+      {% for block in section.blocks %}
+      <div class="bulf">
+        
+        <img src="{{ block.settings.bullt | img_url:'master' }}">
+        
+          <div class="">
+              <h4>{{ block.settings.sb1 }}</h4>
+            <p>{{ block.settings.sb2 }}</p>
+          </div>
+      </div>
+      {% endfor %}
+       {% endif %}
+  </div>
+</div>
+</div>
+{% schema %}
+  {
+    "name": "modern",
+    "settings": [
+      {
+        "type": "html",
+        "id": "sb",
+        "label": "Sub Title"
+        
+      },
+      {
+        "type": "html",
+        "id": "sbm",
+        "label": "Title"
+        
+      },
+      {
+        "type": "text",
+        "id": "descr",
+        "label": "Description"
+      }
+      
+      
+    ],
+    "blocks": [
+     {
+        "type": "item",
+        "name": "bullet point",
+        "settings": [
+        {
+        "type": "html",
+        "id": "sb1",
+        "label": "title bullet point"
+        
+      },
+          {
+        "type": "html",
+        "id": "sb2",
+        "label": "description bullet point"
+        
+      },
+          {
+        "type": "image_picker",
+        "id": "bullt",
+        "label": "bullet point Image"
+      }
+        ]
+          }
+        ],
+    "presets": [
+	  {
+		"name": "modern"
+	  }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .xfl{
+    display:flex;
+  }
+  .bulf{
+    display:flex;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

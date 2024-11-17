@@ -1,0 +1,35 @@
+<div class="collection collection--{{ collection.handle }}">
+  <header class="collection__heading">
+    <div class="container">
+      <h1 class="collection__title">{{ collection.title }}</h1>
+      <p style="font-weight: bold; text-align: center; margin-top: -20px;">Hi-speed internet with up to unlimited data</p>
+    </div>
+  </header>
+
+  <div id="shopify-section-template--14544434593850__d92ddf88-cb54-40e1-8668-eaeb8d0fe710" class="shopify-section container">
+    <div class="awesome-video">
+    	<div class="ratio">
+    		<iframe width="560" height="315" src="https://www.youtube.com/embed/-HIGjWvEnpg?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+    	</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row v-gutters">
+      {% paginate collection.products by 16 %}
+        {% for product in collection.products %}
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+            {% if product.type == 'Annual 5G Plan' or product.type == 'Annual 4G Plan' %}
+              {% render 'product.annual-plan', product: product, months: 12 %}
+            {% elsif product.type == 'Bi-Annual 5G Plan' or product.type == 'Bi-Annual 4G Plan' %}
+              {% render 'product.annual-plan', product: product, months: 6 %}
+            {% endif %}
+          </div>
+        {% endfor %}
+        <div class="col-12">
+          {% render 'pagination', paginate: paginate %}
+        </div>
+      {% endpaginate %}
+    </div>
+  </div>
+</div>

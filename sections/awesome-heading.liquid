@@ -1,0 +1,79 @@
+{% assign ss = section.settings %}
+
+<div class="container" style="text-align:{{ ss.text_align }}">
+  {% if ss.heading_text %}
+    <h{{ ss.heading_size }} class="awesome-text-section__title">{{ ss.heading_text }}</h{{ ss.heading_size }}>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Awesome Heading",
+  "class": "awesome-heading-section",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Awesome Heading"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        {
+          "label": "H1",
+          "value": "1"
+        },
+        {
+          "label": "H2",
+          "value": "2"
+        },
+        {
+          "label": "H3",
+          "value": "3"
+        },
+        {
+          "label": "H4",
+          "value": "4"
+        },
+        {
+          "label": "H5",
+          "value": "5"
+        },
+        {
+          "label": "H6",
+          "value": "6"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading text"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text align",
+      "default": "left",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

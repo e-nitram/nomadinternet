@@ -1,0 +1,177 @@
+{
+  "sections": {
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "5b8f7255-301d-4f5e-9413-03da81e69739": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/own-device-bg-min.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "5b8f7255-301d-4f5e-9413-03da81e69739"
+      ],
+      "settings": {
+        "title": "BRING YOUR OWN DEVICE",
+        "description": "<p>Immediately access 300 GB of high-speed, wireless low-latency internet for your own device at any destination where Nomad Internet provides active coverage.<\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "Join Now",
+        "button_url": "https:\/\/np.nomadinternet.com\/subscribe.php",
+        "button_blank": true,
+        "on_click": ""
+      }
+    },
+    "ae9e8331-4b49-4ec3-a710-107935d73660": {
+      "type": "awesome-section",
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1201_b7f24a0d-fb6b-458c-9efe-d114eca6afe6.jpg",
+        "title_tag": "h2",
+        "title": "LEGACY MODEM ACCESS",
+        "description": "<p>Nomad Bring Own Device provides legacy modem internet service. Nomad Internet can not provide you with any technical support. We can only check to see if your SIM is Activated. Any further support must come from your Modem Manufacturer.“<\/p><p>Unsupported Devices” will not support any Nomad Internet enhanced features, will have unpredictable speeds, and may stop working in the future.<\/p>"
+      }
+    },
+    "e7afce41-5ff9-4325-a4ef-e7b1523d9311": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "1",
+        "heading_text": "Nomad Plans",
+        "text": "",
+        "text_2": "",
+        "text_align": "center"
+      }
+    },
+    "d6c09aeb-e095-45f7-812d-f8d7ec68ea6a": {
+      "type": "awesome-section",
+      "blocks": {
+        "f5c4a4c2-fd1f-40e6-89b7-f789a1dcecf0": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Learn More",
+            "url": "\/",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "f5c4a4c2-fd1f-40e6-89b7-f789a1dcecf0"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1195.jpg",
+        "title_tag": "h2",
+        "title": "NOMAD RESIDENTIAL PLAN",
+        "description": "<p>High-speed, wireless low-latency broadband internet in remote and rural locations across the USA. $110\/mo with a one-time Nomad Air Modem cost of $299.<\/p>"
+      }
+    },
+    "e5b065e9-263e-42e2-b801-a526f5a7a364": {
+      "type": "awesome-section",
+      "blocks": {
+        "e46b4895-7340-4c93-bc72-1a4dcad0fd89": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Learn More",
+            "url": "shopify:\/\/pages\/nomad-travel-plan",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "e46b4895-7340-4c93-bc72-1a4dcad0fd89"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1199.jpg",
+        "title_tag": "h2",
+        "title": "NOMAD TRAVEL PLAN",
+        "description": "<p>High-speed, wireless low-latency internet on an as-needed basis at any destination where Nomad Internet provides active coverage. $130\/mo with a one-time cost of $399 for a Nomad Air Modem.<\/p>"
+      }
+    },
+    "4b9357d1-64b8-4a09-931d-6747c9eedc57": {
+      "type": "awesome-section",
+      "blocks": {
+        "1cd94613-4fad-47cc-a0fa-57f87f2c6081": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Learn More",
+            "url": "shopify:\/\/pages\/nomad-business-plan",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "1cd94613-4fad-47cc-a0fa-57f87f2c6081"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1197_7af46597-2230-4391-816e-993882dd995b.jpg",
+        "title_tag": "h2",
+        "title": "NOMAD BUSINESS PLAN",
+        "description": "<p>High-speed, wireless low-latency broadband internet to remote and rural businesses across the USA. $450\/mo with a one-time Nomad Raptor Modem cost of $799<\/p>"
+      }
+    },
+    "f473071c-1490-4b1b-8b85-caf76346a0f2": {
+      "type": "awesome-section",
+      "blocks": {
+        "31862b93-bd92-41ad-b92d-9b6b62740119": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "download for android",
+            "url": "https:\/\/play.google.com\/store\/apps\/details?id=co.shopney.everywhereinternet&hl=en_US&gl=US",
+            "blank": true,
+            "on_click": ""
+          }
+        },
+        "39a5dcf4-2fa5-4c45-82ff-ed2be0420d24": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "download for ios",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379",
+            "blank": true,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "31862b93-bd92-41ad-b92d-9b6b62740119",
+        "39a5dcf4-2fa5-4c45-82ff-ed2be0420d24"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/010203.jpg",
+        "title_tag": "h2",
+        "title": "Download Nomad App",
+        "description": "<p>Download the Nomad App buy Modems and to Activate, Pause, Resume, and Deactivate your plans. <\/p>"
+      }
+    }
+  },
+  "order": [
+    "awesome-first-screen",
+    "ae9e8331-4b49-4ec3-a710-107935d73660",
+    "e7afce41-5ff9-4325-a4ef-e7b1523d9311",
+    "d6c09aeb-e095-45f7-812d-f8d7ec68ea6a",
+    "e5b065e9-263e-42e2-b801-a526f5a7a364",
+    "4b9357d1-64b8-4a09-931d-6747c9eedc57",
+    "f473071c-1490-4b1b-8b85-caf76346a0f2"
+  ]
+}

@@ -1,0 +1,130 @@
+{% assign ss = section.settings %}
+<div class="container">
+  {% if ss.title %}
+    <{{ ss.title_tag }} class="awesome-timeline__title">
+      {{- ss.title -}}
+    </{{ ss.title_tag }}>
+  {% endif %}
+
+  <div class="row v-gutters">
+    <div class="col-lg-11 col-12 offset-lg-1">
+      {% for block in section.blocks %}
+        <div class="timeline-item">
+          {% assign bs = block.settings %}
+          <div class="timeline-item__line" style="background-color: {{ bs.color }}">
+            <div class="timeline-item__marker" style="background-color: {{ bs.color }}"></div>
+            {% if bs.description != blank %}
+              <div class="timeline-item__qmark">
+                <div class="qmark" style="background-color: {{ bs.color }}">?</div>
+                <div class="timeline-item__description">{{ bs.description }}</div>
+              </div>
+            {% endif %}
+          </div>
+          <div class="timeline-item__image">
+            <div class="ratio">
+              {{ bs.image | image_url: width: 1024 | image_tag: loading: 'lazy' }}
+            </div>
+          </div>
+          <div class="timeline-item__content">
+            <div class="timeline-item__title">{{ bs.title }}</div>
+            <div class="timeline-item__excerpt">{{ bs.excerpt }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Awesome Timeline",
+  "tag": "div",
+  "class": "awesome-timeline",
+  "presets": [
+    {
+      "name": "Awesome Timeline"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "title_tag",
+      "label": "Title TAG",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        },
+        {
+          "value": "p",
+          "label": "p"
+        },
+        {
+          "value": "span",
+          "label": "span"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "timeline-item",
+      "name": "Timeline Item",
+      "settings": [
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color",
+          "default": "#00A77F"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "excerpt",
+          "label": "Excerpt Text"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

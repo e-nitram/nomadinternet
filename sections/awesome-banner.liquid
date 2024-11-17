@@ -1,0 +1,51 @@
+{% assign ss = section.settings %}
+
+<div class="awesome-banner">
+	{% if ss.url %}
+		<a href="{{ ss.url }}"{% if ss.target_blank %} target="_blank"{% endif %}{% if ss.nofollow %} rel="nofollow"{% endif %} class="awesome-banner__link">
+	{% endif %}
+	{% if ss.image %}
+		<div class="awesome-banner__image">
+			{{ ss.image | image_url: width: 1200 | image_tag }}
+		</div>
+	{% endif %}
+	{% if ss.url %}</a>{% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Awesome Banner",
+  "tag": "div",
+  "class": "container",
+  "presets": [
+    {
+      "name": "Awesome Banner"
+    }
+	],
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Image"
+		},
+		{
+			"type": "url",
+			"id": "url",
+			"label": "URL"
+		},
+		{
+			"type": "checkbox",
+			"id": "target_blank",
+			"label": "Open in new tab",
+			"default": false
+		},
+		{
+			"type": "checkbox",
+			"id": "nofollow",
+			"label": "Nofollow",
+			"default": false,
+			"info": "rel=nofollow"
+		}
+	]
+}
+{% endschema %}

@@ -1,0 +1,214 @@
+{% assign blocks_count = section.blocks | size %}
+{% assign ss = section.settings %}
+
+<div class="wizard-memberships__heading hidden">
+  <div class="container">
+    {% if ss.title %}
+      <h2 class="wizard-memberships__title">{{ ss.title }}</h2>
+    {% endif %}
+    {% if ss.description %}
+      <div class="wizard-memberships__description">
+        <p>{{ ss.description }}</p>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<div class="wizard-memberships__loading sr-only">
+  <img src="  {{ 'loading.gif' | asset_url }}" alt="Loading ..." loading="lazy" width="300" height="30">
+</div>
+
+<div class="container">
+  {% if blocks_count > 0 %}
+    {% for membership in section.blocks %}
+      {% assign ms = membership.settings %}
+      <div class="here wizard-membership sr-only" id="{{ ms.title | handleize }}">
+        {% if ms.image %}
+          <div
+            class="wizard-membership__image"
+            style="background-image: url({{ ms.image | image_url: width: 1024 }})"
+          >
+            {{ ms.image | image_url: width: 1024 | image_tag: class: 'sr-only' }}
+          </div>
+        {% endif %}
+        <div class="wizard-membership__body">
+          {% if ms.display_name %}
+            <h3 class="wizard-membership__title">{{ ms.display_name }}</h3>
+          {% endif %}
+          {% if ms.description %}
+            <div
+              class="wizard-membership__description"
+              data-max-heigh="{{ ms.description_height }}"
+              style="max-height: {{ ms.description_height }}px"
+            >
+              {{ ms.description }}
+            </div>
+          {% endif %}
+          <div class="wizard-membership__footer">
+            {% assign total_compare = 0 %}
+             <input type="hidden" class="test_aaa1" value="{{  ms.title }}">
+            {% for product in ms.products %}
+             <input type="hidden" class="test_aaa2" value="{{ product.title }}">
+
+              {% unless product.tags contains 'bp-exclude-in-price-calc' %}
+                {% assign total_compare = total_compare | plus: product.compare_at_price %}
+              {% endunless %}
+            {% endfor %}
+
+            <div>
+              <strong>{{ total_compare | money | replace: '.00', '' }} Retail Membership Fee</strong>
+            </div>
+
+            {% assign total_price = 0 %}
+            {% for product in ms.products %}
+              {% unless product.tags contains 'bp-exclude-in-price-calc' %}
+                {% assign total_price = total_price | plus: product.price %}
+              {% endunless %}
+            {% endfor %}
+
+            <div>
+              <span style="color: #96be25; font-size: 0.9em;">
+                -{{ total_compare | minus: total_price | money | replace: '.00', '' }} “Expires in
+                <span class="expired">0</span>”
+              </span>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              Today's Membership Fee: <em>{{ total_price | money | replace: '.00', '' }} </em>
+            </div>
+
+            {% if ms.alternate != blank %}
+              {{ ms.alternate }}
+            {% elsif ms.products.count > 0 %}
+              <a
+                data-href="/cart/{% for product in ms.products %}{% if forloop.index > 1 %},{% endif -%}{{- product.variants.first.id }}:1{% endfor %}"
+                class="btn outline wizard-membership__btn"
+              >
+                <span>Order Now</span>
+              </a>
+            {% endif %}
+            <div class="test_xxxx" data-test="{{ ms.products.product.id }}">
+
+            </div>  
+
+<img class="secure_checkout" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/photo_6151934262723590035_x.jpg?v=1689078240" />
+            
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  {% endif %}
+</div>
+
+<div class="see-more-options">
+  <div class="see-more-options__text">Scroll down to see more options</div>
+  <div class="see-more-options__icon">{% render 'mouse.svg' %}</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="{{ 'jquery.cookie.js' | asset_url }}"></script>
+<script>
+var $j = jQuery.noConflict(); 
+$j( ".wizard-membership__btn" ).click(function( event ) {
+  event.preventDefault();
+  var cart_link = $j(this).attr('data-href');
+    var discount_code = $j.cookie("discount_code");
+if (discount_code){  
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?discount_code="+discount_code+"&items=https://nomadinternet.com"+cart_link+"&jsonize=1";
+}
+else{
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?items=https://nomadinternet.com"+cart_link+"&jsonize=1";
+}
+  $j.ajax({
+    type: "GET",
+    url: url,
+    dataType: "json",
+    success: function(response){
+location.href = response[0];
+//console.log(response[0]);
+      
+  /*    var str = response;
+var new_str = str.split('=>');
+if(new_str[1]){
+	new_str = new_str[1].split('</pre>');
+	if(new_str[0]){
+		var ck_url = new_str[0].trim();
+		location.href = ck_url;
+	}
+}*/
+    }
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "wizard-memberships-screen",
+  "class": "wizard-memberships",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "Wizard Membershims"
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "membership",
+      "name": "Membership",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "display_name",
+          "label": "Display Name"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Membership ID"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "range",
+          "id": "description_height",
+          "label": "Description height",
+          "default": 500,
+          "max": 500,
+          "min": 0,
+          "step": 10
+        },
+        {
+          "type": "html",
+          "id": "alternate",
+          "label": "HTML",
+          "info": "Fill this field instead of \"Order Now\" button."
+        },
+        {
+          "type": "product_list",
+          "id": "products",
+          "label": "Products for checkout"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

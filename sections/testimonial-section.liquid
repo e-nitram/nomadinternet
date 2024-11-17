@@ -1,0 +1,166 @@
+<div class="testimonial-section">
+  <div class="container-wrapper">
+    <div class="new-row">
+      <div class="col-6">
+        <div class="testimonal-wrapper">
+            <h2 class="heading">{{ section.settings.heading }}</h2>
+             <div class="swiper main-testimonial-slider" id="testimonial-slider-{{ section.id }}">
+              <div class="testimonial-slider swiper-wrapper">
+               {% if section.blocks.size > 0 %}
+                {% for block in section.blocks %}
+                  <div class="testimonial-item swiper-slide">
+                    <div class="testimonial-item-inner">
+                      <div class="star">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="141" height="25" viewBox="0 0 141 25" fill="none">
+                        <path d="M12.8461 0.387207L15.5402 8.679H24.2587L17.2053 13.8036L19.8995 22.0954L12.8461 16.9708L5.79265 22.0954L8.48681 13.8036L1.43339 8.679H10.1519L12.8461 0.387207Z" fill="#FF9900"/>
+                        <path d="M41.8461 0.387207L44.5402 8.679H53.2587L46.2053 13.8036L48.8995 22.0954L41.8461 16.9708L34.7926 22.0954L37.4868 13.8036L30.4334 8.679H39.1519L41.8461 0.387207Z" fill="#FF9900"/>
+                        <path d="M70.8461 0.387207L73.5402 8.679H82.2587L75.2053 13.8036L77.8995 22.0954L70.8461 16.9708L63.7926 22.0954L66.4868 13.8036L59.4334 8.679H68.1519L70.8461 0.387207Z" fill="#FF9900"/>
+                        <path d="M99.8461 0.387207L102.54 8.679H111.259L104.205 13.8036L106.899 22.0954L99.8461 16.9708L92.7926 22.0954L95.4868 13.8036L88.4334 8.679H97.1519L99.8461 0.387207Z" fill="#FF9900"/>
+                        <path d="M128.846 0.387207L131.54 8.679H140.259L133.205 13.8036L135.899 22.0954L128.846 16.9708L121.793 22.0954L124.487 13.8036L117.433 8.679H126.152L128.846 0.387207Z" fill="#FF9900"/>
+                        </svg>
+                      </div>
+                      <div class="testimonail-content">
+                        {{ block.settings.testimonial_description }}
+                      </div>
+                      <div class="testimonial-name">
+                        {{ block.settings.testimonial_name }}
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              {% else %}
+                {% for i in (1..2) %}
+                  <div class="testimonial-item swiper-slide">
+                     <div class="testimonial-item-inner">
+                      <div class="star">
+                      </div>
+                      <div class="testimonail-content">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry....
+                      </div>
+                      <div class="testimonial-name">
+                        Lorem Ipsum 
+                      </div>
+                     </div>
+                  </div>
+                {% endfor %}
+              {% endif %}
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 pr-0">
+      <div class="main-banner-image">
+        {% if section.settings.image %}
+          <img class="banner-image"
+               srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
+                       {%- if section.settings.image.width >= 550 -%}{{ section.settings.image | img_url: '550x' }} 550w,{%- endif -%}
+                       {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+                       {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}"
+               src="{{ section.settings.image | img_url: '525x' }}"
+               loading="lazy"
+               alt="{{ section.settings.image.alt | escape }}"
+               >
+          {% else %}
+          	{{ 'image' | placeholder_svg_tag: 'banner-image' }}
+          {% endif %}
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function relatedproductSlider() {
+var swiper = new Swiper('#testimonial-slider-{{ section.id }}', {
+  pagination: {
+    el: ".main-testimonial-slider .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 2,
+  spaceBetween: 30,
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    600: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 1
+    },
+    991: {
+      slidesPerView: 2
+    }
+  }
+});
+}
+
+( function () {
+  relatedproductSlider();
+})();
+
+document.addEventListener('shopify:section:load', function (event) {
+  if (event.detail.sectionId === '{{section.id}}') {
+    setTimeout(function () {
+      relatedproductSlider();
+    }, 500);
+  }
+});
+</script>
+
+{% schema %}
+  {
+    "name": "Testimonial Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Testimonial Section"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ],
+    "blocks": [
+     {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+        {
+            "type": "text",
+            "id": "testimonial_description",
+            "label": "Description",
+            "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry...."
+        },
+        {
+            "type": "text",
+            "id": "testimonial_name",
+            "label": "Testimonial Name",
+            "default": "Ryan T"
+        }
+      ]
+    }
+   ],
+   "presets": [
+    {
+        "name": "Testimonial Section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

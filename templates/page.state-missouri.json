@@ -1,0 +1,500 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/TOP_Bobbi_Bash_Realty-MISSOURI-state.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in Missouri"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Enjoy the Convenience of Internet Wireless Providers in Missouri. Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in Missouri?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/l0ntE-PKUlY?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The company with the best internet options in Missouri has been identified.",
+        "description": "Find your city in Missouri",
+        "content": "Boonville,\nBranson,\nCape Girardeau,\nCarthage,\nChillicothe,\nClayton,\nColumbia,\nExcelsior Springs,\nFerguson,\nFlorissant,\nFulton,\nHannibal,\nIndependence,\nJefferson City,\nJoplin,\nKansas City,\nKirksville,\nLamar,\nLebanon,\nLexington,\nMaryville,\nMexico,\nMonett,\nNeosho,\nNew Madrid,\nRolla,\nSaint Charles,\nSaint Joseph,\nSaint Louis,\nSainte Genevieve,\nSalem,\nSedalia,\nSpringfield,\nWarrensburg,\nWest Plains"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BLOG_Dogwood_Canyon_Nature_Park-MISSOURI-state.jpg",
+        "title_tag": "h2",
+        "title": "Navigating Remote Work in Missouri's Rural Communities",
+        "description": "<p>Working remotely doesn't have to be a challenge in rural communities - as <a href=\"\/pages\/states\" title=\"States\">Missouri<\/a> has a few reliable wireless internet providers that can help you stay connected. Here are some tips on navigating remote work several areas around the state:<\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p>Start off in St. Louis and explore its world-famous Arch – plus with multiple coworking spaces located around town and Nomad Internet offering unbeatable coverage across rural areas – staying connected should never be an issue!Continue your journey further west to Kansas City - known for its delicious barbeque and unique shopping experiences, not to mention an array of museums, art galleries - plus take advantage of any available coworking spots and make use of any <a href=\"https:\/\/nomadinternet.com\/pages\/wireless-internet\" title=\"high-speed internet services\">high-speed internet services<\/a> offered by  Nomad Internet throughout rural areas ensuring you’ll always remain productive!<\/p>",
+        "text_2": "<p>Finally, venture southeast towards Springfield - boasting some of the best fishing opportunities around town together with multiple coworking spots specifically tailored for digital nomads looking for extra office space away from their usual desk setups. Make sure to take full advantage of the high-speed internet services promised by Nomad Internet throughout these regions as well – making sure you won’t miss a beat when it comes to working remotely in Missouri's rural communities!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/26.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/26.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Elianna_Freeman.jpg",
+            "name": "Elianna Freeman",
+            "text": "I've had the opportunity to experience nomad internet with all three modems – Nomad Air, Nomad Ark and Nomad Raptor. The Nomad Air was great for traveling, as it allowed me to stay connected wherever I went. The Nomad Ark was perfect for my rural area, as it was able to easily access our local infrastructure. And lastly, the Nomad Raptor had plenty of speed and reliability when downloading large files or streaming media. I was also surprised by how easy they were to set up – even a non-tech savvy person like me could get online quickly! All in all, I'm really glad I've been able to use nomad internet; it's made living in a rural area much more bearable.",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Kiara_Cross.jpg",
+            "name": "Kiara Cross",
+            "text": "After moving to a rural area in Missouri to take care of my grandparents, I needed high speed internet but didn't want to sacrifice quality. With Nomad's three modems, I was able to find the perfect fit for our needs. The Nomad Air modem was just what we needed to download big files quickly and reliably. The Ark modem offers more control and flexibility with the connection speeds, and the Raptor is perfect for gaming with friends online. All three devices are reliable and easily accessible, everyone can choose which one suits them best. Our family is happy with the fast, dependable service that Nomad Internet provides!",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Nina_Winter.jpg",
+            "name": "Nina Winter",
+            "text": "I recently moved to a rural area in Missouri to take care of my grandparents. I was worried about having good internet access, as I needed it for my remote work. Fortunately, I stumbled across Nomad Internet and they offered three different modem options - the Nomad Air, Nomad Ark and Nomad Raptor. I chose the Ark since it had more range than the Air and better speeds than the Raptor. The setup was easy and now I get reliable high speed connection no matter where I am. It's been a great way to stay connected while living out in the country, and I can even download big files without any issues!",
+            "link": ""
+          }
+        },
+        "b785e517-269b-4a4d-b931-6ee396bb0ee4": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Celesta_Shepherd.jpg",
+            "name": "Celesta Shepherd",
+            "text": "My experience with Nomad Internet has been great. I live in a rural area and it's been difficult to find good internet options, but Nomad Internet has changed that. They provide super fast speeds that I can access anywhere. The modem is easy to set up and use, and their customer service is always ready to help with any issues. Plus, the best part is that the price for this top-notch service is incredibly affordable! I'm so glad to have found Nomad Internet as my go-to source for reliable and high-speed internet access wherever I go.",
+            "link": ""
+          }
+        },
+        "97dcb87f-1bc9-43e7-a941-9592ce5542ca": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Jayla_Nicholson.jpg",
+            "name": "Jayla Nicholson",
+            "text": "I was in a rural area of Missouri and had the opportunity to try out Nomad Internet. It was amazing - I had access to high speed internet no matter where I went. The modem was lightweight, easy to use, and set up quickly. It worked just as well as my home internet connection! I could browse, stream movies, and chat with friends with ease. In addition, I didn't have to worry about expensive roaming or data fees since Nomad Internet's prices are very reasonable for the amount of coverage you get. Overall it was an incredibly satisfying experience that made me appreciate having internet access everywhere!",
+            "link": ""
+          }
+        },
+        "11fd1598-1d62-4823-9052-d080ff978d21": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Lena_Burns.jpg",
+            "name": "Lena Burns",
+            "text": "I recently had the opportunity to try out Nomad Internet in rural Missouri. After installing the modem, I was able to experience fast and reliable internet access anywhere I went. The setup was easy and hassle-free, allowing me to quickly get connected. This is great for travelers who need access to the web on the go, or those looking for a solid connection in remote areas. With Nomad Internet, I can stay connected no matter where I am, whether it's at home or miles away from civilization!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "b785e517-269b-4a4d-b931-6ee396bb0ee4",
+        "97dcb87f-1bc9-43e7-a941-9592ce5542ca",
+        "11fd1598-1d62-4823-9052-d080ff978d21"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "778b52ff-9c40-47a1-9b8b-6b5f994d2775": {
+          "type": "block",
+          "settings": {
+            "title": "How can I optimize my internet speed in Missouri's rural regions?",
+            "content": "<p>If you live in rural Missouri and are struggling with slow internet speeds, there are a few things you can try to optimize your connection:<\/p><p><strong>Check your internet plan<\/strong><br\/>Make sure you have a plan that suits your needs and is compatible with your rural area. Consider upgrading your plan to a faster speed.<\/p><p><strong>Move your route<\/strong>r<br\/>The location of your router can impact your internet speed. Make sure it's in a central location and away from walls, metal objects, and other devices that could interfere with the signal.<\/p><p><strong>Clear your cache and cookies<\/strong><br\/>Over time, your browser can accumulate data that can slow down your internet. Clearing your cache and cookies can help.<\/p><p><strong>Consider a fixed wireless internet provider<\/strong><br\/>DSL and dial-up internet tend to be slower in rural areas, so switching to a fixed wireless internet provider like Nomad Internet may offer faster speeds. Nomad Internet offers plans with speeds up to 200 Mbps, and a modem that can help boost and stabilize your signal.<\/p><p>By trying these tips and considering Nomad Internet, you can improve your internet speed and enjoy a faster, more reliable connection in rural Missouri.<\/p>"
+          }
+        },
+        "76cc555b-921b-437f-8d01-5dc0cf639bde": {
+          "type": "block",
+          "settings": {
+            "title": "Can I get 5G service with Nomad Internet in Missouri?",
+            "content": "<p>Yes, Nomad Internet offers 5G coverage in Missouri.<br\/><br\/>5G is the latest in mobile network technology, offering speeds up to 100 times faster than 4G LTE. It also reduces latency and provides more reliable connections for streaming, gaming, video conferencing and more.<br\/><br\/>Nomad Internet has modems like Nomad Air and Nomad Cube that use advanced high-power directional antennas to extend cellular networks into rural areas in Missouri. Additionally, they support full 5G sub-6GHz and 4G LTE fallback options so you can enjoy access to a stable connection with optimal coverage despite your location.<br\/><br\/>Not only this, but their tariff plans provide customers with access to unlimited data and premium features at an economical cost. Get ready to experience the future of wireless communications with Nomad Internet’s state of the art 5G network now available in Missouri!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "778b52ff-9c40-47a1-9b8b-6b5f994d2775",
+        "76cc555b-921b-437f-8d01-5dc0cf639bde"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

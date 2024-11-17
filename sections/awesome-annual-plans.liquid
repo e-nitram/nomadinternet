@@ -1,0 +1,65 @@
+{% assign ss = section.settings %}
+
+{% if ss.title %}
+  <header class="collection__heading">
+    <div class="container">
+      <h1 class="collection__title">{{ ss.title }}</h1>
+    </div>
+  </header>
+{% endif %}
+
+<div class="container">
+  <div class="row v-gutters justify-center">
+    {% for product in ss.products %}
+      <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+        {% if product.type == 'Annual 5G Plan' or product.type == 'Annual 4G Plan' %}
+          {% render 'product.annual-plan', product: product, months: 12 %}
+        {% elsif product.type == 'Bi-Annual 5G Plan' or product.type == 'Bi-Annual 4G Plan' %}
+          {% render 'product.annual-plan', product: product, months: 6 %}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% if ss.button_text != blank and ss.button_url != blank %}
+  <div class="awesome-annual-plans__cta">
+    <a href="{{ ss.button_url }}" class="btn outline">{{ ss.button_text }}</a>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Awesome Annual Plans",
+  "class": "awesome-annual-plans",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "Awesome Annual Plans"
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "product_list",
+      "id": "products",
+      "label": "Products",
+      "limit": 12
+    }
+  ]
+}
+{% endschema %}

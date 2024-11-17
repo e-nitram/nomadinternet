@@ -1,0 +1,109 @@
+<div class="text-with-image">
+  <div class="container-wrapper">
+    <div class="new-row">
+      <div class="col-5">
+         <div class="image-wrapper">
+<!--           <div class="right-text">{{ section.settings.right_text11 }}</div> -->
+          <div class="image-section">
+          {% if section.settings.image11 !=blank %}
+            <img class="banner-image"
+                
+                 src="{{ section.settings.image11 | img_url:'master' }}"
+                 >
+            {% else %}
+            	{{ 'image' | placeholder_svg_tag: 'banner-image' }}
+            {% endif %}
+          </div>
+<!--           <div class="left-text">{{ section.settings.left_text11 }}</div> -->
+        </div>
+        
+      </div>
+      <div class="col-5">
+       <h2 class="title">{{ section.settings.title11 }}</h2>
+        <p class="description">{{ section.settings.description11 }}</p>
+<div style="display:flex;">
+<a href="https://play.google.com/store/apps/details?id=co.shopney.everywhereinternet&hl=en_US&gl=US"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/image-icon12.png?v=1670407324"></a>
+     <a href="https://apps.apple.com/us/app/nomad-internet/id6444594379"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/image-icon31.png?v=1670407419"></a></div>
+        
+        {% if section.settings.button_url11 != blank %}
+          <div class="main-button">
+            <a href="{{ section.settings.button_url11 }}">
+              {{ section.settings.button_text11 }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Modem Text With Image new",
+    "settings": [
+      {
+        "type": "html",
+        "id": "title11",
+        "label": "Title",
+        "default": "Join today for the largest and best <span>rural coverage</span> available."
+      },
+      {
+        "type": "image_picker",
+        "id": "image11",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "description11",
+        "label": "Description",
+        "default": "Everyone should be able to connect to the internet, no matter where they live. Fast, reliable internet isn't just nice to have – it's essential.  Get connected today and get access to the important things like working, learning, banking, and more, online."
+      },
+      {
+        "type": "text",
+        "id": "button_text11",
+        "label": "Button Label",
+        "default": "Check Your Location"
+      },
+      {
+        "type": "url",
+        "id": "button_url11",
+        "label": "Button Link"
+      },
+      {
+        "type": "text",
+        "id": "right_text11",
+        "label": "Right Text",
+        "default": "Fast, Reliable Internet"
+      },
+      {
+        "type": "text",
+        "id": "left_text11",
+        "label": "left Text",
+        "default": "Just$99"
+      },
+      {
+        "type": "color",
+        "id": "button_background11",
+        "label": "Button background",
+        "default": "#109D59"
+      },
+      {
+        "type": "color",
+        "id": "button_color11",
+        "label": "Button color",
+        "default": "#FFFFFF"
+      }
+    ],
+    "presets": [
+	  {
+		"name": " text image"
+	  }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

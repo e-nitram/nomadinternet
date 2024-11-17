@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "164412bb-fa01-4ec5-81e5-96e6add28a05": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_208f0f06-fc2f-4d1e-b5de-6f12df8cf0f5.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "164412bb-fa01-4ec5-81e5-96e6add28a05"
+      ],
+      "settings": {
+        "title": "Nomad Trust Program",
+        "description": "<p>Choices are hard. That’s why as a Nomad Internet customer, if you purchase a modem you don’t love, we will help you trade it in until you find the one that meets your needs.<\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "See Plans",
+        "button_url": "shopify:\/\/pages\/plans",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "4f16ad82-d0d0-432a-9c74-7dbfed04b8ff": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>"
+      }
+    },
+    "06e0cab1-f075-42a1-9c8d-af908fad14cd": {
+      "type": "awesome-section",
+      "blocks": {
+        "86037811-e973-4bee-99e6-6fd6f46836a0": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "86037811-e973-4bee-99e6-6fd6f46836a0"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/2_2.jpg",
+        "title_tag": "h2",
+        "title": "Become a Nomad Internet Customer",
+        "description": "<p>Nomad Members are responsible for paying a one-time membership fee, which covers the administration and support of your account. Membership includes equipment lease and support for your Nomad Internet Modem.<\/p><p>You may cancel your subscription with us at any time by simply returning your device and we never charge any cancellation fees! Easy, Simple, Clean!<\/p>"
+      }
+    },
+    "d4f0f4cb-3730-4632-92be-537d896fc772": {
+      "type": "awesome-section",
+      "blocks": {
+        "9b5551d8-f523-4370-8db3-e55f65a72abc": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "9b5551d8-f523-4370-8db3-e55f65a72abc"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/3_cb5a5c4e-7974-4a98-a358-5c2fef3e36f8.jpg",
+        "title_tag": "h2",
+        "title": "Trade in your Nomad Modem every 30 days!",
+        "description": "<p>If you want to upgrade the Nomad Modem you initially choose. Say it does not connect, is slower than expected, or you simply just want a different modem. We have got you covered! The Nomad Trust Program allows you to upgrade your Nomad modem every 30 days!<\/p><p>As a Nomad Customer, we will always give you 100% of your original purchase towards any modem you switch to!<\/p>"
+      }
+    },
+    "be61559d-21ec-4dbf-bc19-0ab222b38a98": {
+      "type": "awesome-section",
+      "blocks": {
+        "bed42e40-9137-4bd7-bc6a-43c8d5adeb79": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "bed42e40-9137-4bd7-bc6a-43c8d5adeb79"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/4_0f30e4d0-ef47-4864-b6e1-472505ddf807.jpg",
+        "title_tag": "h2",
+        "title": "The Nomad Trust Program is included with your membership",
+        "description": "<p>The best part about the Nomad Trade Program is that it is a free benefit to all Nomad Internet Customers. No matter the plan you have with us, you can trade in your Nomad Modem every 30 days!<\/p><p>Once you decide to trade your modem, the process is simple! Simply purchase a new Nomad Modem from our website. Once you receive the new Nomad Modem, head to our returns center and we will send you a return label for you to ship back your old modem to receive a 100% credit towards your new Nomad Modem!<\/p>"
+      }
+    },
+    "24d07d67-f74e-47df-ac5c-22ce61e6e28b": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "c25540cb-dd56-4ecf-97dc-3c9211fb93cc": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "1",
+        "heading_text": "Important information",
+        "text": "<p>Please note that discounted products and products that participate in promotions at the time of your application cannot participate in the Nomad Trust program. If there is a discount on the product or it participates in the promotion, you can make an exchange for it, but then discounts and promotional offers for this product will not be taken into account.<\/p>",
+        "text_2": "",
+        "text_align": "center"
+      }
+    }
+  },
+  "order": [
+    "awesome-first-screen",
+    "4f16ad82-d0d0-432a-9c74-7dbfed04b8ff",
+    "06e0cab1-f075-42a1-9c8d-af908fad14cd",
+    "d4f0f4cb-3730-4632-92be-537d896fc772",
+    "be61559d-21ec-4dbf-bc19-0ab222b38a98",
+    "24d07d67-f74e-47df-ac5c-22ce61e6e28b",
+    "c25540cb-dd56-4ecf-97dc-3c9211fb93cc"
+  ]
+}

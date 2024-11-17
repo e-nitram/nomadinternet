@@ -1,0 +1,126 @@
+<div 
+  class="vending-new-step" 
+  style="
+    --desktop-image: url({{ section.settings.bg_image | img_url: 'master' }});
+    --mobile-image: url({{ section.settings.mobile_bg_image | img_url: 'master' }});
+  "
+>
+  <div class="vending-new-step__wrapper container">
+    <h3 class="title">HOW TO VEND FOR MODEM</h3>
+
+    <div class="list">
+      {% for block in section.blocks %}
+        <div class="item">
+          <div class="item__number{% if forloop.last %} last{% endif %}">
+            <div class="circle">{{ forloop.index0 | plus: 1 }}</div>
+          </div>
+          <div class="item__wrapper">
+            <h3 class="heading">
+              {{ block.settings.heading }}
+              
+              {% if block.settings.icon != blank %}
+                <div class="icon">
+                  <img src="{{ block.settings.icon | img_url: 'master' }}"/>
+                </div>
+              {% endif %}
+            </h3>
+            <div class="content">{{ block.settings.content }}</div>
+  
+            {% if block.settings.show_card_icons %}
+              <div class="card-icons">
+                <h3 class="card-icons__title">{{ block.settings.card_header }}</h3>
+                <div class="card-icons__list">
+                  {% for index in (1..4) %}
+                    {% assign icon_val = 'card_icon' | append: index %}
+                    {% assign card_icon = block.settings[icon_val] %}
+  
+                    {% if card_icon != blank %}
+                      <img src="{{ card_icon | img_url: 'master' }}"/>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Vending machine new step",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label":"Desktop background"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_bg_image",
+      "label":"Mobile background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"   
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "header",
+          "content": "Card settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_card_icons",
+          "label": "Show card icons",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "card_header",
+          "default" :"Card Accepted:",
+          "label":"Card header label"
+        },
+        {
+          "type": "image_picker",
+          "id": "card_icon1",
+          "label": "Card icon 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "card_icon2",
+          "label": "Card icon 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "card_icon3",
+          "label": "Card icon 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "card_icon4",
+          "label": "Card icon 4"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

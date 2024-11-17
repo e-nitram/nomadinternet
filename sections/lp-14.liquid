@@ -1,0 +1,85 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+{% assign ss = section.settings %}
+
+<div class="lp-14">
+	{% if ss.title %}
+		<h2 class="lp-14__title">{{ ss.title }}</h2>
+	{% endif %}
+	{% if section.blocks %}
+		<div class="row v-gutters">
+			{% for block in section.blocks %}
+				<div class="col-lg-3 col-sm-6 col-12">
+					<div class="lp-14__card">
+						<div class="card__image">
+							{% assign img = block.settings.image %}
+							<div class="ratio" style="--ratio: calc(1709 / 1623 * 100%)">
+								{{ img | image_url: width: img.width | image_tag }}
+							</div>
+						</div>
+						<div class="card__content">
+							{% if block.settings.title %}
+								<h3 class="card__title">{{ block.settings.title }}</h3>
+							{% endif %}
+							{% if block.settings.title %}
+								<a href="{{ block.settings.button_url }}" class="btn orange stretch" id="button-{{ block.id }}">{{ block.settings.button_text }}</a>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "lp-14",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 14"
+    }
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		}
+	],
+	"blocks": [
+		{
+			"type": "card",
+			"name": "Card",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Title"
+				},
+				{
+					"type": "text",
+					"id": "button_text",
+					"label": "Button Text"
+				},
+				{
+					"type": "url",
+					"id": "button_url",
+					"label": "Button URL"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

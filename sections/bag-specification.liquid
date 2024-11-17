@@ -1,0 +1,55 @@
+{% assign ss = section.settings %}
+
+<div class="bag-specification">
+	<div class="row align-center">
+		<div class="col-lg-4 col-6 order-1">
+			<div class="bag-specification__image">
+				{% if ss.image_one %}
+					{{ ss.image_one | image_url: width: 800 | image_tag }}
+				{% endif %}
+			</div>
+		</div>
+		<div class="col-lg-4 col-12 order-lg-2 order-3">
+			<div class="bag-specification__text">
+				{{ ss.text }}
+			</div>
+		</div>
+		<div class="col-lg-4 col-6 order-lg-3 order-2">
+			<div class="bag-specification__image">
+				{% if ss.image_two %}
+					{{ ss.image_two | image_url: width: 800 | image_tag }}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "Bag specification",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "Bag specification"
+    }
+  ],
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_one",
+      "label": "Image one"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_two",
+      "label": "Image two"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    }
+  ]
+}
+{% endschema %}

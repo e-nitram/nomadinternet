@@ -1,0 +1,96 @@
+{
+  "sections": {
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "8b1be0fe-cca0-42ae-8149-74fca327624e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand_logo.png",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "8b1be0fe-cca0-42ae-8149-74fca327624e"
+      ],
+      "settings": {
+        "title": "Nomad Internet brand logo",
+        "description": "<p>You can download the logo NOMAD INTERNET and use it on your media resources<\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "Download Logo",
+        "button_url": "https:\/\/drive.google.com\/uc?export=download&confirm=no_antivirus&id=1NWTS2nxdS96DmrC6wBRAHYrFng0eEZzw",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "06e0cab1-f075-42a1-9c8d-af908fad14cd": {
+      "type": "awesome-section",
+      "blocks": {
+        "86037811-e973-4bee-99e6-6fd6f46836a0": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Download Logo Book",
+            "url": "https:\/\/drive.google.com\/uc?export=download&confirm=no_antivirus&id=1yvudgd497ctOpJuVuYDjhYIkIvGPa-Lk",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "86037811-e973-4bee-99e6-6fd6f46836a0"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/LOGO_BOOK_5.jpg",
+        "title_tag": "h2",
+        "title": "LOGO BOOK",
+        "description": "<p>Use the Logo Book for the correct and correct application and placement of the Nomad Internet logo on your resources. If you have not found the necessary materials on this page, write to us and we will definitely help you solve this issue.<\/p>"
+      }
+    },
+    "d4f0f4cb-3730-4632-92be-537d896fc772": {
+      "type": "awesome-section",
+      "blocks": {
+        "9b5551d8-f523-4370-8db3-e55f65a72abc": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Download Brand Guide",
+            "url": "https:\/\/drive.google.com\/uc?export=download&confirm=no_antivirus&id=1yvudgd497ctOpJuVuYDjhYIkIvGPa-Lk",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "9b5551d8-f523-4370-8db3-e55f65a72abc"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BRAND_GUIDE_5.jpg",
+        "title_tag": "h2",
+        "title": "BRAND GUIDE",
+        "description": "<p>Use the Brand Guide for the correct and correct application of the Nomad Internet corporate identity on electronic and printed media. If you have not found the necessary information on this page, write to us and we will definitely help you solve this issue.<\/p>"
+      }
+    },
+    "24d07d67-f74e-47df-ac5c-22ce61e6e28b": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "awesome-first-screen",
+    "06e0cab1-f075-42a1-9c8d-af908fad14cd",
+    "d4f0f4cb-3730-4632-92be-537d896fc772",
+    "24d07d67-f74e-47df-ac5c-22ce61e6e28b"
+  ]
+}

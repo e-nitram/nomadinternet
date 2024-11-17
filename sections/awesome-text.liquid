@@ -1,0 +1,142 @@
+{% assign ss = section.settings %}
+
+<div class="awesome-text-section">
+  {% if ss.heading_text != blank %}
+    <h{{ ss.heading_size }} class="awesome-text-section__title" style="text-align:{{ ss.title_align }}">{{ ss.heading_text }}</h{{ ss.heading_size }}>
+  {% endif %}
+  {% if ss.text != blank %}
+    <div class="awesome-text-section__text" style="text-align:{{ ss.text_align }}">
+			{% if ss.columns == "2" and ss.text_2 != blank %}
+				<div class="row v-gutters" style="--gutter-x: 80px; --gutter-y: 40px">
+					<div class="col-lg-6 col-12">
+						{{ ss.text }}
+					</div>
+					<div class="col-lg-6 col-12">
+						{{ ss.text_2 }}
+					</div>
+				</div>
+			{% else  %}
+				{{ ss.text }}
+			{% endif %}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Awesome Text",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "Awesome Text"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        {
+          "label": "H1",
+          "value": "1"
+        },
+        {
+          "label": "H2",
+          "value": "2"
+        },
+        {
+          "label": "H3",
+          "value": "3"
+        },
+        {
+          "label": "H4",
+          "value": "4"
+        },
+        {
+          "label": "H5",
+          "value": "5"
+        },
+        {
+          "label": "H6",
+          "value": "6"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "select",
+      "id": "title_align",
+      "label": "Title align",
+      "default": "left",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    },
+    {
+        "type": "select",
+        "id": "columns",
+        "label": "Columns count",
+        "options": [
+            {
+                "value": "1",
+                "label": "1"
+            },
+            {
+                "value": "2",
+                "label": "2"
+            }
+        ],
+        "default": "1"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading text"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "text_2",
+			"label": "Content 2",
+			"info": "Works only for two columns"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text align",
+      "default": "left",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

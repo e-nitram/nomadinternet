@@ -1,0 +1,371 @@
+{{ '02plan-plan-v2-desktop.css' | asset_url | stylesheet_tag }}
+{{ '02plan-plan-v2-mobile.css' | asset_url | stylesheet_tag }}
+
+<!--<div class="steps-wrapper js-step-wrapper active" data-step="1">-->
+
+  
+  {% render '02-plan-modem-popup' %}
+  {% render '02-plan-modem-activation' %}
+  {% render '02-plan-info-popup' %}
+  {% render '02-plan-main-info-popup' %}
+  {% render '02-plan-plan-popup' %}
+  {% render '02-plan-flex-read-more-popup' %}
+  {% render '02-plan-payment-popup' %}
+  {% render '02-plan-verify-popup' %}
+  {% render '02-plan-coverage-popup' %}
+  {% render '02-plan-success-popup' %}
+
+<style>
+
+.main-content {
+margin: 0;
+}
+
+</style>
+  <div class="steps">
+    <div class="step-intro">
+    <div class="step-title">
+      <h2>Step 1: Choose Modem</h2>
+      <p>Free and same-day shipping</p>
+    </div>
+    <div class="modem-help-grid">
+      <div class="modem-help-addr help-info">
+        <div class="modem-addr-verify" js-verify-addr-trigger>
+          <div class="help-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16" fill="none">
+              <path d="M6.74967 8.82878C7.8715 8.82878 8.78092 7.91935 8.78092 6.79753C8.78092 5.6757 7.8715 4.76628 6.74967 4.76628C5.62785 4.76628 4.71842 5.6757 4.71842 6.79753C4.71842 7.91935 5.62785 8.82878 6.74967 8.82878Z" stroke="#008061" stroke-width="1.35417" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.74967 14.9225C9.45801 12.2142 12.1663 9.78907 12.1663 6.79753C12.1663 3.80598 9.74122 1.38086 6.74967 1.38086C3.75813 1.38086 1.33301 3.80598 1.33301 6.79753C1.33301 9.78907 4.04134 12.2142 6.74967 14.9225Z" stroke="#008061" stroke-width="1.35417" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Check coverage</p>
+          </div>
+        </div>
+      </div>
+      <div class="help-info modem-help-info">
+        <div class="help-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M11.0783 3.19808C12.6404 4.76018 12.6404 7.29284 11.0783 8.85493M5.4214 8.85493C3.8593 7.29284 3.8593 4.76018 5.4214 3.19808M3.4887 10.6932C0.932229 8.08612 0.947873 3.90026 3.53563 1.3125M12.964 1.3125C15.5518 3.90026 15.5674 8.08612 13.0109 10.6932M8.24982 10.6932V6.02653M3.58315 14.6932H12.9165C13.5377 14.6932 13.8484 14.6932 14.0934 14.5917C14.4201 14.4564 14.6797 14.1968 14.815 13.8701C14.9165 13.6251 14.9165 13.3145 14.9165 12.6932C14.9165 12.0719 14.9165 11.7613 14.815 11.5163C14.6797 11.1896 14.4201 10.93 14.0934 10.7947C13.8484 10.6932 13.5377 10.6932 12.9165 10.6932H3.58316C2.9619 10.6932 2.65127 10.6932 2.40624 10.7947C2.07954 10.93 1.81997 11.1896 1.68465 11.5163C1.58316 11.7613 1.58316 12.0719 1.58316 12.6932C1.58316 13.3145 1.58316 13.6251 1.68465 13.8701C1.81997 14.1968 2.07954 14.4564 2.40624 14.5917C2.65127 14.6932 2.9619 14.6932 3.58315 14.6932Z" stroke="#008061" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>Compare modems</p>
+        </div>
+        <!-- <p class="activation_text"><span>Account set-up fee</span> $29.95</p> -->
+      </div>
+    </div>
+    </div>
+    <div class="main_modem modem-grid modem-grid--main">
+
+      <div class="modem-main top-modem nomad-omen" slide-id="0" data-id="40375589634106" data-wifi="39999494717498" data-service="40323961978938" data-full-price="or $99.95 at full price" data-sale="$99.95" data-original="$199.95" data-month-sale="$15/mo." data-month-original="$30/mo." data-own-sale="$399.95" data-own-original="$599.95" data-refund="Refundable Modem Deposit: $99.95" data-modem="Nomad Omen" data-selling-plan-id="1569423418" data-selling-id="40377556074554" data-own-id="40373368750138">
+{% comment %}<span class="yellow-text omen_desktop_only" style="color: #008061">Preorder</span>{% endcomment %}
+        <div class="img">
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omen_product.png?v=1706932996" alt="nomad omen" width="160px" height="115px"/>
+        </div>
+        <div class="info">
+{% comment %}<span class="yellow-text omen_mobile_only" style="color: #008061">Preorder</span>{% endcomment %}
+          <h2>Nomad Omen</h2>
+          <span>For Home Use</span>
+          <span class="monthly omen_desktop_only">$15/mo. or</span>
+          <span class="monthly omen_mobile_only">$15/mo. or $99.95 <span style="color: #4d5166;text-decoration: line-through;font-size: 14px;margin-left: 2px;">$199.95</span></span>
+          <p class="price price--original omen_desktop_only">
+            $99.95
+            <span>$199.95</span>
+          </p>
+          <p class="price price--free" style="display: none;">
+            Free
+          </p>
+        </div>
+      </div>
+
+      <div class="modem-main top-modem nomad-air" slide-id="1" data-id="40375594418234" data-wifi="39999494750266" data-service="40323962011706" data-full-price="or $199.95 at full price" data-sale="$249.95" data-original="$499.95" data-month-sale="$20/mo." data-month-original="$40/mo." data-own-sale="$499.95" data-own-original="$699.95" data-refund="Refundable Modem Deposit: $99.95" data-modem="Nomad Air" data-selling-plan-id="1569488954" data-selling-id="40377556140090" data-own-id="40373369045050">
+        <span class="yellow-text"> Popular </span>
+        <div class="img">
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Air.webp?v=1705718271&width=500" alt="" style="height: 100px; width: 100%"  alt="nomad air" width="160px" height="115px"/>
+        </div>
+        <div class="info">
+          <h2>Nomad Air</h2>
+          <span>For Home & Travel Use</span>
+          <span class="monthly">$20/mo. or</span>
+          <p class="price">
+            $249.95
+            <span>$499.95</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="modem-main top-modem nomad-raptor" slide-id="2" data-id="40375598448698" data-wifi="39999494750266" data-service="40323962044474" data-full-price="or $499.95 at full price" data-sale="$299.95" data-original="$599.95" data-month-sale="$25/mo." data-month-original="$50/mo." data-own-sale="$599.95" data-own-original="$799.95" data-refund="Refundable Modem Deposit: $99.95" data-modem="Nomad Raptor" data-selling-plan-id="1569521722" data-selling-id="40377556107322" data-own-id="40373369208890">
+        <div class="img">
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Raptor_41a7c070-63cf-4f6f-8b21-37dd6028bf05.webp?v=1705718271&width=500" alt="raptor" width="160px" height="115px"/>
+        </div>
+
+        <div class="info">
+          <h2>Nomad Raptor</h2>
+          <span class="description">For Gaming & Buisness</span>
+          <span class="monthly">$25/mo. or</span>
+          <p class="price">
+            $299.95
+            <span>$599.95</span>
+          </p>
+        </div>
+        {% comment %}
+        <div class="info mobile_raptor_info">
+          <span class="description">Our Fastest Modem</span>
+          <h2>Nomad Raptor</h2>
+          <span class="monthly">$25/mo. or $299.95 <span>$599.95</span></span>
+        </div>
+        {% endcomment %}
+        {% comment %}
+        <div class="img">
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/raptor_sales.webp?v=1713387095&width=500" alt="raptor" width="160px" height="115px"/>
+        </div>
+
+        <div class="info">
+          <div class="frameraptor">
+
+            <div class="text-wrapper">Hurry, Limited Stock Available</div>
+          </div>
+          <span class="frameraptor2">Our Fastest Modem Ever</span>
+          <h2>The Nomad Raptor</h2>
+          {% comment %}<span class="description">For Business & Gaming</span>{% endcomment %}
+          <p class="monthly"><span>was $699.95,</span> Now Just $25/mo with no contracts!</p>
+          {% comment %}<p class="price">
+            $299.95
+            <span>$599.95</span>
+          </p>{% endcomment %}
+        </div>
+        {% endcomment %}
+      </div>
+
+    </div>
+  </div>
+
+  <p class="activation_text" id="div1">{% comment %}<span>Account set-up fee</span> $29.95{% endcomment %}</p>
+
+<!--<div class="steps-wrapper js-step-wrapper" data-step="2">-->
+  <div class="steps" id="hrer">
+  <div class="step-title">
+    <h2>Step 2: Modem Payment Options</h2>
+    <p>Find your perfect fit - we have a package for every need and budget.</p>
+  </div>
+
+  <div class="steps-list">
+    <div class="steps-item payment-type" js-payment-type data-type="subscribe">
+      <span class="icon icon-subscribe">
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.11218 5.30088H1.88172C1.50646 5.30088 1.2019 4.99632 1.2019 4.62106C1.2019 4.24581 1.50646 3.94125 1.88172 3.94125H3.92117C4.29643 3.94125 4.60099 4.24581 4.60099 4.62106V6.66052C4.60099 7.03578 4.29643 7.34033 3.92117 7.34033C3.54592 7.34033 3.24136 7.03578 3.24136 6.66052V6.06704C2.80831 6.84747 2.56154 7.74483 2.56154 8.69997C2.56154 11.7014 4.99869 14.1385 8.00008 14.1385C8.41545 14.1385 8.81994 14.0916 9.2088 14.0032C9.57522 13.9203 9.9396 14.1501 10.0225 14.5158C10.1055 14.8816 9.87638 15.2459 9.51063 15.3296C9.02457 15.4397 8.51878 15.4981 8.00008 15.4981C4.24817 15.4981 1.2019 12.4519 1.2019 8.69997C1.2019 7.46202 1.53366 6.30089 2.11218 5.30088ZM12.7588 11.3329C13.1918 10.5525 13.4386 9.65511 13.4386 8.69997C13.4386 5.69858 11.0015 3.26143 8.00008 3.26143C7.60715 3.26143 7.22373 3.3029 6.85459 3.38244C6.48749 3.4613 6.12582 3.22744 6.04696 2.86034C5.96811 2.49392 6.20196 2.13157 6.56906 2.05339C7.03066 1.95414 7.50925 1.90179 8.00008 1.90179C11.752 1.90179 14.7983 4.94806 14.7983 8.69997C14.7983 9.93792 14.4665 11.099 13.888 12.0991H14.1184C14.4937 12.0991 14.7983 12.4036 14.7983 12.7789C14.7983 13.1541 14.4937 13.4587 14.1184 13.4587H12.079C11.7037 13.4587 11.3992 13.1541 11.3992 12.7789V10.7394C11.3992 10.3642 11.7037 10.0596 12.079 10.0596C12.4542 10.0596 12.7588 10.3642 12.7588 10.7394V11.3329ZM7.32026 6.01537V5.30088C7.32026 4.92562 7.62482 4.62106 8.00008 4.62106C8.37534 4.62106 8.6799 4.92562 8.6799 5.30088V5.9807H9.35971C9.73497 5.9807 10.0395 6.28526 10.0395 6.66052C10.0395 7.03578 9.73497 7.34033 9.35971 7.34033H7.66017C7.56976 7.34033 7.48342 7.37637 7.41952 7.43959C7.35629 7.50349 7.32026 7.58983 7.32026 7.68024C7.32026 7.77066 7.35629 7.857 7.41952 7.9209C7.48342 7.98412 7.56976 8.02015 7.66017 8.02015H8.33999C8.79071 8.02015 9.22307 8.19894 9.54191 8.51778C9.86074 8.83661 10.0395 9.26898 10.0395 9.7197C10.0395 10.1704 9.86074 10.6028 9.54191 10.9216C9.30465 11.1589 9.00417 11.3186 8.6799 11.3846V12.0991C8.6799 12.4743 8.37534 12.7789 8.00008 12.7789C7.62482 12.7789 7.32026 12.4743 7.32026 12.0991V11.4192H6.64044C6.26519 11.4192 5.96063 11.1147 5.96063 10.7394C5.96063 10.3642 6.26519 10.0596 6.64044 10.0596H8.33999C8.4304 10.0596 8.51674 10.0236 8.58064 9.96035C8.64387 9.89645 8.6799 9.81011 8.6799 9.7197C8.6799 9.62928 8.64387 9.54294 8.58064 9.47904C8.51674 9.41582 8.4304 9.37979 8.33999 9.37979C8.11769 9.37979 7.88247 9.37979 7.66017 9.37979C7.20945 9.37979 6.77709 9.201 6.45825 8.88216C6.13942 8.56333 5.96063 8.13096 5.96063 7.68024C5.96063 7.22952 6.13942 6.79716 6.45825 6.47833C6.69551 6.24107 6.99599 6.08131 7.32026 6.01537Z" fill="white"/>
+        </svg>
+        Flex Pay - Tailored Monthly Rental Plans
+      </span>
+
+            <div class="frame16188 content offer_text_raptor" style="display: none;">
+                <svg class="sale" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <g clip-path="url(#clip0_13209_81916)">
+                  <path d="M5.99967 6.00016H6.00634M9.99967 10.0002H10.0063M10.6663 5.3335L5.33301 10.6668M4.88885 2.54596C5.42474 2.5032 5.93348 2.29247 6.34265 1.94378C7.29749 1.13007 8.70186 1.13007 9.6567 1.94378C10.0659 2.29247 10.5746 2.5032 11.1105 2.54596C12.361 2.64575 13.3541 3.63879 13.4539 4.88934C13.4966 5.42523 13.7074 5.93397 14.0561 6.34314C14.8698 7.29798 14.8698 8.70235 14.0561 9.65718C13.7074 10.0664 13.4966 10.5751 13.4539 11.111C13.3541 12.3615 12.361 13.3546 11.1105 13.4544C10.5746 13.4971 10.0659 13.7079 9.6567 14.0566C8.70186 14.8703 7.29749 14.8703 6.34265 14.0566C5.93348 13.7079 5.42474 13.4971 4.88885 13.4544C3.6383 13.3546 2.64527 12.3615 2.54547 11.111C2.50271 10.5751 2.29198 10.0664 1.94329 9.65718C1.12958 8.70235 1.12958 7.29798 1.94329 6.34314C2.29198 5.93397 2.50271 5.42523 2.54547 4.88934C2.64527 3.63879 3.6383 2.64575 4.88885 2.54596ZM6.33301 6.00016C6.33301 6.18426 6.18377 6.3335 5.99967 6.3335C5.81558 6.3335 5.66634 6.18426 5.66634 6.00016C5.66634 5.81607 5.81558 5.66683 5.99967 5.66683C6.18377 5.66683 6.33301 5.81607 6.33301 6.00016ZM10.333 10.0002C10.333 10.1843 10.1838 10.3335 9.99967 10.3335C9.81558 10.3335 9.66634 10.1843 9.66634 10.0002C9.66634 9.81607 9.81558 9.66683 9.99967 9.66683C10.1838 9.66683 10.333 9.81607 10.333 10.0002Z" stroke="#D23131" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_13209_81916">
+                    <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="text-wrapper">New customer offer</div>
+          </div>
+
+
+      <div class="payment-type__prices">
+        <p class="price">
+          $15/mo.<span> $30/mo</span>
+        </p>
+
+        <span class="refundable_price" style="">Refundable Modem Deposit: $99.95</span>
+
+      </div>
+
+
+      <span class="content flex-real-id">Internet on your terms! Nomad Flex Pay makes modem renting easy and flexible - perfect for when you're not sure how long you'll need it. <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Real_ID.png?v=1707145319" class="real-id" alt="real-id" style="width: 70px;"/></span>
+            {% comment %}
+        <div class="payment-icons">
+        <span class="payment-paytomorrow payment-icon">
+          {% render 'icon-list', icon: 'paytomorrow' %}
+        </span>
+        <span class="payment-affirm payment-icon">
+          {% render 'icon-list', icon: 'affirm' %}
+        </span>
+        <span class="payment-klarna payment-icon">
+          {% render 'icon-list', icon: 'klarna' %}
+        </span>
+        <span class="payment-afterpay payment-icon">
+          {% render 'icon-list', icon: 'afterpay' %}
+        </span>
+        </div>
+        {% endcomment %}
+
+      <div class="subscribe-type" style="display: flex; justify-content: space-between; flex-direction: column;">
+      </div>
+    </div>
+
+    <div class="steps-item payment-type" js-payment-type data-type="onetime">
+      <span class="icon">
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.73393 3.3666C7.57562 2.54181 8.72838 2.03326 9.99992 2.03326C12.5772 2.03326 14.6666 4.1226 14.6666 6.69993C14.6666 7.97149 14.158 9.12426 13.3332 9.96596M10.6666 10.6999C10.6666 13.2773 8.57725 15.3666 5.99992 15.3666C3.42259 15.3666 1.33325 13.2773 1.33325 10.6999C1.33325 8.1226 3.42259 6.03326 5.99992 6.03326C8.57725 6.03326 10.6666 8.1226 10.6666 10.6999Z" stroke="white" stroke-width="1.05858" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        One-Payment: No Monthly Modem Rental Fees
+      </span>
+
+      <div class="payment-type__prices">
+        <p class="price">
+          $199.95<span> $399.95</span>
+        </p>
+      </div>
+
+      <span class="content">Save forever with a small one-time fee covers your modem rental for as long as you want service.</span>
+
+        {% comment %}
+        <div class="payment-icons">
+        <span class="payment-apple payment-icon">
+          {% render 'icon-list', icon: 'applepay' %}
+        </span>
+        <span class="payment-google payment-icon">
+          {% render 'icon-list', icon: 'googlepay' %}
+        </span>
+        <span class="payment-master payment-icon">
+          {% render 'icon-list', icon: 'mastercard' %}
+        </span>
+        <span class="payment-visa payment-icon">
+          {% render 'icon-list', icon: 'visa' %}
+        </span>
+        <span class="payment-amex payment-icon">
+          {% render 'icon-list', icon: 'amex' %}
+        </span>
+      </div>
+  {% endcomment %}
+
+    </div>
+  </div>
+  </div>
+
+  <div class="help-info payment-help-info">
+  <div class="help-text">
+    <p>Need help choosing a payment option?</p>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <g clip-path="url(#clip0_4581_18444)">
+        <path d="M7.99821 5.2596L7.99821 7.72282M7.99821 10.186L7.99205 10.186M1.84017 7.72282C1.84017 4.32183 4.59722 1.56478 7.99821 1.56478C11.3992 1.56478 14.1562 4.32183 14.1562 7.72282C14.1562 11.1238 11.3992 13.8809 7.99821 13.8809C4.59722 13.8809 1.84017 11.1238 1.84017 7.72282Z" stroke="#525252" stroke-width="1.23161" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_4581_18444">
+          <rect width="14.7793" height="14.7793" fill="white" transform="translate(15.3887 15.1133) rotate(180)"/>
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+  </div>
+
+  <div class="third_payment_option">
+  <div class="frame0055">
+    <div class="div-wrapper"><p class="text-wrapper text-toggle">Want to own your own modem?</p></div>
+    <label class="switch">
+      <input type="checkbox" id="toggleCheckbox" autocomplete="off">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <div class="master steps-item payment-type disabled" js-payment-type data-type="own" style="display:none;">
+    <div class="contract">
+      <svg class="coins-hand" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+    <g clip-path="url(#clip0_13034_432)">
+      <path d="M9.01934 5.56807C8.63772 5.84013 8.17072 6.00016 7.66634 6.00016C6.37768 6.00016 5.33301 4.95549 5.33301 3.66683C5.33301 2.37816 6.37768 1.3335 7.66634 1.3335C8.50167 1.3335 9.23447 1.77244 9.64668 2.43226M3.99967 13.3916H5.73987C5.96676 13.3916 6.19226 13.4186 6.41222 13.4726L8.25094 13.9194C8.6499 14.0166 9.06553 14.0261 9.46866 13.9478L11.5017 13.5522C12.0387 13.4476 12.5327 13.1905 12.9199 12.8138L14.3583 11.4146C14.769 11.0157 14.769 10.3685 14.3583 9.96887C13.9884 9.60912 13.4028 9.56862 12.9844 9.8737L11.3081 11.0967C11.068 11.2722 10.7759 11.3667 10.4754 11.3667H8.85667L9.88705 11.3667C10.4678 11.3667 10.9382 10.909 10.9382 10.3441V10.1396C10.9382 9.6705 10.6101 9.26147 10.1424 9.14808L8.55207 8.76132C8.29326 8.69855 8.02821 8.66683 7.76177 8.66683C7.11856 8.66683 5.95427 9.19937 5.95427 9.19937L3.99967 10.0168M13.333 4.3335C13.333 5.62216 12.2883 6.66683 10.9997 6.66683C9.71101 6.66683 8.66634 5.62216 8.66634 4.3335C8.66634 3.04483 9.71101 2.00016 10.9997 2.00016C12.2883 2.00016 13.333 3.04483 13.333 4.3335ZM1.33301 9.7335L1.33301 13.6002C1.33301 13.9735 1.33301 14.1602 1.40567 14.3028C1.46959 14.4283 1.57157 14.5303 1.69701 14.5942C1.83962 14.6668 2.02631 14.6668 2.39967 14.6668H2.93301C3.30638 14.6668 3.49306 14.6668 3.63567 14.5942C3.76111 14.5303 3.8631 14.4283 3.92701 14.3028C3.99967 14.1602 3.99967 13.9735 3.99967 13.6002V9.7335C3.99967 9.36013 3.99967 9.17344 3.92701 9.03084C3.8631 8.90539 3.76111 8.80341 3.63567 8.73949C3.49306 8.66683 3.30638 8.66683 2.93301 8.66683L2.39967 8.66683C2.02631 8.66683 1.83962 8.66683 1.69701 8.73949C1.57157 8.80341 1.46959 8.90539 1.40567 9.03084C1.33301 9.17344 1.33301 9.36013 1.33301 9.7335Z" stroke="white" stroke-width="1.06" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_13034_432">
+        <rect width="16" height="16" fill="white"/>
+      </clipPath>
+    </defs>
+  </svg>
+      <div class="one-time-equipment">Own Your Own Modem</div>
+    </div>
+    <div class="frame">
+      <div class="div own_price">
+        <p class="price">
+        $399.95
+        <span>$599.95</span>
+      </p>
+      </div>
+    </div>
+    <div class="div-wrapper">
+      <p class="p">
+        Looking to use more than one provider or travel internationally? Buy your modem so you can switch services
+        anytime you want—plus, there’s nothing to send back!
+      </p>
+    </div>
+  </div>
+  </div>
+
+
+  <p class="activation_text" id="div2">{% comment %}<span>One-time activation fee</span> $29.95{% endcomment %}</p>
+
+<!--<div class="steps-wrapper js-step-wrapper" data-step="2">-->
+  <div class="unlimited-plan">
+    <div class="plan-title">
+      <h2>Step 3: Preview Internet Service Plans</h2>
+       <p style="color: #202021">Preview our monthly internet plans now and choose your plan at your convenience!</p>
+
+        <!--  <span>
+            <p style="margin-bottom:5px;margin-top: 15px;">Once your modem arrives, activate your service swiftly using the <a href="https://onelink.to/835j9q" target="_blank" style="text-decoration: underline;color: #008061;">Nomad Mobile App</a> in only 60 seconds.</p>
+          </span> -->
+
+    </div>
+   <div class="slider-main-plan desktop-hide" style="display: none;">
+    <div class="slide">
+      <div class="img">
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/plan_card-1.png?v=1697830476" alt="plan1" width="540px" height="430px" loading="lazy"/>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="img">
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/plan_card.png?v=1697830476" alt="plan2" width="540px" height="430px" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+   <p style="text-align:center;margin-top: 25px; font-size: 16px; font-weight: 600; color: #202021; margin-bottom: 12px;">No Contract, No Credit Check</p>
+
+    <div class="modem-grid">
+      <div class="modem-main plan-main mobile-plan" slide-id="0" data-price="$99.95" data-name="Unlimited Plan">
+        <div class="info">
+          <h2>Nomad Unlimited Plan <br /><span style="color: #000;font-size:14px;font-weight:bold;">$99.95/Mo <s style="color: #4D5166;">$129.95</s></span></h2>
+          <span>(billed on activation)</span>
+          <p>
+            Download up to 100mbps, 1080 HD video streaming, good gaming
+            latency
+          </p>
+        </div>
+      </div>
+      <div class="modem-main plan-main mobile-plan" slide-id="1" data-price="$149.95" data-name="Unlimited Ultra Plan">
+        <span class="yellow-text"> Popular </span>
+
+        <div class="info">
+          <h2>Nomad Unlimited Ultra Plan <br /><span style="color: #000;font-size:14px;font-weight:bold;">$149.95/Mo <s style="color: #4D5166;">$179.95</s></span></h2>
+          <span>(billed on activation)</span>
+          <p>
+            Download up to 200mbps, 4K HD video streaming, Excellent gaming
+            latency
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+   <!-- <p style="margin-bottom: 10px;margin-top: 30px;text-align: center;">No Upfront Charge for Data Plan</p>-->
+
+  <div class="help-info plan-help-info" style="margin-top:15px;">
+    <div class="help-text">
+      <p>Need help choosing a plan?</p>
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <g clip-path="url(#clip0_4581_18444)">
+            <path d="M7.99821 5.2596L7.99821 7.72282M7.99821 10.186L7.99205 10.186M1.84017 7.72282C1.84017 4.32183 4.59722 1.56478 7.99821 1.56478C11.3992 1.56478 14.1562 4.32183 14.1562 7.72282C14.1562 11.1238 11.3992 13.8809 7.99821 13.8809C4.59722 13.8809 1.84017 11.1238 1.84017 7.72282Z" stroke="#525252" stroke-width="1.23161" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_4581_18444">
+              <rect width="14.7793" height="14.7793" fill="white" transform="translate(15.3887 15.1133) rotate(180)"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </div>

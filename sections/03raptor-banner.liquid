@@ -1,0 +1,96 @@
+{% liquid
+  assign desktop_bg = section.settings.image
+  assign mobile_bg = section.settings.mobile_image | default: desktop_bg  
+%}
+
+{{ '03raptor-banner.css' | asset_url | stylesheet_tag }}
+<div 
+  class="raptor-banner"
+  style="
+    --bg-image: url({{ desktop_bg | img_url: 'master' }});
+    --bg-mobile-image: url({{ mobile_bg | img_url: 'master' }});
+  "
+>
+  <div class="container">
+    {% if section.settings.sub_heading != blank %}
+      <span class="sub-heading" style="color: {{ section.settings.sub_heading_color }};">{{ section.settings.sub_heading }}</span>
+    {% endif %}
+
+    {% if section.settings.heading != blank %}
+      <h3 class="heading" style="color: {{ section.settings.heading_color }};">{{ section.settings.heading }}</h3>
+    {% endif %}
+
+    {% if section.settings.content != blank %}
+      <div class="content" style="color: {{ section.settings.content_color }};">{{ section.settings.content }}</div>
+    {% endif %}
+
+    {% if section.settings.modem_image != blank %}
+      <img src="{{ section.settings.modem_image | img_url: '600x600' }}" alt="" class="raptor-banner__image"/>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Raptor Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Desktop image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "modem_image",
+      "label": "Modem image"
+    },
+    {
+      "type": "header",
+      "content": "Color settings"
+    },
+    {
+      "type": "color",
+      "id": "sub_heading_color",
+      "label": "Sub heading color",
+      "default": "#00b589"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "content_color",
+      "label": "Content color",
+      "default": "#fff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Raptor Banner"
+    }
+  ]
+}
+{% endschema %}

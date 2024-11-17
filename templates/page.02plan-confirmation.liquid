@@ -1,0 +1,336 @@
+{{ '02plancss.css' | asset_url | stylesheet_tag }}
+{{ '02customisecss.css' | asset_url | stylesheet_tag }}
+{{ '02checkoutcss.css' | asset_url | stylesheet_tag }}
+
+<div id="checkout">
+{% include '02plan-checkout' %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+<script src="{{ 'jquery.cookie.js' | asset_url }}"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>function floatToString(t,r){var e=t.toFixed(r).toString();return e.match(/^\.\d+/)?"0"+e:e}function attributeToString(t){return"string"!=typeof t&&"undefined"===(t+="")&&(t=""),jQuery.trim(t)}"undefined"==typeof window.Shopify&&(window.Shopify={}),Shopify.money_format="${{amount}}",Shopify.onError=function(t,r){var e=eval("("+t.responseText+")");e.message?alert(e.message+"("+e.status+"): "+e.description):alert("Error : "+Shopify.fullMessagesFromErrors(e).join("; ")+".")},Shopify.fullMessagesFromErrors=function(t){var o=[];return jQuery.each(t,function(e,t){jQuery.each(t,function(t,r){o.push(e+" "+r)})}),o},Shopify.onCartUpdate=function(t){alert("There are now "+t.item_count+" items in the cart.")},Shopify.onCartShippingRatesUpdate=function(t,r){var e="";r.zip&&(e+=r.zip+", "),r.province&&(e+=r.province+", "),e+=r.country,alert("There are "+t.length+" shipping rates available for "+e+", starting at "+Shopify.formatMoney(t[0].price)+".")},Shopify.onItemAdded=function(t){alert(t.title+" was added to your shopping cart.")},Shopify.onProduct=function(t){alert("Received everything we ever wanted to know about "+t.title)},Shopify.formatMoney=function(t,r){function n(t,r){return void 0===t?r:t}function e(t,r,e,o){if(r=n(r,2),e=n(e,","),o=n(o,"."),isNaN(t)||null==t)return 0;var a=(t=(t/100).toFixed(r)).split(".");return a[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g,"$1"+e)+(a[1]?o+a[1]:"")}"string"==typeof t&&(t=t.replace(".",""));var o="",a=/\{\{\s*(\w+)\s*\}\}/,i=r||this.money_format;switch(i.match(a)[1]){case"amount":o=e(t,2);break;case"amount_no_decimals":o=e(t,0);break;case"amount_with_comma_separator":o=e(t,2,".",",");break;case"amount_with_space_separator":o=e(t,2," ",",");break;case"amount_with_period_and_space_separator":o=e(t,2," ",".");break;case"amount_no_decimals_with_comma_separator":o=e(t,0,".",",");break;case"amount_no_decimals_with_space_separator":o=e(t,0,".","");break;case"amount_with_space_separator":o=e(t,2,",","");break;case"amount_with_apostrophe_separator":o=e(t,2,"'",".")}return i.replace(a,o)},Shopify.resizeImage=function(t,r){try{if("original"==r)return t;var e=t.match(/(.*\/[\w\-\_\.]+)\.(\w{2,4})/);return e[1]+"_"+r+"."+e[2]}catch(o){return t}},Shopify.addItem=function(t,r,e){var o={type:"POST",url:"/cart/add.js",data:"quantity="+(r=r||1)+"&id="+t,dataType:"json",success:function(t){"function"==typeof e?e(t):Shopify.onItemAdded(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(o)},Shopify.addItemFromForm=function(t,r){var e={type:"POST",url:"/cart/add.js",data:jQuery("#"+t).serialize(),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onItemAdded(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.getCart=function(r){jQuery.getJSON("/cart.js",function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)})},Shopify.pollForCartShippingRatesForDestination=function(o,a,t){t=t||Shopify.onError;var n=function(){jQuery.ajax("/cart/async_shipping_rates",{dataType:"json",success:function(t,r,e){200===e.status?"function"==typeof a?a(t.shipping_rates,o):Shopify.onCartShippingRatesUpdate(t.shipping_rates,o):setTimeout(n,500)},error:t})};return n},Shopify.getCartShippingRatesForDestination=function(t,r,e){e=e||Shopify.onError;var o={type:"POST",url:"/cart/prepare_shipping_rates",data:Shopify.param({shipping_address:t}),success:Shopify.pollForCartShippingRatesForDestination(t,r,e),error:e};jQuery.ajax(o)},Shopify.getProduct=function(t,r){jQuery.getJSON("/products/"+t+".js",function(t){"function"==typeof r?r(t):Shopify.onProduct(t)})},Shopify.changeItem=function(t,r,e){var o={type:"POST",url:"/cart/change.js",data:"quantity="+r+"&id="+t,dataType:"json",success:function(t){"function"==typeof e?e(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(o)},Shopify.removeItem=function(t,r){var e={type:"POST",url:"/cart/change.js",data:"quantity=0&id="+t,dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.clear=function(r){var t={type:"POST",url:"/cart/clear.js",data:"",dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(t)},Shopify.updateCartFromForm=function(t,r){var e={type:"POST",url:"/cart/update.js",data:jQuery("#"+t).serialize(),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.updateCartAttributes=function(t,r){var o="";jQuery.isArray(t)?jQuery.each(t,function(t,r){var e=attributeToString(r.key);""!==e&&(o+="attributes["+e+"]="+attributeToString(r.value)+"&")}):"object"==typeof t&&null!==t&&jQuery.each(t,function(t,r){o+="attributes["+attributeToString(t)+"]="+attributeToString(r)+"&"});var e={type:"POST",url:"/cart/update.js",data:o,dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.updateCartNote=function(t,r){var e={type:"POST",url:"/cart/update.js",data:"note="+attributeToString(t),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},"1.4"<=jQuery.fn.jquery?Shopify.param=jQuery.param:(Shopify.param=function(t){var e=[],r=function(t,r){r=jQuery.isFunction(r)?r():r,e[e.length]=encodeURIComponent(t)+"="+encodeURIComponent(r)};if(jQuery.isArray(t)||t.jquery)jQuery.each(t,function(){r(this.name,this.value)});else for(var o in t)Shopify.buildParams(o,t[o],r);return e.join("&").replace(/%20/g,"+")},Shopify.buildParams=function(e,t,o){jQuery.isArray(t)&&t.length?jQuery.each(t,function(t,r){rbracket.test(e)?o(e,r):Shopify.buildParams(e+"["+("object"==typeof r||jQuery.isArray(r)?t:"")+"]",r,o)}):null!=t&&"object"==typeof t?Shopify.isEmptyObject(t)?o(e,""):jQuery.each(t,function(t,r){Shopify.buildParams(e+"["+t+"]",r,o)}):o(e,t)},Shopify.isEmptyObject=function(t){for(var r in t)return!1;return!0});</script>
+<script>
+var $j = jQuery.noConflict();
+
+
+var friend_name = '';
+var discount_code = '';  
+var status_rr_ref = false;
+var status_rr_friend_ref = false;  
+
+const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('rr_ref');
+const myParam_rr_friend_ref = urlParams.get('rr_friend_ref');
+
+if (window.location.href.indexOf("rr_ref=") > -1) {
+const settings = {
+"async": true,
+"crossDomain": true,
+"url": "https://programs.nomadinternet.com/api/v1/users/-actions/friend-details?referral_code="+myParam+"&referral_type=titus",
+"method": "GET",
+"headers": {
+"Accept": "application/vnd.api+json"
+},
+success: function(data){
+status_rr_ref = true;
+},  
+error: function(er){
+console.log(er);
+}
+};  
+$j.ajax(settings).done(function(response){
+friend_name = response.data.attributes.name;
+if(status_rr_ref == true){
+$j('.modem_price').text("Free Gift from : "+friend_name);
+$j('.modem_price').css("text-align", "right");  
+}
+else{
+$j('.modem_price').text($j.cookie("modem_price"));
+}
+fetch('/cart/update.js', {
+method: "POST",
+headers: {
+  'X-Requested-With': 'XMLHttpRequest',
+  'Content-Type': 'application/json;'
+},
+body: JSON.stringify({
+  "attributes": {
+    "rr_ref": myParam
+  }
+})
+});
+
+});
+
+}
+else if (window.location.href.indexOf("rr_friend_ref=") > -1) {
+const settings = {
+"async": true,
+"crossDomain": true,
+"url": "https://programs.nomadinternet.com/api/v1/users/-actions/friend-details?referral_code="+myParam_rr_friend_ref+"&referral_type=trojan",
+"method": "GET",
+"headers": {
+"Accept": "application/vnd.api+json"
+},
+success: function(data){
+$j('.fon_referral_discount').show();  
+discount_code = 'FONX3YUNN1';
+status_rr_friend_ref = true;
+},  
+error: function(er){
+console.log(er);
+$j('.fon_referral_discount').hide();  
+}
+};  
+$j.ajax(settings).done(function(response){
+friend_name = response.data.attributes.name;
+$j('.fon_friend_name').text(friend_name);
+if(status_rr_friend_ref == true){
+$j('.fon_referral_discount_price').text($j.cookie("fon_referral_discount_price"));
+$j('.initial_total').text($j.cookie("initial_total"));
+}
+else{
+$j('.initial_total').text($j.cookie("initial_total"));
+}  
+fetch('/cart/update.js', {
+method: "POST",
+headers: {
+  'X-Requested-With': 'XMLHttpRequest',
+  'Content-Type': 'application/json;'
+},
+body: JSON.stringify({
+  "attributes": {
+    "rr_friend_ref": myParam_rr_friend_ref
+  }
+})
+});
+
+});
+
+} 
+else{
+$j('.fon_referral_discount').hide();
+fetch('/cart/update.js', {
+method: "POST",
+headers: {
+  'X-Requested-With': 'XMLHttpRequest',
+  'Content-Type': 'application/json;'
+},
+body: JSON.stringify({
+  "attributes": {
+    "rr_ref": "",
+    "rr_friend_ref": "",
+    "rr_invited_emails": ""
+  }
+})
+});
+
+}  
+
+if (window.location.href.indexOf("rr_ref=") > -1) {
+
+}
+else{  
+$j('.modem_price').text($j.cookie("modem_price"));
+}
+
+$j('.monthly_total').text($j.cookie("monthly_total"));
+
+if(window.location.href.indexOf("rr_friend_ref=") > -1){
+
+}
+else{  
+$j('.initial_total').text($j.cookie("initial_total")); 
+}
+
+
+if($j.cookie('total_friend') > 0){
+$j('.nomad_friends').show();
+}
+else{
+$j('.nomad_friends').hide();
+}  
+
+
+function getCookie(c_name) {
+  var c_value = document.cookie,
+      c_start = c_value.indexOf(" " + c_name + "=");
+  if (c_start == -1) c_start = c_value.indexOf(c_name + "=");
+  if (c_start == -1) {
+      c_value = null;
+  } else {
+      c_start = c_value.indexOf("=", c_start) + 1;
+      var c_end = c_value.indexOf(";", c_start);
+      if (c_end == -1) {
+          c_end = c_value.length;
+      }
+      c_value = unescape(c_value.substring(c_start, c_end));
+  }
+  return c_value;
+}
+
+if($j.cookie("plan_title") != ''){
+$j('.plan_title').text($j.cookie("plan_title"));  
+}
+if($j.cookie("plan_price") != ''){
+$j('.plan_price').text('$'+$j.cookie("plan_price")); 
+}  
+if($j.cookie("selected_addon3") == 'noaddon'){
+$j('.addon_1').hide();
+$j('.addon_2').hide();
+}
+if($j.cookie("selected_addon3") == 'addontrial'){
+var sa1 = getCookie("selected_addon1");
+if (!sa1) {
+$j('.addon_1').show();
+$j('.addon_1 .addon_price').text('$0.00');
+$j('.addon_1 .addon_title').text('Nomad Prime Add-on Trials');
+}
+else if($j.cookie("selected_addon1") == 'ontrial'){  
+$j('.addon_1').show();
+$j('.addon_1 .addon_price').text('$0.00');
+$j('.addon_1 .addon_title').text('Nomad Prime Add-on Trials');
+}  
+else{
+$j('.addon_1').hide();  
+} 
+
+var sa2 = getCookie("selected_addon2");
+if (!sa2) {
+$j('.addon_2').show();
+$j('.addon_2 .addon_price').text('$0.00');
+$j('.addon_2 .addon_title').text('Nomad Travel Add-on Trials');
+}
+else if($j.cookie("selected_addon2") == 'ontrial'){  
+$j('.addon_2').show();  
+$j('.addon_2 .addon_price').text('$0.00');
+$j('.addon_2 .addon_title').text('Nomad Travel Add-on Trials');  
+}  
+else{
+$j('.addon_2').hide();  
+}   
+}
+if($j.cookie("selected_addon1") == 'notrial'){
+$j('.addon_1').show();  
+}
+if($j.cookie("selected_addon2") == 'notrial'){
+$j('.addon_2').show();  
+}
+if($j.cookie("selected_addon1") == ''){
+$j('.addon_1').hide();  
+}
+if($j.cookie("selected_addon2") == ''){
+$j('.addon_2').hide();  
+}   
+
+
+$j('.nomad_friend_count').text($j.cookie("nomad_friend_count")); 
+$j('.nomad_discount').text($j.cookie("nomad_discount"));
+
+
+$j(document).on("click", ".final_checkout", function(){
+
+const friends_list = [];
+if(typeof $j.cookie("invited-friends_1") == 'undefined'){
+friends_list.push($j.cookie("invited-friends_1"));
+}
+else if(typeof $j.cookie("invited-friends_2") == 'undefined'){
+friends_list.push($j.cookie("invited-friends_2"));
+}
+else if(typeof $j.cookie("invited-friends_3") == 'undefined'){
+friends_list.push($j.cookie("invited-friends_3")); 
+}
+else if(typeof $j.cookie("invited-friends_4") == 'undefined'){
+friends_list.push($j.cookie("invited-friends_4"));  
+}
+else if(typeof $j.cookie("invited-friends_5") == 'undefined'){
+friends_list.push($j.cookie("invited-friends_5")); 
+}  
+else{
+
+}  
+
+$j.ajax({
+url: "/cart/clear.js", 
+type: "GET",
+dataType: "json",
+contentType: "application/json; charset=utf-8",
+success: function (result) {
+$j.ajax({
+url: "/cart/add.js", 
+type: "POST",
+dataType: "json",
+data: $j.cookie("item_arr"),
+contentType: "application/json; charset=utf-8",
+success: function (results) {
+fetch('/cart/update.js', {
+method: "POST",
+headers: {
+  'X-Requested-With': 'XMLHttpRequest',
+  'Content-Type': 'application/json;'
+},
+body: JSON.stringify({
+  "attributes": {
+    "rr_invited_emails": friends_list.join()
+  }
+})
+});  
+$j.ajax({
+url: "/cart.js", 
+type: "GET",
+dataType: "json",
+contentType: "application/json; charset=utf-8",
+success: function (data) { 
+var cart_token = data.token;
+if(discount_code == ''){
+var url = "https://checkout.rechargeapps.com/r/checkout?domain=nomadplus.myshopify.com&cart_token=" + cart_token;  
+} 
+else{  
+var url = "https://checkout.rechargeapps.com/r/checkout?domain=nomadplus.myshopify.com&discount=" + discount_code + "&cart_token=" + cart_token;
+}
+document.location = url;
+},
+error: function (er) {
+console.log(er)
+}
+});
+},
+error: function (errs) {
+console.log(errs)
+}
+});
+},
+error: function (err) {
+console.log(err)
+}
+});
+
+}); 
+
+$j(document).on('click','.edit_order',function(e){
+e.preventDefault();  
+if (window.location.href.indexOf("rr_ref=") > -1){
+var hash = window.location.href.split('?');
+window.location.href = "/pages/configuration?"+hash[1];
+}
+else if (window.location.href.indexOf("rr_friend_ref=") > -1) { 
+var hash = window.location.href.split('?');
+window.location.href = "/pages/configuration?"+hash[1];
+}
+else{  
+window.location.href = "/pages/configuration";
+}
+});   
+
+$j('#cbx-12').change(function(){
+if($(this).is(':checked')){
+ $j('.final_checkout').removeClass('disable');
+}
+else{
+$j('.final_checkout').addClass('disable');
+}
+});
+
+</script>

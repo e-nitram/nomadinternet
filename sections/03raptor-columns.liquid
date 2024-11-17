@@ -1,0 +1,100 @@
+{{ '03raptor-columns.css' | asset_url | stylesheet_tag }}
+
+<div class="raptor-columns">
+  <div class="container">
+    {% if section.settings.sub_heading != blank %}
+      <div class="sub-heading">{{ section.settings.sub_heading }}</div>
+    {% endif %}
+
+    {% if section.settings.heading != blank %}
+      <h3 class="heading">{{ section.settings.heading }}</h3>
+    {% endif %}
+
+    <div class="grid-list">
+      {% for block in section.blocks %}
+        {% if block.settings.title != blank and block.settings.content != blank %}
+          <div class="item">
+            {% if block.settings.icon != blank %}
+              <img src="{{ block.settings.icon | img_url: '100x100' }}"/>
+            {% endif %}
+            {% if block.settings.title == 'Total Gaming Control' %}
+              <h3 class="title is-desktop">Total Gaming<br>Control</h3>
+              <h3 class="title is-mobile">{{ block.settings.title }}</h3>
+            {% else %}
+              <h3 class="title">{{ block.settings.title }}</h3>  
+            {% endif %}
+            
+            <div class="content">{{ block.settings.content }}</div>
+          </div>
+        {% endif %}
+        
+      {% endfor %}
+      
+    </div>
+
+    {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+      <a href="{{ section.settings.button_link }}" class="btn btn--customize" target="_blank">
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
+    
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Raptor columns",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content-item",
+      "name": "Content item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Raptor columns"
+    }
+  ]
+}
+
+{% endschema %}

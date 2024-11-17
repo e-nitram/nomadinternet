@@ -1,0 +1,233 @@
+{
+  "sections": {
+    "f523715a-728f-4c25-a275-37c304f5239a": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+      }
+    },
+    "6969714c-7423-4851-98b5-3e55fac05b3a": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "a960c3ff-3900-4ddc-9902-27d26d45f2c3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Epic_Sale_1200x566_f98783e1-d32f-4eeb-9ea8-ba154c6cfdd5.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "a960c3ff-3900-4ddc-9902-27d26d45f2c3"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".plan-first-screen__content {display: none; background-color: #fff;}"
+      ],
+      "settings": {
+        "title": "Nomad Flash 48 Hour Sale",
+        "description": "<p>Internet service for only 66$ a month<\/p>",
+        "max_width": 770,
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "639b3400-1024-40fd-8c66-21faec3c1749": {
+      "type": "awesome-section",
+      "blocks": {
+        "e5a4d7ca-3701-44f2-9c18-2a9482d41f46": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "New Customer 12-months",
+            "url": "\/cart\/39798048751674:1,39901615685690:1,39908171612218:1",
+            "blank": false,
+            "on_click": ""
+          }
+        },
+        "36ad2f1c-5c5f-4c90-85af-04ea3cec8513": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Existing Customer",
+            "url": "\/cart\/39798048751674:1,39908171612218:1",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "e5a4d7ca-3701-44f2-9c18-2a9482d41f46",
+        "36ad2f1c-5c5f-4c90-85af-04ea3cec8513"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "p:last-of-type {border-top: 1px dashed #555; padding-top: 1rem;}",
+        "em {font-weight: bold; text-decoration: line-through; color: orange;}",
+        "strong {display: block; color: var(--theme-color);}",
+        ".awesome-section__text {padding-top: 20px; padding-bottom: 20px;}",
+        ".awesome-section__title {margin-bottom: 10px; padding-bottom: 10px; border-bottom: 0.062rem dashed hsl(0, 0%, 49%); color: red;}",
+        ".awesome-section__cta {margin-top: 10px;}"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/netgear-orbi-lbr20-one-time-membership-fee-nomad-internet-632278.jpg",
+        "title_tag": "h3",
+        "title": "Nomad Rural 4G SALE",
+        "description": "<p>Features:<br\/>- 300GB of Premium 4G LTE Network Access<br\/>- Download speeds up to 25Mbps<br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- Anywhere You Are<br\/>- 14-Day No Risk Trial<\/p><p><em>$1068 Retail Price<\/em><br\/>-$268 Discount<br\/><strong>$800 Annual Prepay Price<\/strong><\/p><h1>Reduces plan to $67 a month<\/h1><p><strong>Sale Ends<\/strong><\/p>"
+      }
+    },
+    "8aa1d535-c143-4e87-af6c-25f4c5002f1e": {
+      "type": "awesome-section",
+      "blocks": {
+        "5dd3f14f-2142-45c3-9e48-b410f228683d": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "New Customer 12-months",
+            "url": "\/cart\/39798048751674:1,39851927470138:1,39908171677754:1",
+            "blank": false,
+            "on_click": ""
+          }
+        },
+        "53c65cff-7bd0-45d6-a6bd-2f10bf7be05a": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Existing Customer",
+            "url": "\/cart\/39798048751674:1,39908171677754:1",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "5dd3f14f-2142-45c3-9e48-b410f228683d",
+        "53c65cff-7bd0-45d6-a6bd-2f10bf7be05a"
+      ],
+      "custom_css": [
+        "p:last-of-type {border-top: 1px dashed #555; padding-top: 1rem;}",
+        "em {font-weight: bold; text-decoration: line-through; color: orange;}",
+        "strong {display: block; color: var(--theme-color);}",
+        ".awesome-section__text {padding-top: 20px; padding-bottom: 20px;}",
+        ".awesome-section__title {margin-bottom: 10px; padding-bottom: 10px; border-bottom: 0.062rem dashed hsl(0, 0%, 49%); color: red;}",
+        ".awesome-section__cta {margin-top: 10px;}"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/1260x1260_trans_BG-1.png",
+        "title_tag": "h3",
+        "title": "Nomad Rural 5G SALE",
+        "description": "<p>Features:<br\/>- Up to Unlimited Data<br\/>- Works anywhere in the USA with up to unlimited 5G<br\/>- Download speeds up to 100Mbps!<br\/>- Easy self-install: activates in less than 60 seconds!<br\/>- Dual-band Wi-Fi 6 for up to 15 connected devices<br\/>- Ethernet LAN port to use your own router!<br\/>- Great for light gaming!<\/p><p><em>$1308 Retail Price<\/em><br\/>-$458 Discount<br\/><strong>$850 Annual Prepay Price<\/strong><\/p><h1>Reduces plan to $71 a month<\/h1><p><strong>Sale Ends<\/strong><\/p>"
+      }
+    },
+    "b1d4d8b3-6ac9-4759-b5b0-2f2a976f0d5a": {
+      "type": "awesome-section",
+      "blocks": {
+        "8deec701-e22b-47d2-885a-bbc87391dc90": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "New Customer 12-months",
+            "url": "\/cart\/39798048751674:1,39822341505082:1,39908171743290:1",
+            "blank": false,
+            "on_click": ""
+          }
+        },
+        "bf0a0206-5e11-4c77-8c4d-3e9838482b5f": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Existing Customer",
+            "url": "\/cart\/39798048751674:1,39908171743290:1",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8deec701-e22b-47d2-885a-bbc87391dc90",
+        "bf0a0206-5e11-4c77-8c4d-3e9838482b5f"
+      ],
+      "custom_css": [
+        "p:last-of-type {border-top: 1px dashed #555; padding-top: 1rem;}",
+        "em {font-weight: bold; text-decoration: line-through; color: orange;}",
+        "strong {display: block; color: var(--theme-color);}",
+        ".awesome-section__text {padding-top: 20px; padding-bottom: 20px;}",
+        ".awesome-section__title {margin-bottom: 10px; padding-bottom: 10px; border-bottom: 0.062rem dashed hsl(0, 0%, 49%); color: red;}",
+        ".awesome-section__cta {margin-top: 10px;}"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/2_060b5b41-4f08-4f66-ae55-2c3c62fed6c0.jpg",
+        "title_tag": "h3",
+        "title": "Nomad Travel 5G SALE",
+        "description": "<p>Features:<br\/>- Up to Unlimited Data<br\/>- Works anywhere in the USA with up to unlimited 5G<br\/>- Download speeds up to 100Mbps!<br\/>- Easy self-install: activates in less than 60 seconds!<br\/>- Dual-band Wi-Fi 6 for up to 15 connected devices<br\/>- Ethernet LAN port to use your own router!<br\/>- Great for light gaming!<\/p><p><em>$1548 Retail Price<\/em><br\/>-$648 Discount<br\/><strong>$900 Annual Prepay Price<\/strong><\/p><h1>Reduces plan to $75 a month<\/h1><p><strong>Sale Ends<\/strong><\/p>"
+      }
+    },
+    "a2d330ee-57fd-44a7-a1b4-85af88b50766": {
+      "type": "awesome-section",
+      "blocks": {
+        "ec5c86c2-a723-4343-84e8-277dc0c68c4b": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Buy now",
+            "url": "\/cart\/39798048751674:1,39908171612218:1",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "ec5c86c2-a723-4343-84e8-277dc0c68c4b"
+      ],
+      "custom_css": [
+        "p:last-of-type {border-top: 1px dashed #555; padding-top: 1rem;}",
+        "em {font-weight: bold; text-decoration: line-through; color: orange;}",
+        "strong {display: block; color: var(--theme-color);}",
+        ".awesome-section__text {padding-top: 20px; padding-bottom: 20px;}",
+        ".awesome-section__title {margin-bottom: 10px; padding-bottom: 10px; border-bottom: 0.062rem dashed hsl(0, 0%, 49%); color: red;}",
+        ".awesome-section__cta {margin-top: 10px;}"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Upgrade-Router.jpg",
+        "title_tag": "h3",
+        "title": "Bring your own device SALE",
+        "description": "<p>Features:<br\/>- 300GB of Premium 4G LTE Network Access<br\/>- Download speeds up to 25Mbps<br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- Anywhere You Are<br\/>- 14-Day No Risk Trial<\/p><p><em>$1068 Retail Price<\/em><br\/>-$268 Discount<br\/><strong>$800 Annual Prepay Price<\/strong><\/p><h1>Reduces plan to $67 month<\/h1><p><strong>Sale Ends<\/strong><\/p>"
+      }
+    },
+    "5a35c5ad-49b5-4f97-888f-36d5d28c34e4": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<script>\n    function countdown(el, prefix, dateEnd, endMessage) {\n      var timer, days, hours, minutes, seconds;\n      \n      dateEnd = new Date(dateEnd);\n      dateEnd = dateEnd.getTime();\n\n      if (isNaN(dateEnd)) {\n        return;\n      }\n      \n      timer = setInterval(calculate, 1000);\n      \n      function calculate() {\n        var dateStart = new Date();\n        var dateStart = new Date(dateStart.getUTCFullYear(), dateStart.getUTCMonth(), dateStart.getUTCDate(), dateStart.getUTCHours(), dateStart.getUTCMinutes(), dateStart.getUTCSeconds());\n        var timeRemaining = parseInt((dateEnd - dateStart.getTime()) \/ 1000);\n        \n        if (timeRemaining >= 0) {\n          days = parseInt(timeRemaining \/ 86400);\n          \n          timeRemaining = (timeRemaining % 86400);\n          hours = parseInt(timeRemaining \/ 3600);\n          \n          timeRemaining = (timeRemaining % 3600);\n          minutes = parseInt(timeRemaining \/ 60);\n          \n          timeRemaining = (timeRemaining % 60);\n          seconds = parseInt(timeRemaining);\n          \n          var str = \"\";\n          str += parseInt(days, 10) ? parseInt(days, 10) + \"d \" : \"\";\n          str += (\"0\" + hours).slice(-2) + \":\" + (\"0\" + minutes).slice(-2) + \":\" + (\"0\" + seconds).slice(-2);\n          \n          el.innerHTML = prefix + str;\n        } else {\n          el.innerHTML = endMessage;\n          return;\n        }\n      }\n    }\n\n    document.querySelectorAll(\".awesome-section .awesome-section__description\").forEach((descs) => {\n        var strongs = descs.querySelectorAll(\"strong\");\n        var last_strong = strongs[strongs.length - 1];\n        \n        if (last_strong && last_strong.innerHTML == \"Sale Ends\") {\n            last_strong.style.color = \"#f00\";\n            countdown(last_strong, \"Sale Ends: \", \"06\/18\/2023 13:00:00\", \"\"); \n        }\n    });\n<\/script>"
+      }
+    }
+  },
+  "order": [
+    "f523715a-728f-4c25-a275-37c304f5239a",
+    "6969714c-7423-4851-98b5-3e55fac05b3a",
+    "639b3400-1024-40fd-8c66-21faec3c1749",
+    "8aa1d535-c143-4e87-af6c-25f4c5002f1e",
+    "b1d4d8b3-6ac9-4759-b5b0-2f2a976f0d5a",
+    "a2d330ee-57fd-44a7-a1b4-85af88b50766",
+    "5a35c5ad-49b5-4f97-888f-36d5d28c34e4"
+  ]
+}

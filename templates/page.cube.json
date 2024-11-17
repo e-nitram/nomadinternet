@@ -1,0 +1,243 @@
+{
+  "wrapper": "div.cube.cube--template",
+  "sections": {
+    "ee8a2532-9eeb-44c4-bcae-fa42507022ca": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "dfdae4ed-e77f-4d16-ba27-f368674cde6a": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/First_screen_ok2-min.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        },
+        "3e0d3088-2b55-4f9c-b657-d34349b85de5": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Internet_On_Sale_-_Web_Banner_1.png",
+            "link": "",
+            "target_blank": false
+          }
+        },
+        "ecc76b09-12aa-4781-b240-a7f429f94663": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Cube_Flash_1200_x_566_1.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "dfdae4ed-e77f-4d16-ba27-f368674cde6a",
+        "3e0d3088-2b55-4f9c-b657-d34349b85de5",
+        "ecc76b09-12aa-4781-b240-a7f429f94663"
+      ],
+      "custom_css": [
+        "strong {color: var(--theme-color);}"
+      ],
+      "settings": {
+        "title": "The Nomad Cube - <span>Hi-Speed Edition<\/span>",
+        "description": "<p>The Nomad Cube has cutting-edge technology for unlimited, fast internet at home or on the go! Starting at $99 only!<\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "Order Now",
+        "button_url": "shopify:\/\/pages\/preorder",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "f89a2320-e90f-4f0a-bc4d-ab76e6c368d7": {
+      "type": "awesome-section",
+      "blocks": {
+        "0ba01916-a3ec-4641-a2a2-ce1a53191e20": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Order Now",
+            "url": "shopify:\/\/pages\/preorder",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "0ba01916-a3ec-4641-a2a2-ce1a53191e20"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/02.jpg",
+        "title_tag": "h2",
+        "title": "THE NOMAD CUBE",
+        "description": "<p>Are you tired of struggling to find reliable internet while on vacation or in rural areas? Tired of slow internet speeds as more people connect to the same WiFi? Say goodbye to those frustrations with Nomad Cube! <\/p><p>Our all-new Nomad Cube is a cutting-edge internet solution that delivers hi-speeds, allowing you to connect with up to 30 devices at a time without slowing down. Whether you're a Rural Area Resident, an RVer, or Digital Nomad, the Nomad Cube is perfect for you.<\/p>"
+      }
+    },
+    "78881246-087c-473c-9946-c00127c2b8f9": {
+      "type": "awesome-section",
+      "blocks": {
+        "4f3dc4d2-0e1a-4743-b68c-70716cf5be5d": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Order Now",
+            "url": "shopify:\/\/pages\/preorder",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "4f3dc4d2-0e1a-4743-b68c-70716cf5be5d"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/image_2.jpg",
+        "title_tag": "h4",
+        "title": "Here’s Why You’ll Love This",
+        "description": "<p><strong>✔ Unlimited, fast internet:<\/strong> Say goodbye to slow internet and hello to lightning-fast speeds, designed to keep you connected no matter where you go, where you are, or what you do. Nomad Cube is the best solution you can count on!<\/p><p><strong>✔ Connect with multiple devices:<\/strong> Nomad Cube allows you to connect with up to 30 devices simultaneously, making it perfect for families, groups, and businesses.<\/p><p><strong>✔ Perfect for rural homes, and travel:<\/strong> Great for travel, Nomad Cube offers breakthrough 5G and 4G LTE speeds, making it perfect for Rural Area Residents, RVers, and Digital Nomads. But it doesn’t end there! Nomad Cube is also ideal for residences, shops, restaurants, remote offices, medical facilities, dorms, apartments, and other places.<\/p>"
+      }
+    },
+    "e139d2f5-be06-4d88-bbbf-6f2b5111dcb7": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2.rich__heading {text-align: center; max-width: 900px; width: 100%; margin: 40px auto;}",
+        "div.row {justify-content: center;}"
+      ],
+      "settings": {
+        "layout": "default",
+        "subheading": "",
+        "title": "Don't settle for slow, unreliable internet anymore. Choose Nomad Cube and experience the power of unlimited, fast internet on the go.",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "primary"
+      }
+    },
+    "b92778e0-5f56-4434-9f6c-f3686ef716e6": {
+      "type": "customhtml",
+      "custom_css": [
+        "h2 {margin: 0px auto 40px auto; background-color: #00a77f; color: #fff; padding: 5px 25px; font-size: 1.3em; border-radius: 5px;}",
+        "h2 a {color: #fff; text-decoration: none;}",
+        "div.row {justify-content: center;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<h2><a href=\"https:\/\/nomadinternet.com\/pages\/plans\">Secure Your Nomad Cube and Stay Connected Everywhere!<\/a><\/h2>"
+      }
+    },
+    "36d5c1df-2be0-4e61-a630-58551b6c7b57": {
+      "type": "lp-16",
+      "blocks": {
+        "06bb78f1-1e05-40ae-8e37-d8aa2c08e4d4": {
+          "type": "block",
+          "settings": {
+            "title": "What is C Band?",
+            "content": "<p>C Band - the latest 5G advance in cellular technology to revolutionize voice, text and data services for mobile devices. It provides enhanced coverage with fewer cell towers required resulting in wide area service capability! In addition its higher capacity supports faster transfer speeds of large amounts of data such as streaming video or downloads plus it is interference resistant which increases connection reliability. So get ready to join the C band revolution today!<\/p>"
+          }
+        },
+        "9ff6b91a-f975-4893-8abd-3af1403fcc29": {
+          "type": "block",
+          "settings": {
+            "title": "I live far away and my signal is weak, will Nomad Cube help me?",
+            "content": "<p>C Band is the latest in cellular technology, providing expanded coverage and enhanced capacity for all your digital needs. At its core it's a newly activated 5G frequency band offering improved voice, text, data services to mobile devices while also having built-in interference resistance capabilities: allowing you access over large areas without sacrificing speed or quality. It can easily handle streaming video files downloads with no latency - what more could you ask from an advanced bandwidth? Now that C Band has been activated sit back relax and enjoy wider connection networks than ever before!<\/p>"
+          }
+        },
+        "205ce91e-b025-4d15-a40c-dea3c4135239": {
+          "type": "block",
+          "settings": {
+            "title": "C Band is the new frequency range? Do I have it in my area?",
+            "content": "<p>C Band is the latest in cellular technology, providing expanded coverage and enhanced capacity for all your digital needs. At its core it's a newly activated 5G frequency band offering improved voice, text, data services to mobile devices while also having built-in interference resistance capabilities: allowing you access over large areas without sacrificing speed or quality. It can easily handle streaming video files downloads with no latency - what more could you ask from an advanced bandwidth? Now that C Band has been activated sit back relax and enjoy wider connection networks than ever before!<\/p>"
+          }
+        },
+        "ab55adaa-9340-4f5e-9f2b-0eab0805015c": {
+          "type": "block",
+          "settings": {
+            "title": "I already have a modem, can I bring my own device?",
+            "content": "<p>Most routers and modems currently available do not cover C band.<br\/>Are you still stuck with a router or modem that doesn't cover C Band? Worry no more! The Nomad Cube, an innovative device at an unbeatable price point, has arrived to solve all your needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "06bb78f1-1e05-40ae-8e37-d8aa2c08e4d4",
+        "9ff6b91a-f975-4893-8abd-3af1403fcc29",
+        "205ce91e-b025-4d15-a40c-dea3c4135239",
+        "ab55adaa-9340-4f5e-9f2b-0eab0805015c"
+      ],
+      "settings": {
+        "title": "Answers to the most frequently asked questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "2e224b5b-d021-44e2-bed2-2e3842c7dc2e": {
+      "type": "lp-20",
+      "blocks": {
+        "dde36221-29e8-47f3-9107-b2112aa34649": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/image_2023-02-25_00-45-49.png",
+            "name": "ILona Passino",
+            "text": "This is a great product! It has really boosted my internet signal and I can now watch Netflix in great quality. Thank you for making this!",
+            "link": ""
+          }
+        },
+        "acd5ff64-b3a2-42fa-af45-b8fad64c8b6e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/image_2023-02-25_00-47-00.png",
+            "name": "Micheal Robinson",
+            "text": "I thought I had gotten so far that it's normal for me to have a bad internet signal, the cell tower is far away, but the Nomad Cube modem has boosted the signal so much that I'm watching videos in great quality! Thank you guys for this novelty.",
+            "link": ""
+          }
+        },
+        "ae75418f-9951-46eb-bbb6-cfed1af4d490": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/image_2023-02-25_00-49-33.png",
+            "name": "Ana Tobio",
+            "text": "My kids are happy, they got great internet thanks to this Nomad modem. Steve watches TV, Sean plays online games, and the house is quiet and I can take time for myself.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "dde36221-29e8-47f3-9107-b2112aa34649",
+        "acd5ff64-b3a2-42fa-af45-b8fad64c8b6e",
+        "ae75418f-9951-46eb-bbb6-cfed1af4d490"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "42acd939-a18b-4565-8662-eb957410b191": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "ee8a2532-9eeb-44c4-bcae-fa42507022ca",
+    "f89a2320-e90f-4f0a-bc4d-ab76e6c368d7",
+    "78881246-087c-473c-9946-c00127c2b8f9",
+    "e139d2f5-be06-4d88-bbbf-6f2b5111dcb7",
+    "b92778e0-5f56-4434-9f6c-f3686ef716e6",
+    "36d5c1df-2be0-4e61-a630-58551b6c7b57",
+    "2e224b5b-d021-44e2-bed2-2e3842c7dc2e",
+    "42acd939-a18b-4565-8662-eb957410b191"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "6e9d221d-379e-411e-9b05-6e1a414bc467": {
+      "type": "awesome-video",
+      "disabled": true,
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+      }
+    },
+    "1706978331a01b35ea": {
+      "type": "apps",
+      "blocks": {
+        "paywhirl_paywhirl_plan_selector_3BA87Y": {
+          "type": "shopify:\/\/apps\/paywhirl\/blocks\/paywhirl-plan-selector\/41e95d60-82cf-46e8-84de-618d7e4c37b7",
+          "settings": {
+            "font_scale": 100,
+            "theme": "default",
+            "selling_plans_first": true,
+            "theme_color": "#334FB4",
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "paywhirl_paywhirl_plan_selector_3BA87Y"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "6e9d221d-379e-411e-9b05-6e1a414bc467",
+    "1706978331a01b35ea"
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "sections": {
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "3637220c-a148-482c-80ab-587d73a2f93f": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WIFI_1.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "3637220c-a148-482c-80ab-587d73a2f93f"
+      ],
+      "settings": {
+        "title": "Nomad WIFI",
+        "description": "<p>Nomad® provides Hi-Speed Wireless internet with No Credit Check! <\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "2dddfaa4-ad71-4a6d-9803-227ad2c28049": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>"
+      }
+    },
+    "619637ee-6a12-488a-b200-0b496eff3b32": {
+      "type": "awesome-navigation",
+      "blocks": {
+        "75e6c020-8268-47aa-852e-b40168ed7e35": {
+          "type": "link",
+          "settings": {
+            "text": "Enterprise",
+            "url": "shopify:\/\/pages\/nomad-enterprise"
+          }
+        },
+        "da08d1bb-d7bb-49cf-b5f8-b195bc5862af": {
+          "type": "link",
+          "settings": {
+            "text": "Transportation",
+            "url": "shopify:\/\/pages\/nomad-transportation"
+          }
+        },
+        "7b4d181f-cf2e-44d9-b433-377ea4c031df": {
+          "type": "link",
+          "settings": {
+            "text": "Retail",
+            "url": "shopify:\/\/pages\/nomad-retail"
+          }
+        },
+        "3f50e9a1-6e92-4560-b410-f53f61ccaeed": {
+          "type": "link",
+          "settings": {
+            "text": "WIFI",
+            "url": "shopify:\/\/pages\/nomad-wifi"
+          }
+        }
+      },
+      "block_order": [
+        "75e6c020-8268-47aa-852e-b40168ed7e35",
+        "da08d1bb-d7bb-49cf-b5f8-b195bc5862af",
+        "7b4d181f-cf2e-44d9-b433-377ea4c031df",
+        "3f50e9a1-6e92-4560-b410-f53f61ccaeed"
+      ],
+      "settings": {}
+    },
+    "5e1042d8-e152-46ca-baa6-74950cc97893": {
+      "type": "awesome-section",
+      "blocks": {
+        "f18837fe-be5d-4541-a4ac-b267d4a883ec": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "order now",
+            "url": "shopify:\/\/pages\/preorder",
+            "blank": false,
+            "on_click": ""
+          }
+        },
+        "3c4c8f44-80b2-45c3-aafa-88ab22933b9c": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Customize",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "f18837fe-be5d-4541-a4ac-b267d4a883ec",
+        "3c4c8f44-80b2-45c3-aafa-88ab22933b9c"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/WIFI_2.jpg",
+        "title_tag": "h2",
+        "title": "Branch\/ office\/ retail location",
+        "description": "<h4>Primary or backup connectivity for your business<\/h4><ul><li>Get reliable internet access<\/li><li>Back up your internet connection<\/li><li>Never worry about losing connection again<\/li><li>Backup connectivity for employees<\/li><li><a href=\"\/pages\/plans\" title=\"Nomad Internet Plans\">Get connected<\/a> today with Nomad Internet<\/li><\/ul>"
+      }
+    },
+    "1c855773-d847-467b-92ef-c2745b986403": {
+      "type": "awesome-section",
+      "blocks": {
+        "0c859490-0dac-438c-b8fc-93bb9f2c1764": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Buy Now",
+            "url": "shopify:\/\/pages\/preorder",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "0c859490-0dac-438c-b8fc-93bb9f2c1764"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/WIFI_3.jpg",
+        "title_tag": "h2",
+        "title": "Remote workers",
+        "description": "<h4>Now you can work from anywhere with Nomad Internet<\/h4><ul><li>Instantly access quality internet wherever life takes you<\/li><li>An Essential Tool for Working from Home or On the Go<\/li><li>Сonnectivity for work from home, remote learning, temp work sites<\/li><li>Get the Best Connection – Anywhere and Everywhere<\/li><li>Upgrade your remote work experience with Nomad Internet<\/li><\/ul>"
+      }
+    },
+    "652c4f2e-ffbc-4e25-a837-b1acc47f8913": {
+      "type": "awesome-section",
+      "blocks": {
+        "5b1e3472-9844-4d84-903c-e1122e91e349": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Buy Now",
+            "url": "shopify:\/\/pages\/preorder",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "5b1e3472-9844-4d84-903c-e1122e91e349"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/WIFI_4.jpg",
+        "title_tag": "h2",
+        "title": "Guest Wifi",
+        "description": "<h4>Keep guest traffic separate on a secure primary connection<\/h4><ul><li>Say goodbye to slow wifi<\/li><li>Supercharged Speeds and Secure Access<\/li><li>Get Connected to <a href=\"\/pages\/plans\" title=\"Nomad Internet Plans\">High Speed WiFi<\/a> with Nomad<\/li><li>Enjoy Fast, Quality Connectivity All the Time<\/li><li>Upgrade Your Network with Nomad Internet<\/li><\/ul>"
+      }
+    },
+    "2ef2b6f6-3f3e-4f40-900c-f06264255654": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 40,
+        "border-radius": 0,
+        "html": "<div class=\"text-center\">\n<a href=\"\/pages\/plans\" class=\"btn outline lg\">Choose a Plan<\/a>\n<\/div>"
+      }
+    },
+    "d1ebf576-d0cc-4648-a20e-7c5401698ca5": {
+      "type": "lp-20",
+      "blocks": {
+        "07a7a3e7-9104-4732-a105-7542c2caef98": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Mina_Carrol.jpg",
+            "name": "Mina Carrol",
+            "text": "Nomad internet is a lifesaver for remote workers in rural areas! I live in New Hampshire and was struggling to find an internet provider that had sufficient connection speeds for working from home. After doing some research, I decided to try Nomad for its fast speeds and reliability. The installation process was quick and easy with the Nomad Air Modem - it was up and running in no time! Overall, I'm very happy with my decision to go with Nomad internet. It's been an incredibly convenient tool to have while living in a rural area and has allowed me to work without any hiccups. If you're looking for an effective way to stay connected, I'd highly recommend giving Nomad a try!",
+            "link": ""
+          }
+        },
+        "72eff92d-dc45-47aa-98ec-6b00571c77cd": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Irene_Lucas.jpg",
+            "name": "Irene Lucas",
+            "text": "Living in a rural area of New Jersey can be tough, especially when it comes to internet access. That's why I'm so grateful we found Nomad Internet - they offer a reliable high-speed connection that lets remote workers like me do our jobs without interruption. The speeds are fast and consistent, which is exactly what you need for an uninterrupted work day. Plus, the setup was easy and the costs are reasonable. If you're looking for a good rural internet connection, Nomad Internet should be at the top of your list!",
+            "link": ""
+          }
+        },
+        "900904f1-26e3-41c7-976c-23e0e124d970": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Jamie_Burrows.jpg",
+            "name": "Jamie Burrows",
+            "text": "I recently signed up for Nomad Internet, and I can say that it was a great choice! I was looking for reliable, high speed rural internet travel across New York state – and that’s exactly what I got. The three modems available – Nomad Air, Raptor, and Ark – made it easy to find the perfect option for my needs. Installation was smooth, setup straightforward, and connection speeds were consistently fast. There’s no doubt in my mind that this is the best option for any rural internet user in New York state!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "07a7a3e7-9104-4732-a105-7542c2caef98",
+        "72eff92d-dc45-47aa-98ec-6b00571c77cd",
+        "900904f1-26e3-41c7-976c-23e0e124d970"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "9151d1f0-77ff-4ed5-8a1a-d2f4bc24cd74": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "awesome-first-screen",
+    "2dddfaa4-ad71-4a6d-9803-227ad2c28049",
+    "619637ee-6a12-488a-b200-0b496eff3b32",
+    "5e1042d8-e152-46ca-baa6-74950cc97893",
+    "1c855773-d847-467b-92ef-c2745b986403",
+    "652c4f2e-ffbc-4e25-a837-b1acc47f8913",
+    "2ef2b6f6-3f3e-4f40-900c-f06264255654",
+    "d1ebf576-d0cc-4648-a20e-7c5401698ca5",
+    "9151d1f0-77ff-4ed5-8a1a-d2f4bc24cd74"
+  ]
+}

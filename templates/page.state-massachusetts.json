@@ -1,0 +1,508 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/TOP_Childrens_Wharf_Harborwalk-MASSACHUSETTS-state.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in Massachusetts"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Stay Connected Anywhere with Wireless Internet Providers in Massachusetts. Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in Massachusetts?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/z6HKvl-kxEc?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The company with the best internet plans in Massachusetts has been identified.",
+        "description": "Find your city in Massachusetts",
+        "content": "Abington,\nAdams,\nAmesbury,\nAmherst,\nAndover,\nArlington,\nAthol,\nAttleboro,\nBarnstable,\nBedford,\nBeverly,\nBoston,\nBourne,\nBraintree,\nBrockton,\nBrookline,\nCambridge,\nCanton,\nCharlestown,\nChelmsford,\nChelsea,\nChicopee,\nClinton,\nCohasset,\nConcord,\nDanvers,\nDartmouth,\nDedham,\nDennis,\nDuxbury,\nEastham,\nEdgartown,\nEverett,\nFairhaven,\nFall River,\nFalmouth,\nFitchburg,\nFramingham,\nGloucester,\nGreat Barrington,\nGreenfield,\nGroton,\nHarwich,\nHaverhill,\nHingham,\nHolyoke,\nHyannis,\nIpswich,\nLawrence,\nLenox,\nLeominster,\nLexington,\nLowell,\nLudlow,\nLynn,\nMalden,\nMarblehead,\nMarlborough,\nMedford,\nMilton,\nNahant,\nNatick,\nNew Bedford,\nNewburyport,\nNewton,\nNorth Adams,\nNorthampton,\nNorton,\nNorwood,\nPeabody,\nPittsfield,\nPlymouth,\nProvincetown,\nQuincy,\nRandolph,\nRevere,\nSalem,\nSandwich,\nSaugus,\nSomerville,\nSouth Hadley,\nSpringfield,\nStockbridge,\nStoughton,\nSturbridge,\nSudbury,\nTaunton,\nTewksbury,\nTruro,\nWatertown,\nWebster,\nWellesley,\nWellfleet,\nWest Bridgewater,\nWest Springfield,\nWestfield,\nWeymouth,\nWhitman,\nWilliamstown,\nWoburn,\nWoods Hole,\nWorcester"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BLOG_Winthrop_Boat_Ramp-MASSACHUSETTS-state.jpg",
+        "title_tag": "h2",
+        "title": "Staying Connected: Tips for Remote Work in Massachusetts' Coastal Towns",
+        "description": "<p>Working remotely is a personal choice – and finding the best internet connection can be challenging! Fortunately, there are a number of trusted wireless internet services providers which can help you stay connected no matter where your work takes you. Here’s how to make the most out of remote work in <a href=\"\/pages\/states\" title=\"States\">Massachusetts<\/a>’ coastal towns:<\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p>Start off in Boston and explore one of its many modern coworking spaces - providing top-notch facilities ranging from private offices and large conference halls to fully equipped kitchens. With multiple regional providers offering reliable high-speed internet throughout the city - staying productive while enjoying all what Boston has to offer will be easy!Venture further north and discover Gloucester – known for its stunning natural beauty. Make use of any available coworking spaces located around town - <\/p>",
+        "text_2": "<p>plus have peace of mind knowing that Nomad Internet provides unbeatable coverage across <a href=\"https:\/\/nomadinternet.com\/\" title=\"rural areas\">rural areas<\/a> too – so staying connected should never be an issue when working away from home!Finally, head east towards Provincetown with its colorful history – no shortage of events - accompanied by numerous coworking spots specifically tailored for digital nomads. Take advantage of Nomad Internet's high-speed internet services promised throughout rural areas as well – ensuring that remote workers will always have fast connections at their fingertips!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/22.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/22.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Margot_Oakley.jpg",
+            "name": "Margot Oakley",
+            "text": "I'm a digital nomad living in rural Massachusetts who relies on Nomad Internet for reliable, high-speed internet access. I've been able to take my modem with me wherever I travel and still stay connected, which is invaluable for working from home and keeping in touch with family and friends. As a remote worker, finding an ISP that provides fast speeds and reliable coverage can be tricky, but with Nomad Internet I've been able to enjoy seamless connectivity wherever I am. I highly recommend giving them a try if you're looking for quality internet service.",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Ruth_Hawkins.jpg",
+            "name": "Ruth Hawkins",
+            "text": "I have been using Nomad Internet for my remote working needs while living in rural Massachusetts. The connection is fast and reliable, allowing me to accomplish all of the tasks I need to do each day. I recently took my modem with me while traveling and found that it worked just as well at my destination. It's great having access to quality internet wherever I am, which has allowed me to enjoy a more freedom and flexibility in my lifestyle.",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Amy_Harding.jpg",
+            "name": "Amy Harding",
+            "text": "I recently moved to rural Massachusetts and was concerned about internet access. I chose Nomad Internet for their fast speeds and reliable connection. The service has helped me stay connected with relatives and work remotely without interruption. It's not the fastest out there, but it's good enough for my needs. I'm able to stream shows in HD without lag, download large files quickly, and stay connected with friends online. With Nomad Internet, I get reliable internet in an otherwise underserved area of the country.",
+            "link": ""
+          }
+        },
+        "8c50961c-a930-4b16-921a-da02f59abb44": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Alani_Berry.jpg",
+            "name": "Alani Berry",
+            "text": "I've been using Nomad Internet in rural Massachusetts for my remote working. The high speed connection has allowed me to stay connected with colleagues and relatives easily, which I truly appreciate. The connection is reliable and strong for video calls and online meetings, making it a great option for anyone who works or lives in an area where internet access can be hard to come by. Setting up the service was also easy and straightforward, so I was able to get connected right away. It's not always perfect, but overall I'm satisfied with performance of the service.",
+            "link": ""
+          }
+        },
+        "f57378c9-f074-4375-91ff-598162cd7e49": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Norah_Parson.jpg",
+            "name": "Norah Parson",
+            "text": "I recently moved to rural Massachusetts and found myself in need of reliable, high-speed internet access. A few friends recommended Nomad Internet and after doing some research, I decided to give it a try with their 30 day free trial. I was definitely impressed by the download and upload speeds they provide. My work from home setup has been greatly improved since signing up, even on days where the connection drops at peak hours due to heavy traffic. All in all, my experience with Nomad Internet has been great so far - highly recommend if you're looking for fast, dependable internet!",
+            "link": ""
+          }
+        },
+        "83eb3aac-bcce-46e1-854e-6fcd5f93e7e9": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Esther_Page.jpg",
+            "name": "Esther Page",
+            "text": "I recently moved to rural Massachusetts and needed reliable internet access for remote working. After doing some research, I decided to try Nomad Internet. My friends had recommended it, and with the 30-days free trial, I figured why not? The set up was surprisingly easy - all I needed to do was plug in their device and connect it to my router. The connection speed has been incredible; fast enough for work that requires a lot of bandwidth and streaming! I'm glad I made the switch to Nomad Internet - it's been a great experience so far!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "8c50961c-a930-4b16-921a-da02f59abb44",
+        "f57378c9-f074-4375-91ff-598162cd7e49",
+        "83eb3aac-bcce-46e1-854e-6fcd5f93e7e9"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "ad9ae43d-81a1-4b60-b91d-4576d34f24fc": {
+          "type": "block",
+          "settings": {
+            "title": "What are some ways to increase my rural Massachusetts internet speed?",
+            "content": "<p>Are you tired of slow internet speeds in rural Massachusetts? We know how frustrating it can be to have a poor internet connection, especially when it interferes with work, school, and entertainment. Fortunately, there are several strategies you can use to boost your internet speed.<br\/><br\/>One option is to upgrade your internet plan or switch to a provider that offers faster speeds. Our company, for example, offers high-speed internet options for rural areas in Massachusetts. You can also try optimizing your router and modem settings, as well as positioning your devices closer to your router to improve signal strength. Another option is to reduce the number of devices connected to your network, as too many devices can slow down your internet speed.<br\/><br\/>In addition to these strategies, another solution to consider is upgrading your modem. Nomad Internet offers high-quality modems that can help boost and stabilize your signal, leading to improved internet speeds in rural areas. Our modems are designed to work optimally with our network, providing you with the best possible performance. Contact us today to learn more about our modem options and how they can enhance your rural internet experience.<\/p>"
+          }
+        },
+        "111f1abe-cd6f-44e9-8bf8-02dd8df38749": {
+          "type": "block",
+          "settings": {
+            "title": "Is there 5G coverage available in Massachusetts with Nomad Internet?",
+            "content": "<p>Yes, Nomad Internet provides 5G coverage in Massachusetts. <br\/><br\/>5G is the fifth-generation cellular network technology that promises to revolutionize wireless communications worldwide. It is capable of delivering faster speeds, lower latency, and more reliable connections than ever before. This enables users to stream videos and play online games with minimal lag time or connection issues, and conduct video conferencing without any problems.<br\/><br\/>Nomad Internet's advanced high-power directional antennas extend the reach of cellular networks, while also supporting 5G sub-6GHz and 4G LTE fallback for an optimal balance of coverage and performance. Furthermore, they offer modems like Nomad Air and Nomad Cube that stabilize connections to give you a premium online experience regardless of where you are located in Massachusetts.<br\/><br\/>Nomad Internet has tariff plans that fit any budget, making accessing their 5G network in Massachusetts a feasible option for everyone looking for top speeds at unbeatable prices!<\/p>"
+          }
+        },
+        "34b54bec-a320-41ab-8fd8-11d921feaab4": {
+          "type": "block",
+          "settings": {
+            "title": "Could you provide me with information about Nomad Internet's internet plans in Massachusetts?",
+            "content": "<p>Thank you for your interest in Nomad Internet. We offer a variety of internet plans that are tailored to meet your specific needs and goals. Whether you are looking for home internet to watch movies, play video games, browse social media or work, or need a plan that is suitable for traveling and being on the go, we have something for you. Additionally, we offer plans that accommodate different numbers of devices, so you can connect as many as you need.<br\/><br\/>For businesses with a large number of employees or for restaurants, we also have plans that are specifically designed to meet your requirements. And if you need the fastest internet possible, we have you covered as well.<br\/><br\/>We have three different tariff plans that you can choose from, and you can find out more about each one on our website. If you have any further questions or would like to discuss which plan is best for you, please don't hesitate to contact our customer service team.<br\/><br\/>Thank you again for considering Nomad Internet, and we look forward to serving your internet needs in Massachusetts.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "ad9ae43d-81a1-4b60-b91d-4576d34f24fc",
+        "111f1abe-cd6f-44e9-8bf8-02dd8df38749",
+        "34b54bec-a320-41ab-8fd8-11d921feaab4"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

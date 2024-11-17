@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "bfea0413-aa9c-4fa7-91b2-8c9a4b3cee68": {
+      "type": "how-nomad-works-banner",
+      "settings": {}
+    },
+    "a2e487cb-4588-4f1d-810c-be6117b14799": {
+      "type": "how-nomad-works-vision",
+      "settings": {}
+    },
+    "296f3c04-fccd-4cad-89e4-70ab595c5a82": {
+      "type": "how-nomad-works-internet",
+      "disabled": true,
+      "settings": {}
+    },
+    "ff7755bd-4305-457c-85aa-62f8ddb7b784": {
+      "type": "01home-faq",
+      "settings": {}
+    },
+    "545506ae-b63a-4b05-b7d9-0c8ac953d116": {
+      "type": "01home-contact",
+      "disabled": true,
+      "settings": {}
+    },
+    "ef59aab2-3afc-430c-90e7-fc3559fe85aa": {
+      "type": "01home-signup",
+      "settings": {}
+    }
+  },
+  "order": [
+    "bfea0413-aa9c-4fa7-91b2-8c9a4b3cee68",
+    "a2e487cb-4588-4f1d-810c-be6117b14799",
+    "296f3c04-fccd-4cad-89e4-70ab595c5a82",
+    "ff7755bd-4305-457c-85aa-62f8ddb7b784",
+    "545506ae-b63a-4b05-b7d9-0c8ac953d116",
+    "ef59aab2-3afc-430c-90e7-fc3559fe85aa"
+  ]
+}

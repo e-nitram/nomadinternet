@@ -1,0 +1,508 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/TOP_The_Blue_Bridge-MICHIGAN-state.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in Michigan"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Find the Right Internet Services Providers in Michigan for You. Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in Michigan?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/gkbDvup2OV8?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The internet provider with the most reliable and fast service in Michigan has been identified.",
+        "description": "Find your city in Michigan",
+        "content": "Adrian,\nAlma,\nAnn Arbor,\nBattle Creek,\nBay City,\nBenton Harbor,\nBloomfield Hills,\nCadillac,\nCharlevoix,\nCheboygan,\nDearborn,\nDetroit,\nEast Lansing,\nEastpointe,\nEcorse,\nEscanaba,\nFlint,\nGrand Haven,\nGrand Rapids,\nGrayling,\nGrosse Pointe,\nHancock,\nHighland Park,\nHolland,\nHoughton,\nInterlochen,\nIron Mountain,\nIronwood,\nIshpeming,\nJackson,\nKalamazoo,\nLansing,\nLivonia,\nLudington,\nMackinaw City,\nManistee,\nMarquette,\nMenominee,\nMidland,\nMonroe,\nMount Clemens,\nMount Pleasant,\nMuskegon,\nNiles,\nPetoskey,\nPontiac,\nPort Huron,\nRoyal Oak,\nSaginaw,\nSaint Ignace,\nSaint Joseph,\nSault Sainte Marie,\nTraverse City,\nTrenton,\nWarren,\nWyandotte,\nYpsilanti"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BLOG_Hart_Plaza_2-MICHIGAN-state_1.jpg",
+        "title_tag": "h2",
+        "title": "Overcoming Internet Connectivity Issues for Remote Work in Michigan's Rural Areas",
+        "description": "<p>Working remotely can be a challenge for many - especially when it comes to remaining connected. But luckily, there are a number of reliable wireless internet services providers available to remote workers living in rural areas of <a href=\"\/pages\/states\" title=\"States\">Michigan<\/a>. Here's how to overcome connectivity issues and make the most out of working in these rural areas:<\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p>Start your journey in Detroit and take advantage of its numerous coworking spaces located around town. Whether you need an office, off-site meeting space or simply want to stay productive while exploring the city - you’ll have access to <a href=\"https:\/\/nomadinternet.com\/pages\/wireless-internet\" title=\"fast connection speeds\">fast connection speeds<\/a> throughout the city thanks to multiple regional providers offering reliable high-speed internet! Venture further north and experience the beauty of Traverse City – known for its stunning natural scenery as well as its bustling downtown area full of entertainment options. <\/p>",
+        "text_2": "<p>And with Nomad Internet providing unbeatable coverage across rural areas too - whether you’re exploring its beaches or looking for some extra space away from home - you’ll always have fast connections at your fingertips!Finally, head east towards Flint and immerse yourself in its vibrant culture – boasting multiple coworking spaces tailored for digital nomads looking for some extra space away from their usual desk setups. Take advantage of Nomad Internet's wireless internet services promised throughout rural areas as well – ensuring that remote workers will never experience any connectivity issues!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/23.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/23.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Annalise_Coleman.jpg",
+            "name": "Annalise Coleman",
+            "text": "Living in rural Missouri, I never imagined the world of possibilities that would be opened up to me with nomad internet. With options like the Nomad Air, Ark and Raptor, I'm able to experience high-speed internet at faster speeds than ever before. Thanks to the easy access to the internet, I'm now able to explore places around the world and use digital tools to advance my art like never before. Whether streaming video or collaborating with people across the globe, nomad internet has enabled me to take my creativity further than I ever could have dreamed of.",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Kira_Harper.jpg",
+            "name": "Kira Harper",
+            "text": "I've been using nomad internet for the past few years, primarily to download large files quickly in my rural Missouri home. I went with the Nomad Raptor modem, and it has performed admirably! The connection is always reliable, and speed tests have consistently exceeded my expectations. I've also used it for online education, streaming HD videos, and gaming without a hitch. Overall, I'm really happy with the performance of the Nomad Raptor modem and would recommend it to anyone needing an efficient internet connection!",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Fatima_Robson.jpg",
+            "name": "Fatima Robson",
+            "text": "I grew up in rural Missouri with patchy internet access, so when I heard about the Nomad Air, Ark and Raptor modems I was excited to finally get a reliable connection. After doing my research, I chose the Nomad Raptor based on its strong connection range and portability. It was easy to set up and start using right away. I've been able to stream movies without buffering, download large files quickly, and even take online classes without interruption. With the Nomad Raptor, I can now enjoy a steady internet connection no matter where I am - it's definitely worth the investment!",
+            "link": ""
+          }
+        },
+        "f18b2f80-f1bf-4f12-9b8d-63cd6dada147": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Melessa_Yates.jpg",
+            "name": "Melessa Yates",
+            "text": "I've been living in rural Missouri my entire life, so I was excited when some of my friends told me about nomad internet. I decided to give it a try and see if could really live up to its reputation and help me download big files at high speeds. After doing some research, I chose the Nomad Air modem, as it offered the best performance for what I needed. The setup was super easy and only took a few minutes! I've had great results ever since and haven't had any problems with streaming or online education. If you're looking for an internet option that gives you fast speeds in even remote areas, then definitely give Nomad Internet a try!",
+            "link": ""
+          }
+        },
+        "95b0a411-8291-41ae-97d5-e6e7b7978842": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Demi_Byrne.jpg",
+            "name": "Demi Byrne",
+            "text": "I've been living in rural Missouri my whole life and, like many folks in the area, I'm not very tech savvy. That being said, I do need reliable high speed Internet for downloading big files and taking online classes. After doing some research, I decided on a Nomad modem. Having tried out the Air, Ark, and Raptor models, I found that all three live up to the company's reputation for providing quality service. The setup process was easy and the speeds are great - especially with their specialized antennas that can reach distant towers. All in all, Nomad is a great option for people who want fast and consistent internet even in rural areas!",
+            "link": ""
+          }
+        },
+        "3940a467-fc89-4d92-9212-e8e08e4a8dff": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Gisella_Warren.jpg",
+            "name": "Gisella Warren",
+            "text": "I recently switched from rural Michigan's slow internet to Nomad’s high-speed connection. I was looking for an upgrade that could help me in my online education and downloading big files with ease. With Nomad, I chose the Air modem and the setup couldn't have been simpler. Right away I noticed a huge improvement in download speed and connection quality. For someone who isn't tech savvy, this was great! The customer service was very helpful and friendly throughout the whole process - something I really appreciate. Overall, I'm more than satisfied with my experience so far with Nomad!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "f18b2f80-f1bf-4f12-9b8d-63cd6dada147",
+        "95b0a411-8291-41ae-97d5-e6e7b7978842",
+        "3940a467-fc89-4d92-9212-e8e08e4a8dff"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "4e46a92b-e0cf-457a-9d9a-26a4f94caeb3": {
+          "type": "block",
+          "settings": {
+            "title": "How can I get better internet in the rural parts of Michigan?",
+            "content": "<p>If you're looking to improve your internet speed in Michigan's rural areas, Nomad Internet offers a range of packages that can help. Our plans are designed to provide fast and reliable internet access even in remote locations, so you can enjoy streaming, gaming, and browsing without interruption.<br\/><br\/>Another solution is to make sure your modem and router are up-to-date and optimized for your internet plan. Additionally, minimizing the number of devices connected to your network and eliminating sources of interference, such as microwave ovens and other electronics, can help improve your internet speed. <br\/><br\/>In addition to our internet plans, we also offer a high-quality modem that can help boost and stabilize your signal. This modem is specifically designed for rural areas, and can help you achieve faster speeds and a more consistent connection.<br\/><br\/>If you've tried these methods and still aren't seeing the results you want, you may want to consider contacting a professional to assess your internet setup and suggest additional solutions.<\/p>"
+          }
+        },
+        "03b13703-e6ff-4c1b-b520-3a6d3a90d051": {
+          "type": "block",
+          "settings": {
+            "title": "Does Nomad Internet support 5G connectivity in Michigan?",
+            "content": "<p>Yes, Nomad Internet does support 5G connectivity in Michigan.<br\/><br\/>5G is the fifth generation of mobile networks, designed to provide faster internet speeds, lower latency, and increased reliability compared to previous generations. It uses advanced technologies like beamforming and massive MIMO to provide faster and more reliable internet speeds. <br\/><br\/>With 5G, users can download large files quickly, stream high-quality videos without buffering, and enjoy a more responsive online gaming experience. In addition, 5G also enables new applications and technologies like autonomous vehicles, remote surgery, and smart cities. <br\/><br\/>Nomad Internet's 5G service in Michigan is made possible through the use of the Nomad Air modem, which features advanced high-power directional antennas that extend the reach of cellular networks, while also supporting 5G sub-6GHz and 4G LTE fallback, for the perfect balance of network coverage and performance. <br\/><br\/>Nomad Internet offers various tariff plans to suit the needs of different users, allowing residents of rural areas in Michigan to access high-speed wireless internet at an affordable price.<\/p>"
+          }
+        },
+        "f2e0cb26-04ff-4235-ab5d-bb7906317aca": {
+          "type": "block",
+          "settings": {
+            "title": "I'm looking for information on the internet plans available from Nomad Internet in Michigan. What can you tell me?",
+            "content": "<p>At Nomad Internet, we offer various tariff plans to suit different needs and objectives. Our plans are tailored to cater to various internet usage scenarios, whether you plan to use it at home, while traveling or for business purposes.<br\/><br\/>When it comes to selecting a tariff plan, we recommend considering your usage requirements carefully. For instance, if you plan to use the internet to stream movies, play video games, or browse social networks from home, we have tariff plans that are best suited for these purposes. Similarly, if you travel frequently and need reliable internet on the go, we have plans that cater to such needs.<br\/><br\/>It's also important to consider the number of devices you want to connect to the internet. Our different tariff plans offer varying numbers of devices available for connection. So, whether you want to connect just one device or multiple devices, we've got you covered.<br\/><br\/>For business owners, we have plans that cater to the needs of companies with large numbers of employees or for establishments such as restaurants that require reliable internet connectivity.<br\/><br\/>Additionally, if you require high-speed internet for your daily activities, we offer the fastest internet speeds available.<br\/><br\/>We have three different tariff plans available for our customers in Michigan. To learn more about our plans and which one might be the best fit for you, please visit our website or get in touch with us directly. We are always here to assist you in finding the perfect tariff plan for your needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "4e46a92b-e0cf-457a-9d9a-26a4f94caeb3",
+        "03b13703-e6ff-4c1b-b520-3a6d3a90d051",
+        "f2e0cb26-04ff-4235-ab5d-bb7906317aca"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

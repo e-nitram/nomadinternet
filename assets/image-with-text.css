@@ -1,0 +1,154 @@
+.image-with-text {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--bg-color);
+}
+
+.image-with-text--inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+@media (max-width: 749px) {
+  .image-with-text--inner {
+    padding: 0 20px;
+  }
+}
+
+.image-with-text--image {
+  width: 100%;
+}
+
+.image-with-text--content {
+  width: 100%;
+  text-align: left;
+}
+
+.image-with-text--image img {
+  width: 100%;
+  margin: auto;
+}
+
+.image-with-text--image img.small {
+  max-width: 200px;
+}
+
+.image-with-text--image img.normal {
+  max-width: 360px;
+}
+
+.image-with-text--image img.bigger {
+  max-width: 100%;
+}
+
+.image-with-text--content .sub-title {
+  color: var(--sub-heading-color);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.image-with-text--content .title {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.image-with-text--content .desc {
+  max-width: 600px;
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 24px;
+  margin-bottom: 26px;
+  opacity: 0.8;
+}
+
+.image-with-text--content .btn {
+    background: var(--button-bg-color);
+  border-color: var(--button-border-color);
+  color: var(--button-text-color);
+}
+
+.image-with-text--content .desc li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+}
+
+.image-with-text--content .desc li svg {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+@media (min-width: 750px) {
+  .image-with-text {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .image-with-text--inner {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 48px;
+  }
+
+  .image-with-text--image {
+    width: 50%;
+  }
+  
+  .image-with-text--content {
+    width: 50%;
+    text-align: left;
+  }
+
+  .image-with-text--image.small {
+    width: 50%;
+  }
+
+  .image-with-text--content.bigger {
+    width: 50%;
+  }
+
+  .image-with-text--image.bigger {
+    width: 50%;
+  }
+
+  .image-with-text--content.small {
+    width: 50%;
+  }
+
+  .image-with-text--image.image--reverse {
+    order: 1;
+  }
+
+  .image-with-text--content .title {
+    font-size: 28px;
+    line-height: 38.2px;
+  }
+
+  .image-with-text--content .desc {
+    font-size: 18px;
+    line-height: 28.8px;
+  }
+
+  .image-with-text--image.image--reverse img {
+    margin-right: 0;
+  }
+  
+  .image-with-text--image img {
+    margin-left: 0;
+  }
+
+  .image-with-text--content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 500px) {
+  .image-with-text--image img {
+    max-width: 100% !important;
+  }
+}

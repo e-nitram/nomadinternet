@@ -1,0 +1,30 @@
+<div class="home-first-screen__bg" style="background-image: url({{ 'road.jpg' | asset_url }})"></div>
+
+<div class="container">
+  <h1 class="home-first-screen__title">Order nomad</h1>
+  <p class="home-first-screen__description">
+    High-speed, wireless low-latency broadband internet in remote and rural locations across the USA. $110/mo with a
+    one-time Nomad Air Modem cost of $399.
+  </p>
+</div>
+
+<div class="home-first-screen__cta">
+  <a href="/pages/nomad-plans" class="btn">Join now</a>
+</div>
+
+<img
+  src="{{ 'half-modem.png' | asset_url }}"
+  alt="nomad"
+  width="500"
+  height="auto"
+  loading="lazy"
+  class="home-first-screen__half-modem"
+>
+
+{% schema %}
+{
+  "tag": "section",
+  "class": "home-first-screen",
+  "name": "Home first screen"
+}
+{% endschema %}

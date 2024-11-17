@@ -1,0 +1,123 @@
+{% assign ss = section.settings %}
+{% assign blocks_count = section.blocks | size %}
+
+<div id="wizard-plans" class="container">
+  {% if ss.title %}
+    <h2 class="h3 text-center uppercase wizard-first-screen__title">{{ ss.title }}</h2>
+  {% endif %}
+
+  {% if blocks_count > 0 %}
+    <div class="row v-gutters justify-center">
+      {% for plan in section.blocks %}
+        {% assign ps = plan.settings %}
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="wizard-plan" id="{{ plan.id }}">
+            {% if ps.image %}
+              <div class="wizard-plan__image">
+                <div class="ratio" style="--ratio: calc(249 / 384 * 100%)">
+                  {{ ps.image | image_url: width: 1024 | image_tag }}
+                </div>
+              </div>
+            {% endif %}
+            {% if ps.title %}
+              <h3 class="wizard-plan__title">{{ ps.title }}</h3>
+            {% endif %}
+            {% if ps.description %}
+              <div
+                class="wizard-plan__description"
+                data-max-heigh="{{ ps.description_height }}"
+                style="max-height: {{ ps.description_height }}px"
+              >
+                {{ ps.description }}
+              </div>
+            {% endif %}
+            {% if ps.footer %}
+              <div class="wizard-plan__footer">
+                {{ ps.footer }}
+                {% assign ids = ps.memberships_ids | split: ',' %}
+                <div
+                  class="btn outline sm wide wizard-plan__btn"
+                  data-click-hash
+                  id="{{ ps.plan_id | handleize | default: ps.title | handleize }}"
+                  data-memberships-ids="{% for id in ids %}{% if forloop.index > 1 %},{% endif %}{{ id | handleize }}{% endfor %}"
+                  onclick="countdown('expired', 15)"
+                >
+                  Choose
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "wizard-first-screen",
+  "class": "wizard-first-screen",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "Wizard First Screen"
+    }
+  ],
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "plan",
+      "name": "Plan",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Plan Name"
+        },
+        {
+          "type": "text",
+          "id": "plan_id",
+          "label": "Plan ID",
+          "info": "Needed for use in URL Bar as a hash. Ex.1: Plan name. Ex.2 plan-name"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "range",
+          "id": "description_height",
+          "label": "Description height",
+          "default": 50,
+          "max": 500,
+          "min": 0,
+          "step": 5
+        },
+        {
+          "type": "richtext",
+          "id": "footer",
+          "label": "Plan Footer"
+        },
+        {
+          "type": "textarea",
+          "id": "memberships_ids",
+          "label": "Memeberhsips IDS",
+          "info": "Comma separated memberships ids"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

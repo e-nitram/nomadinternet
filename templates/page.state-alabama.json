@@ -1,0 +1,508 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/TOP.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in Alabama"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Looking for a secure Internet Service Provider in Alabama? Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in Alabama?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/mMmhOSJfN4U?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The best internet in Alabama",
+        "description": "Find your city in Alabama",
+        "content": "Alexander City,\nAndalusia,\nAnniston,\nAthens,\nAtmore,\nAuburn,\nBessemer,\nBirmingham,\nChickasaw,\nClanton,\nCullman,\nDecatur,\nDemopolis,\nDothan,\nEnterprise,\nEufaula,\nFlorence,\nFort Payne,\nGadsden,\nGreenville,\nGuntersville,\nHuntsville,\nJasper,\nMarion,\nMobile,\nMontgomery,\nOpelika,\nOzark,\nPhenix City,\nPrichard,\nScottsboro,\nSelma,\nSheffield,\nSylacauga,\nTalladega,\nTroy,\nTuscaloosa,\nTuscumbia,\nTuskegee"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/blog_6.jpg",
+        "title_tag": "h2",
+        "title": "Flexible Work and Play in Alabama",
+        "description": "<p>Are you looking for an inspiring place to get away and work remotely in Alabama? With its stunning scenery, countless recreational activities and fast internet speeds, it's the ideal destination for anyone looking to combine work and play.<\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p><a href=\"https:\/\/nomadinternet.com\/pages\/states\" title=\"Alabama\">Alabama<\/a> offers plenty of great spots to explore - from miles of white-sand beaches along the Gulf Coast to dense forests, crystal-clear lakes, rolling hills and ancient mountains. There are also plenty of opportunities for outdoor adventure – including camping, fishing, boating and hiking. And with Nomad Internet’s high speed wireless internet service, it's never been easier to stay connected while on the go. Nomad Internet <a href=\"\/pages\/offers\" title=\"Current offers from Nomad\">offers plans<\/a> that suit every kind of user – whether they're a home user or a commercial customer. Our flexible options enable customers to choose from monthly or prepaid plans so they can pick the one that fits their lifestyle and budget. And with no contracts required, you can stay for however long suits your needs without any hassle or unexpected costs.<\/p>",
+        "text_2": "<p>Our rural internet service covers all parts of Alabama, giving customers coverage wherever they are – plus our up to unlimited wireless internet plans boast download speeds up to 5Gbps! So no matter what type of user you are, Nomad Internet guarantees satisfaction every time – just as it should be when exploring such a beautiful place.If you're ready to take your job on the road while still enjoying all the amazing sights of Alabama – make sure you connect with Nomad Internet first! Get connected today and start discovering everything this amazing state has to offer - with unbeatable rates and reliable connection speeds guaranteed!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Jane_Silver.jpg",
+            "name": "Jane Silver",
+            "text": "I've been using Nomad Internet for several months now and I'm happy to say that it's been a fantastic experience. The nomad air modem has been perfect for my home-based needs, providing reliable speeds and great coverage in rural Alabama. Setup was easy and I've never had an issue since. Plus, the customer service is great, with reps always available and ready to answer any questions I might have. All in all, if you're looking for a high-speed internet provider in rural areas of Alabama, then Nomad Internet is definitely worth taking a look at!",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Austie_Miller.jpg",
+            "name": "Austie Miller",
+            "text": "I'm a digital nomad living in rural Alabama, and I've been hearing great things about Nomad Internet from my friends. After trying it out myself, I can confidently say that they are the best provider for remote workers like me! They offer fast download speeds with no throttling and their three modems - nomad air, nomad ark and nomad raptor - make it easy to find the perfect modem for your needs. Not only is their service reliable and convenient, but their customer service is top-notch as well. You won't find a better internet provider for rural areas!",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Emily_Crane.jpg",
+            "name": "Emily Crane",
+            "text": "I recently had the pleasure of working with Nomad Internet and their various modems and couldn't be happier with the customer service experience. The nomad air modem was a great choice for my home; it consistently provided high-speed internet for streaming, downloading, and gaming needs. It was easy to set up and required minimal effort to get up and running. I found that the connection rarely dropped or lagged, even when multiple devices were connected at once. Plus, I received helpful customer support whenever I had questions or needed assistance. When it comes to rural internet in Alabama, Nomad Internet's modems are truly a top-tier choice.",
+            "link": ""
+          }
+        },
+        "4c8df98d-82ff-4281-bf36-8621ff5ebbeb": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Miranda_Davis.jpg",
+            "name": "Miranda Davis",
+            "text": "I recently signed up for Nomad Internet's Travel Plan and I'm so happy with the results! The service has been reliable, fast, and easy to use. I'm especially impressed by their coverage in rural Alabama. My internet speeds are higher than expected and I'm able to access my favorite websites without an issue. Overall, I'm impressed with the level of service that Nomad offers. They make it a top priority to give customers an exceptional experience while connecting them to the world around them.",
+            "link": ""
+          }
+        },
+        "f3a24d3b-ac72-49e0-9141-213390d442cc": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Helen_Brown.jpg",
+            "name": "Helen Brown",
+            "text": "I recently switched to Nomad Internet in Alabama and I am blown away by the service! The signal is really strong and reliable, providing me with internet speeds that are faster than what I expected. Plus, the modem they provided - called Nomad Air - is easy to install and use, which was a huge plus for me. I'm also impressed by their customer service, which is fast and friendly. All in all, I'm super satisfied with my experience so far!",
+            "link": ""
+          }
+        },
+        "816fe57d-aff7-416f-bdbc-661c7a8c4178": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Scarlet_Sawyer.png",
+            "name": "Scarlet Sawyer",
+            "text": "I have been living and working in rural Alabama for the past year and was looking for a high-speed internet connection. I heard about Nomad Internet and their unique \"Nomad Air\" modem, so I decided to give it a try. I'm so glad I did! Installation was incredibly easy, with no need for any extra equipment or wires. The connection is consistent and reliable, allowing me to work from home without any issues. Best of all, the customer service is great - they were really helpful when I had questions about how to set up my modem or troubleshoot any issues.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "4c8df98d-82ff-4281-bf36-8621ff5ebbeb",
+        "f3a24d3b-ac72-49e0-9141-213390d442cc",
+        "816fe57d-aff7-416f-bdbc-661c7a8c4178"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "ee9beec9-ced8-4874-9cd9-1a1a70eb724a": {
+          "type": "block",
+          "settings": {
+            "title": "How can I improve my rural internet speed in Alabama?",
+            "content": "<p>Improving rural internet speed in Alabama can be a daunting task, given the limited infrastructure and availability of internet providers in these areas. <\/p><p>However, here are a few practical steps you can take to enhance your internet speed:<br\/><br\/><strong>Change your internet provider<\/strong><\/p><p>If you are dissatisfied with your current speed, consider switching to a fixed wireless internet provider like Nomad Internet. With speeds of up to 200 Mbps and a starting price of $99 per month (with an annual plan), Nomad Internet can offer faster internet speeds than DSL or dial-up connections.<br\/><br\/><strong>Optimize your internet connection<\/strong><\/p><p>Simple changes like upgrading your router, clearing your browser cache and cookies, or reducing the number of devices connected to your network can sometimes make a significant difference in your internet speed.<br\/><br\/><strong>Use a modem that can accumulate and boost the internet signal<br\/><br\/><\/strong>Modems like those provided by Nomad Internet can receive and store the internet signal, resulting in a more stable and faster connection. However, the effectiveness of this solution can vary depending on your location and other factors, so it's worth researching and comparing different options to find the best solution for your needs.<\/p><p>Improving rural internet speed in Alabama may require some effort, but exploring different options and taking practical steps can help you find a reliable and efficient solution for your needs.<\/p>"
+          }
+        },
+        "dd937524-2a0c-4268-a5f5-fc225d66e26c": {
+          "type": "block",
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage in Alabama?",
+            "content": "<p>Yes. We are pleased to inform you that we offer 5G coverage in Alabama, thanks to the advanced high-power directional antennas of our Nomad Air modem.<\/p><p>Our high-speed, low-latency service provides the perfect balance of network coverage and performance, with support for 5G sub-6GHz and 4G LTE fallback.<\/p><p>In addition to our 5G coverage, we also offer various tariff plans that include high-speed wireless Internet with speeds of up to 200 Mbit\/s, starting at $99 per month when paying for a year's plan. Our goal and mission at Nomad Internet are to make accessible high-speed wireless Internet for all residents of rural areas in the state, and our modems amplify and accumulate the signal to ensure stable and fast Internet. Our modems, Nomad Air and Nomad Cube, are available to our customers, and they can choose the one that best suits their needs.<\/p><p>We hope this information helps, and please feel free to contact us if you have any further questions or concerns.<\/p>"
+          }
+        },
+        "ab3f7a3e-ced8-426e-9244-192c5f6b086f": {
+          "type": "block",
+          "settings": {
+            "title": "What Internet Plans does Nomad Internet sell in Alabama?",
+            "content": "<p>Nomad Internet offers various tariff plans that cater to different needs and purposes. These plans are not limited to any specific location and are available for purchase in Alabama, as well as in other states across the US.<\/p><p>The available tariff plans include options for home use, such as watching movies, playing video games, or browsing social networks. There are also plans that are designed for people who travel frequently and need internet on the go. These plans are suitable for those who need to stay connected while on the road, and have varying numbers of devices that can be connected.<\/p><p>For businesses with a large number of employees or for those who need internet for their restaurant, Nomad Internet offers rates that are suitable for business use. These plans provide fast and reliable internet access to ensure smooth business operations.<\/p><p>For those who need the fastest internet possible, Nomad Internet also has options available. Customers can choose from different plans to find one that fits their needs and budget.<\/p><p>Overall, Nomad Internet provides a range of tariff plans that are tailored to meet the diverse needs of their customers in Alabama and beyond. To find out more about each tariff plan, customers can visit the Nomad Internet website.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "ee9beec9-ced8-4874-9cd9-1a1a70eb724a",
+        "dd937524-2a0c-4268-a5f5-fc225d66e26c",
+        "ab3f7a3e-ced8-426e-9244-192c5f6b086f"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

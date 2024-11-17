@@ -1,0 +1,508 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/top_d3404bf0-56f8-4fd2-bb6a-be3e37c8dd1d.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in Alaska"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Internet Providers in Alaska: Always There for You. Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in Alaska?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/y6AyWGDc9SE?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The top-rated internet service provider in Alaska has been identified.",
+        "description": "Find your city in Alaska",
+        "content": "Anchorage,\nCordova,\nFairbanks,\nHaines,\nHomer,\nJuneau,\nKetchikan,\nKodiak,\nKotzebue,\nNome,\nPalmer,\nSeward,\nSitka,\nSkagway,\nValdez"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/blog_fe1b4bd2-322c-40ac-a542-6eda2e493e04.jpg",
+        "title_tag": "h2",
+        "title": "How to Work Remotely in Alaska's Rural Communities",
+        "description": "<p>Are you looking to work remotely while exploring all that Alaska has to offer? With its stunning scenery and diverse wildlife, it's an ideal spot for anyone needing an escape from the hustle and bustle of city life. And with Nomad Internet’s fast and reliable internet service, you can stay connected wherever you are in the Last Frontier.<\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p><a href=\"\/pages\/states\" title=\"States\">Alaska<\/a> is full of amazing places to explore – from glaciers and cascading waterfalls to majestic mountains and serene lakes where you can enjoy countless outdoor activities like fishing, hunting and camping. And with Nomad Internet’s excellent <a href=\"\/pages\/coverage-map\" title=\"Coverage Map\">coverage<\/a> in even remote locations, you'll be able to experience it all while keeping connected! So here are some tips for working remotely in Alaska:Make sure your equipment is suitable for weather conditions – make sure your laptop\/computer have protective shells so they don't get damaged by rain or snow.Invest in a good power bank – <\/p>",
+        "text_2": "<p>since electricity may be hard to come by when working remotely in rural areas, investing in a good quality power bank will ensure your devices stay charged even when power isn't available.Connect with Nomad Internet – don't let slow connections ruin your productivity - connect with Nomad Internet and get access to high-speed internet at competitive prices across all of Alaska's rural communities!So why not get started today? Connect with Nomad Internet and start discovering Alaska's thrilling landscapes!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/55.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/55.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Mackenzie_Bell.jpg",
+            "name": "Mackenzie Bell",
+            "text": "I've been using Nomad Internet for the past month in Alaska and I'm really impressed. The connection is super reliable, even in colder climates, and I can stream without any hiccups. The speed is great for my everyday needs--I can upload large files quickly, browse with ease and work efficiently. I also appreciate the affordability and flexibility of the pricing plans. Overall, I'm incredibly satisfied and would definitely recommend it to anyone looking for internet in remote locations!",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Rachel_Moore.jpg",
+            "name": "Rachel Moore",
+            "text": "I recently spent a month in Alaska and was pleasantly surprised by how well Nomad Internet managed. Even in such a remote area, I was able to stay connected without interruption. The download\/upload speeds were consistently fast, enabling me to access important documents and complete work with ease. Nomad Internet is an affordable option for those who need reliable internet connection while traveling. I definitely give them two thumbs up!",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Casey_Spencer.jpg",
+            "name": "Casey Spencer",
+            "text": "I'm a remote worker based in Alaska and I can testify to the effectiveness of Nomad Internet. Finding good internet where I live isn't easy, but Nomad Internet has been a life saver! It's reliable, fast and always up to date with the latest technology. What really sets them apart though is their customer service. They're incredibly friendly and helpful, always responding quickly to any queries or problems I have. Their prices are also very reasonable for the quality of service they provide. All in all, I'd highly recommend Nomad Internet for anyone looking for an exceptional internet provider!",
+            "link": ""
+          }
+        },
+        "52b04d6a-d3b6-49b7-a9d8-315372d5e0ca": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Bianca_White.jpg",
+            "name": "Bianca Lewis",
+            "text": "I've been living and working in rural Alaska for a few years, so I was thrilled when Nomad Internet came along with the promise of high speed internet. As a remote worker, download speeds are essential to me, so I opted for the Nomad Raptor modem. I'm impressed by its promise of reliable, fast connection even in remote places like my rancho. Since getting it set up, I haven't had any issues streaming my favorite TV shows or participating in video calls. Even while camping without electricity, my laptop was able to get online thanks to the battery-powered mobile hotspot feature.",
+            "link": ""
+          }
+        },
+        "33b78fb6-de45-4272-8ea5-a378130a3209": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Eleanor_Jackson.jpg",
+            "name": "Eleanor Jackson",
+            "text": "I'm a remote worker in Alaska and I love Nomad Internet! It's the only reliable internet service that works here. I'm always able to rely on their fast, up to unlimited speeds for all of my work needs. Even when other providers experience outages, Nomad keeps me connected so I can continue working without interruption. Plus, their customer service is top notch - they are always willing to help with any issues and make sure I am getting the best service possible. My experience with Nomad has been exceptionally positive and I highly recommend them to anyone looking for an efficient, dependable internet service provider!",
+            "link": ""
+          }
+        },
+        "4de52c73-502b-41df-8717-dd2162c8a855": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Daisy_Stewart.jpg",
+            "name": "Daisy Stewart",
+            "text": "I know from personal experience that good internet can be hard to come by in Alaska, but I'm thrilled that I found Nomad Internet. Their range of modems (Nomad Air, Ark and Raptor) provide the perfect solution for anyone looking for dependable service, even in bad weather. I've had mine for a few years now and it's performed flawlessly. For me, it's been an absolute lifesaver! No more dropped calls or slow speeds - just crystal clear connection every time. Highly recommended!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "52b04d6a-d3b6-49b7-a9d8-315372d5e0ca",
+        "33b78fb6-de45-4272-8ea5-a378130a3209",
+        "4de52c73-502b-41df-8717-dd2162c8a855"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "d1356f90-d9f5-4027-95bf-bf4f53c14847": {
+          "type": "block",
+          "settings": {
+            "title": "What can I do to boost my internet speed in rural Alaska?",
+            "content": "<p>Improving internet speed in rural areas of Alaska can be a daunting task, given the limited infrastructure and few available internet providers. However, there are steps you can take to improve your internet speed.<\/p><p><strong>Firstly<\/strong>, it is worth considering a fixed wireless internet provider like Nomad Internet, which can offer faster speeds than other connection types like DSL or dial-up. Nomad Internet provides speeds of up to 200 Mbps with a starting price of $99 per month on an annual plan.<\/p><p><strong>Secondly<\/strong>, optimizing your internet connection can also help. Upgrading your router, clearing your cache and cookies, or reducing the number of devices connected to your network can improve your speed.<\/p><p><strong>Another option to consider<\/strong> is a modem that can accumulate and amplify the internet signal. Modems like those offered by Nomad Internet are designed to receive and store the internet signal, which can lead to a more reliable and faster connection. Using a modem with signal amplification capabilities can potentially improve your internet speed, without having to switch providers or upgrade your plan. However, it is important to note that the effectiveness of this solution may vary depending on your location and other factors.<\/p><p>In conclusion, improving rural internet speed in Alaska may require some effort and research, but it is worthwhile exploring different options to find the best solution for your needs. Nomad Internet can be a great option to consider in improving your rural internet speed in Alaska.<\/p>"
+          }
+        },
+        "b465e7e5-7e23-4d46-b50e-660cc59ed1a8": {
+          "type": "block",
+          "settings": {
+            "title": "Is 5G coverage offered by Nomad Internet in Alaska?",
+            "content": "<p>Yes. We are pleased to inform you that Nomad Internet does offer 5G coverage in Alaska.<br\/><br\/>Our high-speed, low-latency service is made possible through using the Nomad Air's advanced high-power directional antennas that extend the reach of cellular networks, while also supporting 5G sub-6GHz and 4G LTE fallback, for the perfect balance of network coverage and performance. Additionally, we offer various tariff plans that provide high-speed wireless Internet with speeds of up to 200 Mbit\/s, starting at $99 per month (when paying for a year's plan), to make accessible high-speed wireless Internet for all residents of rural areas.<br\/><br\/>We hope this information is helpful. Please do not hesitate to reach out if you have any further questions or concerns.<\/p>"
+          }
+        },
+        "2e559f0f-61c8-427c-b36e-aa5f7a00473e": {
+          "type": "block",
+          "settings": {
+            "title": "What types of internet plans are offered by Nomad Internet in Alaska?",
+            "content": "<p>Nomad Internet offers a range of tariff plans designed to meet the diverse needs of its customers in Alaska. These plans are tailored to specific usage scenarios and device requirements.<\/p><p><strong>For customers<\/strong> who plan to use the internet primarily at home for activities such as watching movies, playing video games, browsing social media, or working, there are plans available that are specifically designed for home use.<\/p><p><strong>For those who frequently travel<\/strong> or need internet on-the-go, Nomad Internet offers plans that are suitable for such purposes. These plans allow customers to stay connected while traveling, and provide varying numbers of devices that can be connected to the internet.<\/p><p><strong>For businesses<\/strong> with large numbers of employees or those that require internet access for their restaurant, Nomad Internet offers rates that are suitable for business use. These plans provide fast and reliable internet access to ensure that business operations run smoothly.<\/p><p>Nomad Internet also offers plans that provide the fastest internet speeds possible, allowing customers to enjoy blazing-fast internet connections.<\/p><p>Overall, Nomad Internet provides a wide range of tariff plans that cater to various needs and usage scenarios for customers in Alaska. Customers can learn more about each plan and select the one that best suits their needs by visiting the Nomad Internet website.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "d1356f90-d9f5-4027-95bf-bf4f53c14847",
+        "b465e7e5-7e23-4d46-b50e-660cc59ed1a8",
+        "2e559f0f-61c8-427c-b36e-aa5f7a00473e"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

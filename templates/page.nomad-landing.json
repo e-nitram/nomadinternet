@@ -1,0 +1,210 @@
+{
+  "wrapper": "div.cube.cube--template",
+  "sections": {
+    "banner_slideshow_EMNJbG": {
+      "type": "banner-slideshow",
+      "blocks": {
+        "slide_item_jnmEU7": {
+          "type": "slide-item",
+          "settings": {
+            "show_gradient_color": false,
+            "show_bg_color": false,
+            "bg_color": "#00271f",
+            "content_image_radius": false,
+            "image": "shopify:\/\/shop_images\/city-blue-sky_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/city-blue-sky_1_1.png",
+            "content_alignment": "inner--left",
+            "sub_heading": "Offer Unlimited Internet: Book More, Earn More!",
+            "sub_heading_color": "#00b589",
+            "bold_color": "#ff4040",
+            "heading": "<p>Schedule Your Beacon One Visit for Unlimited Wi-Fi.<\/p>",
+            "heading_color": "#ffffff",
+            "desc": "<p>Enhance Guest Satisfaction & Boost Revenue with a Single Visit from Nomad's Beacon One<\/p>",
+            "button_text1": "Request Beacon One Visit Today!",
+            "button_link1": "https:\/\/nomadinternet.typeform.com\/to\/ckr2h4wF",
+            "text_color1": "#ffffff",
+            "button_bg_color1": "#008061",
+            "button_text_color1": "#ffffff",
+            "enable_new_tab1": true,
+            "button_text2": "",
+            "button_link2": "",
+            "text_color2": "#ffffff",
+            "button_bg_color2": "#e12727",
+            "button_text_color2": "#ffffff",
+            "enable_new_tab2": true,
+            "show_contract": false,
+            "contract_header": "Have Questions?",
+            "contract_phonenumber": "+1 210 598 5949"
+          }
+        }
+      },
+      "block_order": [
+        "slide_item_jnmEU7"
+      ],
+      "settings": {}
+    },
+    "usp_banner_GEKWz6": {
+      "type": "usp-banner",
+      "blocks": {
+        "item_eCitzA": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg width=\"47\" height=\"47\" viewbox=\"0 0 47 47\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M23.4691 37.7095H23.488M43.9494 17.2427C38.554 12.2986 31.3638 9.28143 23.4689 9.28143C15.5739 9.28143 8.38369 12.2986 2.98828 17.2427M9.6946 23.9559C13.3677 20.7202 18.1892 18.7575 23.469 18.7575C28.7489 18.7575 33.5703 20.7202 37.2434 23.9559M30.4782 30.6501C28.5467 29.1361 26.1132 28.2335 23.4689 28.2335C20.7845 28.2335 18.3174 29.1636 16.3722 30.7192\" stroke=\"#00B589\" stroke-width=\"2.83523\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "heading": "Free Wi-Fi For Guest",
+            "content": "<p>Offer your guests the luxury of complimentary high-speed Wi-Fi, enhancing their stay and making your RV Park the go-to destination for connected travelers.<\/p>"
+          }
+        },
+        "item_tRgDFD": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg width=\"49\" height=\"49\" viewbox=\"0 0 49 49\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M46.7744 22.8364L46.7919 22.8839L46.7942 22.8862C46.8482 23.0488 46.8775 23.2225 46.8775 23.4039C46.8775 23.6572 46.8204 23.8957 46.7239 24.0979L46.723 24.0998L42.5766 32.9889L42.5728 32.997L42.5696 33.0054L42.5687 33.0079C42.3009 33.5617 41.7349 33.9442 41.0798 33.9442H41.0753C40.8221 33.9442 40.5853 33.8872 40.3848 33.7908L40.3824 33.7897L37.722 32.5491L37.513 32.4516L37.4154 32.6606L36.8282 33.9177L36.8244 33.9259L36.8212 33.9343L36.8204 33.9365C36.5512 34.489 35.9851 34.8702 35.3314 34.8702H35.3269C35.0737 34.8702 34.8369 34.8131 34.6364 34.7168L34.634 34.7156L17.7486 26.8428L17.5328 26.7422L17.439 26.961L13.6991 35.686L13.6989 35.6859L13.6951 35.6959L13.6929 35.702C13.4364 36.2822 12.8549 36.6874 12.1813 36.6874H5.02964H4.79888V36.9182V42.5642C4.79888 43.4756 4.05905 44.2155 3.14763 44.2155C2.23621 44.2155 1.49638 43.4756 1.49638 42.5642V27.5082C1.49638 26.5967 2.23621 25.8569 3.14763 25.8569C4.05905 25.8569 4.79888 26.5967 4.79888 27.5082V33.1542V33.3849H5.02964H10.9406H11.0928L11.1527 33.2451L14.45 25.5514L14.5381 25.3459L14.3354 25.2514L2.63236 19.7951L2.62425 19.7913L2.61587 19.7882L2.61317 19.7871C2.05998 19.5211 1.67856 18.9555 1.67856 18.2999C1.67856 18.0448 1.73579 17.8048 1.83221 17.6028L1.8331 17.6009L8.74232 2.78277L8.74611 2.77466L8.74925 2.76627L8.75026 2.76359C9.01631 2.21039 9.58195 1.82896 10.2375 1.82896C10.4926 1.82896 10.7326 1.8862 10.9346 1.98261L10.9346 1.98261L10.9365 1.9835L42.9366 16.9055L42.9447 16.9093L42.9531 16.9125L42.9559 16.9135C43.5103 17.1795 43.8919 17.7465 43.8919 18.4023C43.8919 18.6572 43.8348 18.8957 43.7383 19.0978L43.7374 19.0997L43.1502 20.3584L43.0526 20.5675L43.2618 20.6651L45.9192 21.9042L45.9273 21.908L45.9357 21.9111L45.9384 21.9121C46.3209 22.0962 46.6217 22.4231 46.7744 22.8364ZM34.323 30.9272L34.5322 31.0248L34.6297 30.8156L39.949 19.4061L40.0465 19.197L39.8374 19.0995L11.2489 5.76887L11.0398 5.67134L10.9423 5.8805L5.62448 17.287L5.52699 17.4961L5.73609 17.5936L17.2088 22.9445L17.2208 22.9501L17.2334 22.9543C17.2602 22.9633 17.2845 22.9682 17.3033 22.9712C17.3204 22.974 17.3388 22.9761 17.3463 22.977C17.3466 22.977 17.3469 22.9771 17.3472 22.9771C17.3844 23.0016 17.4209 23.0283 17.4565 23.0555L17.4765 23.0709L17.4994 23.0815L34.323 30.9272ZM40.0682 29.9982L40.2775 30.096L40.3751 29.8867L42.9301 24.4078L43.0275 24.1988L42.8187 24.1012L41.8686 23.6571L41.6594 23.5592L41.5618 23.7686L39.0068 29.2475L38.9093 29.4564L39.1182 29.554L40.0682 29.9982Z\" fill=\"#00B589\" stroke=\"black\" stroke-width=\"0.461518\"><\/path>\n<\/svg>",
+            "heading": "Earn Effortlessly",
+            "content": "<p>Discover how every Nomad Beacon scan adds 50¢ to your revenue, day and night. Plus, enjoy an instant $50 commission with each Hotspot sale and a steady $10\/mo lifetime commission per sale.<\/p>"
+          }
+        },
+        "item_WmNMKN": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg width=\"46\" height=\"47\" viewbox=\"0 0 46 47\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M31.2877 9.86864C35.6962 14.2772 35.6962 21.4248 31.2877 25.8333M15.3229 25.8333C10.9144 21.4248 10.9144 14.2772 15.3229 9.86864M9.86845 31.0213C2.65361 23.6636 2.69776 11.8503 10.0009 4.54718M36.6096 4.54718C43.9127 11.8503 43.9569 23.6636 36.742 31.0213M23.3052 31.0213V17.8511M10.135 42.31H36.4755C38.2288 42.31 39.1054 42.31 39.7969 42.0236C40.7189 41.6417 41.4515 40.9091 41.8334 39.9871C42.1198 39.2956 42.1198 38.419 42.1198 36.6657C42.1198 34.9124 42.1198 34.0357 41.8334 33.3442C41.4515 32.4222 40.7189 31.6896 39.7969 31.3077C39.1054 31.0213 38.2288 31.0213 36.4755 31.0213H10.135C8.38173 31.0213 7.50508 31.0213 6.81356 31.3077C5.89154 31.6896 5.159 32.4222 4.77709 33.3442C4.49065 34.0357 4.49065 34.9124 4.49065 36.6657C4.49065 38.419 4.49065 39.2956 4.77709 39.9871C5.159 40.9091 5.89154 41.6417 6.81356 42.0236C7.50508 42.31 8.38173 42.31 10.135 42.31Z\" stroke=\"#00B589\" stroke-width=\"3.01033\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "heading": "Same Day Hotspot Pickup",
+            "content": "<p>Provide guests with the convenience of same-day hotspot pickup, ensuring they're always connected and can enjoy a seamless internet experience wherever they travel. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_eCitzA",
+        "item_tRgDFD",
+        "item_WmNMKN"
+      ],
+      "settings": {
+        "bg_color": "#000000"
+      }
+    },
+    "text_with_content_NFHxQ8": {
+      "type": "text-with-content",
+      "settings": {
+        "heading": "How It Works",
+        "content": "",
+        "bg_color": "#101010",
+        "text_color": "#ffffff"
+      }
+    },
+    "04how_it_works_ggPqif": {
+      "type": "04how-it-works",
+      "blocks": {
+        "icon_item_MgEM9V": {
+          "type": "icon-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/file-question-02.svg",
+            "title": "Get Started",
+            "content": "<p>Want better Wi-Fi and more income for your RV park? Request Nomad Beacon One to upgrade guest experiences and boost your earnings.<\/p>"
+          }
+        },
+        "icon_item_KFtwhN": {
+          "type": "icon-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/calendar-check-01.svg",
+            "title": "Quick Approval",
+            "content": "<p>We quickly check your request and get back to you fast, making sure we're all set to work together smoothly.<\/p>"
+          }
+        },
+        "icon_item_8LxBn4": {
+          "type": "icon-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_469531.svg",
+            "title": "Nomad Onsite",
+            "content": "<p>We deliver Nomad Beacon One right to your park, setting you up with fast Wi-Fi and on-the spot internet service for instant guest satisfaction.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_MgEM9V",
+        "icon_item_KFtwhN",
+        "icon_item_8LxBn4"
+      ],
+      "settings": {
+        "bg_color": "#101010",
+        "text_color": "#ffffff"
+      }
+    },
+    "text_with_content_qtQKLW": {
+      "type": "text-with-content",
+      "settings": {
+        "heading": "Features & Benefits",
+        "content": "",
+        "bg_color": "#101010",
+        "text_color": "#ffffff"
+      }
+    },
+    "04image_with_text_ckt4pk": {
+      "type": "04image-with-text",
+      "settings": {
+        "bg_color": "#101010",
+        "image_pos": "image--reverse",
+        "image": "shopify:\/\/shop_images\/882shots_so_1.png",
+        "content_bg_color": "#000000",
+        "content_text_color": "#ffffff",
+        "heading": "FREE WIFI FOR GUESTS & OFFICES",
+        "sub_heading": "<p>Get Nomad Beacon One and offer your RV park guests and staff free WiFi. Enjoy 10x faster C-Band speeds, better security, and easy network management. Upgrade guest experiences and office efficiency.<\/p>",
+        "button_text": "Ask for a Beacon One Visit Now!",
+        "button_link": "https:\/\/nomadinternet.typeform.com\/to\/ckr2h4wF"
+      }
+    },
+    "04image_with_text_JnT6UV": {
+      "type": "04image-with-text",
+      "settings": {
+        "bg_color": "#101010",
+        "image_pos": "",
+        "image": "shopify:\/\/shop_images\/Right_1.png",
+        "content_bg_color": "#000000",
+        "content_text_color": "#ffffff",
+        "heading": "SAME-DAY MODEM PICKUP",
+        "sub_heading": "<p>Choose Nomad Beacon One for quick modem pickup at your RV park. Request a visit, and grab our high-speed modem the day we arrive, giving your guests instant, top-quality internet.<\/p>",
+        "button_text": "Ask for a Beacon One Visit Now!",
+        "button_link": "https:\/\/nomadinternet.typeform.com\/to\/ckr2h4wF"
+      }
+    },
+    "04image_with_text_prWzwN": {
+      "type": "04image-with-text",
+      "settings": {
+        "bg_color": "#101010",
+        "image_pos": "image--reverse",
+        "image": "shopify:\/\/shop_images\/Frame_1171276810.png",
+        "content_bg_color": "#000000",
+        "content_text_color": "#ffffff",
+        "heading": "EARN WITH EVERY SCAN",
+        "sub_heading": "<p>With Nomad Beacon One, turn every scan into cash. Our system not only improves your RV park’s Wi-Fi but also introduces a new revenue stream:<\/p><ul><li>Earn 50¢ on every scan, day or night.<\/li><li>Instant $50 bonus for every hotspot sale.<\/li><li>Continuous earning with $10\/mo. per sale.<\/li><\/ul>",
+        "button_text": "Ask for a Beacon One Visit Now!",
+        "button_link": "https:\/\/nomadinternet.typeform.com\/to\/ckr2h4wF"
+      }
+    },
+    "01home_icons_video_jy4hnk": {
+      "type": "01home-icons-video",
+      "settings": {
+        "bg_color": "#000000"
+      }
+    },
+    "04home_submit_PTrJX8": {
+      "type": "04home-submit",
+      "settings": {
+        "bg_color": "#101010",
+        "text_color": "#ffffff",
+        "title": "Need Answers Fast? We're Just a Call or Click Away!",
+        "description": "<p>Reach out to our specialists directly at <a href=\"tel:+1 210 598 5949\" target=\"_blank\" title=\"tel:+1 210 598 5949\">+1 210 598 5949<\/a>. We’re ready to assist you over the phone for immediate support use the form below to send us your questions<\/p>",
+        "form_caption": "Whether it’s a quick call or an online message, we guarantee comprehensive and timely answers to your queries"
+      }
+    }
+  },
+  "order": [
+    "banner_slideshow_EMNJbG",
+    "usp_banner_GEKWz6",
+    "text_with_content_NFHxQ8",
+    "04how_it_works_ggPqif",
+    "text_with_content_qtQKLW",
+    "04image_with_text_ckt4pk",
+    "04image_with_text_JnT6UV",
+    "04image_with_text_prWzwN",
+    "01home_icons_video_jy4hnk",
+    "04home_submit_PTrJX8"
+  ]
+}

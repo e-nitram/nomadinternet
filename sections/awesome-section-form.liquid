@@ -1,0 +1,231 @@
+{% assign ss = section.settings %}
+
+<div class="awesome-section awesome-section--form">
+  <div class="awesome-section__content{% if section.settings.reversed %} awesome-section__content--reversed{% endif %}">
+    <div class="awesome-section__form">
+      {% form 'contact' %}
+        {{ form.errors | default_errors }}
+        <input type="hidden" name="contact[page_title]" value="{{ page.title }}">
+        <input type="hidden" name="contact[page_url]" value="https://{{ request.host }}{{ request.path }}">
+        <input type="hidden" name="contact[page_type]" value="{{ page.template_suffix }}">
+
+        {% if ss.form_title %}
+          <h4 class="form__title">{{ ss.form_title }}</h4>
+        {% endif %}
+
+        {% if ss.form_description %}
+          <div class="form__description">{{ ss.form_description }}</div>
+        {% endif %}
+
+        <div class="container fluid">
+          <label class="input-wrapper">
+            <span class="sr-only">Name</span>
+            <input type="text" name="contact[name]" placeholder="Name" required>
+          </label>
+
+          <label class="input-wrapper">
+            <span class="sr-only">Phone</span>
+            <input type="text" name="contact[phone]" placeholder="Phone" required>
+          </label>
+
+          <label class="input-wrapper">
+            <span class="sr-only">Email</span>
+            <input type="email" name="contact[email]" placeholder="Email" required>
+          </label>
+
+          <label class="input-wrapper">
+            <span class="sr-only">Street Address (No Po Box)</span>
+            <input type="text" name="contact[street_address]" placeholder="Street Address (No Po Box)" required>
+          </label>
+
+          <label class="input-wrapper">
+            <span class="sr-only">Zip Code</span>
+            <input type="text" name="contact[zip_code]" placeholder="Zip Code" required>
+          </label>
+
+          <div class="form-buttons">
+            <button type="submit" class="btn lg wide">Send</button>
+          </div>
+        </div>
+      {% endform %}
+    </div>
+
+    <div class="awesome-section__text">
+      <div>
+        <{{ section.settings.title_tag }} class="awesome-section__title">
+          {{- section.settings.title -}}
+        </{{ section.settings.title_tag }}>
+        <div class="awesome-section__description">{{ section.settings.description }}</div>
+        <div class="awesome-section__cta">
+          {% for btn in section.blocks %}
+            <a
+              {% if btn.settings.url contains '/cart' %}data-href="{{ btn.settings.url }}"{% else %}href="{{ btn.settings.url }}"{% endif %}
+              class="{% if btn.settings.url contains '/cart' %}cart_btn {% endif %}btn {{ btn.settings.class }}"
+              id="{{ btn.id }}"
+              {% if btn.settings.blank %}
+                target="_blank"
+              {% endif %}
+              {% if btn.settings.on_click != blank %}
+                onclick="{{ btn.settings.on_click }}"
+              {% endif %}
+            >
+              {{- btn.settings.text -}}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+<script>
+var $j = jQuery.noConflict();  
+$j(".cart_btn").click(function(event){
+  event.preventDefault();
+  location.href = '/pages/plans';
+  /*var cart_link = $j(this).attr('data-href');
+     var discount_code = $j.cookie("discount_code");
+if (discount_code){  
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?discount_code="+discount_code+"&items=https://nomadinternet.com"+cart_link+"&jsonize=1";
+}
+else{
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?items=https://nomadinternet.com"+cart_link+"&jsonize=1";
+}
+  $j.ajax({
+    type: "GET",
+    url: url,
+    dataType: "json",
+    success: function(response){
+location.href = response[0];
+    }
+  });*/
+});
+</script>          
+
+{% schema %}
+{
+  "name": "Awesome Section Form",
+  "tag": "div",
+  "class": "container",
+  "presets": [
+    {
+      "name": "Awesome Section Form"
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "reversed",
+      "label": "Reversed",
+      "info": "Image to right side"
+    },
+    {
+      "type": "select",
+      "id": "title_tag",
+      "label": "Title TAG",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        },
+        {
+          "value": "p",
+          "label": "p"
+        },
+        {
+          "value": "span",
+          "label": "span"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "form_title",
+      "label": "Form Title"
+    },
+    {
+      "type": "richtext",
+      "id": "form_description",
+      "label": "Form Description"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Button",
+      "limit": 2,
+      "type": "hc-button",
+      "settings": [
+        {
+          "type": "select",
+          "id": "class",
+          "label": "Type",
+          "options": [
+            {
+              "label": "Solid",
+              "value": "solid"
+            },
+            {
+              "label": "Outline",
+              "value": "outline"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "checkbox",
+          "id": "blank",
+          "label": "Target Blank",
+          "info": "Open link in new tab"
+        },
+        {
+          "type": "text",
+          "id": "on_click",
+          "label": "On Click",
+          "info": "E.g. ga('send', 'event', 'button', 'click');"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

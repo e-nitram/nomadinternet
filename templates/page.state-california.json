@@ -1,0 +1,508 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/TOP_2_1.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in California"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Looking for a secure Internet Service Provider in California? Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in California?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/WwUTZj1the0?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The best internet in California",
+        "description": "Find your city in California",
+        "content": "Alameda,\nAlhambra,\nAnaheim,\nAntioch,\nArcadia,\nBakersfield,\nBarstow,\nBelmont,\nBerkeley,\nBeverly Hills,\nBrea,\nBuena Park,\nBurbank,\nCalexico,\nCalistoga,\nCarlsbad,\nCarmel,\nChico,\nChula Vista,\nClaremont,\nCompton,\nConcord,\nCorona,\nCoronado,\nCosta Mesa,\nCulver City,\nDaly City,\nDavis,\nDowney,\nEl Centro,\nEl Cerrito,\nEl Monte,\nEscondido,\nEureka,\nFairfield,\nFontana,\nFremont,\nFresno,\nFullerton,\nGarden Grove,\nGlendale,\nHayward,\nHollywood,\nHuntington Beach,\nIndio,\nInglewood,\nIrvine,\nLa Habra,\nLaguna Beach,\nLancaster,\nLivermore,\nLodi,\nLompoc,\nLong Beach,\nLos Angeles,\nMalibu,\nMartinez,\nMarysville,\nMenlo Park,\nMerced,\nModesto,\nMonterey,\nMountain View,\nNapa,\nNeedles,\nNewport Beach,\nNorwalk,\nNovato,\nOakland,\nOceanside,\nOjai,\nOntario,\nOrange,\nOroville,\nOxnard,\nPacific Grove,\nPalm Springs,\nPalmdale,\nPalo Alto,\nPasadena,\nPetaluma,\nPomona,\nPort Hueneme,\nRancho Cucamonga,\nRed Bluff,\nRedding,\nRedlands,\nRedondo Beach,\nRedwood City,\nRichmond,\nRiverside,\nRoseville,\nSacramento,\nSalinas,\nSan Bernardino,\nSan Clemente,\nSan Diego,\nSan Fernando,\nSan Francisco,\nSan Gabriel,\nSan Jose,\nSan Juan Capistrano,\nSan Leandro,\nSan Luis Obispo,\nSan Marino,\nSan Mateo,\nSan Pedro,\nSan Rafael,\nSan Simeon,\nSanta Ana,\nSanta Barbara,\nSanta Clara,\nSanta Clarita,\nSanta Cruz,\nSanta Monica,\nSanta Rosa,\nSausalito,\nSimi Valley,\nSonoma,\nSouth San Francisco,\nStockton,\nSunnyvale,\nSusanville,\nThousand Oaks,\nTorrance,\nTurlock,\nUkiah,\nVallejo,\nVentura,\nVictorville,\nVisalia,\nWalnut Creek,\nWatts,\nWest Covina,\nWhittier,\nWoodland,\nYorba Linda,\nYuba City"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BLOG_3_1.jpg",
+        "title_tag": "h2",
+        "title": "How to Overcome Distractions While Working Remotely in California",
+        "description": "<p>Working from home can be a great way to focus on projects and tasks without being interrupted, but for many people, it's also disruptive due to distraction. With the right strategies, however, even those in more remote areas in California can stay focused and productive when working remotely.<\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p>First of all, it's important to recognize that distractions come in lots of forms - whether it's colleagues stopping by your desk or an enticing TV show playing in the background. And when you work remotely, these temptations only become harder to resist! So having an understanding of what distracts you and why is key in order to successfully overcome them.It's also critical to make sure that you have access to reliable internet speeds. Nomad Internet offers fast wireless services across the state of <a href=\"\/pages\/states\" title=\"States\">California<\/a> with their flexible monthly or prepaid plans – making sure that you don't miss out on important calls or deadlines due to slow connection speed! Next, having a clear plan for your day is essential so that you stay motivated and on track with your tasks.<\/p>",
+        "text_2": "<p>Having clearly defined goals as well as breaks throughout the day will help break up any monotony and keep you focused. Also try setting aside specific times during the week dedicated solely for difficult tasks like emails or client calls - this way they won't become too overwhelming or distracting!Finally – don’t forget about offline activities either! Take regular breaks outside away from screens and get some fresh air – even if it’s just a quick walk around the block or a few minutes staring at nature's beauty will do wonders for your productivity levels!  With Nomad Internet’s unbeatable <a href=\"\/pages\/coverage-map\" title=\"Coverage Map\">coverage<\/a> across even more remote parts of California – there’s no excuses not stay focused while working remotely today!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/luna_Carter.jpg",
+            "name": "luna Carter",
+            "text": "I had the best experience with Nomad Internet when I moved to California. I love the freedom that comes with being a digital nomad, and having access to reliable internet was key. With Nomad Internet, I didn't have to worry about rural internet dropping out or not having enough bandwidth for streaming or gaming. The modem was easy to set up, and before long I was connected and ready to start working remotely! It enabled me to keep up with my projects and deadlines without having to rely on unreliable public wifi networks. Plus, it allowed me to stay in touch with family and friends back home while still taking advantage of everything that the West Coast had to offer.",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Rheya_Watts.jpg",
+            "name": "Rheya Watts",
+            "text": "I've been working remotely in California for the past few months and decided to give Nomad Internet a try. To my surprise, I was able to secure a high speed connection that worked for both streaming and gaming! Not only did it take me very little time to set up (with the modem already included), but it also cost less than any other rural internet option available. Overall, I'm extremely happy with my experience so far. The connection is reliable, fast and secure - perfect for a digital nomad like myself. Plus, it's great to know that they offer customer support whenever needed - just another thing to appreciate!",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Linda_Lawrence.jpg",
+            "name": "Linda Lawrence",
+            "text": "I've had a great experience with Nomad Internet. As someone who loves to explore the beauty of California, having access to fast and reliable internet connection is essential. With Nomad Internet, I'm able to set up a modem in minutes and get connected wherever I go. The speed is very impressive, allowing me to easily stream movies or music without buffering. Plus, their customer support team is always available, so if I ever experience any issues I can get help right away. Overall, Nomad Internet has made remote working and rural internet access much easier for me while exploring California.",
+            "link": ""
+          }
+        },
+        "1f3c68f6-c22a-4560-ad47-c230ddb976e3": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Sierra_Barker.jpg",
+            "name": "Sierra Barker",
+            "text": "I'm so glad I discovered Nomad Internet! As a remote worker living out in the rural countryside of California, I was struggling to find reliable internet service. But then I heard about their amazing modems that can provide fast, reliable internet in even the most remote locations. It's been a game changer for me - no more dropped connections or long waits for downloads! With Nomad Internet, I've been able to work from home without any hiccups and have enjoyed having access to internet no matter where I go.",
+            "link": ""
+          }
+        },
+        "082b036d-ff6d-49c0-b1f1-303969cc5179": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Erin_West.jpg",
+            "name": "Erin West",
+            "text": "I have had an extremely positive experience with Nomad Internet's modems. With the combination of their fast and reliable 4G signal, I can always stay connected to the world while on the go. Their coverage is surprisingly wide, even in most rural areas of California I'm able to access their services without any problems. On top of that, they offer plans that are both flexible and affordable, making them a great choice for those looking to stay connected while traveling. I'm really happy with my experience using Nomad Internet.",
+            "link": ""
+          }
+        },
+        "d5f50eae-5fe3-495e-923c-affcf097a4b1": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Diane_Schuyer.jpg",
+            "name": "Diane Schuyer",
+            "text": "As a digital nomad, I’ve had the pleasure of experiencing Nomad Internet’s top-tier service. Their modems are easy to setup and offer reliable high-speed connection no matter where I am in California. From rural areas to my favorite beach towns, I can stay connected with family and get work done from anywhere. With Nomad Internet’s 4G\/LTE network, I can stream media, video conference, and do almost anything else that requires strong internet connection without ever having to worry about dropping out or getting a poor signal. It's super convenient and affordable too - so if you’re looking for dependable internet while traveling around California, Nomad Internet is definitely worth considering!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "1f3c68f6-c22a-4560-ad47-c230ddb976e3",
+        "082b036d-ff6d-49c0-b1f1-303969cc5179",
+        "d5f50eae-5fe3-495e-923c-affcf097a4b1"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "c0522412-de7f-44a1-a1cd-f7569c74e115": {
+          "type": "block",
+          "settings": {
+            "title": "What are some ways to improve my internet speed in California's rural regions?",
+            "content": "<p>Improving internet speed in California's rural regions can be challenging due to limited infrastructure and availability of providers. However, there are several methods to enhance your internet speed.<\/p><p><strong>Firstly<\/strong>, consider switching to a fixed wireless internet provider like Nomad Internet, which offers speeds up to 200 Mbps starting at $99 per month with an annual plan. <\/p><p><strong>Secondly<\/strong>, optimize your internet connection by upgrading your router, clearing your browser cache, and reducing the number of devices connected to your network. <\/p><p>Another option to consider is using a modem that can accumulate and boost the internet signal, like those provided by Nomad Internet. This can result in a more stable and faster internet connection. However, the effectiveness of this solution can vary depending on your location and other factors, so it's important to research and compare different options to find the best solution for your needs.<\/p>"
+          }
+        },
+        "d87017c2-72ad-4c37-8c6b-c9151ef95e0b": {
+          "type": "block",
+          "settings": {
+            "title": "Is 5G service available from Nomad Internet in California?",
+            "content": "<p>Yes. We are delighted to inform you that our services include 5G coverage in California.<br\/><br\/>Our high-speed, low-latency service is made possible through our Nomad Air modems' advanced high-power directional antennas, which extend the reach of cellular networks while also supporting 5G sub-6GHz and 4G LTE <br\/><br\/>Our mission is to provide accessible high-speed wireless Internet for all residents of rural areas in California and beyond, and we offer various tariff plans to suit different needs.<br\/><br\/>Our modems, Nomad Air and Nomad Cube, are designed to amplify and accumulate the signal, providing stable and fast internet. We hope this information is helpful and invite you to contact us if you have any further questions. <br\/><br\/>Thank you for considering Nomad Internet as your internet service provider.<\/p>"
+          }
+        },
+        "6572e996-7448-49fe-abac-30c000e4a174": {
+          "type": "block",
+          "settings": {
+            "title": "Which internet plans are sold by Nomad Internet in California?",
+            "content": "<p>Nomad Internet offers a range of internet plans that are available for purchase in California. The plans are designed to cater to a variety of internet usage scenarios and device requirements.<br\/><br\/><strong>For customers<\/strong> who require internet access at home for activities such as watching movies, playing video games, browsing social media, or working, Nomad Internet offers home-specific plans. These plans provide fast and reliable internet access for home-based activities.<br\/><br\/><strong>For individuals <\/strong>who frequently travel or need internet on-the-go, Nomad Internet offers plans that are designed for travel purposes. These plans allow customers to stay connected while on the move and offer different numbers of devices that can be connected to the internet.<br\/><br\/><strong>Nomad Internet also offers plans<\/strong> that are tailored to businesses with large numbers of employees or those that require internet access for their restaurants. These plans provide fast and reliable internet access to ensure that business operations run smoothly.<br\/><br\/><strong>For customers <\/strong>who require the fastest internet possible, Nomad Internet has plans that offer the highest internet speeds available.<br\/><br\/>In summary, Nomad Internet offers a range of internet plans that are designed to cater to the needs of its customers in California. Customers can learn more about each plan and select the one that best fits their needs by visiting the Nomad Internet website.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "c0522412-de7f-44a1-a1cd-f7569c74e115",
+        "d87017c2-72ad-4c37-8c6b-c9151ef95e0b",
+        "6572e996-7448-49fe-abac-30c000e4a174"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

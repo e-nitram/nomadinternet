@@ -1,0 +1,212 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function openTab(tabName) {
+  // handle active button state
+  $('#tab-holder .tab-' + tabName).addClass('active').siblings('.active').removeClass('active');
+  // handle tab content switching
+  $('.tab-content').hide().filter('#' + tabName).show()
+}
+
+var vars = {}, hash;
+    var q = document.URL.split('?')[1];
+    if(q != undefined){
+        q = q.split('&');
+        for(var i = 0; i < q.length; i++){
+            hash = q[i].split('=');
+            vars[hash[0]] = hash[1];
+        }
+}
+
+$(document).ready(function(){
+   var tabName = vars['passTab'];
+   // commented out because it won't work in this demo
+   // openTab(tabName);
+   openTab('xmas')
+})
+</script>
+
+<section class="sec_drop12">
+<div class="container">
+<div id="tab-holder">
+    <a href="#everyday"><button class="tabs tab-everyday active" onclick="openTab('everyday')"><span>Features</span></button></a>
+    <a href="#sunday"> <button class="tabs tab-sunday" onclick="openTab('sunday')"><span>Specifications</span></button></a>
+
+</div>   
+
+<div id="everyday" class="tab-content active">
+  <div class="wire_flx">
+  <div class="wire_1">
+  :: 4x4-MIMO Wi-Fi 6 supporting up to 128 wireless connections <br>
+:: Multiple ethernet LAN ports and 1 WAN port<br>
+:: 1 USB-C port <br>
+:: Remote configuration and management<br>
+  </div>
+  <div class="wire_2">
+  :: Easy-to-use smartphone app to optimize the placement, simplify the installation process, and manage settings <br>
+:: Enterprise-grade security-AES 256 encryption, password protection, VPN passthrough, primary and guest networks
+</div>
+  </div>
+</div>
+
+<div id="sunday" class="tab-content">
+<div class="wire_flx">
+  <div class="wire_1">
+ :: Chipset: Qualcomm® SnapdragonTM SDX55  <br>
+:: Network technology: - <br>
+<ul class="list_123">
+<li>50 sub-6 GHz and 40 LTE Cat 22 </li> 
+<li>4x4 MIMO sub-6 GHz  </li>
+<li>256 QAM</li> 
+<li>HSPA+/UMTS</li> 
+<li>CBRS</li> 
+</ul>
+    <br>
+:: Download speeds: 3.3 Gbps*  <br>
+:: Wi-Fi version: Wi-Fi 6 (802.11 a/b/g/n/ac/ax) <br>
+:: Wi-Fi connections: Up to 128 connected devices <br>
+:: Wi-Fi bands: Real simultaneous dual-band Wi-Fi (2.4GHz & 5GHz)  <br>
+:: Wi-Fi features:  <br>
+    <ul class="list_123">
+<li>Wi-Fi Security (WPA/WPA2/WPA3) </li> 
+<li>Wi-Fi Protected Setup (WPS 2.0)  </li>
+<li>Wi-Fi privacy separation </li>
+    </ul><br>
+:: Connectors/ports: <br> 
+    <ul class="list_123">
+<li>3 x LAN ports </li>
+<li>I x WAN port</li>
+    </ul>
+    :: Dimensions:9 x 3 x 6.8 in (230 x 76 x 172.5 mm)  <br> 
+    :: Weight: 59 oz (1,675 g)   <br> 
+        :: Operating temperature: 32° to 113°F (0°C to 45°C)   <br> 
+          :: SIM type: 
+  <br> 
+    <ul class="list_123">
+<!-- <li>FG2000 - Single SIM (4FF Nano)  </li> -->
+<li>Dual SIM (4FF Nano) </li>
+</ul>
+
+  </div>
+  <div class="wire_2">
+ :: Security features:  <br>
+    <ul class="list_123">
+<li>AES 256 Encryption </li>
+<li>Security hardened web interface </li>
+<li>Password hash </li>
+<li>Session timeout </li>
+<li>Wi-Fi on/off control </li>
+<li>Incorrect password lockout Configurable </li>
+<li>DNS </li>
+<li>MAC address filtering NAT firewall </li>
+<li>Port forwarding </li>
+<li>Port filtering </li>
+<li>Anti CSRF (OWASP) </li>
+<li>OpenVPN </li>
+<li>IPsec VPN  </li>
+    </ul> <br>
+:: Systems supported: <br>
+ <ul class="list_123">
+<li>Windows 7, 8, 10  </li>
+<li>Mac OS X 10.10 or higher </li>
+<li>Linux Ubuntu 14.04 or higher </li>
+</ul>
+</div>
+  </div>
+</div>
+
+ <div id="xmas" class="tab-content">
+  <div class="wire_flx">
+  <div class="wire_1">
+  :: 4x4-MIMO Wi-Fi 6 supporting up to 128 wireless connections <br>
+:: Multiple ethernet LAN ports and 1 WAN port<br>
+:: 1 USB-C port <br>
+:: Remote configuration and management<br>
+  </div>
+  <div class="wire_2">
+  :: Easy-to-use smartphone app to optimize the placement, simplify the installation process, and manage settings <br>
+:: Enterprise-grade security-AES 256 encryption, password protection, VPN passthrough, primary and guest networks
+</div>
+  </div>
+</div> 
+</div>
+</section>
+<style>
+    .sec_drop12 {
+    background: #fff!important;
+    padding: 60px 0px 60px 0px;
+}
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+.tabs {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 64px;
+    letter-spacing: 0.5px;
+    color: #757575;
+    background: #fff;
+    border: none;
+}
+.tabs.active:hover {
+border-bottom: 5px solid #109D59;
+    transform: rotate(0.17deg);
+}
+  .wire_1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: 0.5px;
+    width: 100%;
+    max-width: 730px;
+    padding-top: 40px;
+    color: #8A8A8A;
+}
+  .wire_2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: 0.5px;
+    width: 100%;
+    max-width: 850px;
+    padding-top: 40px;
+    color: #8A8A8A;
+}
+  .wire_flx {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+  .list_123 li {
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-family: poppins;
+}
+  #tab-holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+/*     max-width: 1590px; */
+    border-top: 5px solid rgba(16, 157, 89, 0.2);
+    border-bottom: 5px solid rgba(16, 157, 89, 0.2);
+}
+ .sec_drop12 #tab-holder a {
+    background: #fff;
+    margin-top: 90px;
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+       max-width: 1590px;
+}
+</style>

@@ -1,0 +1,1281 @@
+{{ 'activate.css' | asset_url | stylesheet_tag }}
+{{ 'accessories.css' | asset_url | stylesheet_tag }}
+
+<form
+  id="activation_form"
+  action=""
+  method="post">
+
+  <section class="order-detail-section">
+    <div class="container">
+
+      {% comment %}order_info_screen{% endcomment %}
+      <div class="frame8890 order_info_screen">
+        <div class="div">
+          {% render 'nomad-logo' %}
+          <div class="div-2">
+            <div class="text-wrapper">Order Information</div>
+            <div class="div-wrapper">
+              <p class="p">Input your Email and Order number.</p>
+            </div>
+          </div>
+        </div>
+        <div class="div-3">
+          <div class="div-4">
+            <div class="div-5">
+              <div class="div-6">
+                <div class="text-wrapper-2">Email Address</div>
+              </div>
+              <input
+                type="email"
+                class="div-wrapper-2 order_email"
+                placeholder="Enter your email" />
+              <div class="div-6">
+                <svg
+                  class="alert-circle"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="16"
+                  viewBox="0 0 15 16"
+                  fill="none">
+                  <path
+                    d="M7.5 5.54297V8.04297M7.5 10.543H7.50625M13.75 8.04297C13.75 11.4947 10.9518 14.293 7.5 14.293C4.04822 14.293 1.25 11.4947 1.25 8.04297C1.25 4.59119 4.04822 1.79297 7.5 1.79297C10.9518 1.79297 13.75 4.59119 13.75 8.04297Z"
+                    stroke="#525252"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <p class="text-wrapper-4">Please use email that you used for modem purchase</p>
+              </div>
+            </div>
+            <div class="div-5">
+              <div class="div-6">
+                <div class="text-wrapper-2">Order Number</div>
+              </div>
+              <input
+                type="email"
+                class="div-wrapper-2 order_number"
+                placeholder="Enter your order number" />
+            </div>
+          </div>
+          <div class="div-3">
+            <div class="div-wrapper-3 order_info_btn">
+              <div class="text-wrapper-5">Proceed</div>
+            </div>
+          {% comment %}
+            <div class="div-7">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+            <g clip-path="url(#clip0_13120_77859)">
+            <path d="M5 12.043H19" stroke="#008061" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 12.043L11 18.043" stroke="#008061" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 12.043L11 6.04297" stroke="#008061" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_13120_77859">
+            <rect width="24" height="24" fill="white" transform="translate(0 0.0429688)"/>
+            </clipPath>
+            </defs>
+            </svg>
+            <div class="text-wrapper-6">Go Back</div>
+            </div>
+          {% endcomment %}
+          </div>
+        </div>
+      </div>
+
+
+      {% comment %}active_your_plan{% endcomment %}
+      <div class="frame8891 active_your_plan" style="display:none;">
+        <div class="div">
+          {% render 'nomad-logo' %}
+          <div class="div-2">
+            <div class="text-wrapper">Activate Your Plan</div>
+            <div class="thank-you-for-wrapper">
+              <p class="thank-you-for">
+                Thank you for choosing our service! To activate your plan, please provide your modem&#39;s IMEI number and           
+              SIM ID. This information will ensure a smooth setup and immediate connectivity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="div-3">
+          <div class="frame-img omen_images">
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omen_illustration.webp?v=1707149930" alt="omen 1">
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omega_SIM.png?v=1698241987" alt="omen 2">
+          </div>
+          <div class="frame-img air_images" style="display:none;">
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omen_illustration.webp?v=1707149930" alt="air 1">
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omega_SIM.png?v=1698241987" alt="air 2">
+          </div>
+          <div class="frame-img raptor_images" style="display:none;">
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Group_469444.png?v=1703276142" alt="raptor 1">
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Group_469442.png?v=1703276142" alt="raptor 2">
+          </div>
+          <div class="div-3">
+            <div class="i-ve-read-and-wrapper active_your_plan_btn">
+              <div class="i-ve-read-and">I&#39;ve read and understood</div>
+            </div>
+            <div class="div-4 backto_1">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none">
+                <g clip-path="url(#clip0_13120_77859)">
+                  <path
+                    d="M5 12.043H19"
+                    stroke="#008061"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M5 12.043L11 18.043"
+                    stroke="#008061"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M5 12.043L11 6.04297"
+                    stroke="#008061"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_13120_77859">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      transform="translate(0 0.0429688)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="text-wrapper-2">Go Back</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {% comment %}not_shipped_yet{% endcomment %}
+      <div class="frame8893 not_shipped_yet" style="display:none;">
+        {% render 'nomad-logo' %}
+        {% render 'order_not_shipped_svg' %}
+        <div class="div">
+          <p class="text-wrapper">Plan Activation Pending Modem Receipt</p>
+
+          <p class="p">
+            Your order is being prepared for shipping. Plan activation will be available upon modem receipt. Thank you for your patience. For assistance, contact our support team.
+          </p>
+
+        </div>
+        <div class="frame-wrapper">
+          <div class="frame-wrapper">
+            <div class="div-wrapper done_btn">
+              <div class="text-wrapper-2">Done</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {% comment %}not_allow_to_activate{% endcomment %}
+      <div class="frame8893 not_allow_to_activate" style="display:none;">
+        {% render 'nomad-logo' %}
+        <svg
+          class="group"
+          xmlns="http://www.w3.org/2000/svg"
+          width="178"
+          height="178"
+          viewBox="0 0 178 178"
+          fill="none">
+          <path d="M89.002 169.629C133.509 169.629 169.59 133.548 169.59 89.041C169.59 44.5336 133.509 8.45312 89.002 8.45312C44.4945 8.45312 8.41406 44.5336 8.41406 89.041C8.41406 133.548 44.4945 169.629 89.002 169.629Z" fill="#008061" />
+          <path
+            d="M52.7374 89.041L76.9138 113.217L125.267 64.8646M169.59 89.041C169.59 133.548 133.509 169.629 89.002 169.629C44.4945 169.629 8.41406 133.548 8.41406 89.041C8.41406 44.5336 44.4945 8.45312 89.002 8.45312C133.509 8.45312 169.59 44.5336 169.59 89.041Z"
+            stroke="white"
+            stroke-width="16.1176"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <div class="div">
+          <p class="text-wrapper">Plan Verification Already Completed</p>
+          <p class="p">
+            Your plan verification is complete, and activation is underway. If activation exceeds 2 hours, please contact our support team for assistance.
+          </p>
+        </div>
+        <div class="frame-wrapper">
+          <div class="frame-wrapper">
+            <div class="div-wrapper done_btn">
+              <div class="text-wrapper-2">Done</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {% comment %}already_activated_screen{% endcomment %}
+      <div class="frame8893 already_activated_screen" style="display:none;">
+        {% render 'nomad-logo' %}
+        {% render 'already_activated_svg' %}
+        <div class="div">
+          <p class="text-wrapper">Plan Verification Already Completed</p>
+
+          <p class="p">
+            Your plan verification is complete, and activation is underway. If activation exceeds 2 hours, please contact our support team for assistance.
+          </p>
+
+        </div>
+        <div class="frame-wrapper">
+          <div class="frame-wrapper">
+            <div class="div-wrapper done_btn">
+              <div class="text-wrapper-2">Done</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% comment %}modal information popup{% endcomment %}
+      <div class="modem-section modem_info_screen" style="display:none">
+        <div class="air-info-form screen-4 steps">
+          <a>
+            <img class="logo" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo-dark.svg?v=1696358125">
+          </a>
+          <div class="section-title">
+            <h2>Modem Information</h2>
+            <p>Input Modem IMEI and SIM ICCID</p>
+          </div>
+          <div class="form-details">
+            <div class="imei-input">
+              <div class="title">
+                <label>Modem IMEI</label>
+                <a href="javascript:;" class="imei-popup-open">Where is IMEI?</a>
+              </div>
+              <input
+                type="text"
+                id="imei_popup"
+                name="imei_popup"
+                placeholder="Enter Modem IMEI"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+              <div id="is-checked" style="display: none;">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_11551_76553)">
+                    <path
+                      d="M6.2513 10.0013L8.7513 12.5013L13.7513 7.5013M18.3346 10.0013C18.3346 14.6037 14.6037 18.3346 10.0013 18.3346C5.39893 18.3346 1.66797 14.6037 1.66797 10.0013C1.66797 5.39893 5.39893 1.66797 10.0013 1.66797C14.6037 1.66797 18.3346 5.39893 18.3346 10.0013Z"
+                      stroke="#008061"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11551_76553">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="iccid-input">
+              <div class="title">
+                <label>SIM ID</label>
+                <a href="javascript:;" class="iccid-popup-open">Where is SIM ID?</a>
+              </div>
+              <input
+                type="text"
+                id="iccid_popup"
+                name="iccid_popup"
+                placeholder="Enter SIM ID"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+              <div id="is-checked" style="display: none;">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_11551_76553)">
+                    <path
+                      d="M6.2513 10.0013L8.7513 12.5013L13.7513 7.5013M18.3346 10.0013C18.3346 14.6037 14.6037 18.3346 10.0013 18.3346C5.39893 18.3346 1.66797 14.6037 1.66797 10.0013C1.66797 5.39893 5.39893 1.66797 10.0013 1.66797C14.6037 1.66797 18.3346 5.39893 18.3346 10.0013Z"
+                      stroke="#008061"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11551_76553">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+
+              <div id="is-error" style="display: none;">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_11633_79401)">
+                    <path
+                      d="M12.5013 7.5013L7.5013 12.5013M7.5013 7.5013L12.5013 12.5013M18.3346 10.0013C18.3346 14.6037 14.6037 18.3346 10.0013 18.3346C5.39893 18.3346 1.66797 14.6037 1.66797 10.0013C1.66797 5.39893 5.39893 1.66797 10.0013 1.66797C14.6037 1.66797 18.3346 5.39893 18.3346 10.0013Z"
+                      stroke="#D30000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11633_79401">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+
+            <p class="modem-info-error" style="color:red;text-align:center;"></p>
+
+            <a href="#" class="modem_proceed">Proceed</a>
+          </div>
+
+          <a href="javascript:;" class="back-arrow is-desktop backto_2">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none">
+              <g clip-path="url(#clip0_13120_77859)">
+                <path
+                  d="M5 12.043H19"
+                  stroke="#008061"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M5 12.043L11 18.043"
+                  stroke="#008061"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M5 12.043L11 6.04297"
+                  stroke="#008061"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_13120_77859">
+                  <rect
+                    width="24"
+                    height="24"
+                    fill="white"
+                    transform="translate(0 0.0429688)" />
+                </clipPath>
+              </defs>
+            </svg>
+            Go Back
+          </a>
+        </div>
+      </div>
+
+
+      {% comment %}thank_you_screen{% endcomment %}
+      <div class="frame8893 thank_you_screen" style="display:none;">
+        {% render 'nomad-logo' %}
+        <svg
+          class="group"
+          xmlns="http://www.w3.org/2000/svg"
+          width="178"
+          height="178"
+          viewBox="0 0 178 178"
+          fill="none">
+          <path d="M89.002 169.629C133.509 169.629 169.59 133.548 169.59 89.041C169.59 44.5336 133.509 8.45312 89.002 8.45312C44.4945 8.45312 8.41406 44.5336 8.41406 89.041C8.41406 133.548 44.4945 169.629 89.002 169.629Z" fill="#008061" />
+          <path
+            d="M52.7374 89.041L76.9138 113.217L125.267 64.8646M169.59 89.041C169.59 133.548 133.509 169.629 89.002 169.629C44.4945 169.629 8.41406 133.548 8.41406 89.041C8.41406 44.5336 44.4945 8.45312 89.002 8.45312C133.509 8.45312 169.59 44.5336 169.59 89.041Z"
+            stroke="white"
+            stroke-width="16.1176"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <div class="div">
+          <p class="text-wrapper">Thank You for Activating Your Plan!</p>
+          <p class="p">
+            Your plan will be activated within 2 hours. We appreciate your patience. For assistance, please reach out to           
+          our support team
+          </p>
+        </div>
+        <div class="frame-wrapper">
+          <div class="frame-wrapper">
+            <div class="div-wrapper done_btn">
+              <div class="text-wrapper-2">Done</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="modem-section" style="display:none;">
+    <div class="container">
+      <div class="modem-select screen-1 steps">
+        <a>
+          <img class="logo" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo-dark.svg?v=1696358125">
+        </a>
+        <div class="section-title">
+          <h3>Let’s Activate Your Modem!</h3>
+          <p>First, Which of our modems did you order?</p>
+        </div>
+        <div class="modem-list">
+          <div class="box box-1 active" data-id="omen">
+            <a href="javascript:">
+              <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omen_5784dfc7-b7fa-402f-ad2d-59acbf570c54.webp?v=1709139774">
+              <p>Nomad Omen</p>
+            </a>
+          </div>
+
+          <div class="box box-2" data-id="air">
+            <a href="javascript:">
+              <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Air_ff86cc5b-a0b7-4cd0-9941-0a897406b9c1.webp?v=1709139774">
+              <p>Nomad Air</p>
+            </a>
+          </div>
+        </div>
+        <div class="modem-list">
+          <div class="box box-3" data-id="raptor">
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Raptor_797690e4-8382-4dca-8de9-d2ffc70f14b0.webp?v=1709139774" />
+            <p>Nomad Raptor</p>
+          </div>
+
+          <div class="box box-4" data-id="own">
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/BYOD.svg?v=1709139773" alt="bring your own" />
+            <p class="own_modem_text">Bring Your Own<br>Device</p>
+          </div>
+        </div>
+
+        <div class="proceed-button">
+          <a class="proceed-button-a" data-id="omen">Proceed</a>
+        </div>
+      </div>
+
+      <div class="air-info screen-2 steps" style="display:none">
+        <a href="javascript:;" class="back-arrow is-mobile">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_11551_76514)">
+              <path
+                d="M5 12.1406H19"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 18.1406"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 6.14062"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11551_76514">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0 0.140625)" />
+              </clipPath>
+            </defs>
+          </svg>
+          Back
+        </a>
+        <a>
+          <img class="logo" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo-dark.svg?v=1696358125">
+        </a>
+        <div class="section-title">
+          <h2>IMEI & SIM ID</h2>
+          <p>You will need the SIM ID number located on the bottom of the SIM card tray and the IMEI number from the bottom of your Nomad Air modem on the next page.</p>
+        </div>
+
+        <div class="steps2-imgs">
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/IMG_5426.webp?v=1713453834" alt="omen 1" />
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omega_SIM.png?v=1698241987" alt="omen 2" />
+        </div>
+
+        <div class="got-it-button">
+          <a data-id="air">I've read and understood</a>
+        </div>
+
+        <a href="javascript:;" class="back-arrow is-desktop">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_11551_76514)">
+              <path
+                d="M5 12.1406H19"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 18.1406"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 6.14062"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11551_76514">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0 0.140625)" />
+              </clipPath>
+            </defs>
+          </svg>
+          Go Back
+        </a>
+      </div>
+
+      <div class="omega-info screen-3 steps" style="display:none">
+        <a href="javascript:;" class="back-arrow is-mobile">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_11551_76514)">
+              <path
+                d="M5 12.1406H19"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 18.1406"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 6.14062"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11551_76514">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0 0.140625)" />
+              </clipPath>
+            </defs>
+          </svg>
+          Back
+        </a>
+        <a>
+          <img class="logo" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo-dark.svg?v=1696358125">
+        </a>
+        <div class="section-title">
+          <h2>IMEI & SIM ID</h2>
+          <p>You will need the SIM ID located on the bottom of the SIM card tray and the IMEI number from the bottom of your Nomad Omen modem on the next page.</p>
+        </div>
+        <div class="steps2-imgs">
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omen_illustration.webp?v=1707149930" alt="omen 1" />
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omega_SIM.png?v=1698241987" alt="omen 2" />
+        </div>
+        <div class="got-it-button">
+          <a data-id="omen">I've read and understood</a>
+        </div>
+
+        <a href="javascript:;" class="back-arrow is-desktop">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_11551_76514)">
+              <path
+                d="M5 12.1406H19"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 18.1406"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 6.14062"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11551_76514">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0 0.140625)" />
+              </clipPath>
+            </defs>
+          </svg>
+          Go Back
+        </a>
+      </div>
+
+      <div class="raptor-info screen-5 steps" style="display: none;">
+        <a href="javascript:;" class="back-arrow is-mobile">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_11551_76514)">
+              <path
+                d="M5 12.1406H19"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 18.1406"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 6.14062"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11551_76514">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0 0.140625)" />
+              </clipPath>
+            </defs>
+          </svg>
+          Back
+        </a>
+        <a>
+          <img class="logo" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo-dark.svg?v=1696358125">
+        </a>
+        <div class="section-title">
+          <h2>IMEI & SIM ID</h2>
+          <p>You will need the SIM ID number located on the bottom of the SIM card tray and the IMEI number from the bottom of your Nomad Raptor modem on the next page.</p>
+        </div>
+        <div class="steps2-imgs">
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Group_469444.png?v=1703276142" alt="air 1" />
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Group_469442.png?v=1703276142" alt="air 2" />
+        </div>
+
+        <div class="got-it-button">
+          <a data-id="raptor">I've read and understood</a>
+        </div>
+
+        <a href="javascript:;" class="back-arrow is-desktop">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_11551_76514)">
+              <path
+                d="M5 12.1406H19"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 18.1406"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 6.14062"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11551_76514">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0 0.140625)" />
+              </clipPath>
+            </defs>
+          </svg>
+          Go Back
+        </a>
+      </div>
+
+      <div class="air-info-form screen-4 steps" style="display:none">
+        <a href="javascript:;" class="back-arrow is-mobile">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_11551_76514)">
+              <path
+                d="M5 12.1406H19"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 18.1406"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 6.14062"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11551_76514">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0 0.140625)" />
+              </clipPath>
+            </defs>
+          </svg>
+          Back
+        </a>
+        <a>
+          <img class="logo" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo-dark.svg?v=1696358125">
+        </a>
+        <div class="section-title">
+          <h2>Modem Information</h2>
+          <p>Input Modem IMEI and SIM ICCID</p>
+        </div>
+        <div class="form-details">
+
+          <div class="imei-input">
+            <div class="title">
+              <label>Modem IMEI</label>
+              <a href="javascript:;" class="imei-popup-open">Where is IMEI?</a>
+            </div>
+            <input
+              type="text"
+              id="imei"
+              name="imei"
+              placeholder="Enter Modem IMEI"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            <div id="is-checked" style="display: none;">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_11551_76553)">
+                  <path
+                    d="M6.2513 10.0013L8.7513 12.5013L13.7513 7.5013M18.3346 10.0013C18.3346 14.6037 14.6037 18.3346 10.0013 18.3346C5.39893 18.3346 1.66797 14.6037 1.66797 10.0013C1.66797 5.39893 5.39893 1.66797 10.0013 1.66797C14.6037 1.66797 18.3346 5.39893 18.3346 10.0013Z"
+                    stroke="#008061"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_11551_76553">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="iccid-input">
+            <div class="title">
+              <label>SIM ID</label>
+              <a href="javascript:;" class="iccid-popup-open">Where is SIM ID?</a>
+            </div>
+            <input
+              type="text"
+              id="iccid"
+              name="iccid"
+              placeholder="Enter SIM ID"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            <div id="is-checked" style="display: none;">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_11551_76553)">
+                  <path
+                    d="M6.2513 10.0013L8.7513 12.5013L13.7513 7.5013M18.3346 10.0013C18.3346 14.6037 14.6037 18.3346 10.0013 18.3346C5.39893 18.3346 1.66797 14.6037 1.66797 10.0013C1.66797 5.39893 5.39893 1.66797 10.0013 1.66797C14.6037 1.66797 18.3346 5.39893 18.3346 10.0013Z"
+                    stroke="#008061"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_11551_76553">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+
+            <div id="is-error" style="display: none;">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_11633_79401)">
+                  <path
+                    d="M12.5013 7.5013L7.5013 12.5013M7.5013 7.5013L12.5013 12.5013M18.3346 10.0013C18.3346 14.6037 14.6037 18.3346 10.0013 18.3346C5.39893 18.3346 1.66797 14.6037 1.66797 10.0013C1.66797 5.39893 5.39893 1.66797 10.0013 1.66797C14.6037 1.66797 18.3346 5.39893 18.3346 10.0013Z"
+                    stroke="#D30000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_11633_79401">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <p class="modem-info-error" style="color:red;text-align:center;"></p>
+
+          <a href="#" class="modem_proceed_zoho_false">Proceed</a>
+        </div>
+
+        <a href="javascript:;" class="back-arrow is-desktop">
+          <svg
+            width="24"
+            height="25"
+            viewBox="0 0 24 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_11551_76514)">
+              <path
+                d="M5 12.1406H19"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 18.1406"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5 12.1406L11 6.14062"
+                stroke="#008061"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_11551_76514">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0 0.140625)" />
+              </clipPath>
+            </defs>
+          </svg>
+          Go Back
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <span class="hidden-popup-overlay"></span>
+  <div class="air-imei-popup">
+    <div class="popup-details">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="54"
+        height="4"
+        viewBox="0 0 54 4"
+        fill="none">
+        <path
+          d="M1.98047 2H51.9805"
+          stroke="#4D5166"
+          stroke-width="3"
+          stroke-linecap="round" />
+      </svg>
+      <a href="javascript:;" class="close-popup">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none">
+          <path
+            d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5"
+            stroke="#4D5166"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div class="section-title">
+        <h2>NOMAD AIR IMEI</h2>
+        <p>IMEI number can be located at the bottom of your Nomad Air modem</p>
+      </div>
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Air_IMEI.png?v=1698241986" style="margin:0 auto;max-height:250px;width:auto;">
+    </div>
+  </div>
+
+  <div class="air-iccid-popup">
+    <div class="popup-details">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="54"
+        height="4"
+        viewBox="0 0 54 4"
+        fill="none">
+        <path
+          d="M1.98047 2H51.9805"
+          stroke="#4D5166"
+          stroke-width="3"
+          stroke-linecap="round" />
+      </svg>
+      <a href="javascript:;" class="close-popup">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none">
+          <path
+            d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5"
+            stroke="#4D5166"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div class="section-title">
+        <h2>SIM CARD ID</h2>
+        <p>SIM ID can be located at the bottom of the SIM card tray</p>
+      </div>
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Air_SIM.png?v=1698241987" style="margin:0 auto;max-height:250px;width:auto;">
+    </div>
+  </div>
+
+  <div class="omega-imei-popup">
+    <div class="popup-details">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="54"
+        height="4"
+        viewBox="0 0 54 4"
+        fill="none">
+        <path
+          d="M1.98047 2H51.9805"
+          stroke="#4D5166"
+          stroke-width="3"
+          stroke-linecap="round" />
+      </svg>
+      <a href="javascript:;" class="close-popup">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none">
+          <path
+            d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5"
+            stroke="#4D5166"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div class="section-title">
+        <h2>NOMAD OMEN IMEI</h2>
+        <p>IMEI number can be located at the bottom of your Nomad Omen modem</p>
+      </div>
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omen_illustration.webp?v=1707149930" style="margin:0 auto;max-height:250px;width:auto;">
+    </div>
+  </div>
+  <div class="omega-iccid-popup">
+    <div class="popup-details">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="54"
+        height="4"
+        viewBox="0 0 54 4"
+        fill="none">
+        <path
+          d="M1.98047 2H51.9805"
+          stroke="#4D5166"
+          stroke-width="3"
+          stroke-linecap="round" />
+      </svg>
+      <a href="javascript:;" class="close-popup">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none">
+          <path
+            d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5"
+            stroke="#4D5166"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div class="section-title">
+        <h2>SIM CARD ID</h2>
+        <p>SIM ID can be located at the bottom of the SIM card tray</p>
+      </div>
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omega_SIM.png?v=1698241987" style="margin:0 auto;max-height:250px;width:auto;">
+    </div>
+  </div>
+
+  <div class="raptor-imei-popup">
+    <div class="popup-details">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="54"
+        height="4"
+        viewBox="0 0 54 4"
+        fill="none">
+        <path
+          d="M1.98047 2H51.9805"
+          stroke="#4D5166"
+          stroke-width="3"
+          stroke-linecap="round" />
+      </svg>
+      <a href="javascript:;" class="close-popup">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none">
+          <path
+            d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5"
+            stroke="#4D5166"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div class="section-title">
+        <h2>NOMAD RAPTOR IMEI</h2>
+        <p>IMEI number can be located at the bottom of your Nomad Raptor modem</p>
+      </div>
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Group_469444.png?v=1703276142" style="margin:0 auto;max-height:250px;width:auto;">
+    </div>
+  </div>
+
+  <div class="raptor-iccid-popup">
+    <div class="popup-details">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="54"
+        height="4"
+        viewBox="0 0 54 4"
+        fill="none">
+        <path
+          d="M1.98047 2H51.9805"
+          stroke="#4D5166"
+          stroke-width="3"
+          stroke-linecap="round" />
+      </svg>
+      <a href="javascript:;" class="close-popup">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none">
+          <path
+            d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5"
+            stroke="#4D5166"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div class="section-title">
+        <h2>SIM CARD ID</h2>
+        <p>SIM ID can be located at the bottom of the SIM card tray</p>
+      </div>
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Group_469442.png?v=1703276142" style="margin:0 auto;max-height:250px;width:auto;">
+    </div>
+  </div>
+
+  {% render 'pre-activation' %}
+
+</form>
+
+
+{% comment %}
+  <!-- Add To Cart Popup Start -->
+  <div class="add-to-cart-popup">
+  <div class="popup-content">
+  <p>
+  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+  <path d="M19.3105 10.8925V7.285C19.3105 4.62852 17.157 2.47501 14.5005 2.47501C11.8441 2.47501 9.69054 4.62852 9.69054 7.285V10.8925M4.38993 12.5182L3.66843 20.2142C3.46329 22.4024 3.36072 23.4965 3.7238 24.3416C4.04276 25.084 4.60171 25.6978 5.31106 26.0846C6.11855 26.525 7.21744 26.525 9.41523 26.525H19.5859C21.7836 26.525 22.8825 26.525 23.69 26.0846C24.3994 25.6978 24.9583 25.084 25.2773 24.3416C25.6404 23.4965 25.5378 22.4024 25.3327 20.2142L24.6112 12.5182C24.4379 10.6705 24.3513 9.74656 23.9358 9.04806C23.5698 8.43289 23.0291 7.9405 22.3824 7.63354C21.6482 7.28501 20.7202 7.28501 18.8644 7.28501L10.1367 7.285C8.28084 7.285 7.3529 7.285 6.61866 7.63354C5.97201 7.9405 5.4313 8.43289 5.06532 9.04806C4.64977 9.74656 4.56316 10.6705 4.38993 12.5182Z" stroke="white" stroke-width="2.16018" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  Product added to cart
+  </p>
+  </div>
+  </div>
+  <!-- Add To Cart Popup End -->
+
+  <style>
+  .added_to_cart{
+  border: none!important;
+  background: var(--colors-gray-true-200, #E5E5E5)!important;
+  color: var(--gray-true-500, var(--colors-gray-true-500, #737373))!important;
+  }
+  #accessories_product{padding-top:0px!important;}
+  .accessories_product_top{
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 24px;
+  border-bottom: 1px solid #E8E8E8;
+  background: var(--white, #FFF);
+  justify-content: space-between;
+  align-self: stretch;
+  }
+  .accessories_product_top .back_btn{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  }
+  .accessories_product_top .back_btn svg{
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  }
+  .accessories_product_top .back_btn span{
+  color: var(--accent, #00A77F);
+  font-family: 'AktivGrotesk'!important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  }
+  .accessories_product_top .center_title{
+  color: var(--Heading, #000);
+  font-family: 'AktivGrotesk'!important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+  .accessories_product_top .continue_btn{
+  color: var(--accent, #00A77F);
+  font-family: 'AktivGrotesk'!important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  cursor: pointer;
+  background: none!important;
+  border: none!important;
+  min-width: unset!important;
+  padding: 0!important;
+  width: unset!important;
+  }
+  .add-to-cart-popup.active .popup-content{opacity: 1;visibility: visible;}
+  .add-to-cart-popup .popup-content{top:50px;}
+  .add-to-cart-popup .popup-content p{width:100%;}
+  @media screen and (min-width: 767px){
+  #accessories_product {
+  padding-top: 40px!important;
+  max-width: 500px;
+  margin: 0 auto;
+  }
+  }
+  </style>
+{% endcomment %}

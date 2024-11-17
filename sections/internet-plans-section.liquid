@@ -1,0 +1,1160 @@
+<div class="internet-plans-section">
+<section id="section_plan" class="section-plan">
+<a href="#address-lookup-request"  id="help_link"  data-toggle="modal"  class="modal-link btn btn-lg btn-primary btn-block help-link-sticky"><i class="fas fa-life-ring" aria-hidden="true"></i>&nbsp;&nbsp;Help Me Choose </a>
+<div class="container-wrapper">
+
+{% comment %} 
+<div class="row ml-0 mr-0 align-items-center pb-4 mb-4 top-section">
+    <div class="col-12">
+        <div class="section-title">
+            <h2 class="title">NOW A PARTNER WITH VERIZON, OFFERING VERIZON 4G LTE PLANS AT OUR BEST PRICES</h2>
+        </div>
+    </div>
+ 
+    <div class="col-12">
+        <ul class="row list-unstyled plan-label mb-0">
+            <li class="mr-3 ml-3"><i class="fas fa-circle" style="color:#F9006E; border:4px solid rgba(249, 0, 110, 0.15)"></i> STRONG PINK PLAN</li>
+            <li class="mr-3 ml-3"><i class="fas fa-circle" style="color:#0e9d59; border:4px solid rgba(14, 157, 89, 0.15)"></i> WORK ANYWHERE PLAN</li>
+        </ul>
+    </div>
+</div>
+{% endcomment %}
+{% comment %}
+<div class="row ml-0 mr-0 align-items-center pb-1 mb-5">
+    <div class="col-12 list-section">
+        <ul class=" list-unstyled justify-content-between plan-short mb-0 filter-list">
+            <li class="hidder all-selected active">All</li>
+            <li class="hidder gl-travel-wifi">Travel WiFi Router</li>
+            <li class="hidder gl-wifi">WiFi Router</li>
+            <li class="hidder gl-sim-only">Sim Only</li>
+        </ul>
+    </div>
+</div>
+{% endcomment %}
+
+<script>
+ $(".hidder").click(function(){
+     if($(this).hasClass("gl-travel-wifi")){
+         $("li.hidder").removeClass("active")
+         $(this).addClass("active")
+         $(".form-selecter form").hide()
+         $(".form-selecter form.gl-travel-wifi").show()
+     }else if($(this).hasClass("gl-wifi")){
+         $("li.hidder").removeClass("active")
+         $(this).addClass("active")
+         $(".form-selecter form").hide()
+         $(".form-selecter form.gl-wifi").show()
+     }else if($(this).hasClass("gl-sim-only")){
+         $("li.hidder").removeClass("active")
+         $(this).addClass("active")
+         $(".form-selecter form").hide()
+         $(".form-selecter form.gl-sim-only").show()
+     }else if($(this).hasClass("gl-night-walk")){
+         $("li.hidder").removeClass("active")
+         $(this).addClass("active")
+         $(".form-selecter form").hide()
+         $(".form-selecter form.gl-night-walk").show()
+     }else if($(this).hasClass("all-selected")){
+         $("li.hidder").removeClass("active")
+         $(this).addClass("active")
+         $(".form-selecter form").show()
+     }
+ })
+
+</script>
+
+<style>
+  #work-anywhere-buttons {
+    position: absolute;
+    width: 100%;
+    max-width: 320px;
+    bottom: 15px;
+  }
+  @media(max-width:767px){
+   #work-anywhere-buttons {
+      width: auto;
+      max-width: 100%;
+      position: static;
+      margin-top: 20px;
+   }
+  }
+</style>
+<div class="main-plan-section">
+<div class="plans-left-section">
+  <div class="faq-list">
+    <div class="faq-item">
+        <h6>Which Plan is <br/> right for me? <span><img src="{{ 'next.png' | asset_url }}" style="max-width: 18px;transform: rotate(90deg);" /></span></h6>
+        <div class="faq-content">Each plan represents one of the major cellular carrier networks. Therefore, the primary difference between each plan is the coverage each network provides. View each of our plans’ coverage to identify which is most likely to work at your usage location(s). For help with selecting a plan, visit the Help Me Choose page. If you need help just “chat” us.</div>
+    </div>
+    <div class="faq-item">
+        <h6>Which Device <br/> is right for me? <span><img src="{{ 'next.png' | asset_url }}" style="max-width: 18px;transform: rotate(90deg);" /></span></h6>
+        <div class="faq-content">The two main device types we offer can be used at the same places but have slight differences. The “Travel Anywhere Plan” and “Blue Travel Plan” have a battery and can be used anywhere you are, but the “Works Anywhere Plan” and “True Blue Plan” have external antennas in order to achieve faster speeds. All of our devices ship pre-configured and are ready to plug in. Keep in mind the device you receive might differ from the ones displayed here as we choose the one that works best in your area.</div>
+    </div>
+    <div class="faq-item">
+        <h6>Why is cellular internet so much better than satellite? <span><img src="{{ 'next.png' | asset_url }}" style="max-width: 18px;transform: rotate(90deg);" /></span></h6>
+        <div class="faq-content">Nomad’s 4G LTE is significantly cheaper than satellite internet options, the connection isn’t dependent on weather, you get more consistent speeds and much more data flexibility. And perhaps more importantly, Nomad’s 4G LTE is far superior to cut down on the signal lag that satellite has, due to latency – or the amount of time it takes a signal to move from your device to your provider’s network equipment. Read more here: https://nomadinternet.com/blogs/countrynomad/4g-lte-hotspot-vs-satellite-internet</div>
+    </div>
+    <div class="faq-item">
+        <h6>Unsure of which plan is best<br /> at your address? <span><img src="{{ 'next.png' | asset_url }}" style="max-width: 18px;transform: rotate(90deg);" /></span></h6>
+        <div class="faq-content">Let us recommend the right plan for you. <br/><br/><a href="#address-lookup-request" data-toggle="modal" class="modal-link btn btn-primary rounded text-uppercase mb-5 font-weight-bold">Check availability</a></div>
+    </div>
+    <div class="faq-item">
+        <h6>What if It Doesn’t<br />Work for Me? <span><img src="{{ 'next.png' | asset_url }}" style="max-width: 18px;transform: rotate(90deg);" /></span></h6>
+        <div class="faq-content">If the plan you initially choose does not connect or is slower than expected we have you covered! You can change plans until you get the speeds you need and we will ship you new plans until we find the best one for you. Finally, if you are not 100% happy our 7-Day No-Risk Return Policy allows you to return your device for a full refund.</div>
+    </div>
+    <div class="faq-item">
+        <h6>What are the average speeds<br />of your hotspots? <span><img src="{{ 'next.png' | asset_url }}" style="max-width: 18px;transform: rotate(90deg);" /></span></h6>
+        <div class="faq-content">The LTE speeds of our hotspots depends on how close you are to the cell towers in your area and the carrier. We've had reports of over 150 MBPS from those who are close to a cell tower, and about 1 MBPS that are several miles away from a tower. So you’ll want to pick the carrier plan that has the best and strongest LTE signal where you will be utilizing the hotspot/router to ensure the best possible speeds!</div>
+    </div>
+  </div>
+</div>
+
+<div class="row form-selecter plans-right-section">
+        <form id="work-anywhere-router-form" class="col-lg-6 col-md-6 col-sm-12 gl-wifi" method="post" action="/cart/add" style="position:relative">
+        <div>
+            <div class="plan-listing card-plan-list rounded card-green">
+                <div class="card-body">
+                    <div class="plan-row">
+                    {% comment %}
+                      <div class="text-right">
+                        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/wifi-icon.JPG?v=1595349872" style="max-width:30px"/>
+                      </div>
+                    {% endcomment %}
+                     
+                      <div class="top-plan-section">
+                        <h6 class="row font-weight-bold text-uppercase">Works Anywhere Plan</h6>
+                        <div class="row align-items-end plan-sub-title">
+                            <div class="col-12 p-0">
+                                    <p class="small">Nomad’s Best Plan & Best Price</p>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="image-text-section">
+                         <div class="row d-block"> 
+                            <div class="price-section">Now Only<br/>$129/Month</div>
+                            <sub class="sub-dollar" style="font-size:14px;color: red;text-decoration: underline;">INCLUDES top-quality router</sub>
+<!--                               <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span id="work-anywhere-router-price" style="font-size:3rem; font-weight:700; color:#000">129</span> <sub style="font-size:18px; color:#000">/mo</sub> -->
+                         </div>
+                        <div class="img-setter-pro mx-auto">
+                          <img src="{{ 'router_1.png' | asset_url }}">
+                        </div>
+                      </div>
+                            <div class="wifi-plan-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="icon-plans" width="63" height="64" viewBox="0 0 63 64" fill="none"><g filter="url(#filter0_d_252_1389)"><ellipse cx="31.2958" cy="32.0032" rx="23" ry="23.0681" fill="white" /></g><path
+                                    d="M30.7549 46.0447C30.5332 46.0447 30.0175 45.5867 29.208 44.6707C28.3985 43.7547 27.9938 43.1721 27.9938 42.9229C27.9938 42.5241 28.3403 42.1876 29.0334 41.9135C29.7264 41.6393 30.3003 41.5022 30.7549 41.5022C31.2096 41.5022 31.7834 41.6393 32.4765 41.9135C33.1695 42.1876 33.5161 42.5241 33.5161 42.9229C33.5161 43.1721 33.1113 43.7547 32.3018 44.6707C31.4923 45.5867 30.9767 46.0447 30.7549 46.0447ZM35.2459 40.9788C35.2238 40.9788 35.002 40.823 34.5806 40.5115C34.1592 40.1999 33.5965 39.8884 32.8923 39.5768C32.1882 39.2653 31.4757 39.1095 30.7549 39.1095C30.0342 39.1095 29.3217 39.2653 28.6176 39.5768C27.9134 39.8884 27.3534 40.1999 26.9376 40.5115C26.5218 40.823 26.2972 40.9788 26.2639 40.9788C26.0643 40.9788 25.5459 40.5115 24.7087 39.5768C23.8715 38.6422 23.4529 38.0627 23.4529 37.8384C23.4529 37.6764 23.5083 37.533 23.6192 37.4084C24.4842 36.4488 25.5709 35.6949 26.8794 35.1465C28.1879 34.5982 29.4797 34.3241 30.7549 34.3241C32.0302 34.3241 33.322 34.5982 34.6305 35.1465C35.939 35.6949 37.0257 36.4488 37.8906 37.4084C38.0015 37.533 38.057 37.6764 38.057 37.8384C38.057 38.0627 37.6384 38.6422 36.8012 39.5768C35.9639 40.5115 35.4455 40.9788 35.2459 40.9788ZM39.7868 35.8943C39.6649 35.8943 39.5373 35.8444 39.4043 35.7447C37.8962 34.4362 36.499 33.4735 35.2127 32.8566C33.9264 32.2398 32.4404 31.9313 30.7549 31.9313C29.8124 31.9313 28.8671 32.0684 27.919 32.3426C26.9709 32.6167 26.1447 32.947 25.4406 33.3333C24.7364 33.7196 24.1071 34.106 23.5527 34.4923C22.9983 34.8786 22.5602 35.2089 22.2387 35.483C21.9171 35.7572 21.7452 35.8943 21.723 35.8943C21.5345 35.8943 21.0244 35.4269 20.1928 34.4923C19.3611 33.5576 18.9453 32.9781 18.9453 32.7538C18.9453 32.6043 19.0007 32.4672 19.1116 32.3426C20.5753 30.6976 22.3496 29.4202 24.4343 28.5105C26.519 27.6007 28.6259 27.1459 30.7549 27.1459C32.884 27.1459 34.9909 27.6007 37.0756 28.5105C39.1603 29.4202 40.9345 30.6976 42.3983 32.3426C42.5092 32.4672 42.5646 32.6043 42.5646 32.7538C42.5646 32.9781 42.1488 33.5576 41.3171 34.4923C40.4854 35.4269 39.9753 35.8943 39.7868 35.8943ZM44.2945 30.8284C44.1725 30.8284 44.0505 30.7724 43.9285 30.6602C41.9436 28.7036 39.8839 27.23 37.7493 26.2393C35.6146 25.2485 33.2832 24.7532 30.7549 24.7532C28.2267 24.7532 25.8952 25.2485 23.7606 26.2393C21.626 27.23 19.5662 28.7036 17.5813 30.6602C17.4594 30.7724 17.3374 30.8284 17.2154 30.8284C17.0269 30.8284 16.514 30.3611 15.6768 29.4264C14.8396 28.4918 14.421 27.9123 14.421 27.688C14.421 27.526 14.4764 27.3827 14.5873 27.258C16.661 24.9401 19.1282 23.1455 21.9892 21.8744C24.8501 20.6033 27.772 19.9677 30.7549 19.9677C33.7378 19.9677 36.6598 20.6033 39.5207 21.8744C42.3816 23.1455 44.8489 24.9401 46.9225 27.258C47.0334 27.3827 47.0889 27.526 47.0889 27.688C47.0889 27.9123 46.6703 28.4918 45.8331 29.4264C44.9958 30.3611 44.483 30.8284 44.2945 30.8284Z"
+                                    fill="#109D59" /><defs><filter id="filter0_d_252_1389" x="0.295776" y="0.935181" width="62" height="62.1361"filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix" /><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"result="hardAlpha" /><feOffset />
+                                        <feGaussianBlur stdDeviation="4" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_252_1389" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_252_1389" result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                             <svg xmlns="http://www.w3.org/2000/svg" class="icon-plans" width="63" height="64" viewBox="0 0 63 64" fill="none"><g filter="url(#filter0_d_252_1392)"><ellipse cx="31.2958" cy="32.0032" rx="23" ry="23.0681" fill="white"/></g><path d="M43.9463 39.6103C43.9463 40.0118 43.785 40.3969 43.4978 40.6808C43.2107 40.9647 42.8212 41.1242 42.415 41.1242C42.0089 41.1242 41.6194 40.9647 41.3322 40.6808C41.0451 40.3969 40.8837 40.0118 40.8837 39.6103C40.8837 39.2088 41.0451 38.8237 41.3322 38.5398C41.6194 38.2559 42.0089 38.0964 42.415 38.0964C42.8212 38.0964 43.2107 38.2559 43.4978 38.5398C43.785 38.8237 43.9463 39.2088 43.9463 39.6103Z" fill="#109D59"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.3655 19.1726C25.1913 19.0717 24.9986 19.0058 24.7985 18.9787C24.5984 18.9517 24.3949 18.964 24.1996 19.015C24.0044 19.0661 23.8213 19.1548 23.6609 19.2761C23.5004 19.3973 23.3659 19.5488 23.2649 19.7217C23.1639 19.8946 23.0985 20.0855 23.0725 20.2835C23.0465 20.4815 23.0603 20.6826 23.1132 20.8753C23.1661 21.068 23.2571 21.2484 23.3808 21.4062C23.5045 21.564 23.6586 21.696 23.8342 21.7947L44.4364 33.5547H19.4454V39.6103C19.4454 41.2163 20.0908 42.7566 21.2395 43.8923C22.3882 45.0279 23.9462 45.6659 25.5707 45.6659H43.9463C45.5709 45.6659 47.1288 45.0279 48.2775 43.8923C49.4262 42.7566 50.0716 41.2163 50.0716 39.6103V33.5547L25.3655 19.1726ZM47.009 36.5825H22.5081V39.6103C22.5081 40.4133 22.8307 41.1835 23.4051 41.7513C23.9794 42.3191 24.7584 42.6381 25.5707 42.6381H43.9463C44.7586 42.6381 45.5376 42.3191 46.1119 41.7513C46.6863 41.1835 47.009 40.4133 47.009 39.6103V36.5825Z" fill="#109D59"/><defs><filter id="filter0_d_252_1392" x="0.295776" y="0.935181" width="62" height="62.1361" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset/><feGaussianBlur stdDeviation="4"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_252_1392"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_252_1392" result="shape"/></filter></defs></svg>
+                           </div>
+                            <div class="row d-block plan-details"> <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">149</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                                <p class="small strike-between" style="font-size:13px">+ $249.00 One-Time Membership Fee </p>
+                                <p class="small font-red-col" style="font-size:14px">+ <span >$99.00</span> One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                                <p class="small font-red-col" style="font-size:14px">$150 in instant savings! </p>
+                           </div>
+                            <div class="features row ">
+                                <div class="col-md">
+                                    <ul class="list-unstyled border-top">
+                                      <div class="main-list">
+                                        <div class="list-item col-50">
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> High Speed 4G LTE</li>
+                                           <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Connects to All Your Devices</li>
+                                        </div>
+                                        <div class="list-item col-50">
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Up to Unlimited Data</li>
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Contract, No Credit Check</li>
+                                        </div>
+                                      </div>
+                                      <li class="full-width"><i class="fa fa-check text-primary" aria-hidden="true"></i> Membership/Activation <br/> Now only $99</li>
+                                    </ul>
+                                </div>
+                            </div>
+                               {% comment %}
+                          <div class="row d-block"> 
+                            <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">149</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                           </div>
+                           {% endcomment %}
+                            <div class="row button-row" id="work-anywhere-buttons">										
+                              <br/>  
+                              <div class="col-6 pr-0 pl-0" >
+                                {% comment %}
+                                <div class="toggle-section">
+                                    <span>Monthly</span>
+                                      <label class="switch">
+                                        <input type="checkbox" id="work-anywhere-router-toggle" checked>
+                                        <span class="slider round"></span>
+                                      </label>
+                                     <span>Annually</span>
+                                </div>
+                                {% endcomment %}
+                                    <input name="id" value="39738210091066" type="hidden">
+                                    <div class="button-add-to-cart"  id="work-anywhere-plan"> Add to Cart </div>
+                                </div>
+                                <p style="margin-top: 25px;font-size: 13px;padding: 0 25px;">*routers shown for illustration purposes, actual routers may vary.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>  
+<form id="work-anywhere-travel-router-form" class="col-lg-6 col-md-6 col-sm-12 gl-travel-wifi" method="post" action="/cart/add" style="position:relative">
+        <div>
+            <div class="plan-listing card-plan-list rounded card-green">
+                <div class="card-body">
+                    <div class="plan-row">
+                      {% comment %}
+                        <div class="text-right"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/wifi-icon.JPG?v=1595349872" style="max-width:30px"/></div>
+                            <div class="col img-setter-pro mx-auto">
+                                <img src="//cdn.shopify.com/s/files/1/0414/3238/3650/products/X750-2_db8e0bcf-e4a7-4c1c-8af8-d16980f18642_medium.jpg?v=1593667396">
+                            </div>
+                            {% endcomment %}
+                            <div class="top-plan-section">
+                            <h6 class="row font-weight-bold text-uppercase">Travel Anywhere Plan</h6>
+                              <div class="row align-items-end plan-sub-title">
+                                  <div class="col-12 p-0">
+                                      
+                                          <p class="small">Nomad’s Best Plan & Best Price</p>
+                                      
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="image-text-section">
+                              <div class="row d-block"> 
+                                <div class="price-section">Now Only<br/>$129/Month</div>
+                                <sub class="sub-dollar" style="font-size:14px;color: red;text-decoration: underline;">INCLUDES top-quality router</sub>
+                                {% comment %}<sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">149</span> <sub style="font-size:18px; color:#000">/mo</sub> {% endcomment %}
+                              </div>
+                              <div class="img-setter-pro mx-auto">
+                                <img src="{{ 'Ggten model 4 R3.jpg' | asset_url }}">
+                              </div>
+                            </div>
+                            <div class="wifi-plan-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="icon-plans" width="63" height="64" viewBox="0 0 63 64" fill="none"><g filter="url(#filter0_d_252_1389)"><ellipse cx="31.2958" cy="32.0032" rx="23" ry="23.0681" fill="white" /></g><path
+                                    d="M30.7549 46.0447C30.5332 46.0447 30.0175 45.5867 29.208 44.6707C28.3985 43.7547 27.9938 43.1721 27.9938 42.9229C27.9938 42.5241 28.3403 42.1876 29.0334 41.9135C29.7264 41.6393 30.3003 41.5022 30.7549 41.5022C31.2096 41.5022 31.7834 41.6393 32.4765 41.9135C33.1695 42.1876 33.5161 42.5241 33.5161 42.9229C33.5161 43.1721 33.1113 43.7547 32.3018 44.6707C31.4923 45.5867 30.9767 46.0447 30.7549 46.0447ZM35.2459 40.9788C35.2238 40.9788 35.002 40.823 34.5806 40.5115C34.1592 40.1999 33.5965 39.8884 32.8923 39.5768C32.1882 39.2653 31.4757 39.1095 30.7549 39.1095C30.0342 39.1095 29.3217 39.2653 28.6176 39.5768C27.9134 39.8884 27.3534 40.1999 26.9376 40.5115C26.5218 40.823 26.2972 40.9788 26.2639 40.9788C26.0643 40.9788 25.5459 40.5115 24.7087 39.5768C23.8715 38.6422 23.4529 38.0627 23.4529 37.8384C23.4529 37.6764 23.5083 37.533 23.6192 37.4084C24.4842 36.4488 25.5709 35.6949 26.8794 35.1465C28.1879 34.5982 29.4797 34.3241 30.7549 34.3241C32.0302 34.3241 33.322 34.5982 34.6305 35.1465C35.939 35.6949 37.0257 36.4488 37.8906 37.4084C38.0015 37.533 38.057 37.6764 38.057 37.8384C38.057 38.0627 37.6384 38.6422 36.8012 39.5768C35.9639 40.5115 35.4455 40.9788 35.2459 40.9788ZM39.7868 35.8943C39.6649 35.8943 39.5373 35.8444 39.4043 35.7447C37.8962 34.4362 36.499 33.4735 35.2127 32.8566C33.9264 32.2398 32.4404 31.9313 30.7549 31.9313C29.8124 31.9313 28.8671 32.0684 27.919 32.3426C26.9709 32.6167 26.1447 32.947 25.4406 33.3333C24.7364 33.7196 24.1071 34.106 23.5527 34.4923C22.9983 34.8786 22.5602 35.2089 22.2387 35.483C21.9171 35.7572 21.7452 35.8943 21.723 35.8943C21.5345 35.8943 21.0244 35.4269 20.1928 34.4923C19.3611 33.5576 18.9453 32.9781 18.9453 32.7538C18.9453 32.6043 19.0007 32.4672 19.1116 32.3426C20.5753 30.6976 22.3496 29.4202 24.4343 28.5105C26.519 27.6007 28.6259 27.1459 30.7549 27.1459C32.884 27.1459 34.9909 27.6007 37.0756 28.5105C39.1603 29.4202 40.9345 30.6976 42.3983 32.3426C42.5092 32.4672 42.5646 32.6043 42.5646 32.7538C42.5646 32.9781 42.1488 33.5576 41.3171 34.4923C40.4854 35.4269 39.9753 35.8943 39.7868 35.8943ZM44.2945 30.8284C44.1725 30.8284 44.0505 30.7724 43.9285 30.6602C41.9436 28.7036 39.8839 27.23 37.7493 26.2393C35.6146 25.2485 33.2832 24.7532 30.7549 24.7532C28.2267 24.7532 25.8952 25.2485 23.7606 26.2393C21.626 27.23 19.5662 28.7036 17.5813 30.6602C17.4594 30.7724 17.3374 30.8284 17.2154 30.8284C17.0269 30.8284 16.514 30.3611 15.6768 29.4264C14.8396 28.4918 14.421 27.9123 14.421 27.688C14.421 27.526 14.4764 27.3827 14.5873 27.258C16.661 24.9401 19.1282 23.1455 21.9892 21.8744C24.8501 20.6033 27.772 19.9677 30.7549 19.9677C33.7378 19.9677 36.6598 20.6033 39.5207 21.8744C42.3816 23.1455 44.8489 24.9401 46.9225 27.258C47.0334 27.3827 47.0889 27.526 47.0889 27.688C47.0889 27.9123 46.6703 28.4918 45.8331 29.4264C44.9958 30.3611 44.483 30.8284 44.2945 30.8284Z"
+                                    fill="#109D59" /><defs><filter id="filter0_d_252_1389" x="0.295776" y="0.935181" width="62" height="62.1361"filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix" /><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"result="hardAlpha" /><feOffset />
+                                        <feGaussianBlur stdDeviation="4" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_252_1389" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_252_1389" result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                             <svg xmlns="http://www.w3.org/2000/svg" class="icon-plans" width="63" height="64" viewBox="0 0 63 64" fill="none"><g filter="url(#filter0_d_252_1392)"><ellipse cx="31.2958" cy="32.0032" rx="23" ry="23.0681" fill="white"/></g><path d="M43.9463 39.6103C43.9463 40.0118 43.785 40.3969 43.4978 40.6808C43.2107 40.9647 42.8212 41.1242 42.415 41.1242C42.0089 41.1242 41.6194 40.9647 41.3322 40.6808C41.0451 40.3969 40.8837 40.0118 40.8837 39.6103C40.8837 39.2088 41.0451 38.8237 41.3322 38.5398C41.6194 38.2559 42.0089 38.0964 42.415 38.0964C42.8212 38.0964 43.2107 38.2559 43.4978 38.5398C43.785 38.8237 43.9463 39.2088 43.9463 39.6103Z" fill="#109D59"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.3655 19.1726C25.1913 19.0717 24.9986 19.0058 24.7985 18.9787C24.5984 18.9517 24.3949 18.964 24.1996 19.015C24.0044 19.0661 23.8213 19.1548 23.6609 19.2761C23.5004 19.3973 23.3659 19.5488 23.2649 19.7217C23.1639 19.8946 23.0985 20.0855 23.0725 20.2835C23.0465 20.4815 23.0603 20.6826 23.1132 20.8753C23.1661 21.068 23.2571 21.2484 23.3808 21.4062C23.5045 21.564 23.6586 21.696 23.8342 21.7947L44.4364 33.5547H19.4454V39.6103C19.4454 41.2163 20.0908 42.7566 21.2395 43.8923C22.3882 45.0279 23.9462 45.6659 25.5707 45.6659H43.9463C45.5709 45.6659 47.1288 45.0279 48.2775 43.8923C49.4262 42.7566 50.0716 41.2163 50.0716 39.6103V33.5547L25.3655 19.1726ZM47.009 36.5825H22.5081V39.6103C22.5081 40.4133 22.8307 41.1835 23.4051 41.7513C23.9794 42.3191 24.7584 42.6381 25.5707 42.6381H43.9463C44.7586 42.6381 45.5376 42.3191 46.1119 41.7513C46.6863 41.1835 47.009 40.4133 47.009 39.6103V36.5825Z" fill="#109D59"/><defs><filter id="filter0_d_252_1392" x="0.295776" y="0.935181" width="62" height="62.1361" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset/><feGaussianBlur stdDeviation="4"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_252_1392"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_252_1392" result="shape"/></filter></defs></svg>
+                           </div>
+                            <div class="row d-block plan-details"> 
+                               <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">149</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                                <p class="small strike-between" style="font-size:13px">+ $199.00 One-Time Membership Fee </p>
+                                <p class="small font-red-col" style="font-size:14px">+ <span >$99.00</span> One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                                <p class="small font-red-col" style="font-size:14px">$150 in instant savings! </p>
+                            </div>
+                            <div class="features row ">
+                                <div class="col-md">
+                                    <ul class="list-unstyled border-top">
+                                      <div class="main-list">
+                                        <div class="list-item col-50">
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> High Speed 4G LTE</li>
+                                           <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Connects to All Your Devices</li>
+                                        </div>
+                                        <div class="list-item col-50">
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Up to Unlimited Data</li>
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Contract, No Credit Check</li>
+                                        </div>
+                                      </div>
+                                      <li class="full-width"><i class="fa fa-check text-primary" aria-hidden="true"></i> Membership/Activation <br/> Now only $99</li>
+                                    </ul>
+                                </div>
+                            </div>
+                               {% comment %}
+                            <div class="row d-block"> 
+                               <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">149</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                            </div>
+                            {% endcomment %}
+                            <div class="row button-row" id="work-anywhere-buttons">										
+                                <div class="col-6 pr-0 pl-0">
+                                  {% comment %}
+                                  <div class="toggle-section">
+                                    <span>Monthly</span>
+                                      <label class="switch">
+                                        <input type="checkbox" id="work-anywhere-router-toggle" checked>
+                                        <span class="slider round"></span>
+                                      </label>
+                                     <span>Annually</span>
+                                 </div>
+                                 {% endcomment %}
+                                    <input name="id" value="39738220052538" type="hidden">
+                                    <div class="button-add-to-cart"  id="travel-anywhere-plan"> Add to Cart </div>
+                                </div>
+                              <p style="margin-top: 25px;font-size: 13px;padding: 0 25px;">*routers shown for illustration purposes, actual routers may vary.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form> 
+      <form id="pink-wifi-router-form" class="col-lg-6 col-md-6 col-sm-12 gl-wifi" method="post" action="/cart/add">
+        <div>
+            <div class="plan-listing card-plan-list   rounded card-pink">
+                <div class="card-body">
+                    <div class="plan-row">
+                      {% comment %}
+                        <div class="text-right"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/wifi-icon.JPG?v=1595349872" style="max-width:30px"/></div>
+                            <div class="col img-setter-pro mx-auto">
+                                <img src="//cdn.shopify.com/s/files/1/0414/3238/3650/products/X750-2_db8e0bcf-e4a7-4c1c-8af8-d16980f18642_medium.jpg?v=1593667396">
+                            </div>
+                            {% endcomment %}
+                            <div class="top-plan-section">
+                              <h6 class="row font-weight-bold text-uppercase">True Blue Plan</h6>
+                              <div class="row align-items-end plan-sub-title">
+                                  <div class="col-12 p-0">
+                                      
+                                          <p class="small">For Selected Locations</p>
+                                      
+                                  </div>
+                              </div>
+                             </div>
+
+                           <div class="image-text-section">
+                            <div class="row d-block"> 
+                              <div class="price-section">Now Only<br/>$139/Month</div>
+                              <sub class="sub-dollar" style="font-size:14px;color: red;text-decoration: underline;">INCLUDES top-quality router</sub>
+<!--                                   <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> 
+                              <span style="font-size:3rem; font-weight:700; color:#000">149</span> 
+                              <sub style="font-size:18px; color:#000">/mo</sub> -->
+                            </div>
+                            <div class="img-setter-pro mx-auto">
+                              <img src="{{ 'Ggten model 4 R3.jpg' | asset_url }}">
+                            </div>
+                          </div>
+                            <div class="wifi-plan-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="icon-plans" width="63" height="64" viewBox="0 0 63 64" fill="none"><g filter="url(#filter0_d_252_1389)"><ellipse cx="31.2958" cy="32.0032" rx="23" ry="23.0681" fill="white" /></g><path
+                                    d="M30.7549 46.0447C30.5332 46.0447 30.0175 45.5867 29.208 44.6707C28.3985 43.7547 27.9938 43.1721 27.9938 42.9229C27.9938 42.5241 28.3403 42.1876 29.0334 41.9135C29.7264 41.6393 30.3003 41.5022 30.7549 41.5022C31.2096 41.5022 31.7834 41.6393 32.4765 41.9135C33.1695 42.1876 33.5161 42.5241 33.5161 42.9229C33.5161 43.1721 33.1113 43.7547 32.3018 44.6707C31.4923 45.5867 30.9767 46.0447 30.7549 46.0447ZM35.2459 40.9788C35.2238 40.9788 35.002 40.823 34.5806 40.5115C34.1592 40.1999 33.5965 39.8884 32.8923 39.5768C32.1882 39.2653 31.4757 39.1095 30.7549 39.1095C30.0342 39.1095 29.3217 39.2653 28.6176 39.5768C27.9134 39.8884 27.3534 40.1999 26.9376 40.5115C26.5218 40.823 26.2972 40.9788 26.2639 40.9788C26.0643 40.9788 25.5459 40.5115 24.7087 39.5768C23.8715 38.6422 23.4529 38.0627 23.4529 37.8384C23.4529 37.6764 23.5083 37.533 23.6192 37.4084C24.4842 36.4488 25.5709 35.6949 26.8794 35.1465C28.1879 34.5982 29.4797 34.3241 30.7549 34.3241C32.0302 34.3241 33.322 34.5982 34.6305 35.1465C35.939 35.6949 37.0257 36.4488 37.8906 37.4084C38.0015 37.533 38.057 37.6764 38.057 37.8384C38.057 38.0627 37.6384 38.6422 36.8012 39.5768C35.9639 40.5115 35.4455 40.9788 35.2459 40.9788ZM39.7868 35.8943C39.6649 35.8943 39.5373 35.8444 39.4043 35.7447C37.8962 34.4362 36.499 33.4735 35.2127 32.8566C33.9264 32.2398 32.4404 31.9313 30.7549 31.9313C29.8124 31.9313 28.8671 32.0684 27.919 32.3426C26.9709 32.6167 26.1447 32.947 25.4406 33.3333C24.7364 33.7196 24.1071 34.106 23.5527 34.4923C22.9983 34.8786 22.5602 35.2089 22.2387 35.483C21.9171 35.7572 21.7452 35.8943 21.723 35.8943C21.5345 35.8943 21.0244 35.4269 20.1928 34.4923C19.3611 33.5576 18.9453 32.9781 18.9453 32.7538C18.9453 32.6043 19.0007 32.4672 19.1116 32.3426C20.5753 30.6976 22.3496 29.4202 24.4343 28.5105C26.519 27.6007 28.6259 27.1459 30.7549 27.1459C32.884 27.1459 34.9909 27.6007 37.0756 28.5105C39.1603 29.4202 40.9345 30.6976 42.3983 32.3426C42.5092 32.4672 42.5646 32.6043 42.5646 32.7538C42.5646 32.9781 42.1488 33.5576 41.3171 34.4923C40.4854 35.4269 39.9753 35.8943 39.7868 35.8943ZM44.2945 30.8284C44.1725 30.8284 44.0505 30.7724 43.9285 30.6602C41.9436 28.7036 39.8839 27.23 37.7493 26.2393C35.6146 25.2485 33.2832 24.7532 30.7549 24.7532C28.2267 24.7532 25.8952 25.2485 23.7606 26.2393C21.626 27.23 19.5662 28.7036 17.5813 30.6602C17.4594 30.7724 17.3374 30.8284 17.2154 30.8284C17.0269 30.8284 16.514 30.3611 15.6768 29.4264C14.8396 28.4918 14.421 27.9123 14.421 27.688C14.421 27.526 14.4764 27.3827 14.5873 27.258C16.661 24.9401 19.1282 23.1455 21.9892 21.8744C24.8501 20.6033 27.772 19.9677 30.7549 19.9677C33.7378 19.9677 36.6598 20.6033 39.5207 21.8744C42.3816 23.1455 44.8489 24.9401 46.9225 27.258C47.0334 27.3827 47.0889 27.526 47.0889 27.688C47.0889 27.9123 46.6703 28.4918 45.8331 29.4264C44.9958 30.3611 44.483 30.8284 44.2945 30.8284Z"
+                                    fill="#067ab4" /><defs><filter id="filter0_d_252_1389" x="0.295776" y="0.935181" width="62" height="62.1361"filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix" /><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"result="hardAlpha" /><feOffset />
+                                        <feGaussianBlur stdDeviation="4" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_252_1389" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_252_1389" result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                             <svg xmlns="http://www.w3.org/2000/svg" class="icon-plans" width="63" height="64" viewBox="0 0 63 64" fill="none"><g filter="url(#filter0_d_252_1392)"><ellipse cx="31.2958" cy="32.0032" rx="23" ry="23.0681" fill="white"/></g><path d="M43.9463 39.6103C43.9463 40.0118 43.785 40.3969 43.4978 40.6808C43.2107 40.9647 42.8212 41.1242 42.415 41.1242C42.0089 41.1242 41.6194 40.9647 41.3322 40.6808C41.0451 40.3969 40.8837 40.0118 40.8837 39.6103C40.8837 39.2088 41.0451 38.8237 41.3322 38.5398C41.6194 38.2559 42.0089 38.0964 42.415 38.0964C42.8212 38.0964 43.2107 38.2559 43.4978 38.5398C43.785 38.8237 43.9463 39.2088 43.9463 39.6103Z" fill="#109D59"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.3655 19.1726C25.1913 19.0717 24.9986 19.0058 24.7985 18.9787C24.5984 18.9517 24.3949 18.964 24.1996 19.015C24.0044 19.0661 23.8213 19.1548 23.6609 19.2761C23.5004 19.3973 23.3659 19.5488 23.2649 19.7217C23.1639 19.8946 23.0985 20.0855 23.0725 20.2835C23.0465 20.4815 23.0603 20.6826 23.1132 20.8753C23.1661 21.068 23.2571 21.2484 23.3808 21.4062C23.5045 21.564 23.6586 21.696 23.8342 21.7947L44.4364 33.5547H19.4454V39.6103C19.4454 41.2163 20.0908 42.7566 21.2395 43.8923C22.3882 45.0279 23.9462 45.6659 25.5707 45.6659H43.9463C45.5709 45.6659 47.1288 45.0279 48.2775 43.8923C49.4262 42.7566 50.0716 41.2163 50.0716 39.6103V33.5547L25.3655 19.1726ZM47.009 36.5825H22.5081V39.6103C22.5081 40.4133 22.8307 41.1835 23.4051 41.7513C23.9794 42.3191 24.7584 42.6381 25.5707 42.6381H43.9463C44.7586 42.6381 45.5376 42.3191 46.1119 41.7513C46.6863 41.1835 47.009 40.4133 47.009 39.6103V36.5825Z" fill="#067ab4"/><defs><filter id="filter0_d_252_1392" x="0.295776" y="0.935181" width="62" height="62.1361" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset/><feGaussianBlur stdDeviation="4"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_252_1392"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_252_1392" result="shape"/></filter></defs></svg>
+                           </div>
+                            <div class="row d-block plan-details"> 
+                              <div class="price-section">Now Only<br/>$129/Month</div>
+<!--                                   <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> 
+                              <span style="font-size:3rem; font-weight:700; color:#000">149</span> 
+                              <sub style="font-size:18px; color:#000">/mo</sub>
+                              <p class="small strike-between" style="font-size:13px">+ $249.00 One-Time Membership Fee </p>
+                              <p class="small font-red-col" style="font-size:14px">+ <span >$99.00</span> One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                              <p class="small font-red-col" style="font-size:14px">$150 in instant savings! </p> -->
+                            </div>
+              
+                            <div class="features row ">
+                                <div class="col-md">
+                                    <ul class="list-unstyled border-top">
+                                       <div class="main-list">
+                                        <div class="list-item col-50">
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> High Speed 4G LTE</li>
+                                           <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Connects to All Your Devices</li>
+                                        </div>
+                                        <div class="list-item col-50">
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Up to Unlimited Data</li>
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Contract, No Credit Check</li>
+                                        </div>
+                                      </div>
+                                      <li class="full-width"><i class="fa fa-check text-primary" aria-hidden="true"></i> Membership/Activation <br/> Now only $99</li>
+                                    </ul>
+                                </div>
+                            </div>
+                               {% comment %}
+                            <div class="row d-block"> 
+                              <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> 
+                              <span style="font-size:3rem; font-weight:700; color:#000">149</span> 
+                              <sub style="font-size:18px; color:#000">/mo</sub>
+                            </div>
+                            {% endcomment %}
+                            <div class="row button-row" style="justify-content: center;">
+                              {% comment %}
+                                <div class="col-6 pl-0 button-1"><a href="https://href.li/?https://www.t-mobile.com/coverage-map.html" target="_blank" class="w-100 plan-coverage text-capitalize">Plan Coverage</a></div>
+                              {% endcomment %}
+                                <div class="col-6 pr-0 pl-0">
+                                  {% comment %}
+                                  <div class="toggle-section">
+                                    <span>Monthly</span>
+                                      <label class="switch">
+                                        <input type="checkbox" id="work-anywhere-router-toggle" checked>
+                                        <span class="slider round"></span>
+                                      </label>
+                                     <span>Annually</span>
+                                 </div>
+                                 {% endcomment %}
+                                    <input name="id" value="39738222477370" type="hidden">
+                                    <div class="button-add-to-cart"  id="true-blue-plan"> Add to Cart </div>
+                                </div>
+                              <p style="margin-top: 25px;font-size: 13px;padding: 0 25px;">*routers shown for illustration purposes, actual routers may vary.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>
+        <form id="annual-form" class="col-lg-6 col-md-6 col-sm-12 gl-wifi" method="post" action="/cart/add">
+        <div>
+            <div class="plan-listing card-plan-list   rounded card-pink">
+                <div class="card-body">
+                    <div class="plan-row">
+                      {% comment %}
+                        <div class="text-right"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/wifi-icon.JPG?v=1595349872" style="max-width:30px"/></div>
+                            <div class="col img-setter-pro mx-auto">
+                                <img src="//cdn.shopify.com/s/files/1/0103/2847/3658/files/strong-pink-plan-nomadinternet-store-753975.jpg?v=1643998345">
+                            </div>
+                      {% endcomment %}
+                         <div class="top-plan-section">
+                            <h6 class="row font-weight-bold text-uppercase">Blue Travel Plan</h6>
+                            <div class="row align-items-end plan-sub-title">
+                                <div class="col-12 p-0">
+                                    <p class="small">For Selected Locations</p>
+                                </div>
+                            </div>
+                         </div>
+
+                        <div class="image-text-section">
+                          <div class="row d-block">
+                            <div class="price-section">Now Only<br/>$139/Month</div>
+                            <sub class="sub-dollar" style="font-size:14px;color: red;text-decoration: underline;">INCLUDES top-quality router</sub>
+<!--                                   <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> 
+                              <span style="font-size:3rem; font-weight:700; color:#000">900</span> <sub style="font-size:18px; color:#000">/yr</sub> -->
+                            </div>
+                          <div class="img-setter-pro mx-auto">
+                            <img src="//cdn.shopify.com/s/files/1/0414/3238/3650/products/X750-2_db8e0bcf-e4a7-4c1c-8af8-d16980f18642_medium.jpg?v=1593667396">
+                          </div>
+                        </div>
+                      
+                           <div class="wifi-plan-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="icon-plans" width="63" height="64" viewBox="0 0 63 64" fill="none"><g filter="url(#filter0_d_252_1389)"><ellipse cx="31.2958" cy="32.0032" rx="23" ry="23.0681" fill="white" /></g><path
+                                    d="M30.7549 46.0447C30.5332 46.0447 30.0175 45.5867 29.208 44.6707C28.3985 43.7547 27.9938 43.1721 27.9938 42.9229C27.9938 42.5241 28.3403 42.1876 29.0334 41.9135C29.7264 41.6393 30.3003 41.5022 30.7549 41.5022C31.2096 41.5022 31.7834 41.6393 32.4765 41.9135C33.1695 42.1876 33.5161 42.5241 33.5161 42.9229C33.5161 43.1721 33.1113 43.7547 32.3018 44.6707C31.4923 45.5867 30.9767 46.0447 30.7549 46.0447ZM35.2459 40.9788C35.2238 40.9788 35.002 40.823 34.5806 40.5115C34.1592 40.1999 33.5965 39.8884 32.8923 39.5768C32.1882 39.2653 31.4757 39.1095 30.7549 39.1095C30.0342 39.1095 29.3217 39.2653 28.6176 39.5768C27.9134 39.8884 27.3534 40.1999 26.9376 40.5115C26.5218 40.823 26.2972 40.9788 26.2639 40.9788C26.0643 40.9788 25.5459 40.5115 24.7087 39.5768C23.8715 38.6422 23.4529 38.0627 23.4529 37.8384C23.4529 37.6764 23.5083 37.533 23.6192 37.4084C24.4842 36.4488 25.5709 35.6949 26.8794 35.1465C28.1879 34.5982 29.4797 34.3241 30.7549 34.3241C32.0302 34.3241 33.322 34.5982 34.6305 35.1465C35.939 35.6949 37.0257 36.4488 37.8906 37.4084C38.0015 37.533 38.057 37.6764 38.057 37.8384C38.057 38.0627 37.6384 38.6422 36.8012 39.5768C35.9639 40.5115 35.4455 40.9788 35.2459 40.9788ZM39.7868 35.8943C39.6649 35.8943 39.5373 35.8444 39.4043 35.7447C37.8962 34.4362 36.499 33.4735 35.2127 32.8566C33.9264 32.2398 32.4404 31.9313 30.7549 31.9313C29.8124 31.9313 28.8671 32.0684 27.919 32.3426C26.9709 32.6167 26.1447 32.947 25.4406 33.3333C24.7364 33.7196 24.1071 34.106 23.5527 34.4923C22.9983 34.8786 22.5602 35.2089 22.2387 35.483C21.9171 35.7572 21.7452 35.8943 21.723 35.8943C21.5345 35.8943 21.0244 35.4269 20.1928 34.4923C19.3611 33.5576 18.9453 32.9781 18.9453 32.7538C18.9453 32.6043 19.0007 32.4672 19.1116 32.3426C20.5753 30.6976 22.3496 29.4202 24.4343 28.5105C26.519 27.6007 28.6259 27.1459 30.7549 27.1459C32.884 27.1459 34.9909 27.6007 37.0756 28.5105C39.1603 29.4202 40.9345 30.6976 42.3983 32.3426C42.5092 32.4672 42.5646 32.6043 42.5646 32.7538C42.5646 32.9781 42.1488 33.5576 41.3171 34.4923C40.4854 35.4269 39.9753 35.8943 39.7868 35.8943ZM44.2945 30.8284C44.1725 30.8284 44.0505 30.7724 43.9285 30.6602C41.9436 28.7036 39.8839 27.23 37.7493 26.2393C35.6146 25.2485 33.2832 24.7532 30.7549 24.7532C28.2267 24.7532 25.8952 25.2485 23.7606 26.2393C21.626 27.23 19.5662 28.7036 17.5813 30.6602C17.4594 30.7724 17.3374 30.8284 17.2154 30.8284C17.0269 30.8284 16.514 30.3611 15.6768 29.4264C14.8396 28.4918 14.421 27.9123 14.421 27.688C14.421 27.526 14.4764 27.3827 14.5873 27.258C16.661 24.9401 19.1282 23.1455 21.9892 21.8744C24.8501 20.6033 27.772 19.9677 30.7549 19.9677C33.7378 19.9677 36.6598 20.6033 39.5207 21.8744C42.3816 23.1455 44.8489 24.9401 46.9225 27.258C47.0334 27.3827 47.0889 27.526 47.0889 27.688C47.0889 27.9123 46.6703 28.4918 45.8331 29.4264C44.9958 30.3611 44.483 30.8284 44.2945 30.8284Z"
+                                    fill="#067ab4" /><defs><filter id="filter0_d_252_1389" x="0.295776" y="0.935181" width="62" height="62.1361"filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix" /><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"result="hardAlpha" /><feOffset />
+                                        <feGaussianBlur stdDeviation="4" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_252_1389" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_252_1389" result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                             <svg xmlns="http://www.w3.org/2000/svg" class="icon-plans" width="63" height="64" viewBox="0 0 63 64" fill="none"><g filter="url(#filter0_d_252_1392)"><ellipse cx="31.2958" cy="32.0032" rx="23" ry="23.0681" fill="white"/></g><path d="M43.9463 39.6103C43.9463 40.0118 43.785 40.3969 43.4978 40.6808C43.2107 40.9647 42.8212 41.1242 42.415 41.1242C42.0089 41.1242 41.6194 40.9647 41.3322 40.6808C41.0451 40.3969 40.8837 40.0118 40.8837 39.6103C40.8837 39.2088 41.0451 38.8237 41.3322 38.5398C41.6194 38.2559 42.0089 38.0964 42.415 38.0964C42.8212 38.0964 43.2107 38.2559 43.4978 38.5398C43.785 38.8237 43.9463 39.2088 43.9463 39.6103Z" fill="#067ab4"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.3655 19.1726C25.1913 19.0717 24.9986 19.0058 24.7985 18.9787C24.5984 18.9517 24.3949 18.964 24.1996 19.015C24.0044 19.0661 23.8213 19.1548 23.6609 19.2761C23.5004 19.3973 23.3659 19.5488 23.2649 19.7217C23.1639 19.8946 23.0985 20.0855 23.0725 20.2835C23.0465 20.4815 23.0603 20.6826 23.1132 20.8753C23.1661 21.068 23.2571 21.2484 23.3808 21.4062C23.5045 21.564 23.6586 21.696 23.8342 21.7947L44.4364 33.5547H19.4454V39.6103C19.4454 41.2163 20.0908 42.7566 21.2395 43.8923C22.3882 45.0279 23.9462 45.6659 25.5707 45.6659H43.9463C45.5709 45.6659 47.1288 45.0279 48.2775 43.8923C49.4262 42.7566 50.0716 41.2163 50.0716 39.6103V33.5547L25.3655 19.1726ZM47.009 36.5825H22.5081V39.6103C22.5081 40.4133 22.8307 41.1835 23.4051 41.7513C23.9794 42.3191 24.7584 42.6381 25.5707 42.6381H43.9463C44.7586 42.6381 45.5376 42.3191 46.1119 41.7513C46.6863 41.1835 47.009 40.4133 47.009 39.6103V36.5825Z" fill="#067ab4"/><defs><filter id="filter0_d_252_1392" x="0.295776" y="0.935181" width="62" height="62.1361" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset/><feGaussianBlur stdDeviation="4"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_252_1392"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_252_1392" result="shape"/></filter></defs></svg>
+                           </div>
+                            <div class="row d-block plan-details"> 
+                              <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> 
+                              <span style="font-size:3rem; font-weight:700; color:#000">900</span> <sub style="font-size:18px; color:#000">/yr</sub>
+                              <p class="small font-black-col" style="font-size:14px">Save $70/month by buying 1 year in advance! </p>
+                              <p class="small font-red-col" style="font-size:14px">+ <span >$0.00</span> Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                            </div>
+                            <div class="features row ">
+                                <div class="col-md">
+                                    <ul class="list-unstyled border-top">
+                                      <div class="main-list">
+                                        <div class="list-item col-50">
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> High Speed 4G LTE</li>
+                                           <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Connects to All Your Devices</li>
+                                        </div>
+                                        <div class="list-item col-50">
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Up to Unlimited Data</li>
+                                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Contract, No Credit Check</li>
+                                        </div>
+                                      </div>
+                                      <li class="full-width"><i class="fa fa-check text-primary" aria-hidden="true"></i> Membership/Activation <br/> Now only $99</li>
+                                    </ul>
+                                </div>
+                            </div>
+                               {% comment %}
+                           <div class="row d-block"> 
+                              <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> 
+                              <span style="font-size:3rem; font-weight:700; color:#000">900</span> <sub style="font-size:18px; color:#000">/yr</sub>
+                            </div>
+                            {% endcomment %}
+                            <div class="row button-row" style="justify-content: center;">
+                              {% comment %}
+                                <div class="col-6 pl-0 button-1"><a href="https://href.li/?https://www.t-mobile.com/coverage-map.html" target="_blank" class="w-100 plan-coverage text-capitalize">Plan Coverage</a></div>
+                                {% endcomment %}
+                                <div class="col-6 pr-0 pl-0">
+                                 {% comment %}
+                                  <div class="toggle-section">
+                                    <span>Monthly</span>
+                                      <label class="switch">
+                                        <input type="checkbox" id="work-anywhere-router-toggle" checked>
+                                        <span class="slider round"></span>
+                                      </label>
+                                     <span>Annually</span>
+                                 </div>
+                                 {% endcomment %}
+                                    <input name="id" value="39738222510138" type="hidden">
+                                    <div class="button-add-to-cart"  id="blue-travel-plan"> Add to Cart </div>
+                                </div>
+                              <p style="margin-top: 25px;font-size: 13px;padding: 0 25px;">*routers shown for illustration purposes, actual routers may vary.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>
+  </div>
+</div>
+</div>
+</section>
+</div>
+<div class="modal fade modal-theme modal-fee" tabindex="-1" role="dialog" id="fee_modal" aria-hidden="true">
+<button class="close" data-dismiss="modal" title="Close">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg>
+</button>
+<div class="modal-dialog modal-md" role="document">
+<div class="modal-content">
+    <div class="modal-body">
+        <div class="modal-fee__content">
+            <h2 class="title">One Time Membership Fee</h2>
+            <p>When becoming a member, you are responsible for paying a One-Time Membership Fee that covers the administration and support of your account. Therefore, you are the owner of the membership but you don’t own the device or the carrier account your line is on. Upon receipt of your item, you will be charged for your first month of service.</p>
+            <p>You may of course cancel your subscription with us at any time by simply returning your device and we never charge any cancellation fees! Easy, Simple, Clean!</p>
+            <p style="font-size: 12px; color: #313131;">*Items pictured are for illustrative purposes only and the final product received may vary slightly.</p>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+{{ 'option_selection.js' | shopify_asset_url | script_tag }}
+<script>
+
+window.timber = window.timber || {};
+
+timber.switchImage = function (src, imgObject, el) {
+// Make sure element is a jquery object
+var $el = $(el);
+$el.attr('src', src);
+};
+
+timber.productPagepink = function (options) {
+var moneyFormat = options.money_format,
+        variant = options.variant,
+        selector = options.selector;
+
+// Selectors
+var $productImage = $('.card-pink img'),
+        $productPrice = $('.card-pink .fee .price-amount'),
+        $productwasPrice = $('.card-pink .fee .price-amount_was');
+
+if (variant) {
+    // Update variant image, if one is set
+    if (variant.featured_image) {
+        var newImg = variant.featured_image,
+                el = $productImage[0];
+        Shopify.Image.switchImage(newImg, el, timber.switchImage);
+    }
+    console.log(variant);
+    if(variant.title  == 'Sim Only (bring your own device)'){
+        $productwasPrice.html('Free');
+        $('#product-form-pink .fee .price-amount').css('color','red');
+        $('#product-form-pink .fee del').css('text-decoration','none');
+        $('.card-pink .fee .hide_on_sim').hide();
+    }
+    else{
+        $('.card-pink .fee .hide_on_sim').show();
+        $productPrice.html(Shopify.formatMoney(variant.price, moneyFormat));
+        $productwasPrice.html(Shopify.formatMoney(variant.compare_at_price, moneyFormat));
+        $('#product-form-pink .fee .price-amount').css('color','#515151');
+        $('#product-form-pink .fee del').css('text-decoration','line-through');
+    }
+
+}
+};
+
+timber.productPageblue = function (options) {
+var moneyFormat = options.money_format,
+        variant = options.variant,
+        selector = options.selector;
+
+// Selectors
+var $productImage = $('.card-blue img'),
+        $productPrice = $('.card-blue .fee .price-amount'),
+        $productwasPrice = $('.card-blue .fee .price-amount_was');
+
+if (variant) {
+    // Update variant image, if one is set
+    if (variant.featured_image) {
+        var newImg = variant.featured_image,
+                el = $productImage[0];
+        Shopify.Image.switchImage(newImg, el, timber.switchImage);
+    }
+
+    if(variant.title  == 'Sim Only (bring your own device)'){
+        $productwasPrice.html('Free');
+        $('#product-form-blue .fee .price-amount').css('color','red');
+        $('#product-form-blue .fee del').css('text-decoration','none');
+        $('.card-blue .fee .hide_on_sim').hide();
+    }
+    else{
+        $('.card-blue .fee .hide_on_sim').show();
+        $productPrice.html(Shopify.formatMoney(variant.price, moneyFormat));
+        $productwasPrice.html(Shopify.formatMoney(variant.compare_at_price, moneyFormat));
+        $('#product-form-blue .fee .price-amount').css('color','#515151');
+        $('#product-form-blue .fee del').css('text-decoration','line-through');
+    }
+}
+};
+
+timber.productPageyellow = function (options) {
+var moneyFormat = options.money_format,
+        variant = options.variant,
+        selector = options.selector;
+
+// Selectors
+var $productImage = $('.card-yellow img'),
+        $productPrice = $('.card-yellow .fee .price-amount'),
+        $productwasPrice = $('.card-yellow .fee .price-amount_was');
+
+if (variant) {
+    // Update variant image, if one is set
+    if (variant.featured_image) {
+        var newImg = variant.featured_image,
+                el = $productImage[0];
+        Shopify.Image.switchImage(newImg, el, timber.switchImage);
+    }
+
+    // Regardless of stock, update the product price
+    $productPrice.html(Shopify.formatMoney(variant.price, moneyFormat));
+    //$productwasPrice.html(Shopify.formatMoney(variant.compare_at_price, moneyFormat));
+}
+};
+
+
+
+var selectCallbackpink = function(variant, selector) {
+timber.productPagepink({
+    money_format: "{{ shop.money_format }}",
+    variant: variant,
+    selector: selector
+});
+};
+var selectCallbackblue = function(variant, selector) {
+timber.productPageblue({
+    money_format: "{{ shop.money_format }}",
+    variant: variant,
+    selector: selector
+});
+};
+var selectCallbackred = function(variant, selector) {
+timber.productPagered({
+    money_format: "{{ shop.money_format }}",
+    variant: variant,
+    selector: selector
+});
+};
+var selectCallbackyellow = function(variant, selector) {
+timber.productPageyellow({
+    money_format: "{{ shop.money_format }}",
+    variant: variant,
+    selector: selector
+});
+};
+
+</script>
+
+
+<script>
+$(document).ready(function(){
+
+$(document).on('click', '.faq-item h6', function(){
+var toggleEle = $(this).next('.faq-content');
+$(this).toggleClass('active').parents('.faq-list').find('h6').not(this).removeClass('active');
+toggleEle.slideToggle(300).parents('.faq-list').find('.faq-content').not(toggleEle).slideUp(300);
+});
+
+$("#work-anywhere-plan").click(function(){
+    var already_have = 0;
+     console.log('work-anywhere-router add to cart');
+     ttq.track('AddToCart');
+    $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+                if(cartItem.product_title == 'Works Anywhere Plan'){
+                    already_have = 1;
+                }
+            });
+        
+            if(already_have == 0) {
+                var data = {
+                    "id" : 39738210091066,
+                    "quantity" : 1,
+                  "properties[Note]": "After 30 days $129/month",
+							"properties[shipping_interval_unit_type]": 'days',
+							"properties[shipping_interval_frequency]": 30,
+							"properties[subscription_id]": 2729490
+                };
+                $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href = "/cart";
+                    },
+                    error: function (request, status, error) {
+                        console.log(request.responseText);
+                    }
+                });						
+            }
+            else{
+                $('.already_have_plan').trigger('click');
+            }
+
+        },
+    });
+});
+
+$("#travel-anywhere-plan").click(function(){
+    var already_have = 0;
+     //console.log('work-anywhere-router add to cart');
+     ttq.track('AddToCart');
+    $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+                if(cartItem.product_title == 'Travel Anywhere Plan'){
+                    already_have = 1;
+                }
+            });
+        
+            if(already_have == 0) {
+                var data = {
+                    "id" : 39738220052538,
+                    "quantity" : 1,
+                  "properties[Note]": "After 30 days $129/month",
+							"properties[shipping_interval_unit_type]": 'days',
+							"properties[shipping_interval_frequency]": 30,
+							"properties[subscription_id]": 2729487
+                };
+                $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href = "/cart";
+                    },
+                    error: function (request, status, error) {
+                        console.log(request.responseText);
+                    }
+                });						
+            }
+            else{
+                $('.already_have_plan').trigger('click');
+            }
+
+        },
+    });
+});  
+
+$("#true-blue-plan").click(function(){
+    var already_have = 0;
+     //console.log('work-anywhere-router add to cart');
+     ttq.track('AddToCart');
+    $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+                if(cartItem.product_title == 'True Blue Plan'){
+                    already_have = 1;
+                }
+            });
+        
+            if(already_have == 0) {
+                var data = {
+                    "id" : 39738222477370,
+                    "quantity" : 1,
+                  "properties[Note]": "After 30 days $139/month",
+							"properties[shipping_interval_unit_type]": 'days',
+							"properties[shipping_interval_frequency]": 30,
+							"properties[subscription_id]": 2729489
+                };
+                $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href = "/cart";
+                    },
+                    error: function (request, status, error) {
+                        console.log(request.responseText);
+                    }
+                });						
+            }
+            else{
+                $('.already_have_plan').trigger('click');
+            }
+
+        },
+    });
+});
+
+$("#blue-travel-plan").click(function(){
+    var already_have = 0;
+     //console.log('work-anywhere-router add to cart');
+     ttq.track('AddToCart');
+    $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+                if(cartItem.product_title == 'Blue Traveler Plan'){
+                    already_have = 1;
+                }
+            });
+        
+            if(already_have == 0) {
+                var data = {
+                    "id" : 39738222510138,
+                    "quantity" : 1,
+                  "properties[Note]": "After 30 days $139/month",
+							"properties[shipping_interval_unit_type]": 'days',
+							"properties[shipping_interval_frequency]": 30,
+							"properties[subscription_id]": 2729488
+                };
+                $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href = "/cart";
+                    },
+                    error: function (request, status, error) {
+                        console.log(request.responseText);
+                    }
+                });						
+            }
+            else{
+                $('.already_have_plan').trigger('click');
+            }
+
+        },
+    });
+});  
+  
+
+});
+
+
+</script>
+<a class="already_have_plan" href="#already_have_plan" data-toggle="modal" style="display:none;">Already Have Plan</a>
+<div class="modal fade modal-theme modal-guarantee" tabindex="-1" role="dialog" id="already_have_plan" aria-hidden="true">
+<button class="close" data-dismiss="modal" title="Close">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg>
+</button>
+<div class="modal-dialog modal-md" role="document">
+<div class="modal-content">
+    <div class="modal-body">
+        <div class="modal-fee__content" style="text-align:center">
+            <h2 class="title mb-4">Attention!!</h2>
+            <p>You already have this plan in your cart.</p>
+            <a href="/cart" class="btn btn-primary">View Cart</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade modal-theme" tabindex="-1" role="dialog" id="address-lookup-request" aria-hidden="true">
+<button class="close" data-dismiss="modal" title="Close">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg>
+</button>
+<div class="modal-dialog modal-xl" role="document">
+<div class="modal-content">
+    <div class="modal-body">
+        <div class="modal-fee">
+            <section class="d-flex align-items-center">
+                <div class="container">
+                    <div class="section-title text-center mb-4">
+                        <h1 class="title mb-3">Address Lookup Request</h1>
+                        <meta charset="utf-8" />
+                        <p>Unsure of which plan is best at your address? <br /> Fill out the form below and let our in-house team of experts recommend the right plan for you!</p>
+                    </div>
+                </div>
+            </section>
+<div class="get-touch-formrounded form-verticals mb-5"> {% form 'contact' %}
+
+{% comment %}
+Successful message
+{% endcomment %}
+{% if form.posted_successfully? %}
+<script>
+window.location = "/pages/address-found";
+</script>
+{% endif %}
+
+{{ form.errors | default_errors }}
+<div class="form-row">
+    <div class="col col-12 col-md-6 form-group">
+        <input type="text" class="form-control" name="contact[First Name]" placeholder="First Name" value="">
+    </div>
+    <div class="col col-12 col-md-6 form-group">
+        <input type="text" class="form-control" name="contact[Last Name]" placeholder="Last Name" value="">
+    </div>
+</div>
+<div class="form-row">
+    <div class="col form-group">
+        <input type="text" class="form-control" name="contact[Street Address]" placeholder="Street Address" value="">
+    </div>
+</div>
+<div class="form-row">
+    <div class="col col-12 col-md-4 form-group">
+        <input type="text" class="form-control" name="contact[City]" placeholder="City" value="">
+    </div>
+    <div class="col col-12 col-md-4 form-group">
+        <select name="contact[State]" class="form-control" aria-required="true" aria-invalid="false">
+            <option value="">State…</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="District Of Columbia">District Of Columbia</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+        </select>
+    </div>
+    <div class="col col-12 col-md-4 form-group">
+        <input type="text" name="contact[Zip]" class="form-control" placeholder="Zip" value="">
+    </div>
+</div>
+<div class="form-row">
+    <div class="col col-12 col-md-6 form-group">
+        <input type="tel" name="contact[Phone]" class="form-control" placeholder="Phone" value="">
+    </div>
+    <div class="col col-12 col-md-6 form-group">
+        <input type="email" name="contact[email]" class="form-control" placeholder="Email" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+    </div>
+</div>
+<div class="mt-4"> 
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+{% endform %}
+ </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<style>
+.button-add-to-cart {
+background: #0e9e59;
+color: #fff;
+text-align: center;
+padding: 7px 6px;
+border-radius: 13px;
+font-size: 14px;
+cursor: pointer;
+}
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+margin: 0px 8px;
+}
+
+.switch input { 
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #0e9e59;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color:#0e9e59;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+.card-pink input:checked + .slider {
+background-color:#067ab4;
+}
+</style>
+
+<script>
+
+
+jQuery(document).ready(function() {
+
+jQuery.validator.addMethod('allowalphabetandspace',
+        function (value, element) {
+            return this.optional(element) || /^[a-z\s]+$/i.test(value);
+        }, "Only alphabetical characters"
+);
+
+ 
+// validate signup form on keyup and submit
+$("#contact_form").validate({
+     rules: {
+    "contact[First Name]": {
+        required: true,
+         
+    },
+    "contact[Last Name]": {
+        required: true,
+         
+    },
+    "contact[email]": {
+        required: true,
+         
+    },
+    "contact[Phone]": {
+        required: true,
+         
+    },
+     
+},messages: {
+    "contact[First Name]": {
+        required: "First Name is required",
+    },
+    "contact[Last Name]": {
+        required: "Last Name is required",
+    },
+    "contact[email]": {
+        required: "Email is required",
+    },
+    "contact[Phone]": {
+        required: "Phone is required",
+         
+    }, 
+     
+}
+        
+});
+
+ 
+})
+</script>
+
+{% schema %}
+{
+"name": "Internet Plans section",
+"settings": [
+{
+"type": "text",
+"id": "heading",
+"label": "Heading",
+"default": "Shop our best <span>Internet plans</span> and pricing"
+}
+],
+"presets": [
+{
+"name": "Internet Plans section"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

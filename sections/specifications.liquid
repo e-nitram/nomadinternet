@@ -1,0 +1,229 @@
+<div class="container">
+  <ul class="specifications__nav">
+    {% for block in section.blocks %}
+      {% assign spec = block.settings %}
+      <li data-id="{{ block.id }}">
+        <a href="#{{ block.id }}">{{ spec.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="specifications__content">
+    {% for block in section.blocks %}
+      {% assign spec = block.settings %}
+      <div class="specification" data-id="{{ block.id }}">
+        {% if spec.preview %}
+          <div class="specification__preview">
+            <img
+              src="{{ spec.preview | image_url }}"
+              alt="{{ spec.preview.alt }}"
+              width="{{ spec.preview.width }}"
+              height="{{ spec.preview.height }}"
+              loading="lazy"
+            >
+          </div>
+        {% endif %}
+
+        <div class="text-center">
+          <a href="{{ spec.url }}" class="btn lg" style="margin-bottom: 3rem">Place Order</a>
+        </div>
+
+        {% if spec.used_for %}
+          <h2 class="specification__used-for">{{ spec.used_for }}</h2>
+        {% endif %}
+
+        <div class="specification__description">
+          {% if spec.description_title %}
+            <h3 class="specification__description--title">{{ spec.description_title }}</h3>
+          {% endif %}
+
+          {% if spec.description %}
+            <div class="specification__description--text">{{ spec.description }}</div>
+          {% endif %}
+        </div>
+
+        <div class="specification__complectation">
+          {% if spec.complectation_title %}
+            <h3 class="specification__complectation--title">{{ spec.complectation_title }}</h3>
+          {% endif %}
+
+          {% if spec.complectation_text %}
+            <div class="specification__complectation--text">{{ spec.complectation_text }}</div>
+          {% endif %}
+
+          <ul class="specification__complectation--list">
+            {% assign complectation_list = 'complectation_1,complectation_2,complectation_3,complectation_4,complectation_5,complectation_6,complectation_7,complectation_8'
+              | split: ','
+            %}
+            {% for id in spec %}
+              {% if complectation_list contains id %}
+                <li class="specification__complectation--list-item">
+                  <figure>
+                    <img
+                      src="{{ spec[id] | image_url }}"
+                      alt="{{ spec[id].alt }}"
+                      width="{{ spec[id].width }}"
+                      height="{{ spec[id].height }}"
+                      loading="lazy"
+                    >
+                    <figcaption>{{ spec[id].alt }}</figcaption>
+                  </figure>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="specification__tech">
+          {% if spec.tech_title %}
+            <h3 class="specification__tech--title">{{ spec.tech_title }}</h3>
+          {% endif %}
+          {% if spec.tech_text %}
+            <div class="specification__tech--text">
+              {{ spec.tech_text }}
+            </div>
+          {% endif %}
+          {% if spec.tech_image %}
+            <div class="specification__image">
+              <img
+                src="{{ spec.tech_image | image_url }}"
+                alt="{{ spec.tech_image.alt }}"
+                width="{{ spec.tech_image.width }}"
+                height="{{ spec.tech_image.height }}"
+                loading="lazy"
+              >
+            </div>
+          {% endif %}
+
+          <div class="text-center">
+            <a href="{{ spec.url }}" class="btn lg" style="margin-bottom: 3rem; margin-top: -3rem">Place Order</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Specifications",
+  "class": "specifications",
+  "limit": 1,
+  "presets": [
+    {
+      "name": "Specifications"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Specification",
+      "type": "specification",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Modem Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "preview",
+          "label": "Preview Image"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "text",
+          "id": "used_for",
+          "label": "Used for"
+        },
+        {
+          "type": "text",
+          "id": "description_title",
+          "label": "Description title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description text"
+        },
+        {
+          "type": "text",
+          "id": "complectation_title",
+          "label": "Complectation title"
+        },
+        {
+          "type": "richtext",
+          "id": "complectation_text",
+          "label": "Complectation text"
+        },
+        {
+          "type": "image_picker",
+          "id": "complectation_1",
+          "label": "Complectation Image",
+          "info": "Image's 'alt' as a caption"
+        },
+        {
+          "type": "image_picker",
+          "id": "complectation_2",
+          "label": "Complectation Image",
+          "info": "Image's 'alt' as a caption"
+        },
+        {
+          "type": "image_picker",
+          "id": "complectation_3",
+          "label": "Complectation Image",
+          "info": "Image's 'alt' as a caption"
+        },
+        {
+          "type": "image_picker",
+          "id": "complectation_4",
+          "label": "Complectation Image",
+          "info": "Image's 'alt' as a caption"
+        },
+        {
+          "type": "image_picker",
+          "id": "complectation_5",
+          "label": "Complectation Image",
+          "info": "Image's 'alt' as a caption"
+        },
+        {
+          "type": "image_picker",
+          "id": "complectation_6",
+          "label": "Complectation Image",
+          "info": "Image's 'alt' as a caption"
+        },
+        {
+          "type": "image_picker",
+          "id": "complectation_7",
+          "label": "Complectation Image",
+          "info": "Image's 'alt' as a caption"
+        },
+        {
+          "type": "image_picker",
+          "id": "complectation_8",
+          "label": "Complectation Image",
+          "info": "Image's 'alt' as a caption"
+        },
+        {
+          "type": "text",
+          "id": "tech_title",
+          "label": "Tech title"
+        },
+        {
+          "type": "html",
+          "id": "tech_text",
+          "label": "Tech text"
+        },
+        {
+          "type": "image_picker",
+          "id": "tech_image",
+          "label": "Tech image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

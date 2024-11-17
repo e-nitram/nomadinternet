@@ -1,0 +1,389 @@
+{
+  "sections": {
+    "6969714c-7423-4851-98b5-3e55fac05b3a": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "a960c3ff-3900-4ddc-9902-27d26d45f2c3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/First_screen_d06836d3-ca69-482b-ace6-6b1f3fd7de65.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "a960c3ff-3900-4ddc-9902-27d26d45f2c3"
+      ],
+      "settings": {
+        "title": "Nomad Residential 4G PLAN\n<span>$89\/month<\/span>",
+        "description": "<p>Nomad Residential Plan w\/ up to Unlimited Data<\/p>",
+        "max_width": 770,
+        "button_class": "solid",
+        "button_text": "Order Now",
+        "button_url": "https:\/\/nomadinternet.com\/pages\/plans#nomad-residential-4g",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "639b3400-1024-40fd-8c66-21faec3c1749": {
+      "type": "awesome-section",
+      "blocks": {
+        "e5a4d7ca-3701-44f2-9c18-2a9482d41f46": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Order Now",
+            "url": "https:\/\/nomadinternet.com\/pages\/plans#nomad-residential-4g",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "e5a4d7ca-3701-44f2-9c18-2a9482d41f46"
+      ],
+      "custom_css": [
+        "p:last-of-type {border-top: 1px dashed #555; padding-top: 1rem;}",
+        "em {font-weight: bold; text-decoration: line-through; color: orange;}",
+        "strong {display: block; color: var(--theme-color);}"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/2_39317cd0-5dc9-45f0-8322-aa0641aa9d26.jpg",
+        "title_tag": "h3",
+        "title": "Features:",
+        "description": "<p>- Up to Unlimited Data<br\/>- Download speeds up to 25Mbps<br\/>- 4G LTE<br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- 300GB of Premium 4G LTE Network Access<br\/>- Anywhere You Are<br\/>- 14-Day No Risk Trial<\/p><p><em>$249 Retail Membership Fee<\/em><br\/><strong>$99 Today's Membership Fee<\/strong><\/p>"
+      }
+    },
+    "ab6baa00-41a3-4462-967c-1569cbaa31da": {
+      "type": "awesome-section",
+      "blocks": {
+        "12bb8c0a-44f0-44cb-ba0b-70068594771f": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Order Now",
+            "url": "https:\/\/nomadinternet.com\/pages\/plans#nomad-residential-4g",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "12bb8c0a-44f0-44cb-ba0b-70068594771f"
+      ],
+      "custom_css": [],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/4_959d63cd-3673-45fb-a326-a185bd06c16f.jpg",
+        "title_tag": "h3",
+        "title": "Plan also Includes:",
+        "description": "<p>Residents of rural areas, rejoice! Introducing the new Modem Nomad Rural One 4G LTE — the perfect way to bring reliable internet connection to any home. With up to 25 Mbps downloads and Wi-Fi for up to 15 devices, this modem is sure to keep you connected every day. Plus, you’ll get a whopping 300 GB of high-speed data which should last even the heaviest of internet users months or even years!<\/p><p>But this isn't just an ordinary modem – what really sets it apart from other models is its ability to hook up extra antennas that will strengthenand extend yourmodem's signal. Now you don't have to worry about weak reception or a slow connection ever again. It's ideal for gaming and streaming with fast speeds and reliable coverage!<\/p>"
+      }
+    },
+    "beb783f4-b8e5-4a40-bcfb-28ded7e999d6": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "ff2cd3f0-61fb-44ac-8a90-3b31289e6267": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_5_e7e94940-9717-44c3-8f23-8a1174675489.jpg",
+            "title_tag": "h3",
+            "title": "Proxicast 5-8 dBi",
+            "text": "<p>External Magnetic High Gain Cell Antenna<\/p><h4><strong>Coming Soon!<\/strong><\/h4>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "12d79b55-e335-40a3-877a-a42975ab876d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_6_49b90198-ed5f-494b-9599-79952ec9e79b.jpg",
+            "title_tag": "h3",
+            "title": "MIMO 2x2",
+            "text": "<p>Log Periodic External Antenna Kit for 4G LTE\/5G Hotspots & Routers<\/p><h4>Coming Soon!<\/h4>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "e33a1a9a-f177-4434-8658-cc2ca9b5992e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_4_71a31424-e308-4a62-9560-cca5781016b4.jpg",
+            "title_tag": "h2",
+            "title": "MIMO 2x2 Panel",
+            "text": "<p>Uncapped, Unlimited, and Unthrottled Hi-Speed Wireless Data for “Home Use”<\/p><h4>Coming Soon!<\/h4>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "ff2cd3f0-61fb-44ac-8a90-3b31289e6267",
+        "12d79b55-e335-40a3-877a-a42975ab876d",
+        "e33a1a9a-f177-4434-8658-cc2ca9b5992e"
+      ],
+      "custom_css": [
+        "h4 {color: gray;}"
+      ],
+      "settings": {
+        "columns_count": "3"
+      }
+    },
+    "102e9dbd-d85b-45b7-8a99-db0f47806e9d": {
+      "type": "lp-16",
+      "blocks": {
+        "c4dc470f-b6a1-4706-a28e-70f47c9c9033": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service<br\/> Provider. We are focused on providing High-Speed wireless Internet to <br\/>rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "1a037a05-75d2-41d1-98ab-be5923a923e2": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by <br\/>transmitting wireless Internet access directly to your home, business, <br\/>and even while traveling! We combine the latest technology with <br\/>Verizon’s service to provide high-speed internet to rural locations and <br\/>traveling nomads. We offer a variety <br\/>of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "25d1f870-3d9f-46e7-9681-551f9f2569d5": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "9a321a6a-1846-4206-bc22-c1141efabcd4": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet secure?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. <br\/>Multiple layers of encryption, enhanced Wi-Fi security, firewall <br\/>filtering, built-in VPN support, IT admin controls, and other features <br\/>deliver strong security at every level.<\/p>"
+          }
+        },
+        "f19b5554-6c52-4d47-a584-d482cadc43a0": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will <br\/>provide you with robust and reliable internet for all your gaming needs.<br\/> No matter your plan, you can expect fast internet with low ping rates <br\/>and latency.<\/p>"
+          }
+        },
+        "c54f3b9d-0c25-469d-81b2-aa6016f65073": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, <br\/>low-latency service they have at home to any location Nomad Internet has<br\/> coverage. Nomad Internet for RVers\/travelers will allow users to pause <br\/>and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c4dc470f-b6a1-4706-a28e-70f47c9c9033",
+        "1a037a05-75d2-41d1-98ab-be5923a923e2",
+        "25d1f870-3d9f-46e7-9681-551f9f2569d5",
+        "9a321a6a-1846-4206-bc22-c1141efabcd4",
+        "f19b5554-6c52-4d47-a584-d482cadc43a0",
+        "c54f3b9d-0c25-469d-81b2-aa6016f65073"
+      ],
+      "settings": {
+        "title": "Answers to the most frequently asked questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6": {
+      "type": "lp-20",
+      "blocks": {
+        "463ca077-07d6-4981-94f0-a220199798e0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Jamie_Mullins.jpg",
+            "name": "Jamie Mullins",
+            "text": "When I first heard about Nomad Internet, I was excited because it promised to be one of the fastest internet providers. As someone living in a rural area where internet access could be spotty at times, this appealed to me. I'm so glad I decided to give Nomad Internet a try - it exceeded my expectations! Their service is consistently fast and reliable, allowing me to do everything online with ease. If you're looking for fastest internet providers in rural areas, Nomad Internet is definitely the way to go!",
+            "link": ""
+          }
+        },
+        "88a03539-2380-432d-b3e7-8dae99116c77": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Monica_O_brien.jpg",
+            "name": "Monica Obrien",
+            "text": "I recently switched to Nomad Internet and am so pleased with my decision! I live in a rural area, so good and cheap internet providers can be hard to come by. But Nomad offered me exactly what I needed: good speed at an affordable price that fits within my budget. I got an amazing unlimited residential plan for just $109! After comparing their speeds to Optimum and AT&T, I can confidently say that they are right up there with the biggest competitors. All in all, I'm very satisfied with this service and would definitely recommend it to others!",
+            "link": ""
+          }
+        },
+        "dbf86b5a-2297-41d6-be3d-626b97e1c732": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Liam_Silva.jpg",
+            "name": "Liam Silva",
+            "text": "I recently decided to switch to nomad internet as it proved to be one of the best cheap internet providers around. After some research, I chose their nomad air modem and it was worth it! The connection was fast and reliable even in my rural area. It's perfect for streaming movies and I never have a problem connecting multiple devices at once. Would highly recommend nomad internet to anyone looking for a great, low cost way to connect!",
+            "link": ""
+          }
+        },
+        "9cbbc67d-0f30-4fef-ab44-55e3235bcdc3": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Mackenzie_Bates.jpg",
+            "name": "Mackenzie Bates",
+            "text": "As a rural dweller looking to start remote working, I was in desperate need of wi-fi services providers. After trying out Astound Broadband and Viasat, I finally stumbled upon Nomad Internet. It offered me high speed internet, reliable wi-fi connection and all at an affordable price. After using their wi-fi services for just a few months, I must say that Nomad Internet has exceeded my expectations. Therefore, I highly recommend it to anyone looking for wi-fi services in the countryside. Four star service from Nomad!",
+            "link": ""
+          }
+        },
+        "0a2df3cd-18e1-4ff4-a1a7-5c0f08213346": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Sara_Martinez.jpg",
+            "name": "Sara Martinez",
+            "text": "Nomad Internet is one of the best wi-fi internet services providers in Vermont and I'm really pleased with what they offer. Originally I had some reservations about switching from CenturyLink because I was worried about having enough speed in my rural area but that was not the case with Nomad. They were able to provide a reliable and high speed wi-fi connection which allowed me to easily download or upload whatever I need in an efficient manner. Highly recommend taking a look at them if you're looking for wi-fi\/internet service!",
+            "link": ""
+          }
+        },
+        "6c45b147-0c49-4bbf-900e-389833e6da48": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Valerie_Hicks.jpg",
+            "name": "Valerie Hicks",
+            "text": "As a rural-dweller, I was always desperately hunting for the best internet providers in my area. Regularly, I would have to settle for Xfinity or Spectrum - but then I discovered Nomad Internet. With their high speed and convenient service, this quickly became my go-to internet provider within no time! It's been a real lifesaver especially now that my family has grown and works from home. I highly recommend Nomad Internet to anyone looking for reliable connections in rural areas!",
+            "link": ""
+          }
+        },
+        "03ff40d2-58f3-4573-95e7-e088544dcf99": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Lauren_Edwards.jpg",
+            "name": "Lauren Edwards",
+            "text": "I recently tried out NOMAD as a wireless internet service provider in my area and was pleasantly surprised. It is one of the best wireless internet service providers in my area I have ever used. My big family takes up a lot of bandwidth but with NOMAD’s high speed, everyone could stay connected without any issues. We experienced virtually no lag and never had to reset our equipment. I definitely give it five stars and highly recommend this wireless internet solution for anyone looking for rural internet needs!",
+            "link": ""
+          }
+        },
+        "5b301e92-0d49-4735-8bc0-41078f026aa8": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Tiffany_Cantu.jpg",
+            "name": "Tiffany Cantu",
+            "text": "Living in a rural area of Delaware with a big family, we need a fast and reliable internet service. After doing research on which internet providers were available in my area, I decided to choose Nomad Internet for its high speed and reasonably priced plans. My experience has been great! We have not experienced any buffering or connection drops which makes watching livestreams, downloading music and having multiple devices connected easy and enjoyable. And customer service is always prompt in responding which is an added bonus! Overall, I am very pleased with our decision to go with Nomad Internet.",
+            "link": ""
+          }
+        },
+        "af156844-1b33-499e-8b8b-deb56f25cd0a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Philip_Davis.jpg",
+            "name": "Phillip Davis",
+            "text": "I live in rural Texas and often found it hard to find wi fi internet providers in my area. But that changed when I discovered Nomad Internet. All I can say is wow! Thanks to this incredible service, I'm now able to stay connected with reliable and fast speeds even during peak usage hours. This has made my kids' education easier without any disruption. And the customer service at Nomad Internet is unbeatable - they are so friendly and always quick to answer any questions!",
+            "link": ""
+          }
+        },
+        "27aa185b-2dfe-42fe-b287-843fd9cc7523": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Rebecca_Brock.jpg",
+            "name": "Rebecca Brock",
+            "text": "I recently found out about Nomad Internet, and I’m so glad I did! As a rural resident of Idaho, I know thar finding best internet providers in my area can be difficult. But with Nomad, getting fast internet for my home has been a breeze. For the first time ever, my kids are able to get their online education without any hiccups. Plus, even though Sparklight and TekFinity were cheaper than Nomad’s monthly service fee, the dependability and speed that comes with Nomad make it invaluable! Definitely recommend if you live in a rural area!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "463ca077-07d6-4981-94f0-a220199798e0",
+        "88a03539-2380-432d-b3e7-8dae99116c77",
+        "dbf86b5a-2297-41d6-be3d-626b97e1c732",
+        "9cbbc67d-0f30-4fef-ab44-55e3235bcdc3",
+        "0a2df3cd-18e1-4ff4-a1a7-5c0f08213346",
+        "6c45b147-0c49-4bbf-900e-389833e6da48",
+        "03ff40d2-58f3-4573-95e7-e088544dcf99",
+        "5b301e92-0d49-4735-8bc0-41078f026aa8",
+        "af156844-1b33-499e-8b8b-deb56f25cd0a",
+        "27aa185b-2dfe-42fe-b287-843fd9cc7523"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "532120c3-c396-4617-ace7-6e03bdfbf6c4": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "e1f1cf34-e9a9-448b-9cce-b7450155ee37": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_4_e2210953-3ae7-40c9-9177-a9fc5826c130.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Residential 5G Plan",
+            "text": "<p>Uncapped, Unlimited, and Unthrottled Hi-Speed Wireless Data for “Travel Use”<\/p>",
+            "button_text": "Order Now",
+            "button_url": "https:\/\/nomadinternet.com\/pages\/plans#residential-plan-5g",
+            "button_text_2": "Learn More",
+            "button_url_2": ""
+          }
+        },
+        "9c3d4167-be00-4079-a837-77eb7623e4cf": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_5_9558d7f6-f879-4301-ac92-bb0724fef088.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Air Travel 5G Plan",
+            "text": "<p>Uncapped, Unlimited, and Unthrottled Hi-Speed Wireless Data for “office use”<\/p>",
+            "button_text": "Order Now",
+            "button_url": "https:\/\/nomadinternet.com\/pages\/plans#travel-plan-5g",
+            "button_text_2": "Learn More",
+            "button_url_2": "shopify:\/\/pages\/nomad-air-plan"
+          }
+        }
+      },
+      "block_order": [
+        "e1f1cf34-e9a9-448b-9cce-b7450155ee37",
+        "9c3d4167-be00-4079-a837-77eb7623e4cf"
+      ],
+      "settings": {
+        "columns_count": "2"
+      }
+    },
+    "f9edaed5-c585-40ef-a402-bf4f5c319745": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "6969714c-7423-4851-98b5-3e55fac05b3a",
+    "639b3400-1024-40fd-8c66-21faec3c1749",
+    "ab6baa00-41a3-4462-967c-1569cbaa31da",
+    "beb783f4-b8e5-4a40-bcfb-28ded7e999d6",
+    "102e9dbd-d85b-45b7-8a99-db0f47806e9d",
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6",
+    "532120c3-c396-4617-ace7-6e03bdfbf6c4",
+    "f9edaed5-c585-40ef-a402-bf4f5c319745"
+  ]
+}

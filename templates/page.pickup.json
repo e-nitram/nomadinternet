@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "21b98850-26b1-441c-832a-3555166bad0f": {
+      "type": "banner-slideshow",
+      "blocks": {
+        "4921df76-e945-4a38-b793-be64a4368705": {
+          "type": "slide-item",
+          "settings": {
+            "show_gradient_color": false,
+            "show_bg_color": false,
+            "bg_color": "#00271F",
+            "content_image_radius": true,
+            "image": "shopify:\/\/shop_images\/IMG_9134_1.png",
+            "content_alignment": "inner--left",
+            "sub_heading": "",
+            "sub_heading_color": "#00a77f",
+            "bold_color": "#FF4040",
+            "heading": "<p>Become a Nomad Smart Hub Location and Earn<\/p>",
+            "heading_color": "#fff",
+            "desc": "<p>The Nomad SmartHub turns your WiFi problems into Recurring Lifetime Income!<\/p>",
+            "button_text1": "Start earning today",
+            "button_link1": "#",
+            "text_color1": "#fff",
+            "button_bg_color1": "#008061",
+            "button_text_color1": "#fff",
+            "enable_new_tab1": true,
+            "button_text2": "",
+            "button_link2": "",
+            "text_color2": "#fff",
+            "button_bg_color2": "#E12727",
+            "button_text_color2": "#fff",
+            "enable_new_tab2": true,
+            "show_contract": true,
+            "contract_header": "Have Questions?",
+            "contract_phonenumber": "+1 210 598 5949"
+          }
+        }
+      },
+      "block_order": [
+        "4921df76-e945-4a38-b793-be64a4368705"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "21b98850-26b1-441c-832a-3555166bad0f"
+  ]
+}

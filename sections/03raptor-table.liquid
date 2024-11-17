@@ -1,0 +1,191 @@
+{{ '03raptor-table.css' | asset_url | stylesheet_tag }}
+{% assign desktop_bg = section.settings.bg_image %}
+{% assign mobile_bg = section.settings.bg_mobile_image | default: desktop_bg %}
+<div 
+  class="raptor-table"
+  style="
+    --bg-image: url({{ desktop_bg | img_url: 'master' }});
+    --bg-mobile-image: url({{ mobile_bg | img_url: 'master' }});
+  "
+>
+  <div class="container">
+    {% if section.settings.sub_heading != blank %}
+      <div class="sub-heading">{{ section.settings.sub_heading }}</div>
+    {% endif %}
+
+    {% if section.settings.heading != blank %}
+      <h3 class="heading">{{ section.settings.heading }}</h3>
+    {% endif %}
+
+    {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+      <a href="{{ section.settings.button_link }}" class="btn btn--customize" target="_blank">
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
+
+    <div class="table">
+      <div class="table-wrapper">
+        <table>
+          <tr class="sticky">
+            <td class="icon">Game</td>
+            <td class="text" data-index="1">Nomad<br>Raptor</td>
+            <td class="text" data-index="2">Google<br>Fiber</td>
+            <td class="text" data-index="3">SPectrum</td>
+            <td class="text" data-index="4">Starlink</td>
+            <td class="text" data-index="5">t-mobile</td>
+          </tr>
+  
+          {% for block in section.blocks %}
+            <tr class="table-column">
+              <td class="icon">
+                {% if block.settings.icon != blank %}
+                  <img src="{{ block.settings.icon | img_url: 'master' }}"/>
+                {% endif %}
+              </td>
+              <td class="item" data-index="1">
+                {{ block.settings.nomad_raptor }}
+              </td>
+              <td class="item" data-index="2">
+                {{ block.settings.google_fiber }}
+              </td>
+              <td class="item" data-index="3">
+                {{ block.settings.spectrum }}
+              </td>
+              <td class="item" data-index="4">
+                {{ block.settings.starlink }}
+              </td>
+              <td class="item" data-index="5">
+                {{ block.settings.t_mobile }}
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const tds = document.querySelectorAll('.raptor-table .table td');
+  tds.forEach(td => {
+    const index = td.getAttribute('data-index');
+    if (index == '1') {
+      td.classList.add('active');
+    }
+  });
+  // tds.forEach(td => {
+  //   td.addEventListener('mouseover', (e) => {
+  //     const index = td.getAttribute('data-index');
+  //     tds.forEach(item => {
+  //       if (item.getAttribute('data-index') == index) {
+  //         item.classList.add('active');
+  //       } else {
+  //         item.classList.remove('active');
+  //       }
+  //     });
+  //   });
+
+  //   td.addEventListener('mouseout', (e) => {
+  //     const index = td.getAttribute('data-index');
+  //     tds.forEach(item => {
+  //       if (item.getAttribute('data-index') == index) {
+  //         item.classList.remove('active');
+  //       }
+  //     });
+  //   });
+  // });
+</script>
+
+{% schema %}
+{
+  "name": "Raptor table",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Desktop bg image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_mobile_image",
+      "label": "Mobile bg image"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+
+  ],
+  "blocks": [
+    {
+      "type": "table-item",
+      "name": "Table item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "nomad_raptor",
+          "label": "Nomad raptor"
+        },
+        {
+          "type": "text",
+          "id": "google_fiber",
+          "label": "Google fiber"
+        },
+        {
+          "type": "text",
+          "id": "spectrum",
+          "label": "Spectrum"
+        },
+        {
+          "type": "text",
+          "id": "starlink",
+          "label": "Starlink"
+        },
+        {
+          "type": "text",
+          "id": "t_mobile",
+          "label": "T mobile"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Raptor table"
+    }
+  ]
+}
+{% endschema %}

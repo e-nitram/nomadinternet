@@ -1,0 +1,148 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+<div class="lp-3"{% if section.settings.image %} style="background-image: url({{ section.settings.image | image_url }})"{% endif %}>
+	<div class="lp-3__content">
+		{% if section.settings.icon %}
+			<div class="lp-3__icon">
+				{{ section.settings.icon | image_url: height: 70 | image_tag }}
+			</div>
+		{% endif %}
+		{% if section.settings.title %}
+			<h2 class="lp-3__title" style="max-width: {{ section.settings.title_width }}px">{{ section.settings.title }}</h2>
+		{% endif %}
+		<div class="lp-3__body">
+			{% if section.settings.left_image %}
+				<div class="lp-3__left-image">
+					{% assign left_img = section.settings.left_image %}
+					{{ left_img | image_url: width: left_img.width | image_tag }}
+				</div>
+			{% endif %}
+			<div class="lp-3__body-center">
+				{% if section.settings.description %}
+					<div class="lp-3__description" style="max-width: {{ section.settings.description_width }}px">
+						<p>{{ section.settings.description }}</p>
+					</div>
+				{% endif %}
+				{% if section.settings.button_text != blank %}
+					<a href="{{ section.settings.button_url }}" id="button-{{ section.id }}" class="btn lg{% if section.settings.button_color %} {{ section.settings.button_color }}{% endif %}">{{ section.settings.button_text }}</a>
+				{% endif %}
+			</div>
+			{% if section.settings.right_image %}
+				<div class="lp-3__right-image">
+					{% assign right_img = section.settings.right_image %}
+					{{ right_img | image_url: width: right_img.width | image_tag }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-3",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 3"
+    }
+	],
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Image"
+		},
+		{
+			"type": "image_picker",
+			"id": "icon",
+			"label": "Icon"
+		},
+		{
+			"type": "image_picker",
+			"id": "left_image",
+			"label": "Left Image"
+		},
+		{
+			"type": "image_picker",
+			"id": "right_image",
+			"label": "Right Image"
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "range",
+			"id": "title_width",
+			"min": 370,
+			"max": 1200,
+			"step": 10,
+			"unit": "px",
+			"label": "Title max width",
+			"default": 1200
+		},
+		{
+			"type": "text",
+			"id": "description",
+			"label": "Description"
+		},
+		{
+			"type": "range",
+			"id": "description_width",
+			"min": 370,
+			"max": 1200,
+			"step": 10,
+			"unit": "px",
+			"label": "Description max width",
+			"default": 1200
+		},
+		{
+			"type": "text",
+			"id": "button_text",
+			"label": "Button Text"
+		},
+		{
+			"type": "url",
+			"id": "button_url",
+			"label": "Button URL"
+		},
+		{
+			"type": "select",
+			"id": "button_color",
+			"label": "Button Color",
+			"options": [
+				{
+					"value": "theme",
+					"label": "Theme"
+				},
+				{
+					"value": "red",
+					"label": "Red"
+				},
+				{
+					"value": "blue",
+					"label": "Blue"
+				},
+				{
+					"value": "orange",
+					"label": "Orange"
+				},
+				{
+					"value": "secondary",
+					"label": "Secondary"
+				},
+				{
+					"value": "outline",
+					"label": "Outline"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

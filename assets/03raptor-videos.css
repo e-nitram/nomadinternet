@@ -1,0 +1,73 @@
+.raptor-videos {
+  padding: 40px 0;
+}
+
+.raptor-videos .title {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: "Rajdhani";
+  text-align: center;
+  color: var(--text-color);
+}
+
+.raptor-videos .container {
+  position: relative;
+  text-align: center;
+}
+
+.raptor-videos .container .btn {
+  margin-top: 30px;
+}
+
+.raptor-videos .video-slider {
+  overflow: hidden;
+}
+
+.raptor-videos .video-slider .swiper-slide .slick-title {
+  color: var(--text-color);
+  height: 35px;
+}
+
+.raptor-videos .video-slider .swiper-button-prev,
+.raptor-videos .video-slider .swiper-button-next {
+  top: 60%;
+}
+
+.raptor-videos .video-slider .swiper-button-prev {
+  left: 0;
+}
+
+.raptor-videos .video-slider .swiper-button-next {
+  right: 0;
+}
+
+.raptor-videos .video-slider .swiper-button-prev::after,
+.raptor-videos .video-slider .swiper-button-next::after
+{
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .raptor-videos {
+    padding: 60px 0;
+  }
+
+  .raptor-videos .title {
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 950px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .raptor-videos .video-slider .swiper-button-prev {
+    left: -25px;
+  }
+  
+  .raptor-videos .video-slider .swiper-button-next {
+    right: -25px;
+  }
+}

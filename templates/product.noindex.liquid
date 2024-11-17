@@ -1,0 +1,2061 @@
+<!-- /templates/product.liquid -->
+<div itemscope itemtype="http://schema.org/Product">
+
+  <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
+  <meta itemprop="image" content="{{ product.featured_image.src | img_url: 'grande' }}">
+
+  {% comment %}
+    Get first variant, or deep linked one
+  {% endcomment %}
+  {% assign current_variant = product.selected_or_first_available_variant %}
+
+  {% include 'breadcrumb' %}
+  <div class="p-detail pt-5 pb-5">
+
+    <div class="grid product-single container">
+      <div class="row">
+        <div class="col-lg-6 grid__item large--one-half text-center">
+          <div class="product-single__photos border-right" id="ProductPhoto">
+            {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+            {% comment %}<img src="{{ featured_image | img_url: 'large' }}" class="img-fluid rounded border" alt="{{ featured_image.alt | escape }}" id="ProductPhotoImg">{% endcomment %}
+            {% render 'image' with imageSrc: featured_image, classes: 'img-fluid rounded border', altTag: featured_image.alt, firstLoadWidth: '100x', imageAttributes: 'id="ProductPhotoImg"' %}
+          </div>
+
+
+        </div>
+
+        <div class="grid__item large--one-half col-lg-6">
+          <span class="badge p-2" style="color:#F9006E; background:rgba(249,0,110,0.2)">Recommended</span>
+          {% assign featured_title = current_variant.title %}
+            <h1  itemprop="name"  class="mProduct-title mt-3 mb-3">{{ product.title }} - <span id="variant-title">{{ current_variant.title }}</span></h1>
+<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-title="{{ product.title }}" data-product-type="{{ product.type }}" style="display: block;"></span>
+
+          <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="{{ shop.currency }}">
+            <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
+
+            {% comment %}
+            ID addToCartForm is a selector for the ajax cart plugin
+            {% endcomment %}
+            <div class="rounded mt-4">
+              <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm" class="form-verticals">
+                <!-- Begin ReCharge code -->
+                {% if product.available %}
+                  {% include 'subscription-product' %}
+                {% endif %}
+                <!-- End ReCharge code -->
+
+                {% comment %}
+                Add product variants as a dropdown.
+                - By default, each variant (or combination of variants) will display as its own <option>
+                - To separate these into multiple steps, which we suggest, use option_selection.js (see below)
+
+                You can leverage jQuery to add a callback on page load and each time the select element changes:
+                - Include option_selection.js (as seen at the bottom of this file)
+                - This allows you to use JavaScript anytime the variant dropdown changes
+                - This also separates out your variant options (ie. size, color, etc.) to separate select elements
+
+                For more information on products with multiple options, visit:
+                - http://docs.shopify.com/support/your-website/themes/can-i-make-my-theme-use-products-with-multiple-options#update-product-liquid
+                  <ul class="valueset">
+                    {% for variant in product.variants %}
+                      <li class="{% cycle 'odds': 'odd', 'even' %}">
+                        {% if variant.available %}
+                          <input type="radio" class="valueset" name="id" value="{{ variant.id }}" id="radio_{{ variant.id }}" data-title="{{ variant.title }}" {% if forloop.first %}checked="checked"{% endif %} />
+                            <label for="radio_{{ variant.id }}" class="radio">
+                              <strong>{{ variant.title | escape }}</strong> for <span class="bold-blue">{{ variant.price | money }}</span>
+                              {% if variant.price < variant.compare_at_price %}<del>{{ variant.compare_at_price | money }}</del>{% endif %}
+                            </label>
+                        {% else %}
+                          <input type="radio" name="id" value="{{ variant.id }}" id="radio_{{ variant.id }}" disabled="disabled" />
+                          <label for="radio_{{ variant.id }}" class="radio">
+                            <strong>{{ variant.title }}</strong> is temporarily unavailable
+                          </label>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endcomment %}
+                <div class="product-variants infiniteoptions">
+                  {% if product.variants %}
+                    <label>Select Type</label>
+                    <select name="id" id="productSelect" class="product-single__variants">
+                      {% for variant in product.variants %}
+                        {% if variant.available %}
+                          <option
+                            {% if variant == product.selected_or_first_available_variant %}
+                              selected="selected"
+                            {% endif %}
+                              data-sku="{{ variant.sku }}" value="{{ variant.id }}">
+                              {{ variant.title }} - {{ variant.price | money_with_currency }}
+                          </option>
+
+                        {% else %}
+                          <option disabled="disabled">
+                            {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+                          </option>
+                        {% endif %}
+                      {% endfor %}
+                    </select>
+                  {% endif %}
+                </div>
+
+                <div class="product-coverageStatus">
+                  <div class="coverage-type">
+                    <label>Coverage</label>
+                  </div>
+                  <div class="coverage-icons">
+                    {% if product.tags.size > 0 %}
+                      {% for tag in product.tags %}
+                      <span>{{ tag }}</span>
+                      {% endfor %}
+                    {% else %}
+                      <span>T-Mobile</span>
+                    {% endif %}
+                  </div>
+                </div>
+
+                <div class="mt-3 mb-3">
+                  <div class="price_box">
+                    <div class="monthlyCharged">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <span class="label-text">You will be charged this amount every month</span>
+                        </div>
+                        <div class="col-md-3 text-right">
+                          {% if product.title contains 'Blue' %}
+                            <span class="monthlyChargedRate font-weight-bold">$129 </span> /mo
+                          {% elsif  product.title contains 'Pink' %}
+                            <span class="monthlyChargedRate font-weight-bold">$129 </span> /mo
+                          {% elsif  product.title contains 'Red' %}
+                            <span class="monthlyChargedRate font-weight-bold">$149 </span> /mo
+                          {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="membershipCharge">
+                      <div class="row">
+                        <div class="col-md-7">
+                          <span class="label-text font-weight-bold">One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></span>
+                        </div>
+                        <div class="col-md-5 text-right">
+                          <span id="ProductPrice" class="font-weight-bold" itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
+                            {{ current_variant.price | money }}
+                          </span> - One Time
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-sent-button">
+                      <a href="#" class="submit-form"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+                	{% comment %}
+                        <label for="Quantity" class="quantity-selector">{{ 'products.product.quantity' | t }}</label>
+                      	<input type="number" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
+						            <input type="number" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">
+
+                        <button type="submit" name="add" id="AddToCart" class="btn-cart text-capitalize pl-3 pr-3 btn-primary">
+                          <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
+                        </button>
+
+                        <input type="submit" class="btn btn-primary" value="Add To Cart">
+                  {% endcomment %}
+
+              </form>
+            </div>
+          </div>
+
+          {% comment %}
+            If the user is on a collection product page (ie with /collections/collection-handle/products/product-handle)
+            in the URL, we can show next/previous links to other products in the collection.
+          {% endcomment %}
+
+          {% if collection %}
+            {% if collection.previous_product or collection.next_product %}
+              <p>
+                {% if collection.previous_product %}
+                  <span class="left">
+                    {{ 'products.general.previous_product_html' | t | link_to: collection.previous_product }}
+                  </span>
+                {% endif %}
+
+                {% if collection.next_product %}
+                  <span class="right">
+                    {{ 'products.general.next_product_html' | t | link_to: collection.next_product }}
+                  </span>
+                {% endif %}
+              </p>
+            {% endif %}
+          {% endif %}
+
+        </div>
+      </div>
+      <div class="product-description rte col-12 mt-5 border-top pt-5" itemprop="description">
+        <div class="col-12">
+          <h3 class="font-weight-bold mb-4">Product Description</h3>
+          {{ product.description }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+{{ 'option_selection.js' | shopify_asset_url | script_tag }}
+<script>
+  var selectCallback = function(variant, selector) {
+    timber.productPage({
+      money_format: "{{ shop.money_format }}",
+      variant: variant,
+      selector: selector
+    });
+  };
+
+  jQuery(function($) {
+    new Shopify.OptionSelectors('productSelect', {
+      product: {{ product | json }},
+      onVariantSelected: selectCallback,
+      enableHistoryState: false
+    });
+  });
+</script>
+
+<script>
+  $(".submit-form").click(function(){
+    var selectedID = $("#productSelect").val();
+    console.log(selectedID);
+    if(selectedID == "31663701262394") {
+      var already_have = 0;
+
+      $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+          $.each(cart.items, function(index, cartItem){
+            if(cartItem.product_title == 'Very Blue Plan'){
+              already_have = 1;
+            }
+          });
+
+          if(already_have == 0){
+            var params = {
+              type: 'POST',
+              url: '/cart/add.js',
+              data: $("#AddToCartForm").serialize(),
+              dataType: 'json',
+              success: function(line_item) {
+                  var data = {
+                    "id" : 31501542064186,
+                    "quantity" : 1,
+                    "properties[Note]": "After 30 days $149/month",
+                    "properties[shipping_interval_unit_type]": 'days',
+                    "properties[shipping_interval_frequency]": 30,
+                    "properties[subscription_id]": 240698
+                  };
+                $.ajax({
+                  type: 'POST',
+                  url: '/cart/add.js',
+                  dataType: 'json',
+                  data: data,
+                  success: function(){
+                    window.location.href='/cart';
+                  },
+                  error: function (request, status, error) {
+                    console.log(request.responseText);
+                  }
+                });
+              },
+              error: function(XMLHttpRequest, textStatus) {
+                Shopify.onError(XMLHttpRequest, textStatus);
+              }
+            };
+            jQuery.ajax(params);
+          }
+
+        },
+      });
+    }else if(selectedID == "31606259941434"){
+      var already_have = 0;
+      $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+          $.each(cart.items, function(index, cartItem){
+            if(cartItem.product_title == 'Very Blue Plan'){
+              already_have = 1;
+            }
+          });
+
+          if(already_have == 0){
+            var params = {
+              type: 'POST',
+              url: '/cart/add.js',
+              data: $("#AddToCartForm").serialize(),
+              dataType: 'json',
+              success: function(line_item) {
+                  var data = {
+                    "id" : 31501542064186,
+                    "quantity" : 1,
+                    "properties[Note]": "After 30 days $149/month",
+                    "properties[shipping_interval_unit_type]": 'days',
+                    "properties[shipping_interval_frequency]": 30,
+                    "properties[subscription_id]": 240698
+                  };
+                $.ajax({
+                  type: 'POST',
+                  url: '/cart/add.js',
+                  dataType: 'json',
+                  data: data,
+                  success: function(){
+                    window.location.href='/cart';
+                  },
+                  error: function (request, status, error) {
+                    console.log(request.responseText);
+                  }
+                });
+              },
+              error: function(XMLHttpRequest, textStatus) {
+                Shopify.onError(XMLHttpRequest, textStatus);
+              }
+            };
+            jQuery.ajax(params);
+          }
+          else{
+            alert("Product Already in the Cart");
+          }
+        },
+      });
+    } else if(selectedID == "31807318687802"){
+      var already_have = 0;
+
+      $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+          $.each(cart.items, function(index, cartItem){
+            if(cartItem.product_title == 'Very Blue Plan'){
+              already_have = 1;
+            }
+          });
+
+          if(already_have == 0){
+
+            var params = {
+              type: 'POST',
+              url: '/cart/add.js',
+              data: $("#AddToCartForm").serialize(),
+              dataType: 'json',
+              success: function(line_item) {
+                  var data = {
+                    "id" : 31501542064186,
+                    "quantity" : 1,
+                    "properties[Note]": "After 30 days $149/month",
+                    "properties[shipping_interval_unit_type]": 'days',
+                    "properties[shipping_interval_frequency]": 30,
+                    "properties[subscription_id]": 240698
+                  };
+                $.ajax({
+                  type: 'POST',
+                  url: '/cart/add.js',
+                  dataType: 'json',
+                  data: data,
+                  success: function(){
+                    window.location.href='/cart';
+                  },
+                  error: function (request, status, error) {
+                    console.log(request.responseText);
+                  }
+                });
+              },
+              error: function(XMLHttpRequest, textStatus) {
+                Shopify.onError(XMLHttpRequest, textStatus);
+              }
+            };
+            jQuery.ajax(params);
+          }
+          else{
+            $('.already_have_plan').trigger('click');
+          }
+
+        },
+      });
+    } else if(selectedID == "31851636228154"){
+
+      var already_have = 0;
+
+      $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+              if(cartItem.product_title == 'Strong Pink Plan'){
+                already_have = 1;
+              }
+            });
+
+
+            if(already_have == 0){
+            var params = {
+              type: 'POST',
+              url: '/cart/add.js',
+              data: $("#AddToCartForm").serialize(),
+              dataType: 'json',
+              success: function(line_item) {
+                  var data = {
+                    "id" : 31407604465722,
+                    "quantity" : 1,
+                    "properties[Note]": "After 30 days $129/month",
+                    "properties[shipping_interval_unit_type]": 'days',
+                    "properties[shipping_interval_frequency]": 30,
+                    "properties[subscription_id]": 240698
+                  };
+                $.ajax({
+                  type: 'POST',
+                  url: '/cart/add.js',
+                  dataType: 'json',
+                  data: data,
+                  success: function(){
+                    window.location.href='/cart';
+                  },
+                  error: function (request, status, error) {
+                    console.log(request.responseText);
+                  }
+                });
+              },
+              error: function(XMLHttpRequest, textStatus) {
+                Shopify.onError(XMLHttpRequest, textStatus);
+              }
+            };
+            jQuery.ajax(params);
+          }
+          else{
+            $('.already_have_plan').trigger('click');
+          }
+
+        },
+      });
+    }else if(selectedID == "31403862327354"){
+
+      var already_have = 0;
+
+      $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+              if(cartItem.product_title == 'Strong Pink Plan'){
+                already_have = 1;
+              }
+            });
+
+
+            if(already_have == 0){
+            var params = {
+              type: 'POST',
+              url: '/cart/add.js',
+              data: $("#AddToCartForm").serialize(),
+              dataType: 'json',
+              success: function(line_item) {
+                  var data = {
+                    "id" : 31407604465722,
+                    "quantity" : 1,
+                    "properties[Note]": "After 30 days $129/month",
+                    "properties[shipping_interval_unit_type]": 'days',
+                    "properties[shipping_interval_frequency]": 30,
+                    "properties[subscription_id]": 240698
+                  };
+                $.ajax({
+                  type: 'POST',
+                  url: '/cart/add.js',
+                  dataType: 'json',
+                  data: data,
+                  success: function(){
+                    window.location.href='/cart';
+                  },
+                  error: function (request, status, error) {
+                    console.log(request.responseText);
+                  }
+                });
+              },
+              error: function(XMLHttpRequest, textStatus) {
+                Shopify.onError(XMLHttpRequest, textStatus);
+              }
+            };
+            jQuery.ajax(params);
+          }
+          else{
+            $('.already_have_plan').trigger('click');
+          }
+
+        },
+      });
+    }else if(selectedID == "31606269935674"){
+
+      var already_have = 0;
+
+      $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+              if(cartItem.product_title == 'Very Blue Plan'){
+                already_have = 1;
+              }
+            });
+            if(already_have == 0)
+             {
+              var params = {
+                type: 'POST',
+                url: '/cart/add.js',
+                data: $("#AddToCartForm").serialize(),
+                dataType: 'json',
+                success: function(line_item) {
+                    var data = {
+                      "id" : 31607888773178,
+                      "quantity" : 1,
+                      "properties[Note]": "After 30 days $149/month",
+                      "properties[shipping_interval_unit_type]": 'days',
+                      "properties[shipping_interval_frequency]": 30,
+                      "properties[subscription_id]": 252048
+                    };
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href='/cart';
+                    },
+                    error: function (request, status, error) {
+                      console.log(request.responseText);
+                    }
+                  });
+                },
+                error: function(XMLHttpRequest, textStatus) {
+                  Shopify.onError(XMLHttpRequest, textStatus);
+                }
+              };
+              jQuery.ajax(params);
+
+            }
+          else{
+            $('.already_have_plan').trigger('click');
+          }
+        },
+      });
+    }else if(selectedID == "31807318687802"){
+
+      var already_have = 0;
+
+      $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+          $.each(cart.items, function(index, cartItem){
+            if(cartItem.product_title == 'Very Blue Plan'){
+              already_have = 1;
+            }
+          });
+
+          if(already_have == 0){
+
+            var params = {
+              type: 'POST',
+              url: '/cart/add.js',
+              data: $("#AddToCartForm").serialize(),
+              dataType: 'json',
+              success: function(line_item) {
+                  var data = {
+                    "id" : 31501542064186,
+                    "quantity" : 1,
+                    "properties[Note]": "After 30 days $149/month",
+                    "properties[shipping_interval_unit_type]": 'days',
+                    "properties[shipping_interval_frequency]": 30,
+                    "properties[subscription_id]": 240698
+                  };
+                $.ajax({
+                  type: 'POST',
+                  url: '/cart/add.js',
+                  dataType: 'json',
+                  data: data,
+                  success: function(){
+                    window.location.href='/cart';
+                  },
+                  error: function (request, status, error) {
+                    console.log(request.responseText);
+                  }
+                });
+              },
+              error: function(XMLHttpRequest, textStatus) {
+                Shopify.onError(XMLHttpRequest, textStatus);
+              }
+            };
+            jQuery.ajax(params);
+          }
+          else{
+            $('.already_have_plan').trigger('click');
+          }
+
+        },
+      });
+    }else if(selectedID == "31606259941434"){
+
+      var already_have = 0;
+
+      $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+          $.each(cart.items, function(index, cartItem){
+            if(cartItem.product_title == 'Very Blue Plan'){
+              already_have = 1;
+            }
+          });
+
+          if(already_have == 0){
+            var params = {
+              type: 'POST',
+              url: '/cart/add.js',
+              data: $("#AddToCartForm").serialize(),
+              dataType: 'json',
+              success: function(line_item) {
+                  var data = {
+                    "id" : 31501542064186,
+                    "quantity" : 1,
+                    "properties[Note]": "After 30 days $149/month",
+                    "properties[shipping_interval_unit_type]": 'days',
+                    "properties[shipping_interval_frequency]": 30,
+                    "properties[subscription_id]": 240698
+                  };
+                $.ajax({
+                  type: 'POST',
+                  url: '/cart/add.js',
+                  dataType: 'json',
+                  data: data,
+                  success: function(){
+                    window.location.href='/cart';
+                  },
+                  error: function (request, status, error) {
+                    console.log(request.responseText);
+                  }
+                });
+              },
+              error: function(XMLHttpRequest, textStatus) {
+                Shopify.onError(XMLHttpRequest, textStatus);
+              }
+            };
+            jQuery.ajax(params);
+          }
+          else{
+            $('.already_have_plan').trigger('click');
+          }
+
+
+        },
+      });
+    }else if(selectedID == "31663701262394"){
+
+      var already_have = 0;
+
+      $.ajax({
+        type: 'GET',
+        url: '/cart.js',
+        dataType: 'json',
+        success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+              if(cartItem.product_title == 'Very Blue Plan'){
+                already_have = 1;
+              }
+            });
+
+            if(already_have == 0) {
+              var params = {
+                type: 'POST',
+                url: '/cart/add.js',
+                data: $("#AddToCartForm").serialize(),
+                dataType: 'json',
+                success: function(line_item) {
+                    var data = {
+                      "id" : 31501542064186,
+                      "quantity" : 1,
+                      "properties[Note]": "After 30 days $149/month",
+                      "properties[shipping_interval_unit_type]": 'days',
+                      "properties[shipping_interval_frequency]": 30,
+                      "properties[subscription_id]": 240698
+                    };
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href='/cart';
+                    },
+                    error: function (request, status, error) {
+                      console.log(request.responseText);
+                    }
+                  });
+                },
+                error: function(XMLHttpRequest, textStatus) {
+                  Shopify.onError(XMLHttpRequest, textStatus);
+                }
+              };
+              jQuery.ajax(params);
+            }
+            else{
+              $('.already_have_plan').trigger('click');
+            }
+        },
+      });
+    }else {
+      alert("Product Not Available");
+    }
+
+
+  })
+</script>
+
+
+
+<div class="modal fade modal-theme modal-fee" tabindex="-1" role="dialog" id="fee_modal" aria-hidden="true">
+  <button class="close" data-dismiss="modal" title="Close">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg>
+  </button>
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-fee__content">
+          <h2 class="title">One Time Membership Fee</h2>
+          <p>When becoming a member you are responsible for paying for your first month of service as well as a One-Time Membership Fee that covers the administration and support of your account. Therefore, you are the owner of the membership but you don’t own the device or the carrier account your line is on.</p>
+          <p>You may of course cancel your subscription with us at anytime by simply returning your device and we never charge any cancellation fees! Easy, Simple, Clean!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- THIS IS THE LIVE MEMBERSHIP PLANS PAGE-->
+
+<section id="section_plan" class="section-plan">
+  <a href="#address-lookup-request"  id="help_link"  data-toggle="modal"  class="modal-link btn btn-lg btn-primary btn-block help-link-sticky"><i class="fas fa-life-ring" aria-hidden="true"></i>&nbsp;&nbsp;Help Me Choose </a>
+    <div class="container">
+      <div class="row ml-0 mr-0 align-items-center border-bottom pb-4 mb-4">
+        <div class="col-12 col-lg-4 pl-md-0">
+          <div class="section-title">
+            <h2 class="title font-weight-bold">Others Also Viewed</h2>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <ul class="row list-unstyled plan-label mb-0">
+            <li class="mr-5 ml-4"><i class="fas fa-circle" style="color:#F9006E; border:4px solid rgba(249, 0, 110, 0.15)"></i> STRONG PINK PLAN</li>
+            {% comment %}<li><i class="fas fa-circle" style="color:#0078BA; border:4px solid rgba(0, 120, 186, 0.15)"></i> VERY BLUE PLAN</li>{% endcomment %}
+            <li><i class="fas fa-circle" style="color:#E20000; border:4px solid rgba(226, 0, 0, 0.15)"></i> DEEP RED PLAN</li>
+            {% comment %}<li><i class="fas fa-circle" style="color:#FFCB00; border:4px solid rgba(255, 203, 0, 0.15)"></i> BRIGHT YELLOW PLAN</li>{% endcomment %}
+          </ul>
+        </div>
+      </div>
+      <div class="row ml-0 mr-0 align-items-center pb-3 mb-5">
+        <div class="col-12 ">
+          <ul class=" list-unstyled justify-content-between plan-short mb-0 filter-list">
+            <li class="hidder all-selected active">All</li>
+            <li class="hidder gl-travel-wifi">Travel WiFi Router</li>
+            <li class="hidder gl-wifi">WiFi Router</li>
+            <li class="hidder gl-sim-only">Sim Only</li>
+            <li class="hidder gl-night-walk">Nighthawk LTE Mobile Hotspot Router</li>
+          </ul>
+        </div>
+      </div>
+
+      <script>
+       $(".hidder").click(function(){
+         if($(this).hasClass("gl-travel-wifi")){
+           $("li.hidder").removeClass("active")
+           $(this).addClass("active")
+           $(".form-selecter form").hide()
+           $(".form-selecter form.gl-travel-wifi").show()
+         }else if($(this).hasClass("gl-wifi")){
+           $("li.hidder").removeClass("active")
+           $(this).addClass("active")
+           $(".form-selecter form").hide()
+           $(".form-selecter form.gl-wifi").show()
+         }else if($(this).hasClass("gl-sim-only")){
+           $("li.hidder").removeClass("active")
+           $(this).addClass("active")
+           $(".form-selecter form").hide()
+           $(".form-selecter form.gl-sim-only").show()
+         }else if($(this).hasClass("gl-night-walk")){
+           $("li.hidder").removeClass("active")
+           $(this).addClass("active")
+           $(".form-selecter form").hide()
+           $(".form-selecter form.gl-night-walk").show()
+         }else if($(this).hasClass("all-selected")){
+           $("li.hidder").removeClass("active")
+           $(this).addClass("active")
+           $(".form-selecter form").show()
+         }
+       })
+
+      </script>
+
+      <div class="row form-selecter">
+        <form id="pink-wifi-router-form" class="col-lg-4 col-md-6 col-sm-12 gl-travel-wifi" method="post" action="/cart/add">
+          <div>
+            <div class="plan-listing card-plan-list   rounded card-pink">
+              <div class="card-body">
+                <div class="plan-row">
+                  <div class="text-right"><i class="fas fa-battery-half" style="color:#19191B;"></i></div>
+                    <div class="col img-setter-pro mx-auto">
+                      <img src="//cdn.shopify.com/s/files/1/0414/3238/3650/products/mifi_v2_500x500_3_df60edd3-63f8-4b04-bf4f-5f3bf31aabe3.jpg?v=1593667413">
+                    </div>
+                    <h6 class="row font-weight-bold text-black text-uppercase">Strong Pink Plan</h6>
+                    <div class="row align-items-end border-bottom">
+                      <div class="col-7 p-0">
+
+                          <p class="small font-weight">Travel WiFi Router</p>
+
+                      </div>
+                      <div class="col-5 p-0 text-right">
+                        <p class="small"><a href="/pages/compare-devices" style="color:#696871">Compare Devices</a></p>
+                      </div>
+                    </div>
+                    <div class="row d-block"> <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">129</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                      <p class="small strike-between" style="font-size:12px">+ <span style="color:#000"> $199.00 One-Time Membership Fee </p>
+                      <p class="small font-red-col" style="font-size:12px">+ $149.00</span> One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                    </div>
+                    <div class="features row ">
+                      <div class="col-md">
+                        <ul class="list-unstyled border-top">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Unlimited 4G LTE</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Data Limit</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> All Your Devices</li>
+                        </ul>
+                      </div>
+                      <div class="col-md">
+                        <ul class="list-unstyled column-collapse">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Credit Check</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Anywhere You Are</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> <a class="text-400 modal-link" href="#guarantee_modal" data-toggle="modal">14-Day No Risk</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 pl-0"><a href="https://href.li/?https://www.t-mobile.com/coverage-map.html" target="_blank" class="w-100 plan-coverage text-capitalize">Plan Coverage</a></div>
+                      <div class="col-6 pr-0">
+
+                        <input name="id" value="31851636228154" type="hidden">
+
+
+                        <div class="button-add-to-cart"  id="pink-wifi-router"> Add To Cart </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+
+
+
+        <form id="pink-travel-wifi-router-form" class="col-lg-4 col-md-6 col-sm-12 gl-wifi" method="post" action="/cart/add">
+          <div>
+            <div class="plan-listing card-plan-list   rounded card-pink">
+              <div class="card-body">
+                <div class="plan-row">
+                  <div class="text-right"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/wifi-icon.JPG?v=1595349872" style="max-width:30px"/></div>
+                    <div class="col img-setter-pro mx-auto">
+                      <img src="//cdn.shopify.com/s/files/1/0414/3238/3650/products/X750-2_db8e0bcf-e4a7-4c1c-8af8-d16980f18642_medium.jpg?v=1593667396">
+                    </div>
+                    <h6 class="row font-weight-bold text-black text-uppercase">Strong Pink Plan</h6>
+                    <div class="row align-items-end border-bottom">
+                      <div class="col-7 p-0">
+
+                          <p class="small font-weight">WiFi Router</p>
+
+                      </div>
+                      <div class="col-5 p-0 text-right">
+                        <p class="small"><a href="/pages/compare-devices" style="color:#696871">Compare Devices</a></p>
+                      </div>
+                    </div>
+                    <div class="row d-block"> <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">129</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                      <p class="small strike-between" style="font-size:12px">+ $249.00 One-Time Membership Fee </p>
+                      <p class="small font-red-col" style="font-size:12px">+ <span >$199.00</span> One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                    </div>
+                    <div class="features row ">
+                      <div class="col-md">
+                        <ul class="list-unstyled border-top">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Unlimited 4G LTE</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Data Limit</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> All Your Devices</li>
+                        </ul>
+                      </div>
+                      <div class="col-md">
+                        <ul class="list-unstyled column-collapse">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Credit Check</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Anywhere You Are</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> <a class="text-400 modal-link" href="#guarantee_modal" data-toggle="modal">14-Day No Risk</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 pl-0"><a href="https://href.li/?https://www.t-mobile.com/coverage-map.html" target="_blank" class="w-100 plan-coverage text-capitalize">Plan Coverage</a></div>
+                      <div class="col-6 pr-0">
+
+                        <input name="id" value="31403862327354" type="hidden">
+
+
+                        <div class="button-add-to-cart"  id="pink-travel-wifi-router"> Add To Cart </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+
+  		{% comment %}
+        <form  id="add-item-form-blue-sim"  class="col-lg-4 col-md-6 col-sm-12 gl-sim-only" method="post" action="/cart/add/" data-productid="31606269935674">
+        {% if product.available %}{% include 'subscription-product' %}{% endif %}
+          <div>
+            <div class="plan-listing card-plan-list   rounded card-blue">
+              <div class="card-body">
+                <div class="plan-row">
+                  <div class="text-right"><i class="fas fa-battery-half" style="color:#19191B;"></i></div>
+                    <div class="col img-setter-pro mx-auto">
+                      <img src="//cdn.shopify.com/s/files/1/0414/3238/3650/products/sim-card-bundle_f9d48a69-8a93-442a-a5cb-0de486348a07.jpg?v=1593667413">
+                    </div>
+                    <h6 class="row font-weight-bold text-black text-uppercase">Sim Only (bring your own device)</h6>
+                    <div class="row align-items-end border-bottom">
+                      <div class="col-7 p-0">
+                          <p class="small font-weight"><br></p>
+                      </div>
+                      <div class="col-5 p-0 text-right">
+                        <p class="small"><a href="/pages/compare-devices" style="color:#696871">Compare Devices</a></p>
+                      </div>
+                    </div>
+                    <div class="row d-block"> <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">129</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                      <p class="small font-red-col" style="font-size:12px">+ Free One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                    </div>
+                    <div class="features row ">
+                      <div class="col-md">
+                        <ul class="list-unstyled border-top">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Unlimited 4G LTE</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Data Limit</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> All Your Devices</li>
+                        </ul>
+                      </div>
+                      <div class="col-md">
+                        <ul class="list-unstyled column-collapse">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Credit Check</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Anywhere You Are</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> <a class="text-400 modal-link" href="#guarantee_modal" data-toggle="modal">14-Day No Risk</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 pl-0"><a href="https://www.att.com/maps/wireless-coverage.html" target="_blank" class="w-100 plan-coverage text-capitalize">Plan Coverage</a></div>
+                      <div class="col-6 pr-0">
+
+                        <input name="id" value="31606269935674" type="hidden" data-productid="31606269935674">
+                        <div class="button-add-to-cart" id="sim-activator">Add To Cart</div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+        <form id="blue--travel-GL-WiFi-Router-form" class="col-lg-4 col-md-6 col-sm-12 gl-travel-wifi" method="post" action="/cart/add">
+          <div>
+            <div class="plan-listing card-plan-list   rounded card-blue">
+              <div class="card-body">
+                <div class="plan-row">
+                  <div class="text-right"><i class="fas fa-battery-half" style="color:#19191B;"></i></div>
+                    <div class="col img-setter-pro mx-auto">
+                      <img src="//cdn.shopify.com/s/files/1/0414/3238/3650/products/mifi_v2_500x500_3_df60edd3-63f8-4b04-bf4f-5f3bf31aabe3.jpg?v=1593667413">
+                    </div>
+                    <h6 class="row font-weight-bold text-black text-uppercase">Very Blue Plan</h6>
+                    <div class="row align-items-end border-bottom">
+                      <div class="col-7 p-0">
+
+                          <p class="small font-weight">Travel WiFi Router</p>
+
+                      </div>
+                      <div class="col-5 p-0 text-right">
+                        <p class="small"><a href="/pages/compare-devices" style="color:#696871">Compare Devices</a></p>
+                      </div>
+                    </div>
+                    <div class="row d-block"> <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">129</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                      <p class="small  strike-between" style="font-size:12px">+ $199.00 One-Time Membership Fee </p>
+                      <p class="small font-red-col" style="font-size:12px">+ <span >$149.00</span> One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                    </div>
+                    <div class="features row ">
+                      <div class="col-md">
+                        <ul class="list-unstyled border-top">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Unlimited 4G LTE</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Data Limit</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> All Your Devices</li>
+                        </ul>
+                      </div>
+                      <div class="col-md">
+                        <ul class="list-unstyled column-collapse">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Credit Check</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Anywhere You Are</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> <a class="text-400 modal-link" href="#guarantee_modal" data-toggle="modal">14-Day No Risk</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 pl-0"><a href="https://www.att.com/maps/wireless-coverage.html" target="_blank" class="w-100 plan-coverage text-capitalize">Plan Coverage</a></div>
+                      <div class="col-6 pr-0">
+
+                        <input name="id" value="31807318687802" type="hidden">
+
+                        <div class="button-add-to-cart"  id="blue-travel-wifi-router"> Add To Cart </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+
+        <form id="blue-GL-WiFi-Router-form" class="col-lg-4 col-md-6 col-sm-12 gl-wifi" method="post" action="/cart/add">
+          <div>
+            <div class="plan-listing card-plan-list   rounded card-blue">
+              <div class="card-body">
+                <div class="plan-row">
+                  <div class="text-right"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/wifi-icon.JPG?v=1595349872" style="max-width:30px"/></div>
+                    <div class="col img-setter-pro mx-auto">
+                      <img src="//cdn.shopify.com/s/files/1/0414/3238/3650/products/X750-2_db8e0bcf-e4a7-4c1c-8af8-d16980f18642_medium.jpg?v=1593667396">
+                    </div>
+                    <h6 class="row font-weight-bold text-black text-uppercase">VERY BLUE PLAN</h6>
+                    <div class="row align-items-end border-bottom">
+                      <div class="col-7 p-0">
+
+                          <p class="small font-weight">WiFi Router</p>
+
+                      </div>
+                      <div class="col-5 p-0 text-right">
+                        <p class="small"><a href="/pages/compare-devices" style="color:#696871">Compare Devices</a></p>
+                      </div>
+                    </div>
+                    <div class="row d-block"> <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">129</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                      <p class="small strike-between" style="font-size:12px">+ $249.00 One-Time Membership Fee </p>
+                      <p class="small font-red-col " style="font-size:12px">+ <span style=" ">$199.00</span> One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                    </div>
+                    <div class="features row ">
+                      <div class="col-md">
+                        <ul class="list-unstyled border-top">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Unlimited 4G LTE</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Data Limit</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> All Your Devices</li>
+                        </ul>
+                      </div>
+                      <div class="col-md">
+                        <ul class="list-unstyled column-collapse">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Credit Check</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Anywhere You Are</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> <a class="text-400 modal-link" href="#guarantee_modal" data-toggle="modal">14-Day No Risk</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 pl-0"><a href="https://www.att.com/maps/wireless-coverage.html" target="_blank" class="w-100 plan-coverage text-capitalize">Plan Coverage</a></div>
+                      <div class="col-6 pr-0">
+
+                        <input name="id" value="31606259941434" type="hidden">
+
+                        <div class="button-add-to-cart"  id="blue-wifi-router"> Add To Cart </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+		{% endcomment %}
+
+        <form id="red-travel-wifi-router-form" class="col-lg-4 col-md-6 col-sm-12 gl-wifi" method="post" action="/cart/add">
+          <div>
+            <div class="plan-listing card-plan-list   rounded card-red">
+              <div class="card-body">
+                <div class="plan-row">
+                  <div class="text-right"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/wifi-icon.JPG?v=1595349872" style="max-width:30px"/></div>
+                    <div class="col img-setter-pro mx-auto">
+                      <img src="//cdn.shopify.com/s/files/1/0414/3238/3650/products/X750-2_db8e0bcf-e4a7-4c1c-8af8-d16980f18642_medium.jpg?v=1593667396">
+                    </div>
+                    <h6 class="row font-weight-bold text-black text-uppercase"> Deep Red Plan </h6>
+                    <div class="row align-items-end border-bottom">
+                      <div class="col-7 p-0">
+
+                          <p class="small font-weight">WiFi Router</p>
+
+                      </div>
+                      <div class="col-5 p-0 text-right">
+                        <p class="small"><a href="/pages/compare-devices" style="color:#696871">Compare Devices</a></p>
+                      </div>
+                    </div>
+                    <div class="row d-block"> <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">149</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                      <p class="small strike-between" style="font-size:12px">+ $249.00 One-Time Membership Fee </p>
+                      <p class="small font-red-col" style="font-size:12px">+ <span>$199.00</span> One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                    </div>
+                    <div class="features row ">
+                      <div class="col-md">
+                        <ul class="list-unstyled border-top">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Unlimited 4G LTE</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Data Limit</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> All Your Devices</li>
+                        </ul>
+                      </div>
+                      <div class="col-md">
+                        <ul class="list-unstyled column-collapse">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Credit Check</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Anywhere You Are</li>
+              <li><i class="fa fa-check text-primary" aria-hidden="true"></i> <a class="text-400 modal-link" href="#guarantee_modal" data-toggle="modal">14-Day No Risk</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 pl-0"><a href="https://href.li/?http://verizon.cellmaps.com" target="_blank" class="w-100 plan-coverage text-capitalize">Plan Coverage</a></div>
+                      <div class="col-6 pr-0">
+
+                        <input name="id" value="31403939921978" type="hidden">
+
+
+                        <div class="button-add-to-cart"  id="red-wifi-router"> Add To Cart </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+
+  		{% comment %}
+        <form id="add-item-form-blue-Nighthawk" class="col-lg-4 col-md-6 col-sm-12 gl-night-walk" method="post" action="/cart/add">
+          <div>
+            <div class="plan-listing card-plan-list   rounded card-blue">
+              <div class="card-body">
+                <div class="plan-row">
+                  <div class="text-right"><i class="fas fa-battery-half" style="color:#19191B;"></i></div>
+                    <div class="col img-setter-pro mx-auto">
+                      <img src="//cdn.shopify.com/s/files/1/0414/3238/3650/products/M1-Hero.png?v=1593667413">
+                    </div>
+                    <h6 class="row font-weight-bold text-black text-uppercase">Nighthawk® LTE Mobile Hotspot Router</h6>
+                    <div class="row align-items-end border-bottom">
+                      <div class="col-7 p-0">
+
+                          <p class="small font-weight"><br></p>
+
+                      </div>
+                      <div class="col-5 p-0 text-right">
+                        <p class="small"><a href="/pages/compare-devices" style="color:#696871">Compare Devices</a></p>
+                      </div>
+                    </div>
+                    <div class="row d-block"> <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">129</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                    <p class="small strike-between" style="font-size:12px">+ $399.00 One-Time Membership Fee </p>
+                    <p class="small font-red-col" style="font-size:12px">+ <span>$349.00</span> One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                    </div>
+                    <div class="features row ">
+                      <div class="col-md">
+                        <ul class="list-unstyled border-top">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Unlimited 4G LTE</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Data Limit</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> All Your Devices</li>
+                        </ul>
+                      </div>
+                      <div class="col-md">
+                        <ul class="list-unstyled column-collapse">
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Credit Check</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Anywhere You Are</li>
+                          <li><i class="fa fa-check text-primary" aria-hidden="true"></i> <a class="text-400 modal-link" href="#guarantee_modal" data-toggle="modal">14-Day No Risk</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 pl-0"><a href="https://www.att.com/maps/wireless-coverage.html" target="_blank" class="w-100 plan-coverage text-capitalize">Plan Coverage</a></div>
+                      <div class="col-6 pr-0">
+
+                        <input name="id" value="31663701262394" type="hidden">
+                        <div class="button-add-to-cart"  id="Nighthawk-activator"> Add To Cart </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+  		{% endcomment %}
+
+      </div>
+    </div>
+  </section>
+
+
+  {{ 'option_selection.js' | shopify_asset_url | script_tag }}
+  <script>
+
+    window.timber = window.timber || {};
+
+    timber.switchImage = function (src, imgObject, el) {
+      // Make sure element is a jquery object
+      var $el = $(el);
+      $el.attr('src', src);
+    };
+
+    timber.productPagepink = function (options) {
+      var moneyFormat = options.money_format,
+          variant = options.variant,
+          selector = options.selector;
+
+      // Selectors
+      var $productImage = $('.card-pink img'),
+          $productPrice = $('.card-pink .fee .price-amount'),
+          $productwasPrice = $('.card-pink .fee .price-amount_was');
+
+      if (variant) {
+        // Update variant image, if one is set
+        if (variant.featured_image) {
+          var newImg = variant.featured_image,
+              el = $productImage[0];
+          Shopify.Image.switchImage(newImg, el, timber.switchImage);
+        }
+        console.log(variant);
+        if(variant.title  == 'Sim Only (bring your own device)'){
+          $productwasPrice.html('Free');
+          $('#product-form-pink .fee .price-amount').css('color','red');
+          $('#product-form-pink .fee del').css('text-decoration','none');
+          $('.card-pink .fee .hide_on_sim').hide();
+        }
+        else{
+          $('.card-pink .fee .hide_on_sim').show();
+          $productPrice.html(Shopify.formatMoney(variant.price, moneyFormat));
+          $productwasPrice.html(Shopify.formatMoney(variant.compare_at_price, moneyFormat));
+          $('#product-form-pink .fee .price-amount').css('color','#515151');
+          $('#product-form-pink .fee del').css('text-decoration','line-through');
+        }
+
+      }
+    };
+
+    timber.productPageblue = function (options) {
+      var moneyFormat = options.money_format,
+          variant = options.variant,
+          selector = options.selector;
+
+      // Selectors
+      var $productImage = $('.card-blue img'),
+          $productPrice = $('.card-blue .fee .price-amount'),
+          $productwasPrice = $('.card-blue .fee .price-amount_was');
+
+      if (variant) {
+        // Update variant image, if one is set
+        if (variant.featured_image) {
+          var newImg = variant.featured_image,
+              el = $productImage[0];
+          Shopify.Image.switchImage(newImg, el, timber.switchImage);
+        }
+
+        if(variant.title  == 'Sim Only (bring your own device)'){
+          $productwasPrice.html('Free');
+          $('#product-form-blue .fee .price-amount').css('color','red');
+          $('#product-form-blue .fee del').css('text-decoration','none');
+          $('.card-blue .fee .hide_on_sim').hide();
+        }
+        else{
+          $('.card-blue .fee .hide_on_sim').show();
+          $productPrice.html(Shopify.formatMoney(variant.price, moneyFormat));
+          $productwasPrice.html(Shopify.formatMoney(variant.compare_at_price, moneyFormat));
+          $('#product-form-blue .fee .price-amount').css('color','#515151');
+          $('#product-form-blue .fee del').css('text-decoration','line-through');
+        }
+      }
+    };
+
+    /* timber.productPagered = function (options) {
+      var moneyFormat = options.money_format,
+          variant = options.variant,
+          selector = options.selector;
+
+      // Selectors
+      var $productImage = $('.card-red img'),
+          $productPrice = $('.card-red .fee .price-amount');
+
+      if (variant) {
+        // Update variant image, if one is set
+        if (variant.featured_image) {
+          var newImg = variant.featured_image,
+              el = $productImage[0];
+          Shopify.Image.switchImage(newImg, el, timber.switchImage);
+        }
+
+        // Regardless of stock, update the product price
+        $productPrice.html(Shopify.formatMoney(variant.price, moneyFormat));
+      }
+    };*/
+
+    timber.productPageyellow = function (options) {
+      var moneyFormat = options.money_format,
+          variant = options.variant,
+          selector = options.selector;
+
+      // Selectors
+      var $productImage = $('.card-yellow img'),
+          $productPrice = $('.card-yellow .fee .price-amount'),
+          $productwasPrice = $('.card-yellow .fee .price-amount_was');
+
+      if (variant) {
+        // Update variant image, if one is set
+        if (variant.featured_image) {
+          var newImg = variant.featured_image,
+              el = $productImage[0];
+          Shopify.Image.switchImage(newImg, el, timber.switchImage);
+        }
+
+        // Regardless of stock, update the product price
+        $productPrice.html(Shopify.formatMoney(variant.price, moneyFormat));
+        //$productwasPrice.html(Shopify.formatMoney(variant.compare_at_price, moneyFormat));
+      }
+    };
+
+
+
+    var selectCallbackpink = function(variant, selector) {
+      timber.productPagepink({
+        money_format: "{{ shop.money_format }}",
+        variant: variant,
+        selector: selector
+      });
+    };
+    var selectCallbackblue = function(variant, selector) {
+      timber.productPageblue({
+        money_format: "{{ shop.money_format }}",
+        variant: variant,
+        selector: selector
+      });
+    };
+    var selectCallbackred = function(variant, selector) {
+      timber.productPagered({
+        money_format: "{{ shop.money_format }}",
+        variant: variant,
+        selector: selector
+      });
+    };
+    var selectCallbackyellow = function(variant, selector) {
+      timber.productPageyellow({
+        money_format: "{{ shop.money_format }}",
+        variant: variant,
+        selector: selector
+      });
+    };
+
+  </script>
+
+
+  <script>
+    $(document).ready(function(){
+      $("#sim-activator").click(function(){
+        var already_have = 0;
+
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          dataType: 'json',
+          success: function(cart) {
+              $.each(cart.items, function(index, cartItem){
+                if(cartItem.product_title == 'Very Blue Plan'){
+                  already_have = 1;
+                }
+              });
+              if(already_have == 0)
+               {
+                var params = {
+                  type: 'POST',
+                  url: '/cart/add.js',
+                  data: $("#add-item-form-blue-sim").serialize(),
+                  dataType: 'json',
+                  success: function(line_item) {
+                      var data = {
+                        "id" : 31607888773178,
+                        "quantity" : 1,
+                        "properties[Note]": "After 30 days $149/month",
+                        "properties[shipping_interval_unit_type]": 'days',
+                        "properties[shipping_interval_frequency]": 30,
+                        "properties[subscription_id]": 252048
+                      };
+                    $.ajax({
+                      type: 'POST',
+                      url: '/cart/add.js',
+                      dataType: 'json',
+                      data: data,
+                      success: function(){
+                        window.location.href='/cart';
+                      },
+                      error: function (request, status, error) {
+                        console.log(request.responseText);
+                      }
+                    });
+                  },
+                  error: function(XMLHttpRequest, textStatus) {
+                    Shopify.onError(XMLHttpRequest, textStatus);
+                  }
+                };
+                jQuery.ajax(params);
+
+              }
+            else{
+              $('.already_have_plan').trigger('click');
+            }
+          },
+        });
+      });
+
+      $("#Nighthawk-activator").click(function(){
+        var already_have = 0;
+
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          dataType: 'json',
+          success: function(cart) {
+              $.each(cart.items, function(index, cartItem){
+                if(cartItem.product_title == 'Very Blue Plan'){
+                  already_have = 1;
+                }
+              });
+
+              if(already_have == 0) {
+                var params = {
+                  type: 'POST',
+                  url: '/cart/add.js',
+                  data: $("#add-item-form-blue-Nighthawk").serialize(),
+                  dataType: 'json',
+                  success: function(line_item) {
+                      var data = {
+                        "id" : 31501542064186,
+                        "quantity" : 1,
+                        "properties[Note]": "After 30 days $149/month",
+                        "properties[shipping_interval_unit_type]": 'days',
+                        "properties[shipping_interval_frequency]": 30,
+                        "properties[subscription_id]": 240698
+                      };
+                    $.ajax({
+                      type: 'POST',
+                      url: '/cart/add.js',
+                      dataType: 'json',
+                      data: data,
+                      success: function(){
+                        window.location.href='/cart';
+                      },
+                      error: function (request, status, error) {
+                        console.log(request.responseText);
+                      }
+                    });
+                  },
+                  error: function(XMLHttpRequest, textStatus) {
+                    Shopify.onError(XMLHttpRequest, textStatus);
+                  }
+                };
+                jQuery.ajax(params);
+              }
+              else{
+                $('.already_have_plan').trigger('click');
+              }
+          },
+        });
+      });
+
+
+
+      $("#blue-wifi-router").click(function(){
+        var already_have = 0;
+
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          dataType: 'json',
+          success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+              if(cartItem.product_title == 'Very Blue Plan'){
+                already_have = 1;
+              }
+            });
+
+            if(already_have == 0){
+              var params = {
+                type: 'POST',
+                url: '/cart/add.js',
+                data: $("#blue-GL-WiFi-Router-form").serialize(),
+                dataType: 'json',
+                success: function(line_item) {
+                    var data = {
+                      "id" : 31501542064186,
+                      "quantity" : 1,
+                      "properties[Note]": "After 30 days $149/month",
+                      "properties[shipping_interval_unit_type]": 'days',
+                      "properties[shipping_interval_frequency]": 30,
+                      "properties[subscription_id]": 240698
+                    };
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href='/cart';
+                    },
+                    error: function (request, status, error) {
+                      console.log(request.responseText);
+                    }
+                  });
+                },
+                error: function(XMLHttpRequest, textStatus) {
+                  Shopify.onError(XMLHttpRequest, textStatus);
+                }
+              };
+              jQuery.ajax(params);
+            }
+            else{
+              $('.already_have_plan').trigger('click');
+            }
+
+
+          },
+        });
+      });
+
+
+
+
+      $("#blue-travel-wifi-router").click(function(){
+        var already_have = 0;
+
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          dataType: 'json',
+          success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+              if(cartItem.product_title == 'Very Blue Plan'){
+                already_have = 1;
+              }
+            });
+
+            if(already_have == 0){
+
+              var params = {
+                type: 'POST',
+                url: '/cart/add.js',
+                data: $("#blue--travel-GL-WiFi-Router-form").serialize(),
+                dataType: 'json',
+                success: function(line_item) {
+                    var data = {
+                      "id" : 31501542064186,
+                      "quantity" : 1,
+                      "properties[Note]": "After 30 days $149/month",
+                      "properties[shipping_interval_unit_type]": 'days',
+                      "properties[shipping_interval_frequency]": 30,
+                      "properties[subscription_id]": 240698
+                    };
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href='/cart';
+                    },
+                    error: function (request, status, error) {
+                      console.log(request.responseText);
+                    }
+                  });
+                },
+                error: function(XMLHttpRequest, textStatus) {
+                  Shopify.onError(XMLHttpRequest, textStatus);
+                }
+              };
+              jQuery.ajax(params);
+            }
+            else{
+              $('.already_have_plan').trigger('click');
+            }
+
+          },
+        });
+      });
+
+
+      $("#red-wifi-router").click(function(){
+        var already_have = 0;
+
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          dataType: 'json',
+          success: function(cart) {
+              $.each(cart.items, function(index, cartItem){
+                if(cartItem.product_title == 'Deep Red Plan'){
+                  already_have = 1;
+                }
+              });
+
+
+              if(already_have == 0){
+              var params = {
+                type: 'POST',
+                url: '/cart/add.js',
+                data: $("#red-travel-wifi-router-form").serialize(),
+                dataType: 'json',
+                success: function(line_item) {
+                    var data = {
+                      "id" : 31407604400186,
+                      "quantity" : 1,
+                      "properties[Note]": "After 30 days $149/month",
+                      "properties[shipping_interval_unit_type]": 'days',
+                      "properties[shipping_interval_frequency]": 30,
+                      "properties[subscription_id]": 240698
+                    };
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href='/cart';
+                    },
+                    error: function (request, status, error) {
+                      console.log(request.responseText);
+                    }
+                  });
+                },
+                error: function(XMLHttpRequest, textStatus) {
+                  Shopify.onError(XMLHttpRequest, textStatus);
+                }
+              };
+              jQuery.ajax(params);
+            }
+            else{
+              $('.already_have_plan').trigger('click');
+            }
+
+          },
+        });
+      });
+
+
+
+      $("#pink-wifi-router").click(function(){
+        var already_have = 0;
+
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          dataType: 'json',
+          success: function(cart) {
+              $.each(cart.items, function(index, cartItem){
+                if(cartItem.product_title == 'Strong Pink Plan'){
+                  already_have = 1;
+                }
+              });
+
+
+              if(already_have == 0){
+              var params = {
+                type: 'POST',
+                url: '/cart/add.js',
+                data: $("#pink-wifi-router-form").serialize(),
+                dataType: 'json',
+                success: function(line_item) {
+                    var data = {
+                      "id" : 31407604465722,
+                      "quantity" : 1,
+                      "properties[Note]": "After 30 days $129/month",
+                      "properties[shipping_interval_unit_type]": 'days',
+                      "properties[shipping_interval_frequency]": 30,
+                      "properties[subscription_id]": 240698
+                    };
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href='/cart';
+                    },
+                    error: function (request, status, error) {
+                      console.log(request.responseText);
+                    }
+                  });
+                },
+                error: function(XMLHttpRequest, textStatus) {
+                  Shopify.onError(XMLHttpRequest, textStatus);
+                }
+              };
+              jQuery.ajax(params);
+            }
+            else{
+              $('.already_have_plan').trigger('click');
+            }
+
+          },
+        });
+      });
+
+
+
+      $("#pink-travel-wifi-router").click(function(){
+        var already_have = 0;
+
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          dataType: 'json',
+          success: function(cart) {
+              $.each(cart.items, function(index, cartItem){
+                if(cartItem.product_title == 'Strong Pink Plan'){
+                  already_have = 1;
+                }
+              });
+
+
+              if(already_have == 0){
+              var params = {
+                type: 'POST',
+                url: '/cart/add.js',
+                data: $("#pink-travel-wifi-router-form").serialize(),
+                dataType: 'json',
+                success: function(line_item) {
+                    var data = {
+                      "id" : 31407604465722,
+                      "quantity" : 1,
+                      "properties[Note]": "After 30 days $129/month",
+                      "properties[shipping_interval_unit_type]": 'days',
+                      "properties[shipping_interval_frequency]": 30,
+                      "properties[subscription_id]": 240698
+                    };
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href='/cart';
+                    },
+                    error: function (request, status, error) {
+                      console.log(request.responseText);
+                    }
+                  });
+                },
+                error: function(XMLHttpRequest, textStatus) {
+                  Shopify.onError(XMLHttpRequest, textStatus);
+                }
+              };
+              jQuery.ajax(params);
+            }
+            else{
+              $('.already_have_plan').trigger('click');
+            }
+
+          },
+        });
+      });
+
+      $('.single_add_to_cart_button_pink').click(function(){
+
+        var already_have = 0;
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          dataType: 'json',
+          success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+              if(cartItem.product_title == 'Strong Pink Plan'){
+                already_have = 1;
+              }
+            });
+
+            if(already_have == 0){
+              var params = {
+                type: 'POST',
+                url: '/cart/add.js',
+                data: $('#product-form-pink').serialize(),
+                dataType: 'json',
+                success: function(line_item) {
+
+                  if($('#productSelect_pink option:selected').text() == 'Sim Only (bring your own device)'){
+                    var data = {
+                      "id" : 31723159519290,
+                      "quantity" : 1,
+                      "properties[Note]": "After 30 days $129/month",
+                      "properties[shipping_interval_unit_type]": 'days',
+                      "properties[shipping_interval_frequency]": 30,
+                      "properties[subscription_id]": 256060
+                    };
+                  }
+                  else{
+                    var data = {
+                      "id" : 31407604465722,
+                      "quantity" : 1,
+                      "properties[Note]": "After 30 days $99/month",
+                      "properties[shipping_interval_unit_type]": 'days',
+                      "properties[shipping_interval_frequency]": 30,
+                      "properties[subscription_id]": 240698
+                    };
+                  }
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href='/cart';
+                    },
+                    error: function (request, status, error) {
+                      console.log(request.responseText);
+                    }
+                  });
+                },
+                error: function(XMLHttpRequest, textStatus) {
+                  Shopify.onError(XMLHttpRequest, textStatus);
+                }
+              };
+              jQuery.ajax(params);
+            }
+            else{
+              $('.already_have_plan').trigger('click');
+            }
+
+          },
+        });
+
+      });
+      $('.single_add_to_cart_button_blue').click(function(){
+        var already_have = 0;
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          dataType: 'json',
+          success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+              if(cartItem.product_title == 'Very Blue Plan'){
+                already_have = 1;
+              }
+            });
+
+            if(already_have == 0){
+              var params = {
+                type: 'POST',
+                url: '/cart/add.js',
+                data: $('#product-form-blue').serialize(),
+                dataType: 'json',
+                success: function(line_item) {
+                  if($('#productSelect_blue option:selected').text() == 'Sim Only (bring your own device)'){
+                    var data = {
+                      "id" : 31607888773178,
+                      "quantity" : 1,
+                      "properties[Note]": "After 30 days $149/month",
+                      "properties[shipping_interval_unit_type]": 'days',
+                      "properties[shipping_interval_frequency]": 30,
+                      "properties[subscription_id]": 252048
+                    };
+                  }
+                  else{
+                    var data = {
+                      "id" : 31501542064186,
+                      "quantity" : 1,
+                      "properties[Note]": "After 30 days $149/month",
+                      "properties[shipping_interval_unit_type]": 'days',
+                      "properties[shipping_interval_frequency]": 30,
+                      "properties[subscription_id]": 240698
+                    };
+                  }
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href='/cart';
+                    },
+                    error: function (request, status, error) {
+                      console.log(request.responseText);
+                    }
+                  });
+                },
+                error: function(XMLHttpRequest, textStatus) {
+                  Shopify.onError(XMLHttpRequest, textStatus);
+                }
+              };
+              jQuery.ajax(params);
+            }
+            else{
+              $('.already_have_plan').trigger('click');
+            }
+
+          },
+        });
+
+      });
+      $('.single_add_to_cart_button_red').click(function(){
+
+        var already_have = 0;
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          dataType: 'json',
+          success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+              if(cartItem.product_title == 'Deep Red Plan'){
+                already_have = 1;
+              }
+            });
+
+            if(already_have == 0){
+              var params = {
+                type: 'POST',
+                url: '/cart/add.js',
+                data: $('#product-form-red').serialize(),
+                dataType: 'json',
+                success: function(line_item) {
+                  var data = {
+                    "id" : 31407604400186,
+                    "quantity" : 1,
+                    "properties[Note]": "After 30 days $149/month",
+                    "properties[shipping_interval_unit_type]": 'days',
+                    "properties[shipping_interval_frequency]": 30,
+                    "properties[subscription_id]": 240698
+                  };
+
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href='/cart';
+                    },
+                    error: function (request, status, error) {
+                      console.log(request.responseText);
+                    }
+                  });
+                },
+                error: function(XMLHttpRequest, textStatus) {
+                  Shopify.onError(XMLHttpRequest, textStatus);
+                }
+              };
+              jQuery.ajax(params);
+            }
+            else{
+              $('.already_have_plan').trigger('click');
+            }
+
+          },
+        });
+
+      });
+
+      $('.single_add_to_cart_button_yellow').click(function(){
+        var already_have = 0;
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          dataType: 'json',
+          success: function(cart) {
+            $.each(cart.items, function(index, cartItem){
+              if(cartItem.product_title == 'Bright Yellow Plan'){
+                already_have = 1;
+              }
+            });
+
+            if(already_have == 0){
+              var params = {
+                type: 'POST',
+                url: '/cart/add.js',
+                data: $('#product-form-yellow').serialize(),
+                dataType: 'json',
+                success: function(line_item) {
+                  var data = {
+                    "id" : 31407605448762,
+                    "quantity" : 1,
+                    "properties[Note]": "After 30 days $179/month",
+                    "properties[shipping_interval_unit_type]": 'days',
+                    "properties[shipping_interval_frequency]": 30,
+                    "properties[subscription_id]": 240698
+                  };
+
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data: data,
+                    success: function(){
+                      window.location.href='/cart';
+                    },
+                    error: function (request, status, error) {
+                      console.log(request.responseText);
+                    }
+                  });
+                },
+                error: function(XMLHttpRequest, textStatus) {
+                  Shopify.onError(XMLHttpRequest, textStatus);
+                }
+              };
+              jQuery.ajax(params);
+            }
+            else{
+              $('.already_have_plan').trigger('click');
+            }
+
+          },
+        });
+
+
+      });
+    });
+
+
+  </script>
+  <style>
+    .button-add-to-cart {
+      background: #0e9e59;
+      color: #fff;
+      text-align: center;
+      padding: 7px 6px;
+      border-radius: 13px;
+      font-size: 14px;
+      cursor: pointer;
+  }
+  </style>
+
+<!--Start Stamped.io Auto Installation--><div id="stamped-main-widget" class="stamped-main-widget" data-widget-style="standard" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" data-description="{{ product.description | escape }}" data-product-sku="{{ product.handle }}" data-product-type="{{ product.type }}" data-widget-language="{{ shop.locale }}">{{ product.metafields.stamped.reviews }}</div><!--End Stamped.io Auto Installation-->

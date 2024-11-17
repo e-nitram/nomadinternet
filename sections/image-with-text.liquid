@@ -1,0 +1,225 @@
+{{ 'image-with-text.css' | asset_url | stylesheet_tag }}
+
+{% if template == 'page.host-beacons' %}
+  {{ 'customize.css' | asset_url | stylesheet_tag }}
+{% endif %}
+
+
+{% liquid
+  assign image_size = section.settings.image_size
+  assign content_class = ""
+  if image_size == 'small'
+    assign content_class = 'bigger'
+  elsif image_size == 'bigger'
+    assign content_class = 'small'
+  endif
+%}
+
+<div class="image-with-text" style="--bg-color: {{ section.settings.bg_color }}; --text-color: {{ section.settings.text_color }};">
+  <div class="{{ section.settings.content_size }} image-with-text--inner"> 
+    <div class="image-with-text--image {{ image_size }} {{ section.settings.image_alignment }}">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | img_url: 'master' }}" class="{{ image_size }}"/>
+      {% endif %}
+    </div>
+  
+    <div class="image-with-text--content {{ content_class }}">
+      {% if section.settings.sub_heading != blank %}
+        <span class="sub-title" style="--sub-heading-color: {{ section.settings.sub_heading_color }};">{{ section.settings.sub_heading }}</span>  
+      {% endif %}
+
+      {% if section.settings.heading != blank %}
+        <h3 class="title">{{ section.settings.heading }}</h3>
+      {% endif %}
+  
+      {% if section.settings.description != blank %}
+        <div class="desc">{{ section.settings.description | replace: '<li>', '<li><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M21.0819 6.36935L9.51265 17.9386L4.25391 12.6798" stroke="#008061" stroke-width="2.1035" stroke-linecap="round" stroke-linejoin="round"></path></svg>' }}</div>
+      {% endif %}
+  
+      {% if section.settings.button_link != blank and section.settings.button_text != blank %}
+        <a 
+          class="btn" 
+          href="{{ section.settings.button_link }}"
+          target="_blank"
+          style="
+            --button-text-color: {{ section.settings.button_text_color }};
+            --button-border-color: {{ section.settings.button_border_color }};
+            --button-bg-color: {{ section.settings.button_bg_color }};
+          "
+        >
+          {{ section.settings.button_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+{% if template == 'page.flex-pay' %}
+  <style>
+    .image-with-text--content .sub-title {
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .image-with-text .container-wrapper.image-with-text--inner {
+      max-width: 1200px;
+    }
+
+    .image-with-text .image-with-text--content .desc {
+      color: #282828;
+      opacity: 0.9;
+    }
+
+    @media (min-width: 750px) {
+      .image-with-text .container-wrapper.image-with-text--inner {
+        gap: 150px;
+      }
+    }
+  </style>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Image with text - new",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "select",
+      "id": "content_size",
+      "label": "Container size",
+      "default": "container",
+      "options": [
+        {
+          "value":"container",
+          "label": "Container"
+        },
+        {
+          "value": "container-wrapper",
+          "label": "Container wrapper"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#013127"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#fff"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background image"
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Image size",
+      "default": "normal",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "bigger",
+          "label": "Bigger"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_alignment",
+      "label": "Image alignment",
+      "default": "",
+      "options": [
+        {
+          "value": "",
+          "label": "Image / Content"
+        },
+        {
+          "value": "image--reverse",
+          "label": "Content / Image"
+        }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub heading"
+    },
+    {
+      "type": "color",
+      "id": "sub_heading_color",
+      "label": "Sub heading color",
+      "default": "#008061"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Button border color",
+      "default": "#FF4040"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button bg color",
+      "default": "#E12727"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with text - new"
+    }
+  ]
+}
+{% endschema %}

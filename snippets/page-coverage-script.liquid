@@ -1,0 +1,1723 @@
+{% assign nomadAir = all_products['199-one-time-membership-fee'] %}
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+<script src="{{ 'jquery.cookie.js' | asset_url }}"></script>
+<script src="{{ 'jquery.serialize-object.min.js' | asset_url }}"></script>
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+  function floatToString(t,r){var e=t.toFixed(r).toString();return e.match(/^\.\d+/)?"0"+e:e}function attributeToString(t){return"string"!=typeof t&&"undefined"===(t+="")&&(t=""),jQuery.trim(t)}"undefined"==typeof window.Shopify&&(window.Shopify={}),Shopify.money_format="${{amount}}",Shopify.onError=function(t,r){var e=eval("("+t.responseText+")");e.message?alert(e.message+"("+e.status+"): "+e.description):alert("Error : "+Shopify.fullMessagesFromErrors(e).join("; ")+".")},Shopify.fullMessagesFromErrors=function(t){var o=[];return jQuery.each(t,function(e,t){jQuery.each(t,function(t,r){o.push(e+" "+r)})}),o},Shopify.onCartUpdate=function(t){alert("There are now "+t.item_count+" items in the cart.")},Shopify.onCartShippingRatesUpdate=function(t,r){var e="";r.zip&&(e+=r.zip+", "),r.province&&(e+=r.province+", "),e+=r.country,alert("There are "+t.length+" shipping rates available for "+e+", starting at "+Shopify.formatMoney(t[0].price)+".")},Shopify.onItemAdded=function(t){alert(t.title+" was added to your shopping cart.")},Shopify.onProduct=function(t){alert("Received everything we ever wanted to know about "+t.title)},Shopify.formatMoney=function(t,r){function n(t,r){return void 0===t?r:t}function e(t,r,e,o){if(r=n(r,2),e=n(e,","),o=n(o,"."),isNaN(t)||null==t)return 0;var a=(t=(t/100).toFixed(r)).split(".");return a[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g,"$1"+e)+(a[1]?o+a[1]:"")}"string"==typeof t&&(t=t.replace(".",""));var o="",a=/\{\{\s*(\w+)\s*\}\}/,i=r||this.money_format;switch(i.match(a)[1]){case"amount":o=e(t,2);break;case"amount_no_decimals":o=e(t,0);break;case"amount_with_comma_separator":o=e(t,2,".",",");break;case"amount_with_space_separator":o=e(t,2," ",",");break;case"amount_with_period_and_space_separator":o=e(t,2," ",".");break;case"amount_no_decimals_with_comma_separator":o=e(t,0,".",",");break;case"amount_no_decimals_with_space_separator":o=e(t,0,".","");break;case"amount_with_space_separator":o=e(t,2,",","");break;case"amount_with_apostrophe_separator":o=e(t,2,"'",".")}return i.replace(a,o)},Shopify.resizeImage=function(t,r){try{if("original"==r)return t;var e=t.match(/(.*\/[\w\-\_\.]+)\.(\w{2,4})/);return e[1]+"_"+r+"."+e[2]}catch(o){return t}},Shopify.addItem=function(t,r,e){var o={type:"POST",url:"/cart/add.js",data:"quantity="+(r=r||1)+"&id="+t,dataType:"json",success:function(t){"function"==typeof e?e(t):Shopify.onItemAdded(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(o)},Shopify.addItemFromForm=function(t,r){var e={type:"POST",url:"/cart/add.js",data:jQuery("#"+t).serialize(),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onItemAdded(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.getCart=function(r){jQuery.getJSON("/cart.js",function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)})},Shopify.pollForCartShippingRatesForDestination=function(o,a,t){t=t||Shopify.onError;var n=function(){jQuery.ajax("/cart/async_shipping_rates",{dataType:"json",success:function(t,r,e){200===e.status?"function"==typeof a?a(t.shipping_rates,o):Shopify.onCartShippingRatesUpdate(t.shipping_rates,o):setTimeout(n,500)},error:t})};return n},Shopify.getCartShippingRatesForDestination=function(t,r,e){e=e||Shopify.onError;var o={type:"POST",url:"/cart/prepare_shipping_rates",data:Shopify.param({shipping_address:t}),success:Shopify.pollForCartShippingRatesForDestination(t,r,e),error:e};jQuery.ajax(o)},Shopify.getProduct=function(t,r){jQuery.getJSON("/products/"+t+".js",function(t){"function"==typeof r?r(t):Shopify.onProduct(t)})},Shopify.changeItem=function(t,r,e){var o={type:"POST",url:"/cart/change.js",data:"quantity="+r+"&id="+t,dataType:"json",success:function(t){"function"==typeof e?e(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(o)},Shopify.removeItem=function(t,r){var e={type:"POST",url:"/cart/change.js",data:"quantity=0&id="+t,dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.clear=function(r){var t={type:"POST",url:"/cart/clear.js",data:"",dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(t)},Shopify.updateCartFromForm=function(t,r){var e={type:"POST",url:"/cart/update.js",data:jQuery("#"+t).serialize(),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.updateCartAttributes=function(t,r){var o="";jQuery.isArray(t)?jQuery.each(t,function(t,r){var e=attributeToString(r.key);""!==e&&(o+="attributes["+e+"]="+attributeToString(r.value)+"&")}):"object"==typeof t&&null!==t&&jQuery.each(t,function(t,r){o+="attributes["+attributeToString(t)+"]="+attributeToString(r)+"&"});var e={type:"POST",url:"/cart/update.js",data:o,dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.updateCartNote=function(t,r){var e={type:"POST",url:"/cart/update.js",data:"note="+attributeToString(t),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},"1.4"<=jQuery.fn.jquery?Shopify.param=jQuery.param:(Shopify.param=function(t){var e=[],r=function(t,r){r=jQuery.isFunction(r)?r():r,e[e.length]=encodeURIComponent(t)+"="+encodeURIComponent(r)};if(jQuery.isArray(t)||t.jquery)jQuery.each(t,function(){r(this.name,this.value)});else for(var o in t)Shopify.buildParams(o,t[o],r);return e.join("&").replace(/%20/g,"+")},Shopify.buildParams=function(e,t,o){jQuery.isArray(t)&&t.length?jQuery.each(t,function(t,r){rbracket.test(e)?o(e,r):Shopify.buildParams(e+"["+("object"==typeof r||jQuery.isArray(r)?t:"")+"]",r,o)}):null!=t&&"object"==typeof t?Shopify.isEmptyObject(t)?o(e,""):jQuery.each(t,function(t,r){Shopify.buildParams(e+"["+t+"]",r,o)}):o(e,t)},Shopify.isEmptyObject=function(t){for(var r in t)return!1;return!0});
+</script>
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA2-CZ2tXlJS7J-vFtsOmTnBButfTLgBg&amp;libraries=places&amp;callback=initAutocomplete"
+  async=""
+  defer=""></script>
+<script>
+  var $j = jQuery.noConflict();
+
+  var friend_name = '';
+  var discount_code = '';
+  var status_rr_ref = false;
+  var status_rr_friend_ref = false;
+
+  const urlParams = new URLSearchParams(window.location.search);
+
+  const myParam = urlParams.get('rr_ref');
+  const myParam_rr_friend_ref = urlParams.get('rr_friend_ref');
+
+  if (window.location.href.indexOf("rr_ref=") > -1) {
+    const settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://programs.nomadinternet.com/api/v1/users/-actions/friend-details?referral_code="+myParam+"&referral_type=titus",
+      "method": "GET",
+      "headers": {
+      "Accept": "application/vnd.api+json"
+    },
+    success: function(data){
+      $j('.nomad-omen').attr('data-id', '40269086785594'); //40024373198906 40243401031738
+      $j('.nomad-omen .monthly').hide();
+      $j('.nomad-omen .price.price--original').hide();
+      $j('.nomad-omen .price.price--free').show();
+      status_rr_ref = true;
+    },
+    error: function(er){
+      console.log('er = ', er);
+    }
+  };
+
+  $j.ajax(settings).done(function(response){
+    friend_name = response.data.attributes.name;
+    $j('.referral_customer_friendname').text(friend_name);
+    $j('.referral_customer_friendname_modem').text(friend_name);
+    $j(".referral-welcom-popup").addClass("active");
+    $j('body').addClass('stopscroll');
+    $j('.referral_customer_greeting_msg').show();
+
+    fetch('/cart/update.js', {
+      method: "POST",
+      headers: {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Content-Type': 'application/json;'
+      },
+      body: JSON.stringify({
+        "attributes": {
+          "rr_ref": myParam
+        }
+      })
+    });
+  });
+  }
+  else if (window.location.href.indexOf("rr_friend_ref=") > -1) {
+  const settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://programs.nomadinternet.com/api/v1/users/-actions/friend-details?referral_code="+myParam_rr_friend_ref+"&referral_type=trojan",
+      "method": "GET",
+      "headers": {
+      "Accept": "application/vnd.api+json"
+    },
+    success: function(data){
+      discount_code = 'FONX3YUNN1';
+      status_rr_friend_ref = true;
+    },
+    error: function(er){
+
+    }
+  };
+  $j.ajax(settings).done(function(response){
+  friend_name = response.data.attributes.name;
+  $j('.referral_invited_friendname').text(friend_name);
+  $j(".referral-invitred-friend-popup").addClass("active");
+  $j('body').addClass('stopscroll');
+  $j('.referral_customer_greeting_msg').show();
+
+  fetch('/cart/update.js', {
+  method: "POST",
+  headers: {
+  'X-Requested-With': 'XMLHttpRequest',
+  'Content-Type': 'application/json;'
+  },
+  body: JSON.stringify({
+  "attributes": {
+  "rr_friend_ref": myParam_rr_friend_ref
+  }
+  })
+  });
+
+  });
+
+  }
+  else{
+  $j('.referral_customer_greeting_msg').hide();
+  fetch('/cart/update.js', {
+  method: "POST",
+  headers: {
+  'X-Requested-With': 'XMLHttpRequest',
+  'Content-Type': 'application/json;'
+  },
+  body: JSON.stringify({
+  "attributes": {
+  "rr_ref": "",
+  "rr_friend_ref": "",
+  "rr_invited_emails": ""
+  }
+  })
+  });
+  }
+
+
+  $j(document).on('click','#plan1',function(e){
+  e.preventDefault();
+  $j.cookie("selected_plan", '100mbps');
+  if (window.location.href.indexOf("rr_ref=") > -1){
+  var hash = window.location.href.split('?');
+  window.location.href = "/pages/plans?"+hash[1];
+  }
+  else if (window.location.href.indexOf("rr_friend_ref=") > -1) {
+  var hash = window.location.href.split('?');
+  window.location.href = "/pages/plans?"+hash[1];
+  }
+  else{
+  window.location.href = "/pages/plans";
+  }
+  });
+
+  $j(document).on('click','#plan2',function(e){
+  e.preventDefault();
+  $j.cookie("selected_plan", '200mbps');
+  if (window.location.href.indexOf("rr_ref=") > -1){
+  var hash = window.location.href.split('?');
+  window.location.href = "/pages/plans?"+hash[1];
+  }
+  else if (window.location.href.indexOf("rr_friend_ref=") > -1) {
+  var hash = window.location.href.split('?');
+  window.location.href = "/pages/plans?"+hash[1];
+  }
+  else{
+  window.location.href = "/pages/plans#service-section";
+  }
+  });
+
+  $j('.review-list').slick({
+  className: 'center',
+  centerMode: true,
+  infinite: true,
+  slidesToShow: 3,
+  speed: 500,
+  arrows: false,
+  autoplaySpeed: 5000,
+  autoplay: true,
+  dots: true,
+  centerPadding: '0px',
+  responsive: [
+  {
+  breakpoint: 1025,
+  settings: {
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  },
+  },
+  {
+  breakpoint: 640,
+  settings: {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerPadding: '0px',
+  },
+  },
+  ],
+  });
+  $j('.video-list').slick({
+  dots: false,
+  infinite: true,
+  autoplay:true,
+  autoplaySpeed:5000,
+  pauseOnHover:true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<i class="prev_arrow fa fa-angle-left" aria-hidden="true"></i>',
+  nextArrow: '<i class="next_arrow fa fa-angle-right" aria-hidden="true"></i>',
+  responsive: [
+  {
+  breakpoint: 1025,
+  settings: {
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  },
+  },
+  {
+  breakpoint: 640,
+  settings: {
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  centerPadding: '0px',
+  },
+  },
+  ],
+  });
+  $j('.review-list-slider').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  nextArrow: '<svg class="arrow-right" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.5 16.4941L29.5 25.4941L20.5 34.4941" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="49" y="49.4941" width="48" height="48" rx="24" transform="rotate(-180 49 49.4941)" stroke="white" stroke-width="2"/></svg>',
+  prevArrow: '<svg class="arrow-left" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.5 34.4941L20.5 25.4941L29.5 16.4941" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="1.49414" width="48" height="48" rx="24" stroke="white" stroke-width="2"/></svg>',
+  responsive: [
+  {
+  breakpoint: 1300,
+  settings: {
+    dots: false,
+    arrows: true,
+  }
+  },
+  {
+  breakpoint: 1024,
+  settings: {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: false,
+    arrows: true,
+  }
+  },
+  {
+  breakpoint: 991,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    centerPadding: '15px',
+  }
+  },
+  {
+  breakpoint: 480,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    centerPadding: '15px',
+  }
+  }
+  // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+  ]
+  });
+
+  $j(document).on('click', '.accordion-header', function () {
+  // Toggle the visibility of the content
+  var isVisible = $j(this).next('.accordion-content').is(':visible');
+
+  // Hide all accordion content
+  $j('.accordion-content').slideUp();
+  $j('.accordion').removeClass('open');
+  // If the clicked header's content was not visible, show it
+  if (!isVisible) {
+  $j(this).next('.accordion-content').slideDown();
+  $j(this).parents('.accordion').addClass('open');
+  }
+  });
+
+  $j(document).on('click','#referral-welcom-popup-btn',function(){
+  $j(".referral-welcom-popup").removeClass("active");
+  $j('body').removeClass('stopscroll');
+  });
+  $j(document).on('click','#referral-invitred-popup-btn',function(){
+  $j(".referral-invitred-friend-popup").removeClass("active");
+  $j('body').removeClass('stopscroll');
+  });
+  /*$j(document).on('click','.how_it_work_btn',function(){
+  //$j('.introducing-popup video').play();
+  $j(".introducing-popup").addClass("active");
+  $j('body').addClass('stopscroll');
+  });*/
+  $j(document).on('click','.faq_btn',function(){
+  $j(".faq-popup").addClass("active");
+  $j('body').addClass('stopscroll');
+  });
+  $j(document).on('click','.open-popup',function(){
+  $j(".popup").addClass("active");
+  $j('body').addClass('stopscroll');
+  });
+  $j(document).on('click','#offer-popup-btn',function(){
+  $j(".offer-popup").addClass("active");
+  $j('body').addClass('stopscroll');
+  });
+  $j(document).on('click','.flex-read-more',function(){
+  $j(".flex-read-more-popup").addClass("active");
+  $j('.hidden-popup-overlay').addClass("active");
+  $j('body').addClass('stopscroll');
+  });
+
+  $j(document).on('click','.close-button',function(){
+  $j('body').removeClass('stopscroll');
+  $j(".faq-popup").removeClass("active");
+  $j(".introducing-popup").removeClass("active");
+  $j(".popup").removeClass("active");
+  $j(".referral-welcom-popup").removeClass("active");
+  $j('.referral-invitred-friend-popup').removeClass("active");
+  $j(".offer-popup").removeClass("active");
+  $j(".flex-read-more-popup").removeClass("active");
+  $j('.hidden-popup-overlay').removeClass("active");
+  });
+
+  $j(".flex-checkout_icon").hover(function(){
+  $j(this).find('.flex-checkout_popup').removeClass("hidden");
+  }, function(){
+  $j(this).find('.flex-checkout_popup').addClass("hidden");
+  });
+
+  // Function to check if the popup should be shown
+  /*function shouldShowPopup() {
+  const lastPopupDate = getCookie("lastPopupDate");
+  const today = new Date().toDateString();
+
+  return lastPopupDate !== today;
+  }
+
+  // Function to show the popup
+  function showPopup() {
+  $j(".offer-popup").addClass("active");
+  $j('body').addClass('stopscroll');
+
+  $j('.close-button').on('click', function() {
+    $j(".offer-popup").removeClass("active");
+    $j('body').removeClass('stopscroll');
+    // Set a cookie to remember that the popup was shown today
+    setCookie("lastPopupDate", new Date().toDateString(), 1);
+  });
+  }
+
+  // Function to set a cookie
+  function setCookie(name, value, days) {
+  const date = new Date();
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+  const expires = "expires=" + date.toUTCString();
+  document.cookie = name + "=" + value + "; " + expires + "; path=/";
+  }
+
+  // Function to get a cookie by name
+  function getCookie(name) {
+  const cookies = document.cookie.split(';');
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i].trim();
+    if (cookie.indexOf(name + "=") === 0) {
+        return cookie.substring(name.length + 1);
+    }
+  }
+  return "";
+  }
+
+
+  // Check if the popup should be shown and show it if necessary
+  if (shouldShowPopup()) {
+  if($j(window).width() > 767){
+  showPopup();
+  }
+  }
+  */
+
+
+
+  $j('.form_submit').on('click', function(e) {
+
+  var $jform = $j('form#contact_form'),
+  url = 'https://script.google.com/macros/s/AKfycbwsO7HpCtUh6pTCv4z4kUbSwn63j9p2rrJKK8M2SW1JPXi8BC8KaeK6JkOLtsdEHzkoEw/exec';
+
+  var validphone = true;
+
+  var a = $j("input[name='contact[phone_number]']").val();
+  var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+  // if (filter.test(a)) {
+  // validphone = true;
+  // }
+  // else {
+  // validphone = false;
+  // }
+
+  if(validphone == false){
+  $j('#errorwarn').show();
+  $j('#errorwarn').text('Please enter valid phone number.');
+  }
+  else{
+  $j('#errorwarn').hide();
+  $j.ajax({
+  url: url,
+  method: "post",
+  dataType: "json",
+  data: $jform.serializeObject(),
+  beforeSend: function() {
+  $j('.rr_loader').show();
+  },
+  success: function(html){
+  $j.cookie('offer_popup', 'submitted');
+  $j(".offer-popup").removeClass("active");
+  setCookie("lastPopupDate", new Date().toDateString(), 1);
+  },
+  complete: function() {
+  $j('.rr_loader').hide();
+  }
+  });
+  }
+
+  });
+  $j(".wireless-internet-modem .slider-main").slick({
+    slidesToShow: 1,
+    arrows: true,
+    dots: true,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><img src='https://cdn.shopify.com/s/files/1/0103/2847/3658/files/arrow.png?v=1697824273' width='35px' height='35px' alt='slick-prev'/></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><img src='https://cdn.shopify.com/s/files/1/0103/2847/3658/files/arrow.png?v=1697824273' width='35px' height='35px' alt='slick-next'/></button>",
+  });
+
+  $j(".slider-main-plan").slick({
+    arrows: true,
+    dots: true,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><img src='https://cdn.shopify.com/s/files/1/0103/2847/3658/files/arrow.png?v=1697824273' width='35px' height='35px' alt='slick-prev'/></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><img src='https://cdn.shopify.com/s/files/1/0103/2847/3658/files/arrow.png?v=1697824273' width='35px' height='35px' alt='slick-right'/></button>",
+  });
+
+  $j(".wireless-internet-modem .slider-main").show();
+  $j(".slider-main-plan").show();
+
+  $j(document).on("click", ".steps .modem-grid .modem-main", function () {
+    $j(".steps .modem-grid .modem-main").removeClass("active");
+    $j(this).addClass("active");
+    const slideIndex = $j(this).attr("slide-id");
+
+    const paymentTypes = document.querySelectorAll('[js-payment-type]');
+    paymentTypes.forEach(rmItem => {
+      rmItem.classList.remove('active');
+    });
+
+    paymentTypes.forEach((type, index) => {
+      type.classList.remove('disabled');
+      if (type.getAttribute('data-type') == 'subscribe') {
+        // type.classList.add('active');
+      }
+    });
+    changeProductTexts();
+
+    if(status_rr_ref == true){
+      if($j('.nomad-omen').hasClass('active')){
+        $j('.free_price').show();
+        $j('.free_price').text("Free Gift from : "+friend_name);
+      }
+      else{
+        // $j('.price.price--original').show();
+        $j('.free_price').hide();
+        $j('.free_price').text('');
+      }
+    }
+
+   if ($j(".wireless-internet-modem .slider-main").length > 0) {
+      $j(".wireless-internet-modem .slider-main").slick(
+        "slickGoTo",
+        slideIndex
+      );
+    }
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: $j("#div1").offset().top - 125,
+        behavior: 'smooth'
+      });
+      // $j('.js-step-wrapper[data-step="2"]').find('[js-payment-type]:first-child');
+    }, 100);
+    
+  });
+
+
+
+    $j(document).on("click", ".desktop-version .modem-grid .modem-main.plan-main", function () {
+      $j(".desktop-version .modem-grid .modem-main.plan-main").removeClass("active");
+      $j(this).addClass("active");
+         var plan_price = $j('.desktop-version .plan-main.active').attr('data-price');
+        var plan_name = $j('.desktop-version .plan-main.active').attr('data-name');
+        $j('.plan_price').text(plan_price);
+        $j('.plan_name').text(plan_name);
+    });
+
+    $j(document).on(
+      "click",
+      ".unlimited-plan .modem-grid .modem-main.top-modem",
+      function () {
+
+        $j(".unlimited-plan .modem-grid .modem-main.top-modem").removeClass("active");
+        $j(this).addClass("active");
+        $j('.unselected_info').addClass('hide');
+        $j('.selected_info').removeClass('hide');
+        console.log('status = ', status_rr_ref);
+        if(status_rr_ref == true){
+          if($j('.nomad-omen').hasClass('active')){
+            $j('.price').hide();
+            $j('.free_price').show();
+            $j('.free_price').text("Free Gift from : "+friend_name);
+          }
+          else{
+            $j('.price').show();
+            $j('.free_price').hide();
+            $j('.free_price').text('');
+          }
+        }
+      }
+    );
+  $j(document).on(
+      "click",
+      ".unlimited-plan .modem-grid .modem-main.plan-main",
+      function () {
+        $j(".unlimited-plan .modem-grid .modem-main.plan-main").removeClass("active");
+        $j(this).addClass("active");
+      }
+    );
+  $j(document).on(
+      "click",
+      ".wireless-internet-modem .plan-main",
+      function () {
+        $j(".hidden-popup.plan-info-popup, .hidden-popup-overlay").addClass(
+          "active"
+        );
+      }
+    );
+  $j(document).on(
+      "click",
+      ".wireless-internet-modem .activation_text",
+      function () {
+        $j(".hidden-popup.activation-popup, .hidden-popup-overlay").addClass(
+          "active"
+        );
+      }
+    );
+  $j(document).on(
+      "click",
+      ".wireless-internet-modem .main_info",
+      function () {
+        $j(".hidden-popup.main-info-popup, .hidden-popup-overlay").addClass(
+          "active"
+        );
+      }
+    );
+
+    $j(document).on(
+      "click",
+      ".wireless-internet-modem .modem-help-info .help-text",
+      function () {
+        $j(".hidden-popup.modem-popup").addClass(
+          "active"
+        );
+        const overLay = document.querySelector('.hidden-popup-overlay');
+        if (overLay) {
+          overLay.classList.add('active');
+        }
+      }
+    );
+
+    $j(document).on(
+      "click",
+      ".wireless-internet-modem .payment-help-info .help-text",
+      function () {
+        $j(".hidden-popup.payment-popup, .hidden-popup-overlay").addClass(
+          "active"
+        );
+      }
+    );
+
+    $j(document).on(
+      "click",
+      ".wireless-internet-modem .plan-help-info .help-text",
+      function () {
+        $j(".hidden-popup.plan-popup, .hidden-popup-overlay").addClass(
+          "active"
+        );
+      }
+    );
+
+      const videoElements = document.querySelectorAll('.tiktok-video-list');
+    const videos = document.querySelectorAll('.tiktok-video-list #video-pop-ele');
+    let swiperElements = [];
+
+    function getVideoLinks (element, results) {
+      let resultHtml = '';
+
+      results.forEach((item, index) => {
+        const html = `
+          <div class="swiper-slide">
+            <video id="video-pop-ele" class="lazy" playsinline controls>
+              <source src="${item.wmplay}" width="350" height="500" type="video/mp4">
+              <p>Your browser does not support the video tag.</p>
+            </video>
+          </div>
+        `;
+        resultHtml += html;
+      });
+
+      if (element) {
+        element.querySelector('.swiper-wrapper').innerHTML = resultHtml;
+      }
+    }
+
+    init();
+
+    function init() {
+      let results = [];
+      fetch('https://npm-wh.nomadinternet.com/get_tiktok_videos').then(res => res.json()).then(response => {
+        console.log('init tiktok api = ', response);
+        if (response.msg == 'success' && response.data) {
+          const videos = response.data.videos;
+          if (videos.length > 5) {
+            results = videos.slice(0,5);
+          } else {
+            results = videos;
+          }
+        }
+        console.log('render html = ', results);
+        renderHTML(results);
+      })
+    }
+
+    function renderHTML (results) {
+      videoElements.forEach(element => {
+        const desktopCount = element.getAttribute('data-desktop-count') ? Number(element.getAttribute('data-desktop-count')): 3.2;
+        const mobileCount = element.getAttribute('data-mobile-count') ? Number(element.getAttribute('data-mobile-count')) : 1.2;
+
+        getVideoLinks(element, results);
+
+        const swiperEl = new Swiper(element, {
+          slidesPerView: desktopCount,
+          spaceBetween: 15,
+          allowTouchMove: true,
+          navigation: {
+            nextEl: ".tiktok-swiper-button-next.swiper-button-next",
+            prevEl: ".tiktok-swiper-button-prev.swiper-button-prev",
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: mobileCount,
+              spaceBetween: 15,
+              navigation: {
+                nextEl: ".tiktok-swiper-button-next.swiper-button-next",
+                prevEl: ".tiktok-swiper-button-prev.swiper-button-prev",
+              },
+            },
+            991: {
+              slidesPerView: desktopCount,
+              spaceBetween: 15,
+              navigation: {
+                nextEl: ".tiktok-swiper-button-next.swiper-button-next",
+                prevEl: ".tiktok-swiper-button-prev.swiper-button-prev",
+              },
+            }
+          }
+        });
+
+        swiperElements.push(swiperEl);
+      });
+
+      setTimeout(function() {
+        const dailyPopup = getTimeCookie('daily-popup');
+        if (dailyPopup != '1') {
+          if (window.innerWidth < 991) {
+            $j('.wireless-internet-modem.mobile .slider-main .slick-slide .img').click();
+          } else {
+            $j('.wireless-internet-modem .main-row .main-col .slick-slide').click();
+          }
+
+          $j(".hidden-popup.tiktok-video-popup, .hidden-popup-overlay").addClass(
+            "active"
+          );
+          document.body.style.overflow = 'hidden';
+          setTimeCookie('daily-popup', '1');
+        }
+
+        activeEvents();
+      }, 1000);
+    }
+
+    function activeEvents() {
+      const videos = document.querySelectorAll('.tiktok-video-list #video-pop-ele');
+      videos.forEach((video, index) => {
+        video.addEventListener('click', (e) => {
+          videos.forEach((item, itemIdx) => {
+            if (itemIdx != index)
+              item.pause();
+          });
+        })
+      });
+
+      swiperElements.forEach((swiperEl) => {
+        swiperEl.on('slideChange', function(e) {
+          if (window.innerWidth < 991) {
+            const vItems = document.querySelectorAll('.tiktok-video-list #video-pop-ele');
+            vItems.forEach((video, index) => {
+              if (e.activeIndex == index) {
+                video.play();
+              } else {
+                video.load();
+              }
+            });
+          }
+        })
+      });
+    }
+
+
+    $j(document).on(
+      "click",
+      ".wireless-internet-modem .main-row .main-col .slick-slide",
+      function () {
+        showTiktokVideo();
+      }
+    );
+
+    $j(document).on(
+      "click",
+      ".wireless-internet-modem.mobile .slider-main .slick-slide .img",
+      function () {
+        showTiktokVideo();
+      }
+    );
+
+    $j(document).on("click", ".mobile-plan", function () {
+      //alert('hi');
+      $j(".mobile-plan").removeClass("active");
+      $j(this).addClass("active");
+      const slideIndex = $j(this).attr("slide-id");
+      var plan_price = $j('.mobile-plan.active').attr('data-price');
+        var plan_name = $j('.mobile-plan.active').attr('data-name');
+        $j('.plan_price').text(plan_price);
+        $j('.plan_name').text(plan_name);
+
+        if ($j(".slider-main-plan").length > 0) {
+          $j(".slider-main-plan").slick(
+            "slickGoTo",
+            slideIndex
+          );
+        }
+    });
+
+    function showTiktokVideo() {
+      $j(".hidden-popup.tiktok-video-popup, .hidden-popup-overlay").addClass(
+        "active"
+      );
+      document.body.style.overflow = 'hidden';
+      const videoElements = document.querySelectorAll('.tiktok-video-list #video-pop-ele');
+      videoElements.forEach((video, index) => {
+        if (index == 0) {
+          video.play();
+        } else {
+          video.load();
+        }
+      });
+    }
+
+    function setTimeCookie(name, value) {
+      const day = 1; // one day
+      var expires = "";
+      if (day) {
+          var date = new Date();
+          date.setTime(date.getTime() + (day*24*60*60*1000));
+          expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+
+    function getTimeCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0;i < ca.length;i++) {
+          var c = ca[i];
+          while (c.charAt(0)==' ') c = c.substring(1,c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+    }
+
+    $j(document).on(
+      "click",
+      ".wireless-internet-modem .tiktok-video-popup .close-btn",
+      function () {
+        $j(".hidden-popup.tiktok-video-popup, .hidden-popup-overlay").removeClass(
+          "active"
+        );
+
+        const videoElements = document.querySelectorAll('.tiktok-video-list #video-pop-ele');
+        videoElements.forEach((video, index) => {
+          video.pause();
+        });
+
+        document.body.style.overflow = 'auto';
+      }
+    );
+
+    $j(document).on(
+      "click",
+      ".hidden-popup .close-btn, .hidden-popup-overlay",
+      function () {
+        $j(".hidden-popup, .hidden-popup-overlay").removeClass("active");
+
+        const videoElements = document.querySelectorAll('.tiktok-video-list #video-pop-ele');
+        videoElements.forEach((video, index) => {
+          video.pause();
+        });
+
+        document.body.style.overflow = 'auto';
+      }
+    );
+    // On after slide change
+    $j(".wireless-internet-modem .slider-main").on(
+      "afterChange",
+      function (event, slick, currentSlide, nextSlide) {
+        return;
+        $j(".steps .modem-grid .modem-main").removeClass("active");
+        $j(
+          ".steps .modem-grid .modem-main[slide-id='" + currentSlide + "']"
+        ).addClass("active");
+      }
+    );
+
+    $j(".slider-main-plan").on(
+      "afterChange",
+      function (event, slick, currentSlide, nextSlide) {
+        $j(".mobile-plan").removeClass("active");
+        $j(
+          ".mobile-plan[slide-id='" + currentSlide + "']"
+        ).addClass("active");
+        var plan_price = $j('.mobile-plan.active').attr('data-price');
+        var plan_name = $j('.mobile-plan.active').attr('data-name');
+        $j('.plan_price').text(plan_price);
+        $j('.plan_name').text(plan_name);
+      }
+    );
+
+    function changeProductTexts() {
+      var sale_price = $j('.modem-main.active').attr('data-sale');
+      var original_price = $j('.modem-main.active').attr('data-original');
+      var sale_monthly_price = $j('.modem-main.active').attr('data-month-sale');
+      var original_monthly_price = $j('.modem-main.active').attr('data-month-original');
+      var sale_own_price = $j('.modem-main.active').attr('data-own-sale');
+      var original_own_price = $j('.modem-main.active').attr('data-own-original');
+
+      var modem_name = $j('.modem-main.active').attr('data-modem');
+      const paymentType = $j('.payment-type.active').attr('data-type');
+      if (status_rr_ref && modem_name == 'Nomad Omen') {
+        if (paymentType == 'onetime') {
+          $j('.sale_price').text('Free');
+          $j('.original_price').text(original_price);
+        }
+        else if (paymentType == 'own') {
+          $j('.sale_price').text('Free');
+          $j('.original_price').text(original_own_price);
+        }
+        else {
+          $j('.sale_price').text('Free');
+          $j('.original_price').text(original_monthly_price);
+        }
+
+      } else {
+        if (modem_name == "Nomad Omen") {
+          if (paymentType == 'onetime') {
+            $j('.sale_price').text('$199.95');
+            $j('.original_price').text('$399.95');
+          }
+          else if (paymentType == 'own') {
+            $j('.sale_price').text(sale_own_price);
+            $j('.original_price').text(original_own_price);
+          }
+          else {
+            $j('.sale_price').text(sale_monthly_price);
+            $j('.original_price').text(original_monthly_price);
+          }
+        } else {
+          if (paymentType == 'onetime') {
+            $j('.sale_price').text(sale_price);
+            $j('.original_price').text(original_price);
+          }
+          else if (paymentType == 'own') {
+            $j('.sale_price').text(sale_own_price);
+            $j('.original_price').text(original_own_price);
+          }
+          else {
+            $j('.sale_price').text(sale_monthly_price);
+            $j('.original_price').text(original_monthly_price);
+          }
+        }
+      }
+
+      $j('.summery_modem').text(modem_name);
+      $j('.unselected_info').addClass('hide');
+      $j('.selected_info').removeClass('hide');
+      $j('.modem_error').hide();
+    }
+
+  function toggleOtherSections(show=true) {
+    if (show) {
+      $j('body').removeClass('prevent-showing-contents')
+    } else {
+      $j('body').addClass('prevent-showing-contents')
+    }
+  }
+
+  toggleOtherSections(false)
+
+
+  $j(".top-modem").on("click", function () {
+
+    const paymentTypes = document.querySelectorAll('[js-payment-type]');
+    const salePrice = $j(this).data('sale');
+    const originalPrice = $j(this).data('original');
+    const saleMonthly = $j(this).data('month-sale');
+    const originalMonthly = $j(this).data('month-original');
+    const saleOwn = $j(this).data('own-sale');
+    const originalOwn = $j(this).data('own-original');
+
+    paymentTypes.forEach((type, index) => {
+      type.classList.remove('disabled');
+      paymentTypes.forEach(rmItem => {
+        rmItem.classList.remove('active');
+      });
+      if (type.getAttribute('data-type') == 'subscribe') {
+        type.classList.add('active');
+      }
+      console.log('type = ', status_rr_ref);
+      const priceEl = type.querySelector('p.price');
+      let html = '';
+      if (status_rr_ref && $j(this).attr('data-modem') == 'Nomad Omen') {
+        if (type.getAttribute('data-type') == 'onetime') {
+          html = `
+            Free <span>${originalPrice}</span>
+          `;
+        }
+        else if (type.getAttribute('data-type') == 'own') {
+          html = `
+            Free <span>${originalOwn}</span>
+          `;
+        }
+        else {
+          html = `
+            Free <span>${originalMonthly}</span>
+          `;
+        }
+      } else {
+        if ($j(this).attr('data-modem') == 'Nomad Omen') {
+          if (type.getAttribute('data-type') == 'onetime') {
+            html = `
+              $199.95 <span>$399.95</span>
+            `;
+          }
+          else if (type.getAttribute('data-type') == 'own') {
+            html = `
+              ${saleOwn} <span>${originalOwn}</span>
+            `;
+          }
+          else {
+            html = `
+              ${saleMonthly} <span>${originalMonthly}</span>
+            `;
+          }
+        } else {
+          if (type.getAttribute('data-type') == 'onetime') {
+            html = `
+              ${salePrice} <span>${originalPrice}</span>
+            `;
+          }
+          else if (type.getAttribute('data-type') == 'own') {
+            html = `
+              ${saleOwn} <span>${originalOwn}</span>
+            `;
+          }
+          else {
+            html = `
+              ${saleMonthly} <span>${originalMonthly}</span>
+            `;
+          }
+        }
+      }
+
+      priceEl.innerHTML = html;
+    });
+    $j('.refundable_price').text($j(this).attr('data-refund'));
+    if($j(this).attr('data-modem') == 'Nomad Omen'){
+      $j('.full_price_flex span').text($j(this).attr('data-full-price'));
+      //$j('[data-type="onetime"]').show();
+      $j('.refundable_price').css('text-decoration','unset');
+      $j('.offer_text_raptor').hide();
+    }
+    if($j(this).attr('data-modem') == 'Nomad Air'){
+      $j('.full_price_flex span').text($j(this).attr('data-full-price'));
+      //$j('[data-type="onetime"]').show();
+      $j('.refundable_price').css('text-decoration','unset');
+      $j('.offer_text_raptor').hide();
+    }
+    if($j(this).attr('data-modem') == 'Nomad Raptor'){
+      $j('.full_price_flex span').text($j(this).attr('data-full-price'));
+      //$j('[data-type="onetime"]').hide();
+      $j('.refundable_price').css('text-decoration','line-through');
+     // $j('.steps-item.payment-type .price span').css('display','block');
+      $j('.offer_text_raptor').show();
+    }
+
+    changeProductTexts();
+      // showPaymentOption();
+    $j('.footer-checkout.desktop-hide').addClass('active');
+    $j('.footer-checkout.mobile-hide').addClass('active');
+    $j('.js-step-wrapper[data-step="2"]').addClass('active');
+  });
+
+  $j("[js-payment-type]").on('click', function() {
+    $j("[js-payment-type]").each(function() {
+      $j(this).removeClass('active');
+    });
+
+    $j(this).addClass('active');
+    if ($j(this).attr('data-type') == 'subscribe') {
+      $j('.footer_main_info-text').html('Flex Pay - Tailored Monthly Rental Plans');
+    }
+    else if ($j(this).attr('data-type') == 'own') {
+      $j('.footer_main_info-text').html('Own Your Own Modem');
+    }
+    else {
+      $j('.footer_main_info-text').html('One-Payment: No Monthly Modem Rental Fees');
+    }
+
+    changeProductTexts();
+
+    $j('.js-step-wrapper[data-step="3"]').addClass('active')
+    toggleOtherSections()
+
+    window.scrollTo({
+      top: $j("#div2").offset().top - 100,
+      behavior: 'smooth'
+    });
+  });
+
+  var error_status = false;
+  const optionItems = document.querySelectorAll('[js-payment-item]');
+  const optionButton = document.querySelector('[js-select-option]');
+
+  eventPopup();
+  function eventPopup() {
+  const bgBtn = document.querySelector('.nomad-air-payment__bg');
+  const closePopupBtn = document.querySelector('.nomad-air-payment__closebtn');
+
+  if (bgBtn) {
+    bgBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      hidePaymentOption();
+    })
+  }
+
+  if (closePopupBtn) {
+    closePopupBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      hidePaymentOption();
+    });
+  }
+
+  optionItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      optionItems.forEach(rmItem => {
+        rmItem.classList.remove('active');
+      });
+
+      item.classList.add('active');
+
+      if (optionButton) {
+        optionButton.classList.remove('disabled');
+      }
+    })
+  });
+
+  if (optionButton) {
+    optionButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      optionItems.forEach(item => {
+        if (item.classList.contains('active')) {
+          sessionStorage.setItem('payment_type', item.getAttribute('data-modem'))
+        }
+      });
+
+      hidePaymentOption();
+    });
+  }
+  }
+
+  function showPaymentOption() {
+  if ($j('.nomad-air-payment').length > 0) {
+    $j('.nomad-air-payment').show();
+
+    setTimeout(() => {
+      $j('.nomad-air-payment').addClass('active');
+    }, 50);
+  }
+  }
+
+  function hidePaymentOption() {
+  if ($j('.nomad-air-payment').length > 0) {
+
+    $j('.nomad-air-payment').removeClass('active');
+
+    setTimeout(() => {
+      $j('.nomad-air-payment').hide();
+    }, 50);
+
+    optionItems.forEach(item => {
+      item.classList.remove('active');
+    });
+
+    optionButton.classList.add('disabled');
+  }
+  }
+
+  function check_selection(){
+  if(!$j('.modem-main.active').hasClass('active')){
+    $j('.product-info').addClass('hide_info');
+    error_status = true;
+  }
+  else{
+    $j('.product-info').removeClass('hide_info');
+    error_status = false;
+  }
+
+  if (!error_status) {
+    let is_active = false;
+    $j('.modem-grid .modem-main.top-modem').each(function() {
+      if ($j(this).hasClass('active')) {
+        is_active = true;
+      }
+    })
+
+    if (!is_active) {
+      error_status = true;
+    } else {
+      error_status = false;
+    }
+  }
+  }
+
+  check_selection();
+
+  // $j('.mobile_checkout').click(function(){
+  //   check_selection();
+  //   if(error_status == true){
+  //     $j('.modem_error').show();
+  //   }
+  //   else{
+  //     $j(".hidden-popup-overlay").removeClass("active");
+  //     $j('body').removeClass('stopscroll');
+  //     var modem_name = $j('.main_modem .modem-main.active').attr('data-modem');
+  //     $j('.modem_error').hide();
+  //     $j('.plan_section').hide();
+  //     $j('#accessories_product').show();
+  //     if(modem_name == 'Nomad Air'){
+  //       $j('#accessories_product .for-air').show();
+  //       $j('#accessories_product .for-omega').hide();
+  //     }
+  //     if(modem_name == 'Nomad Omega'){
+  //       $j('#accessories_product .for-omega').show();
+  //       $j('#accessories_product .for-air').hide();
+  //     }
+  //     $j('html, body').animate({
+  //         scrollTop: $j("#accessories_product").offset().top - 50
+  //     }, 500);
+  //   }
+  // });
+
+  // $j('.back_btn').click(function(){
+  //   location.reload();
+  //   $j('.plan_section').show();
+  //   $j('#accessories_product').hide();
+  //   $j('.review-list').slick('reinit');
+  //   $j('.video-list').slick('reinit');
+  //   $j('.review-list-slider').slick('reinit');
+  //   $j('.wireless-internet-modem .slider-main').slick('reinit');
+  //   $j('.slider-main-plan').slick('reinit');
+
+  // });
+
+  var $j = jQuery.noConflict();
+
+  $j('.mobile_checkout').click(function(){
+    check_selection();
+    if(error_status == true){
+        $j('.modem_error').show();
+        return;
+    } else {
+        $j('.modem_error').hide();
+        const item_arr = {
+            "items": []
+        };
+        var flexpay_flag = 'no';
+        var modem_id = $j('.modem-main.active').attr('data-id');
+        var modem_selling_id = $j('.modem-main.active').attr('data-selling-id');
+        var modem_own_id = $j('.modem-main.active').attr('data-own-id');
+        var modem_name = $j('.modem-main.active').attr('data-modem');
+        var selling_plan_id = $j('.modem-main.active').attr('data-selling-plan-id');
+        var paymentType = $j(".payment-type.active").attr('data-type');
+
+        if (paymentType == 'onetime') {
+            flexpay_flag = 'no';
+            item_arr.items.push({id: Number(modem_selling_id), quantity: 1});
+        }
+        else if (paymentType == 'own') {
+            flexpay_flag = 'no';
+            item_arr.items.push({id: Number(modem_own_id), quantity: 1});
+        }
+        else {
+            flexpay_flag = 'yes';
+            item_arr.items.push({id: Number(modem_id), quantity: 1});
+        }
+
+        /*if (paymentType == 'subscribe' && flexpay_flag == 'yes') {
+            var flexpayUrl = getFlexpayUrl(modem_name);
+            if(flexpayUrl){
+                document.location = flexpayUrl;
+            } else {
+                console.error('Flexpay URL not found for modem: ' + modem_name);
+            }
+        } else {
+            addToCartAndRedirect(item_arr, flexpay_flag);
+        }*/
+      addToCartAndRedirect(item_arr, flexpay_flag);
+    }
+  });
+
+  function getFlexpayUrl(modem_name){
+    var flexpayUrls = {
+        "Nomad Omen": "https://premier.nomadinternet.com/flex-checkout/50",
+        "Nomad Air": "https://premier.nomadinternet.com/flex-checkout/47",
+        "Nomad Raptor": "https://premier.nomadinternet.com/flex-checkout/52"
+    };
+    return flexpayUrls[modem_name];
+  }
+
+  function addToCartAndRedirect(item_arr, flexpay_flag){
+    var service_id = $j('.modem-main.active').attr('data-service') || 'default_service_id';
+    item_arr.items.push({ id: service_id, quantity: 1 });
+    $j('.rr_loader').show();
+    fetch('/cart/clear.js')
+    .then(res => res.json())
+    .then(response => {
+        setTimeout(function(){
+            $j.ajax({
+                url: "/cart/add.js",
+                type: "POST",
+                dataType: "json",
+                data: JSON.stringify(item_arr),
+                contentType: "application/json; charset=utf-8",
+                beforeSend: function() {
+                    $j('.rr_loader').show();
+                },
+                success: function (results) {
+                    updateCartAndRedirect(flexpay_flag);
+                },
+                error: function (errs) {
+                    handleError(errs);
+                }
+            });
+        }, 500);
+    });
+  }
+
+  function updateCartAndRedirect(flexpay_flag){
+    var updateData = {
+        "attributes": { "payg": flexpay_flag === 'yes' ? 'payg' : '' }
+    };
+    setTimeout(function(){
+        fetch('/cart/update.js', {
+            method: "POST",
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+                'Content-Type': 'application/json;'
+            },
+            body: JSON.stringify(updateData)
+        })
+        .then(() => {
+            setTimeout(function(){
+                $j.ajax({
+                    url: "/cart.js",
+                    type: "GET",
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        var discount_code = ''; // Get the discount code if needed
+                        var checkoutUrl = (discount_code === '') ? "/checkout" : "/checkout?discount=" + discount_code;
+                        document.location = checkoutUrl;
+                    },
+                    error: function (er) {
+                        handleError(er);
+                    }
+                });
+            }, 1000);
+        })
+        .catch(err => {
+            handleError(err);
+        });
+    }, 1000);
+  }
+
+  function handleError(err){
+    $j('.rr_loader').hide();
+    console.error('Error:', err);
+    if (err.responseJSON && err.responseJSON.description) {
+        alert(err.responseJSON.description);
+    }
+  }
+
+
+  $j(".product-box-popup-open").click(function() {
+        $j('.product-content').hide();
+        $j(".product-box-popup").addClass("active");
+        $j(".hidden-popup-overlay").addClass("active");
+        var pro_selecter = $j(this).attr('data-product');
+        $j('.'+pro_selecter).show();
+    $j('body').addClass('stopscroll');
+    });
+    $j(".close-popup").click(function() {
+        $j(".product-box-popup").removeClass("active");
+       $j(".hidden-popup-overlay").removeClass("active");
+      $j('body').removeClass('stopscroll');
+    });
+
+  $j('.product-image-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+    });
+
+  $j('.buy_now_product').on('click', function(){
+  var $this = $j(this); // Store the reference to 'this'
+  $j.ajax({
+    type: 'POST',
+    url: '/cart/add.js',
+    data: {
+      quantity: 1,
+      id: $this.attr("data-id") // Use $this instead of $j(this)
+    },
+    dataType: 'json',
+    success: function (data){
+      $this.addClass('added_to_cart'); // Use $this instead of $j(this)
+      $this.text('Added to Cart'); // Use $this instead of $j(this)
+      $j('.add-to-cart-popup').addClass('active');
+      setTimeout(function(){
+         $j('.add-to-cart-popup').removeClass('active');
+      }, 2000);
+    }
+  });
+  });
+
+  $j('.buy-button').on('click', function(){
+  $j.ajax({
+  type: 'POST',
+  url: '/cart/add.js',
+  data: {
+  quantity: 1,
+  id: $j(this).attr("data-id")
+  },
+  dataType: 'json',
+  success: function (data) {
+  document.location = '/checkout';
+  }
+  });
+  });
+
+  $j('.add-to-cart-button').on('click', function(){
+  $j.ajax({
+  type: 'POST',
+  url: '/cart/add.js',
+  data: {
+  quantity: 1,
+  id: $j(this).attr("data-id")
+  },
+  dataType: 'json',
+  success: function (data) {
+  $j('.add-to-cart-popup').addClass('active');
+  setTimeout(function(){
+     $j('.add-to-cart-popup').removeClass('active');
+  }, 2000);
+  }
+  });
+  });
+
+
+  if (window.location.href.indexOf("?omen") > -1) {
+  $j('.coverage_popup').addClass('active');
+  $j('.nomad-omen').addClass('active');
+  }
+
+  if (window.location.href.indexOf("?air") > -1) {
+  $j('.coverage_popup').addClass('active');
+  $j('.nomad-air').addClass('active');
+  }
+
+  $j('.close-button, .coverage_customize').click(function(){
+  $j('.coverage_popup').removeClass('active');
+  });
+
+  $j('.coverage_checkout').click(function(){
+
+  const item_arr = {
+  "items": []
+  };
+  var modem_id = $j('.main_modem .modem-main.active').attr('data-id');
+  var modem_name = $j('.main_modem .modem-main.active').attr('data-modem');
+
+  //var wifi_id = $j('.main_modem .modem-main.active').attr('data-wifi');
+  //var service_id = $j('.main_modem .modem-main.active').attr('data-service');
+  //var plan_id = $j('.plan-main.active').attr('data-id');
+
+  item_arr.items.push({id: modem_id, quantity: 1});
+  //item_arr.items.push({id: service_id, quantity: 1});
+  // const modem_name = $j('.main_modem .modem-main.active').attr('data-modem');
+
+  if (modem_name == 'Nomad Omen') {
+  var service_id = $j('.main_modem .modem-main.active').attr('data-service');
+  item_arr.items.push({ id: service_id, quantity: 1 });
+  }
+
+
+
+  $j.ajax({
+  url: "/cart/add.js",
+  type: "POST",
+  dataType: "json",
+  data: JSON.stringify(item_arr),
+  contentType: "application/json; charset=utf-8",
+  beforeSend: function() {
+  $j('.rr_loader').show();
+  },
+  success: function (results) {
+  setTimeout(function(){
+  $j.ajax({
+  url: "/cart.js",
+  type: "GET",
+  dataType: "json",
+  contentType: "application/json; charset=utf-8",
+  success: function (data) {
+  var cart_token = data.token;
+  if(discount_code == ''){
+  var url = "/checkout";
+  }
+  else{
+  var url = "/checkout?discount=" + discount_code;
+  }
+  document.location = url;
+  $j('.rr_loader').hide();
+  },
+  error: function (er) {
+  console.log(er)
+  }
+  });
+  }, 1000);
+
+  },
+  error: function (errs) {
+  console.log(errs)
+  }
+  });
+
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+  var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          lazyBackgroundObserver.unobserve(entry.target);
+        }
+      });
+    });
+
+    lazyBackgrounds.forEach(function(lazyBackground) {
+      lazyBackgroundObserver.observe(lazyBackground);
+    });
+  }
+
+  // fetch('https://www.tiktok.com/@nomadinternet?')
+  //   .then(response => response.text())
+  //   .then(data => {
+  //     console.log('data = ', data);
+  //       // Parse the HTML response
+  //       let parser = new DOMParser();
+  //       let htmlDoc = parser.parseFromString(data, 'text/html');
+
+  //       // Extract the video data
+  //       let scripts = Array.from(htmlDoc.getElementsByTagName('script'));
+  //       let videoDataScript = scripts.find(script => script.textContent.includes('videoData'));
+  //       let videoData = JSON.parse(videoDataScript.textContent.match(/videoData":(\[.*?\])/)[1]);
+
+  //       console.log(videoData); // Prints array of the user's recent videos
+  //   })
+
+  });
+
+
+  //hide TitTok Popup if under 24hours ///walex
+
+  $j('.text-toggle').click(function(){
+  $j('#toggleCheckbox').trigger('click');
+  });
+
+  $j('#toggleCheckbox').change(function() {
+    if ($j(this).is(':checked')) {
+        $j('.master').show();
+    } else {
+        $j('.master').hide();
+    }
+  });
+
+  function initAutocomplete() {
+    let autocomplete = new google.maps.places.Autocomplete(
+      document.getElementById('autocomplete'), {
+        types: ['address'],
+        fields: ['place_id', 'geometry', 'name', 'address_components']
+    });
+
+    let autocomplete_address = new google.maps.places.Autocomplete(
+      document.getElementById('LEADCF1'), {
+        types: ['address'],
+        fields: ['place_id', 'geometry', 'name', 'address_components']
+    });
+  }
+
+  $j("#Phone").keypress(function(e) {
+    if (e.keyCode > 47 && e.keyCode < 58) {
+      setTimeout(() => {
+        var inputStr = e.target.value.replace(/\D/g,'');
+        var size = inputStr.length;
+        if(size == 0){
+          inputStr = inputStr;
+        }else if(size < 4){
+          inputStr = '('+inputStr;
+        }else if(size < 7){
+          inputStr = '('+inputStr.substring(0,3)+') '+inputStr.substring(3,6);
+        }else{
+          inputStr = '('+inputStr.substring(0,3)+') '+inputStr.substring(3,6)+'-'+inputStr.substring(6,10);
+        }
+
+        $(this).val(inputStr);
+      }, 100);
+    } else {
+      e.preventDefault();
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    let popupOverlay = document.querySelector('.hidden-popup-overlay');
+    const verifyTrigger = document.querySelector('[js-verify-addr-trigger]');
+    if (verifyTrigger) {
+      verifyTrigger.addEventListener('click', function() {
+        const verifyPopup = document.querySelector('[js-verify-popup]');
+        if (verifyPopup) {
+          verifyPopup.classList.add('active');
+          popupOverlay.classList.add('active');
+        }
+      });
+    }
+
+    let addrInputField = document.querySelector('#LEADCF1');
+    if (addrInputField) {
+      addrInputField.addEventListener('keydown', function() {
+        let errorMessage = document.querySelector('[js-coverage-error]');
+        if (errorMessage)
+          errorMessage.style.display = 'none';
+      });
+    }
+
+    const verifyBtn = document.querySelector('[js-verify-address]');
+    verifyBtn.addEventListener('click', function() {
+      const verifyPopup = document.querySelector('[js-verify-popup]');
+      const addrInputField = verifyPopup.querySelector('.addr-input');
+      const verifyError = verifyPopup.querySelector('.error-msg');
+      if (addrInputField.value == '') {
+        verifyError.style.display = 'block';
+      } else {
+        verifyError.style.display = 'none';
+        if (verifyPopup) {
+          verifyPopup.classList.remove('active');
+        }
+        const coveragePopup = document.querySelector('[js-coverage-popup]');
+        if (coveragePopup) {
+          let coverageAddr = coveragePopup.querySelector('#LEADCF1');
+          if (coverageAddr)
+            coverageAddr.value = addrInputField.value;
+          coveragePopup.classList.add('active');
+          popupOverlay.classList.add('active');
+        }
+      }
+    });
+
+    const coverageItems = document.querySelectorAll('[js-coverage-item]');
+    if (coverageItems) {
+      coverageItems.forEach(item => {
+        item.addEventListener('click', function() {
+          coverageItems.forEach(rmItem => {
+            rmItem.classList.remove('active');
+          });
+          item.classList.add('active');
+          const coveragePopup = document.querySelector('[js-coverage-popup]');
+          let whereField = coveragePopup.querySelector('#LEADCF4');
+          if (whereField)
+            whereField.value = item.getAttribute('data-coverage');
+        });
+      });
+    }
+    let coveragePopup = document.querySelector('[js-coverage-popup]');
+    const coverageBtn = document.querySelector('[js-coverage-address]');
+    let verifyCloseBtn = document.querySelector('[js-verify-close]');
+    if (verifyCloseBtn) {
+      verifyCloseBtn.addEventListener('click', function() {
+        let successPopup = document.querySelector('[js-verify-success]');
+        if (successPopup) {
+          successPopup.classList.remove('active');
+          popupOverlay.classList.remove('active');
+        }
+      });
+    }
+    if (coverageBtn) {
+      coverageBtn.addEventListener('click', function() {
+        let addressField = coveragePopup.querySelector('#LEADCF1');
+        let service = new google.maps.places.PlacesService(document.createElement('div'));
+        var a = document.querySelector('#Phone').value;
+        if (a != '') {
+          var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+          let phoneValidate = document.querySelector('[js-phone-validate]');
+          if (!filter.test(a)) {
+            phoneValidate.style.display = 'block';
+            return;
+          } else {
+            phoneValidate.style.display = 'none';
+          }
+        }
+        let request = {
+          query: addressField.value,
+          fields: ['formatted_address', 'geometry']
+        };
+        $j('.rr_loader h2').text('Checking availability');
+        $j('.rr_loader').show();
+
+        service.findPlaceFromQuery(request, function(results, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (let i = 0; i < results.length; i++) {
+              let place = results[i];
+              if (place.formatted_address.includes('USA')) {
+                $j('.rr_loader').hide();
+                let error = coveragePopup.querySelector('[js-coverage-error]');
+                if (error)
+                  error.style.display = 'none';
+                coveragePopup.classList.remove('active');
+                const coverageForm = document.querySelector('#webform5828321000010591009');
+                const formSubmit = coverageForm.querySelector('#formsubmit_zoho');
+                
+
+                if (formSubmit) {
+                  formSubmit.click();
+                }
+                let successPopup = document.querySelector('[js-verify-success]');
+                if (successPopup) {
+                  popupOverlay.classList.add('active');
+                  successPopup.classList.add('active');
+                }
+              } else {
+                $j('.rr_loader').hide();
+                  // console.log('This is not a US address');
+                let error = coveragePopup.querySelector('[js-coverage-error]');
+                error.style.display = 'inherit';
+              }
+            }
+          } else {
+            $j('.rr_loader').hide();
+            let error = coveragePopup.querySelector('[js-coverage-error]');
+            error.style.display = 'inherit';
+          }
+        });
+      });
+    }
+  });
+</script>

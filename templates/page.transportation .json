@@ -1,0 +1,214 @@
+{
+  "sections": {
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "7287ee20-6815-4875-84fb-2216f2eca27a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Transportation_1.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "7287ee20-6815-4875-84fb-2216f2eca27a"
+      ],
+      "settings": {
+        "title": "Nomad Transportation",
+        "description": "<p>Nomad® provides Hi-Speed Wireless internet with No Credit Check! <\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "afaec8ec-e9f6-47ed-846a-31d17c2e9d1d": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>"
+      }
+    },
+    "619637ee-6a12-488a-b200-0b496eff3b32": {
+      "type": "awesome-navigation",
+      "blocks": {
+        "75e6c020-8268-47aa-852e-b40168ed7e35": {
+          "type": "link",
+          "settings": {
+            "text": "Enterprise",
+            "url": "shopify:\/\/pages\/nomad-enterprise"
+          }
+        },
+        "da08d1bb-d7bb-49cf-b5f8-b195bc5862af": {
+          "type": "link",
+          "settings": {
+            "text": "Transportation",
+            "url": "shopify:\/\/pages\/nomad-transportation"
+          }
+        },
+        "7b4d181f-cf2e-44d9-b433-377ea4c031df": {
+          "type": "link",
+          "settings": {
+            "text": "Retail",
+            "url": "shopify:\/\/pages\/nomad-retail"
+          }
+        },
+        "3f50e9a1-6e92-4560-b410-f53f61ccaeed": {
+          "type": "link",
+          "settings": {
+            "text": "WIFI",
+            "url": "shopify:\/\/pages\/nomad-wifi"
+          }
+        }
+      },
+      "block_order": [
+        "75e6c020-8268-47aa-852e-b40168ed7e35",
+        "da08d1bb-d7bb-49cf-b5f8-b195bc5862af",
+        "7b4d181f-cf2e-44d9-b433-377ea4c031df",
+        "3f50e9a1-6e92-4560-b410-f53f61ccaeed"
+      ],
+      "settings": {}
+    },
+    "5e1042d8-e152-46ca-baa6-74950cc97893": {
+      "type": "awesome-section",
+      "blocks": {
+        "97eec92d-1aca-4e3d-bd2a-8b53dc2f368c": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "order now",
+            "url": "shopify:\/\/pages\/preorder",
+            "blank": false,
+            "on_click": ""
+          }
+        },
+        "9ef7dbf1-0101-4564-b098-0f3b68a81323": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Customize",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "97eec92d-1aca-4e3d-bd2a-8b53dc2f368c",
+        "9ef7dbf1-0101-4564-b098-0f3b68a81323"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Transportation_2.jpg",
+        "title_tag": "h2",
+        "title": "Work trailer connectivity",
+        "description": "<h4>Primary connectivity for mobile\/temporary work sites<\/h4><ul><li>The ultimate solution for mobile\/temporary worksites<\/li><li>Stay connected wherever you work with Nomad Internet<\/li><li>Secure & Cost Effective Network Connectivity on the Move<\/li><li>Keep your mobile workforce connected with internet access<\/li><li>Get reliable, fast <a href=\"\/pages\/plans\" title=\"Nomad Internet Plans\">internet anywhere<\/a><\/li><\/ul>"
+      }
+    },
+    "1c855773-d847-467b-92ef-c2745b986403": {
+      "type": "awesome-section",
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Transportation_3.jpg",
+        "title_tag": "h2",
+        "title": "In-vehicle connection",
+        "description": "<h4>Drive up business success with primary in-vehicle connection<\/h4><ul><li>Fast and reliable connection for your car or food truck<\/li><li><a href=\"\/pages\/plans\" title=\"Nomad Internet Plans\">Get connected<\/a>, even on the go!<\/li><li>The best way to stay connected on the go<\/li><li>Drive online with your vehicle and stay connected any time, anywhere<\/li><li>Take your devices with you on the go<\/li><\/ul>"
+      }
+    },
+    "652c4f2e-ffbc-4e25-a837-b1acc47f8913": {
+      "type": "awesome-section",
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Transportation_4.jpg",
+        "title_tag": "h2",
+        "title": "Remote workers",
+        "description": "<h4>Now you can work from anywhere with Nomad Internet<\/h4><ul><li>Instantly access quality <a href=\"\/pages\/plans\" title=\"Nomad Internet Plans\">internet<\/a> wherever life takes you<\/li><li>An Essential Tool for Working from Home or On the Go<\/li><li>Сonnectivity for work from home, remote learning, temp work sites<\/li><li>Get the Best Connection – Anywhere and Everywhere<\/li><li>Upgrade your remote work experience with Nomad Internet<\/li><\/ul>"
+      }
+    },
+    "2ef2b6f6-3f3e-4f40-900c-f06264255654": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 40,
+        "border-radius": 0,
+        "html": "<div class=\"text-center\">\n<a href=\"\/pages\/plans\" class=\"btn outline lg\">Choose a Plan<\/a>\n<\/div>"
+      }
+    },
+    "d1ebf576-d0cc-4648-a20e-7c5401698ca5": {
+      "type": "lp-20",
+      "blocks": {
+        "07a7a3e7-9104-4732-a105-7542c2caef98": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Zelda_Douglas.jpg",
+            "name": "Zelda Douglas",
+            "text": "As a remote worker living in a rural area of New Hampshire, having access to reliable, high-speed internet is essential. I recently upgraded my home connection with a Nomad Air Modem and couldn’t be happier! With the Nomad Air Modem, I'm able to stay connected to the digital world faster and more reliably than ever before. The setup was easy and affordable - it's changed the way I work at home for the better. Highly recommend it if you're looking to upgrade your internet connection in a rural area!",
+            "link": ""
+          }
+        },
+        "72eff92d-dc45-47aa-98ec-6b00571c77cd": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Liv_Simmons.jpg",
+            "name": "Liv Simmons",
+            "text": "I recently switched to Nomad Internet for my rural home in New Jersey, and I've been very impressed. The high speed connection allows me to work remotely with ease, and the reliable connection ensures that my work won't be interrupted. I chose the Nomad Air modem, which was easy to set up and offers strong coverage throughout the state - perfect for traveling nomads! I'm very pleased with this product and would highly recommend it for anyone in need of a fast, dependable internet connection.",
+            "link": ""
+          }
+        },
+        "900904f1-26e3-41c7-976c-23e0e124d970": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Bridget_Abbot.jpg",
+            "name": "Bridget Abbott",
+            "text": "I've been using the Nomad Internet service for travel across New York State and I'm really pleased with it. It's fast, reliable, and has great coverage even in rural areas. I have the Nomad Air modem, but they also offer the Nomad Raptor and Nomad Ark. All three modems provide great speeds whether you're in a big city or a small town so you'll always be connected. And with the latest security protocols, you can rest easy knowing your data is safe. I definitely recommend Nomad internet to anyone looking for high-speed internet while on the go!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "07a7a3e7-9104-4732-a105-7542c2caef98",
+        "72eff92d-dc45-47aa-98ec-6b00571c77cd",
+        "900904f1-26e3-41c7-976c-23e0e124d970"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "9151d1f0-77ff-4ed5-8a1a-d2f4bc24cd74": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "awesome-first-screen",
+    "afaec8ec-e9f6-47ed-846a-31d17c2e9d1d",
+    "619637ee-6a12-488a-b200-0b496eff3b32",
+    "5e1042d8-e152-46ca-baa6-74950cc97893",
+    "1c855773-d847-467b-92ef-c2745b986403",
+    "652c4f2e-ffbc-4e25-a837-b1acc47f8913",
+    "2ef2b6f6-3f3e-4f40-900c-f06264255654",
+    "d1ebf576-d0cc-4648-a20e-7c5401698ca5",
+    "9151d1f0-77ff-4ed5-8a1a-d2f4bc24cd74"
+  ]
+}

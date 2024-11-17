@@ -1,0 +1,165 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+{% assign ss = section.settings %}
+
+<div class="lp-13">
+	<div class="row v-gutters">
+		<div class="col-xl-4 col-12">
+			<div class="lp-13__banner" style="background-image: url({{ ss.image | image_url }})">
+				{% if ss.title %}
+					<span class="banner__title">{{ ss.title }}</span>
+				{% endif %}
+				{% if ss.content %}
+					<div class="banner__content">{{ ss.content }}</div>
+				{% endif %}
+				{% if ss.button_text %}
+					<div class="text-xl-center">
+						<a href="{{ ss.button_url }}" id="button-{{ section.id }}" class="btn lg orange">{{ ss.button_text }}</a>
+					</div>
+				{% endif %}
+			</div>
+		</div>
+
+		<div class="col-xl-8 col-12">
+			<div class="row v-gutters">
+				{% if section.blocks %}
+					<div class="col-12 hidden-sm-d">
+						<div class="swiper lp-13__swiper">
+							<div class="swiper-wrapper">
+								{% for block in section.blocks %}
+									{% if block.settings.image %}
+										<div class="swiper-slide">
+											{% if block.settings.url %}
+												<a href="{{ block.settings.url }}" class="swiper-link" id="link-{{ block.id }}">
+													<span class="sr-only">Learn More</span>
+												</a>
+											{% endif %}
+											<div class="swiper-image">
+												{% assign img = block.settings.image %}
+												<div class="ratio" style="--ratio: calc(581 / 1468 * 100%)">
+													{{ img | image_url: width: img.width | image_tag }}
+												</div>
+											</div>
+										</div>
+									{% endif %}
+								{% endfor %}
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				{% endif %}
+
+				<div class="col-12">
+					<div class="lp-13__form" style="background-image: url({{ ss.form_image | image_url }})">
+						<div class="form__content">
+							{% if ss.form_title %}
+								<span class="form__title">{{ ss.form_title }}</span>
+							{% endif %}
+							{% if ss.form_description %}
+								<div class="form__description">
+									<p>{{ ss.form_description }}</p>
+								</div>
+							{% endif %}
+						</div>
+						{% form 'contact' %}
+							{{ form.errors | default_errors }}
+
+							<label class="input-wrapper">
+								<span class="sr-only">Email</span>
+								<input type="email" name="contact[email]" placeholder="EMAIL" required>
+							</label>
+
+							<label class="input-wrapper">
+								<span class="sr-only">ZIP CODE</span>
+								<input type="text" name="contact[zip_code]" placeholder="ZIP CODE" required>
+							</label>
+
+							<textarea class="sr-only" name="contact[body]">What is the best connection option for me?</textarea>
+
+							<button type="submit" class="btn lg red wide" id="form-button-{{ section.id }}">Keep Me Posted</button>
+						{% endform %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-13",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 13"
+    }
+	],
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Image"
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "richtext",
+			"id": "content",
+			"label": "Content"
+		},
+		{
+			"type": "text",
+			"id": "button_text",
+			"label": "Button Text"
+		},
+		{
+			"type": "url",
+			"id": "button_url",
+			"label": "Button URL"
+		},
+		{
+			"type": "image_picker",
+			"id": "form_image",
+			"label": "Form Image"
+		},
+		{
+			"type": "text",
+			"id": "form_title",
+			"label": "Form Title"
+		},
+		{
+			"type": "richtext",
+			"id": "form_description",
+			"label": "Form Description"
+		}
+	],
+	"blocks": [
+		{
+			"type": "slide",
+			"name": "Slide",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "url",
+					"id": "url",
+					"label": "URL"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

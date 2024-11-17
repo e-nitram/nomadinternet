@@ -1,0 +1,372 @@
+<section class="home-slider">
+  <div id="carouselExampleSlidesOnly" class="carousel section_overlay slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="overlay"></div>
+        {% render 'image' with imageSrc: 'home-slider-1-min.jpg', isAsset: 'true', classes: 'img-fluid w-100', altTag: 'First slide' %}
+      </div>
+      <div class="carousel-item">
+        <div class="overlay"></div>
+        {% render 'image' with imageSrc: 'home-slider-2-min.jpg', isAsset: 'true', classes: 'img-fluid w-100', altTag: 'Second slide' %}
+      </div>
+      <div class="carousel-item">
+        <div class="overlay"></div>
+        {% render 'image' with imageSrc: 'netflix-slider-min.jpg', isAsset: 'true', classes: 'img-fluid w-100', altTag: 'Third slide' %}
+      </div>
+      <div class="carousel-item">
+        <div class="overlay"></div>
+        {% render 'image' with imageSrc: 'forest-slider-min.jpg', isAsset: 'true', classes: 'img-fluid w-100', altTag: 'Fourth slide' %}
+      </div>
+    </div>
+  </div>
+  <div class="carousel-caption">
+    <h1 class="mb-5">The Leading Wireless High-Speed Internet<br/>
+      For Rural & Traveling Nomads.</h1>
+    <h2 class="subhead mb-5 mb-md-8"><span class="text-primary" style="font-weight: bold;">Join</span> over 10,000 Customers. The <span class="text-primary" style="font-weight: bold;">Largest</span> and <span class="text-primary" style="font-weight: bold;">Best</span> Rural Coverage.</h2>
+    <div class="text-center"> <a href="/pages/plans#wizard-plans" class="btn btn-primary rounded">VIEW PRICING <i class="fas fa-angle-right"></i></a> </div>
+  </div>
+</section>
+<section id="review-about" class="section-review-about mt-5">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <h2 class="title">Reviews About Us.</h2>
+    </div>
+    <div class="row">
+      <div class="col col-12 col-sm-12 col-md-4">
+        <a target="_blank" href="https://www.facebook.com/nomadinternet">
+          <div class="reviews-about-card facebook-review">
+            <label class="label">{% render 'image' with imageSrc: '2x-facebook-badge.png', isAsset: 'true', classes: 'img-fluid icon-badges', altTag: 'Facebook Badge' %} FACEBOOK</label>
+            <h3 class="count">4/5</h3>
+            <ul class="list-unstyled list-rating">
+              <li class="active"><i class="fas fa-star"></i></li>
+              <li class="active"><i class="fas fa-star"></i></li>
+              <li class="active"><i class="fas fa-star"></i></li>
+              <li class="active"><i class="fas fa-star"></i></li>
+              <li class=""><i class="fas fa-star"></i></li>
+            </ul>
+            <p class="description">Stars as rated by facebook</p>
+          </div>
+        </a>
+      </div>
+      
+      {% comment %}
+      <!--
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-3">
+         
+          <div class="reviews-about-card instagram-review">
+            <label class="label"><img class="img-fluid icon-badges" src="{{ '2x-instagram-badge.png' | asset_url}}" alt="Instagram Badge" />  INSTAGRAM</label>
+            <h3 class="count">1.2m</h3>
+            <ul class="list-unstyled list-rating">
+              <li class="active"><i class="fas fa-heart"></i></li>
+              <li class="active"><i class="fas fa-heart"></i></li>
+              <li class="active"><i class="fas fa-heart"></i></li>
+              <li class="active"><i class="fas fa-heart"></i></li>
+              <li class="active"><i class="fas fa-heart"></i></li>
+            </ul>
+            <p class="description">Trusted by over 1.2 million followers</p>
+          </div>
+         
+      </div>
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-3">
+         
+          <div class="reviews-about-card twitter-review">
+            <label class="label"><img class="img-fluid icon-badges" src="{{ '2x-twitter-badge.png' | asset_url}}" alt="Twitter Badge" /> TWITTER</label>
+            <h3 class="count">85K</h3>
+            <ul class="list-unstyled list-rating">
+              <li class="active"><i class="fas fa-heart"></i></li>
+              <li class="active"><i class="fas fa-heart"></i></li>
+              <li class="active"><i class="fas fa-heart"></i></li>
+              <li class="active"><i class="fas fa-heart"></i></li>
+              <li class="active"><i class="fas fa-heart"></i></li>
+            </ul>
+            <p class="description">Over 85k followers</p>
+          </div>
+        
+      </div>
+-->
+      {% endcomment %}
+      
+      <div class="col col-12 col-sm-12 col-md-4">
+        <a target="_blank" href="https://www.google.com/search?hl=en-IN&gl=in&q=Nomad+Internet,+8210+N+Interstate+35+Frontage+Rd,+New+Braunfels,+TX+78130,+United+States&ludocid=12350848266427894875&lsig=AB86z5XQlZX3OobS-VHK7OVTT7Q1#lrd=0x865c5f44de9c4483:0xab67070f8b2f0c5b,1">
+          <div class="reviews-about-card google-review">
+            <label class="label">{% render 'image' with imageSrc: '2x-google-badge.png', isAsset: 'true', classes: 'img-fluid icon-badges', altTag: 'Google Badge' %} GOOGLE</label>
+            <h3 class="count">4.1</h3>
+            <ul class="list-unstyled list-rating">
+              <li class="active"><i class="fas fa-star"></i></li>
+              <li class="active"><i class="fas fa-star"></i></li>
+              <li class="active"><i class="fas fa-star"></i></li>
+              <li class="active"><i class="fas fa-star"></i></li>
+              <li class=""><i class="fas fa-star"></i></li>
+            </ul>
+            <p class="description">Google average rating</p>
+          </div>
+        </a>
+      </div>
+      <div class="col col-12 col-sm-12 col-md-4">
+       <div class="wpb_raw_code wpb_content_element wpb_raw_html mb-5 mb-lg-0 mb-xl-0">
+        <div class="wpb_wrapper">
+          <a href="https://www.google.com/maps/place/Nomad+Internet/@29.7864085,-98.0306115,17z/data=!3m1!4b1!4m10!1m2!2m1!1snomad+internet!3m6!1s0x865c5f44de9c4483:0xab67070f8b2f0c5b!8m2!3d29.7864039!4d-98.0284228!9m1!1b1" target="_blank" rel="nofollow">
+            <img style="border: 0;" alt="Nomad Internet BBB Business Review" 
+             data-src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Google_Customer_Reviews_Bigcommerce.PNG" 
+             class=" ls-is-cached lazyloaded"
+             src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Google_Customer_Reviews_Bigcommerce.PNG"
+             loading="lazy">
+          </a>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="how-it-works" class="section-how-it-work">
+  <div class="container">
+  <div class="row align-items-center">
+    <div class="col-12 col-lg-6">
+      <div class="section-title mb-5 info-card p-3">
+        <h2 class="title mb-4">How Nomad Works.</h2>
+        <p>When you join Nomad Internet, you become part of our connected community that works to get you online, and keep you online, with fast, reliable, wireless data.</p>
+        <p>Nomad Internet provides Internet that is made for those that live in rural communities and/or those that are on the go! We know connecting in these areas can be difficult, so we’re here to help find the right plan for you.</p>
+        <p>By working together with the major carrier networks in the USA to combine the latest 4G LTE cellular technology with the Provider’s service, Nomad offers the advantages of a major Internet provider without the contract! </p>
+      	<ul class="list-unstyled row mt-5">
+        	<li class="col-md-6 d-flex"><i class="fas fa-check"></i> High-Speed 4G LTE</li>
+        	<li class="col-md-6 d-flex"><i class="fas fa-check"></i> No Contract</li>
+        	<li class="col-md-6 d-flex"><i class="fas fa-check"></i> Up to Unlimited Data</li>
+        	<li class="col-md-6 d-flex"><i class="fas fa-check"></i> No Credit Check</li>
+        	<li class="col-md-6 d-flex"><i class="fas fa-check"></i> Home & On-The-Go</li>
+        	<li class="col-md-6 d-flex"><i class="fas fa-check"></i> 7-Day No Risk</li>
+      	</ul>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="info-card d-sm-flex">
+        <div class="mr-3"><i class="fas fa-signal"></i></div>
+        <div>
+          <h4>CELLULAR TOWERS</h4>
+		  <p>We offer membership options with each of the major carrier networks in the USA. View our <a href="#" class="">Membership Plans</a> to find out which network has the best coverage for you!</p>
+        </div>
+      </div>
+      <div class="info-card d-sm-flex">
+        <div class="mr-3"> <i class="fas fa-wifi"></i></div>
+        <div>
+          <h4>HOTSPOTS & ROUTERS</h4>
+          <p>Our Nomad Internet devices connect to the closest cellular towers to provide the device its LTE data connection. Proximity to a tower may affect service speeds and connection availability.</p>
+        </div>
+      </div>
+      <div class="info-card d-sm-flex">
+        <div class="mr-3"> <i class="fas fa-home"></i></div>
+        <div>
+          <h4>CONNECTED HOME</h4>
+          <p>Our devices broadcast a high-speed Wi-Fi signal to all your home and office devices. Laptops, smart TV’s, gaming consoles - Nomad’s got you connected!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-how-we-do">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col col-12 col-sm-12 col-lg-6 d-none d-lg-block">
+        {% render 'image' with imageSrc: 'how-we-do.jpg', classes: 'img-fluid rounded', altTag: 'How we do', isAsset: 'true' %}
+      </div>
+      <div class="col col-12 col-sm-12 col-lg-6">
+        <div class="section-title">
+          <h2 class="title mb-5">How We Do It.</h2>
+          <p>When you join Nomad Internet, you become part of our connected community that works to get you online and keep you online with fast, reliable, wireless data.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-internet-every-where">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <h2 class="title mb-3">Internet for every area</h2>
+      <p>High-Speed Internet that can be used at home and on the road. <br>
+        Nomad Internet works anywhere there is network coverage.</p>
+    </div>
+    <div class="d-lg-flex align-items-center border rounded pt-3 pb-3">
+      <div class="col-12 col-lg-6">
+        <div class="col-lg-8"><span class="small d-block">Connect</span>
+          <h3 class="mt-3 mb-3" style="color:#000; font-weight:100">Get the internet that’s right for you</h3>
+          <p> Nomad Internet's plans allow us to offer you High-Speed Internet virtually anywhere you need it.</p>
+          <a href="/pages/plans#wizard-plans" class="btn btn-primary rounded mt-2 text-uppercase">Find your plan</a>
+          <hr class="mt-5 mb-5">
+          <h4 class="text-uppercase" style="color:#000; font-size:0.875rem; font-weight:700">Internet starts at</h4>
+          <sub style="font-size:18px; color:#000">$</sub><span style="font-size:3rem; font-weight:700; color:#000; line-height: 1; vertical-align: middle;">129</span><sub style="font-size:18px; color:#000">/mo</sub>
+          <p class="small" style="font-size:12px">+ <span style="color:#000">$149.00</span> One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 text-center">{% render 'image' with imageSrc: 'internet-every-where.jpg', classes: 'img-fluid rounded', altTag: 'Internet Everywhere', isAsset: 'true' %}</div>
+    </div>
+  </div>
+</section>
+<section id="review_section" class="section-review">
+  <div class="container">
+    <div class="review-icon text-center"> <i class="fas fa-quote-left" style="color:#0F9E59"></i> </div>
+    <div class="review-slider">
+      <div class="review-carousel col-md-9 mx-auto owl-carousel">
+        <div class="review-item">
+          <p>We live in an rv park where nomad provides services. They offer free and paid plans. Their free plan is more than enough for my needs. Their paid plans offer a private connection and faster speeds and many of my friends here use it and are happy. Since I only use the computer for basic needs, I have not found a paid plan necessary. Service is quite reliable.</p>
+          <span class="review-author">Francis Arnold</span> </div>
+        <div class="review-item">
+          <p>Called customer service with an issue and had my problem fixed in under 10 minutes. Turns out, I needed to upgrade my browser. The agent explained how to upgrade and had my wifi working on my very old laptop in no time. Nomad’s the best!</p>
+          <span class="review-author">James Bruce</span> </div>
+        <div class="review-item">
+          <p>Very knowledgeable and excellent communication. I have travelled around the country and stayed at many RV Parks, resorts and campgrounds. Nomad is by far the best that I have come across. I work from my RV, so it’s very important I have a strong and reliable connection. Going forward, I only want to stay at parks that offer Nomad.</p>
+          <span class="review-author">Brian Daniel</span> </div>
+        <div class="review-item">
+          <p>Reliable and fast. Pleasantly surprised considering most other RV parks I’ve been to have wifi with dial-up like speeds at best. This company has restored my hope for outdoor wifi.</p>
+          <span class="review-author">Curt Barajas</span> </div>
+        <div class="review-item">
+          <p>The staff at Nomad Internet truly go above and beyond. They were out here working on some of their equipment. I saw them working and came out to see if they could help me get my devices connected. David not only got my phone and tablet online for me, but also my Roku. I’m pretty old school and don’t know a lot about technology, but he was extremely helpful, professional and patient. Nomad Internet is a real class act and the real deal.</p>
+          <span class="review-author">Rita Leon</span> </div>
+        <div class="review-item">
+          <p>Our installer was not only prompt but very polite and professional. He completed the install for our park in 1-day and answered all questions that we had. So far, I couldn’t be happier with the service!</p>
+          <span class="review-author">Shawn Pollock</span> </div>
+        <div class="review-item">
+          <p>I highly recommend Nomad Internet! As a traveling entrepreneur, it is of utmost importance I have access to quality WiFi services to continue my work. I stayed at a resort in Aransas Pass where Nomad provides services. I was having some trouble connecting my tv so I contacted their support line for help. The nice rep was able to get my tv connected in under 5 minutes. Super helpful and super friendly. I was even able to make a voice call using their WiFi! Two ‘thumbs up’ and I would give them 10 stars if I could!</p>
+          <span class="review-author">Thurstan Deblaquiere</span> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-unlimited">
+  <div class="container">
+    <div class="col-md-10 mx-auto">
+      <div class="section-title text-center">
+        <h2 class="title text-black mb-4">"Phone Data" Is Not <br/>
+          "Home Data".</h2>
+      </div>
+      <p class="text-black">The ‘unlimited’ phone plans that carriers normally offer are ‘unlimited’ only for data used just on your phone. Instead, Nomad Internet is specifically designed to provide up to unlimited Wi-Fi for EVERY connected device in your home or office including laptops, smart TVs, gaming consoles and other Wi-Fi connected devices!</p>
+      <small class="text-muted">*Nomad Internet makes a best effort to provide up to unlimited data, but data limitations, speeds, and availability may vary based on the discretion of the providing network. See our Terms of Service for complete information.</small>
+    </div>
+    <div class="col-md-10 mx-auto">
+      <ul class="list-unstyled row mt-5">
+        <li class="col-lg-6 mb-4"><span class="d-flex p-2 border rounded"><i class="fas fa-check mr-2 d-flex align-items-center justify-content-center rounded-circle" style="background: rgba(54, 179, 126, 0.2);color: rgba(54, 179, 126, 1);width:30px; height:28px;"></i> <span class="text-black font-weight">Wi-Fi for EVERY connected device</span></span></li>
+        <li class="col-lg-6 mb-4"><span class="d-flex p-2 border rounded"><i class="fas fa-check mr-2 d-flex align-items-center justify-content-center rounded-circle" style="background: rgba(54, 179, 126, 0.2);color: rgba(54, 179, 126, 1);width:30px; height:28px;"></i> <span class="text-black font-weight">7 Day, No risk, Money Back Guarantee</span></span></li>
+        <li class="col-md-6 mb-4"><span class="d-flex p-2 border rounded"><i class="fas fa-check mr-2 d-flex align-items-center justify-content-center rounded-circle" style="background: rgba(54, 179, 126, 0.2);color: rgba(54, 179, 126, 1);width:30px; height:28px;"></i> <span class="text-black font-weight">Human Support</span></span></li>
+        <li class="col-md-6 mb-4"><span class="d-flex p-2 border rounded"><i class="fas fa-check mr-2 d-flex align-items-center justify-content-center rounded-circle" style="background: rgba(54, 179, 126, 0.2);color: rgba(54, 179, 126, 1);width:30px; height:28px;"></i> <span class="text-black font-weight">High-Speed Internet</span></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section-guarantee">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2 class="title mb-4">7 Day, No Risk, Money-Back Guarantee.</h2>
+    </div>
+    <p>‘High-Speed internet that works anywhere you live and travel’ sounds too good to be true?<br>
+      Try it risk-free and see for yourself.</p>
+  </div>
+</section>
+<section class="section-answers">
+  <div class="container">
+    <div class="about-nomad rounded" style="background:#fff">
+      <div class="row p-5 justify-content-evenly">
+        <div class="col-md-3">{% render 'image' with imageSrc: 'home-logo.png', classes: 'img-fluid', altTag: 'Logo', isAsset: 'true' %}</div>
+        <div class="col-md-6">
+          <div class="section-title">
+            <h2 class="title mb-4">Nomad Internet provides the advantages of all major Internet providers with a single plan.</h2>
+            <p>We leverage data plans with major carriers, then provide the use of our Wi-Fi and Hotspots virtually anywhere you are.</p>
+            <a href="/pages/plans#wizard-plans" style="color:#0F9E59">View Pricing <i class="fas fa-chevron-right"></i></a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mr-0 ml-0 answers-row">
+      <div class="col col-12 col-sm-12 col-lg-6">
+        <div class="answers-group row"> <i class="fas fa-long-arrow-alt-right d-flex align-items-center justify-content-center rounded-circle" style="background: #0F9E59;color: #fff;width: 32px;height: 32px;"></i>
+          <div class="col-10">
+            <h4 class="title">IS ALL OF THIS FOR REAL? THIS SEEMS TOO GOOD TO BE TRUE!</h4>
+            <p>YES we are for real! We started the Nomad Internet Community years ago to provide flat-rate, affordable internet access to individuals who do not have access to traditional high-speed internet options and suffer from extreme overage charges.</p>
+            <p class="more-text" style="display: none;">Our community of members benefit from our ‘on the go’ plans/devices which they are able to utilize during their membership. Our mission is to connect the unconnected.</p>
+            <a href="javascript:;" class="more-text__link"> More</a></div>
+        </div>
+      </div>
+      <div class="col col-12 col-sm-12 col-lg-6">
+        <div class="answers-group row"> <i class="fas fa-long-arrow-alt-right d-flex align-items-center justify-content-center rounded-circle" style="background: #0F9E59;color: #fff;width: 32px;height: 32px;"></i>
+          <div class="col-10">
+            <h4 class="title">DO I HAVE TO SIGN A CONTRACT? CREDIT CHECK? ARE THESE REALLY MONTH-TO-MONTH PLANS?</h4>
+            <p>All of our plans require no contract, and no credit checks! Yes, these are month to month plans. Each payment pre-pays for your next 30 days of membership. You may of course cancel your subscription with us at anytime</p>
+            <p class="more-text" style="display: none;">by simply returning your device to Nomad Internet. Monthly charges will continue until the device has been received. Additionally, our 7-Day Money Back Guarantee allows you to try our service at No Risk! If the service does not meet your needs in any way, simply return the device for a complete refund of your entire order!</p>
+            <a href="javascript:;" class="more-text__link">More</a></div>
+        </div>
+      </div>
+      <div class="col col-12 col-sm-12 col-lg-6">
+        <div class="answers-group row"> <i class="fas fa-long-arrow-alt-right d-flex align-items-center justify-content-center rounded-circle" style="background: #0F9E59;color: #fff;width: 32px;height: 32px;"></i>
+          <div class="col-10">
+            <h4 class="title">HOW IS THIS DIFFERENT FROM MY PHONE PLAN?</h4>
+            <p>The phone plans that carriers normally offer are for data used just on your phone. Instead, Nomad Internet is specifically designed to provide High-Speed Wi-Fi for</p>
+            <p class="more-text" style="display: none;">EVERY connected device in your home or office including laptops, smart TVs, gaming consoles and other Wi-Fi connected devices</p>
+            <a href="javascript:;" class="more-text__link"> More</a> </div>
+        </div>
+      </div>
+      <div class="col col-12 col-sm-12 col-lg-6">
+        <div class="answers-group row"> <i class="fas fa-long-arrow-alt-right d-flex align-items-center justify-content-center rounded-circle" style="background: #0F9E59;color: #fff;width: 32px;height: 32px;"></i>
+          <div class="col-10">
+            <h4 class="title">WHICH PLAN IS BEST FOR ME?</h4>
+            <p>Each color represents one of the major cellular carrier networks. Therefore, the primary difference between each plan is the coverage each network provides. View each of our plan’s coverage to identify which is most</p>
+            <p class="more-text" style="display: none;">likely to work at your usage location(s). For help with selecting a plan, visit the <a href="/pages/help-me-choose">Help Me Choose</a> page for detailed step-by-step instructions.</p>
+            <a href="javascript:;" class="more-text__link"> More</a> </div>
+        </div>
+      </div>
+      <div class="col col-12 col-sm-12 col-lg-6">
+        <div class="answers-group row"> <i class="fas fa-long-arrow-alt-right d-flex align-items-center justify-content-center rounded-circle" style="background: #0F9E59;color: #fff;width: 32px;height: 32px;"></i>
+          <div class="col-10">
+            <h4 class="title">WHICH DEVICE IS RIGHT FOR ME?</h4>
+            <p>The two main devices types that we offer are hotspots and routers. Routers are best for most home/office setups, as they provide far superior range and connectivity, while hotspots provide a battery powered solution to take your WIFI on the go. All of our devices ship pre-configured and plug-and-play, which means setup is simply connecting the power cable to the wall…</p>
+            <p class="more-text" style="display: none;">so you can spend less time setting-up and more time surfing the web! Goodbye invasive installs. Hello Nomad Internet. Please note that the devices displayed on our site are only for illustration purposes. The device you receive might differ, as we change the router we use based on what works best in your area.</p>
+            <a href="javascript:;" class="more-text__link">More</a></div>
+        </div>
+      </div>
+      <div class="col col-12 col-sm-12 col-lg-6">
+        <div class="answers-group row"> <i class="fas fa-long-arrow-alt-right d-flex align-items-center justify-content-center rounded-circle" style="background: #0F9E59;color: #fff;width: 32px;height: 32px;"></i>
+          <div class="col-10">
+            <h4 class="title">WHAT HAPPENS IF WHAT I CHOOSE DOESN’T WORK?</h4>
+            <p>If the plan you initially choose does not connect or is slower than expected, this most likely means a lack of LTE coverage/reception at your location, or less commonly, the cellular tower your device is connecting to is either using</p>
+            <p class="more-text" style="display: none;">outdated antennas or is congested from high usage in your area. Regardless of the reason, our 7-Day No Risk Return Policy has you completely covered. Simply return your device for a 100% Refund and let us help you choose another plan that’s best for you!</p>
+            <a href="javascript:;" class="more-text__link">More</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="section-title text-center mt-5 pt-5">
+        <h2 class="title text-white">Join the Nomad Internet Community Today</h2>
+        <p class="text-white">‘High-Speed internet that works anywhere you live and travel’ sounds too good to be true?<br>
+          Try it risk-free and see for yourself.</p>
+      </div>
+    </div>
+    <div class="text-center mt-4 mb-3"> <a href="/pages/plans#wizard-plans" class="btn rounded btn-primary mt-4 mb-4">View Pricing</a>
+      <p style="font-size:14px; color:rgba(255,255,255,.7)">Join over 10,000 Customers. The Largest and Best Rural Coverage.</p>
+    </div>
+  </div>
+</section>
+<style>
+  .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.3;
+  }
+  .carousel-item{
+    position: relative;
+  }
+</style>
+<div class="modal fade modal-theme modal-fee" tabindex="-1" role="dialog" id="fee_modal" aria-hidden="true">
+  <button class="close" data-dismiss="modal" title="Close">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg>
+  </button>
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-fee__content">
+          <h2 class="title">One Time Membership Fee</h2>
+          <p>When becoming a member you are responsible for paying for your first month of service as well as a One-Time Membership Fee that covers the administration and support of your account. Therefore, you are the owner of the membership but you don’t own the device or the carrier account your line is on.</p>
+          <p>You may of course cancel your subscription with us at anytime by simply returning your device and we never charge any cancellation fees! Easy, Simple, Clean!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

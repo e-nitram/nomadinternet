@@ -1,0 +1,93 @@
+.multicolumns {
+  padding: 48px 20px;
+}
+
+.multicolumns .title {
+  font-size: 30px;
+  line-height: 1.4;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.multicolumns .list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+}
+
+.multicolumns .list .item {
+  box-shadow: 1px 6px 4px 0px #0000000F;
+  border-radius: 20px;
+  border: 1px solid #DADADA80;
+}
+
+.multicolumns .list .item img {
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.multicolumns .item .wrapper {
+  padding: 20px;
+}
+
+.multicolumns .wrapper .sub-heading {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #27AE61;
+  margin-bottom: 8px;
+}
+
+.multicolumns .wrapper .heading {
+  font-size: 24px;
+  color: #141414;
+  font-weight: 700;
+  line-height: 27.6px;
+  margin-bottom: 8px;
+}
+
+.multicolumns .wrapper .content {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #424242;
+  margin-bottom: 10px;
+}
+
+.multicolumns .wrapper .content * {
+  margin: 0;
+}
+
+.multicolumns .wrapper .button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #27AE61;
+  text-decoration: underline;
+}
+
+@media (min-width: 750px) {
+  .multicolumns {
+    padding: 64px 10px;
+  }
+
+  .multicolumns .title {
+    font-size: 36px;
+    line-height: 46.8px;
+    max-width: 600px;
+    margin-bottom: 48px;
+  }
+
+  .multicolumns .list {
+    grid-template-columns: repeat(var(--grid-count), 1fr);
+    gap: 40px;
+  }
+}

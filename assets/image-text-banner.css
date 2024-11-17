@@ -1,0 +1,126 @@
+.image-text-banner {
+
+}
+
+.image-text-banner__wrapper {
+  position: relative;
+}
+
+.image-text-banner__gradient {
+  background: linear-gradient(to right, #000000d9, #00000061);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.image-text-banner__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.image-text-banner__content .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.image-text-banner__content .container img {
+  width: 220px;
+}
+
+.image-text-banner__content .container .heading {
+  font-size: 32px;
+  font-family: 'DIN';
+  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.image-text-banner__content .container .desc {
+  margin-bottom: 16px;
+}
+
+.image-text-banner__content .container .desc * {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color);
+  font-family: 'DIN';
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.image-text-banner__content .container .desc *:last-of-type {
+  margin-bottom: 0;
+}
+
+.image-text-banner__content .banner_contact span {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.image-text-banner__content .banner_contact span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.image-text-banner__content .banner_contact {
+  margin-top: 16px;
+}
+
+.image-text-banner__content .banner_contact em {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .image-text-banner__content .container {
+    flex-direction: row;
+  }
+
+  .image-text-banner__content .container .content--right {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 767px) {
+  .image-text-banner__content .container img {
+    order: 1;
+  }
+
+  .image-text-banner__content .container .content--right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-text-banner__content .container .content--right .banner_contact {
+    display: inline;
+  }
+
+  .image-text-banner__content .container .content--right .banner_contact span,
+  .image-text-banner__content .container .content--right .banner_contact svg
+   {
+    display: inline-block;
+  }
+
+  .image-text-banner__bg .hidden-md-u {
+    min-height: 750px;
+  }
+}

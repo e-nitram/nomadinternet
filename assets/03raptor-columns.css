@@ -1,0 +1,128 @@
+.raptor-columns {
+  padding: 60px 24px;
+  background-color: #000;
+  color: #fff;
+}
+
+.raptor-columns .container {
+  text-align: center;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.raptor-columns .container .sub-heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.97px;
+  font-family: "Rajdhani";
+  margin-bottom: 12px;
+  color: #00b589;
+  text-transform: uppercase;
+}
+
+.raptor-columns .container .heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  font-family: "Rajdhani";
+  margin: 0;
+  margin-bottom: 50px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.raptor-columns .grid-list {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+.raptor-columns .grid-list .item .title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  font-family: "DIN";
+  margin: 18px 0;
+  text-transform: uppercase;
+}
+
+.raptor-columns .grid-list .item .title.is-desktop {
+  display: none;
+}
+.raptor-columns .grid-list .item .title.is-mobile {
+  display: block;
+}
+
+.raptor-columns .grid-list .item .content {
+  font-family: "DIN";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  letter-spacing: 0.02em;
+  opacity: 0.8;
+}
+
+.raptor-columns .grid-list .item .content * {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.raptor-columns .grid-list .item .content *:last-of-type {
+  margin-bottom: 0;
+}
+
+.raptor-columns .grid-list .item {
+  background: #1D1D1D;
+  padding: 24px;
+  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .raptor-columns .grid-list .item .title.is-desktop {
+    display: block;
+  }
+  .raptor-columns .grid-list .item .title.is-mobile {
+    display: none;
+  }
+
+  .raptor-columns {
+    padding: 80px 0;
+  }
+
+  .raptor-columns .container .sub-heading {
+    font-size: 20px;
+    line-height: 26.52px;
+  }
+  
+  .raptor-columns .container .heading {
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 950px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .raptor-columns .grid-list {
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px;
+  }
+
+  .raptor-columns .grid-list .item .title {
+    font-size: 32px;
+    line-height: 44.8px;
+    max-width: 85%;
+    margin: 18px 0;
+  }
+
+  .raptor-columns .grid-list .item .content {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  .raptor-columns .grid-list .item {
+    padding: 40px;
+  }
+}

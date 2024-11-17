@@ -1,0 +1,26 @@
+<div class="container">
+<div class="page_content">
+    <a class="testing btn" data-href="/cart/39999498715194:1,39999490162746:1,39999494717498:1,39999495110714:1,39798048751674:1">Nomad Cube</a>
+</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>  
+<script>
+var $j = jQuery.noConflict(); 
+$j(document).ready(function(){
+$j('.testing').click(function(){
+event.preventDefault();
+var cart_link = $(this).attr('data-href'); 
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?items=https://nomadinternet.com"+cart_link+" &jsonize=1";
+$j.ajax({
+type: "GET",
+url: url,
+dataType: "json",
+success: function(response){
+location.href = response[0];
+}
+});  
+});
+});
+</script>

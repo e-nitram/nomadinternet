@@ -1,0 +1,109 @@
+{% assign ss = section.settings %}
+
+{% if ss.wide %}
+  <div
+    class="awesome-html__content"
+    style="border-radius:{{ ss.border-radius }}px;color:{{ ss.color }};background-color:{{ ss.background-color }};padding:{{ ss.padding-y }}px {{ ss.padding-x }}px;margin:{{ ss.margin_top }}px 0 {{ ss.margin_bottom }}px"
+  >
+    <div class="container">
+      {{ ss.html }}
+    </div>
+  </div>
+{% else %}
+  <div class="container">
+    <div
+      class="awesome-html__content"
+      style="border-radius:{{ ss.border-radius }}px;color:{{ ss.color }};background-color:{{ ss.background-color }};padding:{{ ss.padding-y }}px {{ ss.padding-x }}px;margin:{{ ss.margin_top }}px 0 {{ ss.margin_bottom }}px"
+    >
+      {{ ss.html }}
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Awesome HTML",
+  "class": "awesome-html",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "Awesome HTMl"
+    }
+  ],
+  "settings": [
+    {
+      "type": "color",
+      "id": "background-color",
+      "label": "Background color",
+      "default": "#fafafa"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Color",
+      "default": "#111111"
+    },
+    {
+      "type": "checkbox",
+      "id": "wide",
+      "label": "Wide",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 120,
+      "step": 5,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 5,
+      "unit": "px",
+      "label": "Margin Bottom",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-x",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding X",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-y",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Y",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "border-radius",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Border Radius",
+      "default": 0
+    },
+    {
+      "type": "html",
+      "id": "html",
+      "label": "HTML"
+    }
+  ]
+}
+{% endschema %}

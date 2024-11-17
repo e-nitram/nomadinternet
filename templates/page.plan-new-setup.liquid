@@ -1,0 +1,211 @@
+{%- assign product1 = all_products['strong-pink-plan'] -%}
+{%- assign product2 = all_products['very-blue-plan'] -%}
+{%- assign product3 = all_products['deep-red-plan'] -%}
+{%- assign product4 = all_products['bright-yellow-plan'] -%}
+
+<section class="section-membership section-overlay-plan pb-5 mb-5">
+  <div class="container">
+    <div class="section-title text-center pt-3 pb-3">
+      <h1 class="title text-white pt-5 pb-5 mb-0">Internet For Every Area</h1>
+    </div>
+    <div class="row">
+      <div class="col col-12 col-sm-12 col-lg-4 mb-3 mb-lg-0">
+        <div class="card card-body h-100 rounded">
+          <h4 class="mb-3 mt-1"><i class="far fa-circle"></i> <span>Which Plan Is Right for Me?</span></h4>
+          <p>Each color represents one of the major cellular carrier networks. Therefore, the primary difference between each plan is the coverage each network provides. View each of our plans’ coverage to identify which is most likely to work at your usage location(s). For help with selecting a plan, visit the <a href="/pages/help-me-choose"> Help Me Choose </a> page. If you need help just “chat” us.</p>
+        </div>
+      </div>
+      <div class="col col-12 col-sm-12 col-lg-4 mb-3 mb-lg-0">
+        <div class="card card-body h-100 rounded">
+          <h4 class="mb-3 mt-1"><i class="far fa-circle"></i> Which Device Is Right for Me?</h4>
+          <p>The two main devices we offer can be used at the same places but have slight advantages over each other. The “Travel WiFi Router” has a battery and can be used at your home, office or even in the car. The “WiFi Router” has external antennas so it can achieve faster speeds (especially in more rural areas). All of our devices ship pre-configured ready to plug in. No setup required.</p>
+        </div>
+      </div>
+      <div class="col col-12 col-sm-12 col-lg-4 mb-3 mb-lg-0">
+        <div class="card card-body h-100 rounded">
+          <h4 class="mb-3 mt-1"><i class="far fa-circle"></i> What if It Doesn’t Work for Me?</h4>
+          <p>If the plan you initially choose does not connect or is slower than expected we have you covered! You can change plans until you get the speeds you need and we will ship you new plans until we find the best one for you. Finally, if you are not 100% happy our 14-Day No-Risk Return Policy allows return your device for a full refund.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="membership-plans pb-lg-5 pt-lg-5 mt-5 mb-lg-5">
+  <div class="container">
+    <div class="section-title col-12 col-lg-6 pl-lg-0 pt-lg-5 pb-5">
+      <h2 class="title">Membership Plans</h2>
+      <p style="color:#000; font-weight:500;">Browse below to find the coverage plan and<br class="d-none d-md-block">
+        device that best fits you.</p>
+      <ul class="list-unstyled row mt-5">
+        <li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> Unlimited 4G LTE</li>
+        <li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> No Contract</li>
+        <li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> No Data Limit</li>
+        <li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> No Credit Check</li>
+        <li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> No Throttling</li>
+        <li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> 14-Day No Risk</li>
+      </ul>
+    </div>
+    <div class="col-12 d-block d-lg-none">
+      {% render 'image' with imageSrc: 'membership-plan.png', classes: 'img-fluid', altTag: 'membership plan', isAsset: 'true' %}
+    </div>
+  </div>
+</section> 
+ <section class="section-availability mb-4">
+  <div class="container">
+  <div class="section-availability-bg border rounded">
+    <div class="col-lg-5 p-5">
+      <h2 class="unsure-title font-weight-bold text-black">
+      Unsure of which plan is best at your address?</h2>
+      <p class="text-black mb-5">Let us recommend the right plan for you.</p>
+        <a href="/pages/address-lookup-request" class="btn btn-primary rounded text-uppercase mb-5 font-weight-bold">Check availability</a>
+    </div>
+    </div>
+  </div>
+</section>
+<section id="section_plan" class="section-plan">
+  <div class="container">
+    <div class="row ml-0 mr-0 align-items-center border-bottom pb-4 mb-4">
+      <div class="col-12 col-lg-4 pl-md-0">
+        <div class="section-title">
+          <h2 class="title">All Routers</h2>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <ul class="row list-unstyled justify-content-between plan-label mb-0">
+          <li><i class="fas fa-circle" style="color:#F9006E; border:4px solid rgba(249, 0, 110, 0.15)"></i> STRONG PINK PLAN</li>
+          <li><i class="fas fa-circle" style="color:#0078BA; border:4px solid rgba(0, 120, 186, 0.15)"></i> VERY BLUE PLAN</li>
+          <li><i class="fas fa-circle" style="color:#E20000; border:4px solid rgba(226, 0, 0, 0.15)"></i> DEEP RED PLAN</li>
+          <li><i class="fas fa-circle" style="color:#FFCB00; border:4px solid rgba(255, 203, 0, 0.15)"></i> BRIGHT YELLOW PLAN</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row ml-0 mr-0 align-items-center pb-3 mb-5">
+      <div class="col-12 ">
+        <ul class=" list-unstyled justify-content-between plan-short mb-0 filter-list">
+          <li class="hidder all-selected active">All</li>
+          <li class="hidder gl-travel-wifi">GL - Travel WiFi Router</li>
+          <li class="hidder gl-wifi">GL - WiFi Router</li>
+          <li class="hidder gl-sim-only">Sim Only</li>
+          <li class="hidder gl-night-walk">Nighthawk LTE Mobile Hotspot Router</li>
+        </ul>
+      </div>
+    </div>
+    
+    <script>
+     $(".hidder").click(function(){
+       if($(this).hasClass("gl-travel-wifi")){
+         $("li.hidder").removeClass("active")
+         $(this).addClass("active")
+         $(".form-selecter form").hide()
+         $(".form-selecter form.gl-travel-wifi").show()
+       }else if($(this).hasClass("gl-wifi")){
+         $("li.hidder").removeClass("active")
+         $(this).addClass("active")
+         $(".form-selecter form").hide()
+         $(".form-selecter form.gl-wifi").show()
+       }else if($(this).hasClass("gl-sim-only")){
+         $("li.hidder").removeClass("active")
+         $(this).addClass("active")
+         $(".form-selecter form").hide()
+         $(".form-selecter form.gl-sim-only").show()
+       }else if($(this).hasClass("gl-night-walk")){
+         $("li.hidder").removeClass("active")
+         $(this).addClass("active")
+         $(".form-selecter form").hide()
+         $(".form-selecter form.gl-night-walk").show()
+       }else if($(this).hasClass("all-selected")){
+         $("li.hidder").removeClass("active")
+         $(this).addClass("active")
+         $(".form-selecter form").show()
+       }
+     })
+    
+    </script>
+    
+    <div class="row form-selecter">
+
+      <form class="col-lg-4 col-md-6 col-sm-12 gl-wifi" method="post" action="/cart/add">
+        <div>
+          <div class="plan-listing card-plan-list   rounded card-pink">
+            <div class="card-body">
+              <div class="plan-row">
+                <div class="text-right"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/wifi-icon.JPG?v=1595349872" style="max-width:30px"/></div>
+                  <div class="col img-setter-pro mx-auto">
+                    <img src="//cdn.shopify.com/s/files/1/0414/3238/3650/products/X750-2_db8e0bcf-e4a7-4c1c-8af8-d16980f18642_medium.jpg?v=1593667396">
+                  </div>
+                  <h6 class="row font-weight-bold text-black text-uppercase">Strong Pink Plan</h6>
+                  <div class="row align-items-end border-bottom">
+                    <div class="col-7 p-0">
+                      
+                        <p class="small font-weight">GL- WiFi Router</p>
+                      
+                    </div>
+                    <div class="col-5 p-0 text-right">
+                      <p class="small"><a href="/pages/compare-devices" style="color:#696871">Compare Devices</a></p>
+                    </div>
+                  </div>
+                  <div class="row d-block"> <sub class="sub-dollar" style="font-size:18px; color:#000">$</sub> <span style="font-size:3rem; font-weight:700; color:#000">99</span> <sub style="font-size:18px; color:#000">/mo</sub>
+                    <p class="small" style="font-size:12px">+ <span style="color:#000">$249.00</span> One-Time Membership Fee <a href="#fee_modal" data-toggle="modal" class="money-back1 modal-link"><i class="fas fa-question-circle" style="color: #0F9E59;padding: 0px;border-radius: 50px;font-size: 1.25rem;"></i></a></p>
+                  </div>
+                  <div class="features row ">
+                    <div class="col-md">
+                      <ul class="list-unstyled border-top">
+                        <li><i class="fa fa-check text-primary" aria-hidden="true"></i> Unlimited 4G LTE</li>
+                        <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Data Limit</li>
+                        <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Throttling</li>
+                      </ul>
+                    </div>
+                    <div class="col-md">
+                      <ul class="list-unstyled column-collapse">
+                        <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Contract</li>
+                        <li><i class="fa fa-check text-primary" aria-hidden="true"></i> No Credit Check</li><li><i class="fa fa-check text-primary" aria-hidden="true"></i> <a class="text-400 modal-link" href="#guarantee_modal" data-toggle="modal">14-Day No Risk</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 pl-0"><a href="https://href.li/?https://www.t-mobile.com/coverage-map.html" target="_blank" class="w-100 plan-coverage text-capitalize">Plan Coverage</a></div>
+                    <div class="col-6 pr-0">
+                        
+                      <input name="id" value="31403862327354" type="hidden">
+                      <input name="add" value="Add to Cart" class="fst-sel btn-cart text-capitalize w-100 btn-primary" type="submit">
+                         
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </form> 
+    </div>
+  </div>
+</section>
+<section class="section-availability ">
+  <div class="container">
+  <div class="section-availability-bg border rounded">
+    <div class="col-lg-5 p-5">
+      <h2 class="unsure-title font-weight-bold text-black">
+      Unsure of which plan is best at your address?</h2>
+      <p class="text-black mb-5">Let us recommend the right plan for you.</p>
+        <a href="/pages/address-lookup-request" class="btn btn-primary rounded text-uppercase mb-5 font-weight-bold">Check availability</a>
+    </div>
+    </div>
+  </div>
+</section>
+<div class="modal fade modal-theme modal-fee" tabindex="-1" role="dialog" id="fee_modal" aria-hidden="true">
+  <button class="close" data-dismiss="modal" title="Close">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg>
+  </button>
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-fee__content">
+          <h2 class="title">One Time Membership Fee</h2>
+          <p>When becoming a member you are responsible for paying for your first month of service as well as a One-Time Membership Fee that covers the administration and support of your account. Therefore, you are the owner of the membership but you don’t own the device or the carrier account your line is on.</p>
+          <p>You may of course cancel your subscription with us at anytime by simply returning your device and we never charge any cancellation fees! Easy, Simple, Clean!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    

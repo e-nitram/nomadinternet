@@ -1,0 +1,171 @@
+{% assign ss = section.settings %}
+{% assign collection = ss.collection %}
+
+<div class="awesome-section">
+  <div class="awesome-section__content{% if ss.reversed %} awesome-section__content--reversed{% endif %}">
+    {% if ss.image %}
+      <div class="awesome-section__image hidden-sm-d">
+        {{ ss.image | image_url: width: 1200 | image_tag: loading: 'lazy' }}
+      </div>
+      <div class="awesome-section__image hidden-md-u">
+        {{ ss.image | image_url: width: 1024 | image_tag: loading: 'lazy' }}
+      </div>
+    {% elsif collection.featured_image %}
+      <div class="awesome-section__image hidden-sm-d">
+        {{ collection.featured_image | image_url: width: 1200 | image_tag: loading: 'lazy' }}
+      </div>
+      <div class="awesome-section__image hidden-md-u">
+        {{ collection.featured_image | image_url: width: 1024 | image_tag: loading: 'lazy' }}
+      </div>
+    {% endif %}
+
+    <div class="awesome-section__text">
+      <div>
+        <{{ ss.title_tag }} class="awesome-section__title">
+          {% if ss.title != blank %}
+            {{- ss.title -}}
+          {% else %}
+            {{- collection.title -}}
+          {% endif %}
+        </{{ ss.title_tag }}>
+        <div class="awesome-section__description">
+          {% if ss.description != blank %}
+            {{ ss.description }}
+          {% elsif collection.description != blank %}
+            {{ collection.description }}
+          {% endif %}
+        </div>
+        <div class="awesome-section__cta">
+          {% if ss.show_order_button %}
+            <a
+              data-href="/cart/{% for product in collection.products %}{% if forloop.index > 1 %},{% endif -%}{{- product.variants.first.id }}:1{% endfor %}"
+              class="btn"
+              id="btn-{{ section.id }}"
+            >
+              Order Now
+            </a>
+          {% endif %}
+          {% if ss.button_text != blank %}
+            <a class="btn outline" id="btn-secondary-{{ section.id }}" href="{{ ss.button_url | default: '#' }}">
+              {{- ss.button_text -}}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var $j = jQuery.noConflict();  
+$j(".btn").click(function(event){
+  event.preventDefault();
+  var cart_link = $j(this).attr('data-href'),
+    url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?items=https://nomadinternet.com"+cart_link+" &jsonize=1";
+  $j.ajax({
+    type: "GET",
+    url: url,
+    dataType: "json",
+    success: function(response){
+location.href = response[0];
+    }
+  });
+});
+</script>
+          
+{% schema %}
+{
+  "name": "Awesome Collection",
+  "tag": "div",
+  "class": "container",
+  "presets": [
+    {
+      "name": "Awesome Collection"
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "reversed",
+      "label": "Reversed",
+      "info": "Image to right side"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "title_tag",
+      "label": "Title TAG",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        },
+        {
+          "value": "p",
+          "label": "p"
+        },
+        {
+          "value": "span",
+          "label": "span"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_order_button",
+      "label": "Show Order Button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    }
+  ]
+}
+{% endschema %}

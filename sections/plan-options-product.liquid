@@ -1,0 +1,43 @@
+{% for product in collections['verizon-home'].products %}
+         <div class="first_prd_row">  
+        <div class="collectionBlock-info collectionBlock-info--center1">    
+<!--          {{ product.featured_image | img_url: '600x600' | img_tag: product.featured_image.alt }}  -->
+            
+            {{- product.title | link_to: product.url }}<br>
+               {{ product.description }} 
+          <div class="price_o_f">
+             <p>Total value: </p> 
+            <div class="offers">
+        <h4 class="price striped" id="comparePrice-template--14452132479034__main"><span class="money">{{ product.compare_at_price_min | money_without_trailing_zeros }}</span></h4>
+        <h4 class="price" id="productPrice-template--14452132479034__main"><span class="money">{{ product.price | money }}</span>/</h4>
+      </div> <h6>monthly</h6> 
+          </div>
+         <div class="add_cart_plnof"> 
+  <form  method="post" action="/cart/add">
+  <input name="id" value="{{ product.variants.first.id }}" type="hidden" />
+  <input  name="add" value="BUY NOW!" type="submit" />
+    <h6>*routers shown for illustration purposes, actual routers may vary.</h6>
+</form> 
+         </div>    
+        </div> 
+         </div>   
+{% endfor %}
+
+{% schema %}
+  {
+    "name": "plan-options-product",
+    "settings": [],
+    "presets": [
+		{
+			"name": "Plan product option"
+		}
+	]
+  }
+  
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

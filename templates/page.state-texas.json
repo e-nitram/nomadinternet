@@ -1,0 +1,500 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/site_header.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in Texas"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Looking for a secure Internet Service Provider in Texas? Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in Texas?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/mMmhOSJfN4U?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The best internet in Texas",
+        "description": "Find your city in Texas",
+        "content": "Abilene,\nAlpine,\nAmarillo,\nArlington,\nAustin,\nBaytown,\nBeaumont,\nBig Spring,\nBorger,\nBrownsville,\nBryan,\nCanyon,\nCleburne,\nCollege Station,\nCorpus Christi,\nCrystal City,\nDallas,\nDel Rio,\nDenison,\nDenton,\nEagle Pass,\nEdinburg,\nEl Paso,\nFort Worth,\nFreeport,\nGalveston,\nGarland,\nGoliad,\nGreenville,\nHarlingen,\nHouston,\nHuntsville,\nIrving,\nJohnson City,\nKilgore,\nKilleen,\nKingsville,\nLaredo,\nLongview,\nLubbock,\nLufkin,\nMarshall,\nMcAllen,\nMcKinney,\nMesquite,\nMidland,\nMission,\nNacogdoches,\nNew Braunfels,\nOdessa,\nOrange,\nPampa,\nParis,\nPasadena,\nPecos,\nPharr,\nPlainview,\nPlano,\nPort Arthur,\nPort Lavaca,\nRichardson,\nSan Angelo,\nSan Antonio,\nSan Felipe,\nSan Marcos,\nSherman,\nSweetwater,\nTemple,\nTexarkana,\nTexas City,\nTyler,\nUvalde,\nVictoria,\nWaco,\nWeatherford,\nWichita Falls,\nYsleta,\nUtah"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/blog_7.jpg",
+        "title_tag": "h2",
+        "title": "Work and play at remove locations in Texas",
+        "description": "<p>Looking for a great remote work retreat in Texas? With the right internet service provider, you can find all the amenities you need in a stunning location.<\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p>Texas has some of the most picturesque scenery – from serene beaches to charming ranches and state parks. If you're looking for an inspiring place to get away from it all, then Texas is the perfect spot. And with Nomad Internet’s fast and reliable connection speeds, you can take your job on the road while enjoying all these amazing sights. Some of the best places to explore include Big Bend National Park, Enchanted Rock State Natural Area, Palo Duro Canyon and McKinney Falls State Park. These sites provide plenty of recreational activities as well as breathtaking views and open spaces. But if you want to stay connected while on your journey, all that's needed is a reliable internet connection. That's where Nomad Internet comes in!<\/p><p><\/p>",
+        "text_2": "<p>Our up to unlimited <a href=\"https:\/\/nomadinternet.com\/pages\/plans\" title=\"wireless internet plans\">wireless internet plans<\/a> give you access to download speeds up to 5Gbps - meaning faster loading times so that no valuable time is wasted. Plus our rural internet plans have unbeatable coverage – giving customers peace of mind wherever they are in <a href=\"\/pages\/states\" title=\"States\">Texas<\/a>. And with no contracts required, you can stay for however long suits your needs without any hassle or unexpected costs. So why not use Nomad Internet when exploring remote locations in Texas? With our reliable service, fast connection speeds and range of flexible options – you'll be able to work and play stress-free! Get connected today and start discovering what Texas has to offer with Nomad Internet!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/crystal_nolen.jpg",
+            "name": "Crystal Nolan",
+            "text": "I've been living in rural Texas and needed to find a new high speed internet service for my remote work. My friends recommended Nomad Internet so I decided to try it out with the 30 days free trial. I'm so glad I did! The download speeds are amazing - much faster than before. What's more, they offer three modems - Nomad Air, Nomad Ark and Nomad Raptor - so I could choose exactly which one was best for me. With camping season coming up, I'm glad that I have an internet connection that can keep up with my family's needs!",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/kailey_hale.jpg",
+            "name": "Kailey Hale",
+            "text": "I recently got Nomad internet for my home in rural Texas. I heard about it from friends, and after trying the 30 days free trial I knew this was going to be my provider. With the three modems they offer - Nomad Air, Nomad Ark and Nomad Raptor - I chose the latter as it seemed best suited for remote work due to its faster download speed. It exceeded my expectations; ever since I installed it, my connection has been reliable, with minimal drop-outs even when camping outdoors. All in all, it's a great choice for anyone looking for high-speed internet in rural areas!",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/magdalena_dennis.jpg",
+            "name": "Magdalena Dennis",
+            "text": "I recently signed up with Nomad internet and it's been a great experience. As a rural Texan, I needed an internet option that could provide me with high speed and good download capabilities. I'm so glad Nomad Internet had three modems to choose from - the Nomad Air, Ark, and Raptor. After doing some research, I decided to go with the Raptor modem which offered great speeds for remote work. It was easy to set up and get going quickly. Now when I'm out camping, I don't have to worry about having no access to the web. Overall, I'm very pleased with my purchase of the Nomad Raptor modem and would highly recommend it for anyone looking for reliable, fast internet connection in a rural area.",
+            "link": ""
+          }
+        },
+        "52b04d6a-d3b6-49b7-a9d8-315372d5e0ca": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/elsa_sharpe.jpg",
+            "name": "Elsa Sharpe",
+            "text": "I've been living and working in rural Texas for a few years, so I was thrilled when Nomad Internet came along with the promise of high speed internet. As a remote worker, download speeds are essential to me, so I opted for the Nomad Raptor modem. I'm impressed by its promise of reliable, fast connection even in remote places like my rancho. Since getting it set up, I haven't had any issues streaming my favorite TV shows or participating in video calls. Even while camping without electricity, my laptop was able to get online thanks to the battery-powered mobile hotspot feature.",
+            "link": ""
+          }
+        },
+        "33b78fb6-de45-4272-8ea5-a378130a3209": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/aubrielle_hurst.jpg",
+            "name": "Aubrielle Hurst",
+            "text": "I recently moved to rural Texas, looking for a remote work solution with high speed internet. I had no idea what to do until I found Nomad Internet! It was perfect for me as an artist who is not tech-savvy. They offer three modems - the Nomad Air, Ark and Raptor. I chose the Nomad Air because it provided a reliable download speed while being user-friendly. Setup was a breeze, and now I can enjoy my remote work without any issues. Highly recommend this service if you need speedy internet in rural areas!",
+            "link": ""
+          }
+        },
+        "4de52c73-502b-41df-8717-dd2162c8a855": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/billie_chandler.jpg",
+            "name": "Billie Chandler",
+            "text": "I'm an artist living in rural Texas and a not-so-tech-savvy person. I recently heard about Nomad Internet and their offering of three modems: Nomad Air, Nomad Ark or Nomad Raptor. I decided to give the Raptor a try since it is the most powerful one with its high download speed (up to 25 Mbps). It's been great so far - I can easily handle my remote work tasks with no lags or delays. Not only is it reliable, but also user friendly which was important to me as a non tech-savvy person. Highly recommend this modem if you are looking for a fast connection in less than ideal areas!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "52b04d6a-d3b6-49b7-a9d8-315372d5e0ca",
+        "33b78fb6-de45-4272-8ea5-a378130a3209",
+        "4de52c73-502b-41df-8717-dd2162c8a855"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "6ffc0aca-3ac2-494e-9a67-31b0a1873337": {
+          "type": "block",
+          "settings": {
+            "title": "What are some tips for improving my internet speed in rural Texas?",
+            "content": "<p>Living in rural Texas, slow internet speeds can be incredibly frustrating. Fortunately, there are some simple steps you can take to help improve your internet speed:<\/p><p><strong>Consider switching your rural internet provider<\/strong> to a fixed wireless provider, such as Nomad Internet. This provider offers speeds up to 200 Mbps with plans starting at $99 per month. DSL and dial-up internet services tend to be slower than fixed wireless or cable internet.<\/p><p><strong>Make sure your router is positioned<\/strong> in a central location and free from any obstructions that may interfere with the Wi-Fi signal. Place the router away from walls, large pieces of furniture, other electronic devices, and even metal objects as they can absorb the signal and cause it to become weaker over time.<\/p><p><strong>Upgrade your equipment including your Wi-Fi router,<\/strong> modem, and Wi-Fi adapter if necessary. Older or outdated equipment can contribute to slower speeds so consider investing in newer and faster equipment that will provide better performance overall.<\/p><p><strong>Monitor your data usage<\/strong> each month to make sure you aren’t going over any data caps set by your rural internet provider – doing this will ensure that you don’t get penalized for exceeding the limits and that you stay within the boundaries set by them..<\/p><p><strong>Lastly, use a signal amplifier such as Nomad Air or Nomad Cube<\/strong> which can boost the signal providing fast and stable internet connection in rural Texas!<\/p><p>By following these tips and considering providers like Nomad Internet, you can ensure that you have an efficient online experience regardless of how remote your living location is!<\/p>"
+          }
+        },
+        "52566089-17ee-41c2-a86e-be261c9a9459": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use 5G technology with Nomad Internet in Texas?",
+            "content": "<p>Yes, Nomad Internet offers 5G technology in Texas.<br\/><br\/>5G technology is the latest generation of mobile networks that provides faster data speeds and lower latency compared to previous generations. With 5G technology, users can enjoy faster download and upload speeds, improved video streaming quality, and smoother online gaming experiences. 5G is also more efficient than previous generations, which means it can support more devices with better battery life.<br\/><br\/>Nomad Internet uses the Nomad Air modem, which is equipped with advanced high-power directional antennas to extend the reach of cellular networks, providing stable and fast internet connectivity. The modem supports 5G sub-6GHz and 4G LTE fallback for the perfect balance of network coverage and performance. This means that regardless of whether you are in an area with 5G coverage or not, the Nomad Air modem will provide reliable and high-speed internet.<br\/><br\/>Texas is the second-largest state in the United States and is home to many rural communities. Nomad Internet's mission is to make high-speed wireless internet accessible to all residents of rural areas, and their service is tailored to meet the needs of these communities. With 5G technology, residents of rural Texas can enjoy the same level of connectivity as those in urban areas, without the need for expensive infrastructure upgrades. Nomad Internet offers a range of tariff plans to suit the needs of different users, with options for both individuals and businesses.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "6ffc0aca-3ac2-494e-9a67-31b0a1873337",
+        "52566089-17ee-41c2-a86e-be261c9a9459"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

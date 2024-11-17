@@ -1,0 +1,101 @@
+<div class="text-with-image">
+  <div class="container-wrapper">
+    <div class="new-row">
+      <div class="col-4">
+        <h4 class="title">{{ section.settings.title }}</h4>
+        <p class="description">{{ section.settings.description }}</p>
+        {% if section.settings.button_url != blank %}
+          <div class="main-button">
+            <a href="{{ section.settings.button_url }}">
+              {{ section.settings.button_text }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+      <div class="col-6">
+        {% form 'customer' %}
+          <div class="email-sec-12">
+  <div class="email">
+   <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Vector_3.png?v=1668141602"> <input type="email" placeholder="Enter your mail" name="contact[email]" />
+  </div>
+
+  <div class="submit">
+    <input type="submit" value="Check Area" />
+  </div>
+          </div>
+{% endform %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Text With email",
+    "settings": [
+      {
+        "type": "html",
+        "id": "title",
+        "label": "Title",
+        "default": "Join today for the largest and best <span>rural coverage</span> available."
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Everyone should be able to connect to the internet, no matter where they live. Fast, reliable internet isn't just nice to have – it's essential.  Get connected today and get access to the important things like working, learning, banking, and more, online."
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Label",
+        "default": "Check Your Location"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link"
+      },
+      {
+        "type": "text",
+        "id": "right_text",
+        "label": "Right Text",
+        "default": "Fast, Reliable Internet"
+      },
+      {
+        "type": "text",
+        "id": "left_text",
+        "label": "left Text",
+        "default": "Just$99"
+      },
+      {
+        "type": "color",
+        "id": "button_background",
+        "label": "Button background",
+        "default": "#109D59"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button color",
+        "default": "#FFFFFF"
+      }
+    ],
+    "presets": [
+    {
+        "name": "text with email"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,149 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{{ '03raptor-videos.css' | asset_url | stylesheet_tag }}
+
+<section class="raptor-videos" style="background-color: {{ section.settings.bg_color }}; --text-color: {{ section.settings.text_color }}">
+  <div class="container">
+    {% if section.settings.title != blank %}
+      <h3 class="title">{{ section.settings.title }}</h2>  
+    {% endif %}
+    
+    <div class="video-slider">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          {% if block.settings.video_link != blank %}
+            <div class="swiper-slide">
+              <a data-fancybox="" href="{{ block.settings.video_link }}" class="text-reset text-left smaller font-weight-600 text-decoration-none position-relative">
+                <img src="{{ block.settings.image | img_url: 'master' }}" width="320" height="180" loading="lazy" /> 
+                <span class="slick-title">{{ block.settings.title | truncate: 70, ' ...' }}</span> 
+                <div class="video-play-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+                    <rect x="4" y="4" width="43" height="43" rx="21.5" fill="white"/>
+                    <rect x="2" y="2" width="47" height="47" rx="23.5" stroke="white" stroke-opacity="0.5" stroke-width="4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 25.5C4 13.6259 13.6259 4 25.5 4C37.3742 4 47 13.6259 47 25.5C47 37.3742 37.3742 47 25.5 47C13.6259 47 4 37.3742 4 25.5ZM28.514 19.473L28.6772 19.5739C30.0406 20.4173 31.1774 21.1205 32.001 21.7756C32.849 22.45 33.5958 23.2472 33.8642 24.3584C34.0452 25.1074 34.0452 25.8932 33.8642 26.6422C33.5958 27.7532 32.849 28.5504 32.001 29.2248C31.1774 29.88 30.0406 30.5832 28.6772 31.4266L28.514 31.5276C27.2008 32.3402 26.0986 33.0218 25.1844 33.4452C24.2572 33.8746 23.2 34.1988 22.0976 33.8586C21.3689 33.6336 20.7216 33.2118 20.2104 32.65C19.4666 31.833 19.2214 30.765 19.1105 29.6976C18.9999 28.634 19 27.2596 19 25.5862V25.4142C19 23.7408 18.9999 22.3666 19.1105 21.3029C19.2214 20.2355 19.4666 19.1676 20.2104 18.3505C20.7216 17.7888 21.3689 17.3668 22.0976 17.142C23.2 16.8018 24.2572 17.1259 25.1844 17.5553C26.0986 17.9787 27.2006 18.6604 28.514 19.473Z" fill="#008061"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+      <a href="{{ section.settings.button_link }}" class="btn btn--customize" target="_blank">
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
+  </div>
+
+  <script>
+    let videoList = document.querySelectorAll('.raptor-videos .video-slider');
+    videoList.forEach(videoSlider => {
+      new Swiper(videoSlider, {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 5000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false
+        },
+        slideShadows: false,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          500: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          991: {
+            slidesPerView: 4,
+            spaceBetween: 10
+          }
+        }
+      });
+    });
+  </script>
+</section>
+
+{% schema %}
+  {
+    "name": "Raptor Videos",
+    "presets": [
+      {
+        "name": "Raptor Videos"
+      }
+    ],
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Real Customer Stories"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label":"Text color",
+        "default": "#fff"
+      },
+      {
+        "type": "header",
+        "content": "Button"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "item",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "video_link",
+            "label": "Video link"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

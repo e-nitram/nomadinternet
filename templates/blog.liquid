@@ -1,0 +1,103 @@
+<div class="container">
+  {% render 'breadcrumb' %}
+
+  <h1 class="blog__title">
+    {% if current_tags %}
+      <span>By tag:</span> {{ current_tags }}
+    {% else %}
+      {{ blog.title }}
+    {% endif %}
+  </h1>
+
+  <div class="row">
+    <div class="col-xl-9 col-lg-8 col-12">
+      {% paginate blog.articles by 9 %}
+        <div class="blog__posts">
+          <div class="row v-gutters">
+            {% for article in blog.articles %}
+              {% if forloop.first %}
+                <div class="col-12">
+                  <article class="blog__post{% if forloop.first %} blog__post--first{% endif %}">
+                    {% if article.image %}
+                      <div class="post__preview">
+                        <a href="{{ article.url }}">
+                          <div class="ratio">
+                            {{ article | image_url: width: 900 | image_tag }}
+                          </div>
+                        </a>
+                      </div>
+                    {% endif %}
+                    <div class="post__info">
+                      <div class="post__date">
+                        <time datetime="{{ article.published_at_at }}">{{ article.published_at | date: '%B %d, %Y' }}</time>
+                      </div>
+                      <h2 class="post__title">
+                        <a href="{{ article.url }}">{{ article.title }}</a>
+                      </h2>
+                      <div class="post__excerpt">
+                        {% assign excerpt = article.excerpt | default: article.content | strip_html %}
+                        <p>{{ excerpt | truncate: 466 }}</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                {%- comment -%}
+                <div class="col-12">
+                  <div class="blog-banner">
+                    <a href="/pages/plans">
+                      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omega_Horizontal.jpg?v=1691503924" alt="Banner" width="" height="" loading="lazy">
+                    </a>
+                  </div>
+                </div>
+                {%- endcomment -%}
+              {% else %}
+                <div class="col-md-6 col-12">
+                  <article class="blog__post{% if forloop.first %} blog__post--first{% endif %}">
+                    {% if article.image %}
+                      <div class="post__preview">
+                        <a href="{{ article.url }}">
+                          <div class="ratio">
+                            {{ article | image_url: width: 768 | image_tag }}
+                          </div>
+                        </a>
+                      </div>
+                    {% endif %}
+                    <div class="post__info">
+                      <div class="post__date">
+                        <time datetime="{{ article.published_at }}">{{ article.published_at | date: '%B %d, %Y' }}</time>
+                      </div>
+                      <h2 class="post__title">
+                        <a href="{{ article.url }}">{{ article.title }}</a>
+                      </h2>
+                      <div class="post__excerpt">
+                        {% assign excerpt = article.excerpt | default: article.content | strip_html %}
+                        <p>{{ excerpt | truncate: 185 }}</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+            {% comment %}
+                {% if forloop.index == 5 %}
+                  <div class="col-12">
+                    <div class="blog-banner">
+                      <a href="/pages/plans">
+                        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omega_Horizontal.jpg?v=1691503924" alt="Banner" width="" height="" loading="lazy">
+                      </a>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endcomment %}  
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        {% render 'pagination', paginate: paginate %}
+      {% endpaginate %}
+    </div>
+
+    <div class="col-xl-3 col-lg-4 col-12">
+      {% render 'blog-sidebar' %}
+    </div>
+  </div>
+</div>

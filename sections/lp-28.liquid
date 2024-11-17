@@ -1,0 +1,71 @@
+{% comment %}
+  File name:
+  	lp - landing page
+  	number - section number
+{% endcomment %}
+
+{% assign ss = section.settings %}
+
+<div class="lp-28">
+  {% if ss.title %}
+    <h2 class="lp-28__title">{{ ss.title }}</h2>
+  {% endif %}
+
+  <div class="row v-gutters justify-center" style="--gutter-y: 30px">
+    {% for card in section.blocks %}
+      {% assign cs = card.settings %}
+      <div class="col-lg-3 col-sm-6 col-12">
+        <div class="lp-28__card">
+          {% if cs.image %}
+            <div class="card__image">
+              <div class="ratio" style="--ratio: calc(182 / 283 * 100%)">
+                {{ cs.image | image_url: width: 1024 | image_tag }}
+              </div>
+            </div>
+          {% endif %}
+          {% if cs.title %}
+            <h3 class="card__title">{{ cs.title }}</h3>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-28",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 28"
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

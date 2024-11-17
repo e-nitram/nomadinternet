@@ -1,0 +1,134 @@
+<section class="home-pricing">
+  <div class="container">
+        <div class="section-title">
+            {% if section.settings.heading != blank %} 
+                <h2 class="page-title">{{ section.settings.heading }}</h2>
+             {% endif %}
+            {% if section.settings.subheading != blank %} 
+                <p>{{ section.settings.subheading }}</p>
+            {% endif %}
+            {% if section.settings.popuptext != blank %}
+                <a class="open-popup">{{ section.settings.popuptext }}</a>
+            {% endif %}
+        </div>
+
+<div class="plan-box-list">
+{% assign index_counter = 0 %} <!-- Initialize the counter -->
+
+{% for block in section.blocks %}
+
+            <div class="plan-box first-box">
+                <div class="plan-offer">
+                  <span>{{ block.settings.plan_offer }}</span>
+                </div>
+                <div class="plan-title">
+                    <h3>{{ block.settings.plan_title }}</h3>
+                   <h4>
+                        {{ block.settings.plan_price }}
+                    </h4>
+                  {% comment %}
+                    <span class="color_bg">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <path d="M9 9.23242H9.01M15 15.2324H15.01M16 8.23242L8 16.2324M17.9012 5.23093C18.1071 5.72895 18.5024 6.12482 19.0001 6.33149L20.7452 7.0544C21.2433 7.2607 21.639 7.65642 21.8453 8.15448C22.0516 8.65255 22.0516 9.21217 21.8453 9.71023L21.1229 11.4542C20.9165 11.9525 20.9162 12.5127 21.1236 13.0107L21.8447 14.7542C21.9469 15.0009 21.9996 15.2653 21.9996 15.5324C21.9997 15.7994 21.9471 16.0639 21.8449 16.3106C21.7427 16.5573 21.5929 16.7815 21.4041 16.9703C21.2152 17.1591 20.991 17.3088 20.7443 17.4109L19.0004 18.1333C18.5023 18.3392 18.1065 18.7345 17.8998 19.2322L17.1769 20.9774C16.9706 21.4755 16.575 21.8712 16.0769 22.0775C15.5789 22.2838 15.0193 22.2838 14.5212 22.0775L12.7773 21.3551C12.2792 21.1493 11.7198 21.1498 11.2221 21.3563L9.47689 22.0782C8.97912 22.284 8.42001 22.2838 7.92237 22.0777C7.42473 21.8716 7.02925 21.4763 6.82281 20.9788L6.09972 19.233C5.8938 18.735 5.49854 18.3391 5.00085 18.1324L3.25566 17.4095C2.75783 17.2033 2.36226 16.8079 2.15588 16.3101C1.94951 15.8123 1.94923 15.253 2.1551 14.755L2.87746 13.011C3.08325 12.5129 3.08283 11.9535 2.8763 11.4557L2.15497 9.70921C2.0527 9.46252 2.00004 9.1981 2 8.93105C1.99996 8.66401 2.05253 8.39957 2.15472 8.15285C2.25691 7.90614 2.40671 7.68197 2.59557 7.49317C2.78442 7.30438 3.00862 7.15464 3.25537 7.05253L4.9993 6.33014C5.49687 6.12439 5.89248 5.72962 6.0993 5.23248L6.82218 3.48723C7.02848 2.98917 7.42418 2.59346 7.92222 2.38715C8.42027 2.18085 8.97987 2.18085 9.47792 2.38715L11.2218 3.10954C11.7199 3.31533 12.2793 3.31491 12.7771 3.10837L14.523 2.38827C15.021 2.18208 15.5804 2.18212 16.0784 2.38839C16.5763 2.59465 16.972 2.99025 17.1783 3.48819L17.9014 5.23395L17.9012 5.23093ZM9.5 9.23242C9.5 9.50856 9.27614 9.73242 9 9.73242C8.72386 9.73242 8.5 9.50856 8.5 9.23242C8.5 8.95628 8.72386 8.73242 9 8.73242C9.27614 8.73242 9.5 8.95628 9.5 9.23242ZM15.5 15.2324C15.5 15.5086 15.2761 15.7324 15 15.7324C14.7239 15.7324 14.5 15.5086 14.5 15.2324C14.5 14.9563 14.7239 14.7324 15 14.7324C15.2761 14.7324 15.5 14.9563 15.5 15.2324Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+  $50 off first month today</span>{% endcomment %}
+
+                  
+                </div>
+                <div class="plan-details">
+                   {{ block.settings.plan_details }}
+                      {% if block.settings.button_link != blank %} 
+                        <a href="{{ block.settings.button_link }}" id="plan1">{{ block.settings.button_text }}</a>
+                      {% endif %}
+                </div>
+            </div>
+
+
+{% assign index_counter = index_counter | plus: 1 %} <!-- Increment the counter -->
+{% endfor %} 
+           
+        </div>
+
+    
+  </div>
+</section>
+
+<div class="home_pricing popup">
+  <div class="overlay"></div>
+{% include 'plan-specification' %}
+</div>
+
+
+{% schema %}
+{
+  "name": "Home Pricing",
+  "presets": [
+    {
+      "name": "Home Pricing"
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "popuptext",
+      "label": "Popup Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Plan Offer",
+      "settings": [
+       {
+          "type": "text",
+          "id": "plan_offer",
+          "label": "Plan Offer"
+        }, 
+       {
+          "type": "html",
+          "id": "plan_title",
+          "label": "Plan Title"
+        },
+        {
+          "type": "html",
+          "id": "plan_price",
+          "label": "Plan Price"
+        },
+        {
+          "type": "html",
+          "id": "plan_details",
+          "label": "Plan Details"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+        
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

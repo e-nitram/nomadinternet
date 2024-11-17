@@ -1,0 +1,137 @@
+{
+  "sections": {
+    "2dbcaf19-e388-4b03-b63e-c4a4ab01ee9c": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h1 class=\"h1 uppercase text-center\">FREE INTERNET FOR LIFE<\/h1>"
+      }
+    },
+    "639b3400-1024-40fd-8c66-21faec3c1749": {
+      "type": "awesome-section",
+      "custom_css": [],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_8.jpg",
+        "title_tag": "h3",
+        "title": "Get FREE INTERNET for life*",
+        "description": "<p>Monthly rewards for every active friend or family member you refer for Nomad Internet services<\/p>"
+      }
+    },
+    "68034b34-b6cd-4b66-aac6-20436a628f56": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2 class=\"h3 uppercase text-center\">Refer 5 or More and Your\nservice is FREE!<\/h2>\n<h4 class=\"h4 text-center\">Stages of the referral program:<\/h4>"
+      }
+    },
+    "2e0c755a-837a-41df-a979-4ea4877e924d": {
+      "type": "awesome-items",
+      "blocks": {
+        "662e0375-25d2-450b-bb4a-c91e24dc1c21": {
+          "type": "item",
+          "settings": {
+            "left_content": "<p><strong>1ST NEW CUSTOMER REFERRAL<\/strong><\/p>",
+            "right_content": "<p>GET A<\/p><h3>FREE MONTH<\/h3><p>ONE-TIME DISCOUNT OF NEXT MONTH'S BILL<\/p>"
+          }
+        },
+        "b5cbb916-cfeb-4496-89fa-a813d1309d95": {
+          "type": "item",
+          "settings": {
+            "left_content": "<p><strong>2ND NEW CUSTOMER REFERRAL<\/strong><\/p>",
+            "right_content": "<p>GET ANOTHER<\/p><h3>FREE MONTH<\/h3><p>ONE-TIME DISCOUNT OF NEXT MONTH'S BILL<\/p>"
+          }
+        },
+        "9071a167-cb01-48cc-8bd8-c3af58687ff1": {
+          "type": "item",
+          "settings": {
+            "left_content": "<p><strong>3RD NEW CUSTOMER REFERRAL<\/strong><\/p>",
+            "right_content": "<p>GET ANOTHER<\/p><h3>FREE MONTH<\/h3><p>ONE-TIME DISCOUNT OF NEXT MONTH'S BILL<\/p>"
+          }
+        },
+        "df8e1158-ec27-40b0-abcd-98ded9967008": {
+          "type": "item",
+          "settings": {
+            "left_content": "<p><strong>4TH NEW CUSTOMER REFERRAL<\/strong><\/p>",
+            "right_content": "<p>GET ANOTHER<\/p><h3>FREE MONTH<\/h3><p>ONE-TIME DISCOUNT OF NEXT MONTH'S BILL<\/p>"
+          }
+        },
+        "ad586a43-a858-41cf-b13a-f228ce60fd48": {
+          "type": "item",
+          "settings": {
+            "left_content": "<p><strong>5 ACTIVE REFERRAL<\/strong><\/p>",
+            "right_content": "<h3>FREE SERVICE<\/h3><p>*TAXES & FEE MAY APPLY<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "662e0375-25d2-450b-bb4a-c91e24dc1c21",
+        "b5cbb916-cfeb-4496-89fa-a813d1309d95",
+        "9071a167-cb01-48cc-8bd8-c3af58687ff1",
+        "df8e1158-ec27-40b0-abcd-98ded9967008",
+        "ad586a43-a858-41cf-b13a-f228ce60fd48"
+      ],
+      "settings": {}
+    },
+    "16d2cd4b-1e3c-4ef6-83f6-a740bb3799ed": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 70,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2 class=\"h3 uppercase text-center\">You read that correctly!<\/h2>\n<h4 class=\"h4 text-center\">Refer 5 or More and Your service is FREE!<\/h4>"
+      }
+    },
+    "8b8f74e4-daaa-40ef-b940-ebe9fcad8c58": {
+      "type": "awesome-section",
+      "custom_css": [
+        ".awesome-section__title {display: none;}"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1205.jpg",
+        "title_tag": "h3",
+        "title": "",
+        "description": "<p>*Monthly rewards are awarded for every active friend or family member you refer who completes a purchase of a new Nomad Internet service, and upon completion of their trial period. Awards are not eligible for referrals within their 7-day trial period or who cancel prior to an order being shipped. \"Free Internet for Life\" is awarded to customers who have successfully signed up 5 new Nomad Internet subscribers who have completed their trial period, and for the duration of at least 5 active referrals maintaining service with the company. Complete information can be found here.<\/p>"
+      }
+    },
+    "f9edaed5-c585-40ef-a402-bf4f5c319745": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "2dbcaf19-e388-4b03-b63e-c4a4ab01ee9c",
+    "639b3400-1024-40fd-8c66-21faec3c1749",
+    "68034b34-b6cd-4b66-aac6-20436a628f56",
+    "2e0c755a-837a-41df-a979-4ea4877e924d",
+    "16d2cd4b-1e3c-4ef6-83f6-a740bb3799ed",
+    "8b8f74e4-daaa-40ef-b940-ebe9fcad8c58",
+    "f9edaed5-c585-40ef-a402-bf4f5c319745"
+  ]
+}

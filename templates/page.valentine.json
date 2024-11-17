@@ -1,0 +1,342 @@
+{
+  "wrapper": "div.landing.landing--valentine",
+  "sections": {
+    "52c4381d-4b14-4cad-ae26-3afbd4809414": {
+      "type": "lp-9",
+      "blocks": {
+        "8f2abef1-7fdb-4982-b1dc-dffda8182394": {
+          "type": "button",
+          "settings": {
+            "text": "Order a Gift",
+            "url": "#shopify-section-template--14522175225914__6a4beed4-caa5-47e6-9e07-1ec7e312ab7e"
+          }
+        }
+      },
+      "block_order": [
+        "8f2abef1-7fdb-4982-b1dc-dffda8182394"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_1000007179_b50bc617-22a3-4762-88cb-d3418c316d42.png",
+        "title": "Make a gift to someone you love!",
+        "description": "High speed internet for hassle-free connection with the ones you love!",
+        "bg_color": "#f6c4c1"
+      }
+    },
+    "8b96939f-d798-4a94-b4b3-f45c83133c34": {
+      "type": "lp-10",
+      "settings": {
+        "icon": "shopify:\/\/shop_images\/Free_shipping_Icon_fdaddc65-c677-4069-8388-c7e59de5f2f6.png",
+        "title": "Free shipping!",
+        "description": "When placing an order from 13 to 15 February",
+        "bg_color": "#8a003a"
+      }
+    },
+    "eaa45fee-eba7-44af-8a55-260b297092d7": {
+      "type": "lp-11",
+      "blocks": {
+        "003611ca-e2d0-4234-9afc-dff5799799c9": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Travel_Bag.jpg",
+            "title": "Nomad Travel Bag",
+            "learn_more_link": "shopify:\/\/pages\/ice",
+            "button_text": "Order a Gift",
+            "button_url": "#shopify-section-template--14522175225914__6a4beed4-caa5-47e6-9e07-1ec7e312ab7e"
+          }
+        },
+        "96c0c302-5f03-42d3-9b3c-a52d63073e84": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Air_Kit.jpg",
+            "title": "Nomad Air Kit",
+            "learn_more_link": "#",
+            "button_text": "Order a Gift",
+            "button_url": "#shopify-section-template--14522175225914__f6bc7c43-65be-4465-ad38-8b2ea0a33d17"
+          }
+        }
+      },
+      "block_order": [
+        "003611ca-e2d0-4234-9afc-dff5799799c9",
+        "96c0c302-5f03-42d3-9b3c-a52d63073e84"
+      ],
+      "settings": {
+        "title": "Choose your kit"
+      }
+    },
+    "0bb1eeea-5535-4c00-a9dc-37ea00da56a8": {
+      "type": "lp-5",
+      "blocks": {
+        "8e405af7-511c-49f4-922b-2fed5277ace2": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/It_s_time_to_upgrade_a9432c12-7e9a-42bc-912a-b08b6f8ced04.png",
+            "title": "It's time to upgrade",
+            "description": "Upgrade Your Home Network with a High-Speed Internet Connection"
+          }
+        },
+        "24a63512-46e8-4d95-912f-4a787aebf1ef": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Hight_Speeds_red.png",
+            "title": "High Speeds",
+            "description": "When connecting to Nomad Internet, speed is usually the most important factor."
+          }
+        },
+        "5babd45b-7daf-4440-b17a-c5eab0729e2d": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group-1.png",
+            "title": "Max Bandwidth",
+            "description": "Get Maximum Bandwidth for your Home or Business in the Countryside"
+          }
+        },
+        "42ac223e-1544-4982-a488-21c2915964cb": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_79c129a4-db82-4275-9ff9-b499ba1228c1.png",
+            "title": "Suburban coverage",
+            "description": "Connectivity Solutions for Sprawling Countryside Locations"
+          }
+        }
+      },
+      "block_order": [
+        "8e405af7-511c-49f4-922b-2fed5277ace2",
+        "24a63512-46e8-4d95-912f-4a787aebf1ef",
+        "5babd45b-7daf-4440-b17a-c5eab0729e2d",
+        "42ac223e-1544-4982-a488-21c2915964cb"
+      ],
+      "settings": {
+        "title": "Why Choose Nomad Internet",
+        "button_text": "Order nomad travel bag",
+        "button_url": "#shopify-section-template--14522175225914__6a4beed4-caa5-47e6-9e07-1ec7e312ab7e"
+      }
+    },
+    "aef20e4e-1ff2-4c90-9700-fa6bd47ac7e1": {
+      "type": "lp-3",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/14_Day_No_Risk_Money-Back_Guarantee.jpg",
+        "title": "14 Day, No Risk, Money-Back Guarantee!",
+        "title_width": 1200,
+        "description": "What's better than up to unlimited wireless internet? try it risk-free and see for yourself.",
+        "description_width": 370,
+        "button_text": "Place Order",
+        "button_url": "#shopify-section-template--14522175225914__6a4beed4-caa5-47e6-9e07-1ec7e312ab7e",
+        "button_color": "orange"
+      }
+    },
+    "24c0d9d3-cff2-4390-8293-2c697cc6a793": {
+      "type": "lp-12",
+      "blocks": {
+        "1f458dbd-231f-4e7f-8a8f-0760ea9f1bb7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_c50a6e29-094b-4b9b-93ff-0a87d746a319.jpg",
+            "description": "Maintaining Quality Conversations Through A High-Speed Internet Network"
+          }
+        },
+        "a80ca951-23fd-44de-abe3-a04d1846448a": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_4560c2cd-b875-4ec5-9c76-ef7d550449f9.jpg",
+            "description": "Watch your favorite movies and series online, in high definition on streaming services."
+          }
+        },
+        "ad275b0c-740d-4032-a7b7-e34a90ba3ab5": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_18d3e97b-aa74-4892-8d8c-9869c8f09084.jpg",
+            "description": "The opportunity to play online games with pleasure and have fun with your favorite friends"
+          }
+        },
+        "90e99b55-8d4d-4d0f-9024-d8c0081b5768": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_baf0ea77-1f33-4794-a0ad-7364825b26ce.jpg",
+            "description": "Trouble-free daily surfing the Internet. Find the information you need easily anywhere"
+          }
+        }
+      },
+      "block_order": [
+        "1f458dbd-231f-4e7f-8a8f-0760ea9f1bb7",
+        "a80ca951-23fd-44de-abe3-a04d1846448a",
+        "ad275b0c-740d-4032-a7b7-e34a90ba3ab5",
+        "90e99b55-8d4d-4d0f-9024-d8c0081b5768"
+      ],
+      "settings": {
+        "title": "Reasons why you should choose nomad",
+        "button_text": "Order nomad trevel kit",
+        "button_url": "#shopify-section-template--14522175225914__6a4beed4-caa5-47e6-9e07-1ec7e312ab7e"
+      }
+    },
+    "3302d2ad-f7da-47a4-9f33-b2536c3faab6": {
+      "type": "lp-2",
+      "blocks": {
+        "c6f5ecb4-b725-4a28-b57b-9dd8bc48f5ba": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "title_color": "#333333",
+            "image": "shopify:\/\/shop_images\/Infographic_1_af1c803d-989b-4187-acfd-c5e8cde08ff7.png"
+          }
+        },
+        "9705de64-0fb0-4ca0-adec-a2d729d1cb0a": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "title_color": "#6f002e",
+            "image": "shopify:\/\/shop_images\/Infographic_2_3c93c173-d985-44d4-bbdc-8a239148b20f.png"
+          }
+        }
+      },
+      "block_order": [
+        "c6f5ecb4-b725-4a28-b57b-9dd8bc48f5ba",
+        "9705de64-0fb0-4ca0-adec-a2d729d1cb0a"
+      ],
+      "settings": {
+        "title": "How to Get Internet in Rural Areas"
+      }
+    },
+    "0534ad01-6374-4eb8-8e97-435eb7b7a028": {
+      "type": "lp-3",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Community_Discussion_Banner_f12625be-c4ee-4d11-b8dd-2dce4f96abc8.jpg",
+        "icon": "shopify:\/\/shop_images\/Community_Discussion_Icon_72a9c8ef-3217-433f-90b8-931757bbc714.png",
+        "title": "Join the Nomad Community Today.",
+        "title_width": 1200,
+        "description": "",
+        "description_width": 1200,
+        "button_text": "Join now",
+        "button_url": "https:\/\/talk.nomadinternet.com\/hc\/en-us\/community\/topics",
+        "button_color": "orange"
+      }
+    },
+    "f6bc7c43-65be-4465-ad38-8b2ea0a33d17": {
+      "type": "lp-6",
+      "blocks": {
+        "2f1d3b70-f814-48ab-82d6-69aa992d23a0": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_AIR_90cef8e1-d840-4111-966f-466225b95d62.jpg",
+            "title": "Nomad AIR",
+            "description": "<ul><li>The Best-in-class 5G enabled Modem<\/li><li>Download Speed up to 1 Gbps<\/li><li>Connect up to 30 Devices<\/li><li>Enterprise-Grade Security<\/li><\/ul>",
+            "bottom_text": "as low as $299"
+          }
+        },
+        "519a9539-948b-4902-a89e-d898ef44699b": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Plan.jpg",
+            "title": "Nomad Plan",
+            "description": "<ul><li>Download speeds up to 100Mbps<\/li><li>Connect all Your Devices<\/li><li>Up to Unlimited 4G and 5G LTE<\/li><li>No Credit Check<\/li><\/ul>",
+            "bottom_text": "as low as $109"
+          }
+        },
+        "d19249cd-5d03-40bf-9a15-b123c97ce682": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ClubCard.jpg",
+            "title": "Nomad Community",
+            "description": "<p>Join our growing community! You will be able to take part in promotions, receive bonuses and have access to the support of friends.<\/p>",
+            "bottom_text": "Bonus"
+          }
+        }
+      },
+      "block_order": [
+        "2f1d3b70-f814-48ab-82d6-69aa992d23a0",
+        "519a9539-948b-4902-a89e-d898ef44699b",
+        "d19249cd-5d03-40bf-9a15-b123c97ce682"
+      ],
+      "settings": {
+        "title": "Unlock The Potential of Your Internet With This Smart Kit",
+        "button_text": "Order a gift",
+        "button_url": "\/cart\/39822341505082:1,39798048751674:1"
+      }
+    },
+    "6a4beed4-caa5-47e6-9e07-1ec7e312ab7e": {
+      "type": "lp-6",
+      "blocks": {
+        "1b797b7e-7be0-49ec-bad5-eeeeaf4b8617": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2.png",
+            "title": "Nomad Travel Bag",
+            "description": "<ul><li>Nomad Air Hotspot<br\/><\/li><li>Nomad Air Travel Bag<br\/><\/li><li>One Week Backup Battery<br\/><\/li><li>On\/off Switch With Blue Led<br\/><\/li><li>Space Saver Power Adapter<br\/><\/li><li>Fast AC Wall Charger<\/li><\/ul>",
+            "bottom_text": "as low as $499"
+          }
+        },
+        "c123b51d-24a2-4b43-a1c0-1080dd7c3dfe": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Plan.jpg",
+            "title": "Nomad Plan",
+            "description": "<ul><li>Download speeds up to 100Mbps<\/li><li>Connect all Your Devices<\/li><li>Up to Unlimited 4G and 5G LTE<\/li><li>No Credit Check<\/li><\/ul>",
+            "bottom_text": "as low as $109"
+          }
+        },
+        "eb344229-e4e2-4771-84c6-30464f89cdb3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ClubCard.jpg",
+            "title": "Nomad Community",
+            "description": "<p>Join our growing community! You will be able to take part in promotions, receive bonuses and have access to the support of friends.<\/p>",
+            "bottom_text": "Bonus"
+          }
+        }
+      },
+      "block_order": [
+        "1b797b7e-7be0-49ec-bad5-eeeeaf4b8617",
+        "c123b51d-24a2-4b43-a1c0-1080dd7c3dfe",
+        "eb344229-e4e2-4771-84c6-30464f89cdb3"
+      ],
+      "settings": {
+        "title": "Stable internet anywhere with Air Travel Kit",
+        "button_text": "Order a gift",
+        "button_url": "\/cart\/39834008453178:1,39822341505082:1"
+      }
+    },
+    "314748ef-fd89-4c96-88e2-58ef744b9380": {
+      "type": "lp-8",
+      "blocks": {
+        "e2c55a9f-fda6-4ee9-b66c-94161ec8d1ff": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Reviews_1_3.jpg"
+          }
+        },
+        "749610d4-a5a9-4c09-9d02-d9693488800f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Reviews_1.jpg"
+          }
+        },
+        "a25558ce-d235-4419-b8f9-1f7d6566db83": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Reviews_1_3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "e2c55a9f-fda6-4ee9-b66c-94161ec8d1ff",
+        "749610d4-a5a9-4c09-9d02-d9693488800f",
+        "a25558ce-d235-4419-b8f9-1f7d6566db83"
+      ],
+      "settings": {
+        "title": "What Members Are Saying…"
+      }
+    }
+  },
+  "order": [
+    "52c4381d-4b14-4cad-ae26-3afbd4809414",
+    "8b96939f-d798-4a94-b4b3-f45c83133c34",
+    "eaa45fee-eba7-44af-8a55-260b297092d7",
+    "0bb1eeea-5535-4c00-a9dc-37ea00da56a8",
+    "aef20e4e-1ff2-4c90-9700-fa6bd47ac7e1",
+    "24c0d9d3-cff2-4390-8293-2c697cc6a793",
+    "3302d2ad-f7da-47a4-9f33-b2536c3faab6",
+    "0534ad01-6374-4eb8-8e97-435eb7b7a028",
+    "f6bc7c43-65be-4465-ad38-8b2ea0a33d17",
+    "6a4beed4-caa5-47e6-9e07-1ec7e312ab7e",
+    "314748ef-fd89-4c96-88e2-58ef744b9380"
+  ]
+}

@@ -1,0 +1,723 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<button id="myBtn" style="display:none;">POPUP</button>
+
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+<span class="close lookup_close">&times;</span>
+<div class="container-md container">
+
+{% form 'contact' %} 
+<input type="hidden" name="Timestamp" value="{{ "now" | date: "%Y-%m-%d %H:%M" }}">  
+<h2 class="text-primary h3 text-uppercase text-center"><i class="fa fa-map-o heading-icon"></i>Find Best Offer</h2>
+<p class="lead font-weight-300 mt-6 text-center tracking-wider"><i class="fa fa-map-marker fa-sm"></i>&nbsp;&nbsp;&nbsp;Where will you primarily use this&nbsp;service?</p>
+<div class="form-group">
+<input id="autocomplete" type="text" name="contact[address]" placeholder="Enter Address" class="form-control pac-target-input autofill_address" autocomplete="off">
+<div class="form-text smaller text-uppercase position-absolute l-0 r-0 text-center text-gray-600">
+
+</div>
+</div>
+<div class="second_part">  
+<p class="lead font-weight-300 mt-6 text-center tracking-wider"><i class="fa-fw fa fa-paper-plane fa-sm"></i>&nbsp;&nbsp;&nbsp;We need a little more information from you to make the best recommendation</p>
+<div class="form-row">
+<div class="col-6" style="display:none;">
+<div class="form-group"><label for="first_name" class="sr-only">First Name</label> <input type="text" name="contact[first_name]" placeholder="First Name" required class="form-control" value="none"></div>
+</div>
+<div class="col-12">
+<div class="form-group"><label for="phone_number" class="sr-only">First Name</label> <input type="tel" name="contact[phone_number]" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="form-control"></div>
+</div>  
+<div class="col-12">
+<div class="form-group"><label for="email" class="sr-only">Email</label> <input type="email" name="contact[email]" wire:model.lazy="inquiry.email" placeholder="Email" required="required" class="form-control"></div>
+</div>
+</div> 
+
+<p class="lead font-weight-300 mt-6 text-center tracking-wider"><i class="fa fa-map-marker fa-sm"></i>&nbsp;&nbsp;&nbsp;Where do you plan to primarily need internet?</p>
+<div class="radio-tile-group">
+<div class="input-container">
+<input id="walk" class="radio-button" type="radio" name="contact[plan_need]" value="At Home">
+<div class="radio-tile">
+<div class="icon walk-icon">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="460.298px" height="460.297px" viewBox="0 0 460.298 460.297" style="enable-background:new 0 0 460.298 460.297;" xml:space="preserve">
+<g>
+<g>
+<path d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041    c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629    c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939    z"/>
+<path d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816    c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245    c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136    c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998    L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125    c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z"/>
+</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</div>
+<label for="walk" class="radio-tile-label">At Home</label>
+</div>
+</div>
+<div class="input-container">
+<input id="bike" class="radio-button" type="radio" name="contact[plan_need]" value="On the Go">
+<div class="radio-tile">
+<div class="icon bike-icon">
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 512 512"><title>Delivery Truck</title><path d="M72.078,341.333H21.334a32,32,0,0,0,32,32h5.6A58.374,58.374,0,0,1,72.078,341.333Z"/><path d="M320,341.333H162.589a58.374,58.374,0,0,1,13.142,32H320a10.667,10.667,0,0,0,10.667-10.667V352A10.667,10.667,0,0,0,320,341.333Z"/><circle cx="117.334" cy="378.667" r="37.333"/><path d="M507.219,275.173,466.234,185.01A42.749,42.749,0,0,0,427.4,160H362.667A10.667,10.667,0,0,0,352,170.667V338.484a58.588,58.588,0,0,1,101.064,34.849H480a32,32,0,0,0,32-32V297.242A53.32,53.32,0,0,0,507.219,275.173Zm-48.633-8.507H389.333A10.667,10.667,0,0,1,378.667,256V213.333a10.667,10.667,0,0,1,10.667-10.667h42.991a21.333,21.333,0,0,1,19.421,12.5L468.3,251.586A10.667,10.667,0,0,1,458.586,266.667Z"/><circle cx="394.667" cy="378.667" r="37.333"/><path d="M298.667,96H53.333a32,32,0,0,0-32,32V256h-10.1C5.925,256,1,259.63.146,264.875a10.675,10.675,0,0,0,10.521,12.459h26.1c5.314,0,10.238,3.63,11.092,8.875a10.675,10.675,0,0,1-10.521,12.459h-26.1C5.925,298.667,1,302.3.146,307.541A10.675,10.675,0,0,0,10.667,320H320a10.667,10.667,0,0,0,10.667-10.667V128A32,32,0,0,0,298.667,96Z"/></svg>
+</div>
+<label for="bike" class="radio-tile-label">On the Go</label>
+</div>
+</div>
+<div class="input-container">
+<input id="drive" class="radio-button" type="radio" name="contact[plan_need]" value="At Work">
+<div class="radio-tile">
+<div class="icon car-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"/></svg>
+</div>
+<label for="drive" class="radio-tile-label">At Work</label>
+</div>
+</div>
+</div>  
+
+{{ form.errors | default_errors }}
+<p id="errorwarn">All field are required for the best recommendation.</p>  
+<p id="invalid_phone">Please enter valid phone number.</p>    
+<p class="submit_terms">By submitting this form, you agree to receive communication from Nomad Internet.</p>  
+<div class="mx-auto text-center" style="max-width: 25rem;">
+<button type="button" class="form_submit btn-primary btn-block">Find Plan</button> </div>
+</div> 
+
+{% endform %} 
+
+<p class="success_message">Thanks for submitting the form. We will reach out to you within one hour or less.</p> 
+</div>
+
+{% comment %}
+<div class="recom_plan">
+<h2 class="text-primary h3 text-uppercase text-center">Recommended Plan with Limited Offer</h2>
+<div id="countdown">Offer Expires in <span id="time"></span></div>  
+<div class="at_home_plan">
+{% include 'popup-at-home' %}
+</div>
+<div class="on_the_go_plan">
+{% include 'popup-on-the-go' %}
+</div>
+<div class="at_work_plan">
+{% include 'popup-at-work' %}
+</div>
+</div>
+{% endcomment %}
+
+
+</div>
+</div>
+
+
+<style>
+
+.col-12 .form-group{margin-bottom:0px;}  
+.submit_terms{text-align: center;font-size: 11px;margin-top: 25px;color: #333;}
+#errorwarn{color:red;display:none;text-align:center;}  
+#invalid_phone{color:red;display:none;text-align:center;}    
+.second_part{display:none;}  
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 999; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 3rem;
+border: 1px solid #888;
+width: 50%;
+}
+.close {
+color: #00a77f;
+float: right;
+font-size: 30px;
+font-weight: 200;
+}
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+.container-md {
+max-width: 720px;
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}  
+.text-primary {
+color: #00a77f!important;
+font-size: 1.5rem;
+font-weight:100!important;
+margin-bottom:0px;  
+}
+.text-uppercase {
+text-transform: uppercase!important;
+}
+.text-center {
+text-align: center!important;
+}
+.tracking-wider {
+letter-spacing: .05em;
+}
+.font-weight-300 {
+font-weight: 300!important;
+}
+.text-center {
+text-align: center!important;
+}
+.mt-6, .my-6 {
+margin-top: 3rem!important;
+}
+.lead {
+font-size: 1rem;
+font-weight: 300;
+}
+p {
+margin-top: 0;
+margin-bottom: 1rem;
+}
+.form-group {
+margin-bottom: 1rem;
+}
+.form-control {
+display: block;
+width: 100%;
+height: calc(1.79em + 0.75rem + 2px);
+padding: 0.375rem 0.75rem;
+font-size: .88rem;
+font-weight: 400;
+line-height: 1.79;
+color: #515151;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #686868;
+border-radius: 7px;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-row {
+display: flex;
+flex-wrap: wrap;
+margin-right: -5px;
+margin-left: -5px;
+}
+.form_submit{
+font-size: .75rem;
+line-height: 1.5752rem;
+/*padding-top: 0.375rem!important;
+padding-bottom: 0.375rem!important;*/
+text-transform: uppercase;
+transition: all .2s ease;
+}
+.form_submit{
+align-items: center;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+background-color: #00a77f;
+background-color: var(--theme-color);
+border: 0.0625em solid transparent;
+border-radius: 0.25rem;
+cursor: pointer;
+display: inline-flex;
+font-family: DIN,sans-serif;
+font-family: var(--font-family);
+font-size: 1em;
+font-weight: 500;
+gap: 0.625em;
+justify-content: center;
+line-height: 1;
+margin: 0;
+padding: 0.8em 1.5em;
+position: relative;
+text-align: center;
+-webkit-text-decoration: none!important;
+text-decoration: none!important;
+text-transform: none;
+transition: all .2s ease-out;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+vertical-align: baseline;
+white-space: nowrap;
+z-index: 1;
+}
+.btn-block {
+display: block;
+width: 100%;
+}
+.btn-primary {
+color: #fff;
+background-color: #00a77f;
+border-color: #00a77f;
+}
+.text-center {
+text-align: center!important;
+}
+.ml-auto, .mx-auto {
+margin-left: auto!important;
+}
+.mr-auto, .mx-auto {
+margin-right: auto!important;
+}
+.mt-5, .my-5 {
+margin-top: 2rem!important;
+}
+.heading-icon {
+display: inline-block;
+margin-right: 1rem;
+margin-bottom: 0;
+}
+.success_message{display:none;text-align: center;font-size: 18px;color: #00a77f;}
+.radio-tile-group {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.radio-tile-group .input-container {
+position: relative;
+height: 70px;
+width: 120px;
+margin: 0.5rem;
+}
+
+.radio-tile-group .input-container .radio-button {
+opacity: 0;
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+margin: 0;
+cursor: pointer;
+}
+
+.radio-tile-group .input-container .radio-tile {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+border: 2px solid #00a77f;
+border-radius: 5px;
+padding: 1rem;
+transition: transform 300ms ease;
+}
+
+.radio-tile-group .input-container .icon svg {
+fill: #00a77f;
+width: 2rem;
+height: 2rem;
+}
+
+.radio-tile-group .input-container .radio-tile-label {
+text-align: center;
+font-size: 0.75rem;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: #00a77f;
+}
+
+.radio-tile-group .input-container .radio-button:checked + .radio-tile {
+background-color: #00a77f;
+border: 2px solid #00a77f;
+color: white;
+transform: scale(1.1, 1.1);
+}
+
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .icon svg {
+fill: white;
+background-color: #00a77f;
+}
+
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .radio-tile-label {
+color: white;
+background-color: #00a77f;
+}
+#countdown{
+text-align: center;
+margin-bottom: 20px;
+font-size: 1.5em;
+color: #00a77f;
+text-transform: uppercase;
+} 
+#time{
+font-size: 1.8em;
+font-weight: bold;
+vertical-align: sub;
+color:red;  
+}
+
+.recom_plan{display:none;max-width:90%;margin:0 auto;}  
+
+@media (max-width: 991px){
+.recom_plan{display:none;max-width:100%;}   
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 1.5rem;
+border: 1px solid #888;
+width: 90%;
+}
+.text-primary {font-size: 1.5rem;}
+.col-6 {
+flex: 0 0 100%;
+max-width: 100%;
+width: 100%;
+}
+#countdown {
+line-height: initial;
+margin-top: 15px;
+}
+
+
+}
+</style>
+
+<style>
+.reco_plan{display: flex;box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);margin-bottom: 25px;}
+.reco_plan .plan_img{flex:0 0 35%;}
+.reco_plan .plan_text{flex:0 0 65%;padding:12px;}
+.reco_plan .plan_text .plan_info{display:flex;justify-content:space-between;margin-bottom:10px;}
+.reco_plan .plan_text .title h2{font-size: 19px;margin: 0;color: #00a77f;}
+.reco_plan .plan_text .title p{font-size: 15px;margin: 0;line-height: 20px;}
+.reco_plan .plan_text .price h2{font-size: 25px;margin: 0;color:red;}
+.reco_plan .plan_text .price sub{font-size: 13px;vertical-align: inherit;color: #00a77f;}  
+.reco_plan .plan_info_usp{line-height:18px;display:flex;}
+.reco_plan .plan_info_usp p{display:inline-flex;font-size:13px;font-weight:600;margin-bottom:0px;gap: 2px;margin-right: 10px;flex: 0 0 50%;}
+.reco_plan .plan_info_usp p svg{max-width:17px;}
+.reco_plan .plan_img img{height:100%;width:100%;object-fit:cover;}
+
+.reco_modem{display: flex;box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);margin-bottom: 25px;}
+.reco_modem .plan_img{flex:0 0 50%;position:relative;}
+.reco_modem .plan_text{flex:0 0 50%;padding:12px;}
+.reco_modem .plan_text .title h2{font-size: 19px;margin: 0;color: #00a77f;text-transform:uppercase;}
+.reco_modem .plan_text .title h1{font-size: 2em;margin: 0;color:red;}
+.reco_modem .plan_text .title sub{font-size: 13px;vertical-align: inherit;color: #00a77f;} 
+.reco_modem .plan_text p{font-size:15px;line-height:20px;} 
+.reco_modem .plan_text .wizard-membership__description{border:none;margin-top:10px;margin-bottom:0px;}
+.reco_modem .expander{text-decoration: none;font-size: 15px;margin-top: 0;}
+.reco_modem .wizard-membership__btn {font-size: 1em;margin-top: 15px;background-color: red!important;color: #fff!important;font-weight: 700;min-width: 200px;text-transform: uppercase;}
+.reco_modem .plan_img img{height:100%;width:100%;object-fit:cover;}
+.sale_badge{position: absolute;top: 0px;left: 0;color: #fff;padding: 6px 15px;background-color: red;font-size: 15px;font-weight: bold;border-radius: 3px;}  
+
+@media (max-width: 991px){
+.reco_plan{display: block;}
+.reco_plan .plan_img{display: none;}
+.reco_plan .plan_text .plan_info{display: block;}
+.reco_plan .plan_info_usp p{font-size: 13px;}
+.reco_modem{display: block;}  
+.reco_plan .plan_info_usp{display: block;}  
+}
+
+</style>  
+
+<script>
+// Get the modal
+var modallook = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btnlook = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var spanlook = document.getElementsByClassName("lookup_close")[0];
+
+// When the user clicks the button, open the modal 
+btnlook.onclick = function() {
+modallook.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanlook.onclick = function() {
+modallook.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modallook) {
+modallook.style.display = "none";
+}
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA2-CZ2tXlJS7J-vFtsOmTnBButfTLgBg&amp;libraries=places&amp;callback=initAutocomplete" async="" defer=""></script>
+<script>
+let autocomplete;
+
+function initAutocomplete() {
+autocomplete = new google.maps.places.Autocomplete(
+document.getElementById('autocomplete'), {
+types: ['address'],
+componentRestrictions: {
+country: ['US']
+},
+fields: ['place_id', 'geometry', 'name', 'address_components']
+});
+autocomplete.addListener('place_changed', onPlaceChanged);
+}
+
+if(document.getElementById("autocomplete").value == ""){
+document.getElementsByClassName('second_part')[0].style.display = 'none';
+}
+else{
+document.getElementsByClassName('second_part')[0].style.display = 'block';  
+}
+
+function onPlaceChanged() {
+const place = autocomplete.getPlace();
+let streetAddress = '';
+let newAddress = {
+address: '',
+city: '',
+state: '',
+zip: ''
+};
+
+if(document.getElementById("autocomplete").value == ""){
+document.getElementsByClassName('second_part')[0].style.display = 'none';
+}
+else{
+document.getElementsByClassName('second_part')[0].style.display = 'block';  
+}
+
+}
+
+window.addEventListener('resized', (event) => {
+window.parent.dispatchEvent(new Event('resize'));
+});
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+<script src="{{ 'jquery.serialize-object.min.js' | asset_url }}"></script>
+<script src="{{ 'jquery.cookie.js' | asset_url }}"></script>
+
+<script> 
+var $j = jQuery.noConflict();
+
+$j( ".wizard-membership__btn" ).click(function( event ) {
+event.preventDefault();
+var cart_link = $j(this).attr('data-href');
+var discount_code = $j.cookie("discount_code");
+if (discount_code){  
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?discount_code="+discount_code+"&items=https://nomadinternet.com"+cart_link+"&jsonize=1";
+}
+else{
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?items=https://nomadinternet.com"+cart_link+"&jsonize=1";
+}
+$j.ajax({
+type: "GET",
+url: url,
+dataType: "json",
+success: function(response){
+location.href = response[0];
+}
+});
+});
+
+$j(".autofill_address").keyup(function(){
+var value = $(this).val();
+if (value.length > 20){
+$j('.second_part').show();
+}else{
+$j('.second_part').hide();
+}
+});
+$j('.autofill_address').change(function(){
+var value = $(this).val();
+if (value.length > 20){
+$j('.second_part').show();
+}else{
+$j('.second_part').hide();
+} 
+});
+
+
+/*if($j.cookie('lookup_popup') != 'submitted'){
+setTimeout(myGreeting, 5000);
+function myGreeting(){
+$j('#myBtn').trigger('click');
+}
+}*/
+
+window.setTimeout(function(){ 
+	// First check, if localStorage is supported.
+	if (window.localStorage) {
+		// Get the expiration date of the previous popup.
+		var nextPopup = localStorage.getItem('nextNewsletter');
+		if (nextPopup > new Date()) {
+			return;
+		}
+		// Store the expiration date of the current popup in localStorage.
+		var expires = new Date();
+		expires = expires.setHours(expires.getHours() + 24);
+		localStorage.setItem('nextNewsletter', expires);
+	}
+	$j('#myBtn').trigger('click');
+}, 5000);
+  
+
+$j('.expander').click(function(){
+$j(this).parents().find('.wizard-membership__description').css('max-height','none');
+$j(this).hide();
+});
+
+
+var $jform = $j('form#contact_form'),
+url = 'https://script.google.com/macros/s/AKfycbwsO7HpCtUh6pTCv4z4kUbSwn63j9p2rrJKK8M2SW1JPXi8BC8KaeK6JkOLtsdEHzkoEw/exec'
+
+$j('.form_submit').on('click', function(e) {
+//alert('hi');
+var isValid = true;
+var validphone = true;  
+$(".form-control").each(function() {
+var element = $(this);
+if (element.val() == "") {
+isValid = false;
+}
+//console.log(element.val());
+});
+
+  
+var a = $j("input[name='contact[phone_number]']").val();
+var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+if (filter.test(a)) {
+validphone = true;
+}
+else {
+validphone = false;
+}
+
+if(isValid == false){
+$j('#errorwarn').show();
+}
+else{
+
+if(validphone == false){
+$j('#invalid_phone').show();
+}
+else{
+$j('#invalid_phone').hide();  
+if (!$("input[name='contact[plan_need]']:checked").val()) {
+$j('#errorwarn').show();
+return false;
+}
+else {
+$j('#errorwarn').hide();
+$j.ajax({
+url: url,
+method: "GET",
+dataType: "json",
+data: $jform.serializeObject(),
+success: function(html){
+$j.cookie('lookup_popup', 'submitted');  
+//alert($j.cookie('lookup_popup'));
+//$j('.close').trigger('click');  
+$j('form').hide();
+//$j('.success_message').show(); 
+$j('.recom_plan').show();  
+  
+if($j("input[name='contact[plan_need]']:checked").val() == 'At Home'){
+window.location.href = "/pages/configuration?find=100-omega";
+  
+/*$j('.at_home_plan .wizard-membership').removeClass('sr-only');
+$j('.at_home_plan').show();
+$j('.on_the_go_plan').hide();
+$j('.at_work_plan').hide();*/
+
+//$zoho.salesiq.visitor.question("Hey, At Work!");
+//$zoho.salesiq.floatwindow.visible("show");  
+
+}
+if($j("input[name='contact[plan_need]']:checked").val() == 'On the Go'){
+window.location.href = "/pages/configuration?find=100-air";
+/*$j('.on_the_go_plan .wizard-membership').removeClass('sr-only');
+$j('.at_home_plan').hide();
+$j('.on_the_go_plan').show();
+$j('.at_work_plan').hide();*/
+
+//$zoho.salesiq.visitor.question("Hey, On the Go!");
+//$zoho.salesiq.floatwindow.visible("show");
+
+}
+if($j("input[name='contact[plan_need]']:checked").val() == 'At Work'){
+window.location.href = "/pages/configuration?find=200-air";
+/*$j('.at_work_plan .wizard-membership').removeClass('sr-only');
+$j('.at_home_plan').hide();
+$j('.on_the_go_plan').hide();
+$j('.at_work_plan').show();*/
+
+//$zoho.salesiq.visitor.question("Hey, On the Go!");
+//$zoho.salesiq.floatwindow.visible("show");
+
+}     
+
+
+function startTimer(duration, display) {
+var timer = duration, minutes, seconds;
+setInterval(function () {
+minutes = parseInt(timer / 60, 10)
+seconds = parseInt(timer % 60, 10);
+
+minutes = minutes < 10 ? "0" + minutes : minutes;
+seconds = seconds < 10 ? "0" + seconds : seconds;
+
+display.textContent = minutes + ":" + seconds;
+
+if (--timer < 0) {
+timer = duration;
+}
+}, 1000);
+}
+var fiveMinutes = 60 * 10,
+display = document.querySelector('#time');
+startTimer(fiveMinutes, display);
+
+}  
+});
+
+}  
+}
+
+}
+}); 
+</script>

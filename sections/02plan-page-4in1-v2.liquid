@@ -1,0 +1,701 @@
+{{ '02plancss.css' | asset_url | stylesheet_tag }}
+{{ '02customisecss.css' | asset_url | stylesheet_tag }}
+{{ '02checkoutcss.css' | asset_url | stylesheet_tag }}
+
+{% if page.handle == "plans" or page.handle == "configuration" or page.handle == 'sales' %}
+  {{ 'v2.css' | asset_url | stylesheet_tag }}
+{% endif %}
+{{ 'accessories.css' | asset_url | stylesheet_tag }}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="plan" class="plan_section">
+  {% render '02plan-plan-v2-desktop'
+    , section: section %}
+</div>
+
+{% comment %}
+  <div id="plan" class="plan_section desktop-hide" style="margin-top:32px;">
+  {% render '02plan-plan-v2-mobile', section: section %}
+  </div>
+{% endcomment %}
+
+
+<div class="coverage_popup" style="display: none !important;">
+  <div class="background-overlay"></div>
+  <div class="popup-details">
+    <a href="javascript:;" class="close-button">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="25"
+        viewBox="0 0 24 25"
+        fill="none">
+        <path d="M13.6225 12.4167L23.7331 2.306C24.0891 1.95003 24.0891 1.3729 23.7331 1.01698C23.3771 0.661053 22.8 0.661008 22.4441 1.01698L12.3334 11.1277L2.22275 1.01698C1.86678 0.661008 1.28965 0.661008 0.933725 1.01698C0.577801 1.37295 0.577756 1.95008 0.933725 2.306L11.0444 12.4166L0.933725 22.5273C0.577756 22.8833 0.577756 23.4604 0.933725 23.8164C1.11169 23.9943 1.34497 24.0833 1.57826 24.0833C1.81155 24.0833 2.04479 23.9943 2.2228 23.8164L12.3334 13.7057L22.444 23.8164C22.622 23.9943 22.8553 24.0833 23.0886 24.0833C23.3219 24.0833 23.5551 23.9943 23.7331 23.8164C24.0891 23.4604 24.0891 22.8833 23.7331 22.5273L13.6225 12.4167Z" fill="black" />
+      </svg>
+    </a>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="86"
+      height="86"
+      viewBox="0 0 86 86"
+      fill="none"
+      class="check_svg">
+      <path
+        d="M27.2028 42.9997L37.7341 53.5309L58.7966 32.4684M78.1038 42.9997C78.1038 62.3872 62.3872 78.1038 42.9997 78.1038C23.6122 78.1038 7.89551 62.3872 7.89551 42.9997C7.89551 23.6122 23.6122 7.89551 42.9997 7.89551C62.3872 7.89551 78.1038 23.6122 78.1038 42.9997Z"
+        stroke="#00A77F"
+        stroke-width="5.055"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+
+    <h2>Congratulations, Nomad Internet is Available in Your Area.</h2>
+    <p>Great news! We've preselected our recommended modem for optimal performance. You can proceed to checkout now or customize your order.</p>
+
+    <a class="coverage_checkout">Checkout Now</a>
+
+    <a class="coverage_customize" style="cursor: pointer">Customize Order</a>
+
+  </div>
+</div>
+
+
+{%- comment -%}
+  <div id="accessories_product" style="display:none;">
+  <div class="accessories_product_top">
+  <div class="back_btn">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+  <path d="M12.5 15.984L7.5 10.984L12.5 5.98401" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <span>Back</span>
+  </div>
+  <span class="center_title">You may also like</span>
+
+  <a class="mobile_checkout_continue continue_btn" style="opacity:0;">Continue</a>
+  </div>
+  <div class="tabs-stage">
+  <div id="tab-1" class="tabing-details">
+  <div class="product-list for-omega" style="display:none;">
+  {% for product in collections.nomad-omen-accessories.products %}
+  {% for tag in product.tags %}
+  {% if tag contains 'modem_' %}
+  {% assign modem = tag | split:'_' %}
+  {% break %}
+  {% endif %}
+  {% endfor %}
+  {% for tag in product.tags %}
+  {% if tag contains 'category_' %}
+  {% assign tag = tag | split:'_' %}
+  {% break %}
+  {% endif %}
+  {% endfor %}
+  <div class="product-box" data-modem="{{ modem[1] }}" data-category="{{ tag[1] }}">
+  {% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}
+  <div class="preorder-text">
+  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+  <path id="Fill-21" fill-rule="evenodd" clip-rule="evenodd" d="M2.96663 6.25067H6.69996V4.384H2.96663V6.25067ZM7.16663 7.184H2.49996C2.24236 7.184 2.03329 6.97493 2.03329 6.71733V3.91733C2.03329 3.65973 2.24236 3.45067 2.49996 3.45067H7.16663C7.42423 3.45067 7.63329 3.65973 7.63329 3.91733V6.71733C7.63329 6.97493 7.42423 7.184 7.16663 7.184ZM9.49996 6.25067H11.3666V4.384H9.49996V6.25067ZM12.3 6.25067H15.2782L14.3449 4.384H12.3V6.25067ZM5.70783 9.984H8.56663V3.91733C8.56663 3.65973 8.77569 3.45067 9.03329 3.45067H15.2045C15.3566 3.45067 15.4948 3.37973 15.5834 3.25653C15.6721 3.13333 15.6964 2.98027 15.6478 2.83653L15.337 1.9032C15.2736 1.71187 15.0953 1.584 14.8937 1.584H1.09996V9.984H2.09209C2.30023 9.17947 3.03196 8.584 3.89996 8.584C4.76796 8.584 5.49969 9.17947 5.70783 9.984ZM9.49996 9.984H11.3666V7.184H9.49996V9.984ZM16.9078 9.984H17.4333C17.6909 9.984 17.9 9.77493 17.9 9.51733V8.28253C17.9 8.09307 17.7824 7.91947 17.6069 7.8504L15.9437 7.184H12.3V9.984H13.2921C13.5002 9.17947 14.232 8.584 15.1 8.584C15.968 8.584 16.6997 9.17947 16.9078 9.984ZM3.89996 9.51733C3.38569 9.51733 2.96663 9.9364 2.96663 10.4507C2.96663 10.9649 3.38569 11.384 3.89996 11.384C4.41423 11.384 4.83329 10.9649 4.83329 10.4507C4.83329 9.9364 4.41423 9.51733 3.89996 9.51733ZM15.1 9.51733C14.5857 9.51733 14.1666 9.9364 14.1666 10.4507C14.1666 10.9649 14.5857 11.384 15.1 11.384C15.6142 11.384 16.0333 10.9649 16.0333 10.4507C16.0333 9.9364 15.6142 9.51733 15.1 9.51733ZM15.1 12.3173C14.232 12.3173 13.5002 11.7219 13.2921 10.9173H5.70783C5.49969 11.7219 4.76796 12.3173 3.89996 12.3173C3.03196 12.3173 2.30023 11.7219 2.09209 10.9173H0.633293C0.375693 10.9173 0.166626 10.7083 0.166626 10.4507V1.11733C0.166626 0.859732 0.375693 0.650665 0.633293 0.650665H14.8937C15.4976 0.650665 16.0314 1.03613 16.2228 1.60827L16.5336 2.5416C16.6773 2.97373 16.6073 3.43293 16.3404 3.80253C16.1098 4.1236 15.7664 4.3252 15.3828 4.3728L16.3712 6.3496L17.9532 6.98333C18.487 7.1952 18.8333 7.70573 18.8333 8.28253V9.51733C18.8333 10.2892 18.2052 10.9173 17.4333 10.9173H16.9078C16.6997 11.7219 15.968 12.3173 15.1 12.3173Z" fill="#00A77F"/>
+  </svg>
+  <span>Delivered in 2 to 4 weeks</span>
+  </div>
+  {% endif %}
+  <a href="javascript:;" class="product-box-popup-open" data-product="{{ product.handle }}">
+  <div class="image">
+  <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}">
+  </div>
+  <div class="product-title">
+  <div class="review">
+  <span>{{ tag[1] }}</span>
+  <p>
+  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+  <path d="M5.05764 0.509114C5.18396 0.12032 5.734 0.120319 5.86033 0.509113L6.83279 3.50203C6.88928 3.6759 7.05131 3.79363 7.23414 3.79363H10.3811C10.7899 3.79363 10.9598 4.31674 10.6291 4.55703L8.08319 6.40676C7.93529 6.51422 7.8734 6.70469 7.92989 6.87857L8.90235 9.87148C9.02868 10.2603 8.58368 10.5836 8.25296 10.3433L5.70703 8.49357C5.55912 8.38611 5.35884 8.38611 5.21094 8.49357L2.66501 10.3433C2.33428 10.5836 1.88929 10.2603 2.01562 9.87148L2.98808 6.87857C3.04457 6.7047 2.98268 6.51422 2.83478 6.40676L0.288849 4.55703C-0.0418788 4.31675 0.128092 3.79363 0.536894 3.79363H3.68383C3.86665 3.79363 4.02868 3.6759 4.08518 3.50203L5.05764 0.509114Z" fill="#FFA800"/>
+  </svg>
+  4.5 (20)
+  </p>
+  </div>
+  <h3>{{ product.title | escape }}</h3>
+  <p>{{ product.price | money }}</p>
+  <a class="buy_now_product" data-id="{{ product.selected_or_first_available_variant.id }}">{% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}Add to Cart{% else %}}Add to Cart{% endif %}</a>
+  </div>
+  </a>
+  </div>
+  {% endfor %}
+  </div>
+
+  <div class="product-list for-air" style="display:none;">
+  {% for product in collections.nomad-air-accessories.products %}
+  {% for tag in product.tags %}
+  {% if tag contains 'modem_' %}
+  {% assign modem = tag | split:'_' %}
+  {% break %}
+  {% endif %}
+  {% endfor %}
+  {% for tag in product.tags %}
+  {% if tag contains 'category_' %}
+  {% assign tag = tag | split:'_' %}
+  {% break %}
+  {% endif %}
+  {% endfor %}
+  <div class="product-box" data-modem="{{ modem[1] }}" data-category="{{ tag[1] }}">
+  {% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}
+  <div class="preorder-text">
+  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+  <path id="Fill-21" fill-rule="evenodd" clip-rule="evenodd" d="M2.96663 6.25067H6.69996V4.384H2.96663V6.25067ZM7.16663 7.184H2.49996C2.24236 7.184 2.03329 6.97493 2.03329 6.71733V3.91733C2.03329 3.65973 2.24236 3.45067 2.49996 3.45067H7.16663C7.42423 3.45067 7.63329 3.65973 7.63329 3.91733V6.71733C7.63329 6.97493 7.42423 7.184 7.16663 7.184ZM9.49996 6.25067H11.3666V4.384H9.49996V6.25067ZM12.3 6.25067H15.2782L14.3449 4.384H12.3V6.25067ZM5.70783 9.984H8.56663V3.91733C8.56663 3.65973 8.77569 3.45067 9.03329 3.45067H15.2045C15.3566 3.45067 15.4948 3.37973 15.5834 3.25653C15.6721 3.13333 15.6964 2.98027 15.6478 2.83653L15.337 1.9032C15.2736 1.71187 15.0953 1.584 14.8937 1.584H1.09996V9.984H2.09209C2.30023 9.17947 3.03196 8.584 3.89996 8.584C4.76796 8.584 5.49969 9.17947 5.70783 9.984ZM9.49996 9.984H11.3666V7.184H9.49996V9.984ZM16.9078 9.984H17.4333C17.6909 9.984 17.9 9.77493 17.9 9.51733V8.28253C17.9 8.09307 17.7824 7.91947 17.6069 7.8504L15.9437 7.184H12.3V9.984H13.2921C13.5002 9.17947 14.232 8.584 15.1 8.584C15.968 8.584 16.6997 9.17947 16.9078 9.984ZM3.89996 9.51733C3.38569 9.51733 2.96663 9.9364 2.96663 10.4507C2.96663 10.9649 3.38569 11.384 3.89996 11.384C4.41423 11.384 4.83329 10.9649 4.83329 10.4507C4.83329 9.9364 4.41423 9.51733 3.89996 9.51733ZM15.1 9.51733C14.5857 9.51733 14.1666 9.9364 14.1666 10.4507C14.1666 10.9649 14.5857 11.384 15.1 11.384C15.6142 11.384 16.0333 10.9649 16.0333 10.4507C16.0333 9.9364 15.6142 9.51733 15.1 9.51733ZM15.1 12.3173C14.232 12.3173 13.5002 11.7219 13.2921 10.9173H5.70783C5.49969 11.7219 4.76796 12.3173 3.89996 12.3173C3.03196 12.3173 2.30023 11.7219 2.09209 10.9173H0.633293C0.375693 10.9173 0.166626 10.7083 0.166626 10.4507V1.11733C0.166626 0.859732 0.375693 0.650665 0.633293 0.650665H14.8937C15.4976 0.650665 16.0314 1.03613 16.2228 1.60827L16.5336 2.5416C16.6773 2.97373 16.6073 3.43293 16.3404 3.80253C16.1098 4.1236 15.7664 4.3252 15.3828 4.3728L16.3712 6.3496L17.9532 6.98333C18.487 7.1952 18.8333 7.70573 18.8333 8.28253V9.51733C18.8333 10.2892 18.2052 10.9173 17.4333 10.9173H16.9078C16.6997 11.7219 15.968 12.3173 15.1 12.3173Z" fill="#00A77F"/>
+  </svg>
+  <span>Delivered in 2 to 4 weeks</span>
+  </div>
+  {% endif %}
+  <a href="javascript:;" class="product-box-popup-open" data-product="{{ product.handle }}">
+  <div class="image">
+  <img src="{{ product.featured_image | product_img_url: 'medium' }}" width="250px" height="250x" alt="{{ product.title | escape }}">
+  </div>
+  <div class="product-title">
+  <div class="review">
+  <span>{{ tag[1] }}</span>
+  <p>
+  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+  <path d="M5.05764 0.509114C5.18396 0.12032 5.734 0.120319 5.86033 0.509113L6.83279 3.50203C6.88928 3.6759 7.05131 3.79363 7.23414 3.79363H10.3811C10.7899 3.79363 10.9598 4.31674 10.6291 4.55703L8.08319 6.40676C7.93529 6.51422 7.8734 6.70469 7.92989 6.87857L8.90235 9.87148C9.02868 10.2603 8.58368 10.5836 8.25296 10.3433L5.70703 8.49357C5.55912 8.38611 5.35884 8.38611 5.21094 8.49357L2.66501 10.3433C2.33428 10.5836 1.88929 10.2603 2.01562 9.87148L2.98808 6.87857C3.04457 6.7047 2.98268 6.51422 2.83478 6.40676L0.288849 4.55703C-0.0418788 4.31675 0.128092 3.79363 0.536894 3.79363H3.68383C3.86665 3.79363 4.02868 3.6759 4.08518 3.50203L5.05764 0.509114Z" fill="#FFA800"/>
+  </svg>
+  4.5 (20)
+  </p>
+  </div>
+  <h3>{{ product.title | escape }}</h3>
+  <p>{{ product.price | money }}</p>
+  <a class="buy_now_product" data-id="{{ product.selected_or_first_available_variant.id }}">{% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}Add to Cart{% else %}}Add to Cart{% endif %}</a>
+  </div>
+  </a>
+  </div>
+  {% endfor %}
+  </div>
+
+  </div>
+  </div>
+
+  <div class="float_continue_btn">
+  <a class="mobile_checkout_continue floating_checkout">Proceed to Checkout</a>
+  <p class="toc_line" style="font-size: 11px;text-align: center;padding:0px 16px 10px;">By proceeding, you agreed to our <a href="https://nomadinternet.com/policies/terms-of-service" target="_blank">Terms of Service</a> &amp; <a href="https://nomadinternet.com/policies/terms-of-service" target="_blank">Return Policy</a>.</p>
+  </div>
+
+  </div>
+{%- endcomment -%}
+
+
+<div class="product-box-popup">
+  {% for product in collections.accessories-all.products %}
+    <div class="product-content {{ product.handle }}" style="display:none;">
+      <div class="close-icon">
+        <a href="javascript:;" class="close-popup">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none">
+            <path
+              d="M22.4999 7.50001L7.49994 22.5M7.49994 7.50001L22.4999 22.5"
+              stroke="#4D5166"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+      <div class="top_heading">
+        <h2>{{ product.title }}</h2>
+        <span>{{ product.price | money }}</span>
+      </div>
+      <div class="product-image-slider">
+        {% for image in product.images %}
+          <div class="image">
+            <img
+              src="{{ image | img_url: '300x300' }}"
+              alt="{{ image.alt | escape }}"
+              loading="lazy">
+          </div>
+        {% endfor %}
+      </div>
+      <div class="buy-and-add-button">
+        <a class="buy-button" data-id="{{ product.selected_or_first_available_variant.id }}">Buy Now</a>
+        <a class="add-to-cart-button" data-id="{{ product.selected_or_first_available_variant.id }}">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="21"
+            height="21"
+            viewBox="0 0 21 21"
+            fill="none">
+            <path
+              d="M14.0413 7.21456C14.0413 8.08756 13.6945 8.92481 13.0772 9.54212C12.4599 10.1594 11.6226 10.5062 10.7496 10.5062C9.8766 10.5062 9.03935 10.1594 8.42205 9.54212C7.80474 8.92481 7.45794 8.08756 7.45794 7.21456M3.86444 6.72195L3.2884 13.6344C3.16465 15.1194 3.10278 15.8619 3.35379 16.4347C3.57434 16.9379 3.95645 17.3532 4.43963 17.6148C4.98958 17.9125 5.73464 17.9125 7.22476 17.9125H14.2745C15.7646 17.9125 16.5096 17.9125 17.0596 17.6148C17.5428 17.3532 17.9249 16.9379 18.1454 16.4347C18.3964 15.8619 18.3346 15.1194 18.2108 13.6344L17.6348 6.72195C17.5283 5.44426 17.4751 4.80542 17.1921 4.32189C16.943 3.8961 16.572 3.55472 16.1269 3.34179C15.6216 3.09998 14.9805 3.09998 13.6984 3.09998L7.8008 3.09998C6.51868 3.09998 5.87762 3.09998 5.37227 3.34178C4.92726 3.55472 4.55625 3.8961 4.30709 4.32189C4.02415 4.80541 3.97092 5.44426 3.86444 6.72195Z"
+              stroke="black"
+              stroke-opacity="0.8"
+              stroke-width="1.23438"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          Add to Cart
+        </a>
+      </div>
+      <div class="product-title">
+        <div class="product-description">
+          <h3>Description</h3>
+          <p>{{ product.description }}</p>
+        </div>
+      </div>
+
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Add To Cart Popup Start -->
+<div class="add-to-cart-popup">
+  <div class="popup-content">
+    <p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="29"
+        height="29"
+        viewBox="0 0 29 29"
+        fill="none">
+        <path
+          d="M19.3105 10.8925V7.285C19.3105 4.62852 17.157 2.47501 14.5005 2.47501C11.8441 2.47501 9.69054 4.62852 9.69054 7.285V10.8925M4.38993 12.5182L3.66843 20.2142C3.46329 22.4024 3.36072 23.4965 3.7238 24.3416C4.04276 25.084 4.60171 25.6978 5.31106 26.0846C6.11855 26.525 7.21744 26.525 9.41523 26.525H19.5859C21.7836 26.525 22.8825 26.525 23.69 26.0846C24.3994 25.6978 24.9583 25.084 25.2773 24.3416C25.6404 23.4965 25.5378 22.4024 25.3327 20.2142L24.6112 12.5182C24.4379 10.6705 24.3513 9.74656 23.9358 9.04806C23.5698 8.43289 23.0291 7.9405 22.3824 7.63354C21.6482 7.28501 20.7202 7.28501 18.8644 7.28501L10.1367 7.285C8.28084 7.285 7.3529 7.285 6.61866 7.63354C5.97201 7.9405 5.4313 8.43289 5.06532 9.04806C4.64977 9.74656 4.56316 10.6705 4.38993 12.5182Z"
+          stroke="white"
+          stroke-width="2.16018"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+      Product added to cart
+    </p>
+  </div>
+</div>
+<!-- Add To Cart Popup End -->
+
+<div class="referral-welcom-popup">
+  <div class="background-overlay"></div>
+  <div class="popup-details">
+    <a href="javascript:;" class="close-button">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="25"
+        viewBox="0 0 24 25"
+        fill="none">
+        <path d="M13.6225 12.4167L23.7331 2.306C24.0891 1.95003 24.0891 1.3729 23.7331 1.01698C23.3771 0.661053 22.8 0.661008 22.4441 1.01698L12.3334 11.1277L2.22275 1.01698C1.86678 0.661008 1.28965 0.661008 0.933725 1.01698C0.577801 1.37295 0.577756 1.95008 0.933725 2.306L11.0444 12.4166L0.933725 22.5273C0.577756 22.8833 0.577756 23.4604 0.933725 23.8164C1.11169 23.9943 1.34497 24.0833 1.57826 24.0833C1.81155 24.0833 2.04479 23.9943 2.2228 23.8164L12.3334 13.7057L22.444 23.8164C22.622 23.9943 22.8553 24.0833 23.0886 24.0833C23.3219 24.0833 23.5551 23.9943 23.7331 23.8164C24.0891 23.4604 24.0891 22.8833 23.7331 22.5273L13.6225 12.4167Z" fill="black" />
+      </svg>
+    </a>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/omen_glitter_70a27e08-4048-4436-a9dc-661044af793a.png?v=1708555990"
+      width="600px"
+      height="300px"
+      alt="gift image" />
+    <h3>Congratulations</h3>
+    <h2>
+      <span class="referral_customer_friendname">John Doe</span>
+      sent you a free<br/><span class="text_3">NOMAD OMEN MODEM</span>
+    </h2>
+    <p>Proceed to select your plan and customize your experience with us</p>
+    <a href="javascript:void(0);" id="referral-welcom-popup-btn">CLAIM NOW</a>
+  </div>
+</div>
+
+<div class="referral-invitred-friend-popup">
+  <div class="background-overlay"></div>
+  <div class="popup-details">
+    <a href="javascript:;" class="close-button">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="25"
+        viewBox="0 0 24 25"
+        fill="none">
+        <path d="M13.6225 12.4167L23.7331 2.306C24.0891 1.95003 24.0891 1.3729 23.7331 1.01698C23.3771 0.661053 22.8 0.661008 22.4441 1.01698L12.3334 11.1277L2.22275 1.01698C1.86678 0.661008 1.28965 0.661008 0.933725 1.01698C0.577801 1.37295 0.577756 1.95008 0.933725 2.306L11.0444 12.4166L0.933725 22.5273C0.577756 22.8833 0.577756 23.4604 0.933725 23.8164C1.11169 23.9943 1.34497 24.0833 1.57826 24.0833C1.81155 24.0833 2.04479 23.9943 2.2228 23.8164L12.3334 13.7057L22.444 23.8164C22.622 23.9943 22.8553 24.0833 23.0886 24.0833C23.3219 24.0833 23.5551 23.9943 23.7331 23.8164C24.0891 23.4604 24.0891 22.8833 23.7331 22.5273L13.6225 12.4167Z" fill="black" />
+      </svg>
+    </a>
+    <div class="top_block">
+      <h3>special offer</h3>
+      <h2>15% OFF</h2>
+    </div>
+    <div class="bottom_block">
+      <h2>
+        <span class="referral_invited_friendname">John Doe</span>
+        sent you a 15% Discount</h2>
+      <p>Your discount will be added upon checking out</p>
+      <a href="javascript:void(0);" id="referral-invitred-popup-btn">CLAIM NOW</a>
+    </div>
+  </div>
+</div>
+
+<span class="hidden-popup-overlay"></span>
+<div class="hidden-popup tiktok-video-popup">
+  <div class="close-btn">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none">
+      <path
+        d="M22.5 7.5L7.5 22.5M7.5 7.5L22.5 22.5"
+        stroke="#4D5166"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </div>
+
+  <div class="title">
+    <h2>Reviews from Verified Users</h2>
+  </div>
+
+  <div class="tiktok-video-list" js-tiktok-video>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <video
+          id="video-pop-ele"
+          class="lazy"
+          playsinline
+          controls>
+          <source
+            src="https://cdn.shopify.com/videos/c/o/v/1b707c3d2f4e4cf7a175e056db36ff52.mp4"
+            width="350"
+            height="500"
+            type="video/mp4">
+          <p>Your browser does not support the video tag.</p>
+        </video>
+      </div>
+
+      <div class="swiper-slide">
+        <video
+          id="video-pop-ele"
+          class="lazy"
+          playsinline
+          controls>
+
+          <source
+            src="https://cdn.shopify.com/videos/c/o/v/6cbfa627aff54363aa22fa3543654788.mp4"
+            width="350"
+            height="500"
+            type="video/mp4">
+          <p>Your browser does not support the video tag.</p>
+        </video>
+      </div>
+
+      <div class="swiper-slide">
+        <video
+          id="video-pop-ele"
+          class="lazy"
+          playsinline
+          controls>
+          <source
+            src="https://cdn.shopify.com/videos/c/o/v/ae3170c52c4b4a078f057e8630d79a3b.mp4"
+            width="350"
+            height="500"
+            type="video/mp4">
+          <p>Your browser does not support the video tag.</p>
+        </video>
+      </div>
+
+      <div class="swiper-slide">
+        <video
+          id="video-pop-ele"
+          class="lazy"
+          playsinline
+          controls>
+          <source
+            src="https://cdn.shopify.com/videos/c/o/v/503196c742f74bc48d7bfc386513a2dc.mp4"
+            width="350"
+            height="500"
+            type="video/mp4">
+          <p>Your browser does not support the video tag.</p>
+        </video>
+      </div>
+    </div>
+
+    <div class="swiper-button-next tiktok-swiper-button-next">
+      <svg
+        class="arrow-right slick-arrow"
+        width="50"
+        height="51"
+        viewBox="0 0 50 51"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        style="">
+        <path
+          d="M20.5 16.4941L29.5 25.4941L20.5 34.4941"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+        <rect
+          x="49"
+          y="49.4941"
+          width="48"
+          height="48"
+          rx="24"
+          transform="rotate(-180 49 49.4941)"
+          stroke="white"
+          stroke-width="2"></rect>
+      </svg>
+    </div>
+    <div class="swiper-button-prev tiktok-swiper-button-prev">
+      <svg
+        class="arrow-left slick-arrow"
+        width="50"
+        height="51"
+        viewBox="0 0 50 51"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        style="">
+        <path
+          d="M29.5 34.4941L20.5 25.4941L29.5 16.4941"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+        <rect
+          x="1"
+          y="1.49414"
+          width="48"
+          height="48"
+          rx="24"
+          stroke="white"
+          stroke-width="2"></rect>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="buttons" style="height: 0;">
+  <button class="verify-id-prompt">
+    Verify ID
+  </button>
+</div>
+
+
+<div class="nomad-air-payment" style="display: none;">
+  <div class="nomad-air-payment__bg"></div>
+  <div class="nomad-air-payment__content">
+    <button class="nomad-air-payment__closebtn">
+      <svg
+        width="31"
+        height="32"
+        viewBox="0 0 31 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M23.392 8.47598L8.17596 23.692M8.17596 8.47598L23.392 23.692"
+          stroke="#4D5166"
+          stroke-width="2.0288"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </button>
+    <h3 class="title">Select Your Payment Option</h3>
+    <div class="list">
+      <div
+        class="item"
+        js-payment-item
+        data-modem="default">
+        <span class="sub-heading sub-heading--primary">
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 13 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.34634 2.41714C6.01458 1.76231 6.9298 1.35857 7.93931 1.35857C9.98554 1.35857 11.6443 3.01736 11.6443 5.06358C11.6443 6.07311 11.2406 6.98834 10.5857 7.65659M8.4686 8.23931C8.4686 10.2855 6.80981 11.9443 4.76358 11.9443C2.71736 11.9443 1.05856 10.2855 1.05856 8.23931C1.05856 6.19309 2.71736 4.5343 4.76358 4.5343C6.80981 4.5343 8.4686 6.19309 8.4686 8.23931Z"
+              stroke="white"
+              stroke-width="1.05858"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+
+          No Contract
+        </span>
+
+        <span class="price">$199.95</span>
+
+        <div class="description">
+          <span>
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.0001 3.0029L4.50006 8.5029L2.00006 6.0029"
+                stroke="#008061"
+                stroke-width="1.3125"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            One-time payment
+          </span>
+          <span>
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.0001 3.0029L4.50006 8.5029L2.00006 6.0029"
+                stroke="#008061"
+                stroke-width="1.3125"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            Immediate connectivity
+          </span>
+          <span>
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.0001 3.0029L4.50006 8.5029L2.00006 6.0029"
+                stroke="#008061"
+                stroke-width="1.3125"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            No long-term commitment
+          </span>
+        </div>
+      </div>
+
+      <div
+        class="item"
+        js-payment-item
+        data-modem="subscribe">
+        <span class="sub-heading sub-heading--secondary">
+          <svg
+            width="14"
+            height="13"
+            viewBox="0 0 14 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_10115_500)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.50962 3.567H1.30059C0.960227 3.567 0.68399 3.29076 0.68399 2.9504C0.68399 2.61003 0.960227 2.3338 1.30059 2.3338H3.15039C3.49075 2.3338 3.76698 2.61003 3.76698 2.9504V4.80019C3.76698 5.14056 3.49075 5.41679 3.15039 5.41679C2.81002 5.41679 2.53379 5.14056 2.53379 4.80019V4.2619C2.14101 4.96976 1.91719 5.78367 1.91719 6.64999C1.91719 9.37227 4.1277 11.5828 6.84998 11.5828C7.22672 11.5828 7.5936 11.5402 7.94629 11.4601C8.27864 11.3849 8.60914 11.5933 8.68436 11.925C8.75959 12.2567 8.55179 12.5872 8.22006 12.6631C7.77919 12.763 7.32044 12.816 6.84998 12.816C3.44697 12.816 0.68399 10.053 0.68399 6.64999C0.68399 5.52716 0.984891 4.47401 1.50962 3.567ZM11.1662 9.03808C11.5589 8.33022 11.7828 7.51631 11.7828 6.64999C11.7828 3.92771 9.57226 1.7172 6.84998 1.7172C6.49359 1.7172 6.14582 1.75481 5.81101 1.82695C5.47805 1.89848 5.15002 1.68637 5.07849 1.35341C5.00697 1.02106 5.21908 0.692412 5.55204 0.621503C5.97071 0.531479 6.4048 0.484001 6.84998 0.484001C10.253 0.484001 13.016 3.24698 13.016 6.64999C13.016 7.77282 12.7151 8.82597 12.1903 9.73298H12.3994C12.7397 9.73298 13.016 10.0092 13.016 10.3496C13.016 10.6899 12.7397 10.9662 12.3994 10.9662H10.5496C10.2092 10.9662 9.93297 10.6899 9.93297 10.3496V8.49979C9.93297 8.15942 10.2092 7.88319 10.5496 7.88319C10.8899 7.88319 11.1662 8.15942 11.1662 8.49979V9.03808ZM6.23338 4.21504V3.567C6.23338 3.22663 6.50962 2.9504 6.84998 2.9504C7.19034 2.9504 7.46658 3.22663 7.46658 3.567V4.18359H8.08318C8.42354 4.18359 8.69978 4.45983 8.69978 4.80019C8.69978 5.14056 8.42354 5.41679 8.08318 5.41679H6.54168C6.45967 5.41679 6.38136 5.44947 6.3234 5.50682C6.26606 5.56478 6.23338 5.64308 6.23338 5.72509C6.23338 5.8071 6.26606 5.88541 6.3234 5.94337C6.38136 6.00071 6.45967 6.03339 6.54168 6.03339H7.15828C7.56708 6.03339 7.95924 6.19556 8.24843 6.48474C8.53761 6.77393 8.69978 7.16608 8.69978 7.57489C8.69978 7.98369 8.53761 8.37585 8.24843 8.66504C8.03323 8.88023 7.7607 9.02513 7.46658 9.08494V9.73298C7.46658 10.0733 7.19034 10.3496 6.84998 10.3496C6.50962 10.3496 6.23338 10.0733 6.23338 9.73298V9.11639H5.61678C5.27642 9.11639 5.00018 8.84015 5.00018 8.49979C5.00018 8.15942 5.27642 7.88319 5.61678 7.88319H7.15828C7.24029 7.88319 7.31859 7.85051 7.37655 7.79316C7.4339 7.7352 7.46658 7.6569 7.46658 7.57489C7.46658 7.49288 7.4339 7.41457 7.37655 7.35661C7.31859 7.29927 7.24029 7.26659 7.15828 7.26659C6.95665 7.26659 6.74331 7.26659 6.54168 7.26659C6.13287 7.26659 5.74072 7.10442 5.45153 6.81524C5.16235 6.52605 5.00018 6.1339 5.00018 5.72509C5.00018 5.31629 5.16235 4.92413 5.45153 4.63495C5.66673 4.41975 5.93926 4.27485 6.23338 4.21504Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_10115_500">
+                <rect
+                  width="12.7"
+                  height="12.7"
+                  fill="white"
+                  transform="translate(0.5 0.299988)" />
+              </clipPath>
+            </defs>
+          </svg>
+          Financing
+        </span>
+
+        <span class="price">$25/Mo</span>
+
+        <div class="description">
+          <span>
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.0001 3.0029L4.50006 8.5029L2.00006 6.0029"
+                stroke="#008061"
+                stroke-width="1.3125"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            Spread cost over 24 months
+          </span>
+          <span>
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.0001 3.0029L4.50006 8.5029L2.00006 6.0029"
+                stroke="#008061"
+                stroke-width="1.3125"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            Flexibility in payments
+          </span>
+          <span>
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.0001 3.0029L4.50006 8.5029L2.00006 6.0029"
+                stroke="#008061"
+                stroke-width="1.3125"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            High-speed connectivity without a large upfront payment
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <button class="select-option disabled" js-select-option>
+      Select Option
+    </button>
+    <span class="bottom-text">Terms and conditions apply.</span>
+  </div>
+</div>
+
+{{ '02plancss-coverage.css' | asset_url | stylesheet_tag }}
+
+{% render '02plan-page-4in1-v2-script' %}
+
+{% schema %}
+  {
+    "name": "Plan 4in1 v2",
+    "presets": [
+      {
+        "name": "Plan 4in1 v2"
+      }
+    ],
+    "settings": [],
+    "blocks": [
+      {
+        "type": "slide_image",
+        "name": "Slide image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

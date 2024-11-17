@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="row v-gutters">
+    {% for block in section.blocks %}
+      <div class="col-lg-6 col-12">
+        <div class="awesome-item awesome-item--left">
+          <span class="awesome-item__number">{{ forloop.index }}</span>
+          {{ block.settings.left_content }}
+          {% form 'contact' %}
+            {{ form.errors | default_errors }}
+            <input type="hidden" name="contact[page_title]" value="{{ page.title }}">
+            <input type="hidden" name="contact[page_url]" value="https://{{ request.host }}{{ request.path }}">
+            <input type="hidden" name="contact[page_type]" value="{{ page.template_suffix }}">
+            <input type="hidden" name="contact[referral_number]" value="{{ forloop.index }}">
+
+            <label class="input-wrapper">
+              <span class="sr-only">Name</span>
+              <input type="text" name="contact[name]" placeholder="Name" required>
+            </label>
+
+            <label class="input-wrapper">
+              <span class="sr-only">Email</span>
+              <input type="email" name="contact[email]" placeholder="Email" required>
+            </label>
+
+            <div class="form-buttons">
+              <button type="submit" class="btn sm wide">Send</button>
+            </div>
+          {% endform %}
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="awesome-item awesome-item--right">{{ block.settings.right_content }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Awesome Items",
+  "tag": "div",
+  "class": "awesome-items",
+  "presets": [
+    {
+      "name": "Awesome Items"
+    }
+  ],
+  "settings": [],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Block",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "left_content",
+          "label": "Left content"
+        },
+        {
+          "type": "richtext",
+          "id": "right_content",
+          "label": "Right content"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

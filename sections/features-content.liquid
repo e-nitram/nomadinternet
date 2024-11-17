@@ -1,0 +1,139 @@
+{{ 'features-content.css' | asset_url | stylesheet_tag }}
+
+<div class="features-content" style="background-color: {{ section.settings.bg_color }};">
+  <div class="container">
+    {% if section.settings.heading != blank %}
+      <h3 class="heading">{{ section.settings.heading }}</h3>
+    {% endif %}
+
+    {% if section.settings.content != blank %}
+      <div class="content">{{ section.settings.content }}</div>
+    {% endif %}
+
+    <div class="list" style="--grid-count: {{ section.settings.per_count }};">
+      {% for block in section.blocks %}
+        <div class="item">
+          <div class="item-content">
+              {% if block.settings.icon != blank %}
+              <img src="{{ block.settings.icon | img_url: '500x500' }}"/>  
+            {% endif %}
+
+            {% if block.settings.heading != blank %}
+              <h4 class="title">{{ block.settings.heading }}</h4>
+            {% endif %}
+
+            {% if block.settings.content != blank %}
+              <div class="desc">{{ block.settings.content }}</div>
+            {% endif %}
+          </div>
+
+          {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+            <a 
+              href="{{ block.settings.button_link }}" 
+              class="btn"
+              style="
+                --button-text-color: {{ block.settings.button_text_color }};
+                --button-border-color: {{ block.settings.button_border_color }};
+                --button-bg-color: {{ block.settings.button_bg_color }};
+              "
+            >
+              {{ block.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Features content",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#F3F3F3"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "range",
+      "id": "per_count",
+      "label": "Per count",
+      "default": 3,
+      "min": 2,
+      "max": 5,
+      "step": 1
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Button text color",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "button_border_color",
+          "label": "Button border color",
+          "default": "#FF4040"
+        },
+        {
+          "type": "color",
+          "id": "button_bg_color",
+          "label": "Button bg color",
+          "default": "#E12727"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Features content"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "cf3cdfa5-3897-426e-ab7d-86dc96066e89": {
+      "type": "nomad-raptor",
+      "settings": {}
+    },
+    "47e67085-7860-4887-8dbc-fe69bd8de2ec": {
+      "type": "01home-signup",
+      "settings": {}
+    }
+  },
+  "order": [
+    "cf3cdfa5-3897-426e-ab7d-86dc96066e89",
+    "47e67085-7860-4887-8dbc-fe69bd8de2ec"
+  ]
+}

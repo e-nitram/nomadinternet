@@ -1,0 +1,153 @@
+{% capture the_snippet_reviews %}{% render 'socialshopwave-widget-recommends' with 1 %}{% endcapture %}
+{% unless the_snippet_reviews contains 'Liquid error' %}
+{{ the_snippet_reviews }}
+{% endunless %}
+
+{% if product.handle == "month-of-free-residential-service" or product.handle == "jaden-vip-kit" or product.handle == "parth-test-ignore-this" or product.handle == 'nomad-omega-one-time-membership-fee' %}
+
+{% liquid
+  assign product_created_date = product.created_at | date: '%s'
+  assign current_date = 'now' | date: '%s'
+  assign seconds_in_30_days = 2592000
+  assign difference_in_seconds = current_date | minus: product_created_date
+  assign total_sold = 0
+  assign has_sale_tag = false
+  assign has_new_tag = false
+  assign has_hit_tag = false
+  assign months = 12
+
+  if product.type == 'Bi-Annual 4G Plan' or product.type == 'Bi-Annual 5G Plan'
+    assign months = 6
+  endif
+
+  for variant in product.variants
+    assign total_sold = total_sold | plus: variant.inventory_quantity
+  endfor
+
+  for tag in product.tags
+    if tag == 'sale'
+      assign has_sale_tag = true
+    elsif tag == 'new'
+      assign has_new_tag = true
+    elsif tag == 'hit'
+      assign has_hit_tag = true
+    endif
+  endfor
+%}
+
+<div class="product product--single">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        {% if product.featured_image %}
+          <div class="product__image">
+            <div class="product__labels">
+              {% if product.compare_at_price or has_sale_tag %}
+                <span class="product__label product__label--sale">Sale</span>
+              {% endif %}
+              {% if difference_in_seconds <= seconds_in_30_days or has_new_tag %}
+                <span class="product__label product__label--new">New</span>
+              {% endif %}
+              {% if total_sold >= 10 or has_hit_tag %}
+                <span class="product__label product__label--hit">Hit</span>
+              {% endif %}
+            </div>
+            {% assign fi = product.featured_image %}
+            <div class="ratio">
+              <img
+                src="{{ fi | image_url: width: 992 }}"
+                alt="{{ product.title }}"
+                loading="lazy"
+                width="{{ fi.width }}"
+                height="{{ fi.height }}"
+              >
+            </div>
+          </div>
+        {% endif %}
+        {% if product.description != blank %}
+          <div class="product__description hidden-md-d">
+            {{ product.description }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="col-lg-6 col-12">
+        <div class="product__info">
+          <h1 class="product__title">{{ product.title }}</h1>
+          {% if product.price_varies %}
+            <div class="product__price">
+              <div class="product__from-price">From: {{ product.price }}</div>
+            </div>
+          {% else %}
+            <div class="product__price">
+              {% if product.compare_at_price %}
+                {% capture discount %}
+								{{ product.compare_at_price_max | minus: product.price }}
+							{% endcapture %}
+                <div class="product__retail-price">
+                  Retail Annual Price:
+                  <strong>
+                    <s>{{ product.compare_at_price | money }}</s>
+                  </strong>
+                </div>
+                <div class="product__saving-price">
+                  Promotional Discount: <strong>-{{ discount | money }}</strong>
+                </div>
+              {% endif %}
+              <div class="product__actual-price">
+                {% if months == 12 %}
+                  <strong>{{ product.price | money }}</strong>
+                {% elsif months == 6 %}
+                  <strong>{{ product.price | money }}</strong>
+                {% endif %}
+              </div>
+              {% comment %}
+              {% if product.compare_at_price %}
+                <div class="product__monthly-saving-price">
+                  Reduces Monthly Price to:
+                  <strong>
+                    {% assign result_string = product.compare_at_price | minus: discount | divided_by: months | money %}
+                    {% assign result_digit = result_string | replace: '$', '' %}
+                    {{- result_digit | ceil | times: 100 | money -}}
+                  </strong>
+                </div>
+              {% endif %}
+            {% endcomment %}
+            </div>
+          {% endif %}
+       {% form 'product', product %}
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+            <div class="row v-gutters">
+              <div class="col-4">
+                <input min="1" type="number" id="quantity" name="quantity" value="1">
+              </div>
+              {% comment %}
+              <div class="col">
+                <a href="/cart/{{- product.variants.first.id }}:1" class="btn lg wide">One Click Buy</a>
+              </div>
+              {% endcomment %}
+              <div class="col-12">
+                <button type="submit" class="btn lg wide add-to-cart-btn">Add to Cart</button>
+              </div>
+
+              {{ form | payment_button }}
+
+              {% if additional_checkout_buttons %}
+              {{ content_for_additional_checkout_buttons }}
+              {% endif %}
+
+              
+            </div>
+         {% endform %}
+          {% if product.description != blank %}
+            <div class="product__description hidden-lg-u" style="margin-top: 3rem">
+              {{ product.description }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endif %}

@@ -1,0 +1,67 @@
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Rajdhani-Light.ttf?v=1710365261) format('truetype');
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Rajdhani-Regular.ttf?v=1710365261) format('truetype');
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Rajdhani-Medium.ttf?v=1710365261) format('truetype');
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Rajdhani-Bold.ttf?v=1710365261) format('truetype');
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Rajdhani-SemiBold.ttf?v=1710365261) format('truetype');
+}
+
+@font-face {
+  font-family: 'AktivGrotesk';
+  src: url('AktivGrotesk-Bold.woff2') format('woff2'),
+      url('AktivGrotesk-Bold.woff2') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AktivGrotesk';
+  src: url('AktivGrotesk-Regular.woff2') format('woff2'),
+      url('AktivGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AktivGrotesk-Medium';
+  src: url('AktivGrotesk-Medium.woff2') format('woff2'),
+      url('AktivGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

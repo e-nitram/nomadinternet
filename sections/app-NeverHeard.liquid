@@ -1,0 +1,141 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+         $(function () {
+            var startItemIndex = 0;
+            var tabItemContainer = ".resp-tabs-container";
+            var tabItemList = $(".resp-tabs-list");
+            var tabInterval;
+            var tabIntervalTime = 3000; //In milliseconds
+            var stopOnHover = true;
+
+            tabItemList.find(".resp-tab-item").each(function(index,val){
+                var itemHeading = $(this).html();
+                $(tabItemContainer).find(".resp-tabs-container-item").eq(index).before('<h3 class="resp-accordion" data-listindex="'+index+'"><span class="resp-arrow"></span>'+itemHeading+'</h3>');
+            });
+
+            $(tabItemContainer).find(".resp-tabs-container-item h3.resp-accordion").on("click", function () {
+                    var itemIndex = $(this).index();
+                    changeIndex(itemIndex);
+                    clearInterval(tabInterval);
+                    startAutoTab();
+                });
+
+            function changeIndex(itemIndex) {
+                tabItemList.find(".resp-tab-item").removeClass("resp-tab-active");
+                tabItemList.find(".resp-tab-item:eq(" + itemIndex + ")").addClass("resp-tab-active");
+
+                if($(window).width()<980){
+                    $(tabItemContainer).find(".resp-tabs-container-item").slideUp();
+                    $(tabItemContainer).find(".resp-tabs-container-item:eq(" + itemIndex + ")").stop().slideDown();
+                }else{
+                    $(tabItemContainer).find(".resp-tabs-container-item").hide();
+                    $(tabItemContainer).find(".resp-tabs-container-item:eq(" + itemIndex + ")").stop().fadeIn();
+                }
+
+                $(tabItemContainer).find("h3.resp-accordion").removeClass("resp-tab-active");
+                $(tabItemContainer).find("h3.resp-accordion").eq(itemIndex).addClass("resp-tab-active");
+
+            }
+            changeIndex(startItemIndex);
+            tabItemList.find(".resp-tab-item").on("click", function () {
+                var itemIndex = $(this).index();
+                changeIndex(itemIndex);
+                clearInterval(tabInterval);
+                startAutoTab();
+            });
+
+            $(document).find(tabItemContainer).find("h3.resp-accordion").on("click", function () {
+                var itemIndex = $(this).attr("data-listindex");
+                changeIndex(itemIndex);
+                clearInterval(tabInterval);
+                startAutoTab();
+            });
+            function startAutoTab() {
+                tabInterval = setInterval(function () {
+                    var isHovered = false;
+                    if(stopOnHover)
+                    isHovered = ($('ul.resp-tabs-list').is(":hover") || $('div.resp-tabs-container').is(":hover"));
+                    if (!isHovered) {
+                        var totalTabs = tabItemList.find(".resp-tab-item").length;
+                        if (totalTabs == ($("ul.resp-tabs-list .resp-tab-item.resp-tab-active").index() + 1)) {
+                            $(".resp-tab-item").eq(0).trigger("click");
+                        } else {
+                            $(".resp-tab-item.resp-tab-active").next().trigger("click");
+                        }
+                    }
+                }, tabIntervalTime);
+            }
+            startAutoTab();
+        });
+  </script>
+<div class="appcontainer">
+  <div class="nvrhrd">
+    <div class="nowgo">
+
+        <h3>Why we are best</h3>
+        <h2>Concept you <br><span style="color:#109D59">Never Heard </span>Before</h2>
+        <p>Now Go on Vacations, without worrying about any<br> ongoing Internet Billing<br> Control your Spends on Internet using the Nomad App</p>
+      
+      <ul class="resp-tabs-list nxtdv">
+        <li class="nxtdv2 resp-tab-item">
+          <a><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/hand.png?v=1671004845" class="nom">
+            <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/01_1.png?v=1670583475" class="fom">
+          <h4>Choose Your Modem</h4></a>
+      </li>
+      <li class="nxtdv2 resp-tab-item">
+         <a> <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/02_1.png?v=1670583790" class="nom">
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/2_8b9f35f9-7b16-4fe0-82e9-249f35d31ed9.png?v=1671003799" class="fom">
+           <h4>Activate your Plan </h4></a>
+      </li>
+      <li class="nxtdv2 resp-tab-item">
+        <a>  <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Manage-all-Plans-at-One-place.png?v=1670583791" class="nom">
+          <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/setting.png?v=1671004237" class="fom">
+          <h4>Manage all Plans at One place</h4></a>
+      </li>
+      <li class="nxtdv2 resp-tab-item">
+         <a> <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Pause-Billing-anytime.png?v=1670583791" class="nom">
+           <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/pause.png?v=1671004519" class="fom">
+          <h4>Pause Billing anytime</h4></a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="mobleimg resp-tabs-container">
+      <div class="resp-tabs-container-item">
+                    <div class="prod-tab-content">
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Vector-_13.png?v=1670580964" class="onn tab-content" id="tabs-1">
+                    </div></div>
+       <div class="resp-tabs-container-item">
+                    <div class="prod-tab-content">
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/tabb2.png?v=1671004468" class="tww tab-content" id="tabs-2">
+                        </div></div>
+                       <div class="resp-tabs-container-item">
+                    <div class="prod-tab-content">
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/tabb3.png?v=1671004329" class="thhr tab-content" id="tabs-3">
+                        </div></div>
+                       <div class="resp-tabs-container-item">
+                    <div class="prod-tab-content">
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/tabb4.png?v=1671004137" class="fur tab-content" id="tabs-4">
+                        </div></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+  
+  
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

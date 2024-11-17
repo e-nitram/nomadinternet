@@ -1,0 +1,379 @@
+{
+  "wrapper": "div.reviews-page",
+  "sections": {
+    "c0b75ab5-11fe-4055-ac6b-f2710f56eb1c": {
+      "type": "01home-videos",
+      "custom_css": [
+        ".image-and-video {background-color:#fafafa;}"
+      ],
+      "settings": {}
+    },
+    "a9af0de1-551f-4de9-8fdf-598c1cf6bfc7": {
+      "type": "awesome-video",
+      "disabled": true,
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+      }
+    },
+    "3afccd6a-3dcc-4214-a9c6-c23dfcdad573": {
+      "type": "lp-18",
+      "settings": {
+        "title": "Nomad Internet company reviews",
+        "description": "Here you can leave your feedback about our company and read the reviews of other users of Nomad Internet. Your review is guaranteed to be read by the management of our company!*"
+      }
+    },
+    "ac5e515b-6dd5-4af6-a55f-768c5ed3b779": {
+      "type": "lp-19",
+      "blocks": {
+        "2e318577-13a0-49ce-9c2b-2f946bd33c79": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/9o650Y4Z56A?controls=0&start=166\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "c872d326-17e3-4c3c-9bb0-b27f7a16f010": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/iQqZZn0MBXk?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "ca1fa517-2b06-4638-9b78-36432b7c4f9d": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/VNMK_msZ2ac?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "4056c276-7dc2-41a4-9282-faa3cc113e86": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/VofPk5ovt9g?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "d4b48365-3a0c-45eb-825c-46eb527c349c": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/QUJuBvK93nA?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "a8983e8b-6bf6-447c-9913-4d1f46f91446": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/_ZRgJW-UOJc?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "9065ec4b-728c-4c9a-9e2b-db9bb6c426e9": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/__8S667m1ME?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "ecbc046d-599d-459f-bc4d-616906d565c8": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/UmDW7ZooIhM?controls=0&start=215\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "61d19cfe-bdad-48ea-a235-a4d40ff794ae": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/vhw0lGXQa0U?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        }
+      },
+      "block_order": [
+        "2e318577-13a0-49ce-9c2b-2f946bd33c79",
+        "c872d326-17e3-4c3c-9bb0-b27f7a16f010",
+        "ca1fa517-2b06-4638-9b78-36432b7c4f9d",
+        "4056c276-7dc2-41a4-9282-faa3cc113e86",
+        "d4b48365-3a0c-45eb-825c-46eb527c349c",
+        "a8983e8b-6bf6-447c-9913-4d1f46f91446",
+        "9065ec4b-728c-4c9a-9e2b-db9bb6c426e9",
+        "ecbc046d-599d-459f-bc4d-616906d565c8",
+        "61d19cfe-bdad-48ea-a235-a4d40ff794ae"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Nomad Internet video reviews"
+      }
+    },
+    "15c25188-6d99-47d2-9bcf-8092123cb8b4": {
+      "type": "customhtml",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div class=\"container prime_banner\">\n<a href=\"\/pages\/primestore#smile-referral-program-details\"><img class=\"desktop_image\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/smile-desktop.png?v=1691500903\"><\/a>\n<a href=\"\/pages\/primestore#smile-referral-program-details\"><img class=\"tablet_image\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/smile-tablet.png?v=1691500902\"><\/a>\n<a href=\"\/pages\/primestore#smile-referral-program-details\"><img class=\"mobile_image\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/smile-mobile.png?v=1691500903\"><\/a>\n<\/div>\n\n<style>\n.prime_banner img{width:100%;padding:0;}\n.prime_banner.container{padding:0!important;}  \n\/* For Desktop View *\/\n@media screen and (min-width: 1024px) {\n  .desktop_image{display:block;}\n  .tablet_image{display:none;}\n  .mobile_image{display:none;}\n}\n\n\/* For Tablet View *\/\n@media screen and (min-device-width: 768px)\n  and (max-device-width: 1024px) {\n  .desktop_image{display:none;}\n  .tablet_image{display:block;}\n  .mobile_image{display:none;}\n}\n\n\/* For Mobile Portrait View *\/\n@media screen and (max-device-width: 480px)\n  and (orientation: portrait) {\n  .desktop_image{display:none;}\n  .tablet_image{display:none;}\n  .mobile_image{display:block;}\n}\n<\/style>"
+      }
+    },
+    "03feb64f-0c7f-49ae-99fc-8dc51addedbe": {
+      "type": "lp-20",
+      "blocks": {
+        "c4b92323-491e-41a1-b3e7-0c186fc24464": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "google",
+            "avatar": "shopify:\/\/shop_images\/google1.png",
+            "name": "Laurie Mrdjan",
+            "text": "While I had to push a little for more clarification, overall the customer service representative was respectful, helpful, and knowledgeable. If this program ends up being usable for me, I will purchase it.\u2028I wish that the plans were able to ...",
+            "link": "https:\/\/goo.gl\/maps\/J9sXKjU8cpPeBcyL6"
+          }
+        },
+        "6f858568-5ad8-45bf-956b-37a29c4dde26": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "google",
+            "avatar": "shopify:\/\/shop_images\/google2.png",
+            "name": "Bryan Lloyd",
+            "text": "I'm in the middle of several acres of woods. None of the local internet companies were able to give me service. The fine folks at Nomad Internet worked with me and tried out two different cell phone companies to find a solution. They also advised me on what kind of external antenna to ...",
+            "link": "https:\/\/goo.gl\/maps\/62jSbTcMYjU5bnNk8"
+          }
+        },
+        "9507eb69-179e-4a87-b5f0-a7e3f998433d": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "google",
+            "avatar": "shopify:\/\/shop_images\/google3.png",
+            "name": "DENISE CHRISTENSEN",
+            "text": "Samuel was great. He was my tech. He was extremely knowledgeable, helpful, & willing to answer any & all questions I had. He had the patience to explain the plans, & equipment needed, he offered recommendations due to our requirements & needs. The plans sounded fair, as ...",
+            "link": "https:\/\/goo.gl\/maps\/ffS4i1vLhPJ2XMsWA"
+          }
+        },
+        "4d63620b-a980-485d-9d88-8684cb0b4066": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "google",
+            "avatar": "shopify:\/\/shop_images\/google4.png",
+            "name": "Laura Hlavinka",
+            "text": "We live in a VERY rural community in Texas, and it is difficult to find internet that works. We found Nomad, and they have a 7 Day Free Return policy. We thought, why not? We ordered two different options to see if either one of them would work for us. Logan North was able to ...",
+            "link": "https:\/\/goo.gl\/maps\/LJYqNEktFr4HZGFMA"
+          }
+        },
+        "23ec28c5-bae4-452d-88e4-3999e737f8bd": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "google",
+            "avatar": "shopify:\/\/shop_images\/google5.png",
+            "name": "Margaret D.",
+            "text": "Customer service with Nomad has been above and beyond what you can experience these days with online tech companies. We've had issues with mail and each time Sean, in particular, helped me with a solution. We're confident the unit will do what we need and we're excited to ...",
+            "link": "https:\/\/goo.gl\/maps\/okp3hEKw6jTqb48s7"
+          }
+        },
+        "0ece0b2b-f8aa-4248-ab2d-d3594310699c": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "google",
+            "avatar": "shopify:\/\/shop_images\/google6.png",
+            "name": "D H",
+            "text": "Sean helped me understand how to transfer my existing service to the new Nomad Internet service. I was frustrated because I had not received notification that the company was making such a big change, and I had trouble figuring out why my internet wasn't working. The website was ...",
+            "link": "https:\/\/goo.gl\/maps\/WPJGiXVAYdTLdn8U7"
+          }
+        }
+      },
+      "block_order": [
+        "c4b92323-491e-41a1-b3e7-0c186fc24464",
+        "6f858568-5ad8-45bf-956b-37a29c4dde26",
+        "9507eb69-179e-4a87-b5f0-a7e3f998433d",
+        "4d63620b-a980-485d-9d88-8684cb0b4066",
+        "23ec28c5-bae4-452d-88e4-3999e737f8bd",
+        "0ece0b2b-f8aa-4248-ab2d-d3594310699c"
+      ],
+      "settings": {
+        "title": "Verified Customer Reviews on Google"
+      }
+    },
+    "75e7bcf4-2851-47cf-98fd-8f85aa607741": {
+      "type": "lp-8",
+      "blocks": {
+        "533fc379-0a29-4bdd-bfd7-749de9425670": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CNET.jpg",
+            "url": "https:\/\/www.cnet.com\/home\/internet\/nomad-internet-review\/",
+            "target_blank": true
+          }
+        },
+        "e3758dfc-2a25-49a2-93a0-d8019a1905f5": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hight_Speedinternet.com.jpg",
+            "url": "https:\/\/www.highspeedinternet.com\/resources\/portable-internet",
+            "target_blank": true
+          }
+        },
+        "76f50f00-22af-4644-b723-18cf9be160f5": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Google_reviews.jpg",
+            "url": "https:\/\/goo.gl\/maps\/pi2HD11XWwUDN85c6",
+            "target_blank": true
+          }
+        }
+      },
+      "block_order": [
+        "533fc379-0a29-4bdd-bfd7-749de9425670",
+        "e3758dfc-2a25-49a2-93a0-d8019a1905f5",
+        "76f50f00-22af-4644-b723-18cf9be160f5"
+      ],
+      "settings": {
+        "title": "THEY TALK ABOUT US"
+      }
+    },
+    "6b8bee55-7712-4c40-a989-a328119f15ac": {
+      "type": "lp-20",
+      "blocks": {
+        "2b2ab8c1-7844-4709-a3b7-06e81b36ed03": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "facebook",
+            "avatar": "shopify:\/\/shop_images\/Facebook1.png",
+            "name": "Jorge Romero",
+            "text": "I asked a few questions today and Luis Carter helped me amazingly well. Luis took his time in providing me the guidance I needed to purchase the correct router. Because of great customer support, I will buy for sure the router recommended. \nThank you!",
+            "link": ""
+          }
+        },
+        "776e4b64-a222-43a0-b140-d1e89b5340c5": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "facebook",
+            "avatar": "shopify:\/\/shop_images\/Facebook2.png",
+            "name": "Katrina Jones",
+            "text": "Samuel was able to answer my lingering questions about if Nomad service would work for me and my needs when camping. He fully explained which plan would suit me best and how everything works! What a wonderful offering they have for people on the go. Thank you Samuel!",
+            "link": ""
+          }
+        },
+        "45951531-4ccf-4078-abed-b3cfc9d5984b": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "facebook",
+            "avatar": "shopify:\/\/shop_images\/Facebook3.png",
+            "name": "Joanna Bartley",
+            "text": "I teach from our RV each day and watch movies and YouTube at night.  Nomad will run well even with several devices.  The customer service rep., Mike, is very helpful and timely in responding! Thanks Nomad!",
+            "link": ""
+          }
+        },
+        "fecad620-35f5-45a9-aedc-3a6548c273b3": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "facebook",
+            "avatar": "shopify:\/\/shop_images\/Facebook4.png",
+            "name": "Tracy McCoy",
+            "text": "I was researching internet options for a rural area and came across Nomad Internet. I saw a chat box that said it would be a real person. We chatted and all of my questions were answered as I requested more information. I am seriously considering this format for my rural area visits. Check it out!",
+            "link": ""
+          }
+        },
+        "748acd40-1da9-4524-8ec0-2ebaab3629cd": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "facebook",
+            "avatar": "shopify:\/\/shop_images\/Facebook5.png",
+            "name": "Leo Valdes",
+            "text": "Samuel Simmons was very helpful. An issue that was taking me days he solved it in just a few minutes. I remember Samuel from when I started with Nomad. He helped me and I had the same wonderful experience that I had today with him. Quick to respond and a blessing to me.",
+            "link": ""
+          }
+        },
+        "e70bff98-7342-4fe1-bf2e-31c998a94178": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "facebook",
+            "avatar": "shopify:\/\/shop_images\/Facebook6.png",
+            "name": "Riley Alfred",
+            "text": "I've been a Nomad customer for several years now and overall I am very happy and satisfied with their service. On the rare occasion there has been an issue their customer service staff have been prompt, professional, and very helpful in quickly resolving the issue. I appreciate their internet service and customer service greatly!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2b2ab8c1-7844-4709-a3b7-06e81b36ed03",
+        "776e4b64-a222-43a0-b140-d1e89b5340c5",
+        "45951531-4ccf-4078-abed-b3cfc9d5984b",
+        "fecad620-35f5-45a9-aedc-3a6548c273b3",
+        "748acd40-1da9-4524-8ec0-2ebaab3629cd",
+        "e70bff98-7342-4fe1-bf2e-31c998a94178"
+      ],
+      "settings": {
+        "title": "Verified Customer Reviews on Facebook"
+      }
+    },
+    "5b472893-7ca5-4248-927b-c8bde3cf4369": {
+      "type": "lp-21",
+      "settings": {
+        "title": "Don't forget to write your review",
+        "description": "Here you can leave your feedback about our company. Your review is guaranteed to be read by the management of our company!*",
+        "form_caption": "*Reviews from this form go directly to the mail to the head of the company."
+      }
+    },
+    "eb9f1ebd-fad9-4851-a57f-0cc39dbc0c63": {
+      "type": "lp-20",
+      "blocks": {
+        "3232f3ea-c7f5-4de6-9b18-b4dcc9cbfe93": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Ann_Weltie.jpg",
+            "name": "Ann Weltie",
+            "text": "Living in rural Idaho, I've had to put up with slow, low-quality Internet for far too long. But I recently discovered Nomad Internet, which has completely changed my life as a digital nomad. Thanks to their fast and reliable connection, I no longer have to worry about my work being interrupted by poor coverage. The customer service is also top notch - they are always incredibly responsive when I need help. Thanks to Nomad internet, I can now do my work without interruptions or distractions while relaxing in the comfort of my home!",
+            "link": ""
+          }
+        },
+        "e5babee0-3eb2-4d5d-a460-6f1dd9f2666d": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Jennifer_Raines.jpg",
+            "name": "Jennifer Raines",
+            "text": "I recently switched to Nomad Internet for my rural internet needs and I'm absolutely delighted with the results! Before, my internet was often unbearably slow and unreliable, but now it's fast and reliable. I was amazed at the speed that Nomad Internet was able to deliver in an area where most services struggle. Not only is the speed great, but they are also extremely helpful when it comes to customer service, always quick to answer any questions I have. Compared to other providers in Washington state, I find that Nomad Internet offers competitive pricing options while still providing top-notch performance. With a wide range of plans and customizable features, they offer something for everyone. I'm glad I made the switch to Nomad Internet - it's been a great experience so far!",
+            "link": ""
+          }
+        },
+        "2a167e6c-7181-44d1-8271-2378b2657078": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/2023-02-28_23-09.png",
+            "name": "Melanie Smith",
+            "text": "I am very pleased with the service I received from Nomad Internet. I live in rural Texas and they were able to provide me with fast and reliable Internet access. The setup process was also incredibly easy and straightforward, taking no more than a few minutes to connect. Additionally, the customer service staff was extremely helpful and supportive throughout my experience. They were quick and thorough in answering questions, providing helpful advice on how to better optimize my connection. Their technical support is top notch, which gives me peace of mind when something goes wrong. Overall, I definitely recommend Nomad Internet to anyone looking for reliable rural internet service; you won't be disappointed!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3232f3ea-c7f5-4de6-9b18-b4dcc9cbfe93",
+        "e5babee0-3eb2-4d5d-a460-6f1dd9f2666d",
+        "2a167e6c-7181-44d1-8271-2378b2657078"
+      ],
+      "settings": {
+        "title": "Reviews of verified customers of NomadInternet"
+      }
+    }
+  },
+  "order": [
+    "c0b75ab5-11fe-4055-ac6b-f2710f56eb1c",
+    "a9af0de1-551f-4de9-8fdf-598c1cf6bfc7",
+    "3afccd6a-3dcc-4214-a9c6-c23dfcdad573",
+    "ac5e515b-6dd5-4af6-a55f-768c5ed3b779",
+    "15c25188-6d99-47d2-9bcf-8092123cb8b4",
+    "03feb64f-0c7f-49ae-99fc-8dc51addedbe",
+    "75e7bcf4-2851-47cf-98fd-8f85aa607741",
+    "6b8bee55-7712-4c40-a989-a328119f15ac",
+    "5b472893-7ca5-4248-927b-c8bde3cf4369",
+    "eb9f1ebd-fad9-4851-a57f-0cc39dbc0c63"
+  ]
+}

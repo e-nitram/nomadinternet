@@ -1,0 +1,910 @@
+{
+  "sections": {
+    "03raptor_banner_QbDr7h": {
+      "type": "03raptor-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/5ad3c3d824158384a499ed571165abcb.png",
+        "sub_heading": "\/\/Experience Ultimate Gaming\/\/",
+        "heading": "The Nomad Raptor is built for Esports and Professional Gamers",
+        "content": "<p>The Only All-in-one Wireless Internet Modem Competing with Fiber for Low-Latency, High-Speed Competitive Gaming.<\/p>",
+        "modem_image": "shopify:\/\/shop_images\/hero_raptor.webp",
+        "sub_heading_color": "#ff7517",
+        "heading_color": "#ffffff",
+        "content_color": "#ffffff"
+      }
+    },
+    "03raptor_gaming_icons_8zTzaA": {
+      "type": "03raptor-gaming-icons",
+      "blocks": {
+        "icon_qVmtiq": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Call_of_duty.svg"
+          }
+        },
+        "icon_i4abmK": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fortnite.svg"
+          }
+        },
+        "icon_cMqciY": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/rainboxsix.svg"
+          }
+        },
+        "icon_8RFUwF": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/battlefield.svg"
+          }
+        },
+        "icon_JRmkmH": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Apex.svg"
+          }
+        },
+        "icon_WkdiaU": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/half.svg"
+          }
+        },
+        "icon_nFX9fU": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/CS.svg"
+          }
+        },
+        "icon_gjwFmK": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Halo.svg"
+          }
+        }
+      },
+      "block_order": [
+        "icon_qVmtiq",
+        "icon_i4abmK",
+        "icon_cMqciY",
+        "icon_8RFUwF",
+        "icon_JRmkmH",
+        "icon_WkdiaU",
+        "icon_nFX9fU",
+        "icon_gjwFmK"
+      ],
+      "settings": {
+        "heading": "Tested with",
+        "heading_color": "#ffffff",
+        "heading_bg_color": "#ff7517"
+      }
+    },
+    "03raptor_multicolumn_PLzTN7": {
+      "type": "03raptor-multicolumn",
+      "blocks": {
+        "content_item_C8Wypj": {
+          "type": "content-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_469522.svg",
+            "heading": "Earn 50¢ on Every Scan",
+            "sub_heading": "<p>Day and Night Profits: Earn 50¢ on Every Nomad Beacon<\/p>"
+          }
+        },
+        "content_item_aRPkA4": {
+          "type": "content-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Frame_469519.svg",
+            "heading": "Earn $75 on Every Sale",
+            "sub_heading": "<p>Instant $75 commission per Hotspot sold.<\/p>"
+          }
+        },
+        "content_item_riWKUY": {
+          "type": "content-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Frame_469521.svg",
+            "heading": "recurring $10\/Mo",
+            "sub_heading": "<p> Earn $10\/Mo Per Sale Lifetime Commissions<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_item_C8Wypj",
+        "content_item_aRPkA4",
+        "content_item_riWKUY"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/869c758d4826d611d017d8275e6e4eb0.jpg",
+        "top_icon": "shopify:\/\/shop_images\/18dddcc9cf53b547eaf0f76c308502f6.svg",
+        "sub_heading": "\/\/Invite Only\/\/",
+        "heading": "Earn with Nomad Creator Cash Program",
+        "sub_heading_color": "#00b589",
+        "heading_color": "#ffffff",
+        "button_text": "Request Nomad Legendary Steamer Invite",
+        "button_link": "https:\/\/creators.nomadinternet.com\/raptor"
+      }
+    },
+    "03raptor_table_HdLBWj": {
+      "type": "03raptor-table",
+      "blocks": {
+        "table_item_9A9ztf": {
+          "type": "table-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Call_of_duty.svg",
+            "nomad_raptor": "25ms",
+            "google_fiber": "30ms",
+            "spectrum": "35ms",
+            "starlink": "40ms",
+            "t_mobile": "35ms"
+          }
+        },
+        "table_item_KkV8f7": {
+          "type": "table-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Apex.svg",
+            "nomad_raptor": "20ms",
+            "google_fiber": "25ms",
+            "spectrum": "30ms",
+            "starlink": "35ms",
+            "t_mobile": "30ms"
+          }
+        },
+        "table_item_BNtzGz": {
+          "type": "table-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/fortnite.svg",
+            "nomad_raptor": "22ms",
+            "google_fiber": "28ms",
+            "spectrum": "32ms",
+            "starlink": "38ms",
+            "t_mobile": "32ms"
+          }
+        },
+        "table_item_4Ctb3V": {
+          "type": "table-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Valorant_logo_1.svg",
+            "nomad_raptor": "18ms",
+            "google_fiber": "23ms",
+            "spectrum": "27ms",
+            "starlink": "32ms",
+            "t_mobile": "28ms"
+          }
+        },
+        "table_item_8e43Gk": {
+          "type": "table-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/CS.svg",
+            "nomad_raptor": "15ms",
+            "google_fiber": "20ms",
+            "spectrum": "25ms",
+            "starlink": "30ms",
+            "t_mobile": "25ms"
+          }
+        },
+        "table_item_chLL49": {
+          "type": "table-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Overwatch_text_logo_1.svg",
+            "nomad_raptor": "28ms",
+            "google_fiber": "32ms",
+            "spectrum": "37ms",
+            "starlink": "42ms",
+            "t_mobile": "36ms"
+          }
+        },
+        "table_item_GnFyJY": {
+          "type": "table-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/rainboxsix.svg",
+            "nomad_raptor": "24ms",
+            "google_fiber": "29ms",
+            "spectrum": "34ms",
+            "starlink": "39ms",
+            "t_mobile": "33ms"
+          }
+        },
+        "table_item_kgwgHM": {
+          "type": "table-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/battlefield.svg",
+            "nomad_raptor": "30ms",
+            "google_fiber": "35ms",
+            "spectrum": "40ms",
+            "starlink": "45ms",
+            "t_mobile": "38ms"
+          }
+        },
+        "table_item_kPzhfn": {
+          "type": "table-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_1.svg",
+            "nomad_raptor": "26ms",
+            "google_fiber": "31ms",
+            "spectrum": "36ms",
+            "starlink": "41ms",
+            "t_mobile": "35ms"
+          }
+        },
+        "table_item_j39UkK": {
+          "type": "table-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Halo.svg",
+            "nomad_raptor": "27ms",
+            "google_fiber": "33ms",
+            "spectrum": "38ms",
+            "starlink": "43ms",
+            "t_mobile": "37ms"
+          }
+        }
+      },
+      "block_order": [
+        "table_item_9A9ztf",
+        "table_item_KkV8f7",
+        "table_item_BNtzGz",
+        "table_item_4Ctb3V",
+        "table_item_8e43Gk",
+        "table_item_chLL49",
+        "table_item_GnFyJY",
+        "table_item_kgwgHM",
+        "table_item_kPzhfn",
+        "table_item_j39UkK"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/869c758d4826d611d017d8275e6e4eb0.jpg",
+        "sub_heading": "\/\/lATENCY WAR\/\/",
+        "heading": "Nomad is generously providing free NomadRaptors to the best esport teams and players in the country.",
+        "button_text": "Request Nomad Legendary Steamer Invite",
+        "button_link": "https:\/\/creators.nomadinternet.com\/raptor"
+      }
+    },
+    "03raptor_columns_UfcDhg": {
+      "type": "03raptor-columns",
+      "blocks": {
+        "content_item_t7d6J4": {
+          "type": "content-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_1.svg",
+            "title": "High Octane Speeds and Unmatched Latency",
+            "content": "<p>Say goodbye to lag and hello to seamless, high-speed gaming experiences. With The Nomad Raptor, every millisecond counts, giving you that critical edge in competitive gaming.<\/p>"
+          }
+        },
+        "content_item_Um8AEq": {
+          "type": "content-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_1.svg",
+            "title": "Total Gaming Control",
+            "content": "<p>With game acceleration, port forwarding, and compatibility with services like WTFast, the Nomad Raptor isn't just about speed. It's about giving you control over your gaming environment.<\/p>"
+          }
+        },
+        "content_item_UBQkij": {
+          "type": "content-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_1.svg",
+            "title": "The Nomad Esports ecosystem",
+            "content": "<p>With features like game-focused QoS settings, geo-filtering using a GPN “Gaming Private Network”, real-time analytics monitoring, custom device prioritization, and cross-platform compatibility, the possibilities are endless!<\/p>"
+          }
+        },
+        "content_item_eY7A3T": {
+          "type": "content-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Icon_1.svg",
+            "title": "Unrivaled performance for every platform",
+            "content": "<p>Whether you’re on PC, console or mobile, The Nomad Raptor ensures your device is always at peak performance ready to take on any challenge in the virtual arena.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_item_t7d6J4",
+        "content_item_Um8AEq",
+        "content_item_UBQkij",
+        "content_item_eY7A3T"
+      ],
+      "settings": {
+        "sub_heading": "\/\/WHY?\/\/",
+        "heading": "WHY CHOOSE THE NOMAD RAPTOR?",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "03raptor_third_columns_bPrUp7": {
+      "type": "03raptor-third-columns",
+      "blocks": {
+        "icon_item_c9Vw7Y": {
+          "type": "icon_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/File.svg",
+            "title": "No Contracts"
+          }
+        },
+        "icon_item_rahtyC": {
+          "type": "icon_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Group_2.svg",
+            "title": "24\/7 Support"
+          }
+        },
+        "icon_item_KdBKff": {
+          "type": "icon_item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Money_back_1.svg",
+            "title": "No Refund Fee"
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_c9Vw7Y",
+        "icon_item_rahtyC",
+        "icon_item_KdBKff"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Shop with confidence",
+        "bg_color": "#0c0c0c"
+      }
+    },
+    "03raptor_modem_detail_Jty4F8": {
+      "type": "03raptor-modem-detail",
+      "blocks": {
+        "image_item_GDyWQ3": {
+          "type": "image-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/nomad-raptor_1_4b669c68-9c4a-4b8d-8a01-23e9d46c232c.png",
+            "text": "nomad Raptor"
+          }
+        },
+        "image_item_gqwgxQ": {
+          "type": "image-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Ethernet_Cable_93afe718-e94f-4cf2-b5ac-7476b79e5246.png",
+            "text": "Ethernet"
+          }
+        },
+        "image_item_qQ3aay": {
+          "type": "image-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Power_Supply2_1_fcb4d198-8100-4483-9f6c-3909d192a596.png",
+            "text": "Power Supply"
+          }
+        },
+        "image_item_77hGwy": {
+          "type": "image-item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Power_Cable_e996b212-1e5f-4e26-bee5-70d4f6da2765.png",
+            "text": "Power Cable"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_GDyWQ3",
+        "image_item_gqwgxQ",
+        "image_item_qQ3aay",
+        "image_item_77hGwy"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/e62d0ed52ba1bad240e117cbf58994d4.jpg",
+        "sub_heading": "\/\/SPECIFICATIONS & FEATURES\/\/",
+        "heading": "Nomad Raptor: The Latency King",
+        "image": "shopify:\/\/shop_images\/card_product_raptor_5_1_4x_52fb1378-58f2-473d-a394-c0a2ffbcbb99.webp",
+        "content": "<ul><li><strong>Chipset <\/strong>Qualcomm® Snapdragon™ SDX55<\/li><li><strong>Network technology <\/strong>5G sub-6 GHz and 4G LTE Cat 22- 4x4 MIMO sub-6 GHz- 256 QAM- HSPA+\/UMTS- CBRS<\/li><li><strong>Wi-Fi version <\/strong>Wi-Fi 6 (802.11 a\/b\/g\/n\/ac\/ax)Wi-Fi connections: Up to 30 connected devices Wi-Fi bands: Real simultaneous dual-band Wi-Fi (2.4GHz & 5GHz)<\/li><li><strong>Connectors\/ports <\/strong>3x LAN port- 1x WLAN port<\/li><li><strong>Dimensions\/Weight <\/strong>9 x 3 x 6.8in (230 x 76 x 172.5mm)\/ 59 oz (1,675g)<\/li><li><strong>Operating temperature <\/strong>32° to 113°F (0°C to 45°C)<\/li><li><strong>SIM type <\/strong>4FF Nano<\/li><li><strong>Wi-Fi Security <\/strong>Wi-Fi Security (WPA\/WPA2\/WPA3), Wi-Fi Protected Setup (WPS 2.0), Wi-Fi Privacy Separation, Configurable DNSMAC Address Filtering, NAT Firewall, Port Forwarding, Port Filtering<\/li><\/ul>",
+        "button_text": "Request Nomad Legendary Steamer Invite",
+        "button_link": "https:\/\/creators.nomadinternet.com\/raptor",
+        "bottom_sub_heading": "\/\/WHAT IS INCLUDED?\/\/",
+        "bottom_heading": "Nomad Raptor Arrives Ready to Go!",
+        "bottom_btn_text": "Request Nomad Legendary Steamer Invite",
+        "bottom_btn_url": "https:\/\/creators.nomadinternet.com\/raptor"
+      }
+    },
+    "03raptor_videos_a3icri": {
+      "type": "03raptor-videos",
+      "blocks": {
+        "item_dpKX6X": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ESKrPFUfWVo-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=ESKrPFUfWVo",
+            "title": "HIGH SPEED NOMAD INTERNET AT OUR OFF GRID CAMP - NOMAD INTERNET IS IMPRESSIVE!"
+          }
+        },
+        "item_Ap4kJC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/S10HSqWQ2JA-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=S10HSqWQ2JA",
+            "title": "OFF GRID INTERNET \/\/ Testing the Nomad Air Internet System"
+          }
+        },
+        "item_PwagQD": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pGRj7tyT9MQ-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=pGRj7tyT9MQ",
+            "title": "High-Speed Adventures Anywhere, Anytime | Nomad Internet review"
+          }
+        },
+        "item_t6a8KN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mXj07GUPXpg-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=mXj07GUPXpg",
+            "title": "Affordable SUPER FAST UNLIMITED INTERNET that goes with you! NoMad travel internet review"
+          }
+        },
+        "item_hQXL3G": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/O8Iuis7hUBA-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=qDYvrl39Vow",
+            "title": "INSANE AR-12 Shotgun Duck Hunting! (ALL DRAKE MIXED BAG)"
+          }
+        },
+        "item_hfRQX3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AGmXp4wYfEc-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=AGmXp4wYfEc",
+            "title": "Nomad mobile internet"
+          }
+        },
+        "item_fhFxgn": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HFgQmLCdGOg-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=HFgQmLCdGOg",
+            "title": "It Exists! 200Mbps Mobile Internet [Nomad Internet]"
+          }
+        },
+        "item_naiFbk": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ZdaKa6Y2rUI-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=ZdaKa6Y2rUI",
+            "title": "WiFi Internet in your Boat! | Nomad Internet Plans"
+          }
+        },
+        "item_D4nJCN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/X9vW-m2mQI-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=-X9vW-m2mQI",
+            "title": "Nomad Internet Kit \"Testing\/Review\""
+          }
+        },
+        "item_qrgiTN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/D7dl_iEKxjk-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=D7dl_iEKxjk",
+            "title": "40 Year Old Cabover Semi Is A Mobile Hot Spot With Wi-Fi"
+          }
+        },
+        "item_KGxgUX": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Qsd-reoqgmU-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=Qsd-reoqgmU",
+            "title": "CHEAPER and FASTER than our Starlink! | Travel & Rural - Nomad Internet"
+          }
+        },
+        "item_mVKWm7": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RqcMoMd-XBE-MQ_2355ba52-6f6a-428f-8012-30ee013369f1.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=RqcMoMd-XBE",
+            "title": "Is Nomad Internet a Scam? or a Reliable Outdoor Wi-Fi Solution?"
+          }
+        },
+        "item_eg88BX": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CTHMAkl19yA-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=CTHMAkl19yA",
+            "title": "Nomad Internet for travelers \/ RV \/ Van Life? - is it faster than Starlink"
+          }
+        },
+        "item_KUmatj": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/csJaJlfdQjY-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=csJaJlfdQjY",
+            "title": "An internet solution that works for me. My honest review of devices tried including @NomadInternet"
+          }
+        },
+        "item_G6fjcC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Xh9QJk1ZMFM-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=Xh9QJk1ZMFM",
+            "title": "Nomad Internet First Impressions | Rural High Speed Internet Solution for Adventure Seekers"
+          }
+        },
+        "item_qDURNf": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/r-ELG6DTy0M-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=r-ELG6DTy0M",
+            "title": "OFF-GRID WITH NOMAD INTERNET | couple builds tiny house, homesteading off-grid rv life, rv living |"
+          }
+        },
+        "item_dKpPGP": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Zs6hyNg-oUo-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=Zs6hyNg-oUo",
+            "title": "Nomad Internet: We tried the ultimate mobile internet setup!"
+          }
+        },
+        "item_9NjdTr": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kt0rFen1nxY-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=Kt0rFen1nxY",
+            "title": "PORTABLE WIFI ANYWHERE!! Livestreaming BASS FISHING With NO CELL SERVICE! (NOMAD AIR)"
+          }
+        },
+        "item_JYThwB": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9BH8Su5KfOI-MQ_fce992a1-9c9d-4b46-ae5f-9a3c793b6de8.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=9BH8Su5KfOI",
+            "title": "Never Be Without Internet Again! Introducing Nomad Internet! Portable and Super Fast"
+          }
+        },
+        "item_faAUyt": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WK8RyKTw9hw-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=WK8RyKTw9hw",
+            "title": "GEAR N REVIEW Nomad Omega Internet Router. Internet For Your RV, Camper or Tiny Home!"
+          }
+        },
+        "item_FALBfd": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/52r9nK0Z1aI-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=52r9nK0Z1aI",
+            "title": "Stay Connected Off Grid with Nomad Internet 🌐"
+          }
+        },
+        "item_cqYQzd": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/C4wAxFKOfjY-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=C4wAxFKOfjY",
+            "title": "The Only Unlimited Rual Internet Providers you will ever need Nomad (EPISODE 4310) Unboxing Video"
+          }
+        },
+        "item_6nqKmT": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/g8vUlXbb6ZQ-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=g8vUlXbb6ZQ",
+            "title": "Portable Internet On The Go, Nomad Air"
+          }
+        },
+        "item_pTnN4p": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/egxFHO_PVqg-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=egxFHO_PVqg",
+            "title": "Budget Friendly Mobile Internet for Content Creators (Under $100 a month)"
+          }
+        },
+        "item_HrmGkm": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/qDYvrl39Vow-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=qDYvrl39Vow",
+            "title": "Portable Internet Showdown: Nomad Air vs. Starlink"
+          }
+        },
+        "item_xxj4Hg": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HSqxNlLAmdM-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=HSqxNlLAmdM",
+            "title": "THE ONLY INTERNET YOU NEED FOR TRUCKERS AND VANLIFERS!"
+          }
+        },
+        "item_kcyfqA": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Qja228GHSCM-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=Qja228GHSCM",
+            "title": "Internet in the middle of nowhere?? Nomad Internet Unboxing"
+          }
+        },
+        "item_ie8BAz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/e3D-VI1riY-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=_e3D-VI1riY",
+            "title": "Online While Off Grid with Nomad Internet!"
+          }
+        },
+        "item_tUaWMn": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IkyEVMKAnnM-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=IkyEVMKAnnM",
+            "title": "NOMAD INTERNET: This. Changes. Everything!"
+          }
+        },
+        "item_pacYkp": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/aFZdaJrQ0k-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=-aFZdaJrQ0k",
+            "title": "How We Get Fast Unlimited Wifi Anywhere In The U.S."
+          }
+        },
+        "item_3LGMRA": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/yMbI46Zx5As-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=yMbI46Zx5As",
+            "title": "Our HONEST Review of the Nomad Air Internet..."
+          }
+        },
+        "item_CYKJhC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9BH8Su5KfOI-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=9BH8Su5KfOI",
+            "title": "Never Be Without Internet Again! Introducing Nomad Internet! Portable and Super Fast"
+          }
+        },
+        "item_pBzEd7": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/YCJv5-geKaU-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=YCJv5-geKaU",
+            "title": "Nomad Air Internet. an HONEST Review (Speed Test in the Middle of Nowhere!)"
+          }
+        },
+        "item_EqAjUW": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/th_1.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=ekpgosH-Tig",
+            "title": "Living on the Road - How I Solved My Wi-Fi Problems with #NomadInternet!"
+          }
+        },
+        "item_VW8Med": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/th_2.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=OC0_-ZHTHkQ",
+            "title": "Full Nomad Air Travel Review 2023"
+          }
+        },
+        "item_tamnmz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/daFKsIsBAik-MQ.jpg",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=daFKsIsBAik",
+            "title": "Reliable WiFi Across 25 States for Travelers & Digital Nomads"
+          }
+        },
+        "item_Tn9nHH": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thum_1.png",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=AC5QnzI2TWA",
+            "title": "Nomad Internet Review by Squatch America"
+          }
+        },
+        "item_taYNt7": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thum_2.png",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=ak52LqXhSGM",
+            "title": "Watch Amy Groves Discuss Why Nomad Internet is the Best!"
+          }
+        },
+        "item_Cw6PLq": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thum_3.png",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=jq8a2Q0i10Q",
+            "title": "Nomad Air Unlimited Unthrottled Hotspot, up to 200Mbps for Rural Home Internet or Travel!"
+          }
+        },
+        "item_eTDEmi": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thum_4.png",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=Wj49Vjm8Pd8",
+            "title": "Interview with Nomad Internet Technical Support Manager Don!"
+          }
+        },
+        "item_kHTVyF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thum_5.png",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=2mUTlV8mD60",
+            "title": "You Asked, We Listened. Nomad Internet is Hiring!"
+          }
+        },
+        "item_qbWkEm": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thum_6.png",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=Q6rd-Erl7uo",
+            "title": "*BREAKING* Nomad Internet: The Future CEO?"
+          }
+        },
+        "item_yibnwy": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thum_7.png",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=X5Tv2R5jkms",
+            "title": "Inside Nomad Internet: Mistakes, CEO, Future"
+          }
+        },
+        "item_6g47PX": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thum_8.png",
+            "video_link": "https:\/\/www.youtube.com\/watch?v=m00gJp7gq9A",
+            "title": "Nomad Internet: Nomad Air On The Road"
+          }
+        }
+      },
+      "block_order": [
+        "item_dpKX6X",
+        "item_Ap4kJC",
+        "item_PwagQD",
+        "item_t6a8KN",
+        "item_hQXL3G",
+        "item_hfRQX3",
+        "item_fhFxgn",
+        "item_naiFbk",
+        "item_D4nJCN",
+        "item_qrgiTN",
+        "item_KGxgUX",
+        "item_mVKWm7",
+        "item_eg88BX",
+        "item_KUmatj",
+        "item_G6fjcC",
+        "item_qDURNf",
+        "item_dKpPGP",
+        "item_9NjdTr",
+        "item_JYThwB",
+        "item_faAUyt",
+        "item_FALBfd",
+        "item_cqYQzd",
+        "item_6nqKmT",
+        "item_pTnN4p",
+        "item_HrmGkm",
+        "item_xxj4Hg",
+        "item_kcyfqA",
+        "item_ie8BAz",
+        "item_tUaWMn",
+        "item_pacYkp",
+        "item_3LGMRA",
+        "item_CYKJhC",
+        "item_pBzEd7",
+        "item_EqAjUW",
+        "item_VW8Med",
+        "item_tamnmz",
+        "item_Tn9nHH",
+        "item_taYNt7",
+        "item_Cw6PLq",
+        "item_eTDEmi",
+        "item_kHTVyF",
+        "item_qbWkEm",
+        "item_yibnwy",
+        "item_6g47PX"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Real Customer Stories",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "lp_16_tUByNt": {
+      "type": "lp-16",
+      "blocks": {
+        "block_CAtm9G": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p><strong>Experience High-Speed Wireless Internet with Nomad<\/strong><\/p><ul><li><strong>Leading Provider:<\/strong> America's Largest Wireless Internet Service.<\/li><li><strong>Rural Connectivity:<\/strong> Specializing in High-Speed Internet for Rural Communities.<\/li><li><strong>Traveler-Friendly:<\/strong> Seamless Internet Access for On-the-Road Travelers.<\/li><li><strong>Low Start-Up Costs:<\/strong> Affordable Access to Quality Internet Service.<\/li><li><strong>Rapid Connection Speeds:<\/strong> Experience Fast and Reliable Internet Anywhere.<\/li><\/ul>"
+          }
+        },
+        "block_LWpx47": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p><strong>Revolutionize Your Internet Connection<\/strong><\/p><ul><li><strong>Wireless Connectivity:<\/strong> Direct to your home, business, or on-the-go<\/li><li><strong>Advanced Technology:<\/strong> Utilizing the latest innovations for optimal speed.<\/li><li><strong>Nationwide Network:<\/strong> Access high-speed internet even in rural areas other providers cannot reach.<\/li><li><strong>Tailored Plans:<\/strong> Variety of options to suit every unique need.<\/li><li><strong>Stay Connected Everywhere:<\/strong> Reliable service for both stationery and nomadic lifestyles.<\/li><\/ul>"
+          }
+        },
+        "block_qEwf4f": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet compare to Starlink Roam?",
+            "content": "<p>Nomad Internet and Starlink Roam both provide internet access while on the road, but with distinct differences in pricing and hardware requirements. Nomad Internet offers this service with a minimal monthly fee ranging from $15-$25, in addition to the cost for the chosen internet speed plan. In contrast, Starlink Roam requires a larger initial investment, including a $2,500 dish and a $599 one-time fee for the standard Starlink dish. This makes Nomad Internet a more budget-friendly and flexible option for users needing internet access while traveling, compared to the substantial upfront cost of Starlink Roam.<\/p>"
+          }
+        },
+        "block_fU77TN": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet as Good as Satellite-Based Internet?",
+            "content": "<p><strong>Advantages of Nomad Internet Over Traditional Satellite Services<\/strong><\/p><ul><li><strong>Enhanced Mobility:<\/strong> Nomad offers seamless connectivity for on-the-go lifestyles, unlike stationary satellite dishes.<\/li><li><strong>Faster Speeds:<\/strong> Experience higher speed internet with Nomad, often surpassing satellite internet's capabilities.<\/li><li><strong>Lower Latency:<\/strong> Benefit from reduced lag and more responsive internet, a significant advantage over satellite connections.<\/li><li><strong>No Cumbersome Dish:<\/strong> Avoid the need for a large, stationary satellite dish with Nomad's more compact and mobile setup.<\/li><li><strong>Wider Coverage:<\/strong> Nomad provides consistent internet access in areas where satellite signals may be obstructed or unreliable.<\/li><li><strong>Cost-Effective:<\/strong> Nomad often presents a more budget-friendly option, especially considering the high setup costs of satellite dishes.<\/li><\/ul>"
+          }
+        },
+        "block_WRCiMA": {
+          "type": "block",
+          "settings": {
+            "title": "High-Speed Internet with Nomad's Small Antennas vs. Large Dish Services",
+            "content": "<p>Understanding Nomad's High-Speed Internet Technology<\/p><ul><li><strong>Advanced Modem Technology:<\/strong> Nomad utilizes cutting-edge modems with powerful, compact antennas, optimized for high-speed data transmission.<\/li><li><strong>Efficient Signal Processing:<\/strong> Our modems are designed to efficiently process signals, ensuring fast internet speeds even with smaller antennas.<\/li><li><strong>Strategic Network Use:<\/strong> We leverage existing cellular networks, which allows for high-speed internet without the need for large satellite dishes.<\/li><li><strong>Size vs. Performance:<\/strong> Comparable to the evolution from bulky 90s mobile phones to today's sleek smartphones, Nomad's innovative design maximizes performance in a compact form.<\/li><li><strong>Versatility and Mobility:<\/strong> Unlike large dishes, our small antennas offer greater flexibility and mobility, suitable for both stationery and on-the-go use.<\/li><li><strong>Broadband Technologies:<\/strong> We incorporate the latest in broadband technologies, making the most of available cellular networks for faster and more reliable internet.<\/li><\/ul>"
+          }
+        },
+        "block_WCxRta": {
+          "type": "block",
+          "settings": {
+            "title": "What are the Contract Requirements for Nomad Internet?",
+            "content": "<p>No Contractual Obligations: Nomad Internet provides services without binding agreements, offering complete flexibility.<\/p><ul><li><strong>Flexible Subscription Plans:<\/strong> Choose a plan that aligns with your needs, with the liberty to modify, pause or cancel anytime.<\/li><\/ul>"
+          }
+        },
+        "block_VBprQn": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet Secure?",
+            "content": "<p>Yes, Nomad Internet prioritizes security for its users.<\/p><ul><li><strong>Advanced Security Features:<\/strong> Nomad Internet offers multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, and IT admin controls.<\/li><li><strong>Peace of Mind:<\/strong> Enjoy strong security measures at every level of usage with Nomad Internet.<\/li><\/ul>"
+          }
+        },
+        "block_k3Q8eW": {
+          "type": "block",
+          "settings": {
+            "title": "Can I Use Nomad Internet for Gaming and Streaming Across Multiple Devices?",
+            "content": "<p><strong>Yes:<\/strong> Nomad Internet is well-equipped for both gaming and streaming needs, even in remote locations.<\/p><ul><li><strong>Fast and Reliable Connectivity:<\/strong> Nomad Internet ensures fast internet speeds with low ping rates and latency, ideal for gaming and streaming.<\/li><li><strong>Multi-Device Support:<\/strong> Whether gaming solo or streaming content across multiple devices simultaneously, Nomad Internet offers robust performance for all your entertainment needs.<\/li><\/ul>"
+          }
+        },
+        "block_6PTdtG": {
+          "type": "block",
+          "settings": {
+            "title": "Can I Use Nomad Internet for RVing, Off-Trail Hiking, and More?",
+            "content": "<p>Yes: Nomad Internet users can bring the same high-speed, low-latency service they have at home to any location covered by Nomad Internet.<\/p><ul><li><strong>Flexible Connectivity on the Go:<\/strong> Nomad Internet for RVers and travelers offers the convenience of pausing and un-pausing service based on individual travel needs.<\/li><li><strong>Ideal for Remote Adventures:<\/strong> Whether RVing, off-trail hiking, or exploring remote locations, Nomad Internet ensures reliable connectivity for work or leisure activities on the move.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "block_CAtm9G",
+        "block_LWpx47",
+        "block_qEwf4f",
+        "block_fU77TN",
+        "block_WRCiMA",
+        "block_WCxRta",
+        "block_VBprQn",
+        "block_k3Q8eW",
+        "block_6PTdtG"
+      ],
+      "settings": {
+        "sub_title": "\/\/FREQUENTLY ASKED QUESTIONS\/\/",
+        "title": "ANSWERS TO THE MOST FREQUENTLY ASKED QUESTIONS",
+        "button_text": "",
+        "button_url": "https:\/\/beaconshare.com\/membership-account\/membership-checkout\/?level=5",
+        "bg_color": "#000000",
+        "sub_title_color": "#00b589",
+        "title_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "03raptor_banner_QbDr7h",
+    "03raptor_gaming_icons_8zTzaA",
+    "03raptor_multicolumn_PLzTN7",
+    "03raptor_table_HdLBWj",
+    "03raptor_columns_UfcDhg",
+    "03raptor_third_columns_bPrUp7",
+    "03raptor_modem_detail_Jty4F8",
+    "03raptor_videos_a3icri",
+    "lp_16_tUByNt"
+  ]
+}

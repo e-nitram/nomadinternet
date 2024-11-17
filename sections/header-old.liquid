@@ -1,0 +1,221 @@
+<!--  Uncomment below for the green banner at the top -->
+<!--
+<style>
+	.promotion-banner {
+     	background-color: #0f9d59;
+      	font-size: 24px;
+	    color: #FFF;
+        text-align: center;
+        padding: 1rem 0;
+    }
+</style>
+<div class="promotion-banner">
+  <strong>Flash Sale!</strong> 25% off sitewide ending soon!
+</div> -->
+<header id="header" role="banner" class="main-header">
+  <div class="container pl-xl-0 pr-xl-0" id="main_header">
+    <div class="row align-items-center">
+     <div class="d-flex w-100 justify-content-between logo-wrap d-block d-lg-none">
+      <div class="col-6 col-lg-3 ml-2 mt-2 logo-wrap d-block d-lg-none">
+        <h1 id="logo">
+          <a href="/">
+            {% render 'image' with imageSrc: 'logo.png', class='img-fluid', altTag: 'Logo', isAsset: 'true' %}
+          </a>
+        </h1>
+      </div>
+       <div class="col-3 d-flex justify-content-end mr-1 d-lg-none navbar-light">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      </div>
+      <!--<div class="col-3 d-block d-lg-none text-right"> <a href="/pages/plans/#wizard-plans" class="btn btn-outline-dark d-lg-none">Plans</a></div>-->
+      <div class="col-12 pl-lg-0 pr-lg-0" id="header-menu">
+        <nav class="navbar navbar-expand-lg navbar-light pl-lg-0 pr-lg-0" role="navigation">
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul id="menu-top-navigation" class="nav navbar-nav w-100 justify-content-between align-items-lg-center">
+              <li class="nav-logo nav-logo-default d-none d-lg-block nav-item">
+                <a href="/" class="nav-link">
+                  <img src="{{ 'logo.png' | asset_url }}" alt="Logo">
+                </a>
+              </li>
+              <li class="nav-logo nav-logo-home d-none d-lg-block nav-item">
+                <a href="/" class="nav-link">
+                  <img src="{{ 'home-logo.png' | asset_url }}" alt="Logo">
+                </a>
+              </li>
+              {% for link in linklists.main-menu.links limit:0 %}
+                <li class="nav-item">
+                  <a href="{{ link.url }}" class="nav-link">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+
+              {% for link in linklists.main-menu.links %}
+                {% if link.links != blank %}
+                  <li class="nav-item dropdown hover-dropdown">
+                    <a href="{{ link.url }}" class="dropdown-toggle nav-link" id="menu-item-dropdown-1280">{{ link.title }}</a>
+                    <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1280" role="menu">
+                      {% for childlink in link.links %}
+                        <li class="nav-item">
+                          <a title="{{ childlink.title }}" href="{{ childlink.url }}" class="dropdown-item">
+                            {{ childlink.title }}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% else %}
+                  <li class="nav-item">
+                    <a href="{{ link.url }}" class="nav-link">
+                      {{ link.title }}
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+              <li class="join-link nmr-logged-out nav-item" style="position: relative;">
+                <a title="Join Now" href="/pages/nomad-plans" class="nav-link">
+                  <!--<i class="fas fa-user mr-2" aria-hidden="true"></i>--> Join Now
+                </a>
+
+                {% if request.path == "/" %}
+                  <div style="position: absolute; top: 80px; right: 0; z-index: 10;">
+                    <a href="https://www.cnet.com/home/internet/nomad-internet-review/" target="_blank">
+                      <img style="border: 0;" alt="Nomad Internet BBB Business Review" src="{{ 'cnet.png' | asset_img_url: '300x' }}" />
+                    </a>
+                  </div>
+				{% endif %}
+              </li>
+
+              <li class="cart-link nmr-logged-out nav-item">
+                <a title="Cart" href="/cart" class="cart-links nav-link">
+                   <i class="fas fa-shopping-cart"></i> Cart
+                    <!-- <span>
+                        {% if cart.item_count == 1 %} 0 {% endif %}
+                        {% if cart.item_count == 2 %} 1 {% endif %}
+                        {% if cart.item_count == 3 %} 2 {% endif %}
+                        {% if cart.item_count == 4 %} 3 {% endif %}
+                        {% if cart.item_count == 5 %} 4 {% endif %}
+                        {% if cart.item_count == 6 %} 5 {% endif %}
+                        {% if cart.item_count == 7 %} 6 {% endif %}
+                        {% if cart.item_count == 8 %} 7 {% endif %}
+                        {% if cart.item_count == 9 %} 8 {% endif %}
+                        {% if cart.item_count == 10 %} 9 {% endif %}
+                        {% if cart.item_count == 11 %} 10 {% endif %}
+                        {% if cart.item_count == 12 %} 11 {% endif %}
+                        {% if cart.item_count == 13 %} 12 {% endif %}
+                        {% if cart.item_count == 14 %} 13 {% endif %}
+                        {% if cart.item_count == 15 %} 14 {% endif %}
+                        {% if cart.item_count == 16 %} 15 {% endif %}
+                    </span> -->
+                </a>
+                <div class="cart-details dropdown" style="display:none">
+                  <div class="cd-heading">Your Cart</div>
+                  <div class="cd-productList">
+                    <div class="cd-pl-prolist">
+                      {% for item in cart.items %}
+                          <div class="cart-form__cart-item cart_item" {% if item.product.title contains 'Subscription Auto renew' %}style="display:none!important;"{% endif %}>
+                            <div class="product-thumbnail pl-0">
+                              <a class="d-block d-md-none float-right remove{% if item.product.title == 'Strong Pink Plan' %} remove_pink{% elsif item.product.title == 'Very Blue Plan' %} remove_blue{% elsif item.product.title == 'Deep Red Plan' %} remove_red{% elsif item.product.title == 'Bright Yellow Plan' %} remove_yellow{% else %}{% endif %}{% if item.product.title == 'Strong Pink Plan Subscription Auto renew' %} remove_pink_sub{% elsif item.product.title == 'Very Blue Plan Subscription Auto renew' or item.product.title == 'Very Blue Plan Sim only Subscription Auto renew' %} remove_blue_sub{% elsif item.product.title == 'Deep Red Plan Subscription Auto renew' %} remove_red_sub{% elsif item.product.title == 'Bright Yellow Plan Subscription Auto renew' %} remove_yellow_sub{% else %}{% endif %}" aria-label="Remove this item" data-line="{{ forloop.index }}" data-product_sku="GL-MiFi-Red">×</a>
+                            </div>
+                            <div class="cd-featured-image row">
+                              <div class="cfi-image-cont col-sm-6">
+                                <img width="100" height="100" src="{{ item | img_url: 'medium' }}" alt="{{ item.title | escape }}" />
+                              </div>
+
+                              <div class="cfi-remove-cont col-sm-6">
+                                <a class="" alt="" href="#">
+
+                                </a>
+                                <p class="cart__remove">
+                      <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="text-link text-link--accent" aria-label="{{ 'cart.label.remove' | t: product: item.title }}" data-cart-remove><i class="far fa-trash-alt"></i></a>
+                    </p>
+                              </div>
+                            </div>
+                            <div class="product-name" data-title="Product">
+                              <div class="cd-product-title  row">
+                                <div class="col-sm-8">
+                                  <a href="{{ product.url }}">{{ item.product.title }} - {{ item.variant.title }}</a>
+                                  <span class="text-note">(You will be charged this amount every month)</span>
+                                </div>
+                                <div class="col-sm-4">
+                                  <span class="Price-amount amount">
+                                      {% if item.product.title contains 'Annual' %}
+                                        $0 <sub>/ mo </sub>
+                                      {% elsif item.product.title contains 'Pink' %}
+                                        $149 <sub>/ mo </sub>
+                                      {% elsif item.product.title contains 'Blue' %}
+                                        $129 <sub>/ mo</sub>
+                                      {% elsif item.product.title contains 'Red' %}
+                                        $149 <sub>/ mo</sub>
+                                      {% elsif item.product.title contains 'Work Anywhere' %}
+                                        $149 <sub>/ mo</sub>
+                                      {% elsif item.product.title contains 'Yellow' %}
+                                        $179 <sub>/ mo </sub>
+                                      {% else %}
+                                    {% endif %}
+                                  </span>
+                                </div>
+                              </div>
+
+                              <div class="cd-product-title otp-seter  row">
+                                <div class="col-sm-8">
+                                  <span class="text-note-n">One-Time Membership Fee </span>
+                                </div>
+                                <div class="col-sm-4">
+                                  <span class="Price-amount amount">
+                                    {% if item.price > 0 %}
+                                      {{ item.price | money_without_trailing_zeros }} - <sub>/ One Time </sub>
+                                    {% else %}
+                                      $0 <sub>/ Setup Fee</sub>
+                                    {% endif %}
+                                  </span>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="product-price" align="center" valign="top" data-title="Price">
+                              <div class="d-block d-md-none">Total</div>
+                              <div class="product-price-top">
+
+                              </div>
+                              <div class="product-price-bottom">
+
+                              </div>
+                            </div>
+                          </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                  <div class="cd-totsummary">
+                    <div class="cd-tsummary row">
+                      <span class="cd-tsum-headin col-sm-9">Order Summary</span>
+                      <span class="cd-tsum-cost col-sm-3">{{ cart.total_price | money_without_trailing_zeros }}</span>
+                    </div>
+                  </div>
+                  <div class="cd-checkout-but">
+                    <a href="/cart">Proceed To Checkout</a>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+"name": "Header",
+"settings": []
+}
+{% endschema %}
+
+<style>
+  .cart-links.nav-link:hover + .cart-details.dropdown,
+  .cart-details.dropdown:hover {
+    display:block !important;
+  }
+</style>

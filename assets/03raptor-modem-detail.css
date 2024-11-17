@@ -1,0 +1,226 @@
+.raptor-modem-detail {
+  padding: 60px 0;
+  color: #fff;
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.raptor-modem-detail::before {
+  content: " ";
+  background: #000000CC;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.raptor-modem-detail .container {
+  z-index: 1;
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.raptor-modem-detail .container .sub-heading,
+.raptor-modem-detail .bottom-content .sub-title
+{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.97px;
+  font-family: "Rajdhani";
+  margin-bottom: 12px;
+  color: #00b589;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.raptor-modem-detail .container .heading,
+.raptor-modem-detail .bottom-content .title
+{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  font-family: "Rajdhani";
+  margin: 0;
+  margin-bottom: 40px !important;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.raptor-modem-detail .container .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  position: relative;
+}
+
+.raptor-modem-detail .container .wrapper img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.raptor-modem-detail .container .wrapper .content {
+  text-align: left;
+  background: #000000B2;
+  padding: 16px;
+}
+
+.raptor-modem-detail .container .wrapper .content .list {
+  margin-bottom: 30px;
+}
+
+.raptor-modem-detail .container .wrapper .content a.btn {
+  margin-bottom: 12px;
+}
+
+.raptor-modem-detail .container .wrapper .content ul li {
+  padding: 12px 16px 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: -0.01em;
+  font-family: "DIN";
+  color: #ffffffcc;
+}
+
+.raptor-modem-detail .container .wrapper .content ul li strong {
+  font-size: 18px;
+  font-family: "DIN";
+  font-weight: 600;
+  line-height: 21.98px;
+  letter-spacing: -0.01em;
+  color: #FF7517;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.raptor-modem-detail .container .wrapper .content ul li::after {
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background: #DDDDDD38;
+  margin-top: 12px;
+}
+
+.raptor-modem-detail .container .wrapper .content ul li:last-of-type::after {
+  display: none;
+}
+
+.raptor-modem-detail .bottom-content {
+  background: #000000B2;
+  margin-top: 40px;
+  padding: 60px 24px;
+}
+
+.raptor-modem-detail .bottom-content__list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  gap: 36px;
+}
+
+.raptor-modem-detail .bottom-content__list .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.raptor-modem-detail .bottom-content__list .item span {
+  font-family: "Rajdhani";
+  font-size: 20px;
+  line-height: 25.52px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: -0.01em;
+  padding-top: 8px;
+  text-transform: capitalize;
+}
+
+.raptor-modem-detail .bottom-content__list .item:first-of-type img {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .raptor-modem-detail {
+    padding: 80px 0;
+  }
+
+  .raptor-modem-detail .container .sub-heading,
+  .raptor-modem-detail .bottom-content .sub-title
+  {
+    font-size: 20px;
+    line-height: 26.52px;
+  }
+  
+  .raptor-modem-detail .container .heading,
+  .raptor-modem-detail .bottom-content .title
+  {
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 950px;
+    margin: auto;
+  }
+
+  .raptor-modem-detail .container .wrapper {
+    flex-direction: row;
+  }
+
+  .raptor-modem-detail .container .wrapper img {
+    width: 440px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+  }
+
+  .raptor-modem-detail .container .wrapper .content {
+    width: calc(100% - 500px);
+  }
+
+  .raptor-modem-detail .bottom-content {
+    padding: 60px 64px;
+  }
+
+  .raptor-modem-detail .bottom-content__list {
+    gap: 120px;
+    flex-direction: row;
+  }
+
+  .raptor-modem-detail .bottom-content__list .item span {
+    padding-top: 0;
+  }
+
+  .raptor-modem-detail .container .wrapper .content ul li {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  
+  .raptor-modem-detail .container .wrapper .content ul li strong {
+    font-size: 20px;
+    line-height: 24.42px;
+  }
+}
+
+@media (max-width: 500px) {
+  .raptor-modem-detail .container .wrapper img {
+    max-width: 385px;
+  }
+}
+
+@media (max-width: 767px) {
+  .raptor-modem-detail .bottom-content__list .item:not(:first-of-type) img {
+    width: 150px;
+  }
+}

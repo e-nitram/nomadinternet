@@ -1,0 +1,538 @@
+{
+  "wrapper": "div.cube.cube--template",
+  "sections": {
+    "ee8a2532-9eeb-44c4-bcae-fa42507022ca": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "dfdae4ed-e77f-4d16-ba27-f368674cde6a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand_logo_1778f5ef-3b15-4af7-9fee-2c5fd2d387ba.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "dfdae4ed-e77f-4d16-ba27-f368674cde6a"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "Nomad internet is perfect for your RV Park",
+        "description": "<p>Attention RV park owners! Discover the perfect modem for your needs with Nomad Internet's unbeatable subscription. Not fully satisfied with your modem? No worries! We'll assist you in exchanging it until you find the perfect match. Join Nomad Internet today and experience the power of choice!<\/p>",
+        "max_width": 800,
+        "button_class": "solid",
+        "button_text": "Join Nomad Internet",
+        "button_url": "shopify:\/\/pages\/plans",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "0cf7ac3d-6300-4a05-83e4-63f9777117b2": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>"
+      }
+    },
+    "fce69f12-8c75-4a6d-ab50-2c63706fcb78": {
+      "type": "lp-2",
+      "blocks": {
+        "4c226f45-a88a-4615-a8c3-b02d33b402d0": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#bababa",
+            "image": "shopify:\/\/shop_images\/Infographic_1_4d0d78b9-a6e6-47b3-b3b5-4282e153e2a0.png"
+          }
+        },
+        "49f13704-94a1-491f-abc6-d047654227e7": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Group_1000007012.png"
+          }
+        }
+      },
+      "block_order": [
+        "4c226f45-a88a-4615-a8c3-b02d33b402d0",
+        "49f13704-94a1-491f-abc6-d047654227e7"
+      ],
+      "settings": {
+        "title": "How its Work"
+      }
+    },
+    "235f47dc-5b74-400c-8b10-91fa1b227267": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#222222",
+        "wide": false,
+        "margin_top": 60,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2 class=\"uppercase h3 text-center\">What will the Nomad Internet give you?<\/h2>"
+      }
+    },
+    "28618fcb-3329-4859-aba8-df39f270ed73": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "99b70f9e-b11f-4b7c-989b-0adf075fd6b1": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Business.jpg",
+            "title_tag": "h2",
+            "title": "Internet for your guests",
+            "text": "<p>Elevate your RV park experience with Nomad Internet, providing reliable, high-speed connectivity for guest satisfaction and a competitive edge in the market. Enhance convenience and comfort today!<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Learn More",
+            "button_url_2": "#shopify-section-template--14546767642682__b9304b58-436b-44a7-aaaa-555ad2a4f7bc"
+          }
+        },
+        "53f24d6b-6c2a-43cf-8fb0-dc691ea6bc25": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle.jpg",
+            "title_tag": "h2",
+            "title": "Internet for your work",
+            "text": "<p>Make your RV park the ultimate remote work destination with Nomad Internet's robust connectivity. Attract remote workers and digital nomads, expanding your clientele and boosting revenue.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Learn More",
+            "button_url_2": "#shopify-section-template--14546767642682__7988e939-94b6-4892-81fa-66f7613bde61"
+          }
+        },
+        "292262c1-8037-40b4-8ce5-37ee99cce93e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Travel.jpg",
+            "title_tag": "h2",
+            "title": "Internet to attract guests",
+            "text": "<p>Stand out with Nomad Internet's high-speed connectivity, appealing to modern travelers seeking adventure and seamless online access. Attract new guests and enhance your RV park's reputation!<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Learn More",
+            "button_url_2": "#shopify-section-template--14546767642682__228186d9-3062-44c8-b916-d56024b4d600"
+          }
+        }
+      },
+      "block_order": [
+        "99b70f9e-b11f-4b7c-989b-0adf075fd6b1",
+        "53f24d6b-6c2a-43cf-8fb0-dc691ea6bc25",
+        "292262c1-8037-40b4-8ce5-37ee99cce93e"
+      ],
+      "settings": {
+        "columns_count": "3"
+      }
+    },
+    "2dee4dbb-d457-42ea-9286-83daa64f4f8f": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#222222",
+        "wide": false,
+        "margin_top": 60,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2 class=\"uppercase h3 text-center\">You Can Earn<\/h2>"
+      }
+    },
+    "5b9981c6-2dc3-4b99-be6a-5797d477f0f5": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "373944e2-814c-4929-b3a9-93621f547810": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Business_3eea4e26-96d2-4c0f-b534-6674ae2469a0.jpg",
+            "title_tag": "h2",
+            "title": "Premium offer for guests",
+            "text": "<p>Boost your RV park revenue with tiered Nomad Internet access! Offer free basic Wi-Fi while charging for high-speed upgrades, catering to diverse guest needs and generating extra income.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Contact us",
+            "button_url_2": "shopify:\/\/pages\/contacts"
+          }
+        },
+        "6d9de100-27d2-48ac-99ef-a78f08d1c6d2": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_bed7c09b-efd4-4bc4-ac3b-8895426e2bb9.jpg",
+            "title_tag": "h2",
+            "title": "Nomad Internet Partner Program",
+            "text": "<p>You will receive a cash bonus for each guest you attract who subscribes to Nomad Internet during their stay. You will not only provide your visitors with first-class communication, but also create an additional source of income for your business.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Contact us",
+            "button_url_2": "shopify:\/\/pages\/contacts"
+          }
+        },
+        "91c214df-cbd0-44ac-b3f3-18da0dade417": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Travel_7b7fb5fa-25a9-49a5-bd2c-ac08e85ab3bc.jpg",
+            "title_tag": "h2",
+            "title": "Free Wi-Fi in your park",
+            "text": "<p>Maximize your RV park's appeal with Nomad Internet. Purchase a single device and plan, yet accommodate multiple users, drawing in guests with the allure of cost-effective, shared internet access and encouraging repeat stays.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Contact us",
+            "button_url_2": "shopify:\/\/pages\/contacts"
+          }
+        }
+      },
+      "block_order": [
+        "373944e2-814c-4929-b3a9-93621f547810",
+        "6d9de100-27d2-48ac-99ef-a78f08d1c6d2",
+        "91c214df-cbd0-44ac-b3f3-18da0dade417"
+      ],
+      "settings": {
+        "columns_count": "3"
+      }
+    },
+    "5eea26d1-5930-42d0-9ccd-fdcc49980daf": {
+      "type": "lp-28",
+      "blocks": {
+        "f5a44c6e-cdba-4fa2-865f-5ca2367ac3d5": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_1_379bb817-5cec-49b2-96c9-d79d9ac33c54.jpg",
+            "title": "Good signal"
+          }
+        },
+        "bf20909f-d48f-4a03-98db-38fedf119a0a": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_2_b8aa7b48-f886-41b2-8a84-2612c2dc5974.jpg",
+            "title": "Fast speed"
+          }
+        },
+        "a3ed3fe3-7bf2-42ac-9ef4-73e717c81caa": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_3_4d177f56-a343-4db3-87a7-de66a8e3fc25.jpg",
+            "title": "Easy setup"
+          }
+        },
+        "0fb7bd56-52e7-4f28-9a4e-3eb0a5e8c16d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_4_fe7fe999-aa5f-4c5f-a77f-c07ec58e5418.jpg",
+            "title": "Pleasant cost"
+          }
+        }
+      },
+      "block_order": [
+        "f5a44c6e-cdba-4fa2-865f-5ca2367ac3d5",
+        "bf20909f-d48f-4a03-98db-38fedf119a0a",
+        "a3ed3fe3-7bf2-42ac-9ef4-73e717c81caa",
+        "0fb7bd56-52e7-4f28-9a4e-3eb0a5e8c16d"
+      ],
+      "settings": {
+        "title": "Why Nomad?"
+      }
+    },
+    "b9304b58-436b-44a7-aaaa-555ad2a4f7bc": {
+      "type": "awesome-section",
+      "blocks": {
+        "6cadece5-c1a9-4227-896e-32b238b3fc12": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "See Plans",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "6cadece5-c1a9-4227-896e-32b238b3fc12"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/LOGO_BOOK_49307ac7-0bfb-45e3-b266-f053e962a84f.jpg",
+        "title_tag": "h2",
+        "title": "Internet for your guests",
+        "description": "<p>Our reliable, high-speed connectivity guarantees comfort and convenience for your visitors. Gain an edge in the competitive RV park market by offering exceptional internet service, and delight your guests with numerous benefits:<\/p><ol><li>Uninterrupted online access for entertainment, work, and communication.<\/li><li>Access to real-time information, making travel planning and bookings hassle-free.<\/li><li>Strengthened digital security with reliable internet, ensuring safe browsing and transactions.<\/li><\/ol><p>Choose Nomad Internet and transform your RV park into a haven of connectivity for your guests!<\/p>"
+      }
+    },
+    "7988e939-94b6-4892-81fa-66f7613bde61": {
+      "type": "awesome-section",
+      "blocks": {
+        "bfce685e-4baa-481a-95f1-4825356854ef": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "See Plans",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "bfce685e-4baa-481a-95f1-4825356854ef"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/LOGO_BOOK_3d03f2d9-5a91-4154-9400-b2448d95eff9.jpg",
+        "title_tag": "h2",
+        "title": "Internet for your work",
+        "description": "<p>Our robust and high-speed connectivity empowers you and your guests to work efficiently, even in remote locations. By offering a stable internet connection, you'll attract digital nomads and remote workers, expanding your clientele and boosting revenue. Choose Nomad Internet and unlock your RV park's potential with these benefits:<\/p><ol><li>Seamless connectivity for uninterrupted work and video calls.<\/li><li>Enhanced productivity for remote professionals.<\/li><li>Expanded clientele and boosted revenue.<\/li><li>Catering to the growing demand for remote work-friendly spaces.<\/li><li>Strengthened reputation as a digital nomad-friendly RV park.<\/li><\/ol><p>Opt for Nomad Internet and transform your RV park into a remote work haven!<\/p>"
+      }
+    },
+    "228186d9-3062-44c8-b916-d56024b4d600": {
+      "type": "awesome-section",
+      "blocks": {
+        "c734cc44-69d9-435c-bf9d-0a06cf363996": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "See Plans",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "c734cc44-69d9-435c-bf9d-0a06cf363996"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/LOGO_BOOK_45624180-5289-427a-af1c-cfacf8734ee7.jpg",
+        "title_tag": "h2",
+        "title": "Internet to attract guests",
+        "description": "<p>Distinguish your RV park with Nomad Internet and captivate modern travelers! Experience an increase in guests and customers for these reasons:<\/p><ol><li>Enticing remote workers and digital nomads with dependable internet access.<\/li><li>Drawing in families and vacationers seeking adventure, relaxation, and seamless connectivity.<\/li><li>Attracting video bloggers and influencers in need of high-speed internet for content creation.<\/li><li>Appealing to event organizers and group travelers requiring reliable connectivity for gatherings.<\/li><li>Fostering a loyal customer base through repeat visits and positive referrals.<\/li><\/ol><p>Experience the growth in guest diversity by offering Nomad Internet at your RV park!<\/p>"
+      }
+    },
+    "fa443e84-dec5-4308-91d5-9a08ab5572fa": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#222222",
+        "wide": false,
+        "margin_top": 60,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2 class=\"uppercase h3 text-center\">Nomad plans<\/h2>"
+      }
+    },
+    "50cf5a40-fad4-4d3a-98d1-3b05e1d5a697": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "695b2140-aa2e-4585-9e68-4eef63447838": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_4_6bcba6e4-de1f-4442-b3ad-65b02382b94c.jpg",
+            "title_tag": "h2",
+            "title": "Nomad Residential Plan",
+            "text": "<p>Experience the freedom of limitless, unrestricted, and unthrottled high-speed wireless data, designed specifically for your home use.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Choose a Plan",
+            "button_url_2": "https:\/\/nomadinternet.com\/pages\/plans#residential-plan"
+          }
+        },
+        "5e014bf8-b2d7-4060-928f-56516118e432": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_4-1.jpg",
+            "title_tag": "h2",
+            "title": "Nomad Travel Plan",
+            "text": "<p>Whether you're exploring new destinations or working remotely, you can now stream, browse, and connect with ease, without worrying about data restrictions or speed limits.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Choose a Plan",
+            "button_url_2": "https:\/\/nomadinternet.com\/pages\/plans#travel-plan"
+          }
+        },
+        "12f94d46-5de8-4284-8a55-132c2de6c883": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_4-2.jpg",
+            "title_tag": "h2",
+            "title": "Nomad Power Plan",
+            "text": "<p>From video conferencing to file sharing, our seamless connectivity ensures that you and your team can stay connected and productive, without any interruptions or slowdowns.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "button_text_2": "Choose a Plan",
+            "button_url_2": "https:\/\/nomadinternet.com\/pages\/plans#power-plan"
+          }
+        }
+      },
+      "block_order": [
+        "695b2140-aa2e-4585-9e68-4eef63447838",
+        "5e014bf8-b2d7-4060-928f-56516118e432",
+        "12f94d46-5de8-4284-8a55-132c2de6c883"
+      ],
+      "settings": {
+        "columns_count": "3"
+      }
+    },
+    "36d5c1df-2be0-4e61-a630-58551b6c7b57": {
+      "type": "lp-16",
+      "blocks": {
+        "06bb78f1-1e05-40ae-8e37-d8aa2c08e4d4": {
+          "type": "block",
+          "settings": {
+            "title": "What is C Band?",
+            "content": "<p>C Band - the latest 5G advance in cellular technology to revolutionize voice, text and data services for mobile devices. It provides enhanced coverage with fewer cell towers required resulting in wide area service capability! In addition its higher capacity supports faster transfer speeds of large amounts of data such as streaming video or downloads plus it is interference resistant which increases connection reliability. So get ready to join the C band revolution today!<\/p>"
+          }
+        },
+        "9ff6b91a-f975-4893-8abd-3af1403fcc29": {
+          "type": "block",
+          "settings": {
+            "title": "I live far away and my signal is weak, will Nomad Cube help me?",
+            "content": "<p>C Band is the latest in cellular technology, providing expanded coverage and enhanced capacity for all your digital needs. At its core it's a newly activated 5G frequency band offering improved voice, text, data services to mobile devices while also having built-in interference resistance capabilities: allowing you access over large areas without sacrificing speed or quality. It can easily handle streaming video files downloads with no latency - what more could you ask from an advanced bandwidth? Now that C Band has been activated sit back relax and enjoy wider connection networks than ever before!<\/p>"
+          }
+        },
+        "205ce91e-b025-4d15-a40c-dea3c4135239": {
+          "type": "block",
+          "settings": {
+            "title": "C Band is the new frequency range? Do I have it in my area?",
+            "content": "<p>C Band is the latest in cellular technology, providing expanded coverage and enhanced capacity for all your digital needs. At its core it's a newly activated 5G frequency band offering improved voice, text, data services to mobile devices while also having built-in interference resistance capabilities: allowing you access over large areas without sacrificing speed or quality. It can easily handle streaming video files downloads with no latency - what more could you ask from an advanced bandwidth? Now that C Band has been activated sit back relax and enjoy wider connection networks than ever before!<\/p>"
+          }
+        },
+        "ab55adaa-9340-4f5e-9f2b-0eab0805015c": {
+          "type": "block",
+          "settings": {
+            "title": "I already have a modem, can I bring my own device?",
+            "content": "<p>Most routers and modems currently available do not cover C band.<br\/>Are you still stuck with a router or modem that doesn't cover C Band? Worry no more! The Nomad Cube, an innovative device at an unbeatable price point, has arrived to solve all your needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "06bb78f1-1e05-40ae-8e37-d8aa2c08e4d4",
+        "9ff6b91a-f975-4893-8abd-3af1403fcc29",
+        "205ce91e-b025-4d15-a40c-dea3c4135239",
+        "ab55adaa-9340-4f5e-9f2b-0eab0805015c"
+      ],
+      "settings": {
+        "title": "Answers to the most frequently asked questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "2e224b5b-d021-44e2-bed2-2e3842c7dc2e": {
+      "type": "lp-20",
+      "blocks": {
+        "7044ea57-1116-4fc5-92fb-fa4f507ce815": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Emily_Webb.jpg",
+            "name": "Emily Webb",
+            "text": "I have not been able to get internet in rural areas until I tried Nomad Internet. They offered internet that allowed me access to high-speed internet without any problems. I have tried many internet wireless providers in the past and none of them compare to Nomad. Professionals came out to the house promptly, installed everything said it would work and it did! Great service, great internet coverage and no interruption or lag. Very happy customer here. Thank you Nomad Internet!",
+            "link": ""
+          }
+        },
+        "de3a2d97-1e08-4253-ae8d-d743116b92a8": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Amber_Cooper.jpg",
+            "name": "Amber Cooper",
+            "text": "I live in rural Ohio and internet can be tricky to find. I was feeling pretty frustrated when I tried internet providers in my area, because the internet service was always slow! That's why I was overjoyed when I found Nomad Internet. They've been providing high-speed internet to rural areas for years, and it completely changed my online experience. I now have fast internet at all times, no matter if I'm streaming, gaming or just browsing the web. Highly recommend Nomad Internet if you live in a rural area and want some quality internet.",
+            "link": ""
+          }
+        },
+        "71e48455-bf82-4a18-860b-9fe2d346c08d": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Kimberly_Adams.jpg",
+            "name": "Kimberly Adams",
+            "text": "As a gamer living in a rural area, I am so grateful to have Nomad Internet as my best gaming wi-fi provider. It is fast and reliable enough for me to stay ahead of the competition and best of all, it has never let me down! With Nomad's amazing customer service representatives and helpful technicians, I can get back on the battlefield in no time if need be. Thanks to their great internet speeds with no data caps, watching my favorite streamers or playing online games with my friends has never been easier. Nomad Internet is truly the best provider around for gamers like me who live in rural areas and I highly recommend them!",
+            "link": ""
+          }
+        },
+        "b1fd5df4-80dc-4f08-9882-3fc850249e48": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Jason_Benjamin.jpg",
+            "name": "Jason Benjamin",
+            "text": "Recently, I signed up for wireless internet service provided by Nomad Internet in my rural area and I am really pleased with their services! The internet connection is really stable and fast, so I have no trouble streaming whatever shows I want to watch. They have definitely been a great wireless internet service provider in my area. It has truly made living in rural areas more enjoyable as now I'm connected to the world even when this place is so remote. Highly recommend giving them a try if you're looking for reliable internet service.",
+            "link": ""
+          }
+        },
+        "2c117918-f30e-4c56-8cad-8e1d5ed3f665": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Cindy_Vang.jpg",
+            "name": "Cindy Vang",
+            "text": "As a rural internet user, I have relied on internet providers like Verizon and Xfinity as my main source of internet. Recently I stumbled upon Nomad internet. I was looking for a reliable internet provider in Oregon that offers fast internet at an affordable price. I'm so glad that I took the risk because the internet speed has been great! I am able to access high-speed internet with no buffering issues or hitches. Nomad internet is definitely one of the best internet providers in this area and it’s worth spending money on their plans.",
+            "link": ""
+          }
+        },
+        "74d69013-e496-44da-ad4e-dc037f69e486": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Robert_Ford.jpg",
+            "name": "Robert Ford",
+            "text": "Living in a rural area of Pennsylvania, I was on the lookout for best wireless internet providers in my area. After searching and comparing, I decided to go with Nomad Internet and am so glad that I did! Not only did they provide me with fast internet, but it was also high-speed compared to other options such as Verizon and Optimum. For any rural areas needing reliable wifi, Nomad Internet is definitely worth considering!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "7044ea57-1116-4fc5-92fb-fa4f507ce815",
+        "de3a2d97-1e08-4253-ae8d-d743116b92a8",
+        "71e48455-bf82-4a18-860b-9fe2d346c08d",
+        "b1fd5df4-80dc-4f08-9882-3fc850249e48",
+        "2c117918-f30e-4c56-8cad-8e1d5ed3f665",
+        "74d69013-e496-44da-ad4e-dc037f69e486"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "42acd939-a18b-4565-8662-eb957410b191": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "ee8a2532-9eeb-44c4-bcae-fa42507022ca",
+    "0cf7ac3d-6300-4a05-83e4-63f9777117b2",
+    "fce69f12-8c75-4a6d-ab50-2c63706fcb78",
+    "235f47dc-5b74-400c-8b10-91fa1b227267",
+    "28618fcb-3329-4859-aba8-df39f270ed73",
+    "2dee4dbb-d457-42ea-9286-83daa64f4f8f",
+    "5b9981c6-2dc3-4b99-be6a-5797d477f0f5",
+    "5eea26d1-5930-42d0-9ccd-fdcc49980daf",
+    "b9304b58-436b-44a7-aaaa-555ad2a4f7bc",
+    "7988e939-94b6-4892-81fa-66f7613bde61",
+    "228186d9-3062-44c8-b916-d56024b4d600",
+    "fa443e84-dec5-4308-91d5-9a08ab5572fa",
+    "50cf5a40-fad4-4d3a-98d1-3b05e1d5a697",
+    "36d5c1df-2be0-4e61-a630-58551b6c7b57",
+    "2e224b5b-d021-44e2-bed2-2e3842c7dc2e",
+    "42acd939-a18b-4565-8662-eb957410b191"
+  ]
+}

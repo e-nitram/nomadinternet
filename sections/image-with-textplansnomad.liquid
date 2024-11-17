@@ -1,0 +1,104 @@
+<div class="text-with-image">
+  <div class="container-wrapper">
+    <div class="new-row">
+      <div class="col-5">
+        <h2 class="title">{{ section.settings.title }}</h2>
+        <p class="description">{{ section.settings.description }}</p>
+        {% if section.settings.button_url != blank %}
+          <div class="main-button">
+            <a href="{{ section.settings.button_url }}">
+              {{ section.settings.button_text }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+      <div class="col-5">
+        <div class="image-wrapper">
+<!--           <div class="right-text">{{ section.settings.right_text }}</div> -->
+          <div class="image-section">
+          {% if section.settings.image !=blank %}
+            <img class="banner-image"
+                
+                 src="{{ section.settings.image | img_url:'master' }}"
+                 >
+            {% else %}
+            	{{ 'image' | placeholder_svg_tag: 'banner-image' }}
+            {% endif %}
+          </div>
+<!--           <div class="left-text">{{ section.settings.left_text }}</div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "plan1 Text With Image",
+    "settings": [
+      {
+        "type": "html",
+        "id": "title",
+        "label": "Title",
+        "default": "Join today for the largest and best <span>rural coverage</span> available."
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Everyone should be able to connect to the internet, no matter where they live. Fast, reliable internet isn't just nice to have – it's essential.  Get connected today and get access to the important things like working, learning, banking, and more, online."
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Label",
+        "default": "Check Your Location"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link"
+      },
+      {
+        "type": "text",
+        "id": "right_text",
+        "label": "Right Text",
+        "default": "Fast, Reliable Internet"
+      },
+      {
+        "type": "text",
+        "id": "left_text",
+        "label": "left Text",
+        "default": "Just$99"
+      },
+      {
+        "type": "color",
+        "id": "button_background",
+        "label": "Button background",
+        "default": "#109D59"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button color",
+        "default": "#FFFFFF"
+      }
+    ],
+    "presets": [
+	  {
+		"name": "plan1 text with image"
+	  }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

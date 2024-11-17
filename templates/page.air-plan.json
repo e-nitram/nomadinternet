@@ -1,0 +1,343 @@
+{
+  "sections": {
+    "6969714c-7423-4851-98b5-3e55fac05b3a": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "a960c3ff-3900-4ddc-9902-27d26d45f2c3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Air_50c12536-18b1-4e15-aa59-ccb4cb83bfb0.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "a960c3ff-3900-4ddc-9902-27d26d45f2c3"
+      ],
+      "settings": {
+        "title": "Nomad Air Travel Unlimited PLAN<br> <span>$129\/month<\/span>",
+        "description": "<p>Nomad Travel Plan w\/ up to Unlimited Data<\/p>",
+        "max_width": 770,
+        "button_class": "solid",
+        "button_text": "Order Now",
+        "button_url": "https:\/\/nomadinternet.com\/pages\/plans#travel-plan-5g",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "8e2fae24-de1f-4a29-9693-769438c31246": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+      }
+    },
+    "639b3400-1024-40fd-8c66-21faec3c1749": {
+      "type": "awesome-section",
+      "blocks": {
+        "e5a4d7ca-3701-44f2-9c18-2a9482d41f46": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Order Now",
+            "url": "https:\/\/nomadinternet.com\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "e5a4d7ca-3701-44f2-9c18-2a9482d41f46"
+      ],
+      "custom_css": [
+        "p:last-of-type {border-top: 1px dashed #555; padding-top: 1rem;}",
+        "em {font-weight: bold; text-decoration: line-through; color: orange;}",
+        "strong {display: block; color: var(--theme-color);}"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/2_060b5b41-4f08-4f66-ae55-2c3c62fed6c0.jpg",
+        "title_tag": "h3",
+        "title": "Nomad AIR Features:",
+        "description": "<p>- Up to Unlimited Data<br\/>- Works anywhere in the USA with up to unlimited 5G<br\/>- Download speeds up to 250Mbps!<br\/>- Easy self-install: activates in less than 60 seconds!<br\/>- Dual-band Wi-Fi 6 for up to 30 connected devices<br\/>- Ethernet LAN port to use your own router!<br\/>- Great for light gaming!<\/p><p><em>$799 Retail Membership Fee<\/em><br\/><strong>$399 Today's Membership Fee<\/strong> <\/p>"
+      }
+    },
+    "a3e53c8e-1857-4172-bbc4-3acd9f02fe92": {
+      "type": "awesome-section",
+      "blocks": {
+        "052b9cf6-7956-4114-9423-0eacfbb17b67": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Order Now",
+            "url": "https:\/\/nomadinternet.com\/pages\/plans#travel-plan-5g",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "052b9cf6-7956-4114-9423-0eacfbb17b67"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "p:last-of-type {border-top: 1px dashed #555; padding-top: 1rem;}",
+        "em {font-weight: bold; text-decoration: line-through; color: orange;}",
+        "strong {display: block; color: var(--theme-color);}"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/2_64fbe260-045b-41a9-b1d8-435da0cfd4a9.jpg",
+        "title_tag": "h3",
+        "title": "Nomad Cube Features:",
+        "description": "<p>- Up to Unlimited Data<br\/>- Works anywhere in the USA with up to unlimited 5G<br\/>- Download speeds up to 100Mbps!<br\/>- Easy self-install: activates in less than 60 seconds!<br\/>- Dual-band Wi-Fi 6 for up to 15 connected devices<br\/>- Ethernet LAN port to use your own router!<br\/>- Great for light gaming!<\/p><p><em>$399 Retail Membership Fee<\/em><br\/><strong>$99 Today's Membership Fee<\/strong> <\/p>"
+      }
+    },
+    "2ee0d585-06f1-40bc-95f5-cafdc83aee22": {
+      "type": "awesome-section",
+      "blocks": {
+        "97a5b5e6-559d-4c13-95bf-ff458884aac4": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Order Now",
+            "url": "https:\/\/nomadinternet.com\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "97a5b5e6-559d-4c13-95bf-ff458884aac4"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/1260x1260_trans_BG-1.png",
+        "title_tag": "h3",
+        "title": "Nomad Omega Features:",
+        "description": "<p>- Up to Unlimited Data<br\/>- Works anywhere in the USA with up to unlimited 5G<br\/>- Download speeds up to 200Mbps!<br\/>- Easy self-install: activates in less than 60 seconds!<br\/>- Dual-band Wi-Fi 6 for up to 15 connected devices<br\/>- Ethernet LAN port to use your own router!<br\/>- Great for light gaming!<\/p><p><em>$399 Retail Membership Fee<\/em><br\/><strong>$99 Today's Membership Fee<\/strong> <\/p>"
+      }
+    },
+    "ab6baa00-41a3-4462-967c-1569cbaa31da": {
+      "type": "awesome-section",
+      "blocks": {
+        "12bb8c0a-44f0-44cb-ba0b-70068594771f": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Order Now",
+            "url": "shopify:\/\/pages\/preorder",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "12bb8c0a-44f0-44cb-ba0b-70068594771f"
+      ],
+      "custom_css": [],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/3_f10869b2-f26a-433f-984e-a5c2ca58a1ad.jpg",
+        "title_tag": "h3",
+        "title": "Plan also Includes:",
+        "description": "<ul><li>“In-Motion” use and allows <a href=\"\/pages\/nomad-travel-plan\" title=\"NOMAD TRAVEL PLAN\">Nomad Travel<\/a> users to enjoy high-speed, low-latency internet while in-motion.<\/li><li>Nomad Internet will provide Technical Support for portable use at any destination where Nomad Internet has active coverage.<\/li><li>Access to “Pay-As-You-Go” with the <a href=\"https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379\" target=\"_blank\" title=\"https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379\">Nomad Travel App<\/a> provides the ability to pause and un-pause service at any time and is billed in one-month increments, allowing users to customize their service to their individual travel needs.<\/li><li>Access to the Nomad Travel App to use the GPS of your modem. The Nomad Travel app allows you to track your modem anywhere in the world!<\/li><li>Access to the <a href=\"https:\/\/talk.nomadinternet.com\/hc\/en-us\/community\/topics\" target=\"_blank\" title=\"https:\/\/talk.nomadinternet.com\/hc\/en-us\/community\/topics\">Nomad Online Community<\/a><\/li><\/ul>"
+      }
+    },
+    "102e9dbd-d85b-45b7-8a99-db0f47806e9d": {
+      "type": "lp-16",
+      "blocks": {
+        "c4dc470f-b6a1-4706-a28e-70f47c9c9033": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service<br\/> Provider. We are focused on providing High-Speed wireless Internet to <br\/>rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "1a037a05-75d2-41d1-98ab-be5923a923e2": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by <br\/>transmitting wireless Internet access directly to your home, business, <br\/>and even while traveling! We combine the latest technology with <br\/>Verizon’s service to provide high-speed internet to rural locations and <br\/>traveling nomads. We offer a variety <br\/>of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "25d1f870-3d9f-46e7-9681-551f9f2569d5": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "9a321a6a-1846-4206-bc22-c1141efabcd4": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet secure?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. <br\/>Multiple layers of encryption, enhanced Wi-Fi security, firewall <br\/>filtering, built-in VPN support, IT admin controls, and other features <br\/>deliver strong security at every level.<\/p>"
+          }
+        },
+        "f19b5554-6c52-4d47-a584-d482cadc43a0": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will <br\/>provide you with robust and reliable internet for all your gaming needs.<br\/> No matter your plan, you can expect fast internet with low ping rates <br\/>and latency.<\/p>"
+          }
+        },
+        "c54f3b9d-0c25-469d-81b2-aa6016f65073": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, <br\/>low-latency service they have at home to any location Nomad Internet has<br\/> coverage. Nomad Internet for RVers\/travelers will allow users to pause <br\/>and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c4dc470f-b6a1-4706-a28e-70f47c9c9033",
+        "1a037a05-75d2-41d1-98ab-be5923a923e2",
+        "25d1f870-3d9f-46e7-9681-551f9f2569d5",
+        "9a321a6a-1846-4206-bc22-c1141efabcd4",
+        "f19b5554-6c52-4d47-a584-d482cadc43a0",
+        "c54f3b9d-0c25-469d-81b2-aa6016f65073"
+      ],
+      "settings": {
+        "title": "Answers to the most frequently asked questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6": {
+      "type": "lp-20",
+      "blocks": {
+        "eb799c1d-09d1-45f5-8e67-f9d874187e6b": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Chad_Klein.jpg",
+            "name": "Chad Klein",
+            "text": "After doing some research to find wireless internet providers for my area, I found Nomad Internet and decided to give it a try. I'm so glad that I did! Their connection is surprisingly fast and reliable, even in rural areas - perfect for video conferences or streaming movies with great quality. They live up to their promise of providing high-speed wireless internet, with helpful customer service on top of that. Indeed Nomad Internet has surpassed my expectations and provided a quality wireless service to me.",
+            "link": ""
+          }
+        },
+        "1bda1e37-1f78-4928-8339-985bf85d4923": {
+          "type": "review",
+          "settings": {
+            "style": "two",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Rectangle_1404_b3e6e14a-b739-4643-a2cf-4b6bbcb537a9.png",
+            "name": "Mike Blas",
+            "text": "Now I have fast Internet at work, at home, and when I travel. Thank you, Nomad!",
+            "link": ""
+          }
+        },
+        "79f416c8-8f67-41c9-9e18-905708b76064": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Nathan_Greene.jpg",
+            "name": "Nathan Greene",
+            "text": "Finding wireless internet providers in my area of South Dakota for high-speed connection can be a challenge, which is why I'm so glad I found out about Nomad Internet! They have excellent wireless coverage even in the most remote areas, and their router works great. The connection speed is much faster than other wireless providers I've used before and their customer service is top notch. They've been a great resource for me to work from home with their reliable connection. Highly recommended if you are considering wireless providers in the area!",
+            "link": ""
+          }
+        },
+        "54d64ccb-d0dd-4a16-8c77-e120b3ea8f68": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Benjamin_Nichols.jpg",
+            "name": "Benjamin Nichols",
+            "text": "I recently found out about Nomad Internet for wireless internet in my rural area of South Dakota. I had some doubts at first, but the wireless providers in my area were limited, so I decided to give it a try. Since trying it, I've been incredibly impressed by the high-speed connection they provide - even in a remote work environment! It's perfect for video conferencing and other online tasks that require a reliable connection. It also works with many streaming services so we can watch whatever TV shows and movies we wanted to watch. Everyone I've recommended Nomad Internet to has been happy with their purchase, so if you're looking for rural internet, be sure to check them out!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "eb799c1d-09d1-45f5-8e67-f9d874187e6b",
+        "1bda1e37-1f78-4928-8339-985bf85d4923",
+        "79f416c8-8f67-41c9-9e18-905708b76064",
+        "54d64ccb-d0dd-4a16-8c77-e120b3ea8f68"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "beb783f4-b8e5-4a40-bcfb-28ded7e999d6": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "ff2cd3f0-61fb-44ac-8a90-3b31289e6267": {
+          "type": "card",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_3aa5a29b-597d-49fb-a8ea-291f4811a9a9.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Residential Unlimited Plan",
+            "text": "<p>Uncapped, up to Unlimited Data and Unthrottled Hi-Speed Wireless Data<\/p>",
+            "button_text": "Order Now",
+            "button_url": "https:\/\/nomadinternet.com\/pages\/plans",
+            "button_text_2": "Learn More",
+            "button_url_2": "shopify:\/\/pages\/nomad-residential-plan"
+          }
+        },
+        "adef7f58-f0f7-4913-b19d-de635f94d827": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1260x1260_trans_BG-1.png",
+            "title_tag": "h3",
+            "title": "Nomad Residential Unlimited Plan",
+            "text": "<p>Uncapped, up to Unlimited Data and Unthrottled Hi-Speed Wireless Data<\/p>",
+            "button_text": "Order Now",
+            "button_url": "https:\/\/nomadinternet.com\/pages\/plans",
+            "button_text_2": "Learn More",
+            "button_url_2": "shopify:\/\/pages\/nomad-residential-plan"
+          }
+        },
+        "12d79b55-e335-40a3-877a-a42975ab876d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Air_79aed86c-28cb-4a1e-a955-ef085003b279.jpg",
+            "title_tag": "h3",
+            "title": "Nomad Unlimited Power Plan",
+            "text": "<p>Uncapped, up to Unlimited Data and Unthrottled Hi-Speed Wireless Data<\/p>",
+            "button_text": "Order Now",
+            "button_url": "https:\/\/nomadinternet.com\/pages\/plans#nomad-power-plan",
+            "button_text_2": "Learn More",
+            "button_url_2": "https:\/\/nomadinternet.com\/pages\/nomad-power-plan"
+          }
+        }
+      },
+      "block_order": [
+        "ff2cd3f0-61fb-44ac-8a90-3b31289e6267",
+        "adef7f58-f0f7-4913-b19d-de635f94d827",
+        "12d79b55-e335-40a3-877a-a42975ab876d"
+      ],
+      "settings": {
+        "columns_count": "2"
+      }
+    },
+    "f9edaed5-c585-40ef-a402-bf4f5c319745": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "6969714c-7423-4851-98b5-3e55fac05b3a",
+    "8e2fae24-de1f-4a29-9693-769438c31246",
+    "639b3400-1024-40fd-8c66-21faec3c1749",
+    "a3e53c8e-1857-4172-bbc4-3acd9f02fe92",
+    "2ee0d585-06f1-40bc-95f5-cafdc83aee22",
+    "ab6baa00-41a3-4462-967c-1569cbaa31da",
+    "102e9dbd-d85b-45b7-8a99-db0f47806e9d",
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6",
+    "beb783f4-b8e5-4a40-bcfb-28ded7e999d6",
+    "f9edaed5-c585-40ef-a402-bf4f5c319745"
+  ]
+}

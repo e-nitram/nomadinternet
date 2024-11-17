@@ -1,0 +1,508 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/TOP_94a0421b-0d9a-4e8d-952f-286405369ea6.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in Kentucky"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Broadband High Speed Internet: Your Connection to Kentucky. Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in Kentucky?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/c8gdl4ZiA7U?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The company with the most flexible internet plans in Kentucky has been identified.",
+        "description": "Find your city in Kentucky",
+        "content": "Abilene,\nAlpine,\nAmarillo,\nArlington,\nAustin,\nBaytown,\nBeaumont,\nBig Spring,\nBorger,\nBrownsville,\nBryan,\nCanyon,\nCleburne,\nCollege Station,\nCorpus Christi,\nCrystal City,\nDallas,\nDel Rio,\nDenison,\nDenton,\nEagle Pass,\nEdinburg,\nEl Paso,\nFort Worth,\nFreeport,\nGalveston,\nGarland,\nGoliad,\nGreenville,\nHarlingen,\nHouston,\nHuntsville,\nIrving,\nJohnson City,\nKilgore,\nKilleen,\nKingsville,\nLaredo,\nLongview,\nLubbock,\nLufkin,\nMarshall,\nMcAllen,\nMcKinney,\nMesquite,\nMidland,\nMission,\nNacogdoches,\nNew Braunfels,\nOdessa,\nOrange,\nPampa,\nParis,\nPasadena,\nPecos,\nPharr,\nPlainview,\nPlano,\nPort Arthur,\nPort Lavaca,\nRichardson,\nSan Angelo,\nSan Antonio,\nSan Felipe,\nSan Marcos,\nSherman,\nSweetwater,\nTemple,\nTexarkana,\nKentucky City,\nTyler,\nUvalde,\nVictoria,\nWaco,\nWeatherford,\nWichita Falls,\nYsleta,\nUtah"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BLOG_1f753e3c-fc70-4b43-b415-01aa5b4fc93a.jpg",
+        "title_tag": "h2",
+        "title": "Managing Distractions While Working Remotely in Kentucky",
+        "description": "<p>Working remotely is no easy feat - especially when it comes to managing distractions while staying productive. Fortunately there are a number of reliable wireless internet services providers which can help remote workers stay connected no matter where your job takes you! Here are some tips on how to make the most out of working remotely in <a href=\"\/pages\/states\" title=\"States\">Kentucky<\/a>:<\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p>Start your journey in Louisville and explore one of the many modern coworking spaces located around town. With private offices, high-speed internet connections, and fully equipped kitchens - making it easier for any remote worker to stay productive without sacrificing their work\/life balance. Plus, multiple regional providers offer reliable <a href=\"https:\/\/nomadinternet.com\/pages\/wireless-internet\" title=\"high-speed broadband\">high-speed broadband<\/a> throughout the city - so staying connected while enjoying all what Louisville has to offer will be a breeze!Head north and experience the beauty of Lexington - boasting multiple coworking spaces perfect for digital nomads looking for some extra space away from their usual desk setup. <\/p>",
+        "text_2": "<p>And with Nomad Internet providing unbeatable coverage across rural areas - regardless if you're exploring its scenic sites or just working remotely - you can still benefit from fast connection speeds!Finally, discover Bowling Green and immerse yourself in its rich culture while making use of any available coworking spaces located around town. And don't forget that wireless internet services offered by Nomad Internet ensures that remote workers will never have problems managing distractions when working in rural areas nearby too!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Clover_Robinson.jpg",
+            "name": "Clover Robinson",
+            "text": "I recently moved to rural Kentucky, and was worried about how I'd stay in touch with my clients. That's when I discovered Nomad Internet - the perfect solution for nomads like me! The modem is a cinch to set up, and the downloading speed is consistently fast. Even streaming Netflix while camping in the woods has been surprisingly smooth, without any hiccups or glitches. All in all, it's been a great experience! Highly recommend it for anyone who needs reliable internet that goes where you go!",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Angelique_Holland.jpg",
+            "name": "Angelique Holland",
+            "text": "Living in rural Kentucky can make it hard to stay connected. That's why I recently purchased a Nomad Air Modem so that I could work as a virtual assistant, communicating with clients and downloading files at lightning speed no matter where I am. This modem has been an absolute lifesaver by providing me access to the internet in even the most remote locations. It was incredibly simple to set up, and within minutes of plugging it in, I was connected to my preferred network. The modem also works great with streaming services like Hulu and Netflix too! I highly recommend the Nomad Air Modem for anyone who wants to stay connected on the go.",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/piper_Dean.jpg",
+            "name": "Piper Dean",
+            "text": "I recently moved to rural Kentucky and needed internet access quickly. After researching my options, I chose the Nomad Air Modem - and I'm so glad I did. It provides reliable, fast download speeds even in remote areas. This makes it great for remote working and communicating with clients. Plus, the modem is compact and easy to carry around, so I can access the internet wherever I go!  All in all, if you're looking for an affordable modem that gives you access to high-speed internet anywhere, Nomad Air Modem is hard to beat!",
+            "link": ""
+          }
+        },
+        "49b1b3b3-05c4-4071-863d-56f4bec5e479": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/allison_stone.jpg",
+            "name": "Allison Stone",
+            "text": "I recently moved to a rural area of Kentucky and found that access to high-speed internet was essential for me to improve my work performance. After doing some research, I decided to try Nomad Internet's modems, which were perfect for my needs. The modem was easy to set up, and I noticed an immediate improvement in my internet connection speed and reliability. Not only was the connection faster, but the service was also more reliable than other providers I had tried. This increased reliability allowed me to get more work done at a faster rate and eventually led me to getting promoted. Overall, I'm very pleased with the quality of Nomad Internet's services, as they have allowed me to maximize my productivity with minimal effort.",
+            "link": ""
+          }
+        },
+        "d8d4e42b-89e9-4af3-a130-212ac84dcf66": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Caroline_Lawson.jpg",
+            "name": "Caroline Lawson",
+            "text": "I recently upgraded to Nomad Internet for my rural Kentucky home, and I'm extremely pleased with the results - it's like night and day! My old internet was so slow that I could never get anything done online, but with Nomad's modem, I'm able to stream videos, upload photos and videos quickly, and even game without lag. Plus their customer service is top-notch! They answered all of my questions quickly and were able to troubleshoot any issues in no time. I've been a nomad ever since, and couldn't be happier. Highly recommend it if you're looking for reliable high speed internet in a rural area!",
+            "link": ""
+          }
+        },
+        "d0f00a9e-952c-4703-a094-54a1e2571e2c": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Quinn_Owen.jpg",
+            "name": "Quinn Owen",
+            "text": "I've been living in small towns in rural Kentucky for the last few years and have relied on Nomad Internet for my online needs. I love how reliable it is and that I can take my modem anywhere with me. I was able to use it to setup my own online radio station that broadcasts from wherever I am. The speed is not quite as fast as high speed internet, but it's more than enough for what I'm doing. Nomad Internet has made life much easier for me, especially when going to different locations without access to a broadband connection. It's amazing how technology has advanced, allowing us to stay connected no matter where we are!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "49b1b3b3-05c4-4071-863d-56f4bec5e479",
+        "d8d4e42b-89e9-4af3-a130-212ac84dcf66",
+        "d0f00a9e-952c-4703-a094-54a1e2571e2c"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "d06f42eb-92ca-4d82-864a-a9e9cc241893": {
+          "type": "block",
+          "settings": {
+            "title": "How can I boost my internet speed in Kentucky's rural districts?",
+            "content": "<p>If you live in rural areas of Kentucky and struggle with slow internet speed, there are some things you can try to improve your internet speed. <\/p><p><strong>First<\/strong>, consider upgrading to a fixed wireless internet provider like our company, which offers faster speeds up to 200 Mbps with a starting price of $99 per month (with an annual plan).<br\/><br\/><strong>Second<\/strong>, optimizing your internet connection by upgrading your router, clearing your browser cache and cookies, or reducing the number of devices connected to your network can make a big difference in your internet speed. <\/p><p>Another option is using a modem that can accumulate and boost the internet signal.<br\/><br\/>Our company provides modems that are designed to receive and store the internet signal, resulting in a more stable and faster internet connection. However, the effectiveness of this solution can vary depending on your location and other factors, so it's worth researching and comparing different options to find the best solution for your needs. Overall, improving your internet speed in rural Kentucky may take some effort, but it's worth exploring different options to find the best solution.<\/p>"
+          }
+        },
+        "4e9476ec-64a0-4f42-bac8-1b25c9eff7fb": {
+          "type": "block",
+          "settings": {
+            "title": "Can I access 5G connectivity through Nomad Internet in Kentucky?",
+            "content": "<p>Yes, you can access 5G connectivity through Nomad Internet in Kentucky.<br\/><br\/>5G is the fifth generation of wireless communication technology, which provides faster speeds, lower latency, and more reliable connections compared to previous generations. 5G sub-6GHz and 4G LTE fallback are supported by Nomad Internet's high-speed, low-latency service, providing a balance of network coverage and performance. <br\/><br\/>With 5G, you can experience faster download and upload speeds, reduced lag, and support for more connected devices at once, making it a great option for those who rely on the internet for work, entertainment, and more.<\/p>"
+          }
+        },
+        "e8ab6c30-c894-49bc-9d54-691cd01d1975": {
+          "type": "block",
+          "settings": {
+            "title": "What kind of internet packages can I get from Nomad Internet in Kentucky?",
+            "content": "<p>Thank you for considering Nomad Internet as your internet service provider in Kentucky. We offer various internet packages that are tailored to meet your needs and preferences.<br\/><br\/>Our packages cater to a variety of usage scenarios, including home use for activities like streaming movies, playing video games, browsing social media, or working, and on-the-go use for travelers who need internet connectivity wherever they are. Our packages also offer different limits on the number of devices that can be connected simultaneously, depending on the chosen package.<br\/><br\/>For businesses in Kentucky, we have packages designed to meet the unique demands of organizations with a large number of employees or those operating in the hospitality industry. These packages offer high-speed internet with unlimited data usage and the flexibility to connect a higher number of devices.<br\/><br\/>If you're looking for the fastest internet possible, we also have packages that are optimized for speed, so you can enjoy seamless online experiences.<br\/><br\/>For more information on each of our packages, we encourage you to visit our website or get in touch with our customer support team. We are always happy to help you find the best internet package for your needs.<br\/><br\/>Thank you for considering Nomad Internet. We look forward to serving you in Kentucky.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "d06f42eb-92ca-4d82-864a-a9e9cc241893",
+        "4e9476ec-64a0-4f42-bac8-1b25c9eff7fb",
+        "e8ab6c30-c894-49bc-9d54-691cd01d1975"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

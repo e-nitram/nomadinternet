@@ -1,0 +1,36 @@
+<div class="google-maps__container">
+  <div class="maps">
+    <div class="google-maps__input">
+      <input
+        id="pac-input"
+        class="controls"
+        type="text"
+        placeholder="Search address or location"
+      />
+      
+      <div class="search-icon">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.5 21L18.0001 17.5M20.5 11.5C20.5 16.1944 16.6944 20 12 20C7.30558 20 3.5 16.1944 3.5 11.5C3.5 6.80558 7.30558 3 12 3C16.6944 3 20.5 6.80558 20.5 11.5Z" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="cursor-icon">
+        <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M29.1765 18.2391C29.1765 24.672 23.9616 29.887 17.5286 29.887M29.1765 18.2391C29.1765 11.8061 23.9616 6.59118 17.5286 6.59118M29.1765 18.2391H32.0885M17.5286 29.887C11.0957 29.887 5.88073 24.672 5.88073 18.2391M17.5286 29.887V32.799M5.88073 18.2391C5.88073 11.8061 11.0957 6.59118 17.5286 6.59118M5.88073 18.2391H2.96875M17.5286 6.59118V3.6792M21.8966 18.2391C21.8966 20.6514 19.941 22.607 17.5286 22.607C15.1163 22.607 13.1607 20.6514 13.1607 18.2391C13.1607 15.8267 15.1163 13.8711 17.5286 13.8711C19.941 13.8711 21.8966 15.8267 21.8966 18.2391Z" stroke="#00A77F" stroke-width="2.91198" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>            
+      </div>
+    </div>
+
+    <div id="googleMap"></div>
+  </div>
+</div>
+
+<div class="loading-bg hidden" js-loading-bg>
+  <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+</div>
+
+{% schema %}
+{
+  "name": "Google maps"
+}
+{% endschema %}

@@ -1,0 +1,129 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+{% assign ss = section.settings %}
+
+<div class="container">
+	{% if ss.title %}
+		<h2 class="lp-title">{{ ss.title }}</h2>
+	{% endif %}
+	{% if section.blocks.size > 0 %}
+		<div class="row v-gutters">
+			{% if template == 'page.press-room' %}
+				{% render 'lp-26-header' %}
+
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="lp-26__card">
+						<div class="card__image">
+							<div class="ratio" style="--ratio: calc(268 / 384 * 100%)">
+								<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/05.webp?v=1707922104" alt="Nomad Flex pay"/>
+							</div>
+						</div>
+
+						<div class="card__date">
+							<span>Februray 13, 2024</span>
+						</div>
+
+						<h3 class="card__title">Nomad Internet Leads the Charge in Closing the Digital Divide with Flex Pay</h3>
+
+						<a href="https://planning4travel.com/nomad-internet-leads-the-charge-in-closing-the-digital-divide-with-flex-pay/" class="card__link" target="_blank" rel="nofollow">
+							<span class="sr-only">Go</span>
+						</a>
+					</div>
+				</div>
+			{% endif %}
+
+			{% for block in section.blocks %}
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="lp-26__card">
+						{% if block.settings.image %}
+							<div class="card__image">
+								<div class="ratio" style="--ratio: calc(268 / 384 * 100%)">
+									{{ block.settings.image | image_url: width: 768 | image_tag }}
+								</div>
+							</div>
+						{% endif %}
+						{% if block.settings.date %}
+							<div class="card__date">
+								<span>{{ block.settings.date | date: '%B %d, %Y' }}</span>
+							</div>
+						{% endif %}
+						{% if block.settings.title %}
+							<h3 class="card__title">{{ block.settings.title }}</h3>
+						{% endif %}
+						{% if block.settings.url %}
+							<a href="{{ block.settings.url }}" class="card__link"{% if block.settings.target_blank %} target="_blank"{% endif %}{% if block.settings.nofollow %} rel="nofollow"{% endif %}>
+								<span class="sr-only">Go</span>
+							</a>
+						{% endif %}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "lp-26",
+  "class": "lp-26",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 26"
+    }
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		}
+	],
+	"blocks": [
+		{
+			"type": "card",
+			"name": "Card",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "date",
+					"label": "Date",
+					"info": "E.g. March 8, 2023"
+				},
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Title"
+				},
+				{
+					"type": "url",
+					"id": "url",
+					"label": "URL"
+				},
+				{
+					"type": "checkbox",
+					"id": "target_blank",
+					"label": "Open in new tab",
+					"default": false
+				},
+				{
+					"type": "checkbox",
+					"id": "nofollow",
+					"label": "Nofollow",
+					"default": false,
+					"info": "For SEO"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

@@ -1,0 +1,142 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+
+{% assign ss = section.settings %}
+
+<div 
+	class="lp-16 {% if page.handle == 'legendary' or page.handle == 'raptor' %} lp-16__raptor{% endif %}"
+	style="
+		--bg-color: {{ section.settings.bg_color }};
+		--title-color: {{ section.settings.title_color }};
+		--sub-title-color: {{ section.settings.sub_title_color }};
+	"
+>
+	{% if template == 'page.nomad-vending-machine' or page.handle == 'legendary' or page.handle == 'raptor' %}
+		<div class="container">
+	{% endif %}
+		{% if ss.sub_title %}
+			<div class="lp-16__subtitle">{{ ss.sub_title }}</div>
+		{% endif %}
+
+		{% if ss.title %}
+			<h2 class="lp-16__title">{{ ss.title }}</h2>
+		{% endif %}
+
+		{% if section.blocks %}
+			<div class="row justify-center">
+				<div class="col-lg-10">
+					<div class="lp-16__accordion accordion">
+						{% for block in section.blocks %}
+							<div class="accordion__pane">
+								<div class="accordion__heading">{{ block.settings.title }}</div>
+								<div class="accordion__content">
+									{{ block.settings.content }}
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		{% endif %}
+
+		{% if ss.button_text != blank and ss.button_url != blank %}
+			<div class="text-center">
+				{% if page.handle == 'legendary' or page.handle == 'raptor' %}
+					<a href="{{ ss.button_url }}" class="btn btn--customize" id="button-{{ section.id }}" target="_blank">{{ ss.button_text }}</a>	
+				{% else %}
+					<a href="{{ ss.button_url }}" class="btn lg theme" id="button-{{ section.id }}" target="_blank">{{ ss.button_text }}</a>	
+				{% endif %}
+			</div>
+		{% endif %}
+	{% if template == 'page.nomad-vending-machine' or page.handle == 'legendary' or page.handle == 'raptor' %}
+		</div>
+	{% endif %}
+</div>
+
+{% if page.handle == 'legendary' or page.handle == 'raptor' %}
+  <style>
+    #shopify-section-{{ section.id }} {
+      max-width: 100%;
+      padding: 0;
+    }
+  </style>
+
+{% endif %}
+
+{% schema %}
+{
+  "name": "lp-16",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 16"
+    }
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "sub_title",
+			"label": "Sub title"
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "button_text",
+			"label": "Button Text"
+		},
+		{
+			"type": "url",
+			"id": "button_url",
+			"label": "Button URL"
+		},
+		{
+			"type": "header",
+			"content": "Color settings"
+		},
+		{
+			"type": "color",
+			"id": "bg_color",
+			"label": "Background color"
+		},
+		{
+			"type": "color",
+			"id": "sub_title_color",
+			"label": "Sub title color",
+			"default": "#00b589"
+		},
+		{
+			"type": "color",
+			"id": "title_color",
+			"label": "Title color",
+			"default": "#fff"
+		}
+	],
+	"blocks": [
+		{
+			"type": "block",
+			"name": "Block",
+			"settings": [
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Title"
+				},
+				{
+					"type": "richtext",
+					"id": "content",
+					"label": "Content"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

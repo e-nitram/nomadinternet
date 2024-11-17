@@ -1,0 +1,142 @@
+<div class="text-with-image">
+  <div class="container-wrapper">
+    <div class="new-row">
+      <div class="col-6">
+        <h2 class="title">{{ section.settings.title }}</h2>
+        <p class="description">{{ section.settings.description }}</p>
+        {% if section.settings.button_url != blank %}
+          <div class="main-button">
+            <a href="{{ section.settings.button_url }}">
+              {{ section.settings.button_text }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+      <div class="col-4">
+        <div class="image-wrapper">
+          <!--div class="right-text">{{ section.settings.right_text }}</div-->
+          <div class="image-section">
+          
+            <img class="banner-image"
+                 srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
+                         {%- if section.settings.image.width >= 550 -%}{{ section.settings.image | img_url: '550x' }} 550w,{%- endif -%}
+                         {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
+                         {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}"
+                 src="{{ section.settings.image | img_url: '525x' }}"
+                 loading="lazy"
+                 alt="{{ section.settings.image.alt | escape }}"
+                 width="{{ section.settings.image.width }}"
+                 height="{{ section.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
+                 >
+            <img class="banner-image"
+                 srcset="{%- if section.settings.image1.width >= 375 -%}{{ section.settings.image1 | img_url: '375x' }} 375w,{%- endif -%}
+                         {%- if section.settings.image1.width >= 550 -%}{{ section.settings.image1 | img_url: '550x' }} 550w,{%- endif -%}
+                         {%- if section.settings.image1.width >= 750 -%}{{ section.settings.image1 | img_url: '750x' }} 750w,{%- endif -%}
+                         {%- if section.settings.image1.width >= 1100 -%}{{ section.settings.image1 | img_url: '1100x' }} 1100w,{%- endif -%}"
+                 src="{{ section.settings.image1 | img_url: '525x' }}"
+                 loading="lazy"
+                 alt="{{ section.settings.image1.alt | escape }}"
+                 width="{{ section.settings.image1.width }}"
+                 height="{{ section.settings.image1.width | divided_by: block.settings.image1.aspect_ratio | round }}"
+                 >
+            <img class="banner-image"
+                 srcset="{%- if section.settings.image2.width >= 375 -%}{{ section.settings.image2 | img_url: '375x' }} 375w,{%- endif -%}
+                         {%- if section.settings.image2.width >= 550 -%}{{ section.settings.image2 | img_url: '550x' }} 550w,{%- endif -%}
+                         {%- if section.settings.image2.width >= 750 -%}{{ section.settings.image2 | img_url: '750x' }} 750w,{%- endif -%}
+                         {%- if section.settings.image2.width >= 1100 -%}{{ section.settings.image2 | img_url: '1100x' }} 1100w,{%- endif -%}"
+                 src="{{ section.settings.image2 | img_url: '525x' }}"
+                 loading="lazy"
+                 alt="{{ section.settings.image2.alt | escape }}"
+                 width="{{ section.settings.image2.width }}"
+                 height="{{ section.settings.image2.width | divided_by: block.settings.image2.aspect_ratio | round }}"
+                 >
+            
+          </div>
+          <!--div class="left-text">{{ section.settings.left_text }}</div-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Images with box",
+    "settings": [
+      {
+        "type": "html",
+        "id": "title",
+        "label": "Title",
+        "default": "Join today for the largest and best <span>rural coverage</span> available."
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image1",
+        "label": "2nd Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image2",
+        "label": "last Image"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Everyone should be able to connect to the internet, no matter where they live. Fast, reliable internet isn't just nice to have – it's essential.  Get connected today and get access to the important things like working, learning, banking, and more, online."
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Label",
+        "default": "Check Your Location"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link"
+      },
+      {
+        "type": "text",
+        "id": "right_text",
+        "label": "Right Text",
+        "default": "Fast, Reliable Internet"
+      },
+      {
+        "type": "text",
+        "id": "left_text",
+        "label": "left Text",
+        "default": "Just$99"
+      },
+      {
+        "type": "color",
+        "id": "button_background",
+        "label": "Button background",
+        "default": "#109D59"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button color",
+        "default": "#FFFFFF"
+      }
+    ],
+    "presets": [
+		{
+			"category": "Image",
+			"name": "Image with box"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

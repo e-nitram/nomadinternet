@@ -1,0 +1,60 @@
+{% assign ss = section.settings %}
+<div class="lp-24">
+	<div class="row">
+		<div class="col-lg-6 col-12">
+			{% if ss.video %}
+				<div class="lp-24__video">
+					<div class="ratio">
+						{{ ss.video }}
+					</div>
+				</div>
+			{% endif %}
+		</div>
+		<div class="col-lg-6 col-12">
+			<div class="lp-24__content">
+				{% if ss.title %}
+					<h2 class="lp-24__title">{{ ss.title }}</h2>
+				{% endif %}
+				{% if ss.button_text != blank %}
+					<a href="{{ ss.button_url }}" class="btn lg red">{{ ss.button_text }}</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-24",
+  "class": "container",
+  "tag": "div",
+  "limit": 1,
+  "presets": [
+    {
+      "name": "LP / SECT 24"
+    }
+	],
+  "settings": [
+		{
+			"type": "textarea",
+			"id": "video",
+			"label": "Video"
+		},
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "button_text",
+			"label": "Button Text"
+		},
+		{
+			"type": "url",
+			"id": "button_url",
+			"label": "Button URL"
+		}
+  ]
+}
+{% endschema %}

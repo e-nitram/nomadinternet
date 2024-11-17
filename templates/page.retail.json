@@ -1,0 +1,238 @@
+{
+  "sections": {
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "8b668ed6-92d7-40cc-a673-b6b9445fef49": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Retail_1.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "8b668ed6-92d7-40cc-a673-b6b9445fef49"
+      ],
+      "settings": {
+        "title": "Nomad Retail",
+        "description": "<p>Nomad® provides Hi-Speed Wireless internet with No Credit Check! <\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "9804f9e9-463f-4c3b-a21a-7f65a0b8bbd3": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>"
+      }
+    },
+    "619637ee-6a12-488a-b200-0b496eff3b32": {
+      "type": "awesome-navigation",
+      "blocks": {
+        "75e6c020-8268-47aa-852e-b40168ed7e35": {
+          "type": "link",
+          "settings": {
+            "text": "Enterprise",
+            "url": "shopify:\/\/pages\/nomad-enterprise"
+          }
+        },
+        "da08d1bb-d7bb-49cf-b5f8-b195bc5862af": {
+          "type": "link",
+          "settings": {
+            "text": "Transportation",
+            "url": "shopify:\/\/pages\/nomad-transportation"
+          }
+        },
+        "7b4d181f-cf2e-44d9-b433-377ea4c031df": {
+          "type": "link",
+          "settings": {
+            "text": "Retail",
+            "url": "shopify:\/\/pages\/nomad-retail"
+          }
+        },
+        "3f50e9a1-6e92-4560-b410-f53f61ccaeed": {
+          "type": "link",
+          "settings": {
+            "text": "WIFI",
+            "url": "shopify:\/\/pages\/nomad-wifi"
+          }
+        }
+      },
+      "block_order": [
+        "75e6c020-8268-47aa-852e-b40168ed7e35",
+        "da08d1bb-d7bb-49cf-b5f8-b195bc5862af",
+        "7b4d181f-cf2e-44d9-b433-377ea4c031df",
+        "3f50e9a1-6e92-4560-b410-f53f61ccaeed"
+      ],
+      "settings": {}
+    },
+    "5e1042d8-e152-46ca-baa6-74950cc97893": {
+      "type": "awesome-section",
+      "blocks": {
+        "e216f4ae-a294-4349-b0cc-f896bc19f461": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "order now",
+            "url": "shopify:\/\/pages\/preorder",
+            "blank": false,
+            "on_click": ""
+          }
+        },
+        "2797a7b3-8795-49d5-99e6-a70f7228a50b": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Customize",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "e216f4ae-a294-4349-b0cc-f896bc19f461",
+        "2797a7b3-8795-49d5-99e6-a70f7228a50b"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Retail_2.jpg",
+        "title_tag": "h2",
+        "title": "Store within a store",
+        "description": "<h4>Primary connectivity for business inside another business that cannot access building owner’s LAN\/WAN connection<\/h4><ul><li>Instantly access reliable connections<\/li><li>Keep Your Business Connected With <a href=\"\/\" title=\"\/\">Nomad Internet<\/a><\/li><li>Connect to the network even where it's not available<\/li><li>Plug and play internet solutions for businesses in need<\/li><li>Try our failover connection today<\/li><\/ul>"
+      }
+    },
+    "1c855773-d847-467b-92ef-c2745b986403": {
+      "type": "awesome-section",
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Retail_3.jpg",
+        "title_tag": "h2",
+        "title": "ATMs",
+        "description": "<h4>Get ATM transactions running reliably in remote locations<\/h4><ul><li>Keep business running in remote or temporary locations<\/li><li>Maximize your site's ATM performance with Nomad Internet<\/li><li>Ensure Connection Stability and Usability With Our Failover Connectivity Service<\/li><li>Keep your ATM Always On with Nomad Internet<\/li><li>Get Primary Connectivity for ATMs, Video Transmission & More<\/li><\/ul>"
+      }
+    },
+    "652c4f2e-ffbc-4e25-a837-b1acc47f8913": {
+      "type": "awesome-section",
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Retail_4.jpg",
+        "title_tag": "h2",
+        "title": "Digital signage",
+        "description": "<h4>Connect & Update Multiple Screens Instantly<\/h4><ul><li>Reach multiple screens in one go with our digital signage solution<\/li><li>Get the most out of your digital signage<\/li><li>Power Your Promotions with Nomad Internet<\/li><li>Connect and update your media platform faster and easier<\/li><li>Update multiple screens in one go<\/li><\/ul>"
+      }
+    },
+    "c25daac4-0cd5-4bb2-a80a-741be1c6f108": {
+      "type": "awesome-section",
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Retail_5.jpg",
+        "title_tag": "h2",
+        "title": "Kiosks",
+        "description": "<h4>Get All Your POS, Photo Booth & Vending Machine Needs Covered<\/h4><ul><li>Get your Point of Sale connected with Nomad Internet<\/li><li>Reduce Downtime with Automatic Failover Connection<\/li><li>Multi-Purpose Connectivity for All Your Devices<\/li><li>Say Goodbye to Interruptions Forever<\/li><li>Cut Costs Without Sacrificing Quality<\/li><\/ul>"
+      }
+    },
+    "4e199c5b-a3b5-438d-b3fc-b37388a61c53": {
+      "type": "awesome-section",
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Retail_6.jpg",
+        "title_tag": "h2",
+        "title": "Fixed video",
+        "description": "<h4>Event\/Trigger based & multi-purpose video and other applications<\/h4><ul><li>Get instant access to high quality video on 5G BI<\/li><li>Unlock the power of multi-purpose video now with Nomad Internet<\/li><li>Get event triggered video that fits your needs in no time<\/li><li>Get Maximum Control and Flexibility from Fixed Video<\/li><li>The Future of Multi-Purpose Connectivity is Here<\/li><\/ul>"
+      }
+    },
+    "2ef2b6f6-3f3e-4f40-900c-f06264255654": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 40,
+        "border-radius": 0,
+        "html": "<div class=\"text-center\">\n<a href=\"\/pages\/plans\" class=\"btn outline lg\">Choose a Plan<\/a>\n<\/div>"
+      }
+    },
+    "d1ebf576-d0cc-4648-a20e-7c5401698ca5": {
+      "type": "lp-20",
+      "blocks": {
+        "07a7a3e7-9104-4732-a105-7542c2caef98": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Myra_Lane.jpg",
+            "name": "Myra Lane",
+            "text": "As a remote worker living in a rural area of New Hampshire, having an internet connection that is reliable and fast enough to support my work is essential. I recently got the Nomad Air modem and it has been great. The download speeds are very fast, even while streaming video or downloading files, there were no hiccups or slow downs. I was also happy to find that the setup process was incredibly easy - within minutes I had a stable connection up and running. Overall, I'm impressed with Nomad Air's coverage and speed capabilities; it's made my work life much easier!",
+            "link": ""
+          }
+        },
+        "72eff92d-dc45-47aa-98ec-6b00571c77cd": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Lara_Hartley.jpg",
+            "name": "Lara Hartley",
+            "text": "I've been using Nomad Internet for over a year now and I'm really impressed. Being out in the rural area of New Jersey, I was worried that reliable high speed internet would be a challenge to find. But with Nomad, I'm able to get super fast speeds across the state - even when travelling! The three modems - Nomad Air, Raptor and Ark - are all great options. Each one offers a different range in terms of data limits and download speeds. Personally, I went with the Nomad Raptor and it works great for my needs. It's an ultra-lightweight modem that offers amazing wifi performance - no buffering, no delays! Plus it's easy to manage wherever you are so you'll never miss a beat when travelling. Overall, if you're looking for reliable high speed rural internet then Nomad should be your go-to choice!",
+            "link": ""
+          }
+        },
+        "900904f1-26e3-41c7-976c-23e0e124d970": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Allyson_Reeves.jpg",
+            "name": "Allyson Reeves",
+            "text": "As a digital nomad, I've been using Nomad internet for several months now and it's been great! It offers reliable connection speeds in New York rural areas, which is important when travelling across the state. Whether you opt to go with the Nomad Air, Raptor or Ark modem, you can be sure that you'll get lightning fast connection speeds and an overall great experience. I particularly appreciate how far-reaching its coverage is - so no matter which small town I'm in, I'm able to stay connected. All in all, it makes my life on the road much more convenient and enjoyable!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "07a7a3e7-9104-4732-a105-7542c2caef98",
+        "72eff92d-dc45-47aa-98ec-6b00571c77cd",
+        "900904f1-26e3-41c7-976c-23e0e124d970"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "9151d1f0-77ff-4ed5-8a1a-d2f4bc24cd74": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "awesome-first-screen",
+    "9804f9e9-463f-4c3b-a21a-7f65a0b8bbd3",
+    "619637ee-6a12-488a-b200-0b496eff3b32",
+    "5e1042d8-e152-46ca-baa6-74950cc97893",
+    "1c855773-d847-467b-92ef-c2745b986403",
+    "652c4f2e-ffbc-4e25-a837-b1acc47f8913",
+    "c25daac4-0cd5-4bb2-a80a-741be1c6f108",
+    "4e199c5b-a3b5-438d-b3fc-b37388a61c53",
+    "2ef2b6f6-3f3e-4f40-900c-f06264255654",
+    "d1ebf576-d0cc-4648-a20e-7c5401698ca5",
+    "9151d1f0-77ff-4ed5-8a1a-d2f4bc24cd74"
+  ]
+}

@@ -1,0 +1,90 @@
+<div class="hero-section">
+  {% if section.settings.banner_image == blank %}
+    {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg hero-image'}}
+  {% endif %}
+  <div class="container-wrapper">
+    <div class="hero-wrapper">
+      <h2 class="main-heading">{{ section.settings.main_heading }}</h2>
+      <div class="description">{{ section.settings.description }}</div>
+      <div class="main-button">
+        {% if section.settings.button_url != blank %}
+          <a class="button-link" href="{{ section.settings.button_url }}">
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  {% if section.settings.banner_image != blank %}
+    .hero-section {
+       background-image: url({{ section.settings.banner_image | img_url:'master' }});
+    }
+  {% endif %}
+
+  .hero-section .main-button a {
+     background-color: {{ section.settings.button_background }};
+     color: {{ section.settings.button_color }};
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Hero Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "banner_image",
+        "label": "Banner Image"
+      },
+      {
+        "type": "html",
+        "id": "main_heading",
+        "label": "Main Heading",
+        "default": "Main Section title"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>The Leading Wireless, High-Speed Internet Provider For Rural and Traveling Nomads</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Label",
+        "default": "Subscribe Now"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link"
+      },
+      {
+        "type": "color",
+        "id": "button_background",
+        "label": "Button background",
+        "default": "#109D59"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button color",
+        "default": "#FFFFFF"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

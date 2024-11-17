@@ -1,0 +1,182 @@
+{{ 'image-text-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="image-text-banner">
+  {% liquid
+    assign image = section.settings.image
+    assign image_desktop = section.settings.bg_image
+    assign image_mobile = section.settings.bg_mobile_image | default: image_desktop
+    assign show_bg_color = section.settings.show_bg_color
+    assign bg_color = section.settings.bg_color
+
+    assign heading = section.settings.heading
+    assign description = section.settings.description
+    assign button_text = section.settings.button_text
+    assign button_link = section.settings.button_link
+    assign show_gradient = section.settings.show_gradient_color
+  %}
+
+  <div class="image-text-banner__wrapper">
+    <div class="image-text-banner__bg">
+      {% if show_gradient %}
+        <div class="image-text-banner__gradient"></div>
+      {% endif %}
+
+      <div class="hidden-sm-d ratio" style="--ratio: calc(562 / 1950 * 100%)">
+        {{ image_desktop | image_url: width: 1200 | image_tag }}
+      </div>
+
+      <div class="hidden-md-u ratio" style="--ratio: calc(353/ 200 * 100%)">
+        {{ image_mobile | image_url: width: 1024 | image_tag }}
+      </div>
+    </div>
+
+    <div class="image-text-banner__content" style="--text-color: {{ section.settings.text_color }};">
+      <div class="container">
+        {% if image != blank %}
+          <img src="{{ image | img_url: '500x' }}"/>
+        {% endif %}
+
+        <div class="content--right">
+          {% if heading != blank %}
+            <h3 class="heading">{{ heading }}</h3>
+          {% endif %}
+
+          {% if description != blank %}
+            <div class="desc">{{ description }}</div>
+          {% endif %}
+
+          {% if button_text != blank and button_link != blank %}
+            <a 
+              class="btn"
+              href="{{ button_link }}" {% if section.settings.enable_new_tab %}target="_blank"{% endif %} 
+              style="background-color: {{ section.settings.button_bg_color }}; color: {{ section.settings.button_text_color }};">
+              {{ button_text }}
+            </a>
+          {% endif %}
+
+          {% if section.settings.show_contract %}
+              <div class="banner_contact">
+                <span class="header-contact">{{ section.settings.contract_header }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                <g id="phone-call-01">
+                <path id="Icon" d="M11.7084 5.49935C12.5223 5.65815 13.2704 6.05623 13.8568 6.64263C14.4432 7.22903 14.8412 7.97707 15 8.79102M11.7084 2.16602C13.3994 2.35388 14.9764 3.11116 16.1802 4.31352C17.3841 5.51588 18.1434 7.09186 18.3334 8.78268M8.52253 12.0519C7.52121 11.0506 6.73055 9.91839 6.15056 8.71037C6.10067 8.60647 6.07572 8.55451 6.05656 8.48877C5.98846 8.25514 6.03737 7.96826 6.17905 7.7704C6.21892 7.71472 6.26655 7.66709 6.36181 7.57183C6.65315 7.28049 6.79881 7.13483 6.89405 6.98834C7.25322 6.43593 7.25321 5.72378 6.89405 5.17138C6.79881 5.02489 6.65315 4.87923 6.36181 4.58789L6.19942 4.42549C5.75655 3.98263 5.53511 3.76119 5.2973 3.6409C4.82433 3.40168 4.26577 3.40168 3.79281 3.6409C3.55499 3.76119 3.33355 3.98263 2.89069 4.42549L2.75932 4.55686C2.31797 4.99821 2.09729 5.21889 1.92875 5.51891C1.74174 5.85183 1.60727 6.36891 1.60841 6.75076C1.60943 7.09488 1.67618 7.33007 1.80969 7.80044C2.52716 10.3283 3.88089 12.7136 5.87088 14.7036C7.86086 16.6935 10.2462 18.0473 12.774 18.7647C13.2444 18.8983 13.4795 18.965 13.8237 18.966C14.2055 18.9672 14.7226 18.8327 15.0555 18.6457C15.3555 18.4771 15.5762 18.2565 16.0176 17.8151L16.1489 17.6837C16.5918 17.2409 16.8132 17.0194 16.9335 16.7816C17.1728 16.3087 17.1728 15.7501 16.9335 15.2771C16.8132 15.0393 16.5918 14.8179 16.1489 14.375L15.9865 14.2126C15.6952 13.9213 15.5495 13.7756 15.4031 13.6804C14.8506 13.3212 14.1385 13.3212 13.5861 13.6804C13.4396 13.7756 13.2939 13.9213 13.0026 14.2126C12.9073 14.3079 12.8597 14.3555 12.804 14.3954C12.6062 14.5371 12.3193 14.586 12.0857 14.5179C12.0199 14.4987 11.968 14.4738 11.8641 14.4239C10.656 13.8439 9.52384 13.0532 8.52253 12.0519Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g></svg>
+                <span>Call us today at&nbsp;<em><a href="tel:{{ section.settings.contract_phonenumber }}">{{ section.settings.contract_phonenumber }}</a></em></span>
+              </div>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Image text banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_mobile_image",
+      "label": "Background mobile image"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label":"Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_new_tab",
+      "label": "Open this link in a new tab",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Colour settings"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button bg color",
+      "default": "#008061"
+    },
+    {
+      "type":"color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#fff"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_gradient_color",
+      "label": "Show gradient color",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Contract"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_contract",
+      "label": "Show contract",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "contract_header",
+      "label": "Contract header",
+      "default": "Have Questions?"
+    },
+    {
+      "type": "text",
+      "id": "contract_phonenumber",
+      "label": "Contract phonenumber",
+      "default": "+1 210 598 5949"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image text banner"
+    }
+  ]
+}
+{% endschema %}

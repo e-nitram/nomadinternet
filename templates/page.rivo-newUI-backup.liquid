@@ -1,0 +1,1852 @@
+{{ 'rivo-newUI.css' | asset_url | stylesheet_tag }}
+
+{% if customer %}
+<header id="header">
+<div class="logo">
+<a href="/">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo.png?v=1690551290" />
+</a>
+<button class="mobile-button">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/menu.png?v=1690551290" />
+</button>
+</div>
+<ul class="header-menu">
+<li class="active" data-tab="prime_store">
+<a><svg
+width="19"
+height="23"
+viewBox="0 0 19 23"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+>
+<path
+d="M9.24377 8.59146C5.56114 8.59146 2.5752 11.6093 2.5752 15.3342C2.5752 19.059 5.55992 22.077 9.24377 22.077C12.9276 22.077 15.9123 19.059 15.9123 15.3342C15.9123 11.6093 12.9276 8.59146 9.24377 8.59146ZM9.24377 18.4942C7.51679 18.4942 6.11853 17.0792 6.11853 15.3342C6.11853 13.5892 7.518 12.1741 9.24377 12.1741C10.9695 12.1741 12.369 13.5892 12.369 15.3342C12.369 17.0792 10.9695 18.4942 9.24377 18.4942Z"
+fill="white"
+/>
+<path
+d="M15.9123 7.27452L14.4094 9.26494C13.0161 7.94581 11.2126 7.15069 9.24377 7.15069C7.2749 7.15069 5.47143 7.94581 4.07804 9.26494L2.5752 7.27452C4.37518 5.57086 6.70167 4.54501 9.24377 4.54501C11.7858 4.54501 14.1112 5.57086 15.9123 7.27452Z"
+fill="white"
+/>
+<path
+d="M18.4528 4.08283L17.0149 5.8942C14.9179 4.00548 12.204 2.87025 9.24385 2.87025C6.28366 2.87025 3.5698 4.00672 1.47276 5.8942L0.0349121 4.08283C2.52011 1.84855 5.7348 0.5 9.24385 0.5C12.7529 0.5 15.9676 1.8473 18.4528 4.08283Z"
+fill="white"
+/>
+</svg>
+Nomad Prime Store</a>
+</li>  
+<li data-tab="prime_point"><a>
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+<g id="Gift box with a bow" clip-path="url(#clip0_166_1545)">
+<g id="Group">
+<g id="Group_2">
+<g id="Group_3">
+<path id="Vector" d="M10.2712 12.7135C8.46315 12.7135 3.14185 12.7135 3.14185 12.7135C2.57696 12.7135 2.11473 13.1756 2.11473 13.7405V21.4495C2.11473 22.0144 2.57696 22.4766 3.14185 22.4766C3.14185 22.4766 8.5745 22.4766 10.3911 22.4766C10.6327 22.4766 10.6327 22.217 10.6327 22.217V13.0625C10.6327 13.0625 10.6326 12.7135 10.2712 12.7135Z" fill="white"/>
+<path id="Vector_2" d="M19.8583 12.7135C19.8583 12.7135 14.5166 12.7135 12.7362 12.7135C12.3024 12.7135 12.3674 13.1652 12.3674 13.1652V22.2254C12.3674 22.2254 12.3638 22.4763 12.6248 22.4763C14.4331 22.4763 19.8581 22.4763 19.8581 22.4763C20.423 22.4763 20.8852 22.0142 20.8852 21.4493V13.7405C20.8854 13.1756 20.4232 12.7135 19.8583 12.7135Z" fill="white"/>
+</g>
+<g id="Group_4">
+<path id="Vector_3" d="M10.6327 6.64796C10.6327 6.64796 10.6327 6.29993 10.2888 6.29993C8.2294 6.29993 1.98207 6.29993 1.98207 6.29993C1.41718 6.29993 0.954956 6.76215 0.954956 7.32697V10.5331C0.954956 11.0979 1.41718 11.5601 1.98207 11.5601C1.98207 11.5601 8.25738 11.5601 10.3169 11.5601C10.6327 11.5601 10.6327 11.2862 10.6327 11.2862V6.64796Z" fill="white"/>
+<path id="Vector_4" d="M21.0181 6.29993C21.0181 6.29993 14.7682 6.29993 12.6848 6.29993C12.3675 6.29993 12.3675 6.60231 12.3675 6.60231V11.2926C12.3675 11.2926 12.3675 11.5601 12.7533 11.5601C14.8194 11.5601 21.0181 11.5601 21.0181 11.5601C21.5829 11.5601 22.0452 11.0979 22.0452 10.5331V7.32697C22.0452 6.76215 21.5829 6.29993 21.0181 6.29993Z" fill="white"/>
+</g>
+<g id="Group_5">
+<path id="Vector_5" d="M7.1393 5.54004C6.66937 5.54004 6.24015 5.50277 5.86375 5.42921C4.90772 5.24244 4.25064 4.87891 3.85494 4.31799C3.5004 3.81528 3.3919 3.19554 3.53235 2.4759C3.77839 1.21681 4.62397 0.523438 5.91314 0.523438C6.18597 0.523438 6.48559 0.554941 6.80377 0.617125C7.61313 0.77524 8.64832 1.23934 9.573 1.85855C11.1418 2.90924 11.2194 3.56243 11.1413 3.9624C11.0264 4.55011 10.4771 4.97006 9.46187 5.24633C8.77598 5.43295 7.92943 5.54004 7.1393 5.54004ZM5.91321 2.16962C5.41395 2.16962 5.24236 2.3091 5.14815 2.79153C5.07108 3.18596 5.16828 3.32372 5.20016 3.36899C5.33366 3.55831 5.68139 3.71621 6.17938 3.81341C6.4481 3.86594 6.78012 3.8937 7.13923 3.8937C7.92891 3.8937 8.6246 3.77405 9.08623 3.64317C9.11983 3.63367 9.17198 3.59393 9.11609 3.56063C8.51258 3.069 7.40847 2.41252 6.48813 2.2327C6.27375 2.19095 6.08024 2.16962 5.91321 2.16962Z" fill="white"/>
+</g>
+<g id="Group_6">
+<path id="Vector_6" d="M15.8848 5.53996C15.8848 5.53996 15.8848 5.53996 15.8847 5.53996C15.0945 5.53996 14.2481 5.43288 13.5622 5.24625C12.5469 4.97006 11.9976 4.55004 11.8828 3.9624C11.8047 3.56243 11.8822 2.90924 13.4511 1.85855C14.3756 1.23934 15.4108 0.77524 16.2204 0.617125C16.5385 0.554941 16.8381 0.523438 17.1108 0.523438C18.4002 0.523438 19.2457 1.21689 19.4915 2.47597C19.6321 3.19554 19.5237 3.81528 19.1691 4.31799C18.7734 4.87899 18.1164 5.24244 17.1601 5.42921C16.7839 5.50262 16.3547 5.53996 15.8848 5.53996ZM13.9211 3.55038C13.8676 3.58144 13.8935 3.63045 13.9213 3.63846C14.3827 3.77113 15.0857 3.8937 15.8847 3.8937C16.2439 3.8937 16.5758 3.86594 16.8446 3.81341C17.3425 3.71613 17.6904 3.55831 17.8238 3.36899C17.8558 3.32372 17.9531 3.18596 17.8758 2.79153C17.7817 2.3091 17.61 2.16962 17.1107 2.16962C16.9437 2.16962 16.7504 2.19087 16.5358 2.23278C15.6154 2.41252 14.5246 3.05868 13.9211 3.55038Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_166_1545">
+<rect width="21.9531" height="21.9531" fill="white" transform="translate(0.523468 0.523438)"/>
+</clipPath>
+</defs>
+</svg>
+Earn Prime Point
+</a></li>
+<li data-tab="prime_history">
+<a><svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+<g id="Group 469334">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M17.3183 11.1249C17.027 14.1523 14.6113 16.5679 11.584 16.8592V21C14.1595 20.8521 16.5602 19.7793 18.3993 17.9402C20.2384 16.1012 21.3112 13.7004 21.459 11.1249H17.3183V11.1249Z" fill="#fff"/>
+<path id="Vector_2" d="M10.3526 16.8593C7.12258 16.5485 4.58847 13.8194 4.58847 10.5092C4.58847 9.012 5.10088 7.59363 6.04243 6.45404L3.11485 3.52646C1.39824 5.45218 0.459229 7.90837 0.459229 10.5092C0.459229 13.3163 1.55235 15.9554 3.53727 17.9403C5.37633 19.7793 7.7771 20.8522 10.3526 21V16.8593Z" fill="#fff"/>
+<path id="Vector_3" d="M6.91318 5.5832C8.05277 4.64165 9.47114 4.12924 10.9683 4.12924C14.2785 4.12924 17.0076 6.66335 17.3184 9.8934H21.4591C21.3113 7.31787 20.2384 4.9171 18.3994 3.07808C16.4145 1.09312 13.7754 0 10.9683 0C8.36751 0 5.91128 0.939011 3.9856 2.65562L6.91318 5.5832Z" fill="#fff"/>
+</g>
+<path id="Vector_4" d="M11.8038 9.82767C11.2468 9.63079 10.6307 9.39293 10.2852 9.12195C10.1766 9.03681 10.1296 8.84182 10.1683 8.63677C10.1876 8.53447 10.2776 8.19255 10.6274 8.08717C11.2016 7.91426 11.5954 8.14361 11.738 8.25027C12.0104 8.45384 12.3963 8.39813 12.5999 8.12576C12.8036 7.85338 12.7478 7.4675 12.4754 7.26384C12.3462 7.16721 12.0225 6.95538 11.5583 6.85251V6.60189C11.5583 6.26182 11.2826 5.98611 10.9426 5.98611C10.6025 5.98611 10.3268 6.26182 10.3268 6.60189V6.89265C10.3086 6.89774 10.2906 6.90242 10.2722 6.90797C9.59773 7.11113 9.09419 7.68618 8.95802 8.40868C8.83269 9.07372 9.04998 9.71831 9.52511 10.091C9.91662 10.398 10.4579 10.6581 11.3934 10.9888C12.0162 11.209 12.0027 11.7131 11.968 11.9196C11.8976 12.3383 11.5454 12.7907 10.9384 12.7948C10.3436 12.7988 10.1578 12.7693 9.70048 12.4702C9.41587 12.284 9.03426 12.3637 8.84809 12.6484C8.66192 12.933 8.74172 13.3146 9.02629 13.5007C9.51948 13.8234 9.88336 13.9542 10.3268 14.002V14.2834C10.3268 14.6235 10.6025 14.8992 10.9425 14.8992C11.2826 14.8992 11.5583 14.6235 11.5583 14.2834V13.9428C11.8975 13.8494 12.2067 13.6788 12.4709 13.4361C12.8453 13.092 13.098 12.626 13.1824 12.1238C13.3542 11.1026 12.8002 10.1799 11.8038 9.82767Z" fill="#fff"/>
+</g>
+</g>
+</svg>
+History</a
+>
+</li>
+<li data-tab="prime_faq">
+<a> 
+   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+<g id="Group 469331">
+<path id="Vector" d="M24.9594 16.7422C24.9594 13.764 23.2508 11.106 20.6919 9.81311C20.6124 15.5234 15.9828 20.1531 10.2725 20.2325C11.5654 22.7914 14.2233 24.5 17.2015 24.5C18.5979 24.5 19.9558 24.1281 21.1489 23.4215L24.9255 24.4661L23.8809 20.6896C24.5875 19.4965 24.9594 18.1385 24.9594 16.7422Z" fill="#fff"/>
+<path id="Vector_2" d="M19.2876 9.66406C19.2876 4.6109 15.1767 0.5 10.1235 0.5C5.07037 0.5 0.959473 4.6109 0.959473 9.66406C0.959473 11.3109 1.39783 12.9144 2.23022 14.3221L0.993164 18.7943L5.46552 17.5574C6.87323 18.3898 8.47668 18.8281 10.1235 18.8281C15.1767 18.8281 19.2876 14.7172 19.2876 9.66406ZM8.71729 7.53125H7.31104C7.31104 5.98035 8.57263 4.71875 10.1235 4.71875C11.6744 4.71875 12.936 5.98035 12.936 7.53125C12.936 8.31842 12.6028 9.07501 12.0214 9.60675L10.8267 10.7003V11.7969H9.42041V10.081L11.072 8.56927C11.3672 8.29919 11.5298 7.9306 11.5298 7.53125C11.5298 6.7558 10.899 6.125 10.1235 6.125C9.34808 6.125 8.71729 6.7558 8.71729 7.53125ZM9.42041 13.2031H10.8267V14.6094H9.42041V13.2031Z" fill="#fff"/>
+</g>
+</svg>
+  FAQ</a>
+</li>
+<li class="account-menu">
+<div class="account-info">
+{% comment %}
+<div class="notify-button">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/bell.svg?v=1690551385" />
+</div>
+{% endcomment %}  
+<div class="avtar">
+<a href="/account"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Vector_7d03c31c-74e4-4000-afc8-26b25193fda1.png?v=1691043281" /></a>
+</div>
+</div>
+</li>
+</ul>
+<div class="account-info">
+{% comment %}  
+<div class="notify-button">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/bell.svg?v=1690551385" />
+</div>
+{% endcomment %}  
+<div class="avtar">
+<a href="/account"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Vector_7d03c31c-74e4-4000-afc8-26b25193fda1.png?v=1691043281" /></a>
+</div>
+</div>  
+</header>
+
+
+
+{% comment %} PRIME POINT SECTION {% endcomment %}
+
+<section class="subscription prime_store">
+<div class="container">
+
+{% include 'primestore-banner' %}
+  
+<div class="subscription-info">
+<div class="points">
+<h2 class="points-heading">{{ customer.metafields.custom.rivo.value.points_balance }}</h2>
+<p class="points-info">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Group_469291.svg?v=1690787137" /> Nomad Prime Points
+</p>
+<a class="shop-link">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/shop.svg?v=1690177338" />Nomad Prime Store
+</a>
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/points.png?v=1690177338" alt="points" class="point-img" />
+</div>
+<div class="lifetime">
+<h2 class="lifetime-heading">Free Lifetime Internet & Nomad Prime Points</h2>
+<p class="lifetime-info">
+Copy & share this link to automatically earn points with us
+</p>
+<div class="copy-link">
+<p class="lifetime-link">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/avtar.svg?v=1690177338" />
+<span id="myInput">https://nomadinternet.com?referral_code={{ customer.metafields.custom.rivo.value.referral_code }}</span>
+</p>
+<button class="copy-link-btn" onclick="copyText()">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/copy.svg?v=1690177338" />Copy To Refer A Friend
+</button>
+</div>
+</div>
+</div>
+
+<div class="roadmap">
+<h2 class="roadmap-heading">
+Roadmap to Free Internet For Life
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/lifetime.png?v=1690177338" />
+</h2>
+<div class="referral-list">
+<div class="referral transparent">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/user.svg?v=1690177338" />
+<p class="referral-title">1st Referral</p>
+<h2 class="referral-free-heading">Free</h2>
+<p class="referral-info">Month of Internet</p>
+<a class="not-claim-btn claim-btn hide one_claim with_referral" data-discount="">Claim</a>
+<a class="lock-btn claim-btn one_lock">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/lock.svg?v=1690177338" />
+</a>
+</div>
+<div class="referral transparent">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/user.svg?v=1690177338" />
+<p class="referral-title">2nd Referral</p>
+<h2 class="referral-free-heading">Free</h2>
+<p class="referral-info">Month of Internet</p>
+<a class="not-claim-btn claim-btn hide two_claim with_referral" data-discount="">Claim</a>
+<a class="lock-btn claim-btn two_lock">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/lock.svg?v=1690177338" />
+</a>
+</div>
+<div class="referral transparent">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/user.svg?v=1690177338" />
+<p class="referral-title">3rd Referral</p>
+<h2 class="referral-free-heading">Free</h2>
+<p class="referral-info">Month of Internet</p>
+<a class="not-claim-btn claim-btn hide three_claim with_referral" data-discount="">Claim</a>
+<a class="lock-btn claim-btn three_lock">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/lock.svg?v=1690177338" />
+</a>
+</div>
+<div class="referral transparent">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/user.svg?v=1690177338" />
+<p class="referral-title">4th Referral</p>
+<h2 class="referral-free-heading">Free</h2>
+<p class="referral-info">Month of Internet</p>
+<a class="not-claim-btn claim-btn hide four_claim with_referral" data-discount="">Claim</a>
+<a class="lock-btn claim-btn four_lock">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/lock.svg?v=1690177338" />
+</a>
+</div>
+<div class="referral lifetime-referral">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/lifetime-user.svg?v=1690177338" />
+<p class="referral-title">5th Referral</p>
+<h2 class="referral-free-heading">Free Lifetime</h2>
+<p class="referral-info">Internet</p>
+<a class="not-claim-btn claim-btn hide five_claim with_referral" data-discount="">Claim</a>
+<a class="lock-btn claim-btn five_lock">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/lock.svg?v=1690177338" />
+</a>
+</div>
+</div>
+
+</div>
+
+<section class="exclusive-deals">
+<div class="heading">
+<h2 class="exclusive-title">
+Nomad Prime Store Exclusive Products
+</h2>
+<p>
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/exclusive-icon.svg?v=1690609790" />Available Points:<span>{{ customer.metafields.custom.rivo.value.points_balance }}</span>
+</p>
+</div>
+<div class="coupons-list rewards-section">
+
+{% for points_reward in shop.metafields.rivo.loy.points_program.points_rewards %}  
+<div class="coupon-item">
+<div class="coupon-img">
+{% if points_reward.name == "$5 off coupon" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Frame_469550.png?v=1690716236" />
+{% elsif points_reward.name == "$10 off coupon" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/nomad-exclusive-10.png?v=1690612253" />
+{% elsif points_reward.name == "Month of Free Unlimited Service" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/nomad-exclusive-free.png?v=1690612253" />
+{% elsif points_reward.name == "$20 off coupon" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/nomad-exclusive-20.png?v=1690612253" />
+{% elsif points_reward.name == "Nomad Air Travel Bag- Limited Edition" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/nomad-exclusive-bag.png?v=1690612253" />
+{% else %}  
+<img src="{{ points_reward.icon_url }}" />  
+{% endif %}
+</div>
+<div class="coupon-content">
+<h3 class="coupon-title">
+{{ points_reward.name }}
+</h3>
+<div class="coupons">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/exclusive-icon.svg?v=1690609790" />
+<span>{{ points_reward.points_amount }}</span>
+</div>
+{% if customer.metafields.custom.rivo.value.points_balance < points_reward.points_amount %}
+<div class="progress-bar">
+<div class="progress-bar-text">
+<p>
+Need <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/exclusive-icon.svg?v=1690609790" />{{ points_reward.points_amount | minus:customer.metafields.custom.rivo.value.points_balance }} more to
+claim
+</p>
+<span>
+{{ points_reward.points_amount | minus:customer.metafields.custom.rivo.value.points_balance | times: 100 | divided_by: points_reward.points_amount }}%
+</span>  
+</div>
+<span class="progress" style="max-width:calc(100% - {{ points_reward.points_amount | minus:customer.metafields.custom.rivo.value.points_balance | times: 100 | divided_by: points_reward.points_amount }}%);"></span>
+</div>
+{% else %}
+<a class="redeem coupon-btn" data-reward-id="{{ points_reward.id }}">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/gift-box.svg?v=1690609863" /> Redeem
+</a>
+{% endif %}
+</div>
+</div>
+{% endfor %}
+<div class="available-section">
+<h3>Available Rewards</h3>
+<ul id="redeemed-rewards"></ul>
+</div>
+</div>
+</section>
+
+
+</div>
+</div>
+</section> 
+
+{% comment %} PRIME STORE SECTION {% endcomment %}
+
+
+<section class="refer-section prime_point" style="display:none;">
+<div class="container">
+<div class="wrapper"> 
+<div class="refer" style="background-image:url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/refer-bg.png?v=1690610691');">
+<h2 class="refer-title">GO FOR FREE &UNLIMITED</h2>
+<p class="refer-info">
+Refer 5 people & earn Free lifetime internet
+</p>
+<a class="refer-btn"> Refer Now </a>
+</div>
+<div class="refer" style="background-image:url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/refer-bg.png?v=1690610691');">
+<h2 class="refer-title">GO FOR FREE &UNLIMITED</h2>
+<p class="refer-info">
+Refer 5 people & earn Free lifetime internet
+</p>
+<a class="refer-btn"> Refer Now </a>
+</div>
+<div class="refer" style="background-image:url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/refer-bg.png?v=1690610691');">
+<h2 class="refer-title">GO FOR FREE &UNLIMITED</h2>
+<p class="refer-info">
+Refer 5 people & earn Free lifetime internet
+</p>
+<a class="refer-btn"> Refer Now </a>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="task">
+<h2 class="task-heading">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/earn-coin.png?v=1690536009" />
+<div>
+Earn Prime Points Once
+<p class="task-info">
+Complete our simple task to earn even more Nomad point
+</p>
+</div>
+<div class="task_complte">
+<p>Task Completed: <span class="task_done">1</span>/<span class="total_task">7</span></p>
+</div>  
+</h2>
+<div class="social-media-list"> 
+{% for way_to_earn in shop.metafields.rivo.loy.points_program.ways_to_earn %}
+<div class="twitter">
+{% if way_to_earn.title contains "Facebook" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Facebook_a9c5a422-d056-4c3c-b4c4-855cfe18b09b.png?v=1690264131" />
+{% elsif way_to_earn.title contains "birthday" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/celebrate.png?v=1690539628" /> 
+{% elsif way_to_earn.title contains "Instagram" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/instagram.svg?v=1690177338" />
+{% elsif way_to_earn.title contains "Twitter" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/twitter.svg?v=1690177338" />
+{% else %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/claim.png?v=1690177338" />
+{% endif %}
+<div class="follow-detail">
+<p>{{ way_to_earn.title }}</p>
+<p class="claim-info">
+<span class="claim-info-text">Claim</span> <span> <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Group_469291.svg?v=1690787137" /> {{ way_to_earn.points_amount }}</span>
+</p>
+</div>
+{% if way_to_earn.title contains "Sign up" %}
+<a class="claim-btn">Claimed</a>
+{% else %}
+
+{% if way_to_earn.title == "Like page on Facebook" %}
+<a href="{{ way_to_earn.url }}" target="_blank" class="action-card reward-link not-claim-btn claim-btn" data-action="{{ way_to_earn.title }}">Claim</a>         
+{% endif %}
+
+{% if way_to_earn.title == "Follow on Instagram" %}
+<a href="{{ way_to_earn.url }}" target="_blank" class="action-card reward-link not-claim-btn claim-btn" data-action="{{ way_to_earn.title }}">Claim</a>         
+{% endif %}
+
+{% if way_to_earn.title == "Share link on Facebook" %}
+<a href="{{ way_to_earn.url }}" target="_blank" class="action-card reward-link not-claim-btn claim-btn" data-action="{{ way_to_earn.title }}">Claim</a>         
+{% endif %}
+
+{% if way_to_earn.title == "Follow on Twitter" %}
+<a href="{{ way_to_earn.url }}" target="_blank" class="action-card reward-link not-claim-btn claim-btn" data-action="{{ way_to_earn.title }}">Claim</a>         
+{% endif %}
+
+{% if way_to_earn.title == "Share on Twitter" %}
+<a href="{{ way_to_earn.url }}" target="_blank" class="action-card reward-link not-claim-btn claim-btn" data-action="{{ way_to_earn.title }}">Claim</a>         
+{% endif %}  
+
+{% if way_to_earn.title == "Celebrate a birthday" %}
+<a class="not-claim-btn claim-btn" id="birthday_popup">Claim</a>         
+{% endif %}
+
+{% if way_to_earn.title == "Place an order" %}
+<a target="_blank" class="not-claim-btn claim-btn">Claim</a>         
+{% endif %}
+
+{% endif %}
+
+</div>
+{% endfor %}
+</div>
+</div>
+</div>
+
+<button id="myBtn" style="display:none;">POPUP</button>
+<div id="birhtdayModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<div class="text-center">
+<div class="dflex justify-center">
+<div class="margin-r10">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/celebrate.png?v=1690539628">
+</div>
+<div>
+<div class="card-title">Celebrate a birthday</div>
+<div class="card-description text-left">              <span>250</span> Nomad Prime Points            </div>
+</div>
+</div>
+<div class="celebrate-dob">Let's celebrate your birthday! 🎉 Please give us 30 days notice - otherwise, you'll have to wait another year.</div>
+<div class="dob-container">
+<div class="dob-fields dflex justify-center">
+<div class="dob-month-label">Month</div>
+<input type="tel" maxlength="2" placeholder="MM" class="one-input form-input month" value="">         
+</div>
+<div class="dob-fields dflex justify-center">
+<div class="dob-month-label" "="">Day</div>
+<input type="tel" maxlength="2" placeholder="DD" class="one-input form-input date" value="">          
+</div>
+</div>
+<div class="" style="margin-top:35px;">  
+<p class="dob_error">Please enter a valid date (MM-DD)</p>  
+<a class="save_dob_btn">SAVE DATE</a>
+</div>  
+</div>
+</div>
+</div>
+  
+
+  
+</section>
+
+
+{% comment %} PRIME STORE HISTORY{% endcomment %}
+<section class="prime_history" style="display:none;">
+<div class="container">
+<div class="heading">
+<h2 class="exclusive-title">Nomad Prime Point History</h2>
+</div>
+<div class="action-table">
+<table>
+<thead>  
+<tr>
+<th class="action">Action</th>
+<th class="points">Points</th>
+<th class="date">Date</th>
+</tr>
+</thead>  
+<tbody id="points-program-activity"></tbody>  
+</table>
+</div>
+</div>
+</section>
+
+
+
+{% comment %}  FAQ's SECTION  {% endcomment %}
+<section class="faq-section prime_faq" style="display:none;">
+<div class="container">
+<div class="section-title">
+<h2 class="page-title">Frequently Asked Questions (FAQs)</h2>
+</div>
+
+<div class="prime_info">
+<p>Hello Nomad Members,</p>
+<p>We are excited to announce the launch of our brand-new Nomad Prime Store! This members-only store is now exclusively available to you, offering a plethora of exciting benefits and advanced products.</p>
+<p>As a member of our Nomad family, you now have access to free enhancements, plan upgrades, and exclusive limited edition items. We're thrilled to also introduce an unparalleled offer – Free Internet for Life!</p>
+<p>Our team at the Nomad Prime Store is committed to bringing you the most state-of-the-art internet products available anywhere, along with our exclusive services. To access these remarkable products, you'll need Nomad Prime Points. These points are absolutely free and can be earned by every Nomad Member.</p>
+<p>Here's a glimpse of the fantastic products you can find at our store:</p>
+<p><b>1. Free Internet for Life:</b> Nomad Internet's 5 for Life Program 
+Refer your friends to Nomad Internet, and once they sign up, earn a free month of service. Go beyond and bring in five referrals to unlock <span>Free Internet for Life</span>!</p>
+<p><b>2. Nomad Speed Boost:</b> Unmatched Internet Speeds
+Experience unprecedented internet speeds with Nomad Speed Boost. With this upgrade, you can reach speeds up to a jaw-dropping 400 Mbps!</p>
+<p><b>3. Nomad Early Access Products:</b> Stay Ahead of the Curve
+Get early access to innovative internet products with the latest wireless technology before they hit the market.</p>
+<p><b>4. Nomad Limited Edition Products:</b> Exclusive and Rare
+Discover our Limited Edition Products which are truly one-of-a-kind. Once they're gone, they're gone!</p>
+<h4>But, how do you earn these Nomad Prime Points?</h4>
+<p>These points can't be purchased - they can only be earned through referrals and simple activities:</p>
+<p><b>1. Nomad Membership Rewards:</b> As a Nomad Member, gain access to the Nomad Prime Store through the Nomad Customer Portal.</p>
+<p><b>2. Referrals:</b> Share your unique Nomad Prime URL with friends and family to earn points.</p>
+<p><b>3. Social Tasks:</b> Earn points by engaging with us on social media.</p>
+<p>With every 100 Nomad Prime Points equal to one dollar ($1), you can start unlocking the impressive rewards that are in store for you at the Nomad Prime Store.</p>
+<p>Join us on this exhilarating journey towards the latest and best in wireless and internet technologies. Stay tuned for thrilling updates on new ways to earn Nomad Prime Points and the most unique Nomad Prime Products. We look forward to serving you, and happy shopping!</p>
+<p>Best,</p>
+<p>The Nomad Prime Store Team</p>  
+</div>
+
+<div class="faq-list">
+<div class="accordion open">
+<div class="accordion-header">
+<span>What is the Free Internet for Life?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content" style="display: block;">
+Nomad Internet’s 5 for Life Program allows you to enjoy free internet for life!
+<br/><br/>
+It’s easy, just tell your friends about Nomad Internet, when one of your referrals signs up you'll receive a free month of service. Better yet, provide 5 referrals who sign up for Nomad's service, and receive Free Internet for Life!
+<br/><br/>
+Refer as many individuals or businesses with your Nomad Prime Link
+When 5 or more referrals become new Quantum customers, your Internet will be FREE. 
+<br/><br/>
+Should one or more of your referrals cancel service, your monthly bill will resume until you find replacements.
+
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-header">
+<span>What is a Nomad Speed Boost?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content">
+Nomad Speed Boost will enhance your internet service with things like additional networks and speed boost! In fact, we will offer speeds that are not available to the general public! 
+<br/><br/>
+Nomad Speed Boost can increase your internet speeds to over 400 Mbps! And, later this year, we will be testing speed boosts of up to 1,000 Mbps!!!
+
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-header">
+<span>What are Nomad Early Access Products?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content">
+Early Access Products are high-power internet products that have the latest wireless technology and are in development! The Nomad Prime Store will have you access to Nomad Modems in development BEFORE public release. For example, we are testing a new modem called the Nomad Titan! The most powerful mobile modem in the world!
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-header">
+<span>What are Nomad Limited Edition Products?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content">
+The Prime Store also carries exclusive and Limited Edition Products like we have limited Inventory! So, once they are gone, they are gone! 
+<br/><br/>
+The Nomad Prime Store carries Limited Edition Modems, Nomad Air Limited Edition Travel Bags, and Limited Edition Long-Range Antennas!
+<br/><br/>
+We are excited for you to try out the latest and best wireless and internet technologies on the planet!!
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-header">
+<span>What are Nomad Prime Points?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content">
+Nomad Prime Points are the exclusive currency of the Nomad Prime Store. Nomad Prime Points can NOT be purchased! 
+<br/><br/>
+You read that right. Nomad Prime Points can only be redeemed through free activity and referrals
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-header">
+<span>How do I earn Nomad Prime Points?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content">
+The best way you can earn Nomad Prime Points is by being a Nomad Member, completing the Nomad Daily task, referring friends & family to Nomad Internet! Here is how it works:
+<br/><br/>
+After becoming a Nomad Member you will be given access to your exclusive Nomad Prime Store through the Nomad Customer Portal. 
+<br/><br/>
+Once you are a Nomad Prime Member, you will be given a unique Nomad Prime URL to use. Anytime your Nomad Prime URL is used you earn Nomad Prime Points!
+<br/><br/>
+In addition, we have created basic social tasks like following us on Twitter and Instagram to earn free Nomad Prime Points!
+<br/><br/>
+Limited Edition Nomad Air Travel Bag
+Nomad Power Plan Upgrade
+Nomad Raptor Upgrade
+High-Performance Nomad Air Antenna
+High-Performance Nomad Raptor Antenna
+Marvels Jarvis signed Noma Air Travel Bag
+<br/><br/>
+100 points equal 1 dollar
+</div>
+</div>
+</div>
+</div>
+</section>  
+
+
+
+
+<div id="overlay"></div>
+<div id="redeem-popup" style="display:none;">
+<h4 id="reward-name"></h4>
+<p id="redeem-question" style="display:none;">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/redeem_popup.svg?v=1690790979" />
+<span>Congratulations!</span>  
+</p>
+<button class="cancel-redeem">Cancel</button>
+<button class="confirm-redeem">Redeem</button>
+<div id="discount-code" style="display:none;">
+<p><span id="code"></span></p>
+<button class="apply-code">Redeem</button>
+</div>
+<div id="not-enough-points-popup" style="display:none;">
+<h4>Not enough points</h4>
+<p>You do not have enough points to redeem this reward.</p>
+<button class="close-popup">Close</button>
+</div>
+</div>
+
+<div id="apply-reward-popup" style="display: none;">
+<h4>Your <span class="reward-name"></span> has been applied to checkout</h4>
+<button class="close-popup">Close</button>
+</div>
+
+<div id="refferal_link_popup" style="display: none;">
+<h4>Link Copied</h4>
+</div>
+
+<div id="referral_discount_popup" style="display:none;">
+<p>
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/redeem_popup.svg?v=1690790979" />
+<span>Congratulations!</span>  
+</p>
+<div id="referral_discount">
+<p><span id="referral_discount_code"></span></p>
+<p class="code_copy_text">Copy this discount code and apply at checkout.</p>  
+<button class="referral_discount_cancel">Cancel</button>
+<button class="referral_discount_confirm">Redeem</button>
+</div>
+</div>  
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("birhtdayModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script> 
+
+<script type="text/javascript">
+const actionToExternalNoteMap = {
+'Follow on Instagram': 'Followed on Instagram',
+'Like page on Facebook': 'Liked a page on Facebook',
+'Share link on Facebook': 'Shared a link on Facebook',
+'Follow on Twitter': 'Followed on Twitter',
+'Share on Twitter': 'Shared on Twitter',  
+};
+
+function checkCompletedActions() {
+RivoJS.getCustomerPointsLogs().then(function(resp) {
+const rewardLinks = document.querySelectorAll(".reward-link");
+var total_comleted = 0;
+rewardLinks.forEach((link) => {
+const actionName = link.getAttribute("data-action");
+let actionCompleted = false;
+for (let i = 0; i < resp.points_logs.length; i++) {
+if (resp.points_logs[i].external_note === actionToExternalNoteMap[actionName]) {
+link.classList.add("completed-action");
+link.classList.remove("not-claim-btn");   
+link.innerHTML = "Claimed";
+actionCompleted = true;
+total_comleted = total_comleted+1;  
+break;
+}
+}
+
+if (!actionCompleted) {
+link.onclick = recordAction; // Use onclick instead of addEventListener
+} else {
+link.onclick = null; // Remove the event listener by assigning null to onclick
+}
+});
+document.getElementsByClassName('task_done')[0].innerHTML = total_comleted+1; 
+});
+}
+
+function recordAction(event) {
+const customActionName = event.currentTarget.getAttribute("data-action");
+if (customActionName === 'Follow on Instagram') {
+event.preventDefault();
+window.open('https://www.instagram.com/nomadinternet', '_blank');
+} else if (customActionName === 'Like Page on Facebook') {
+event.preventDefault();
+window.open('https://www.facebook.com/nomadinternet', '_blank');
+} else if (customActionName === 'Share link on Facebook') {
+event.preventDefault();
+window.open('https://www.facebook.com/nomadinternet', '_blank');
+} else if (customActionName === 'Follow on Twitter') {
+event.preventDefault();
+window.open('https://twitter.com/Nomadinternet_', '_blank');
+} else if (customActionName === 'Share on Twitter') {
+event.preventDefault();
+window.open('https://twitter.com/intent/tweet?url=https://nomadinternet.com', '_blank');
+}  
+const proxyUrl = `${window.Rivo.global_config.proxy_paths.loy}/loy/contacts/${window.Rivo.common.customer.id}/record_custom_action`;
+const data = {custom_action_name: customActionName};
+
+fetch(proxyUrl, {
+method: "POST",
+headers: {
+'Accept': 'application/json',
+'Content-Type': 'application/json'
+},
+body: JSON.stringify(data)
+})
+.then(function(res){
+console.log(res);
+})
+.catch(function(res){ console.log(res) })
+}
+
+window.addEventListener("load", () => {
+if (window.RivoJS) {
+checkCompletedActions();
+} else {
+document.addEventListener("rivo-js-loaded", function() {
+checkCompletedActions();
+});
+}
+});
+</script>
+
+<script>
+document.querySelector('.save_dob_btn').addEventListener('click', function(event) {
+var month = document.getElementsByClassName("month")[0].value;
+var date = document.getElementsByClassName("date")[0].value;
+var x = document.getElementsByClassName("dob_error")[0];
+if(month <= 12 && month.length == 2 && date <= 31 && date.length == 2){
+document.getElementsByClassName("save_dob_btn")[0].innerHTML = "UPDATED";
+x.style.display = "none";
+var dob = month+'-'+date;
+RivoJS.updateCustomerDob(dob).then(function(resp){
+var resp = JSON.stringify(resp);
+if(resp == "true"){
+document.getElementsByClassName("close")[0].click();
+}
+});
+}
+else{
+x.style.display = "block";
+}
+});
+</script>    
+
+<script>
+document.addEventListener("rivo-js-loaded", function(){
+
+window.RivoJS.getCustomerReferrals()
+.then(function(data) {
+if(data.completed == 1){
+document.getElementsByClassName("one_claim")[0].classList.remove("hide");
+document.getElementsByClassName("one_lock")[0].classList.add("hide");
+}
+if(data.completed == 2){
+document.getElementsByClassName("one_claim")[0].classList.remove("hide");
+document.getElementsByClassName("one_lock")[0].classList.add("hide");  
+document.getElementsByClassName("two_claim")[0].classList.remove("hide");
+document.getElementsByClassName("two_lock")[0].classList.add("hide");
+}
+if(data.completed == 3){
+document.getElementsByClassName("one_claim")[0].classList.remove("hide");
+document.getElementsByClassName("one_lock")[0].classList.add("hide");  
+document.getElementsByClassName("two_claim")[0].classList.remove("hide");
+document.getElementsByClassName("two_lock")[0].classList.add("hide");  
+document.getElementsByClassName("three_claim")[0].classList.remove("hide");
+document.getElementsByClassName("three_lock")[0].classList.add("hide");
+}
+if(data.completed == 4){
+document.getElementsByClassName("one_claim")[0].classList.remove("hide");
+document.getElementsByClassName("one_lock")[0].classList.add("hide");  
+document.getElementsByClassName("two_claim")[0].classList.remove("hide");
+document.getElementsByClassName("two_lock")[0].classList.add("hide");  
+document.getElementsByClassName("three_claim")[0].classList.remove("hide");
+document.getElementsByClassName("three_lock")[0].classList.add("hide");  
+document.getElementsByClassName("four_claim")[0].classList.remove("hide");
+document.getElementsByClassName("four_lock")[0].classList.add("hide");
+}
+if(data.completed == 5){
+document.getElementsByClassName("one_claim")[0].classList.remove("hide");
+document.getElementsByClassName("one_lock")[0].classList.add("hide");  
+document.getElementsByClassName("two_claim")[0].classList.remove("hide");
+document.getElementsByClassName("two_lock")[0].classList.add("hide");  
+document.getElementsByClassName("three_claim")[0].classList.remove("hide");
+document.getElementsByClassName("three_lock")[0].classList.add("hide");  
+document.getElementsByClassName("four_claim")[0].classList.remove("hide");
+document.getElementsByClassName("four_lock")[0].classList.add("hide"); 
+document.getElementsByClassName("five_claim")[0].classList.remove("hide");
+document.getElementsByClassName("five_lock")[0].classList.add("hide");
+}
+
+var count = 0;
+let completed_referral = '';  
+data.referrals.forEach(function(referral){
+  if(referral.status == 'completed'){
+    completed_referral = completed_referral + referral.discount_code+'/';
+  }
+});
+const discountcode_string = completed_referral.split("/");
+var length = discountcode_string.length;
+
+if(length-1 == 1){
+document.getElementsByClassName("one_claim")[0].setAttribute("data-discount", discountcode_string[0]);
+}
+else if(length-1 == 2){
+document.getElementsByClassName("one_claim")[0].setAttribute("data-discount", discountcode_string[0]);
+document.getElementsByClassName("two_claim")[0].setAttribute("data-discount", discountcode_string[1]);     
+}
+else if(length-1 == 3){
+document.getElementsByClassName("one_claim")[0].setAttribute("data-discount", discountcode_string[0]);
+document.getElementsByClassName("two_claim")[0].setAttribute("data-discount", discountcode_string[1]);  
+document.getElementsByClassName("three_claim")[0].setAttribute("data-discount", discountcode_string[2]);  
+}
+else if(length-1 == 4){
+document.getElementsByClassName("one_claim")[0].setAttribute("data-discount", discountcode_string[0]);
+document.getElementsByClassName("two_claim")[0].setAttribute("data-discount", discountcode_string[1]);  
+document.getElementsByClassName("three_claim")[0].setAttribute("data-discount", discountcode_string[2]);
+document.getElementsByClassName("four_claim")[0].setAttribute("data-discount", discountcode_string[3]);
+}
+else if(length-1 == 5){
+document.getElementsByClassName("one_claim")[0].setAttribute("data-discount", discountcode_string[0]);
+document.getElementsByClassName("two_claim")[0].setAttribute("data-discount", discountcode_string[1]);  
+document.getElementsByClassName("three_claim")[0].setAttribute("data-discount", discountcode_string[2]);
+document.getElementsByClassName("four_claim")[0].setAttribute("data-discount", discountcode_string[3]);
+document.getElementsByClassName("five_claim")[0].setAttribute("data-discount", discountcode_string[4]);  
+}
+else{
+  
+} 
+  
+})
+.catch(function(error) {
+console.log('An error occurred:', error); // Error handling line
+});
+
+
+var activityTable = document.getElementById("points-program-activity");
+window.RivoJS.getCustomerPointsLogs().then(function(data){
+data.points_logs.sort((a, b) => new Date(b.applied_at) - new Date(a.applied_at)).slice(0, 100).forEach(function(pointsLog){
+
+// format date to dd/mm/yyyy
+let date = new Date(pointsLog.applied_at);
+let formattedDate = `${date.getDate().toString().padStart(2, '0')}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()}`;
+let image_src;
+let diff;  
+
+if(pointsLog.external_note == 'Followed on Twitter'){
+image_src = "https://cdn.shopify.com/s/files/1/0103/2847/3658/files/twitter.svg?v=1690177338";
+}
+else if(pointsLog.external_note == 'Shared a link on Facebook'){
+image_src = "https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Facebook_a9c5a422-d056-4c3c-b4c4-855cfe18b09b.png?v=1690264131";
+}
+else if(pointsLog.external_note == 'Liked a page on Facebook'){
+image_src = "https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Facebook_a9c5a422-d056-4c3c-b4c4-855cfe18b09b.png?v=1690264131";
+}
+else{
+image_src = "https://cdn.shopify.com/s/files/1/0103/2847/3658/files/activity-shop.png?v=1690632054";
+}
+
+diff = pointsLog.points_diff.toString();
+if(diff.includes('-')){
+activityTable.innerHTML += '<tr><td class="action"><p><img src="'+image_src+'" /> '+pointsLog.external_note+'</p></td><td class="points"><p class="minus-point">'+pointsLog.points_diff+' <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/exclusive-icon.svg?v=1690609790" /></p></td><td class="date"><p>'+formattedDate+'</p></td></tr>';  
+}
+else{
+activityTable.innerHTML += '<tr><td class="action"><p><img src="'+image_src+'" /> '+pointsLog.external_note+'</p></td><td class="points"><p class="plus-point">+'+pointsLog.points_diff+' <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/exclusive-icon.svg?v=1690609790" /></p></td><td class="date"><p>'+formattedDate+'</p></td></tr>';  
+}  
+
+});
+});
+
+});
+
+
+
+
+  
+</script>  
+
+<script type="text/javascript">
+document.addEventListener("rivo-js-loaded", function(){
+var redeemedRewardsElement = document.querySelector('#redeemed-rewards');
+var redeemPopup = document.querySelector("#redeem-popup");
+var rewardNameElement = document.querySelector("#reward-name");
+var confirmRedeem = document.querySelector(".confirm-redeem");
+var cancelRedeem = document.querySelector(".cancel-redeem");
+var closePopup = document.querySelector(".close-popup");
+var discountCode = document.querySelector("#discount-code");
+var redeemquestion = document.querySelector("#redeem-question");  
+var codeElement = document.querySelector("#code");
+var notEnoughPointsPopup = document.querySelector("#not-enough-points-popup");
+var applyCode = document.querySelector(".apply-code");
+var applyRewardPopup = document.querySelector('#apply-reward-popup');
+var page = 1;
+var rewardId;
+
+window.RivoJS.getCustomerPointsPurchases({}, page).then(updateRewards);
+
+document.querySelector('.rewards-section').addEventListener('click', function(event) {
+if (event.target.matches('.redeem')) {
+rewardId = event.target.dataset.rewardId;
+var rewardName = event.target.parentElement.textContent.trim().split("for")[0];
+rewardNameElement.textContent = rewardName;
+redeemPopup.style.display = "block";
+document.getElementById("overlay").style.display = "block";  
+} else if (event.target.matches('.apply-reward')) {
+var rewardCode = event.target.dataset.rewardCode;
+console.log('Applied reward code:', rewardCode);
+document.querySelector('#apply-reward-popup .reward-name').textContent = event.target.parentElement.querySelector('h4').textContent;
+applyRewardPopup.style.display = 'block';
+}
+});
+
+confirmRedeem.addEventListener('click', function(event) {
+window.RivoJS.redeemReward(rewardId).then(function(data){
+console.log('Redeemed reward:', data);
+if (data.success) {
+discountCode.style.display = "block";
+codeElement.textContent = data.points_purchase.code;
+rewardNameElement.style.display = "none";
+confirmRedeem.style.display = "none";
+cancelRedeem.style.display = "none";
+redeemquestion.style.display = "block";
+} else {
+notEnoughPointsPopup.style.display = "block";
+}
+window.RivoJS.getCustomerPointsPurchases({}, page).then(updateRewards);
+});
+});
+
+cancelRedeem.addEventListener('click', hidePopup);
+closePopup.addEventListener('click', hidePopup);
+document.querySelector('#apply-reward-popup .close-popup').addEventListener('click', function () {
+applyRewardPopup.style.display = 'none';
+});
+
+applyCode.addEventListener('click', function(event) {
+// redirect to checkout with discount code applied
+//window.location.href = "/checkout?discount=" + codeElement.textContent;
+window.location.href = "/pages/plans";
+});
+
+function updateRewards(resp) {
+if (resp.success) {
+redeemedRewardsElement.innerHTML = '';
+var unusedRewards = resp.points_purchases.filter(function (pointsPurchase) {
+return pointsPurchase.used_at === null;
+});
+unusedRewards.forEach(function (pointsPurchase) {
+var li = document.createElement('li');
+var expiryDate = pointsPurchase.expires_at ? new Date(pointsPurchase.expires_at) : null;
+var expiryDateString = expiryDate ? expiryDate.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }) : 'Never';
+li.innerHTML = `
+<h4>${pointsPurchase.name}</h4>
+<p>Use code: ${pointsPurchase.code}</p>
+<p>Expires: ${expiryDateString}</p>
+<button class="apply-reward" data-reward-code="${pointsPurchase.code}">Apply to checkout</button>
+`;
+redeemedRewardsElement.appendChild(li);
+});
+}
+}
+
+function hidePopup() {
+redeemPopup.style.display = "none";
+document.getElementById("overlay").style.display = "none";  
+notEnoughPointsPopup.style.display = "none";
+rewardNameElement.style.display = "block";
+confirmRedeem.style.display = "block";
+cancelRedeem.style.display = "block";
+discountCode.style.display = "none";
+}
+});
+
+</script>
+
+<script>
+$('#birthday_popup').click(function(){
+$('#myBtn').trigger('click');
+});
+
+$(document).on('click', '.accordion-header', function () {
+// Toggle the visibility of the content
+var isVisible = $(this).next('.accordion-content').is(':visible');
+// Hide all accordion content
+$('.accordion-content').slideUp();
+$('.accordion').removeClass('open');
+// If the clicked header's content was not visible, show it
+if (!isVisible) {
+$(this).next('.accordion-content').slideDown();
+$(this).parents('.accordion').addClass('open');
+}
+});
+
+$('.shop-link').click(function(){
+$('li[data-tab="prime_store"]').trigger('click');
+});  
+$('.refer-btn').click(function(){
+$('li[data-tab="prime_point"]').trigger('click');  
+});  
+
+/*$("body").bind("DOMNodeInserted", function() {
+var $this = $(this).find('.slick-initialized');
+window.setTimeout(function(){
+$this.addClass('finally-loaded');
+}, 2000);
+}); */ 
+
+function copyText() {
+// Get the text field
+var copyText = document.querySelector(
+".lifetime-link span"
+).textContent;
+
+// Copy the text inside the text field
+navigator.clipboard.writeText(copyText);
+document.querySelector("#refferal_link_popup").style.display = "block";
+document.querySelector("#overlay").style.display = "block";
+setTimeout(function(){
+document.querySelector("#refferal_link_popup").style.display = "none";
+document.querySelector("#overlay").style.display = "none";
+}, 2000)
+}  
+
+</script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+var $r = jQuery.noConflict();
+$r(document).ready(function () {
+$r("section.refer-section .wrapper").slick({
+infinite: true,
+dots: true,
+arrows: false,
+autoplay: true,
+autoplaySpeed: 2000,
+fade: true,
+});
+// mobile menu
+$r(document).on("click", ".mobile-button", function () {
+$r("ul.header-menu").slideToggle();
+}); 
+
+$r('.header-menu li').click(function(){
+$r('section.refer-section .wrapper').slick('refresh');
+var newWindowWidth = $(window).width();
+if (newWindowWidth < 768) {
+$r("ul.header-menu").slideToggle();
+}  
+$r('.header-menu li').removeClass('active');
+$r(this).addClass('active');
+var selected_section = $r(this).attr('data-tab');
+if(selected_section == "prime_point"){
+$r('section.prime_store').hide();
+$r('section.prime_history').hide();
+$r('section.prime_faq').hide();  
+$r('section.prime_point').show();
+}
+if(selected_section == "prime_store"){
+$r('section.prime_point').hide();
+$r('section.prime_history').hide();
+$r('section.prime_faq').hide();    
+$r('section.prime_store').show();
+}  
+if(selected_section == "prime_history"){
+$r('section.prime_point').hide();
+$r('section.prime_store').hide();
+$r('section.prime_faq').hide();    
+$r('section.prime_history').show();
+}
+if(selected_section == "prime_faq"){
+$r('section.prime_point').hide();
+$r('section.prime_store').hide();
+$r('section.prime_history').hide();    
+$r('section.prime_faq').show();
+}  
+});
+
+
+$r('.not-claim-btn.with_referral').click(function(){
+  var discount_code = $r(this).attr('data-discount');
+  $r('#referral_discount_code').text(discount_code);
+  $r('#referral_discount_popup').show();
+  $r('#overlay').show();
+  $r('.referral_discount_confirm').attr('data-code',discount_code);
+});
+
+$r('.referral_discount_cancel').click(function(){
+  $r('#referral_discount_popup').hide();
+  $r('#overlay').hide();
+});
+
+$r('.referral_discount_confirm').click(function(){
+var cart_link = '/cart/39977925410874:1'; 
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?items=https://nomadinternet.com"+cart_link+" &jsonize=1";
+$r.ajax({
+type: "GET",
+url: url,
+dataType: "json",
+success: function(response){
+location.href = response[0];
+}
+});
+});
+  
+});
+</script>
+
+
+
+
+
+
+{% else %}
+
+{{ 'rivo-newUI-nologin.css' | asset_url | stylesheet_tag }}
+
+<header id="header">
+<div class="logo">
+<a href="/">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo.png?v=1690551290" />
+</a>
+<button class="mobile-button">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/menu.png?v=1690551290" />
+</button>
+</div>
+<ul class="header-menu">
+<li class="active" data-tab="prime_store">
+<a><svg
+width="19"
+height="23"
+viewBox="0 0 19 23"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+>
+<path
+d="M9.24377 8.59146C5.56114 8.59146 2.5752 11.6093 2.5752 15.3342C2.5752 19.059 5.55992 22.077 9.24377 22.077C12.9276 22.077 15.9123 19.059 15.9123 15.3342C15.9123 11.6093 12.9276 8.59146 9.24377 8.59146ZM9.24377 18.4942C7.51679 18.4942 6.11853 17.0792 6.11853 15.3342C6.11853 13.5892 7.518 12.1741 9.24377 12.1741C10.9695 12.1741 12.369 13.5892 12.369 15.3342C12.369 17.0792 10.9695 18.4942 9.24377 18.4942Z"
+fill="white"
+/>
+<path
+d="M15.9123 7.27452L14.4094 9.26494C13.0161 7.94581 11.2126 7.15069 9.24377 7.15069C7.2749 7.15069 5.47143 7.94581 4.07804 9.26494L2.5752 7.27452C4.37518 5.57086 6.70167 4.54501 9.24377 4.54501C11.7858 4.54501 14.1112 5.57086 15.9123 7.27452Z"
+fill="white"
+/>
+<path
+d="M18.4528 4.08283L17.0149 5.8942C14.9179 4.00548 12.204 2.87025 9.24385 2.87025C6.28366 2.87025 3.5698 4.00672 1.47276 5.8942L0.0349121 4.08283C2.52011 1.84855 5.7348 0.5 9.24385 0.5C12.7529 0.5 15.9676 1.8473 18.4528 4.08283Z"
+fill="white"
+/>
+</svg>
+Nomad Prime Store</a>
+</li>  
+<li data-tab="prime_point"><a>
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+<g id="Gift box with a bow" clip-path="url(#clip0_166_1545)">
+<g id="Group">
+<g id="Group_2">
+<g id="Group_3">
+<path id="Vector" d="M10.2712 12.7135C8.46315 12.7135 3.14185 12.7135 3.14185 12.7135C2.57696 12.7135 2.11473 13.1756 2.11473 13.7405V21.4495C2.11473 22.0144 2.57696 22.4766 3.14185 22.4766C3.14185 22.4766 8.5745 22.4766 10.3911 22.4766C10.6327 22.4766 10.6327 22.217 10.6327 22.217V13.0625C10.6327 13.0625 10.6326 12.7135 10.2712 12.7135Z" fill="white"/>
+<path id="Vector_2" d="M19.8583 12.7135C19.8583 12.7135 14.5166 12.7135 12.7362 12.7135C12.3024 12.7135 12.3674 13.1652 12.3674 13.1652V22.2254C12.3674 22.2254 12.3638 22.4763 12.6248 22.4763C14.4331 22.4763 19.8581 22.4763 19.8581 22.4763C20.423 22.4763 20.8852 22.0142 20.8852 21.4493V13.7405C20.8854 13.1756 20.4232 12.7135 19.8583 12.7135Z" fill="white"/>
+</g>
+<g id="Group_4">
+<path id="Vector_3" d="M10.6327 6.64796C10.6327 6.64796 10.6327 6.29993 10.2888 6.29993C8.2294 6.29993 1.98207 6.29993 1.98207 6.29993C1.41718 6.29993 0.954956 6.76215 0.954956 7.32697V10.5331C0.954956 11.0979 1.41718 11.5601 1.98207 11.5601C1.98207 11.5601 8.25738 11.5601 10.3169 11.5601C10.6327 11.5601 10.6327 11.2862 10.6327 11.2862V6.64796Z" fill="white"/>
+<path id="Vector_4" d="M21.0181 6.29993C21.0181 6.29993 14.7682 6.29993 12.6848 6.29993C12.3675 6.29993 12.3675 6.60231 12.3675 6.60231V11.2926C12.3675 11.2926 12.3675 11.5601 12.7533 11.5601C14.8194 11.5601 21.0181 11.5601 21.0181 11.5601C21.5829 11.5601 22.0452 11.0979 22.0452 10.5331V7.32697C22.0452 6.76215 21.5829 6.29993 21.0181 6.29993Z" fill="white"/>
+</g>
+<g id="Group_5">
+<path id="Vector_5" d="M7.1393 5.54004C6.66937 5.54004 6.24015 5.50277 5.86375 5.42921C4.90772 5.24244 4.25064 4.87891 3.85494 4.31799C3.5004 3.81528 3.3919 3.19554 3.53235 2.4759C3.77839 1.21681 4.62397 0.523438 5.91314 0.523438C6.18597 0.523438 6.48559 0.554941 6.80377 0.617125C7.61313 0.77524 8.64832 1.23934 9.573 1.85855C11.1418 2.90924 11.2194 3.56243 11.1413 3.9624C11.0264 4.55011 10.4771 4.97006 9.46187 5.24633C8.77598 5.43295 7.92943 5.54004 7.1393 5.54004ZM5.91321 2.16962C5.41395 2.16962 5.24236 2.3091 5.14815 2.79153C5.07108 3.18596 5.16828 3.32372 5.20016 3.36899C5.33366 3.55831 5.68139 3.71621 6.17938 3.81341C6.4481 3.86594 6.78012 3.8937 7.13923 3.8937C7.92891 3.8937 8.6246 3.77405 9.08623 3.64317C9.11983 3.63367 9.17198 3.59393 9.11609 3.56063C8.51258 3.069 7.40847 2.41252 6.48813 2.2327C6.27375 2.19095 6.08024 2.16962 5.91321 2.16962Z" fill="white"/>
+</g>
+<g id="Group_6">
+<path id="Vector_6" d="M15.8848 5.53996C15.8848 5.53996 15.8848 5.53996 15.8847 5.53996C15.0945 5.53996 14.2481 5.43288 13.5622 5.24625C12.5469 4.97006 11.9976 4.55004 11.8828 3.9624C11.8047 3.56243 11.8822 2.90924 13.4511 1.85855C14.3756 1.23934 15.4108 0.77524 16.2204 0.617125C16.5385 0.554941 16.8381 0.523438 17.1108 0.523438C18.4002 0.523438 19.2457 1.21689 19.4915 2.47597C19.6321 3.19554 19.5237 3.81528 19.1691 4.31799C18.7734 4.87899 18.1164 5.24244 17.1601 5.42921C16.7839 5.50262 16.3547 5.53996 15.8848 5.53996ZM13.9211 3.55038C13.8676 3.58144 13.8935 3.63045 13.9213 3.63846C14.3827 3.77113 15.0857 3.8937 15.8847 3.8937C16.2439 3.8937 16.5758 3.86594 16.8446 3.81341C17.3425 3.71613 17.6904 3.55831 17.8238 3.36899C17.8558 3.32372 17.9531 3.18596 17.8758 2.79153C17.7817 2.3091 17.61 2.16962 17.1107 2.16962C16.9437 2.16962 16.7504 2.19087 16.5358 2.23278C15.6154 2.41252 14.5246 3.05868 13.9211 3.55038Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_166_1545">
+<rect width="21.9531" height="21.9531" fill="white" transform="translate(0.523468 0.523438)"/>
+</clipPath>
+</defs>
+</svg>
+Earn Prime Point
+</a></li>
+<li data-tab="prime_history">
+<a><svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+<g id="Group 469334">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M17.3183 11.1249C17.027 14.1523 14.6113 16.5679 11.584 16.8592V21C14.1595 20.8521 16.5602 19.7793 18.3993 17.9402C20.2384 16.1012 21.3112 13.7004 21.459 11.1249H17.3183V11.1249Z" fill="#fff"/>
+<path id="Vector_2" d="M10.3526 16.8593C7.12258 16.5485 4.58847 13.8194 4.58847 10.5092C4.58847 9.012 5.10088 7.59363 6.04243 6.45404L3.11485 3.52646C1.39824 5.45218 0.459229 7.90837 0.459229 10.5092C0.459229 13.3163 1.55235 15.9554 3.53727 17.9403C5.37633 19.7793 7.7771 20.8522 10.3526 21V16.8593Z" fill="#fff"/>
+<path id="Vector_3" d="M6.91318 5.5832C8.05277 4.64165 9.47114 4.12924 10.9683 4.12924C14.2785 4.12924 17.0076 6.66335 17.3184 9.8934H21.4591C21.3113 7.31787 20.2384 4.9171 18.3994 3.07808C16.4145 1.09312 13.7754 0 10.9683 0C8.36751 0 5.91128 0.939011 3.9856 2.65562L6.91318 5.5832Z" fill="#fff"/>
+</g>
+<path id="Vector_4" d="M11.8038 9.82767C11.2468 9.63079 10.6307 9.39293 10.2852 9.12195C10.1766 9.03681 10.1296 8.84182 10.1683 8.63677C10.1876 8.53447 10.2776 8.19255 10.6274 8.08717C11.2016 7.91426 11.5954 8.14361 11.738 8.25027C12.0104 8.45384 12.3963 8.39813 12.5999 8.12576C12.8036 7.85338 12.7478 7.4675 12.4754 7.26384C12.3462 7.16721 12.0225 6.95538 11.5583 6.85251V6.60189C11.5583 6.26182 11.2826 5.98611 10.9426 5.98611C10.6025 5.98611 10.3268 6.26182 10.3268 6.60189V6.89265C10.3086 6.89774 10.2906 6.90242 10.2722 6.90797C9.59773 7.11113 9.09419 7.68618 8.95802 8.40868C8.83269 9.07372 9.04998 9.71831 9.52511 10.091C9.91662 10.398 10.4579 10.6581 11.3934 10.9888C12.0162 11.209 12.0027 11.7131 11.968 11.9196C11.8976 12.3383 11.5454 12.7907 10.9384 12.7948C10.3436 12.7988 10.1578 12.7693 9.70048 12.4702C9.41587 12.284 9.03426 12.3637 8.84809 12.6484C8.66192 12.933 8.74172 13.3146 9.02629 13.5007C9.51948 13.8234 9.88336 13.9542 10.3268 14.002V14.2834C10.3268 14.6235 10.6025 14.8992 10.9425 14.8992C11.2826 14.8992 11.5583 14.6235 11.5583 14.2834V13.9428C11.8975 13.8494 12.2067 13.6788 12.4709 13.4361C12.8453 13.092 13.098 12.626 13.1824 12.1238C13.3542 11.1026 12.8002 10.1799 11.8038 9.82767Z" fill="#fff"/>
+</g>
+</g>
+</svg>
+History</a
+>
+</li>
+<li data-tab="prime_faq">
+<a>
+  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+<g id="Group 469331">
+<path id="Vector" d="M24.9594 16.7422C24.9594 13.764 23.2508 11.106 20.6919 9.81311C20.6124 15.5234 15.9828 20.1531 10.2725 20.2325C11.5654 22.7914 14.2233 24.5 17.2015 24.5C18.5979 24.5 19.9558 24.1281 21.1489 23.4215L24.9255 24.4661L23.8809 20.6896C24.5875 19.4965 24.9594 18.1385 24.9594 16.7422Z" fill="#fff"/>
+<path id="Vector_2" d="M19.2876 9.66406C19.2876 4.6109 15.1767 0.5 10.1235 0.5C5.07037 0.5 0.959473 4.6109 0.959473 9.66406C0.959473 11.3109 1.39783 12.9144 2.23022 14.3221L0.993164 18.7943L5.46552 17.5574C6.87323 18.3898 8.47668 18.8281 10.1235 18.8281C15.1767 18.8281 19.2876 14.7172 19.2876 9.66406ZM8.71729 7.53125H7.31104C7.31104 5.98035 8.57263 4.71875 10.1235 4.71875C11.6744 4.71875 12.936 5.98035 12.936 7.53125C12.936 8.31842 12.6028 9.07501 12.0214 9.60675L10.8267 10.7003V11.7969H9.42041V10.081L11.072 8.56927C11.3672 8.29919 11.5298 7.9306 11.5298 7.53125C11.5298 6.7558 10.899 6.125 10.1235 6.125C9.34808 6.125 8.71729 6.7558 8.71729 7.53125ZM9.42041 13.2031H10.8267V14.6094H9.42041V13.2031Z" fill="#fff"/>
+</g>
+</svg>
+  FAQ</a>
+</li>
+<li class="account-menu">
+<div class="account-info">
+{% comment %}
+<div class="notify-button">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/bell.svg?v=1690551385" />
+</div>
+{% endcomment %}  
+<div class="avtar">
+<a href="/account"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Vector_7d03c31c-74e4-4000-afc8-26b25193fda1.png?v=1691043281" /></a>
+</div>
+</div>
+</li>
+</ul>
+<div class="account-info">
+{% comment %}  
+<div class="notify-button">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/bell.svg?v=1690551385" />
+</div>
+{% endcomment %}  
+<div class="avtar">
+<a href="/account"><img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Vector_7d03c31c-74e4-4000-afc8-26b25193fda1.png?v=1691043281" /></a>
+</div>
+</div>  
+</header>
+
+
+
+{% comment %} PRIME POINT SECTION {% endcomment %}
+
+<section class="subscription prime_store">
+<div class="container">
+
+{% include 'primestore-banner' %}
+  
+<div class="subscription-info">
+<div class="points">
+<h2 class="points-heading" style="font-size:1.75rem;">Login For Points</h2>
+<p class="points-info">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Group_469291.svg?v=1690787137" /> Nomad Prime Points
+</p>
+<a class="shop-link">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/shop.svg?v=1690177338" />Nomad Prime Store
+</a>
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/points.png?v=1690177338" alt="points" class="point-img" />
+</div>
+<div class="lifetime">
+<h2 class="lifetime-heading">Free Lifetime Internet & Nomad Prime Points</h2>
+<p class="lifetime-info">
+Copy & share this link to automatically earn points with us
+</p>
+<div class="copy-link">
+<p class="lifetime-link">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/avtar.svg?v=1690177338" />
+<span id="myInput">https://nomadinternet.com?referral_code=</span>
+</p>
+<button class="copy-link-btn">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/copy.svg?v=1690177338" />Copy To Refer A Friend
+</button>
+</div>
+</div>
+</div>
+
+<div class="roadmap">
+<h2 class="roadmap-heading">
+Roadmap to Free Internet For Life
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/lifetime.png?v=1690177338" />
+</h2>
+<div class="referral-list">
+<div class="referral transparent">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/user.svg?v=1690177338" />
+<p class="referral-title">1st Referral</p>
+<h2 class="referral-free-heading">Free</h2>
+<p class="referral-info">Month of Internet</p>
+<a class="not-claim-btn claim-btn one_claim" >Claim</a>
+</div>
+<div class="referral transparent">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/user.svg?v=1690177338" />
+<p class="referral-title">2nd Referral</p>
+<h2 class="referral-free-heading">Free</h2>
+<p class="referral-info">Month of Internet</p>
+<a class="not-claim-btn claim-btn one_claim" >Claim</a>
+</div>
+<div class="referral transparent">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/user.svg?v=1690177338" />
+<p class="referral-title">3rd Referral</p>
+<h2 class="referral-free-heading">Free</h2>
+<p class="referral-info">Month of Internet</p>
+<a class="not-claim-btn claim-btn one_claim" >Claim</a>
+</div>
+<div class="referral transparent">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/user.svg?v=1690177338" />
+<p class="referral-title">4th Referral</p>
+<h2 class="referral-free-heading">Free</h2>
+<p class="referral-info">Month of Internet</p>
+<a class="not-claim-btn claim-btn one_claim" >Claim</a>
+</div>
+<div class="referral lifetime-referral">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/lifetime-user.svg?v=1690177338" />
+<p class="referral-title">5th Referral</p>
+<h2 class="referral-free-heading">Free Lifetime</h2>
+<p class="referral-info">Internet</p>
+<a class="not-claim-btn claim-btn one_claim" >Claim</a>
+</div>
+</div>
+
+</div>
+
+
+<section class="exclusive-deals">
+<div class="heading">
+<h2 class="exclusive-title">
+Nomad Prime Store Exclusive Products
+</h2>
+<p>
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/exclusive-icon.svg?v=1690609790" />Available Points:<span>XXXX</span>
+</p>
+</div>
+<div class="coupons-list rewards-section">
+
+{% for points_reward in shop.metafields.rivo.loy.points_program.points_rewards %}
+<div class="coupon-item">
+<div class="coupon-img">
+{% if points_reward.name == "$5 off coupon" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Frame_469550.png?v=1690716236" />
+{% elsif points_reward.name == "$10 off coupon" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/nomad-exclusive-10.png?v=1690612253" />
+{% elsif points_reward.name == "Month of Free Unlimited Service" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/nomad-exclusive-free.png?v=1690612253" />
+{% elsif points_reward.name == "$20 off coupon" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/nomad-exclusive-20.png?v=1690612253" />
+{% elsif points_reward.name == "Nomad Air Travel Bag- Limited Edition" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/nomad-exclusive-bag.png?v=1690612253" />
+{% else %}  
+<img src="{{ points_reward.icon_url }}" />  
+{% endif %}
+</div>
+<div class="coupon-content">
+<h3 class="coupon-title">
+{{ points_reward.name }}
+</h3>
+<div class="coupons">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/exclusive-icon.svg?v=1690609790" />
+<span>{{ points_reward.points_amount }}</span>
+</div>
+
+<a class="coupon-btn">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/gift-box.svg?v=1690609863" /> Redeem
+</a>
+
+</div>
+</div>
+{% endfor %}
+<div class="available-section">
+<h3>Available Rewards</h3>
+<ul id="redeemed-rewards"></ul>
+</div>
+</div>
+</section>
+  
+
+</div>
+</section> 
+
+{% comment %} PRIME STORE SECTION {% endcomment %}
+
+
+<section class="refer-section prime_point" style="display:none;">
+<div class="container">
+<div class="wrapper">
+<div class="refer" style="background-image:url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/refer-bg.png?v=1690610691');">
+<h2 class="refer-title">GO FOR FREE &UNLIMITED</h2>
+<p class="refer-info">
+Refer 5 people & earn Free lifetime internet
+</p>
+<a class="refer-btn"> Refer Now </a>
+</div>
+<div class="refer" style="background-image:url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/refer-bg.png?v=1690610691');">
+<h2 class="refer-title">GO FOR FREE &UNLIMITED</h2>
+<p class="refer-info">
+Refer 5 people & earn Free lifetime internet
+</p>
+<a class="refer-btn"> Refer Now </a>
+</div>
+<div class="refer" style="background-image:url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/refer-bg.png?v=1690610691');">
+<h2 class="refer-title">GO FOR FREE &UNLIMITED</h2>
+<p class="refer-info">
+Refer 5 people & earn Free lifetime internet
+</p>
+<a class="refer-btn"> Refer Now </a>
+</div>
+</div>
+</div>
+
+<div class="container">  
+<div class="task">
+<h2 class="task-heading">
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/earn-coin.png?v=1690536009" />
+<div>
+Earn Prime Points Once
+<p class="task-info">
+Complete our simple task to earn even more Nomad point
+</p>
+</div>
+<div class="task_complte">
+<p>Task Completed: <span class="task_done">0</span>/<span class="total_task">7</span></p>
+</div>  
+</h2>
+<div class="social-media-list"> 
+{% for way_to_earn in shop.metafields.rivo.loy.points_program.ways_to_earn %}
+<div class="twitter">
+{% if way_to_earn.title contains "Facebook" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Facebook_a9c5a422-d056-4c3c-b4c4-855cfe18b09b.png?v=1690264131" />
+{% elsif way_to_earn.title contains "birthday" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/celebrate.png?v=1690539628" /> 
+{% elsif way_to_earn.title contains "Instagram" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/instagram.svg?v=1690177338" />
+{% elsif way_to_earn.title contains "Twitter" %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/twitter.svg?v=1690177338" />
+{% else %}
+<img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/claim.png?v=1690177338" />
+{% endif %}
+<div class="follow-detail">
+<p>{{ way_to_earn.title }}</p>
+<p class="claim-info">
+<span class="claim-info-text">Claim</span> <span> <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Group_469291.svg?v=1690787137" /> {{ way_to_earn.points_amount }}</span>
+</p>
+</div>
+<a class="not-claim-btn claim-btn">Claim</a> 
+</div>
+{% endfor %}
+</div>
+</div>
+</div>
+  
+</section>
+
+
+{% comment %} PRIME STORE HISTORY{% endcomment %}
+<section class="prime_history" style="display:none;">
+<div class="container">
+<div class="heading">
+<h2 class="exclusive-title">Nomad Prime Point History</h2>
+</div>
+<div class="action-table">
+<table>
+<thead>  
+<tr>
+<th class="action">Action</th>
+<th class="points">Points</th>
+<th class="date">Date</th>
+</tr>
+</thead>  
+<tbody id="points-program-activity"></tbody>  
+</table>
+</div>
+</div>
+</section>
+
+
+
+{% comment %}  FAQ's SECTION  {% endcomment %}
+<section class="faq-section prime_faq" style="display:none;">
+<div class="container">
+<div class="section-title">
+<h2 class="page-title">Frequently Asked Questions (FAQs)</h2>
+</div>
+
+<div class="prime_info">
+<p>Hello Nomad Members,</p>
+<p>We are excited to announce the launch of our brand-new Nomad Prime Store! This members-only store is now exclusively available to you, offering a plethora of exciting benefits and advanced products.</p>
+<p>As a member of our Nomad family, you now have access to free enhancements, plan upgrades, and exclusive limited edition items. We're thrilled to also introduce an unparalleled offer – Free Internet for Life!</p>
+<p>Our team at the Nomad Prime Store is committed to bringing you the most state-of-the-art internet products available anywhere, along with our exclusive services. To access these remarkable products, you'll need Nomad Prime Points. These points are absolutely free and can be earned by every Nomad Member.</p>
+<p>Here's a glimpse of the fantastic products you can find at our store:</p>
+<p><b>1. Free Internet for Life:</b> Nomad Internet's 5 for Life Program 
+Refer your friends to Nomad Internet, and once they sign up, earn a free month of service. Go beyond and bring in five referrals to unlock <span>Free Internet for Life</span>!</p>
+<p><b>2. Nomad Speed Boost:</b> Unmatched Internet Speeds
+Experience unprecedented internet speeds with Nomad Speed Boost. With this upgrade, you can reach speeds up to a jaw-dropping 400 Mbps!</p>
+<p><b>3. Nomad Early Access Products:</b> Stay Ahead of the Curve
+Get early access to innovative internet products with the latest wireless technology before they hit the market.</p>
+<p><b>4. Nomad Limited Edition Products:</b> Exclusive and Rare
+Discover our Limited Edition Products which are truly one-of-a-kind. Once they're gone, they're gone!</p>
+<h4>But, how do you earn these Nomad Prime Points?</h4>
+<p>These points can't be purchased - they can only be earned through referrals and simple activities:</p>
+<p><b>1. Nomad Membership Rewards:</b> As a Nomad Member, gain access to the Nomad Prime Store through the Nomad Customer Portal.</p>
+<p><b>2. Referrals:</b> Share your unique Nomad Prime URL with friends and family to earn points.</p>
+<p><b>3. Social Tasks:</b> Earn points by engaging with us on social media.</p>
+<p>With every 100 Nomad Prime Points equal to one dollar ($1), you can start unlocking the impressive rewards that are in store for you at the Nomad Prime Store.</p>
+<p>Join us on this exhilarating journey towards the latest and best in wireless and internet technologies. Stay tuned for thrilling updates on new ways to earn Nomad Prime Points and the most unique Nomad Prime Products. We look forward to serving you, and happy shopping!</p>
+<p>Best,</p>
+<p>The Nomad Prime Store Team</p>  
+</div>  
+
+<div class="faq-list">
+<div class="accordion open">
+<div class="accordion-header">
+<span>What is the Free Internet for Life?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content" style="display: block;">
+Nomad Internet’s 5 for Life Program allows you to enjoy free internet for life!
+<br/><br/>
+It’s easy, just tell your friends about Nomad Internet, when one of your referrals signs up you'll receive a free month of service. Better yet, provide 5 referrals who sign up for Nomad's service, and receive Free Internet for Life!
+<br/><br/>
+Refer as many individuals or businesses with your Nomad Prime Link
+When 5 or more referrals become new Quantum customers, your Internet will be FREE. 
+<br/><br/>
+Should one or more of your referrals cancel service, your monthly bill will resume until you find replacements.
+
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-header">
+<span>What is a Nomad Speed Boost?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content">
+Nomad Speed Boost will enhance your internet service with things like additional networks and speed boost! In fact, we will offer speeds that are not available to the general public! 
+<br/><br/>
+Nomad Speed Boost can increase your internet speeds to over 400 Mbps! And, later this year, we will be testing speed boosts of up to 1,000 Mbps!!!
+
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-header">
+<span>What are Nomad Early Access Products?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content">
+Early Access Products are high-power internet products that have the latest wireless technology and are in development! The Nomad Prime Store will have you access to Nomad Modems in development BEFORE public release. For example, we are testing a new modem called the Nomad Titan! The most powerful mobile modem in the world!
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-header">
+<span>What are Nomad Limited Edition Products?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content">
+The Prime Store also carries exclusive and Limited Edition Products like we have limited Inventory! So, once they are gone, they are gone! 
+<br/><br/>
+The Nomad Prime Store carries Limited Edition Modems, Nomad Air Limited Edition Travel Bags, and Limited Edition Long-Range Antennas!
+<br/><br/>
+We are excited for you to try out the latest and best wireless and internet technologies on the planet!!
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-header">
+<span>What are Nomad Prime Points?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content">
+Nomad Prime Points are the exclusive currency of the Nomad Prime Store. Nomad Prime Points can NOT be purchased! 
+<br/><br/>
+You read that right. Nomad Prime Points can only be redeemed through free activity and referrals
+</div>
+</div>
+<div class="accordion">
+<div class="accordion-header">
+<span>How do I earn Nomad Prime Points?</span>
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.88184 1.84485L9.92136 9.88437L17.9609 1.84485" stroke="black" stroke-width="2.67984" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div class="accordion-content">
+The best way you can earn Nomad Prime Points is by being a Nomad Member, completing the Nomad Daily task, referring friends & family to Nomad Internet! Here is how it works:
+<br/><br/>
+After becoming a Nomad Member you will be given access to your exclusive Nomad Prime Store through the Nomad Customer Portal. 
+<br/><br/>
+Once you are a Nomad Prime Member, you will be given a unique Nomad Prime URL to use. Anytime your Nomad Prime URL is used you earn Nomad Prime Points!
+<br/><br/>
+In addition, we have created basic social tasks like following us on Twitter and Instagram to earn free Nomad Prime Points!
+<br/><br/>
+Limited Edition Nomad Air Travel Bag
+Nomad Power Plan Upgrade
+Nomad Raptor Upgrade
+High-Performance Nomad Air Antenna
+High-Performance Nomad Raptor Antenna
+Marvels Jarvis signed Noma Air Travel Bag
+<br/><br/>
+100 points equal 1 dollar
+</div>
+</div>
+</div>
+</div>
+</section>  
+
+<div id="overlay"></div>
+<button id="loginbtn" style="display:none;">POPUP</button>
+<div id="loginpopup" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+
+<div class="grid admin-page-wrapper">
+
+<div class="grid__item large--one-third push--large--one-third container">
+<div class="card-admin">
+
+{% comment %}
+If a user has successfully requested a new password, the form.posted_successfully? variable
+is set to true within the 'recover_customer_password' form only. Within that form you'll see
+the variable 'resetPassword' set to true, which is used to initialize timber.resetPasswordSuccess().
+{% endcomment %}
+<div class="note form-success" id="ResetSuccess" style="display:none;">
+{{ 'customer.recover_password.success' | t }}
+</div>
+
+<div id="CustomerLoginForm" class="form-verticals">
+{% form 'customer_login' %}
+<!--<div class="card-header">
+    <h1 class="card-title">{{ 'customer.login.title' | t }}</h1>
+</div>-->
+<div class="card-header border-0">
+    <h1 class="card-title">Welcome Back</h1>
+</div>
+{{ form.errors | default_errors }}
+<div class="">
+  <div class="">
+    <div class="form-group">
+     {% comment %}
+      <label for="CustomerEmail" class="form-label hidden-label">{{ 'customer.login.email' | t }}</label>
+  {% endcomment %}
+      <input type="email" name="customer[email]" id="CustomerEmail" class="form-control input-full{% if form.errors contains 'email' %} error{% endif %}" placeholder="{{ 'customer.login.email' | t }}" autocorrect="off" autocapitalize="off" autofocus>
+    </div>
+    {% if form.password_needed %}
+    <div class="form-group">
+      {% comment %}
+      <label for="CustomerPassword" class="form-label hidden-label">{{ 'customer.login.password' | t }}</label>
+      {% endcomment %}
+      <input type="password" value="" name="customer[password]" id="CustomerPassword" class="form-control input-full{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.login.password' | t }}">
+      
+    </div>
+    {% endif %}
+    {% if form.password_needed %}
+    <p class="forgot-password"><a href="#recover" id="RecoverPassword" class="font-weight-bold">{{ 'customer.login.forgot_password' | t }}</a></p>
+    {% endif %}
+
+    <p>
+      <input type="submit" class="btn rounded text-capitalize btn-primary btn--full" value="{{ 'customer.login.sign_in' | t }}" style="font-weight:600;letter-spacing: normal;">
+    </p>
+    <!--<p class="mb-0"><a href="/">{{ 'customer.login.cancel' | t }}</a></p>-->
+    <!--<p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>-->
+     <p style="font-weight:600; color:#000">Don’t have an account? {{ 'layout.customer.create_account' | t | customer_register_link }}</p>
+  </div>
+</div>
+
+<input type="hidden" name="return_to" value="/pages/prime-store">
+
+{% endform %}
+  
+</div>
+
+{% comment %}
+JS shows/hides this form in timber.loginForms()
+{% endcomment %}
+<div id="RecoverPasswordForm" style="display: none;">
+<div class="card-header border-0">
+<h2 class="card-title">{{ 'customer.recover_password.title' | t }}</h2>
+<p class="card-sub-title mt-3">{{ 'customer.recover_password.subtext' | t }}</p>
+</div>
+<div class="">
+<div class="">
+  <div class="form-verticals">
+{% form 'recover_customer_password' %}
+
+{{ form.errors | default_errors }}
+
+{% comment %}
+Assign variable to be used after timber.init() is run in theme.liquid
+{% endcomment %}
+{% if form.posted_successfully? %}
+{% assign resetPassword = true %}
+{% endif %}
+<div class="form-group">
+    
+    <div class="d-flex align-items-center rounded" style="background:#F6F6F6;"><input type="email" value="" name="email" id="RecoverEmail" class="reset-password form-control input-full" placeholder="{{ 'customer.recover_password.email' | t }}" autocorrect="off" autocapitalize="off"><i class="fas fa-envelope mr-3" style="color:#0F9E59"></i></div>
+</div>
+<p>
+  <input type="submit" class="btn rounded text-capitalize btn-primary btn--full" value="{{ 'customer.recover_password.submit' | t }}" style="font-weight:600;letter-spacing: normal;">
+</p>
+<button type="button" id="HideRecoverPasswordLink" class="btn btn-link p-0 text-link">{{ 'customer.recover_password.cancel' | t }}</button>
+<a href="/" class="font-weight-bold"><i class="fas fa-long-arrow-alt-left"></i> Back to homepage</a>
+{% endform %}
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("loginpopup");
+
+// Get the button that opens the modal
+var btn = document.getElementById("loginbtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script> 
+
+<Script>
+
+$('.refer-btn').click(function(){
+$('li[data-tab="prime_point"]').trigger('click');  
+});  
+$('.shop-link').click(function(){
+$('#loginbtn').trigger('click');
+});  
+$('.copy-link-btn').click(function(){
+$('#loginbtn').trigger('click');  
+});  
+$('.not-claim-btn').click(function(){
+$('#loginbtn').trigger('click');  
+}); 
+$('.coupon-btn').click(function(){
+$('#loginbtn').trigger('click');  
+});   
+
+
+</Script>  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+var $r = jQuery.noConflict();
+$r(document).ready(function () {
+
+$r(document).on('click', '.accordion-header', function () {
+        // Toggle the visibility of the content
+        var isVisible = $r(this).next('.accordion-content').is(':visible');
+
+        // Hide all accordion content
+        $r('.accordion-content').slideUp();
+        $r('.accordion').removeClass('open');
+        // If the clicked header's content was not visible, show it
+        if (!isVisible) {
+          $r(this).next('.accordion-content').slideDown();
+          $r(this).parents('.accordion').addClass('open');
+        }
+      });
+
+  
+$r("section.refer-section .wrapper").slick({
+infinite: true,
+dots: true,
+arrows: false,
+autoplay: true,
+autoplaySpeed: 2000,
+fade: true,
+});
+// mobile menu
+$r(document).on("click", ".mobile-button", function () {
+$r("ul.header-menu").slideToggle();
+}); 
+
+$r('.header-menu li').click(function(){
+$r('section.refer-section .wrapper').slick('refresh');
+var newWindowWidth = $(window).width();
+if (newWindowWidth < 768) {
+$r("ul.header-menu").slideToggle();
+}  
+$r('.header-menu li').removeClass('active');
+$r(this).addClass('active');
+var selected_section = $r(this).attr('data-tab');
+if(selected_section == "prime_point"){
+$r('section.prime_store').hide();
+$r('section.prime_history').hide();
+$r('section.prime_faq').hide();  
+$r('section.prime_point').show();
+}
+if(selected_section == "prime_store"){
+$r('section.prime_point').hide();
+$r('section.prime_history').hide();
+$r('section.prime_faq').hide();    
+$r('section.prime_store').show();
+}  
+if(selected_section == "prime_history"){
+$r('section.prime_point').hide();
+$r('section.prime_store').hide();
+$r('section.prime_faq').hide();    
+$r('section.prime_history').show();
+}
+if(selected_section == "prime_faq"){
+$r('section.prime_point').hide();
+$r('section.prime_store').hide();
+$r('section.prime_history').hide();    
+$r('section.prime_faq').show();
+}  
+});
+
+});
+</script>  
+
+{% endif %}    

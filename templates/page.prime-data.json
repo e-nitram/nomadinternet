@@ -1,0 +1,207 @@
+{
+  "sections": {
+    "6969714c-7423-4851-98b5-3e55fac05b3a": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "a960c3ff-3900-4ddc-9902-27d26d45f2c3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brand_logo_dd1b3203-e902-4540-a192-3a0b717ffcc6.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "a960c3ff-3900-4ddc-9902-27d26d45f2c3"
+      ],
+      "settings": {
+        "title": "Nomad Prime Data - Try for free",
+        "description": "<p>We are proud to announce our newest product called Nomad Prime Data!Order a new SIM card and try the high-speed Internet for free!<\/p>",
+        "max_width": 770,
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "b7eba621-6597-4d55-b4df-c3948924bc3b": {
+      "type": "awesome-section",
+      "custom_css": [
+        ".awesome-section__text {background-image: linear-gradient(to right, black, #00000037); z-index: 1;}"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": true,
+        "image": "shopify:\/\/shop_images\/0111.jpg",
+        "title_tag": "h4",
+        "title": "Nomad prime data - dual connectivity",
+        "description": "<p>The Nomad Prime Data allows your Nomad Air dual network capability! This means your Nomad Air can now access America’s two largest networks at once!<\/p><p>And, the best part is? Nomad will intelligently switch between both networks to automatically find you the network with the best speed!<\/p>"
+      }
+    },
+    "a51cf8d1-c388-4727-91c1-87336ad9d063": {
+      "type": "awesome-section",
+      "custom_css": [
+        ".awesome-section__text {background-image: linear-gradient(to left, black, #00000037); z-index: 1;}"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": true,
+        "image": "shopify:\/\/shop_images\/2222.jpg",
+        "title_tag": "h4",
+        "title": "Benefits of nomad prime data",
+        "description": "<p>While all Nomad plans include up to unlimited data, Nomad Prime Data adds an “up to unlimited speed” boost for 50GB!<\/p><p>*This means your Nomad Air can can download up to 1,000 mbs for the first 50GB!<\/p><p>The Nomad Air is the fastest modem in America! and, it now uses the fastest network in America!<\/p>"
+      }
+    },
+    "ab6baa00-41a3-4462-967c-1569cbaa31da": {
+      "type": "awesome-section",
+      "custom_css": [
+        ".awesome-section__text {background-image: linear-gradient(to right, black, #00000037); z-index: 1;}"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": true,
+        "image": "shopify:\/\/shop_images\/2_02bec1a9-9115-4151-b0b6-f67b4c0018eb.jpg",
+        "title_tag": "h3",
+        "title": "Buy an Air modem with Nomad Prime Data",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur. Nibh ultricies magna vulputate aliquam sit fermentum condimentum. Aliquam aliquam sollicitudin quisque ut massa quis. Eget suscipit viverra massa porta facilisis pellentesque gravida. In vestibulum duis tempor sed ut eget egestas ac cras. Tempor pellentesque viverra non mi lectus aenean eget gravida. Mi tincidunt augue adipiscing mattis laoreet diam. Quisque ultricies rhoncus nam lacus amet at est. <\/p>"
+      }
+    },
+    "102e9dbd-d85b-45b7-8a99-db0f47806e9d": {
+      "type": "lp-16",
+      "blocks": {
+        "c4dc470f-b6a1-4706-a28e-70f47c9c9033": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service<br\/> Provider. We are focused on providing High-Speed wireless Internet to <br\/>rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "1a037a05-75d2-41d1-98ab-be5923a923e2": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by <br\/>transmitting wireless Internet access directly to your home, business, <br\/>and even while traveling! We combine the latest technology with <br\/>Verizon’s service to provide high-speed internet to rural locations and <br\/>traveling nomads. We offer a variety <br\/>of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "25d1f870-3d9f-46e7-9681-551f9f2569d5": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "9a321a6a-1846-4206-bc22-c1141efabcd4": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet secure?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. <br\/>Multiple layers of encryption, enhanced Wi-Fi security, firewall <br\/>filtering, built-in VPN support, IT admin controls, and other features <br\/>deliver strong security at every level.<\/p>"
+          }
+        },
+        "f19b5554-6c52-4d47-a584-d482cadc43a0": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will <br\/>provide you with robust and reliable internet for all your gaming needs.<br\/> No matter your plan, you can expect fast internet with low ping rates <br\/>and latency.<\/p>"
+          }
+        },
+        "c54f3b9d-0c25-469d-81b2-aa6016f65073": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, <br\/>low-latency service they have at home to any location Nomad Internet has<br\/> coverage. Nomad Internet for RVers\/travelers will allow users to pause <br\/>and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c4dc470f-b6a1-4706-a28e-70f47c9c9033",
+        "1a037a05-75d2-41d1-98ab-be5923a923e2",
+        "25d1f870-3d9f-46e7-9681-551f9f2569d5",
+        "9a321a6a-1846-4206-bc22-c1141efabcd4",
+        "f19b5554-6c52-4d47-a584-d482cadc43a0",
+        "c54f3b9d-0c25-469d-81b2-aa6016f65073"
+      ],
+      "settings": {
+        "title": "Answers to the most frequently asked questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6": {
+      "type": "lp-20",
+      "blocks": {
+        "eb799c1d-09d1-45f5-8e67-f9d874187e6b": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Chad_Klein.jpg",
+            "name": "Chad Klein",
+            "text": "After doing some research to find wireless internet providers for my area, I found Nomad Internet and decided to give it a try. I'm so glad that I did! Their connection is surprisingly fast and reliable, even in rural areas - perfect for video conferences or streaming movies with great quality. They live up to their promise of providing high-speed wireless internet, with helpful customer service on top of that. Indeed Nomad Internet has surpassed my expectations and provided a quality wireless service to me.",
+            "link": ""
+          }
+        },
+        "1bda1e37-1f78-4928-8339-985bf85d4923": {
+          "type": "review",
+          "settings": {
+            "style": "two",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Rectangle_1404_b3e6e14a-b739-4643-a2cf-4b6bbcb537a9.png",
+            "name": "Mike Blas",
+            "text": "Now I have fast, up to unlimited Internet at work, at home, and when I travel. Thank you, Nomad!",
+            "link": ""
+          }
+        },
+        "79f416c8-8f67-41c9-9e18-905708b76064": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Nathan_Greene.jpg",
+            "name": "Nathan Greene",
+            "text": "Finding wireless internet providers in my area of South Dakota for high-speed connection can be a challenge, which is why I'm so glad I found out about Nomad Internet! They have excellent wireless coverage even in the most remote areas, and their router works great. The connection speed is much faster than other wireless providers I've used before and their customer service is top notch. They've been a great resource for me to work from home with their reliable connection. Highly recommended if you are considering wireless providers in the area!",
+            "link": ""
+          }
+        },
+        "54d64ccb-d0dd-4a16-8c77-e120b3ea8f68": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Benjamin_Nichols.jpg",
+            "name": "Benjamin Nichols",
+            "text": "I recently found out about Nomad Internet for wireless internet in my rural area of South Dakota. I had some doubts at first, but the wireless providers in my area were limited, so I decided to give it a try. Since trying it, I've been incredibly impressed by the high-speed connection they provide - even in a remote work environment! It's perfect for video conferencing and other online tasks that require a reliable connection. It also works with many streaming services so we can watch whatever TV shows and movies we wanted to watch. Everyone I've recommended Nomad Internet to has been happy with their purchase, so if you're looking for rural internet, be sure to check them out!",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "eb799c1d-09d1-45f5-8e67-f9d874187e6b",
+        "1bda1e37-1f78-4928-8339-985bf85d4923",
+        "79f416c8-8f67-41c9-9e18-905708b76064",
+        "54d64ccb-d0dd-4a16-8c77-e120b3ea8f68"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "f9edaed5-c585-40ef-a402-bf4f5c319745": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "6969714c-7423-4851-98b5-3e55fac05b3a",
+    "b7eba621-6597-4d55-b4df-c3948924bc3b",
+    "a51cf8d1-c388-4727-91c1-87336ad9d063",
+    "ab6baa00-41a3-4462-967c-1569cbaa31da",
+    "102e9dbd-d85b-45b7-8a99-db0f47806e9d",
+    "39593bd7-775a-4b7b-8d91-064fc76cd1f6",
+    "f9edaed5-c585-40ef-a402-bf4f5c319745"
+  ]
+}

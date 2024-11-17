@@ -1,0 +1,69 @@
+<div class="lp-23">
+	<div class="lp-23__bgi hidden-sm-d ratio" style="--ratio: calc(562 / 1192 * 100%);background-image: url({{ section.settings.backgound_image | image_url: width: 1200 }})"></div>
+	<div class="lp-23__bgi hidden-md-u ratio" style="background-image: url({{ section.settings.backgound_image | image_url: width: 1024 }})"></div>
+
+	<div class="lp-23__content" style="background-color: {{ section.settings.background_color }}">
+		<h1 class="lp-23__title">{{ section.settings.title }}</h1>
+
+		<div class="lp-23__form">
+			{% form 'contact' %}
+				{{ form.errors | default_errors }}
+				<input type="hidden" name="contact[page_title]" value="{{ page.title }}">
+				<input type="hidden" name="contact[page_url]" value="https://{{ request.host }}{{ request.path }}">
+				<input type="hidden" name="contact[page_type]" value="{{ page.template_suffix }}">
+
+				<div class="row justify-center">
+					<div class="col-lg-auto col">
+						<label class="input-wrapper">
+							<span class="sr-only">Zip Code</span>
+							<input type="text" name="contact[body]" placeholder="Zip Code" required>
+						</label>
+					</div>
+					<div class="col-lg-auto col">
+						<label class="input-wrapper">
+							<span class="sr-only">E-mail</span>
+							<input type="mail" name="contact[email]" placeholder="E-mail" required>
+						</label>
+					</div>
+					<div class="col-lg-auto col">
+						<label class="input-wrapper">
+							<input type="submit" value="Send message" class="btn lg wide red">
+						</label>
+					</div>
+				</div>
+			{% endform %}
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-23",
+  "class": "container",
+  "tag": "div",
+  "limit": 1,
+  "presets": [
+    {
+      "name": "LP / SECT 23"
+    }
+	],
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "backgound_image",
+      "label": "Background Image"
+    },
+		{
+			"type": "color",
+			"id": "background_color",
+			"label": "Background Color",
+			"default": "#014870"
+		},
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,312 @@
+<!-- Begin ReCharge code -->
+
+{% include 'subscription-cart-footer' %} 
+<!-- End ReCharge code -->
+<section class="cart-header">
+  <div class="container">
+    <figure>
+      {% render 'image' with imageSrc: 'cart-bg.jpg', class: 'img-fluid rounded', altTag: 'cart', isAsset: 'true' %}
+      <figcaption>Your Cart </figcaption>
+    </figure>
+  </div>
+</section>
+<section class="cart-section">
+  <div class="container">
+    <div class="card-card"> {% if cart.item_count > 0 %}
+      <form action="/cart" method="post" novalidate class="cart table-wrap">
+        <div class="cart-form__content">
+        <div class="d-block d-md-none">Product</div>
+          <table class="shop_table shop_table_responsive cart border-bottom cart-form__contents" cellspacing="0">
+            <thead>
+              <tr>
+                <th class="product-name">Product</th>
+                <th class="product-thumbnail">&nbsp;</th>
+                <th class="product-price" align="center">Total</th>
+                <th class="product-remove">&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+            
+            {% for item in cart.items %}
+              <tr class="cart-form__cart-item cart_item" {% if item.product.title contains 'Subscription Auto renew' %}style="display:none!important;"{% endif %}>
+            
+            
+              <td class="product-thumbnail pl-0"><a> <img width="300" height="300" src="{{ item | img_url: 'medium' }}" alt="{{ item.title | escape }}" /> </a><a class="d-block d-md-none float-right remove{% if item.product.title == 'Strong Pink Plan' %} remove_pink{% elsif item.product.title == 'Very Blue Plan' %} remove_blue{% elsif item.product.title == 'Deep Red Plan' %} remove_red{% elsif item.product.title == 'Bright Yellow Plan' %} remove_yellow{% else %}{% endif %}{% if item.product.title == 'Strong Pink Plan Subscription Auto renew' %} remove_pink_sub{% elsif item.product.title == 'Very Blue Plan Subscription Auto renew' or item.product.title == 'Very Blue Plan Sim only Subscription Auto renew' %} remove_blue_sub{% elsif item.product.title == 'Deep Red Plan Subscription Auto renew' %} remove_red_sub{% elsif item.product.title == 'Bright Yellow Plan Subscription Auto renew' %} remove_yellow_sub{% else %}{% endif %}" aria-label="Remove this item" data-line="{{ forloop.index }}" data-product_sku="GL-MiFi-Red">×</a></td>
+              <td class="product-name" data-title="Product"><div class="product-name-under"> <a href="#">{{ item.product.title }} - {{ item.variant.title }}</a> <span class="text-note">(You will be charged this amount every month)</span> </div>
+                <div class="one-time">
+                  <div class="one-time-plun">One-Time Membership Fee <a href="#" class="money-back1 modal-link"> <i class="fa fa-question-circle" aria-hidden="true"></i></a> </div>
+                  <span class="text-note-bottom">*When becoming a member you are responsible for paying for your first month of service as well as a One-Time membership fee that covers the administration of your account.</span> </div></td>
+              <td class="product-price" align="center" valign="top" data-title="Price"> <div class="d-block d-md-none">Total</div><div class="product-price-top"> <span class="Price-amount amount"> 
+                	{% if item.product.title contains 'Pink' %}
+                  		$ 99 <sub>/ month </sub>
+                  	{% elsif item.product.title contains 'Blue' %}
+                  		$ 129 <sub>/ month</sub> 
+                  	{% elsif item.product.title contains 'Red' %}
+                  		$ 179 <sub>/ month</sub> 
+                	{% elsif item.product.title contains 'Yellow' %}
+                  		$ 179 <sub>/ month </sub>
+                  	{% else %}
+                  
+                  {% endif %} </span> </div>
+                <div class="product-price-bottom">{% if item.price > 0 %}{{ item.price | money_without_trailing_zeros }} - <span>One Time</span>{% else %}$0 <sub>/ Setup Fee</sub>{% endif %}</div></td>
+              <td class="product-remove pr-0 d-none d-md-block"><a class="remove"  href="/cart/clear" rel="{{ item.id }}">×</a></td>
+            </tr>
+            {% endfor %}
+            
+              </tbody>
+            
+          </table>
+          {% comment %}
+          <div class="coupon">
+            <label for="coupon_code">Coupon:</label>
+            <input autocomplete="off" type="text" name="discount" class="input-text" id="coupon_code" value="" placeholder="Coupon code">
+            <p>The discount code is automatically applied in the checkout.</p>
+          </div>
+          {% endcomment %} </div>
+      </form>
+      <div class="cart-collaterals">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h3 class="cart-collaterals-title mb-4">14-Day Money Back Guarantee</h3>
+            <p class="pt-3" style="font-size:12px;color:#000; font-weight:500">Each membership includes 14 days from the date of RECEIPT OF HOTSPOT to test out the device and service at no risk. If the device or service does not meet your expectations and you would like a full refund for both the One-Time Membership Fee and the First Month’s Membership Pre-Payment, the device must be shipped back within 14 days from the date at which you received it. Devices returned after this period will not be entitled to a refund for either the One-Time Membership Fee or any Monthly Membership Prepayments.</p> </div>
+          <div class="cart_totals col-12 col-lg-6">
+            <h2 class="cart-collaterals-title">Order Summary</h2>
+            <table cellspacing="0" class="shop_table shop_table_responsive mt-4">
+              <tbody>
+                <tr class="cart-subtotal">
+                  <th>Subtotal</th>
+                  <td data-title="Subtotal"><span class="Price-amount amount">{{ cart.total_price | money_without_trailing_zeros }}</span></td>
+                </tr>
+                <tr class="order-total">
+                  <th style="font-weight:700; color:#000; font-size:18px;">Total Due Today</th>
+                  <td data-title="Total Due Today"><strong><span class="Price-amount amount" style="font-weight:700; color:#000; font-size:18px;">{{ cart.total_price | money_without_trailing_zeros }}</span></strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-12 proceed-to-checkout">
+            
+            <div class="">
+              <input type="checkbox" id="accepttos">
+              <label for="accepttos">Agree to our <a target="_blank" href="https://www.google.com/url?q=https://nomadinternet.com/policies/terms-of-service&sa=D&source=hangouts&ust=1602099523287000&usg=AFQjCNGiKow_NJq4rq32CC-ji3Lk1Ij2qw">Terms Of Services</a></label>
+            </div> 
+            
+            <a id="accept-tosed" style="color: #fff;border-radius: 10px;" class="button alt forward btn btn-primary">
+              Proceed to checkout
+            </a>
+            
+            <a id="accepted-tosed" href="/checkout" style="display: none;" class="checkout checkout-button button alt forward btn btn-primary">
+              Proceed to checkout
+            </a>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <p>{{ 'cart.general.empty' | t }}</p>
+      <p class="return-to-shop"> <a class="button wc-backward" href="/pages/plans#wizard-plans">Return to shop</a> </p>
+      {% endif %}
+      <div class="bussiness-review">
+        
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .product-price-bottom{margin-top:45px;}
+  .card-card .card-title{text-transform: uppercase;}
+  .coupon p{margin-bottom:0px;}
+  .checkout-button{font-size:14px;}
+  .wc-backward{
+    color: #404040;
+    border-color: #404040;
+    border: 1px solid;
+    background: transparent;
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 1.65rem;
+    text-transform: uppercase;
+    padding: 1rem !important;
+    text-decoration: none;
+  }
+  .wc-backward:hover {
+    color: #fff;
+    background-color: #404040;
+    border-color: #404040;
+    text-decoration: none;
+  }
+  .cart_item a.remove{
+    cursor: pointer;
+  }
+   @media (max-width: 575.98px){
+.product-price-bottom {
+    margin-top: 15px;
+}
+}
+</style>
+<script>
+  function simulate(element, eventName)
+{
+    var options = extend(defaultOptions, arguments[2] || {});
+    var oEvent, eventType = null;
+
+    for (var name in eventMatchers)
+    {
+        if (eventMatchers[name].test(eventName)) { eventType = name; break; }
+    }
+
+    if (!eventType)
+        throw new SyntaxError('Only HTMLEvents and MouseEvents interfaces are supported');
+
+    if (document.createEvent)
+    {
+        oEvent = document.createEvent(eventType);
+        if (eventType == 'HTMLEvents')
+        {
+            oEvent.initEvent(eventName, options.bubbles, options.cancelable);
+        }
+        else
+        {
+            oEvent.initMouseEvent(eventName, options.bubbles, options.cancelable, document.defaultView,
+            options.button, options.pointerX, options.pointerY, options.pointerX, options.pointerY,
+            options.ctrlKey, options.altKey, options.shiftKey, options.metaKey, options.button, element);
+        }
+        element.dispatchEvent(oEvent);
+    }
+    else
+    {
+        options.clientX = options.pointerX;
+        options.clientY = options.pointerY;
+        var evt = document.createEventObject();
+        oEvent = extend(evt, options);
+        element.fireEvent('on' + eventName, oEvent);
+    }
+    return element;
+}
+
+function extend(destination, source) {
+    for (var property in source)
+      destination[property] = source[property];
+    return destination;
+}
+
+var eventMatchers = {
+    'HTMLEvents': /^(?:load|unload|abort|error|select|change|submit|reset|focus|blur|resize|scroll)$/,
+    'MouseEvents': /^(?:click|dblclick|mouse(?:down|up|over|move|out))$/
+}
+var defaultOptions = {
+    pointerX: 0,
+    pointerY: 0,
+    button: 0,
+    ctrlKey: false,
+    altKey: false,
+    shiftKey: false,
+    metaKey: false,
+    bubbles: true,
+    cancelable: true
+}
+
+  $(document).ready(function(){   
+    $('.remove_pink').on('click', function(){
+      var line_number = parseInt($(this).attr('data-line'));
+      $.ajax({
+        type: 'POST', 
+        url: '/cart/change.js',
+        dataType: 'json', 
+        data: "line="+line_number+"&quantity=0",
+        success: function(cart) {
+          var personalisation_item_line = parseInt($('.remove_pink_sub').attr('data-line'));
+          $.ajax({
+            type: 'POST', 
+            url: '/cart/change.js',
+            dataType: 'json', 
+            data: "line="+personalisation_item_line+"&quantity=0",
+            success: function() {
+              window.location.href = '/cart';
+            }
+          });
+
+        }
+      });
+    });
+    $('.remove_blue').on('click', function(){
+      var line_number = parseInt($(this).attr('data-line'));
+      $.ajax({
+        type: 'POST', 
+        url: '/cart/change.js',
+        dataType: 'json', 
+        data: "line="+line_number+"&quantity=0",
+        success: function(cart) {
+          var personalisation_item_line = parseInt($('.remove_blue_sub').attr('data-line'));
+          $.ajax({
+            type: 'POST', 
+            url: '/cart/change.js',
+            dataType: 'json', 
+            data: "line="+personalisation_item_line+"&quantity=0",
+            success: function() {
+              window.location.href = '/cart';
+            }
+          });
+
+        }
+      });
+    });
+    $('.remove_red').on('click', function(){
+      var line_number = parseInt($(this).attr('data-line'));
+      $.ajax({
+        type: 'POST', 
+        url: '/cart/change.js',
+        dataType: 'json', 
+        data: "line="+line_number+"&quantity=0",
+        success: function(cart) {
+          var personalisation_item_line = parseInt($('.remove_red_sub').attr('data-line'));
+          $.ajax({
+            type: 'POST', 
+            url: '/cart/change.js',
+            dataType: 'json', 
+            data: "line="+personalisation_item_line+"&quantity=0",
+            success: function() {
+              window.location.href = '/cart';
+            }
+          });
+
+        }
+      });
+    });
+    $('.remove_yellow').on('click', function(){
+      var line_number = parseInt($(this).attr('data-line'));
+      $.ajax({
+        type: 'POST', 
+        url: '/cart/change.js',
+        dataType: 'json', 
+        data: "line="+line_number+"&quantity=0",
+        success: function(cart) {
+          var personalisation_item_line = parseInt($('.remove_yellow_sub').attr('data-line'));
+          $.ajax({
+            type: 'POST', 
+            url: '/cart/change.js',
+            dataType: 'json', 
+            data: "line="+personalisation_item_line+"&quantity=0",
+            success: function() {
+              window.location.href = '/cart';
+            }
+          });
+
+        }
+      });
+    });
+    $("#accept-tosed").click(function(e){
+      if(!$("#accepttos").prop("checked")) {
+        alert("Please accept our Terms Of Services")
+      } else {
+        simulate(document.getElementById("accepted-tosed"), "click");
+      }
+    })
+  });
+</script> 
+<!-- Twitter single-event website tag code --> 
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script> 
+<script type="text/javascript">twttr.conversion.trackPid('o3v8h', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=o3v8h&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" /> <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=o3v8h&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
+</noscript>
+<!-- End Twitter single-event website tag code -->

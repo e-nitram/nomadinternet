@@ -1,0 +1,749 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+        $('[name="graduate"]').change(function(){
+            if($('[name="graduate"]:checked').is(":checked")){
+                $('.ug').hide();
+                $('.phd').show();
+            }else{
+                $('.ug').show();
+                $('.phd').hide();
+            }
+        });
+    });
+  </script>
+  <style>
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+    margin-bottom:0px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius:50px;
+  border: 1px solid #00000038;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #109d59;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #fff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+    .active + .panel{
+      display:block !important;
+    }
+
+/ Rounded sliders /
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+    span.prdnm_m {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #121212;
+}
+    span.prdnm_r {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #121212;
+}
+    .tgl_rpt {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 270px;
+    margin: auto;
+    align-items: center;
+      margin-bottom: 15px;
+}
+    .hd_prtgl h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 68px;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+    .hd_prtgl h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #121212;
+      margin-bottom:20px;
+}
+    .panel table{
+    width:100%;
+    }
+  </style>
+<div class="container1">
+  <div class="text-center hd_prtgl">
+    <h2><span style="color:red;"> Choose </span> Your Equipment</h2>
+    <h3>Nomad Plans<br>
+(Per Month)</h3>
+    <div class="tgl_rpt">
+      <span class="prdnm_m">Air $99</span>
+          <label class="switch">
+              <input type="checkbox" name="graduate">
+              <span class="slider round"></span>
+          </label>
+      <span class="prdnm_r">Raptor $199</span>
+    </div>
+      <div>
+    </div>
+  
+<div class="ug">
+  
+   <div class="card1">
+    <div class="text-center">
+<!--       <p class="card-text">Some text inside the normal card</p> --> 
+<div class="ne_plans_mdmplnmob1 container-wrapper1">
+  <div>   
+    <h2 class="accordion1 dropbtn1 active">Nomad Mobile App Features </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>Automatic Sim Activation</td>
+    <td>2022 Q4</td>    
+  </tr>
+  <tr>
+    <td>Pause Your Plan Anytime</td>
+    <td>2022 Q4</td>
+  </tr>
+  <tr>
+    <td>Manage Your Billing</td>
+    <td>Yes</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+  <div>
+    <h2 class="accordion1 dropbtn1">Nomad Mobile App Features </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>High Speed Web Browsing</td>
+    <td>Yes</td>    
+  </tr>
+  <tr>
+    <td>High Speed Downloading</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>High Speed Gaming</td>
+    <td>May Work (not supported)</td>   
+  </tr>  
+        <tr>
+    <td>Business Static IP</td>
+    <td>Not Supported</td>   
+  </tr> 
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad 4G Data Features </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>Download Speeds (up to)</td>
+    <td>25 Mbits</td>    
+  </tr>
+  <tr>
+    <td>Usage Data Cap (up to)</td>
+    <td>300 GBytes</td>
+  </tr>
+  <tr>
+    <td>Ability to Purchase Additional Data</td>
+    <td>2023 Q1</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad Plan Compatibility with Modems </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>New Nomad Air Modem</td>
+    <td>Will Definitely Work</td>    
+  </tr>
+  <tr>
+    <td>New Nomad Raptor Modem</td>
+    <td>Will Definitely Work</td>
+  </tr>
+  <tr>
+    <td>Nomad Legend Modems*</td>
+    <td>May Work (not supported)</td>   
+  </tr>  
+  <tr>
+    <td>Other Modems</td>
+    <td>May Work (not supported)</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad 5G Data Features (C-Band)*</h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>Download Speeds (up to)</td>
+    <td>100 Mbits</td>    
+  </tr>
+  <tr>
+    <td>Usage Data Cap (up to)</td>
+    <td>Unlimited</td>
+  </tr>
+  <tr>
+    <td>Ability to Purchase Additional Data</td>
+    <td>Unlimited</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad Plan Compatibility with Modems </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>New Nomad Air Modem</td>
+    <td>Will Definitely Work</td>    
+  </tr>
+  <tr>
+    <td>New Nomad Raptor Modem</td>
+    <td>Will Definitely Work</td>
+  </tr>
+  <tr>
+    <td>Nomad Legend Modems*</td>
+    <td>Will Not Work</td>   
+  </tr>  
+  <tr>
+    <td>Other Modems</td>
+    <td>May Work (not supported)</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad Plan Support*</h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>Live Chat Response</td>
+    <td>60 Seconds</td>    
+  </tr>
+  <tr>
+    <td>Twitter Support Response</td>
+    <td>15m</td>
+  </tr>
+  <tr>
+    <td>Email Support Response</td>
+    <td>30m</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad Outage Support* </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>Live Support Chat</td>
+    <td>60 Seconds</td>    
+  </tr>
+  <tr>
+    <td>Twitter Support</td>
+    <td>5m</td>
+  </tr>
+  <tr>
+    <td>Email Support</td>
+    <td>15m</td>   
+  </tr>  
+  <tr>
+    <td>Phone Support</td>
+    <td>Not Supported</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+</div>
+    </div>
+
+	  
+	  
+    </div>
+  </div>
+  
+  </div>
+    
+<div class="phd" style="display: none" >
+  
+    <div class="card1">
+    <div class="text-center">
+<!--       <p class="card-text">Some text inside the colored card</p> -->
+	  
+	  <style>
+ .ne_plans_mdmplnmob .dropdown-content {
+  display: none;
+    }
+        .dropdown-content td:first-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+          width:60%;
+}
+  .ne_plans_mdmplnmob  .show {
+      display: block; 
+          }
+.ne_plans_mdmplnmob table {
+  font-family: arial, sans-serif;
+  border-collapse: inherit;
+  width: 100%;
+   border-spacing:0px;
+}
+
+.ne_plans_mdmplnmob td, th {
+  background: rgba(244, 244, 244, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #676767;
+  padding-left:40px;
+}
+div#shopify-section-plansoptionsnew {
+    background: #F5F5F5;
+    padding: 15px 0px;
+}
+.ne_plans_mdmplnmob .dropbtn {
+    max-width: 100%;
+    border: none;
+    background: #109d5914;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    margin: 10px auto;
+  padding: 10px 20px 10px 40px;
+}
+  h2.dropbtn:after {
+    content: '';
+    position: absolute;
+    background: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Vector.png?v=1671538075);
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    right: 60px;
+    margin-top: 6px;
+    transform: rotate(-90deg);
+} 
+
+</style>
+	  <style>
+ .ne_plans_mdmplnmob1 .dropdown-content1 {
+  display: none;
+    }
+        .dropdown-content1 td:first-child {
+    border-right:1px solid rgba(0, 0, 0, 0.1);
+          width:60%;
+}
+  .ne_plans_mdmplnmob1  .show1 {
+/*       display: block; */
+          }
+.ne_plans_mdmplnmob1 table {
+  font-family: arial, sans-serif;
+  border-collapse: inherit;
+  width: 100%;
+   border-spacing:0px;
+}
+
+.ne_plans_mdmplnmob1 td, th {
+  background: rgba(244, 244, 244, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #676767;
+    padding-left:40px;
+}
+div#shopify-section-plansoptionsnew {
+    background:#F5F5F5;
+    padding: 15px 0px;
+}
+.ne_plans_mdmplnmob1 .dropbtn1 {
+    max-width: 100%;
+    border:none;
+    background: #109d5914;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    margin: 10px auto;
+  padding: 10px 20px 10px 40px;
+}
+  h2.dropbtn1:after {
+    content: '';
+    position: absolute;
+    background: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Vector.png?v=1671538075);
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    right: 60px;
+/*     margin-top: 6px; */
+    transform: rotate(-90deg);
+} 
+        h2.active:after {
+    content: '';
+    position: absolute;
+    background: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Vector.png?v=1671538075);
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    right: 60px;
+    margin-top: 6px;
+    transform: rotate(-0deg);
+}
+        .dropdown-content1 td:last-child {
+/*     text-align: end; */
+/*     padding-right: 40px; */
+}
+       
+@media screen and (max-width: 550px) {
+    .ne_plans_mdmplnmob1 td, th{
+      padding-left: 12px;
+    }
+  .ne_plans_mdmplnmob1 .dropbtn1{
+     padding-left: 12px;
+  }
+  .ne_plans_mdmplnmob td, th{
+      padding-left: 12px;
+    }
+  .ne_plans_mdmplnmob .dropbtn{
+     padding-left: 12px;
+  }
+  h2.dropbtn1:after{
+    right: 20px;
+  }
+  h2.dropbtn:after{
+    right: 20px;
+  }
+}
+        
+</style>
+<div class="ne_plans_mdmplnmob1 container-wrapper1">
+  <div>   
+    <h2 class="accordion1 dropbtn1 active">Nomad Mobile App Features </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>Automatic Sim Activation</td>
+    <td>2022 Q4</td>    
+  </tr>
+  <tr>
+    <td>Pause Your Plan Anytime</td>
+    <td>2022 Q4</td>
+  </tr>
+  <tr>
+    <td>Manage Your Billing</td>
+    <td>Yes</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+  <div>
+    <h2 class="accordion1 dropbtn1">Nomad Mobile App Features </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>High Speed Web Browsing</td>
+    <td>Yes</td>    
+  </tr>
+  <tr>
+    <td>High Speed Downloading</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>High Speed Gaming</td>
+    <td>2023 Q1</td>   
+  </tr>  
+        <tr>
+    <td>Business Static IP</td>
+    <td>2023 Q1</td>   
+  </tr> 
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad 4G Data Features </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>Download Speeds (up to)</td>
+    <td>50 Mbits</td>    
+  </tr>
+  <tr>
+    <td>Usage Data Cap (up to)</td>
+    <td>300 GBytes</td>
+  </tr>
+  <tr>
+    <td>Ability to Purchase Additional Data</td>
+    <td>2023 Q1</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad Plan Compatibility with Modems </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>New Nomad Air Modem</td>
+    <td>Will Definitely Work</td>    
+  </tr>
+  <tr>
+    <td>New Nomad Raptor Modem</td>
+    <td>Will Definitely Work</td>
+  </tr>
+  <tr>
+    <td>Nomad Legend Modems*</td>
+    <td>May Work (not supported)</td>   
+  </tr>  
+  <tr>
+    <td>Other Modems</td>
+    <td>May Work (not supported)</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad 5G Data Features (C-Band)*</h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>Download Speeds (up to)</td>
+    <td>200 Mbits</td>    
+  </tr>
+  <tr>
+    <td>Usage Data Cap (up to)</td>
+    <td>Unlimited</td>
+  </tr>
+  <tr>
+    <td>Ability to Purchase Additional Data</td>
+    <td>Unlimited</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad Plan Compatibility with Modems </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>New Nomad Air Modem</td>
+    <td>Will Definitely Work</td>    
+  </tr>
+  <tr>
+    <td>New Nomad Raptor Modem</td>
+    <td>Will Definitely Work</td>
+  </tr>
+  <tr>
+    <td>Nomad Legend Modems*</td>
+    <td>Will Not Work</td>   
+  </tr>  
+  <tr>
+    <td>Other Modems</td>
+    <td>May Work (not supported)</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad Plan Support*</h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>Live Chat Response</td>
+    <td>2022 Q4</td>    
+  </tr>
+  <tr>
+    <td>Twitter Support Response</td>
+    <td>15m</td>
+  </tr>
+  <tr>
+    <td>Email Support Response</td>
+    <td>30m</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+   <div>
+    <h2 class="accordion1 dropbtn1">Nomad Outage Support* </h2>
+    <div id="myDropdown1" class="dropdown-content1 panel">
+     
+      <table> 
+  <tr>
+    <td>Live Support Chat</td>
+    <td>60 Seconds</td>    
+  </tr>
+  <tr>
+    <td>Twitter Support</td>
+    <td>5m</td>
+  </tr>
+  <tr>
+    <td>Email Support</td>
+    <td>15m</td>   
+  </tr>  
+  <tr>
+    <td>Phone Support</td>
+    <td>2023 Q1</td>   
+  </tr>  
+</table>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  
+  </div>
+</div>
+</div>
+
+<script>
+
+let accHeading = document.querySelectorAll(".accordion1");
+let accPanel = document.querySelectorAll(".panel");
+
+for (let i = 0; i < accHeading.length; i++) {
+    // Execute whenever an accordion is clicked 
+    accHeading[i].onclick = function() {
+        if (this.nextElementSibling.style.maxHeight) {
+           hidePanels();     // Hide All open Panels 
+        } else {
+           showPanel(this);  // Show the panel
+        } 
+    };
+}
+
+// Function to Show a Panel
+function showPanel(elem) {
+  hidePanels();
+  elem.classList.add("active");
+   this.nextElementSibling.classList.toggle("show");
+  
+}
+
+// Function to Hide all shown Panels
+function hidePanels() {
+  for (let i = 0; i < accPanel.length; i++) {
+      accPanel[i].style.maxHeight = null;
+      accHeading[i].classList.remove("active");
+  }
+}
+</script>
+
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

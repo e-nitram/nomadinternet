@@ -1,0 +1,135 @@
+{{ 'free-modem-popup.css' | asset_url | stylesheet_tag }}
+<div class="free-modem-popup hidden" js-free-modem-popup>
+  <div class="free-modem-popup__bg" js-free-modem-bg></div>
+  <div class="free-modem-popup__content">
+    <a href="#backup" class="popup-close__btn">x</a>
+    <div class="list" js-popup-list>
+      <h2>Access Your Share</h2>
+      <p style="text-align: center;">Select a method below to access our <br>refer-a-friend program</p>
+      <ul>
+        <li>
+          <button class="popupBtn" onclick="continueWithEmail()">
+            <svg fill="#000000" height="800px" width="800px" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+              viewBox="0 0 32 32" xml:space="preserve">
+            <g>
+              <g>
+                <path d="M16,16.8l13.8-9.2C29.2,5.5,27.3,4,25,4H7C4.7,4,2.8,5.5,2.2,7.6L16,16.8z"/>
+              </g>
+              <g>
+                <path d="M16.6,18.8C16.4,18.9,16.2,19,16,19s-0.4-0.1-0.6-0.2L2,9.9V23c0,2.8,2.2,5,5,5h18c2.8,0,5-2.2,5-5V9.9L16.6,18.8z"/>
+              </g>
+            </g>
+            </svg> Continue with Email
+          </button>
+        </li>
+        <li>
+          <button class="popupBtn" onclick="continueWithGmail()">
+            <img src="https://free.nomadinternet.com/images/icons8-google-48.png" alt="Gmail Icon"> Continue with Gmail
+          </button>
+        </li>
+        <li>
+          <button class="popupBtn" onclick="continueWithFacebook()">
+            <img src="https://free.nomadinternet.com/images/icons8-facebook-48.png" alt="Facebook Icon"> Continue with Facebook
+          </button>
+        </li>
+      </ul>
+      <a href="/v2/7/terms" id="termsAndConditionsTxt">By continuing you agree to Nomad Internet’s Terms of Use policy.</a>
+    </div>
+
+    <div class="form hidden" js-popup-form>
+      <a href="#backup" class="backbtn" onclick="backButton()">
+        <svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="352,128.4 319.7,96 160,256 160,256 160,256 319.7,416 352,383.6 224.7,256 "/></svg>
+        Back
+      </a>
+      <h2 style="text-align: center;">Continue with Email</h2>
+      <form onsubmit="submitEmailForm(); return false;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <button type="submit" class="submitBtn btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  const popupForm = document.querySelector('[js-popup-form]');
+  const popupList = document.querySelector('[js-popup-list]');
+  const popupBg = document.querySelector('[js-free-modem-bg]');
+  const closeBtn = document.querySelector('.popup-close__btn');
+
+
+  const showBtns = document.querySelectorAll('[href="#popupForm"]');
+  showBtns.forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      document.querySelector('[js-free-modem-popup]').classList.remove('hidden');
+    })
+  });
+
+  if (popupBg) {
+    popupBg.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      document.querySelector('[js-free-modem-popup]').classList.add('hidden');
+    });
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      document.querySelector('[js-free-modem-popup]').classList.add('hidden');
+    });
+  }
+
+  if (popupForm && popupList) {
+    function backButton() {
+      popupList.classList.remove('hidden');
+      popupForm.classList.add('hidden');
+    }
+
+    function continueWithEmail() {
+      popupForm.classList.remove('hidden');
+      popupList.classList.add('hidden');
+
+
+      const first_name = popupForm.querySelector('input#firstName');
+      const last_name = popupForm.querySelector('input#lastName');
+      const email = popupForm.querySelector('input#email');
+
+      first_name.value = '';
+      last_name.value = '';
+      email.value = '';
+    }
+  }
+
+  function submitEmailForm() {
+    const first_name = popupForm.querySelector('input#firstName');
+    const last_name = popupForm.querySelector('input#lastName');
+    const email = popupForm.querySelector('input#email');
+
+    var link = `https://free.nomadinternet.com/access/?programidentifier=35c520ad-54ad-4ad0-a125-55245bcccae7&firstname=${first_name.value}&lastname=${last_name.value}&email=${email.value}`;
+    window.location.href = link;
+  }
+
+  function continueWithFacebook() {
+    const url = 'https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=1216825218481818&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%220ddd8c85-d37e-41be-b1e3-2f0ec11d41ab%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fi.referralrock.com%5C%2Foauth%22&params%5Bret%5D=%22login%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22email%22%5D&params%5Bstate%5D=%22362b364e-1f26-484a-be01-9fdb99be9e50%22&params%5Bsteps%5D=%7B%22read%22%3A%5B%22email%22%2C%22baseline%22%2C%22public_profile%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22%5BPASS%5D%3Alogin_platformization_read%22&source=gdp_delegated';
+    window.open(url, '_blank');
+  }
+
+  function continueWithGmail() {
+    const url = 'https://accounts.google.com/o/oauth2/v2/auth?client_id=58085693096-lc25r5tpafsj49ui80ucdcckflpavcds.apps.googleusercontent.com&redirect_uri=https://i.referralrock.com/oauth&response_type=code&scope=email%20profile&state=c26c5fb2-f5c7-4d5a-bfa7-bdd1ef2bf38e';
+    window.open(url, '_blank');
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Free modem popup"
+}
+{% endschema %}

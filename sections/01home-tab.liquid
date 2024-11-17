@@ -1,0 +1,58 @@
+<div class="banner_tab desktop_only">
+  <h2 class="page-title">Our Latest Deals</h2>
+  <div class="tab-container">
+      <div class="tab active" onclick="showTab('tab1', this)">Friends of Nomad</div>
+      <div class="tab" onclick="showTab('tab2', this)">Battery Backup</div>
+      <div class="tab" onclick="showTab('tab3', this)">Free Modem</div>
+  </div>
+
+  <div id="tab1" class="tab-content active">
+    <a href="https://free.nomadinternet.com/v2/11/passwordlessaccess">
+    <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Frame_1171275930_1.png?v=1694668004" loading="lazy"/>
+    </a>
+  </div>
+  <div id="tab2" class="tab-content">
+    <a href="/pages/plans?find=air-backup">
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/bb_replace_1.png?v=1694768019" loading="lazy"/>
+    </a>
+  </div>
+  <div id="tab3" class="tab-content">
+    <a href="https://free.nomadinternet.com/v2/7/passwordlessaccess">
+      <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Frame_1171275929_1.png?v=1694668005" loading="lazy"/>
+    </a>
+  </div>
+</div>
+
+<script>
+    function showTab(tabId, tabElement) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+
+            const tabTitles = document.querySelectorAll('.tab');
+            tabTitles.forEach(title => {
+                title.classList.remove('active');
+            });
+            tabElement.classList.add('active');
+        }
+</script>
+
+{% schema %}
+{
+"name": "Home Tab",
+"presets": [
+{
+"name": "Home Tab"
+}
+],  
+"settings": []
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,83 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+{% assign ss = section.settings %}
+
+<div class="lp-25">
+	{% if ss.title %}
+		<h2 class="lp-25__title">{{ ss.title }}</h2>
+	{% endif %}
+	{% if section.blocks %}
+		<div class="row v-gutters">
+			{% for card in section.blocks %}
+				<div class="col-lg-3 col-sm-6 col-12">
+					<div class="lp-25__card card">
+						{% if card.settings.image %}
+							<div class="card__image">
+								<div class="ratio" style="--ratio: calc(220 / 283 * 100%)">
+									{{ card.settings.image | image_url: width: card.settings.image.width | image_tag }}
+								</div>
+							</div>
+						{% endif %}
+						{% if card.settings.text %}
+							<h3 class="card__text">{{ card.settings.text }}</h3>
+						{% endif %}
+						{% if card.settings.url %}
+							<a href="{{ card.settings.url }}" class="card__link">
+								<span class="sr-only">Read More</span>
+							</a>
+						{% endif %}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+</div>
+
+
+{% schema %}
+{
+  "name": "lp-25",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 25"
+    }
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		}
+	],
+	"blocks": [
+		{
+			"type": "card",
+			"name": "Card",
+			"limit": 8,
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"label": "Text",
+					"id": "text"
+				},
+				{
+					"type": "url",
+					"label": "URL",
+					"id": "url"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

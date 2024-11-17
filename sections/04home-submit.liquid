@@ -1,0 +1,99 @@
+{% comment %}
+File name:
+	Form submit section
+	number - section number
+{% endcomment %}
+
+{{ '04home-submit.css' | asset_url | stylesheet_tag }}
+{% assign ss = section.settings %}
+<div class="form-submit-section" style="background-color: {{ section.settings.bg_color }}; --text-color: {{ section.settings.text_color }};">
+  <div class="container">
+    {% if ss.title %}
+      <h2 class="form-submit-section__title">{{ ss.title }}</h2>
+    {% endif %}
+    {% if ss.description %}
+      <div class="form-submit-section__description">
+        <p>{{ ss.description }}</p>
+      </div>
+    {% endif %}
+
+    <div class="form-submit-section__form">
+      {% form 'contact' %}
+			{{ form.errors | default_errors }}
+        <input type="hidden" name="contact[page_title]" value="{{ page.title }}">
+        <input type="hidden" name="contact[page_url]" value="https://{{ request.host }}{{ request.path }}">
+        <input type="hidden" name="contact[page_type]" value="{{ page.template_suffix }}">
+
+        <div class="row form-submit-section__form-wrapper">
+          <div class="col-md-6 col-12">
+            <label class="input-wrapper">
+              <span class="label">Your Name</span>
+              <input type="text" name="contact[name]" placeholder="Enter Name" required>
+            </label>
+
+            <label class="input-wrapper">
+              <span class="label">Email Address</span>
+              <input type="email" name="contact[email]" placeholder="Enter Email" required>
+            </label>
+          </div>
+          <div class="col-md-6 col-12">
+            <label class="input-wrapper">
+              <span class="label">Your Message</span>
+              <textarea name="contact[body]" placeholder="Type Your Message..." required></textarea>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+
+        {% if ss.form_caption %}
+          <div class="form-submit-section__form-caption">
+            <p>{{ ss.form_caption }}</p>
+          </div>
+        {% endif %}
+      {% endform %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Form submit section",
+  "presets": [
+    {
+      "name": "Form submit section"
+    }
+	],
+	"settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#101010"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#fff"
+    },
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "richtext",
+			"id": "description",
+			"label": "Description"
+		},
+		{
+			"type": "text",
+			"id": "form_caption",
+			"label": "Form Caption"
+		}
+	]
+}
+{% endschema %}

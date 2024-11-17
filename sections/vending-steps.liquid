@@ -1,0 +1,96 @@
+<div class="vending-steps-container">
+  {% for block in section.blocks %}
+    <div class="vending-step">
+      <div>
+        <div class="vending-tag-step">
+          {% if block.settings.step != blank %}
+            <div>
+              <p>{{ block.settings.step }}</p>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="vending-step-content">
+        {% if block.settings.title != blank %}
+          <h2>{{ block.settings.title }}</h2>
+        {% endif %}
+        {% if block.settings.description != blank %}
+          <div class="vending-description">{{ block.settings.description }}</div>
+        {% endif %}
+        <div class="vending-button">
+          
+          {% if block.settings.button_text != blank %}
+            {% if block.settings.isButton %}
+              <button onclick="handlePopUpShowHide()" class="vending-button-link">{{ block.settings.button_text }}</button>
+            {% else %}
+              <a
+                href="{{ block.settings.button_link }}"
+                target="_blank"
+                class="vending-button-link"
+              >{{ block.settings.button_text }}</a>
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Vending machine steps",
+  "blocks": [
+    {
+      "type": "vending_machine_step",
+      "name": "Vending Machine Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "step",
+          "label": "Step"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Default Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link",
+          "default": "/"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Click Here"
+        },
+        {
+          "type": "checkbox",
+          "id": "isButton",
+          "label": "Is Button",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Vending Machine Steps",
+    "category": "Custom"
+  }]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

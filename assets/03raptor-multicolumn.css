@@ -1,0 +1,154 @@
+.raptor-multicolumn {
+  background-image: var(--bg-mobile-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.raptor-multicolumn::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000e0;
+  z-index: 0;
+}
+
+.raptor-multicolumn .container {
+  z-index: 1;
+  text-align: center;
+  padding: 40px 24px 60px;
+}
+
+.raptor-multicolumn .container .list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+}
+
+.raptor-multicolumn .container .top-icon {
+  margin: auto;
+  margin-bottom: 40px;
+  width: 74px;
+  opacity: 0.8;
+}
+
+.raptor-multicolumn .container .sub-heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.97px;
+  font-family: "Rajdhani";
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.raptor-multicolumn .container .heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  font-family: "Rajdhani";
+  margin: 0;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.raptor-multicolumn .container .list {
+  margin-bottom: 40px;
+}
+
+.raptor-multicolumn .container .list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.raptor-multicolumn .container .list .item img {
+  margin-bottom: 32px;
+}
+
+.raptor-multicolumn .container .list .item .title {
+  font-family: "DIN";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.raptor-multicolumn .container .list .item .sub-title {
+  font-family: "DIN";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.2px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.raptor-multicolumn .container .list .item .sub-title * {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.raptor-multicolumn .container .list .item .sub-title *:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .raptor-multicolumn {
+    background-image: var(--bg-image);
+  }
+
+  .raptor-multicolumn .container .top-icon {
+    width: 100px;
+  }
+
+  .raptor-multicolumn .container .list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+
+  .raptor-multicolumn .container {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .raptor-multicolumn .container .sub-heading {
+    font-size: 20px;
+    line-height: 26.52px;
+  }
+
+  .raptor-multicolumn .container .heading {
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .raptor-multicolumn .container .list .item .title {
+    font-size: 28px;
+    line-height: 39.2px;
+  }
+
+  .raptor-multicolumn .container .list .item .sub-title {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .raptor-multicolumn .container .list .item img {
+    margin-bottom: 20px;
+  }
+}

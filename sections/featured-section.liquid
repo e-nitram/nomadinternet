@@ -1,0 +1,177 @@
+{{ 'featured-section.css' | asset_url | stylesheet_tag }}
+<div class="featured-section" id="featured-section">
+  {% if section.settings.heading != blank %}
+    <h3 class="heading">{{ section.settings.heading }}</h3>
+  {% endif %}
+
+  {% if section.settings.content != blank %}
+    <div class="content">{{ section.settings.content }}</div>
+  {% endif %}
+
+  <div class="featured-section__products container">
+    {% for block in section.blocks %}
+      {% assign product = block.settings.product %}
+      {% assign current_variant = product.variants.first %}
+      
+      {% if block.settings.image != blank and block.settings.title != blank %}
+        <div class="featured-section__products-item">
+          {% if block.settings.pre_text != blank %}
+            <span class="pre-text">{{ block.settings.pre_text }}</span>
+          {% endif %}
+
+          {% if block.settings.image != blank %}
+            <img class="image" src="{{ block.settings.image | img_url: 'master' }}"/>
+          {% endif %}
+          
+          <div class="wrapper">
+            <div class="wrapper-top">
+              {% if block.settings.title != blank %}
+                <h3 class="title">{{ block.settings.title }}</h3>
+              {% endif %}
+              <div class="price"></div>
+              {% comment %}
+        {% if product != blank %}
+                <div class="price">{{ current_variant.price | money }} {% if current_variant.price < current_variant.compare_at_price %}<s>{{ current_variant.compare_at_price | money }}</s>{% endif %}</div>
+              {% else %}
+                {% if block.settings.price != blank and block.settings.price contains ' - ' %}
+                  <div class="price">{{ block.settings.price | split: ' - ' | first }} <s>{{ block.settings.price | split: ' - ' | last }}</s></div>
+                {% endif %}
+              {% endif %}
+              {% endcomment %}
+            
+              <div class="icons">
+                {% for index in (1..4) %}
+                  {% assign text_val = 'text' | append: index %}
+                  {% assign icon_val = 'icon' | append: index %}
+                  {% assign text = block.settings[text_val] %}
+                  {% assign icon = block.settings[icon_val] %}
+
+                  {% if text != blank and icon != blank %}
+                    <div class="icons-item">
+                      <img src="{{ icon | img_url: '50x50' }}" />
+                      <span class="desc">{{ text }}</span>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+
+            <a href="/cart/{{ product.variants.first.id }}:1" class="button">CLAIM OFFER</a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Nomad Black Friday Bundles"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Content",
+      "default": "Experience lightning-fast Internet speeds and Advanced WiFi featuring state-of-the-art security."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product-item",
+      "name": "Product item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "pre_text",
+          "label": "Pre text"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "header",
+          "content": "Additional information"
+        },
+        {
+          "type": "richtext",
+          "id": "text1",
+          "label": "Text 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon1",
+          "label": "Icon 1"
+        },
+        {
+          "type": "richtext",
+          "id": "text2",
+          "label": "Text 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon2",
+          "label": "Icon 2"
+        },
+        {
+          "type": "richtext",
+          "id": "text3",
+          "label": "Text 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon3",
+          "label": "Icon 3"
+        },
+        {
+          "type": "richtext",
+          "id": "text4",
+          "label": "Text 4"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon4",
+          "label": "Icon 4"
+        },
+        {
+          "type": "richtext",
+          "id": "text5",
+          "label": "Text 5"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon5",
+          "label": "Icon 5"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured section"
+    }
+  ]
+}
+{% endschema %}

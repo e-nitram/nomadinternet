@@ -1,0 +1,32 @@
+.image-with-text--content .title {
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.image-with-text--content .sub-title {
+  color: var(--sub-heading-color);
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.image-with-text--content .desc li svg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 1024px) {
+  .image-with-text--inner {
+    gap: 90px;
+  }
+}
+
+.home-step-section .heading {
+  font-size: 36px;
+  letter-spacing: .05em !important;
+  font-family: "DIN";
+}

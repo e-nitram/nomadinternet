@@ -1,0 +1,77 @@
+<div class="awesome-circle-section">
+	<div
+		class="awesome-circle-section__content{% if section.settings.reversed %} awesome-circle-section__content--reversed{% endif %}"
+		style="background-image: url({{ section.settings.image_bg | image_url }})"
+	>
+		<div class="awesome-circle-section__image">
+			<img
+				src="{{ section.settings.image | image_url }}"
+				alt="{{ section.settings.image.alt }}"
+				width="{{ section.settings.image.width }}"
+				height="{{ section.settings.image.height }}"
+				loading="lazy"
+			>
+		</div>
+
+		<div class="awesome-circle-section__cards">
+			{% for card in section.blocks %}
+				<div class="awesome-circle-section__card">
+					<h3 class="awesome-circle-section__card--title">{{ card.settings.title | escape }}</h3>
+					<div class="awesome-circle-section__card--text">{{ card.settings.text }}</div>
+				</div>
+			{% endfor %}
+		</div>
+
+		<div class="awesome-circle-section__circles"></div>
+	</div>
+</div>
+
+{% schema %}
+{
+  "tag": "section",
+  "class": "container",
+  "name": "Awesome Circle Section",
+  "presets": [
+    {
+      "name": "Awesome Circle Section"
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "reversed",
+      "label": "Reversed",
+      "info": "Image to right side"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_bg",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Card",
+      "limit": 3,
+      "type": "awesome-circle-card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

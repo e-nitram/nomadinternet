@@ -1,0 +1,84 @@
+{
+  "sections": {
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "d69d54b8-6dd1-4662-bb93-2277aaa25f72": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/work.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "d69d54b8-6dd1-4662-bb93-2277aaa25f72"
+      ],
+      "settings": {
+        "title": "It's time to work at Nomad Internet",
+        "description": "",
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "da2e0f5b-2809-4549-bdcd-77919e3fdaf3": {
+      "type": "work",
+      "blocks": {
+        "a7534f45-2d32-40af-adb0-f79b96ac655a": {
+          "type": "page",
+          "settings": {
+            "page": "logistics-department"
+          }
+        },
+        "838f89ce-dc45-4c96-a323-e5ceb0bbcae8": {
+          "type": "page",
+          "settings": {
+            "page": "supply-and-procurement-department"
+          }
+        },
+        "9561c66d-2e1c-4d04-9116-611eafab97ee": {
+          "type": "page",
+          "settings": {
+            "page": "department-for-work-with-partners"
+          }
+        },
+        "1a7169be-83a9-40ce-b00e-da3da356742c": {
+          "type": "page",
+          "settings": {
+            "page": "installation-and-product-setup-department"
+          }
+        },
+        "88756bb2-4b00-497a-bff6-0c86da0ab4ed": {
+          "type": "page",
+          "settings": {
+            "page": "department-of-regional-representatives"
+          }
+        },
+        "ecb2e51a-4f32-4b3f-864e-5510b5947b2e": {
+          "type": "page",
+          "settings": {
+            "page": "customer-service"
+          }
+        }
+      },
+      "block_order": [
+        "a7534f45-2d32-40af-adb0-f79b96ac655a",
+        "838f89ce-dc45-4c96-a323-e5ceb0bbcae8",
+        "9561c66d-2e1c-4d04-9116-611eafab97ee",
+        "1a7169be-83a9-40ce-b00e-da3da356742c",
+        "88756bb2-4b00-497a-bff6-0c86da0ab4ed",
+        "ecb2e51a-4f32-4b3f-864e-5510b5947b2e"
+      ],
+      "settings": {
+        "title": "Become a member of our team",
+        "subtitle": "Select the department  you are interested in."
+      }
+    }
+  },
+  "order": [
+    "awesome-first-screen",
+    "da2e0f5b-2809-4549-bdcd-77919e3fdaf3"
+  ]
+}

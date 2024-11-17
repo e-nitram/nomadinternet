@@ -1,0 +1,1713 @@
+{
+  "current": {
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo-dark.svg",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#00a77f",
+    "checkout_button_color": "#00a77f",
+    "checkout_error_color": "#e32c2b",
+    "color_primary": "#747474",
+    "color_secondary": "#bbb",
+    "color_borders": "#e5e5e5",
+    "color_body_bg": "#fff",
+    "color_body_text": "#333333",
+    "color_footer_bg": "#f2f2f2",
+    "color_footer_text": "#636363",
+    "color_footer_social_link": "#bbbbbb",
+    "logo_use_image": true,
+    "logo_max_width": "450",
+    "favicon_enable": true,
+    "footer_social_enable": true,
+    "footer_newsletter_enable": true,
+    "newsletter_form_action": "",
+    "cart_notes_enable": true,
+    "cart_vendor_enable": false,
+    "ajax_cart_method": "page",
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "checkout_use_storefront_logo": false,
+    "sections": {
+      "header": {
+        "type": "header",
+        "custom_css": [
+          ".top_bar {background-color: #008061;}"
+        ],
+        "settings": {
+          "announcement_text": "Act Fast: Nomad Raptor at $25\/Month—Limited Time!",
+          "dark_logo": "shopify:\/\/shop_images\/logo-dark.svg",
+          "header_phone": "+1 210 598 5949"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {}
+      },
+      "hero-section": {
+        "type": "hero-section",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/Rectangle_49.png",
+          "main_heading": "Membership<br>\n Plans",
+          "description": "<p>America's Best for Rural and On-the-Go Internet<\/p>",
+          "button_text": "Subscribe Now",
+          "button_url": "#",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "icon-with-text-section": {
+        "type": "icon-with-text-section",
+        "blocks": {
+          "30c89a53-b365-4b36-9b41-8e6dd89e1106": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"58\" height=\"58\" viewbox=\"0 0 58 58\" fill=\"none\">\n<g clip-path=\"url(#clip0_328_384)\">\n<path d=\"M49.8155 12.8889H42.775C42.3477 12.8889 41.9379 13.0586 41.6358 13.3608C41.3336 13.6629 41.1639 14.0727 41.1639 14.5C41.1639 14.9273 41.3336 15.3371 41.6358 15.6392C41.9379 15.9414 42.3477 16.1111 42.775 16.1111H49.9444V48.3333H8.05555V16.1111H15.1122C15.5395 16.1111 15.9493 15.9414 16.2514 15.6392C16.5536 15.3371 16.7233 14.9273 16.7233 14.5C16.7233 14.0727 16.5536 13.6629 16.2514 13.3608C15.9493 13.0586 15.5395 12.8889 15.1122 12.8889H8.18444C7.75057 12.8715 7.31767 12.942 6.91173 13.0961C6.50579 13.2503 6.1352 13.4849 5.8222 13.7858C5.5092 14.0868 5.26026 14.4479 5.09033 14.8475C4.9204 15.2471 4.83298 15.6769 4.83333 16.1111V48.3333C4.83298 48.7675 4.9204 49.1973 5.09033 49.5969C5.26026 49.9965 5.5092 50.3576 5.8222 50.6586C6.1352 50.9595 6.50579 51.1941 6.91173 51.3483C7.31767 51.5024 7.75057 51.5729 8.18444 51.5555H49.8155C50.2494 51.5729 50.6823 51.5024 51.0883 51.3483C51.4942 51.1941 51.8648 50.9595 52.1778 50.6586C52.4908 50.3576 52.7397 49.9965 52.9097 49.5969C53.0796 49.1973 53.167 48.7675 53.1667 48.3333V16.1111C53.167 15.6769 53.0796 15.2471 52.9097 14.8475C52.7397 14.4479 52.4908 14.0868 52.1778 13.7858C51.8648 13.4849 51.4942 13.2503 51.0883 13.0961C50.6823 12.942 50.2494 12.8715 49.8155 12.8889Z\" fill=\"#109D59\"><\/path>\n<path d=\"M16.5944 30.4016L27.8722 41.5022C28.1734 41.7974 28.5783 41.9627 29 41.9627C29.4217 41.9627 29.8266 41.7974 30.1278 41.5022L41.4056 30.4016C41.7111 30.1025 41.8853 29.6943 41.8898 29.2668C41.8943 28.8393 41.7288 28.4274 41.4297 28.1219C41.1306 27.8164 40.7224 27.6422 40.2949 27.6377C39.8673 27.6332 39.4555 27.7987 39.15 28.0978L30.6111 36.4916V6.44442C30.6111 6.01713 30.4414 5.60734 30.1392 5.3052C29.8371 5.00305 29.4273 4.83331 29 4.83331C28.5727 4.83331 28.1629 5.00305 27.8608 5.3052C27.5586 5.60734 27.3889 6.01713 27.3889 6.44442V36.4916L18.85 28.0978C18.5445 27.7987 18.1327 27.6332 17.7051 27.6377C17.2776 27.6422 16.8694 27.8164 16.5703 28.1219C16.2712 28.4274 16.1057 28.8393 16.1102 29.2668C16.1147 29.6943 16.2889 30.1025 16.5944 30.4016Z\" fill=\"#109D59\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_328_384\">\n<rect width=\"58\" height=\"58\" fill=\"white\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
+              "title": "Arrives Pre-Installed",
+              "description": "Our devices are customized for your needs, and arrive ready to connect to your laptop, desktop, Smart TV and more."
+            }
+          },
+          "8ce4d144-86dd-4025-917c-b33f0c99f6b0": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"56\" height=\"56\" viewbox=\"0 0 56 56\" fill=\"none\">\n<path d=\"M25.6667 8.30202V11.6667C25.6667 12.2855 25.9125 12.879 26.3501 13.3166C26.7877 13.7542 27.3812 14 28 14C28.6188 14 29.2123 13.7542 29.6499 13.3166C30.0875 12.879 30.3333 12.2855 30.3333 11.6667V8.30202C34.7568 8.82724 38.8748 10.8256 42.0246 13.9754C45.1744 17.1252 47.1728 21.2433 47.698 25.6667H44.3333C43.7145 25.6667 43.121 25.9125 42.6834 26.3501C42.2458 26.7877 42 27.3812 42 28C42 28.6189 42.2458 29.2124 42.6834 29.6499C43.121 30.0875 43.7145 30.3334 44.3333 30.3334H47.6933C47.1707 34.573 45.2573 38.3787 42.4667 41.3934C42.1511 41.7337 41.9836 42.1855 42.0011 42.6493C42.0186 43.1132 42.2196 43.5511 42.56 43.8667C42.9004 44.1823 43.3522 44.3498 43.816 44.3323C44.2798 44.3148 44.7177 44.1137 45.0333 43.7734C48.867 39.6317 51.3333 34.1437 51.3333 28C51.3333 15.113 40.887 4.66669 28 4.66669C15.113 4.66669 4.66667 15.113 4.66667 28C4.66667 34.1437 7.133 39.6317 10.9667 43.7734C11.1229 43.9419 11.3109 44.078 11.5198 44.1739C11.7286 44.2698 11.9543 44.3236 12.184 44.3323C12.4137 44.3409 12.6428 44.3043 12.8583 44.2244C13.0738 44.1445 13.2715 44.023 13.44 43.8667C13.6085 43.7104 13.7446 43.5225 13.8405 43.3136C13.9364 43.1047 13.9902 42.879 13.9989 42.6493C14.0076 42.4197 13.9709 42.1906 13.891 41.975C13.8112 41.7595 13.6896 41.5619 13.5333 41.3934C10.7427 38.3787 8.82934 34.5754 8.30667 30.3334H11.6667C12.2855 30.3334 12.879 30.0875 13.3166 29.6499C13.7542 29.2124 14 28.6189 14 28C14 27.3812 13.7542 26.7877 13.3166 26.3501C12.879 25.9125 12.2855 25.6667 11.6667 25.6667H8.30201C8.72763 22.034 10.1542 18.5911 12.4227 15.722L14.6837 17.9854C14.9005 18.202 15.1578 18.3738 15.441 18.491C15.7242 18.6082 16.0277 18.6684 16.3342 18.6683C16.6406 18.6682 16.9441 18.6077 17.2272 18.4904C17.5103 18.373 17.7675 18.201 17.9842 17.9842C18.2008 17.7674 18.3726 17.5101 18.4898 17.2269C18.607 16.9437 18.6673 16.6402 18.6671 16.3337C18.667 16.0272 18.6066 15.7238 18.4892 15.4406C18.3718 15.1575 18.1998 14.9003 17.983 14.6837L15.722 12.4227C18.5911 10.1543 22.034 8.72764 25.6667 8.30202ZM39.1043 15.4794C38.8331 15.2705 38.4989 15.1602 38.1567 15.1666C37.8145 15.1729 37.4846 15.2956 37.2213 15.5144L36.7127 15.9414C34.8781 17.482 33.0495 19.0298 31.227 20.5847C29.6963 21.8914 28.1307 23.2447 26.88 24.3484C26.3385 24.8243 25.8025 25.3065 25.2723 25.795C24.9263 26.105 24.599 26.4354 24.2923 26.7844C23.9305 27.2299 23.6617 27.7435 23.5021 28.2949C23.3425 28.8462 23.2952 29.424 23.3631 29.9939C23.431 30.5639 23.6127 31.1144 23.8974 31.6128C24.182 32.1112 24.5639 32.5473 25.0203 32.8954C25.9499 33.6121 27.1221 33.9384 28.2883 33.8051C29.4545 33.6718 30.5228 33.0893 31.2667 32.1814C31.472 31.9294 31.745 31.4907 32.025 31.0217C32.3237 30.52 32.69 29.8784 33.096 29.1597C33.9057 27.713 34.888 25.9117 35.8377 24.1547C36.9655 22.0616 38.0848 19.9639 39.1953 17.8617L39.501 17.2807C39.6581 16.9819 39.7044 16.6372 39.6318 16.3075C39.5592 15.9779 39.3724 15.6845 39.1043 15.4794Z\" fill=\"#109D59\"><\/path>\n<\/svg>",
+              "title": "High-Speed 4G LTE",
+              "description": "If you can get cellular signal, we can connect you to the Internet with 4G LTE speed. Get connected today and connect wherever you are, wherever you go."
+            }
+          },
+          "16c0adbc-3b79-47c5-b0a5-3ae48e7ec851": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<svg class=\"icon-3\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"54\" height=\"57\" viewbox=\"0 0 54 57\" fill=\"none\">\n<g clip-path=\"url(#clip0_329_395)\">\n<path d=\"M6.90002 7.48053L50.1 49.7469\" stroke=\"#109D59\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M16.5 35.6581C17.1365 35.6581 17.7469 35.4107 18.197 34.9704C18.6471 34.53 18.9 33.9327 18.9 33.31C18.9 32.6872 18.6471 32.09 18.197 31.6496C17.7469 31.2092 17.1365 30.9619 16.5 30.9619C15.8635 30.9619 15.253 31.2092 14.8029 31.6496C14.3528 32.09 14.1 32.6872 14.1 33.31C14.1 33.9327 14.3528 34.53 14.8029 34.9704C15.253 35.4107 15.8635 35.6581 16.5 35.6581Z\" stroke=\"#109D59\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M44.1 45.0507H5.94C5.55809 45.0507 5.19182 44.9022 4.92177 44.638C4.65171 44.3738 4.5 44.0154 4.5 43.6418V21.5693H20.1M4.5 21.5693V13.5857C4.5 13.212 4.65171 12.8537 4.92177 12.5895C5.19182 12.3253 5.55809 12.1768 5.94 12.1768H10.5M33.3 21.5693H52.5V40.3544M52.5 21.5693V13.5857C52.5 13.4007 52.4628 13.2175 52.3904 13.0465C52.318 12.8756 52.212 12.7203 52.0782 12.5895C51.9445 12.4586 51.7858 12.3549 51.6111 12.2841C51.4364 12.2133 51.2491 12.1768 51.06 12.1768H23.7\" stroke=\"#109D59\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_329_395\">\n<rect width=\"54\" height=\"56.3551\" fill=\"#109D59\" transform=\"translate(0 0.436157)\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
+              "title": "No Contract, No Credit Check",
+              "description": "Our month-to-month prepaid plans give you Internet access – no contract, no credit check required. What are you waiting for?"
+            }
+          },
+          "b4a495b5-ded7-45bd-a437-52e9e5afa9b4": {
+            "type": "item",
+            "disabled": true,
+            "settings": {
+              "svg_icon": "",
+              "title": "7-Day No  Risk",
+              "description": "We give you a full week to make sure our device is the right one for you. If not, we’ll work to find the right one, or you can send it back for a full refund – no strings."
+            }
+          },
+          "d350ba11-b621-49ac-94a1-474f481c12f3": {
+            "type": "item",
+            "disabled": true,
+            "settings": {
+              "svg_icon": "",
+              "title": "Arrives Pre-Installed",
+              "description": "Our devices are customized for your needs, and arrive ready to connect to your laptop, desktop, Smart TV and more."
+            }
+          }
+        },
+        "block_order": [
+          "30c89a53-b365-4b36-9b41-8e6dd89e1106",
+          "8ce4d144-86dd-4025-917c-b33f0c99f6b0",
+          "16c0adbc-3b79-47c5-b0a5-3ae48e7ec851",
+          "b4a495b5-ded7-45bd-a437-52e9e5afa9b4",
+          "d350ba11-b621-49ac-94a1-474f481c12f3"
+        ],
+        "settings": {
+          "main_heading": "<p>Explore Nomad Internet Wireless<\/p>"
+        }
+      },
+      "bottom-text-section": {
+        "type": "bottom-text-section",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/Group_1029.png",
+          "title": "Pick the right device for you",
+          "description": "<p>Let us recommend the right device for you, wherever you are or go. <br\/>U.S. residents only.<\/p>",
+          "button_text": "HELP ME CHOOSE",
+          "button_url": "shopify:\/\/collections",
+          "button_background": "#ffffff",
+          "button_color": "#109d59"
+        }
+      },
+      "text-with-image": {
+        "type": "text-with-image",
+        "settings": {
+          "title": "Find the plan that’s right for you",
+          "image": "shopify:\/\/shop_images\/6_fcb13345-2b50-47fd-8abe-b968bc48ad73.png",
+          "description": "Nomad was created to bring internet to rural communities and RV, Van and travelers on the go! We know connecting in these areas can be difficult, so we’re here to help find the right plan for you.",
+          "button_text": "",
+          "button_url": "",
+          "right_text": "Fast, Reliable Internet",
+          "left_text": "Just<br><span>$99<\/span>",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "testimonial-section": {
+        "type": "testimonial-section",
+        "blocks": {
+          "2a61a1e1-56f4-4648-984e-a5756ab2b2b6": {
+            "type": "slide",
+            "settings": {
+              "testimonial_description": "Samuel Simons was super at solving my questions. Looking forward to getting this great Internet alternative.",
+              "testimonial_name": "Ryan T"
+            }
+          },
+          "2d2aa6d0-c422-4c69-9e34-b69a6a511c4f": {
+            "type": "slide",
+            "settings": {
+              "testimonial_description": "Great customer service, great product. Does as advertised and I couldn’t be happier",
+              "testimonial_name": "Mary B"
+            }
+          },
+          "f5fb78f8-83ab-41e2-8b64-865a0dd93789": {
+            "type": "slide",
+            "settings": {
+              "testimonial_description": "Samuel Simons was super at solving my questions. Looking forward to getting this great Internet alternative.",
+              "testimonial_name": "Mary B"
+            }
+          }
+        },
+        "block_order": [
+          "2a61a1e1-56f4-4648-984e-a5756ab2b2b6",
+          "2d2aa6d0-c422-4c69-9e34-b69a6a511c4f",
+          "f5fb78f8-83ab-41e2-8b64-865a0dd93789"
+        ],
+        "settings": {
+          "heading": "Live where you want, or go anywhere you choose. Nomad Internet helps people stay connected.",
+          "image": "shopify:\/\/shop_images\/image-1-copyright-1024x644_1.png"
+        }
+      },
+      "video-section": {
+        "type": "video-section",
+        "blocks": {
+          "77ced1d3-b89a-4f3d-8e26-fb38a4e836ab": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7e0a688e2c004ac5910954de1a5a8daa.mp4",
+              "video_image": "shopify:\/\/shop_images\/Rectangle_87.png"
+            }
+          },
+          "cb453d89-604b-48d8-963a-f3a8e918875a": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7e0a688e2c004ac5910954de1a5a8daa.mp4",
+              "video_image": "shopify:\/\/shop_images\/Rectangle_88.png"
+            }
+          },
+          "305e6cb2-dd0c-482a-b233-74d3e48f1998": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7e0a688e2c004ac5910954de1a5a8daa.mp4",
+              "video_image": "shopify:\/\/shop_images\/Rectangle_89.png"
+            }
+          }
+        },
+        "block_order": [
+          "77ced1d3-b89a-4f3d-8e26-fb38a4e836ab",
+          "cb453d89-604b-48d8-963a-f3a8e918875a",
+          "305e6cb2-dd0c-482a-b233-74d3e48f1998"
+        ],
+        "settings": {
+          "main_title": "Change your location, change your life, stay connected through <br><span>Nomad Internet.<\/span>",
+          "sub_title": "Nomad Internet Stories"
+        }
+      },
+      "internet-plans-section": {
+        "type": "internet-plans-section",
+        "settings": {
+          "heading": "Shop our best <span>Internet plans<\/span> and pricing"
+        }
+      },
+      "hero-section-homepage": {
+        "type": "hero-section-homepage",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/Rectangle_49_6ae58f2c-51c6-4601-8468-0d63e6eeecc4.png",
+          "main_heading": "<div class=\"member\">\n<div>The <span class=\"rde\">RED <\/span> Plans<br> are Back!<\/div>\n<div><!--img style=\"max-width:120px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Group_1028.png?v=1668140605\"--><\/div>\n<\/div>",
+          "description": "<p>America's Best for Rural & On-the-Go Internet<br\/><\/p>",
+          "banner_image1": "shopify:\/\/shop_images\/ezgif_1.png",
+          "button_text": "",
+          "button_url": "#",
+          "button_url1": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "textwithemail": {
+        "type": "textwithemail",
+        "settings": {
+          "title": "Address Lookup Request",
+          "description": "",
+          "button_text": "",
+          "button_url": "",
+          "right_text": "",
+          "left_text": "",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "plan-options-product": {
+        "type": "plan-options-product",
+        "settings": {}
+      },
+      "image-box": {
+        "type": "image-box",
+        "blocks": {
+          "714b5a68-7a19-4d29-bd89-486d7f601c9c": {
+            "type": "gallery_image",
+            "settings": {
+              "slide": "shopify:\/\/shop_images\/van_happy_holidays.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "714b5a68-7a19-4d29-bd89-486d7f601c9c"
+        ],
+        "settings": {
+          "show_nav_arrows": true,
+          "color_style": "white",
+          "transition": "fade",
+          "autoplay": true,
+          "duration": 4,
+          "show_margins": false,
+          "slide_height": "five-fifty-height-hero",
+          "slide_image_position": "left",
+          "slide_image_width": "med_s12|med_s12",
+          "subheading": "",
+          "title": "Tell a Story",
+          "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
+          "logo_image": "shopify:\/\/shop_images\/logo_larger_jpeg.jpg",
+          "cta": "",
+          "link": "",
+          "button_style": "primary"
+        }
+      },
+      "testimonial": {
+        "type": "testimonial",
+        "blocks": {
+          "6e8a0a08-5656-4feb-827c-6e33fdd85b41": {
+            "type": "testimonial",
+            "settings": {
+              "blockquote": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/26.png?v=1667556773\">\n<h4>Internet<\/h4>\n<p>This book is a treatise  Lorem Ipsumon the theory of ethics, very popular during the Renaissance<\/p><br>\n<a href=\"\">Learn More<\/a>",
+              "author": ""
+            }
+          },
+          "d1c7a22c-e14d-44e6-a4b7-eae6092c7e60": {
+            "type": "testimonial",
+            "settings": {
+              "blockquote": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/27.png?v=1667556802\">\n<h4>Telephone<\/h4>\n<p>This book is a treatise  Lorem Ipsumon the theory of ethics, very popular during the Renaissance<\/p><p><br>\n<a href=\"#\">Learn More<\/a><\/p>",
+              "author": ""
+            }
+          },
+          "2801c737-ac77-4d69-91dc-12689ff357f2": {
+            "type": "testimonial",
+            "settings": {
+              "blockquote": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/39.png?v=1667559914\">\n<h4>Interactive TV<\/h4>\n<p>This book is a treatise  Lorem Ipsumon the theory of ethics, very popular during the Renaissance<\/p><br>\n<a href=\"\">Learn More<\/a>",
+              "author": ""
+            }
+          }
+        },
+        "block_order": [
+          "6e8a0a08-5656-4feb-827c-6e33fdd85b41",
+          "d1c7a22c-e14d-44e6-a4b7-eae6092c7e60",
+          "2801c737-ac77-4d69-91dc-12689ff357f2"
+        ],
+        "settings": {
+          "title": "",
+          "title_position": "left",
+          "blocks_text_align": "justify",
+          "hide_quotes": false,
+          "columns": 3
+        }
+      },
+      "rich-text": {
+        "type": "rich-text",
+        "settings": {
+          "layout": "split",
+          "subheading": "fgfgfddgf",
+          "title": "Our Servicejkjhkjhk",
+          "content": "<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled<\/p>",
+          "button_text": "test",
+          "button_link": "",
+          "button_style": "primary"
+        }
+      },
+      "customhtml": {
+        "type": "customhtml",
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "html": "<div class=\"container\">\n\n\n\t<div class=\"all_flx\">\n\t\t<div class=\"div_1\">\n\t<div class=\"flx flx1\">\n\t\n<div class=\"txt_1 txt_2\">\n<h2>Unleash Limitless Possibilities<\/h2>\n<br>\n<p>Tired of slow, unreliable internet in rural areas or on the go? When it comes to reliable and unlimited internet, you need a modem that can keep up with your mobile lifestyle. Meet the Nomad Raptor – the best-in-class 5G-enabled modem designed especially for the digital nomad. Experience ground-breaking 5G and 4G LTE speeds up to 3.3 Gbps, so you can never surf the net with no slowdowns. Enjoy nearly limitless potential with the ability to connect up to 128 devices at once with advanced secure Wi-Fi 6 technology. Never worry about signal strength again with its dual SIM card, providing auto-switching from signal to signal to ensure no interruption, no matter where your life takes you. You deserve better internet and speed, so join the new era of connectivity with the Nomad Raptor today and go places both near and far without ever missing a beat.\n<\/p>\n\n\n<\/div>\n<\/div>\n\n\n<\/div>\n\n\n<div class=\"div_2\">\n<h2>Here’s Why You’ll Love This<\/h2>\n\t\t<div class=\"flx\">\n\t<div class=\"icn_1\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/healthicons_yes.png?v=1670417612\">\n\t<\/div>\n<div class=\"txt_1\">\n<h3>Lightning-fast speeds:<\/h3>\n<p>With state-of-the-art Wi-Fi 6 technology and gigabit-class data rates, The Nomad Raptor delivers lightning-fast speeds for all your internet needs.\n <\/p>\n<\/div>\n<\/div>\n<div class=\"flx\">\n\t<div class=\"icn_1\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/healthicons_yes.png?v=1670417612\">\n\t<\/div>\n<div class=\"txt_1\">\n<h3>Secure connections:<\/h3>\n<p>The Nomad Raptor provides secure connections for up to 128 devices, giving you peace of mind while you surf the web.\n <\/p>\n<\/div>\n<\/div>\n<div class=\"flx\">\n\t<div class=\"icn_1\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/healthicons_yes.png?v=1670417612\">\n\t<\/div>\n<div class=\"txt_1\">\n<h3>Unlimited internet access:<\/h3>\n<p>Whether you're a digital nomad, RVer, or simply live in a rural area, The Nomad Raptor gives you unlimited internet access wherever you are.\n<\/p>\n<\/div>\n<\/div>\n<div class=\"flx\">\n  <div class=\"icn_1\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/healthicons_yes.png?v=1670417612\">\n  <\/div>\n<div class=\"txt_1\">\n<h3>Best-in-class 5G-enabled modem:<\/h3>\n<p> With a best-in-class 5G-enabled modem and download speeds of up to 3.3 Gbps*, you'll be able to connect and stream like never before.\n<\/p>\n<\/div>\n<\/div>\n<div class=\"flx\">\n\t<div class=\"icn_1\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/healthicons_yes.png?v=1670417612\">\n\t<\/div>\n<div class=\"txt_1\">\n<h3>Superior connectivity:<\/h3>\n<p>The Nomad Raptor allows you to connect up to two carrier SIMs with auto-switching based on signal strength, ensuring you always have a reliable and secure internet connection.\n<\/p>\n<\/div>\n<\/div>\n<\/div>\n<\/div>\n<\/div>"
+        }
+      },
+      "2d1ef16c-355d-46a8-a755-0e4e700670d8": {
+        "type": "icon-with-text-section",
+        "blocks": {
+          "e1ea8ea2-31ca-427f-89c7-1b31045fe239": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<svg width=\"65\" height=\"65\" viewbox=\"0 0 65 65\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32.6666\" cy=\"32.387\" r=\"32\" fill=\"#109D59\"><\/circle>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M19.8506 27.4058C19.873 24.2213 21.1457 21.1732 23.3944 18.9183L21.8413 17.387C20.5185 18.6987 19.4685 20.2594 18.752 21.9789C18.0355 23.6985 17.6666 25.5429 17.6666 27.4058C17.6666 29.2686 18.0355 31.1131 18.752 32.8326C19.4685 34.5522 20.5185 36.1128 21.8413 37.4245L23.3944 35.8933C21.1457 33.6384 19.873 30.5902 19.8506 27.4058V27.4058ZM22.1694 27.4058C22.1637 28.6958 22.4163 29.9739 22.9122 31.1648C23.4081 32.3557 24.1373 33.4354 25.0569 34.3401L26.61 32.787C25.891 32.0952 25.3247 31.2607 24.9475 30.337C24.5595 29.4123 24.3596 28.4195 24.3596 27.4167C24.3596 26.4139 24.5595 25.4211 24.9475 24.4964C25.3191 23.5633 25.886 22.7205 26.61 22.0245L25.0569 20.4714C24.1413 21.3791 23.4146 22.4593 22.919 23.6496C22.4234 24.8398 22.1686 26.1165 22.1694 27.4058V27.4058ZM38.9038 34.4276L37.3506 32.8745C38.0725 32.1745 38.6413 31.3345 39.0131 30.4026C39.4013 29.478 39.6012 28.4852 39.6012 27.4823C39.6012 26.4795 39.4013 25.4867 39.0131 24.562C38.6415 23.629 38.0747 22.7862 37.3506 22.0901L38.9038 20.5589C39.8183 21.4673 40.5442 22.5477 41.0395 23.7378C41.5348 24.9279 41.7898 26.2042 41.7898 27.4933C41.7898 28.7823 41.5348 30.0587 41.0395 31.2488C40.5442 32.4389 39.8183 33.5192 38.9038 34.4276V34.4276ZM41.8788 17.387L40.3256 18.9401C41.4487 20.0455 42.3406 21.3632 42.9494 22.8166C43.5582 24.27 43.8717 25.83 43.8717 27.4058C43.8717 28.9815 43.5582 30.5415 42.9494 31.9949C42.3406 33.4483 41.4487 34.7661 40.3256 35.8714L41.8788 37.4245C43.2015 36.1128 44.2515 34.5522 44.968 32.8326C45.6845 31.1131 46.0534 29.2686 46.0534 27.4058C46.0534 25.5429 45.6845 23.6985 44.968 21.9789C44.2515 20.2594 43.2015 18.6987 41.8788 17.387V17.387ZM35.1522 27.0776C35.2268 27.8327 35.0374 28.5903 34.6163 29.2214C34.4347 29.4063 34.237 29.5746 34.0256 29.7245L41.5506 46.6339L39.5381 47.5089L37.8538 43.7245H25.735L24.0506 47.5089L22.0381 46.6339L29.5631 29.7245C29.1094 29.2646 28.7995 28.6824 28.6713 28.0492C28.5431 27.416 28.6022 26.7591 28.8413 26.1589C29.0971 25.555 29.5227 25.0383 30.0663 24.6714C30.5375 24.3571 31.0822 24.1701 31.6471 24.1287C32.2121 24.0873 32.7782 24.1929 33.2902 24.4351C33.8023 24.6774 34.2429 25.0481 34.5692 25.5112C34.8955 25.9743 35.0963 26.5139 35.1522 27.0776V27.0776ZM31.6631 26.3339C31.4558 26.3828 31.2663 26.4889 31.1163 26.6401C30.9987 26.779 30.9162 26.944 30.8756 27.1214C30.8102 27.3278 30.8102 27.5494 30.8756 27.7558C30.9631 27.9526 31.0988 28.1276 31.2694 28.2589C31.4537 28.3722 31.6655 28.4328 31.8819 28.4339C32.1702 28.4283 32.4452 28.3113 32.6491 28.1074C32.853 27.9034 32.97 27.6285 32.9756 27.3401C32.9745 27.1238 32.914 26.9119 32.8006 26.7276C32.6693 26.5556 32.4961 26.4201 32.2975 26.3339C32.0911 26.2685 31.8695 26.2685 31.6631 26.3339V26.3339ZM32.1663 30.8183H31.5756L29.6725 35.062H34.0475L32.1663 30.8183V30.8183ZM36.9788 41.6245L35.0319 37.2495H28.7319L26.785 41.6245H36.9788Z\" fill=\"#F8F8F8\"><\/path>\n<\/svg>",
+              "title": "CELLULAR TOWERS",
+              "description": "Nomad Internet offers fast, reliable 4G LTE connections through carriers, in all 50 states. See which plan works best for you!",
+              "button_text": "Learn More",
+              "button_url": "https:\/\/nomadinternet.com\/blogs\/countrynomad",
+              "button_text1": "Learn More",
+              "button_url1": ""
+            }
+          },
+          "6ec5dcb8-e1f9-4d4c-846e-b7a794b76036": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<svg width=\"65\" height=\"65\" viewbox=\"0 0 65 65\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32.3334\" cy=\"32.387\" r=\"32\" fill=\"#109D59\"><\/circle>\n<path d=\"M27.4193 23.8168C28.1303 23.1058 28.9743 22.5417 29.9033 22.1569C30.8322 21.7721 31.8279 21.5741 32.8334 21.5741C33.8389 21.5741 34.8345 21.7721 35.7635 22.1569C36.6924 22.5417 37.5365 23.1058 38.2475 23.8168C38.3483 23.9213 38.469 24.0046 38.6025 24.0619C38.7359 24.1192 38.8794 24.1494 39.0247 24.1507C39.1699 24.1519 39.3139 24.1243 39.4483 24.0693C39.5828 24.0143 39.7049 23.933 39.8076 23.8304C39.9103 23.7277 39.9915 23.6055 40.0465 23.4711C40.1015 23.3367 40.1291 23.1927 40.1279 23.0475C40.1266 22.9022 40.0964 22.7587 40.0391 22.6253C39.9818 22.4918 39.8985 22.3711 39.794 22.2702C38.8799 21.3561 37.7948 20.631 36.6005 20.1363C35.4061 19.6416 34.1261 19.387 32.8334 19.387C31.5407 19.387 30.2606 19.6416 29.0663 20.1363C27.872 20.631 26.7868 21.3561 25.8728 22.2702C25.6735 22.4765 25.5633 22.7528 25.5658 23.0396C25.5683 23.3264 25.6833 23.6007 25.8861 23.8035C26.0889 24.0063 26.3632 24.1213 26.65 24.1238C26.9368 24.1263 27.213 24.016 27.4193 23.8168V23.8168Z\" fill=\"#F8F8F8\"><\/path>\n<path d=\"M30.5146 26.9121C31.1299 26.2976 31.9638 25.9525 32.8334 25.9525C33.7029 25.9525 34.5369 26.2976 35.1521 26.9121C35.3575 27.1175 35.6361 27.2329 35.9265 27.2329C36.2169 27.2329 36.4955 27.1175 36.7009 26.9121C36.9063 26.7067 37.0216 26.4282 37.0216 26.1377C37.0216 25.8473 36.9063 25.5687 36.7009 25.3634C36.193 24.8554 35.5901 24.4524 34.9265 24.1775C34.2629 23.9026 33.5517 23.7611 32.8334 23.7611C32.1151 23.7611 31.4038 23.9026 30.7402 24.1775C30.0766 24.4524 29.4737 24.8554 28.9659 25.3634C28.7666 25.5696 28.6564 25.8459 28.6589 26.1327C28.6614 26.4195 28.7764 26.6938 28.9792 26.8966C29.182 27.0994 29.4563 27.2144 29.7431 27.2169C30.0299 27.2194 30.3062 27.1092 30.5124 26.9099L30.5146 26.9121ZM20.8021 41.2621C20.512 41.2621 20.2338 41.1469 20.0287 40.9418C19.8236 40.7366 19.7084 40.4584 19.7084 40.1684C19.7084 39.8783 19.8236 39.6001 20.0287 39.395C20.2338 39.1898 20.512 39.0746 20.8021 39.0746C21.0922 39.0746 21.3704 39.1898 21.5755 39.395C21.7806 39.6001 21.8959 39.8783 21.8959 40.1684C21.8959 40.4584 21.7806 40.7366 21.5755 40.9418C21.3704 41.1469 21.0922 41.2621 20.8021 41.2621ZM30.6459 40.1684C30.6459 40.4584 30.7611 40.7366 30.9662 40.9418C31.1713 41.1469 31.4495 41.2621 31.7396 41.2621C32.0297 41.2621 32.3079 41.1469 32.513 40.9418C32.7181 40.7366 32.8334 40.4584 32.8334 40.1684C32.8334 39.8783 32.7181 39.6001 32.513 39.395C32.3079 39.1898 32.0297 39.0746 31.7396 39.0746C31.4495 39.0746 31.1713 39.1898 30.9662 39.395C30.7611 39.6001 30.6459 39.8783 30.6459 40.1684ZM36.1146 41.2621C35.8245 41.2621 35.5463 41.1469 35.3412 40.9418C35.1361 40.7366 35.0209 40.4584 35.0209 40.1684C35.0209 39.8783 35.1361 39.6001 35.3412 39.395C35.5463 39.1898 35.8245 39.0746 36.1146 39.0746C36.4047 39.0746 36.6829 39.1898 36.888 39.395C37.0931 39.6001 37.2084 39.8783 37.2084 40.1684C37.2084 40.4584 37.0931 40.7366 36.888 40.9418C36.6829 41.1469 36.4047 41.2621 36.1146 41.2621ZM39.3959 40.1684C39.3959 40.4584 39.5111 40.7366 39.7162 40.9418C39.9213 41.1469 40.1995 41.2621 40.4896 41.2621C40.7797 41.2621 41.0579 41.1469 41.263 40.9418C41.4681 40.7366 41.5834 40.4584 41.5834 40.1684C41.5834 39.8783 41.4681 39.6001 41.263 39.395C41.0579 39.1898 40.7797 39.0746 40.4896 39.0746C40.1995 39.0746 39.9213 39.1898 39.7162 39.395C39.5111 39.6001 39.3959 39.8783 39.3959 40.1684ZM43.7709 40.1684C43.7709 40.4584 43.8861 40.7366 44.0912 40.9418C44.2963 41.1469 44.5745 41.2621 44.8646 41.2621C45.1547 41.2621 45.4329 41.1469 45.638 40.9418C45.8431 40.7366 45.9584 40.4584 45.9584 40.1684C45.9584 39.8783 45.8431 39.6001 45.638 39.395C45.4329 39.1898 45.1547 39.0746 44.8646 39.0746C44.5745 39.0746 44.2963 39.1898 44.0912 39.395C43.8861 39.6001 43.7709 39.8783 43.7709 40.1684Z\" fill=\"#F8F8F8\"><\/path>\n<path d=\"M21.839 22.3227C21.7978 22.1815 21.7285 22.05 21.6353 21.9362C21.5421 21.8223 21.4269 21.7284 21.2966 21.6602C21.1663 21.5919 21.0235 21.5506 20.8769 21.5388C20.7302 21.5269 20.5827 21.5448 20.4431 21.5914C20.3035 21.6379 20.1748 21.7121 20.0646 21.8095C19.9543 21.907 19.8649 22.0257 19.8016 22.1585C19.7383 22.2913 19.7025 22.4355 19.6962 22.5825C19.69 22.7295 19.7135 22.8763 19.7652 23.014L23.659 34.6996H18.6146C17.7444 34.6996 16.9098 35.0453 16.2944 35.6607C15.6791 36.276 15.3334 37.1106 15.3334 37.9809V42.3559C15.3334 43.2261 15.6791 44.0607 16.2944 44.6761C16.9098 45.2914 17.7444 45.6371 18.6146 45.6371H19.7084C19.7084 45.9272 19.8236 46.2054 20.0287 46.4105C20.2338 46.6156 20.512 46.7309 20.8021 46.7309H25.1771C25.4672 46.7309 25.7454 46.6156 25.9505 46.4105C26.1556 46.2054 26.2709 45.9272 26.2709 45.6371H39.3959C39.3959 45.9272 39.5111 46.2054 39.7162 46.4105C39.9213 46.6156 40.1995 46.7309 40.4896 46.7309H44.8646C45.1547 46.7309 45.4329 46.6156 45.638 46.4105C45.8431 46.2054 45.9584 45.9272 45.9584 45.6371H47.0521C47.9224 45.6371 48.757 45.2914 49.3723 44.6761C49.9877 44.0607 50.3334 43.2261 50.3334 42.3559V37.9809C50.3334 37.1106 49.9877 36.276 49.3723 35.6607C48.757 35.0453 47.9224 34.6996 47.0521 34.6996H42.0077L45.9015 23.014C45.9533 22.8763 45.9768 22.7295 45.9705 22.5825C45.9643 22.4355 45.9284 22.2913 45.8651 22.1585C45.8018 22.0257 45.7124 21.907 45.6022 21.8095C45.492 21.7121 45.3632 21.6379 45.2236 21.5914C45.084 21.5448 44.9365 21.5269 44.7899 21.5388C44.6432 21.5506 44.5005 21.5919 44.3701 21.6602C44.2398 21.7284 44.1246 21.8223 44.0314 21.9362C43.9382 22.05 43.8689 22.1815 43.8277 22.3227L39.7021 34.6996H25.9646L21.839 22.3227ZM47.0521 36.8871C47.3422 36.8871 47.6204 37.0023 47.8255 37.2075C48.0306 37.4126 48.1459 37.6908 48.1459 37.9809V42.3559C48.1459 42.6459 48.0306 42.9241 47.8255 43.1293C47.6204 43.3344 47.3422 43.4496 47.0521 43.4496H18.6146C18.3245 43.4496 18.0463 43.3344 17.8412 43.1293C17.6361 42.9241 17.5209 42.6459 17.5209 42.3559V37.9809C17.5209 37.6908 17.6361 37.4126 17.8412 37.2075C18.0463 37.0023 18.3245 36.8871 18.6146 36.8871H47.0521Z\" fill=\"#F8F8F8\"><\/path>\n<path d=\"M33.9271 29.2309C33.9271 29.5209 33.8119 29.7991 33.6068 30.0043C33.4017 30.2094 33.1235 30.3246 32.8334 30.3246C32.5433 30.3246 32.2651 30.2094 32.06 30.0043C31.8549 29.7991 31.7396 29.5209 31.7396 29.2309C31.7396 28.9408 31.8549 28.6626 32.06 28.4575C32.2651 28.2523 32.5433 28.1371 32.8334 28.1371C33.1235 28.1371 33.4017 28.2523 33.6068 28.4575C33.8119 28.6626 33.9271 28.9408 33.9271 29.2309V29.2309Z\" fill=\"#F8F8F8\"><\/path>\n<\/svg>",
+              "title": "HOTSPOTS & ROUTERS",
+              "description": "If you have a cellular signal, Nomad connects you to the Internet in places<br> other networks don't reach.",
+              "button_text": "Learn More",
+              "button_url": "https:\/\/nomadinternet.com\/blogs\/countrynomad",
+              "button_text1": "Learn More",
+              "button_url1": ""
+            }
+          },
+          "46b69e3e-cd6e-4bde-aee1-144c3c07422c": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<svg width=\"64\" height=\"65\" viewbox=\"0 0 64 65\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"31.9999\" cy=\"32.387\" r=\"32\" fill=\"#109D59\"><\/circle>\n<path d=\"M23.2915 44.1242H40.7915V29.7698L32.0415 21.8161L23.2915 29.7698V44.1242ZM42.2499 47.0409H21.8332C21.4464 47.0409 21.0755 46.8872 20.802 46.6137C20.5285 46.3403 20.3749 45.9693 20.3749 45.5825V32.4575H15.9999L31.0601 18.7667C31.3286 18.5224 31.6785 18.387 32.0415 18.387C32.4046 18.387 32.7545 18.5224 33.023 18.7667L48.0832 32.4575H43.7082V45.5825C43.7082 45.9693 43.5546 46.3403 43.2811 46.6137C43.0076 46.8872 42.6367 47.0409 42.2499 47.0409ZM26.2082 30.9992C28.9156 30.9992 31.5122 32.0747 33.4266 33.9892C35.341 35.9036 36.4165 38.5001 36.4165 41.2075H33.4999C33.4999 39.2737 32.7317 37.419 31.3642 36.0516C29.9967 34.6841 28.1421 33.9159 26.2082 33.9159V30.9992ZM26.2082 36.8325C27.3685 36.8325 28.4813 37.2935 29.3018 38.114C30.1223 38.9344 30.5832 40.0472 30.5832 41.2075H26.2082V36.8325Z\" fill=\"#F8F8F8\"><\/path>\n<\/svg>",
+              "title": "CONNECTED HOME",
+              "description": "Laptops, Smart TVs, Gaming Consoles and more - Nomad’s got you connected. Our Wi-Fi signal helps you connect where you want, when you want.",
+              "button_text": "Learn More",
+              "button_url": "https:\/\/nomadinternet.com\/blogs\/countrynomad",
+              "button_text1": "Learn More",
+              "button_url1": ""
+            }
+          }
+        },
+        "block_order": [
+          "e1ea8ea2-31ca-427f-89c7-1b31045fe239",
+          "6ec5dcb8-e1f9-4d4c-846e-b7a794b76036",
+          "46b69e3e-cd6e-4bde-aee1-144c3c07422c"
+        ],
+        "disabled": true,
+        "settings": {
+          "main_heading": "<p><\/p>"
+        }
+      },
+      "5eee5e35-be81-4d52-b530-6b7f5ec67d81": {
+        "type": "image-box",
+        "blocks": {
+          "5eee5e35-be81-4d52-b530-6b7f5ec67d81-16678811488cf28039-0": {
+            "type": "gallery_image",
+            "settings": {
+              "slide": "shopify:\/\/shop_images\/39.png"
+            }
+          },
+          "5eee5e35-be81-4d52-b530-6b7f5ec67d81-16678811488cf28039-1": {
+            "type": "gallery_image",
+            "settings": {
+              "slide": "shopify:\/\/shop_images\/icn1.png"
+            }
+          },
+          "e2bba56c-3801-4c79-aec5-4d1b95764675": {
+            "type": "gallery_image",
+            "settings": {
+              "slide": "shopify:\/\/shop_images\/38.png"
+            }
+          }
+        },
+        "block_order": [
+          "5eee5e35-be81-4d52-b530-6b7f5ec67d81-16678811488cf28039-0",
+          "5eee5e35-be81-4d52-b530-6b7f5ec67d81-16678811488cf28039-1",
+          "e2bba56c-3801-4c79-aec5-4d1b95764675"
+        ],
+        "disabled": true,
+        "settings": {
+          "show_nav_arrows": true,
+          "color_style": "white",
+          "transition": "fade",
+          "autoplay": true,
+          "duration": 4,
+          "show_margins": false,
+          "slide_height": "five-fifty-height-hero",
+          "slide_image_position": "left",
+          "slide_image_width": "med_s12|med_s12",
+          "subheading": "Humble Beginnings",
+          "title": "Tell a Story",
+          "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
+          "cta": "",
+          "link": "",
+          "button_style": "primary"
+        }
+      },
+      "d9b41cdf-3265-4112-b17d-796808ce0e71": {
+        "type": "images-with-box",
+        "disabled": true,
+        "settings": {
+          "title": "Reviews About Us.",
+          "image": "shopify:\/\/shop_images\/Rectangle_74.png",
+          "image1": "shopify:\/\/shop_images\/Rectangle_75.png",
+          "image2": "shopify:\/\/shop_images\/Rectangle_75.png",
+          "description": "",
+          "button_text": "Check Your Location",
+          "button_url": "",
+          "right_text": "Fast, Reliable Internet",
+          "left_text": "Just$99",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "b0ac1826-214c-411e-bd5c-72e7315c6764": {
+        "type": "vedio-with-text",
+        "blocks": {
+          "76c8c3c0-93fb-4bb6-bc72-136dc14488b8": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/embed\/vhw0lGXQa0U",
+              "video_image": "shopify:\/\/shop_images\/anim.png"
+            }
+          }
+        },
+        "block_order": [
+          "76c8c3c0-93fb-4bb6-bc72-136dc14488b8"
+        ],
+        "disabled": true,
+        "settings": {
+          "title": "Get More than Just Faster Speeds, But Get That Too, For Less",
+          "description": "If you can get cell signal, Nomad Internet can get you connected at speeds of up to XXXXX. A much better option over the XXXX of satellite, the YYYY of other competitors. Check your area and join in on the Nomad Internet community.",
+          "button_text": "Check Area",
+          "button_url": "#",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "76a9d12c-6cf9-48a6-9795-f27fe57029f6": {
+        "type": "image-box",
+        "blocks": {
+          "76a9d12c-6cf9-48a6-9795-f27fe57029f6-1667896008084f00ef-1": {
+            "type": "gallery_image",
+            "settings": {
+              "slide": "shopify:\/\/shop_images\/6_fcb13345-2b50-47fd-8abe-b968bc48ad73.png"
+            }
+          }
+        },
+        "block_order": [
+          "76a9d12c-6cf9-48a6-9795-f27fe57029f6-1667896008084f00ef-1"
+        ],
+        "disabled": true,
+        "settings": {
+          "show_nav_arrows": true,
+          "color_style": "white",
+          "transition": "fade",
+          "autoplay": false,
+          "duration": 4,
+          "show_margins": false,
+          "slide_height": "one-hundred-height-hero",
+          "slide_image_position": "right",
+          "slide_image_width": "med_s12|med_s12",
+          "subheading": "Humble Beginnings",
+          "title": "Tell a Story",
+          "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
+          "cta": "",
+          "link": "",
+          "button_style": "primary"
+        }
+      },
+      "1e1349e5-9154-4605-9193-c11efe7a7360": {
+        "type": "icon-with-text-section",
+        "blocks": {
+          "4e8f19c9-410b-4f29-983c-efd0bce0d69d": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<svg width=\"55\" height=\"55\" viewbox=\"0 0 55 55\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M4.58333 22.9167C18.3333 7.63813 36.6667 7.63813 50.4167 22.9167M13.75 32.0833C22 22.9167 33 22.9167 41.25 32.0833\" stroke=\"#0FA958\" stroke-width=\"2.91667\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M27.5 43.5417C28.7656 43.5417 29.7917 42.5157 29.7917 41.25C29.7917 39.9844 28.7656 38.9584 27.5 38.9584C26.2343 38.9584 25.2083 39.9844 25.2083 41.25C25.2083 42.5157 26.2343 43.5417 27.5 43.5417Z\" stroke=\"#0FA958\" stroke-width=\"2.91667\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+              "title": "Wi-Fi for EVERY connected device",
+              "description": "Stop the family arguments! Nomad provides fast, reliable devices in your home or On-the-Go. Your Connection is our Mission.",
+              "button_text": "",
+              "button_url": "",
+              "button_text1": "Learn More",
+              "button_url1": ""
+            }
+          },
+          "d628bc56-5d2f-47bc-9189-2a409adbda1f": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<svg width=\"55\" height=\"55\" viewbox=\"0 0 55 55\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M48.125 28.0042C48.125 15.4229 38.3625 6.875 27.5 6.875C16.7521 6.875 6.87499 15.2396 6.87499 28.1417C5.49999 28.9208 4.58333 30.3875 4.58333 32.0833V36.6667C4.58333 39.1875 6.64583 41.25 9.16666 41.25C10.4271 41.25 11.4583 40.2188 11.4583 38.9583V27.9354C11.4583 19.1583 18.2187 11.4813 26.9958 11.2292C29.1439 11.1638 31.2833 11.5304 33.2871 12.307C35.291 13.0837 37.1185 14.2547 38.6615 15.7507C40.2044 17.2466 41.4314 19.037 42.2697 21.0159C43.108 22.9948 43.5405 25.1217 43.5417 27.2708V43.5417H27.5C26.2396 43.5417 25.2083 44.5729 25.2083 45.8333C25.2083 47.0938 26.2396 48.125 27.5 48.125H43.5417C46.0625 48.125 48.125 46.0625 48.125 43.5417V40.7458C49.4771 40.0354 50.4167 38.6375 50.4167 36.9875V31.7167C50.4167 30.1125 49.4771 28.7146 48.125 28.0042V28.0042Z\" fill=\"#0FA958\"><\/path>\n<path d=\"M20.625 32.0833C21.8906 32.0833 22.9167 31.0573 22.9167 29.7917C22.9167 28.526 21.8906 27.5 20.625 27.5C19.3593 27.5 18.3333 28.526 18.3333 29.7917C18.3333 31.0573 19.3593 32.0833 20.625 32.0833Z\" fill=\"#0FA958\"><\/path>\n<path d=\"M34.375 32.0833C35.6406 32.0833 36.6667 31.0573 36.6667 29.7917C36.6667 28.526 35.6406 27.5 34.375 27.5C33.1093 27.5 32.0833 28.526 32.0833 29.7917C32.0833 31.0573 33.1093 32.0833 34.375 32.0833Z\" fill=\"#0FA958\"><\/path>\n<path d=\"M41.25 25.2771C40.7036 22.0553 39.0349 19.1308 36.5394 17.0211C34.0438 14.9114 30.8824 13.7527 27.6146 13.75C20.6708 13.75 13.2 19.5021 13.7958 28.5313C16.6218 27.3749 19.1176 25.5372 21.0609 23.182C23.0042 20.8269 24.3346 18.0274 24.9333 15.0333C27.9354 21.0604 34.1 25.2083 41.25 25.2771Z\" fill=\"#0FA958\"><\/path>\n<\/svg>",
+              "title": "Real, live human <br>support",
+              "description": "Our support team offers a chat function with real live people who understand the product and your needs.",
+              "button_text": "",
+              "button_url": "",
+              "button_text1": "Learn More",
+              "button_url1": ""
+            }
+          },
+          "22d34859-7762-4390-ae48-82b37cfacbe8": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<svg width=\"55\" height=\"55\" viewbox=\"0 0 55 55\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M14.9944 12.5652C18.0455 10.0029 21.8119 8.44255 25.7812 8.0965V12.0313C25.7812 12.4871 25.9623 12.9243 26.2846 13.2466C26.607 13.569 27.0441 13.75 27.5 13.75C27.9558 13.75 28.393 13.569 28.7153 13.2466C29.0376 12.9243 29.2187 12.4871 29.2187 12.0313V8.0965C33.8712 8.50974 38.2205 10.5806 41.4741 13.9318C44.7277 17.283 46.6692 21.6915 46.9448 26.3542H42.9687C42.5129 26.3542 42.0757 26.5353 41.7534 26.8576C41.4311 27.1799 41.25 27.6171 41.25 28.073C41.25 28.5288 41.4311 28.966 41.7534 29.2883C42.0757 29.6106 42.5129 29.7917 42.9687 29.7917H46.8508C46.255 35.09 43.5898 39.5267 39.5908 42.7809C39.2371 43.069 39.0123 43.4858 38.9659 43.9396C38.9195 44.3935 39.0552 44.8471 39.3433 45.2009C39.6314 45.5546 40.0482 45.7794 40.5021 45.8258C40.9559 45.8722 41.4096 45.7365 41.7633 45.4484C46.8646 41.2936 50.1737 35.3788 50.4029 28.2952C50.4182 28.1767 50.4212 28.0569 50.4121 27.9377L50.4166 27.5C50.4166 14.8432 40.1569 4.58337 27.5 4.58337C14.8431 4.58337 4.58331 14.8432 4.58331 27.5C4.58331 34.9525 8.07352 41.1446 13.2229 45.4346C13.5744 45.7135 14.021 45.8439 14.4673 45.7979C14.9137 45.7519 15.3243 45.5332 15.6116 45.1885C15.8988 44.8438 16.0399 44.4005 16.0046 43.9532C15.9694 43.5059 15.7606 43.0901 15.4229 42.7946C11.5041 39.5267 8.77019 35.0786 8.15373 29.7917H12.0312C12.4871 29.7917 12.9242 29.6106 13.2466 29.2883C13.5689 28.966 13.75 28.5288 13.75 28.073C13.75 27.6171 13.5689 27.1799 13.2466 26.8576C12.9242 26.5353 12.4871 26.3542 12.0312 26.3542H8.0529C8.30498 22.0413 9.95727 18.1042 12.5652 14.9944L15.4 17.8292C15.7258 18.1328 16.1567 18.2981 16.602 18.2902C17.0473 18.2824 17.4721 18.102 17.787 17.7871C18.1019 17.4722 18.2823 17.0473 18.2902 16.6021C18.298 16.1568 18.1327 15.7259 17.8291 15.4L14.9944 12.5652ZM38.4083 15.203C38.142 14.9979 37.8137 14.8895 37.4776 14.8958C37.1415 14.902 36.8175 15.0225 36.5589 15.2373L36.0594 15.6567C34.2575 17.1699 32.4616 18.69 30.6716 20.2171C29.1683 21.5005 27.6306 22.8296 26.4023 23.9136C25.8704 24.381 25.3441 24.8546 24.8233 25.3344C24.4834 25.6389 24.162 25.9633 23.8608 26.3061C23.5054 26.7436 23.2415 27.2481 23.0847 27.7896C22.9279 28.3311 22.8815 28.8986 22.9482 29.4583C23.0149 30.0181 23.1933 30.5588 23.4729 31.0483C23.7525 31.5378 24.1275 31.9661 24.5758 32.308C25.4888 33.0119 26.6401 33.3324 27.7854 33.2015C28.9308 33.0705 29.9801 32.4985 30.7106 31.6067C30.9123 31.3592 31.1804 30.9284 31.4554 30.4678C31.7487 29.975 32.1085 29.3448 32.5073 28.639C33.3025 27.2182 34.2673 25.449 35.2 23.7234C36.3077 21.6677 37.4069 19.6075 38.4977 17.5428L38.7979 16.9721C38.9522 16.6787 38.9977 16.3401 38.9264 16.0164C38.8551 15.6926 38.6716 15.4045 38.4083 15.203Z\" fill=\"#0FA958\"><\/path>\n<\/svg>",
+              "title": "Fast, <br>reliable, consistent",
+              "description": "Unlike satellite, Nomad isn’t reliant on weather, and LTE cuts down on signal lags from latency in satellite signals. If you have cellular signal, we’ll connect you.",
+              "button_text": "",
+              "button_url": "",
+              "button_text1": "Learn More",
+              "button_url1": ""
+            }
+          },
+          "afaace7d-3b68-4f57-b76a-dd39621be9ab": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<svg width=\"55\" height=\"55\" viewbox=\"0 0 55 55\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M6.875 10.6059L27.5103 4.58337L48.125 10.6059V22.9557C48.1249 29.2849 46.1332 35.4536 42.4321 40.5879C38.731 45.7222 33.5081 49.5617 27.5034 51.5625C21.4969 49.562 16.2723 45.722 12.5699 40.5866C8.8675 35.4512 6.87509 29.2808 6.875 22.9499V10.6059Z\" stroke=\"#0FA958\" stroke-width=\"4.58333\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M17.1875 26.3542L25.2083 34.375L38.9583 20.625\" stroke=\"#0FA958\" stroke-width=\"4.58333\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+              "title": "7-day, no-risk money back guarantee",
+              "description": "If it doesn’t work, we’ll try our best to find you a plan that does. If we can’t, we’ll give you your money back, guaranteed.",
+              "button_text": "",
+              "button_url": "",
+              "button_text1": "Learn More",
+              "button_url1": ""
+            }
+          }
+        },
+        "block_order": [
+          "4e8f19c9-410b-4f29-983c-efd0bce0d69d",
+          "d628bc56-5d2f-47bc-9189-2a409adbda1f",
+          "22d34859-7762-4390-ae48-82b37cfacbe8",
+          "afaace7d-3b68-4f57-b76a-dd39621be9ab"
+        ],
+        "settings": {
+          "main_heading": "<p>Why Choose Our Service<\/p>"
+        }
+      },
+      "fb2a0f4b-3e2a-4587-b1d0-84b72554b0ad": {
+        "type": "rich-text",
+        "disabled": true,
+        "settings": {
+          "layout": "split",
+          "subheading": "",
+          "title": "Find the plan that’s right for you",
+          "content": "<p style=\"color:#798196;\">Nomad was created to bring internet to rural communities and RV, Van and travelers on the go! We know connecting in these areas can be difficult, so we’re here to help find the right plan for you.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "button_style": "primary"
+        }
+      },
+      "c34aaf82-6b1b-4789-a723-f26ca78d7024": {
+        "type": "plan-options-product",
+        "disabled": true,
+        "settings": {}
+      },
+      "6acc91b4-7ab5-4134-a057-1428ab399f57": {
+        "type": "textwithemail",
+        "settings": {
+          "title": "Address Lookup Request",
+          "description": "",
+          "button_text": "Check Your Location",
+          "button_url": "",
+          "right_text": "Fast, Reliable Internet",
+          "left_text": "Just$99",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "87ec0fac-6181-4f5c-bc15-be929c4b9572": {
+        "type": "textwithemail",
+        "disabled": true,
+        "settings": {
+          "title": "Join today for the largest and best <span>rural coverage<\/span> available.",
+          "description": "Everyone should be able to connect to the internet, no matter where they live. Fast, reliable internet isn't just nice to have – it's essential.  Get connected today and get access to the important things like working, learning, banking, and more, online.",
+          "button_text": "Check Your Location",
+          "button_url": "",
+          "right_text": "Fast, Reliable Internet",
+          "left_text": "Just$99",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "7445cc9a-c0d7-40a8-a371-bc9c786195ba": {
+        "type": "footeremail",
+        "settings": {
+          "title": "7 Day, No Risk, Money-Back Guarantee.",
+          "description": "\"High-Speed Internet that works anywhere you live and travel\". Sounds too good to be true? Try it risk-free and see for yourself.",
+          "button_text": "Check Your Location",
+          "button_url": "",
+          "right_text": "Fast, Reliable Internet",
+          "left_text": "Just$99",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "cd4d2845-8143-41d7-ad22-a32dd0a91551": {
+        "type": "faq",
+        "blocks": {
+          "cd4d2845-8143-41d7-ad22-a32dd0a91551-166806289945966b84-0": {
+            "type": "item",
+            "settings": {
+              "title": "Question",
+              "answer": "<p>Use this answer block to discuss some commonly asked questions you've discovered from your customers interactions. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your product or collection. This section will appear across all products.<\/p>"
+            }
+          },
+          "cd4d2845-8143-41d7-ad22-a32dd0a91551-166806289945966b84-1": {
+            "type": "item",
+            "settings": {
+              "title": "Question",
+              "answer": "<p>Use this answer block to discuss some commonly asked questions you've discovered from your customers interactions. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your product or collection. This section will appear across all products.<\/p>"
+            }
+          },
+          "cd4d2845-8143-41d7-ad22-a32dd0a91551-166806289945966b84-2": {
+            "type": "item",
+            "settings": {
+              "title": "Question",
+              "answer": "<p>Use this answer block to discuss some commonly asked questions you've discovered from your customers interactions. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your product or collection. This section will appear across all products.<\/p>"
+            }
+          },
+          "398cc313-61af-48db-8bca-d5d72cdc6f1c": {
+            "type": "item",
+            "settings": {
+              "title": "Question",
+              "answer": "<p>Use this answer block to discuss some commonly asked questions you've discovered from your customers interactions. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your product or collection. This section will appear across all products.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "cd4d2845-8143-41d7-ad22-a32dd0a91551-166806289945966b84-0",
+          "cd4d2845-8143-41d7-ad22-a32dd0a91551-166806289945966b84-1",
+          "cd4d2845-8143-41d7-ad22-a32dd0a91551-166806289945966b84-2",
+          "398cc313-61af-48db-8bca-d5d72cdc6f1c"
+        ],
+        "disabled": true,
+        "settings": {
+          "title": "FAQ",
+          "subheading": "Questions and Answers"
+        }
+      },
+      "73b4aead-b5ad-4300-8718-b152fa89b474": {
+        "type": "testimonial_new",
+        "blocks": {
+          "ce557144-d171-4b62-96ed-6ad1ecc210e2": {
+            "type": "slide",
+            "settings": {
+              "testimonial_description": "Nomad was created to bring internet to rural communities and RV, Van and travelers on the go! We know connecting in these areas can be difficult, so we’re here to help find the right plan for you.",
+              "image": "shopify:\/\/shop_images\/Ellipse_4_e7ffc8cf-7afc-45ec-8730-ca1964c63c2a.png",
+              "testimonial_name": "Brian Ervin"
+            }
+          },
+          "3ccc7452-94e3-49e7-ba1f-24d375831d02": {
+            "type": "slide",
+            "settings": {
+              "testimonial_description": "We just ordered our router and plan to begin service with Nomad.  During the process we had some questions but the customer service team quickly responded and helped us in getting the router with best coverage in our location.",
+              "image": "shopify:\/\/shop_images\/Ellipse_7.png",
+              "testimonial_name": "Poplar Ridge"
+            }
+          },
+          "cf1dc1be-f37b-4a2b-ac6e-b98f228c00c0": {
+            "type": "slide",
+            "settings": {
+              "testimonial_description": "I haven’t even gotten the device yet, and I love this company already. The speedy and friendly customer service is amazing. I am looking forward to getting our device and I know I will be referring many people to Nomad Internet.",
+              "image": "shopify:\/\/shop_images\/Ellipse_6.png",
+              "testimonial_name": "Kim Scott"
+            }
+          }
+        },
+        "block_order": [
+          "ce557144-d171-4b62-96ed-6ad1ecc210e2",
+          "3ccc7452-94e3-49e7-ba1f-24d375831d02",
+          "cf1dc1be-f37b-4a2b-ac6e-b98f228c00c0"
+        ],
+        "disabled": true,
+        "settings": {
+          "heading": "See what satisfied Nomads across the country have to say"
+        }
+      },
+      "footeremail": {
+        "type": "footeremail",
+        "settings": {
+          "title": "7 Day, No Risk, Money-Back Guarantee.",
+          "description": "\"High-Speed Internet that works anywhere you live and travel\". Sounds too good to be true? Try it risk-free and see for yourself.",
+          "button_text": "Check Your Location",
+          "button_url": "",
+          "right_text": "Fast, Reliable Internet",
+          "left_text": "Just$99",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "77c84788-4111-49d8-a56b-769f4ec2f6a1": {
+        "type": "customhtml",
+        "settings": {
+          "subheading": "",
+          "title": "Frequently Asked Questions",
+          "html": "<div class=\"plans-left-section new_fq\">\n  <div class=\"faq-list\">\n  <div class=\"fst_clm\">\n    <div class=\"faq-item\">\n        <h6>\n<span><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/v.png?v=1668076037\" style=\"max-width: 12px;transform: rotate(0deg);\"><\/span>IS ALL OF THIS FOR REAL? THIS SEEMS TOO GOOD TO BE TRUE!<\/h6>\n        <div class=\"faq-content\">YES we are for real! We started the Nomad Internet Community years ago to provide flat-rate, affordable internet access to individuals who do not have access to traditional high-speed internet options and suffer from extreme overage charges. Our community of members benefit from our ‘on the go’ plans\/devices which they are able to utilize during their membership. Our mission is to connect the unconnected.<\/div>\n    <\/div>\n    <div class=\"faq-item\">\n        <h6>\n<span><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/v.png?v=1668076037\" style=\"max-width: 12px;transform: rotate(0deg);\"><\/span>HOW IS THIS DIFFERENT FROM MY PHONE PLAN?<\/h6>\n        <div class=\"faq-content\">The phone plans that carriers normally offer are for data used just on your phone. Instead, Nomad Internet is specifically designed to provide High-Speed Wi-Fi for EVERY connected device in your home or office including laptops, smart TVs, gaming consoles and other Wi-Fi connected devices<\/div>\n    <\/div>\n    <div class=\"faq-item\">\n        <h6>\n<span><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/v.png?v=1668076037\" style=\"max-width: 12px;transform: rotate(0deg);\"><\/span>WHICH DEVICE IS RIGHT FOR ME?<\/h6>\n        <div class=\"faq-content\">The two main devices types that we offer are hotspots and routers. Routers are best for most home\/office setups, as they provide far superior range and connectivity, while hotspots provide a battery powered solution to take your WIFI on the go. All of our devices ship pre-configured and plug-and-play, which means setup is simply connecting the power cable to the wall so you can spend less time setting-up and more time surfing the web! Goodbye invasive installs. Hello Nomad Internet. Please note that the devices displayed on our site are only for illustration purposes. The device you receive might differ, as we change the router we use based on what works best in your area.<\/div>\n    <\/div>\n\t<\/div>\n\t<div class=\"fst_clm\">\n    <div class=\"faq-item\">\n        <h6>\n<span><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/v.png?v=1668076037\" style=\"max-width: 12px;transform: rotate(0deg);\"><\/span> DO I HAVE TO SIGN A CONTRACT? CREDIT CHECK? ARE THESE REALLY MONTH-TO-MONTH PLANS?<\/h6>\n        <div class=\"faq-content\">All of our plans require no contract, and no credit checks! Yes, these are month to month plans. Each payment pre-pays for your next 30 days of membership. You may of course cancel your subscription with us at anytime by simply returning your device to Nomad Internet. Monthly charges will continue until the device has been received. Additionally, our 7-Day Money Back Guarantee allows you to try our service at No Risk! If the service does not meet your needs in any way, simply return the device for a complete refund of your entire order!<\/div>\n    <\/div>\n    <div class=\"faq-item\">\n        <h6>\n<span><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/v.png?v=1668076037\" style=\"max-width: 12px;transform: rotate(0deg);\"><\/span>WHICH PLAN IS BEST FOR ME?<\/h6>\n        <div class=\"faq-content\">Each color represents one of the major cellular carrier networks. Therefore, the primary difference between each plan is the coverage each network provides. View each of our plan’s coverage to identify which is most likely to work at your usage location(s). For help with selecting a plan, visit the Help Me Choose page for detailed step-by-step instructions.<\/div>\n    <\/div>\n    <div class=\"faq-item\">\n        <h6>\n<span><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/v.png?v=1668076037\" style=\"max-width: 12px;transform: rotate(0deg);\"><\/span>WHAT HAPPENS IF WHAT I CHOOSE DOESN’T WORK?<\/h6>\n        <div class=\"faq-content\">If the plan you initially choose does not connect or is slower than expected, this most likely means a lack of LTE coverage\/reception at your location, or less commonly, the cellular tower your device is connecting to is either using outdated antennas or is congested from high usage in your area. Regardless of the reason, our 7-Day No Risk Return Policy has you completely covered. Simply return your device for a 100% Refund and let us help you choose another plan that’s best for you!<\/div>\n    <\/div>\n\t<\/div>\n  <\/div>\n<\/div>\n<script>\n$(document).ready(function(){\n\n$(document).on('click', '.faq-item h6', function(){\nvar toggleEle = $(this).next('.faq-content');\n$(this).toggleClass('active').parents('.faq-list').find('h6').not(this).removeClass('active');\ntoggleEle.slideToggle(300).parents('.faq-list').find('.faq-content').not(toggleEle).slideUp(300);\n});\n\n$(\"#work-anywhere-plan\").click(function(){\n    var already_have = 0;\n     console.log('work-anywhere-router add to cart');\n     ttq.track('AddToCart');\n    $.ajax({\n        type: 'GET',\n        url: '\/cart.js',\n        dataType: 'json',\n        success: function(cart) {\n            $.each(cart.items, function(index, cartItem){\n                if(cartItem.product_title == 'Works Anywhere Plan'){\n                    already_have = 1;\n                }\n            });\n        \n            if(already_have == 0) {\n                var data = {\n                    \"id\" : 39738210091066,\n                    \"quantity\" : 1,\n                  \"properties[Note]\": \"After 30 days $129\/month\",\n\t\t\t\t\t\t\t\"properties[shipping_interval_unit_type]\": 'days',\n\t\t\t\t\t\t\t\"properties[shipping_interval_frequency]\": 30,\n\t\t\t\t\t\t\t\"properties[subscription_id]\": 2729490\n                };\n                $.ajax({\n                    type: 'POST',\n                    url: '\/cart\/add.js',\n                    dataType: 'json',\n                    data: data,\n                    success: function(){\n                      window.location.href = \"\/cart\";\n                    },\n                    error: function (request, status, error) {\n                        console.log(request.responseText);\n                    }\n                });\t\t\t\t\t\t\n            }\n            else{\n                $('.already_have_plan').trigger('click');\n            }\n\n        },\n    });\n});\n\n$(\"#travel-anywhere-plan\").click(function(){\n    var already_have = 0;\n     \/\/console.log('work-anywhere-router add to cart');\n     ttq.track('AddToCart');\n    $.ajax({\n        type: 'GET',\n        url: '\/cart.js',\n        dataType: 'json',\n        success: function(cart) {\n            $.each(cart.items, function(index, cartItem){\n                if(cartItem.product_title == 'Travel Anywhere Plan'){\n                    already_have = 1;\n                }\n            });\n        \n            if(already_have == 0) {\n                var data = {\n                    \"id\" : 39738220052538,\n                    \"quantity\" : 1,\n                  \"properties[Note]\": \"After 30 days $129\/month\",\n\t\t\t\t\t\t\t\"properties[shipping_interval_unit_type]\": 'days',\n\t\t\t\t\t\t\t\"properties[shipping_interval_frequency]\": 30,\n\t\t\t\t\t\t\t\"properties[subscription_id]\": 2729487\n                };\n                $.ajax({\n                    type: 'POST',\n                    url: '\/cart\/add.js',\n                    dataType: 'json',\n                    data: data,\n                    success: function(){\n                      window.location.href = \"\/cart\";\n                    },\n                    error: function (request, status, error) {\n                        console.log(request.responseText);\n                    }\n                });\t\t\t\t\t\t\n            }\n            else{\n                $('.already_have_plan').trigger('click');\n            }\n\n        },\n    });\n});  \n\n$(\"#true-blue-plan\").click(function(){\n    var already_have = 0;\n     \/\/console.log('work-anywhere-router add to cart');\n     ttq.track('AddToCart');\n    $.ajax({\n        type: 'GET',\n        url: '\/cart.js',\n        dataType: 'json',\n        success: function(cart) {\n            $.each(cart.items, function(index, cartItem){\n                if(cartItem.product_title == 'True Blue Plan'){\n                    already_have = 1;\n                }\n            });\n        \n            if(already_have == 0) {\n                var data = {\n                    \"id\" : 39738222477370,\n                    \"quantity\" : 1,\n                  \"properties[Note]\": \"After 30 days $139\/month\",\n\t\t\t\t\t\t\t\"properties[shipping_interval_unit_type]\": 'days',\n\t\t\t\t\t\t\t\"properties[shipping_interval_frequency]\": 30,\n\t\t\t\t\t\t\t\"properties[subscription_id]\": 2729489\n                };\n                $.ajax({\n                    type: 'POST',\n                    url: '\/cart\/add.js',\n                    dataType: 'json',\n                    data: data,\n                    success: function(){\n                      window.location.href = \"\/cart\";\n                    },\n                    error: function (request, status, error) {\n                        console.log(request.responseText);\n                    }\n                });\t\t\t\t\t\t\n            }\n            else{\n                $('.already_have_plan').trigger('click');\n            }\n\n        },\n    });\n});\n\n$(\"#blue-travel-plan\").click(function(){\n    var already_have = 0;\n     \/\/console.log('work-anywhere-router add to cart');\n     ttq.track('AddToCart');\n    $.ajax({\n        type: 'GET',\n        url: '\/cart.js',\n        dataType: 'json',\n        success: function(cart) {\n            $.each(cart.items, function(index, cartItem){\n                if(cartItem.product_title == 'Blue Traveler Plan'){\n                    already_have = 1;\n                }\n            });\n        \n            if(already_have == 0) {\n                var data = {\n                    \"id\" : 39738222510138,\n                    \"quantity\" : 1,\n                  \"properties[Note]\": \"After 30 days $139\/month\",\n\t\t\t\t\t\t\t\"properties[shipping_interval_unit_type]\": 'days',\n\t\t\t\t\t\t\t\"properties[shipping_interval_frequency]\": 30,\n\t\t\t\t\t\t\t\"properties[subscription_id]\": 2729488\n                };\n                $.ajax({\n                    type: 'POST',\n                    url: '\/cart\/add.js',\n                    dataType: 'json',\n                    data: data,\n                    success: function(){\n                      window.location.href = \"\/cart\";\n                    },\n                    error: function (request, status, error) {\n                        console.log(request.responseText);\n                    }\n                });\t\t\t\t\t\t\n            }\n            else{\n                $('.already_have_plan').trigger('click');\n            }\n\n        },\n    });\n});  \n  \n\n});\n\n\n<\/script>"
+        }
+      },
+      "htmlsec": {
+        "type": "htmlsec",
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "html": "<style>\n\t.container {\n    width: 100%;\n    max-width: 1500px;\n    margin: auto;\n}\n.flx1 {\n  max-width: 482px!important;\n}\n.head_txt h2 {\n    font-size: 48px;\n    font-weight: 700;\n    font-family: poppins;\n    line-height: 86px;\n    color:#fff;\n}\n.head_txt p {\n    font-family: 'Work Sans';\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 32px;\n    max-width: 940px;\n    width: 100%;\n    color:#fff;\n}\n.head_txt {\n  width: 100%;\n  text-align: center;\n  margin: auto;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\t.txt_1 p{\n    width: 100%;\n    font-size: 18px;\n    font-weight: 400;\n    line-height: 32px;\n    font-family: 'Work Sans';\n    color: #000A25;\n\/*    max-width: 330px;*\/\n     \n}\n.txt_2 p {\n    width: 100%;\n   \n}\n.icn_1 {\n   \n}\n.txt_1 {\n    \/*margin-left: 20px;*\/\n}\n.all_flx {\n  width: 100%;\n  max-width: 1501px!important;\n  display: flex;\n  margin: auto;\n  justify-content: space-between;\nalign-items: center;\nbackground: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/image_119_1.png?v=1668778623);\n    background-repeat: no-repeat;\n    background-position: center;\nbackground-size:600px;\n}\n.flx {\n  display: flex;\nwidth: 100%;\nmax-width: 505px;\njustify-content: space-between;\npadding-top: 20px;\n\/*margin:70px 0px 0px 0px;*\/\n}\n.txt_1 h3 {\n    font-size: 20px;\n    font-weight: 600;\n    line-height: 36px;\n\/*    color: #000A25;*\/\n}\n.img_1 img {\n    width: 100%;\n    max-width: 600px;\n}\n.icn_1 img {\n  width: 95px;\n  height: 94px;\n  margin-right: 11px;\n  margin-top: 20px;\n}\n.txt_1 h3,p {\n  margin-left: 20px;\n\/*  color: #fff;*\/\n}\n@media screen and (max-width: 786px) {\n.all_flx {\n\tdisplay: block;\n}\n}\n<\/style>\n\n\n\t<div class=\"container\">\n<div class=\"head_txt\">\n<h2>Live Your Life, Your Way, Without Losing Touch\n<\/h2>\n<p>You never want the people you love to wonder “whatever happened to …” you. On the other hand, you can’t imagine living in the city, or perhaps even in any one place for too long. \n\t<\/p>\n\t<\/div>\n\n\t<div class=\"all_flx\">\n\t\t<div class=\"div_1\">\n\t<div class=\"flx flx1\">\n\t<div class=\"icn_1\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/1.png?v=1667555387\">\n\t<\/div>\n<div class=\"txt_1 txt_2\">\n<h3>High-Speed 4G LTE<\/h3>\n<p>Nomad uses 4G LTE technology to connect you to the nation’s leading carriers - for fast reliable internet<\/p>\n<\/div>\n<\/div>\n<div class=\"flx flx1\">\n\t<div class=\"icn_1\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/2_6e65f0b1-da91-424b-9b15-f61d0d121d0d.png?v=1667555402\">\n\t<\/div>\n<div class=\"txt_1 txt_2\">\n<h3>Up to Unlimited Data\/All Your Devices<\/h3>\n<p>Nomad’s devices are specifically designed to connect to the closest cellular towers, to provide the strongest signal possible. This lets you use all your devices to tap into Wi-Fi<\/p>\n<\/div>\n<\/div>\n<div class=\"flx flx1\">\n\t<div class=\"icn_1\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/3.png?v=1667555414\">\n\t<\/div>\n<div class=\"txt_1 txt_2\">\n<h3>Why 4G often is better than satellite<\/h3>\n<p>In addition to much cheaper activation costs, you don’t have to remove trees, mount heavy, expensive equipment or wait for the rain to pass to use our fast, reliable 4G LTE signal<\/p>\n<\/div>\n<\/div>\n<\/div>\n\n\n<div class=\"div_2\">\n\t\t<div class=\"flx\">\n\t<div class=\"icn_1\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/4.png?v=1667555428\">\n\t<\/div>\n<div class=\"txt_1\">\n<h3>7-Day No Risk - Money Back Guarantee<\/h3>\n<p>Once you receive your router, it's just a few simple steps to getting online. If for some reason it doesn’t work, our support team is ready to help. In the rare event they can’t, we'll give you your money back, guaranteed<\/p>\n<\/div>\n<\/div>\n<div class=\"flx\">\n\t<div class=\"icn_1\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/5.png?v=1667555445\">\n\t<\/div>\n<div class=\"txt_1\">\n<h3>Go Where You Wanna Go<\/h3>\n<p>At Nomad, your connection is our mission. We're committed to providing On-the-Go Internet service to people in RVs, Van also, connect people in rural communities that don’t have service. Let us find the plan for you! <\/p>\n<\/div>\n<\/div>\n<div class=\"flx\">\n\t<div class=\"icn_1\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/6.png?v=1667555456\">\n\t<\/div>\n<div class=\"txt_1\">\n<h3>No Contract, No Credit Check<\/h3>\n<p>With Nomad, you have one less hassle. Your monthly payment pre-pays for your service. That’s all there is to it! Check out our and let us find the one for you!<\/p>\n<\/div>\n<\/div>\n<\/div>\n<\/div>\n          <\/div>"
+        }
+      },
+      "faqhtml": {
+        "type": "faqhtml",
+        "settings": {
+          "subheading": "",
+          "title": "Frequently Asked Questions",
+          "html": "<div class=\"accordion-body\">\n  <div class=\"accordion\">   \n    \n    <div class=\"container\">\n      <div class=\"label\">HOW IS THIS DIFFERENT FROM MY PHONE PLAN?<\/div>\n      <div class=\"content\">The phone plans that carriers normally offer are for data used just on your phone. Instead, Nomad Internet is specifically designed to provide High-Speed Wi-Fi for EVERY connected device in your home or office including laptops, smart TVs, gaming consoles and other Wi-Fi connected devices<\/div>\n    <\/div>\n \n    <div class=\"container\">\n      <div class=\"label\">WHICH DEVICE IS RIGHT FOR ME?<\/div>\n      <div class=\"content\">The two main devices types that we offer are hotspots and routers. Routers are best for most home\/office setups, as they provide far superior range and connectivity, while hotspots provide a battery powered solution to take your WIFI on the go. All of our devices ship pre-configured and plug-and-play, which means setup is simply connecting the power cable to the wall so you can spend less time setting-up and more time surfing the web! Goodbye invasive installs. Hello Nomad Internet. Please note that the devices displayed on our site are only for illustration purposes. The device you receive might differ, as we change the router we use based on what works best in your area.\n<\/div>\n    <\/div>\n  \n    <div class=\"container\">\n      <div class=\"label\">WHICH PLAN IS BEST FOR ME?<\/div>\n      <div class=\"content\">Each color represents one of the major cellular carrier networks. Therefore, the primary difference between each plan is the coverage each network provides. View each of our plan’s coverage to identify which is most likely to work at your usage location(s). For help with selecting a plan, visit the Help Me Choose page for detailed step-by-step instructions.<\/div>\n    <\/div>\n   \n    <div class=\"container\">\n        <div class=\"label\">WHAT HAPPENS IF WHAT I CHOOSE DOESN’T WORK?<\/div>\n      <div class=\"content\">If the plan you initially choose does not connect or is slower than expected, this most likely means a lack of LTE coverage\/reception at your location, or less commonly, the cellular tower your device is connecting to is either using outdated antennas or is congested from high usage in your area. Regardless of the reason, our 7-Day No Risk Return Policy has you completely covered. Simply return your device for a 100% Refund and let us help you choose another plan that’s best for you!<\/div>\n    <\/div> \n  <\/div>\n<script>\n  const accordion = document.getElementsByClassName('container');\n\nfor (i=0; i<accordion.length; i++) {\n  accordion[i].addEventListener('click', function () {\n    this.classList.toggle('active')\n  })\n}\n\n<\/script>\n<style>\nbody {\n  background-color: #FAFAFA;\n}\n\nh1 {\n  text-align: center;\n  margin: 40px 0;\n}\n.accordion {\n  width: 800px;\n  margin: 0px auto;\n  color: black;\n  padding: 45px 46px 45px 0px;\n}\n\n.accordion .container {\n  position: relative;\n  margin: 10px 10px;\n}\n\n.accordion .label {\n  position: relative;\n  padding: 10px 0;\n  font-size: 30px;\n  color: black;\n  cursor: pointer;\n}\n\n.accordion .label::before {\n  content: '+';\n  color: black;\n  position: absolute;\n  top: 50%;\n  right: -5px;\n  font-size: 30px;\n  transform: translateY(-50%);\n}\n\n.accordion .content {\n  position: relative;\n  background: white;\n  height: 0;\n  font-size: 20px;\n  text-align: justify;\n  width: 700px;\n  overflow: hidden;\n  transition: 0.5s;\n}\n\n.accordion hr {\n  width: 100;\n  margin-left: 0;\n  border: 1px solid grey;\n}\n\n.accordion .container.active .content {\n  height: 150px;\n}\n\n.accordion .container.active .label::before {\n  content: '-';\n  font-size: 30px;\n}\n\n<\/style>\n<\/div>"
+        }
+      },
+      "testimonial_new": {
+        "type": "testimonial_new",
+        "blocks": {
+          "da28ca0e-66d9-48d2-ad1d-be71f6d7ba95": {
+            "type": "slide",
+            "settings": {
+              "testimonial_description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur which is the same as saying through shrinking from toil and pain",
+              "image": "shopify:\/\/shop_images\/Ellipse_4_e7ffc8cf-7afc-45ec-8730-ca1964c63c2a.png",
+              "testimonial_name": "Ryan T"
+            }
+          },
+          "5331829f-7d73-4bd8-b913-11340514cbc2": {
+            "type": "slide",
+            "settings": {
+              "testimonial_description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur which is the same as saying through shrinking from toil and pain",
+              "image": "shopify:\/\/shop_images\/Ellipse_4_e7ffc8cf-7afc-45ec-8730-ca1964c63c2a.png",
+              "testimonial_name": "Ryan T"
+            }
+          },
+          "61a682e9-bed3-4018-9b64-ec7e2bf313d1": {
+            "type": "slide",
+            "settings": {
+              "testimonial_description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur which is the same as saying through shrinking from toil and pain",
+              "image": "shopify:\/\/shop_images\/Ellipse_4_e7ffc8cf-7afc-45ec-8730-ca1964c63c2a.png",
+              "testimonial_name": "Ryan T"
+            }
+          },
+          "41b60ce3-821f-428a-b865-5d4f3c50b9c8": {
+            "type": "slide",
+            "settings": {
+              "testimonial_description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur which is the same as saying through shrinking from toil and pain",
+              "image": "shopify:\/\/shop_images\/Ellipse_4_e7ffc8cf-7afc-45ec-8730-ca1964c63c2a.png",
+              "testimonial_name": "Ryan T"
+            }
+          }
+        },
+        "block_order": [
+          "da28ca0e-66d9-48d2-ad1d-be71f6d7ba95",
+          "5331829f-7d73-4bd8-b913-11340514cbc2",
+          "61a682e9-bed3-4018-9b64-ec7e2bf313d1",
+          "41b60ce3-821f-428a-b865-5d4f3c50b9c8"
+        ],
+        "settings": {
+          "heading": "Some of Our Stisfied Individuals Across The Globe."
+        }
+      },
+      "reviewpagebanner": {
+        "type": "reviewpagebanner",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/Rectangle_49_6ae58f2c-51c6-4601-8468-0d63e6eeecc4.png",
+          "main_heading": "<div class=\"member\">\n<div>Membership <br>\nPlans<\/div>\n<div><img style=\"max-width:120px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Group_1028.png?v=1668140605\"><\/div>\n<\/div>",
+          "description": "<p>America's Best for Rural and On-the-Go Internet<br\/><\/p>",
+          "button_text": "Subscribe Now",
+          "button_url": "https:\/\/nomadinternet.com\/pages\/nomad-plans",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "vedio-with-text": {
+        "type": "vedio-with-text",
+        "blocks": {
+          "ba4648a2-ddb4-46f5-9007-30727237c97c": {
+            "type": "video",
+            "settings": {
+              "video_url": "#",
+              "video_image": "shopify:\/\/shop_images\/Rectangle_3.png"
+            }
+          }
+        },
+        "block_order": [
+          "ba4648a2-ddb4-46f5-9007-30727237c97c"
+        ],
+        "settings": {
+          "title": "Join today for the largest and best <span>rural coverage<\/span> available.",
+          "description": "Everyone should be able to connect to the internet, no matter where they live. Fast, reliable internet isn't just nice to have – it's essential.  Get connected today and get access to the important things like working, learning, banking, and more, online.",
+          "button_text": "Check Your Location",
+          "button_url": "",
+          "button_background": "#109D59",
+          "button_color": "#FFFFFF"
+        }
+      },
+      "imagetextreview": {
+        "type": "imagetextreview",
+        "blocks": {
+          "a0567ce8-a113-4c84-978b-9c2ac62818c0": {
+            "type": "video",
+            "settings": {
+              "video_url": "#",
+              "video_image": "shopify:\/\/shop_images\/Rectangle_3.png"
+            }
+          }
+        },
+        "block_order": [
+          "a0567ce8-a113-4c84-978b-9c2ac62818c0"
+        ],
+        "settings": {
+          "title": "Nomad Internet Review: Stay Connected With a Wireless, Cellular Setup",
+          "description": "This collection of \"digital nomads\" is giving rural areas access to broadband without being tethered to traditional wireline services.",
+          "button_text": "Check Your Location",
+          "button_url": "",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "referpagebanner": {
+        "type": "referpagebanner",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/Rectangle_49_813a543e-1e7f-4d32-999b-0c3693944323.png",
+          "main_heading": "Get\nFREE INTERNET<br>\nfor life*",
+          "description": "<p>Monthly rewards for every active friend or family member you refer for Nomad Internet services<\/p>",
+          "button_text": "Subscribe Now",
+          "button_url": "#",
+          "button_background": "#109D59",
+          "button_color": "#FFFFFF"
+        }
+      },
+      "5a18751f-115b-4890-8b39-fbb443a43de5": {
+        "type": "blackfridaybanner",
+        "settings": {}
+      },
+      "8633f943-5531-4d91-bc78-157a324c2aac": {
+        "type": "icon-with-text-section",
+        "blocks": {
+          "ab924101-7dc4-4ca4-9b7f-3fbe9c8edb8b": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Rectangle_74_d57301c4-76e9-48e3-95b5-d80764f9631a.png?v=1668682121\">",
+              "title": "",
+              "description": "\"This collections of 'digital nomads' is giving rural areas access to broadband without being tethered to traditonal wireline services\" <br>July, 2022",
+              "button_text": "",
+              "button_url": "",
+              "button_text1": "Click Here",
+              "button_url1": "https:\/\/www.cnet.com\/home\/internet\/nomad-internet-review\/"
+            }
+          },
+          "be625bbb-56af-4c2c-abb3-cfa1dc80a547": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<img style=\"max-width: 420px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Rectangle_71.png?v=1668682102\">",
+              "title": "",
+              "description": "Best Ways to Get portable internet for 2022. Nomad selected \"Best for long-term use and RVs\" September, 2022",
+              "button_text": "",
+              "button_url": "",
+              "button_text1": "Click Here",
+              "button_url1": "https:\/\/www.highspeedinternet.com\/resources\/portable-internet?fbclid=IwAR1cCmFSFRIw_Fi4UVThF8fE4UnlxB5UbQ2R37D5fzMOvT_0knjGBb3Zxhs"
+            }
+          },
+          "336fad43-6367-4c36-870a-ba7850ea5bbb": {
+            "type": "item",
+            "settings": {
+              "svg_icon": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Rectangle_72.png?v=1668682112\">",
+              "title": "",
+              "description": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Rectangle_1100.png?v=1668682315\">",
+              "button_text": "",
+              "button_url": "",
+              "button_text1": "Click Here",
+              "button_url1": "https:\/\/www.google.com\/maps\/place\/Nomad+Internet\/@29.7864085,-98.0309977,17z\/data=!3m1!4b1!4m14!1m6!3m5!1s0x865c5f44de9c4483:0xab67070f8b2f0c5b!2sNomad+Internet!8m2!3d29.7864039!4d-98.0284228!3m6!1s0x865c5f44de9c4483:0xab67070f8b2f0c5b!8m2!3d29.7864039!4d-98.0284228!9m1!1b1"
+            }
+          }
+        },
+        "block_order": [
+          "ab924101-7dc4-4ca4-9b7f-3fbe9c8edb8b",
+          "be625bbb-56af-4c2c-abb3-cfa1dc80a547",
+          "336fad43-6367-4c36-870a-ba7850ea5bbb"
+        ],
+        "settings": {
+          "main_heading": "<p>Reviews About Us.<\/p>"
+        }
+      },
+      "bc79d62a-5df3-40ee-97ce-3293555f4188": {
+        "type": "home-plan-option-product",
+        "disabled": true,
+        "settings": {}
+      },
+      "imagewithproduct": {
+        "type": "imagewithproduct",
+        "settings": {}
+      },
+      "videowithtestimonial": {
+        "type": "videowithtestimonial",
+        "settings": {}
+      },
+      "f9d7071b-4948-448d-98ba-a21ecbbcd7f3": {
+        "type": "customhtml",
+        "disabled": true,
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "html": "<div id=\"text-cus\" class=\"widget widget_text border-top1 pt-5 pb-3\">\n           <h4 class=\"title\">Our app is Live. Download Now!<\/h4>\n          <a href=\"https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/ezgif_1.png?v=1669889680\"><\/a>\n        <\/div>"
+        }
+      },
+      "nomadplansherosection": {
+        "type": "nomadplansherosection",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/Rectangle_5.png",
+          "main_heading": "MANAGE your Plan <br> \n<span class=\"ul_plan_herose\"><ul>\n<li>Pause Billing<\/li>\n<li>Anytime<\/li>\n<li>All Free<\/li>\n<\/ul>\n<\/span>\nthrough the Nomad App",
+          "description": "<p>INTRODUCING FOR THE FIRST TIME <\/p>",
+          "button_text": "Subscribe Now",
+          "button_url": "",
+          "button_url1": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "nomadmodemsherosection": {
+        "type": "nomadmodemsherosection",
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/6_fcb13345-2b50-47fd-8abe-b968bc48ad73.png",
+          "main_heading": "World's Most <span style=\"display:inline-block;\">Powerful HotSpot<\/span> Device",
+          "description": "<p>Get fast, stable, secure broadband Internet almost anywhere — without the wires.<\/p>",
+          "button_text": "Subscribe Now",
+          "button_url": "",
+          "button_url1": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "bottombarofherosection": {
+        "type": "bottombarofherosection",
+        "settings": {}
+      },
+      "customhtmlnomadmodems": {
+        "type": "customhtmlnomadmodems",
+        "settings": {}
+      },
+      "image-with-text-modem": {
+        "type": "image-with-text-modem",
+        "settings": {
+          "title": "The Nomad <span> RAPTOR<\/span>",
+          "image": "shopify:\/\/shop_images\/raptor_1.png",
+          "description": "The Best-in-class 5G enabled Modem <br>Download Speed up to 3.3 Gbps*<br> Connect up to 128 Devices <br>Enterprise-Grade Security",
+          "button_text": "Starting @ $499",
+          "button_url": "https:\/\/nomadinternet.com\/products\/thenomadraptor",
+          "right_text": "",
+          "left_text": "",
+          "button_background": "#ffffff",
+          "button_color": "#ffffff"
+        }
+      },
+      "image-with-text-1modem": {
+        "type": "image-with-text-1modem",
+        "settings": {
+          "title": "The Nomad <span>AIR<\/span>",
+          "image": "shopify:\/\/shop_images\/Air_2.png",
+          "description": "The Best-in-class 5G enabled Modem<br> Download Speed up to 1 Gbps*<br> Connect up to 30 Devices<br> Enterprise-Grade Security",
+          "button_text": "Starting @ $299",
+          "button_url": "https:\/\/nomadinternet.com\/products\/nomad-air",
+          "right_text": "Fast, Reliable Internet",
+          "left_text": "Just$99",
+          "button_background": "rgba(0,0,0,0)",
+          "button_color": "#ffffff"
+        }
+      },
+      "modern": {
+        "type": "modern",
+        "blocks": {
+          "a4ee0dd6-d16d-4bba-bdad-e00240274966": {
+            "type": "item",
+            "settings": {
+              "sb1": "World’s Fastest 5G Modem",
+              "sb2": "Strong RF performance and antenna design provide superior coverage and throughput.",
+              "bullt": "shopify:\/\/shop_images\/Group_1684.png"
+            }
+          },
+          "a2ab491f-775c-4256-bff3-3a7b494998a6": {
+            "type": "item",
+            "settings": {
+              "sb1": "Over the Top Connectivity",
+              "sb2": "Dual-band Wi-Fi 6 for up to 128 connected devices, multiple ethernet LAN ports and a 1 Gbps WAN port.",
+              "bullt": "shopify:\/\/shop_images\/Group_1684.png"
+            }
+          },
+          "69057f05-5d28-45dc-9cff-a68cb39471c8": {
+            "type": "item",
+            "settings": {
+              "sb1": "Device management through Mobile and Cloud",
+              "sb2": "Manage your Plans, settings, multiple devices etc. with the easy-to-use Nomad Mobile App.",
+              "bullt": "shopify:\/\/shop_images\/Group_1684.png"
+            }
+          }
+        },
+        "block_order": [
+          "a4ee0dd6-d16d-4bba-bdad-e00240274966",
+          "a2ab491f-775c-4256-bff3-3a7b494998a6",
+          "69057f05-5d28-45dc-9cff-a68cb39471c8"
+        ],
+        "settings": {
+          "sb": "WHY CHOOSE NOMAD",
+          "sbm": "Some reasons to choose\nour <span style=\"color:#109D59\">HOTSPOT<\/span> Device",
+          "descr": "There are many reasons which makes Nomad devices stand out from others  and make it a perfect choice for you"
+        }
+      },
+      "image-with-textplansnomad": {
+        "type": "image-with-textplansnomad",
+        "settings": {
+          "title": "Nomad Internet <br><span style=\"color:red\">Unlimited 5G<\/span> Plan",
+          "image": "shopify:\/\/shop_images\/99.png",
+          "description": "<ul> <li>Truly Unlimited on 5G<\/li> <li>No throttling<\/li> <li>Up to 200 Mbps Download Speed<\/li> <li>Powered by Nomad<\/li> <li>Supports Nomad 5G Ultra-Wide (C-band)<\/li> <li>7 Day, No Risk, Money-Back Guarantee.<\/li> <\/ul>",
+          "button_text": "Check Your Location",
+          "button_url": "",
+          "right_text": "Fast, Reliable Internet",
+          "left_text": "Just$99",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "customhtmlnomadplans": {
+        "type": "customhtmlnomadplans",
+        "settings": {}
+      },
+      "imagewithtext_plan_nomad": {
+        "type": "imagewithtext_plan_nomad",
+        "settings": {
+          "title": "Gigabyte Speed for <span>Unlimited Fun <\/span>",
+          "image": "shopify:\/\/shop_images\/maxwell-ridgeway-UyhtqolKMb4-unsplash_1.png",
+          "description": "With ground-breaking 5G and 4G LTE speeds, the Nomad router provides lightning-fast internet connectivity in the most obscure areas. Nomad offers the best plans, especially for travelers who wander off the grid but want to check in from time to time. Whether you want to stream videos, play games online, create and upload content, consume OTT content lag-free, or work in the mountains, Nomad Routers has you covered and will deliver the perfect 5G user experience and peak performance.",
+          "button_text": "Check Your Location",
+          "button_url": "",
+          "right_text": "Fast, Reliable Internet",
+          "left_text": "Just$99",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "29661ba4-9a0e-41be-b465-731ee84a1cd1": {
+        "type": "image-with-text-modem",
+        "settings": {
+          "title": "Nomad Internet <br><span style=\"color:red;text-transform:normal;\">PLUS<\/span> Plan",
+          "image": "shopify:\/\/shop_images\/image.png",
+          "description": "<ul>   <li>Truly Unlimited<\/li>   <li>No throttling<\/li>   <li>Up to 200 Mbps Download Speed<\/li>   <li>Powered by Nomad<\/li>   <li>7 Day, No Risk, Money-Back Guarantee.<\/li> <\/ul>",
+          "button_text": "Check Your Location",
+          "button_url": "",
+          "right_text": "Fast, Reliable Internet",
+          "left_text": "Just$99",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "12a835f9-776b-4047-aedc-d61b4cebbede": {
+        "type": "home-equip",
+        "settings": {}
+      },
+      "76d3c963-6791-4eac-8c0f-31fd3726243a": {
+        "type": "image-box",
+        "blocks": {
+          "76d3c963-6791-4eac-8c0f-31fd3726243a-16704168584f61eee5-0": {
+            "type": "gallery_image",
+            "settings": {
+              "slide": "shopify:\/\/shop_images\/testiiiiiii.png"
+            }
+          },
+          "76d3c963-6791-4eac-8c0f-31fd3726243a-16704168584f61eee5-1": {
+            "type": "gallery_image",
+            "settings": {
+              "slide": "shopify:\/\/shop_images\/testiiiiiii.png"
+            }
+          }
+        },
+        "block_order": [
+          "76d3c963-6791-4eac-8c0f-31fd3726243a-16704168584f61eee5-0",
+          "76d3c963-6791-4eac-8c0f-31fd3726243a-16704168584f61eee5-1"
+        ],
+        "disabled": true,
+        "settings": {
+          "show_nav_arrows": true,
+          "color_style": "white",
+          "transition": "fade",
+          "autoplay": true,
+          "duration": 4,
+          "show_margins": false,
+          "slide_height": "five-fifty-height-hero",
+          "slide_image_position": "left",
+          "slide_image_width": "med_s12|med_s12",
+          "subheading": "Humble Beginnings",
+          "title": "Tell a Story",
+          "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
+          "cta": "",
+          "link": "",
+          "button_style": "primary"
+        }
+      },
+      "e9007a93-21c1-416c-9819-b60d104680c2": {
+        "type": "home-flex",
+        "settings": {
+          "title11": "Download Nomad App",
+          "image11": "shopify:\/\/shop_images\/mobb.png",
+          "description11": "Download the Nomad App buy Modems and to Activate, Pause, Resume, and Deactivate your plans.",
+          "button_text11": "Check Your Location",
+          "button_url11": "",
+          "right_text11": "Fast, Reliable Internet",
+          "left_text11": "Just$99",
+          "button_background11": "#109d59",
+          "button_color11": "#ffffff"
+        }
+      },
+      "customhtmlproductpage": {
+        "type": "customhtmlproductpage",
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "html": "<div class=\"container\">\n  <div class=\"all_flx\">\n    <div class=\"div_1\">\n      <div class=\"flx flx1\">\n        <div class=\"txt_1 txt_2\">\n          <br><h2>Cutting-edge technology for unlimited, fast internet on the go!<\/h2>\n\n          <p>Are you tired of struggling to find reliable internet while on vacation or in rural areas? Tired of slow internet speeds as more people connect to the same WiFi? Say goodbye to those frustrations with Nomad AIR! <\/p>\n          <br>\n          <p>Our all-new Nomad AIR is a cutting-edge internet solution that delivers incredible speeds of up to 1 Gbps*, allowing you to connect with up to 30 devices at a time without slowing down. Whether you're a digital nomad, a Rural Area Resident, or an RVer, Nomad AIR is perfect for you.<\/p>\n          <br>\n          <p>Not only is Nomad AIR great for travel, but it also offers 5G speeds, making it ideal for remote offices, medical facilities, dorms, apartments, and other places. And with dual sim card compatibility, Nomad AIR automatically switches between sims to provide you with the best possible speed, ensuring that you always have a strong, reliable connection.<\/p>\n          <br>\n          <p>The Nomad Air supports two SIM cards and may automatically switch between them based on signal quality, data use, service availability, and other factors. The Air can be used with most of the top international carriers thanks to multi-carrier firmware.<\/p>\n        <\/div>\n      <\/div>\n    <\/div>\n\n    <div class=\"div_2\">\n     <h2>Here’s Why You’ll Love This<\/h2>\n      <div class=\"flx\">\n        <div class=\"icn_1\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/healthicons_yes.png?v=1670417612\">\n        <\/div>\n        <div class=\"txt_1\">\n          <h3>Unlimited, fast internet<\/h3>\n          <p>Say goodbye to slow internet and hello to lightning-fast speeds, up to 1 Gbps. Nomad AIR is a cutting-edge, enterprise-grade internet solution designed to keep you connected no matter where you go. Whether you're a digital nomad, remote worker, or RV enthusiast, you can use Nomad AIR without the worry of speed fluctuations or signal dropouts<\/p>\n        <\/div>\n      <\/div>\n\n      <div class=\"flx\">\n        <div class=\"icn_1\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/healthicons_yes.png?v=1670417612\">\n        <\/div>\n        <div class=\"txt_1\">\n          <h3>Connect with multiple devices<\/h3>\n          <p>Nomad AIR allows you to connect with up to 30 devices at a time, making it perfect for families, groups, and businesses. <\/p>\n        <\/div>\n      <\/div>\n\n      <div class=\"flx\">\n        <div class=\"icn_1\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/healthicons_yes.png?v=1670417612\">\n        <\/div>\n        <div class=\"txt_1\">\n          <h3>Perfect for travel<\/h3>\n          <p>Great for travel, Nomad Air offers breakthrough 5G and 4G LTE speeds, making it perfect for Rural Area Residents, RVers, and Digital Nomads. But it doesn’t end there! Nomad Air is also ideal for residences, shops, restaurants, remote offices, medical facilities, dorms, apartments, and other places.<\/p>\n        <\/div>\n      <\/div>\n\n      <div class=\"flx\">\n        <div class=\"icn_1\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/healthicons_yes.png?v=1670417612\">\n        <\/div>\n        <div class=\"txt_1\">\n          <h3>Dual sim compatibility<\/h3>\n          <p>Utilizing dual SIM cards and connecting to the most reliable 5G networks, Nomad AIR keeps you connected even in the most remote locations. Say goodbye to expensive satellite internet, and say hello to a world of unlimited possibilities. With Nomad AIR, you can travel in confidence knowing your connection is secure, fast, and always on.<\/p>\n        <\/div>\n      <\/div>\n\n      <div class=\"flx\">\n        <div class=\"icn_1\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/healthicons_yes.png?v=1670417612\">\n        <\/div>\n        <div class=\"txt_1\">\n          <h3>Enterprise-grade security<\/h3>\n          <p>Enterprise-grade security: Nomad AIR provides advanced security features, including OpenVPN, access control, end-to-end device security, threat identification, monitoring and alerts, and more. This ensures that your internet connection is always safe and secure.<\/p>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>\n\n<br>\n\n<h2>Don't settle for slow, unreliable internet anymore. <br>Choose Nomad AIR and experience the power of unlimited, fast internet on the go.<\/h2>"
+        }
+      },
+      "424a2c42-be04-4b17-8a5f-2a85f98ac528": {
+        "type": "hero-section-homepage",
+        "disabled": true,
+        "settings": {
+          "banner_image": "shopify:\/\/shop_images\/bg-mountains.png",
+          "main_heading": "<div class=\"txt_imgon_bnr\">\n    <div class=\"header_mountain_description\">\n         Introducing<br>\n        <span class=\"hmt_highlight\">Nomad AIR<\/span><br>\n        <span class=\"green-round-box\">Rural High-Speed Internet<\/span><br>\n        Now with <span>Unlimited 5G<\/span>\n    <\/div>\n    \n    <a class=\"hrtrr\" href=\"#shopify-section-29661ba4-9a0e-41be-b465-731ee84a1cd1\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/modem-small-trimmed.png?v=1670630128\"><\/a>\n<\/div>\n<div class=\"lern_more\">\n<a href=\"https:\/\/nomadinternet.com\/pages\/nomad-modems\">Learn More<\/a>\n<\/div>",
+          "description": "",
+          "banner_image1": "shopify:\/\/shop_images\/ezgif_1.png",
+          "button_text": "Buy Now",
+          "button_url": "",
+          "button_url1": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379",
+          "button_background": "#109d59",
+          "button_color": "#ffffff"
+        }
+      },
+      "5718381a-3233-472b-be3a-8dbc6201bff1": {
+        "type": "static_slides",
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "title_position": "left",
+          "blocks_text_align": "justify",
+          "hide_quotes": false,
+          "columns": 3
+        }
+      },
+      "app-banner": {
+        "type": "app-banner",
+        "settings": {}
+      },
+      "app-below-banner": {
+        "type": "app-below-banner",
+        "settings": {}
+      },
+      "app-features": {
+        "type": "app-features",
+        "settings": {}
+      },
+      "app-NeverHeard": {
+        "type": "app-NeverHeard",
+        "settings": {}
+      },
+      "app-videosection": {
+        "type": "app-videosection",
+        "settings": {}
+      },
+      "app-AppScreen": {
+        "type": "app-AppScreen",
+        "settings": {}
+      },
+      "border-app": {
+        "type": "border-app",
+        "settings": {}
+      },
+      "airvsraptormob": {
+        "type": "airvsraptormob",
+        "settings": {}
+      },
+      "hero-section-video": {
+        "type": "hero-section-video",
+        "settings": {}
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/popup_desktop.png",
+          "mobile_image": "shopify:\/\/shop_images\/NOMAD_2.png",
+          "logo": "shopify:\/\/shop_images\/logo-dark_1.png",
+          "sub_heading": "NOMADPALOOZA SALES",
+          "heading": "Buy, Try, Decide!",
+          "content": "<p>Not 100% Happy? Return within 7 Days for a Full Refund!<\/p>",
+          "bottom_content": "<p>‘Buy, Try, Decide!’ policy refunds cover the product price only. Setup, activation, and shipping fees are non-refundable. Please see our terms for more details.<\/p>"
+        }
+      },
+      "vending-image-text": {
+        "type": "vending-image-text",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Nomad_Smarthub_9e5b41ff-fbbd-4b05-bd9a-808e0e9bb947.png",
+          "title": "welcome to nomad internet smart hub",
+          "button_text": "HOW IT WORKS"
+        }
+      },
+      "vending-steps": {
+        "type": "vending-steps",
+        "blocks": {
+          "4a01056a-2aaa-4f80-83bf-b06afc3ae887": {
+            "type": "vending_machine_step",
+            "settings": {
+              "step": "1",
+              "title": "TRY IT",
+              "description": "<p>Connect to \"Nomad Internet,\" run speed tests, browse freely, and enjoy a complimentary GB on us!<\/p>",
+              "button_link": "\/",
+              "button_text": "SHOW PASSWORD",
+              "isButton": true
+            }
+          },
+          "b3677452-65eb-49e4-87f5-f530b008d320": {
+            "type": "vending_machine_step",
+            "settings": {
+              "step": "2",
+              "title": "RENT IT",
+              "description": "<p>Select your modem, pay, and watch the machine work its magic, dispensing your gateway to seamless connectivity.<\/p>",
+              "button_link": "\/",
+              "button_text": "",
+              "isButton": false
+            }
+          },
+          "5c540e23-e7ce-4bed-93e9-38a0d1bf9c15": {
+            "type": "vending_machine_step",
+            "settings": {
+              "step": "3",
+              "title": "ACTIVATE IT",
+              "description": "<p>Activate your chosen modem at <a href=\"http:\/\/activatenomad.com\/\" target=\"_blank\" title=\"http:\/\/activatenomad.com\">activatenomad.com<\/a> in under 60 seconds for seamless, high-speed connectivity.<\/p>",
+              "button_link": "http:\/\/activatenomad.com\/",
+              "button_text": "ACTIVATE NOW",
+              "isButton": false
+            }
+          }
+        },
+        "block_order": [
+          "4a01056a-2aaa-4f80-83bf-b06afc3ae887",
+          "b3677452-65eb-49e4-87f5-f530b008d320",
+          "5c540e23-e7ce-4bed-93e9-38a0d1bf9c15"
+        ],
+        "settings": {}
+      },
+      "vending-machine-step": {
+        "type": "vending-machine-step",
+        "blocks": {
+          "505ea2a5-dd75-45fe-ab1a-ac57cb29705e": {
+            "type": "step",
+            "settings": {
+              "heading": "CONNECT YOUR PHONE",
+              "image": "shopify:\/\/shop_images\/1_1.svg",
+              "text1": "<p>Connect to \"Nomad Internet,\" run speed tests, browse freely, and enjoy a complimentary GB on us!<\/p>",
+              "text2": "<p>Nomad Internet offers unlimited, unthrottled and high speed internet data spanning the entire nation.<\/p>",
+              "text3": "<p>No Contract\/Cancel Anytime and No<\/p><p>Credit Check<\/p>",
+              "sub_title1": "",
+              "title1": "",
+              "price1": "",
+              "desc1": "",
+              "sub_title2": "",
+              "title2": "",
+              "price2": "",
+              "desc2": ""
+            }
+          },
+          "1957e7f6-e735-4b4c-adf8-c13d7ad705e2": {
+            "type": "step",
+            "settings": {
+              "heading": "GET YOUR MODEM",
+              "image": "shopify:\/\/shop_images\/2.svg",
+              "text1": "<p>Utilize the touchscreen to choose the modem and follow on-screen instructions for rental.<\/p>",
+              "text2": "<p><strong>Preview Your Monthly Plan<\/strong><\/p><p>Pay later hassle-free!<\/p>",
+              "text3": "",
+              "sub_title1": "Popular",
+              "title1": "Nomad Unlimited Ultra Plan",
+              "price1": "19495",
+              "desc1": "<p>(billed on activation)<\/p><p>Download up to 200Mbps, 4k HD video streaming, Excellent gaming latency<\/p>",
+              "sub_title2": "",
+              "title2": "Nomad Unlimited  Plan",
+              "price2": "9995",
+              "desc2": "<p>(billed on activation)<\/p><p>Download up to 100Mbps, 1080p HD video streaming, Good gaming latency<\/p>"
+            }
+          },
+          "efbfb0cb-a57e-4092-82a4-f657d30bc368": {
+            "type": "step",
+            "settings": {
+              "heading": "ACTIVATE MODEM",
+              "image": "shopify:\/\/shop_images\/3.svg",
+              "text1": "<p>Pick the modem that was dispensed from the vending maching<\/p>",
+              "text2": "<p>Unbox the modem and connect it to<\/p><p>power.<\/p>",
+              "text3": "<p>Activate your chosen modem at <a href=\"https:\/\/activatenomad.com\" target=\"_blank\" title=\"https:\/\/activatenomad.com\">activatenomad.com<\/a> in under 60 seconds for seamless, high-speed connectivity.<\/p>",
+              "sub_title1": "",
+              "title1": "",
+              "price1": "",
+              "desc1": "",
+              "sub_title2": "",
+              "title2": "",
+              "price2": "",
+              "desc2": ""
+            }
+          }
+        },
+        "block_order": [
+          "505ea2a5-dd75-45fe-ab1a-ac57cb29705e",
+          "1957e7f6-e735-4b4c-adf8-c13d7ad705e2",
+          "efbfb0cb-a57e-4092-82a4-f657d30bc368"
+        ],
+        "settings": {}
+      },
+      "google-maps-header": {
+        "type": "google-maps-header",
+        "settings": {
+          "icon": "shopify:\/\/shop_images\/Group_469484.svg",
+          "heading": "nomad internet smart hub Tracker"
+        }
+      },
+      "google-maps-bottom": {
+        "type": "google-maps-bottom",
+        "settings": {
+          "icon": "shopify:\/\/shop_images\/75962-tif_1.svg",
+          "heading": "welcome to nomad internet<br>smart hub Tracker",
+          "button_text": "SUGGEST PLACEMENT",
+          "button_link": "https:\/\/nomadinternet.typeform.com\/smarthub"
+        }
+      },
+      "vending-new-step": {
+        "type": "vending-new-step",
+        "blocks": {
+          "02f7f3c6-b2bc-4b73-b64f-04091e4b3dc6": {
+            "type": "item",
+            "settings": {
+              "heading": "SELECT THE PRODUCT",
+              "icon": "shopify:\/\/shop_images\/touch-1-svgrepo-com_1.svg",
+              "content": "<p>Simply touch the screen to select your preferred modem and move on to the next step.<\/p>",
+              "show_card_icons": false,
+              "card_header": "Card Accepted:"
+            }
+          },
+          "88e6b34b-155c-43df-b499-c01bf83539fb": {
+            "type": "item",
+            "settings": {
+              "heading": "Swipe Your Card",
+              "icon": "shopify:\/\/shop_images\/swipe-card-svgrepo-com_1_2.svg",
+              "content": "<p>Complete the transaction by swiping your card on the POS machine.<\/p>",
+              "show_card_icons": true,
+              "card_header": "Card Accepted:",
+              "card_icon1": "shopify:\/\/shop_images\/Payment_method_icon_c3efa72c-4cf0-4cec-9d25-89dfab6b5325.svg",
+              "card_icon2": "shopify:\/\/shop_images\/Payment_method_icon_1.svg",
+              "card_icon3": "shopify:\/\/shop_images\/Payment_method_icon_2.svg",
+              "card_icon4": "shopify:\/\/shop_images\/Payment_method_icon_3.svg"
+            }
+          },
+          "d689437a-fcec-4a48-ab29-8700b4836680": {
+            "type": "item",
+            "settings": {
+              "heading": "Grab Your Modem",
+              "icon": "shopify:\/\/shop_images\/box-svgrepo-com_1.svg",
+              "content": "<p>Head over to the designated \"retrieve\" area,  grab your chosen modem, and activate it at <a href=\"https:\/\/activatenomad.com\" target=\"_blank\" title=\"https:\/\/activatenomad.com\">activatenomad.com<\/a>. <\/p><p>Easy as that!<\/p>",
+              "show_card_icons": false,
+              "card_header": "Card Accepted:"
+            }
+          }
+        },
+        "block_order": [
+          "02f7f3c6-b2bc-4b73-b64f-04091e4b3dc6",
+          "88e6b34b-155c-43df-b499-c01bf83539fb",
+          "d689437a-fcec-4a48-ab29-8700b4836680"
+        ],
+        "settings": {
+          "bg_image": "shopify:\/\/shop_images\/IMG_8202_2_1.png",
+          "mobile_bg_image": "shopify:\/\/shop_images\/IMG_8202_2.png"
+        }
+      },
+      "banner-slideshow": {
+        "type": "banner-slideshow",
+        "blocks": {
+          "d004bc28-2795-499a-8af6-687454f5717f": {
+            "type": "slide-item",
+            "settings": {
+              "show_gradient_color": false,
+              "show_bg_color": false,
+              "bg_color": "#00271f",
+              "content_image_radius": true,
+              "image": "shopify:\/\/shop_images\/RV_Travel_Slider_1_1_3.png",
+              "image_mobile": "shopify:\/\/shop_images\/RV_Travel_Slider_1_1_4.png",
+              "content_alignment": "inner--left",
+              "sub_heading": "Suggest Nomad's Internet Expansion Today.",
+              "sub_heading_color": "#00a77f",
+              "bold_color": "#ff4040",
+              "heading": "<p>Pick Up Your Modem Today with Nomad<\/p>",
+              "heading_color": "#ffffff",
+              "desc": "<p>Experience the ease of same-day modem pickup for uninterrupted internet access<\/p>",
+              "button_text1": "Find nearest hub",
+              "button_link1": "#near",
+              "text_color1": "#ffffff",
+              "button_bg_color1": "#008061",
+              "button_text_color1": "#ffffff",
+              "enable_new_tab1": false,
+              "button_text2": "Suggest Location",
+              "button_link2": "https:\/\/nomadexchange.com\/add-listing\/",
+              "text_color2": "#ffffff",
+              "button_bg_color2": "rgba(0,0,0,0)",
+              "button_text_color2": "#ffffff",
+              "enable_new_tab2": true,
+              "show_contract": true,
+              "contract_header": "Have Questions?",
+              "contract_phonenumber": "+1 210 598 5949"
+            }
+          }
+        },
+        "block_order": [
+          "d004bc28-2795-499a-8af6-687454f5717f"
+        ],
+        "settings": {}
+      },
+      "usp-banner": {
+        "type": "usp-banner",
+        "blocks": {
+          "282d810e-ded6-4ba5-a691-9c5747d88176": {
+            "type": "item",
+            "settings": {
+              "icon": "<svg width=\"34\" height=\"35\" viewbox=\"0 0 34 35\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M19.8337 16.2969H11.3337M14.167 21.9635H11.3337M22.667 10.6302H11.3337M28.3337 17.7135V10.3469C28.3337 7.96665 28.3337 6.77654 27.8704 5.86742C27.463 5.06773 26.8128 4.41756 26.0131 4.0101C25.104 3.54688 23.9139 3.54688 21.5337 3.54688H12.467C10.0868 3.54688 8.89666 3.54688 7.98753 4.0101C7.18784 4.41756 6.53768 5.06773 6.13021 5.86742C5.66699 6.77654 5.66699 7.96665 5.66699 10.3469V25.0802C5.66699 27.4604 5.66699 28.6505 6.13021 29.5597C6.53768 30.3594 7.18784 31.0095 7.98753 31.417C8.89666 31.8802 10.0868 31.8802 12.467 31.8802H17.0003M22.667 23.3802L29.7503 30.4635M29.7503 23.3802L22.667 30.4635\" stroke=\"#00A77F\" stroke-width=\"2.26667\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+              "heading": "No Contract\/Cancel Anytime"
+            }
+          },
+          "de80f43e-22ec-4629-b8d6-cf9824814df6": {
+            "type": "item",
+            "settings": {
+              "icon": "<svg width=\"34\" height=\"35\" viewbox=\"0 0 34 35\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M12.7497 17.7135L15.583 20.5469L21.958 14.1719M13.0357 29.8981C13.5 29.8367 13.969 29.9626 14.3389 30.2475L16.0435 31.5556C16.607 31.9884 17.3908 31.9884 17.9527 31.5556L19.7218 30.1972C20.0523 29.9438 20.4694 29.832 20.8818 29.8871L23.0948 30.1783C23.7983 30.2712 24.4767 29.8792 24.749 29.2229L25.6005 27.164C25.7595 26.7784 26.0648 26.473 26.4504 26.314L28.5091 25.4625C29.1655 25.1918 29.5574 24.5118 29.4645 23.8082L29.1844 21.6754C29.123 21.211 29.2489 20.742 29.5338 20.3721L30.8417 18.6674C31.2746 18.1039 31.2746 17.32 30.8417 16.7581L29.4834 14.9889C29.23 14.6583 29.1183 14.2412 29.1733 13.8288L29.4645 11.6157C29.5574 10.9122 29.1655 10.2337 28.5091 9.96144L26.4504 9.10989C26.0648 8.95091 25.7595 8.64555 25.6005 8.25991L24.749 6.20108C24.4783 5.54471 23.7983 5.15278 23.0948 5.24565L20.8818 5.53684C20.4694 5.59351 20.0523 5.48175 19.7234 5.22991L17.9543 3.87152C17.3908 3.43866 16.607 3.43866 16.0451 3.87152L14.276 5.22991C13.9454 5.48175 13.5283 5.59351 13.116 5.53999L10.903 5.24879C10.1995 5.15593 9.52109 5.54786 9.24879 6.20423L8.39886 8.26306C8.23832 8.64713 7.93298 8.95249 7.54893 9.11304L5.49022 9.96302C4.83388 10.2353 4.44197 10.9137 4.53483 11.6173L4.82601 13.8304C4.87953 14.2428 4.76778 14.6599 4.51595 14.9889L3.15763 16.7581C2.7248 17.3216 2.7248 18.1055 3.15763 18.6674L4.51595 20.4366C4.76935 20.7672 4.8811 21.1843 4.82601 21.5967L4.53483 23.8098C4.44197 24.5134 4.83388 25.1918 5.49022 25.4641L7.54893 26.3156C7.93455 26.4746 8.2399 26.78 8.39886 27.1656L9.25037 29.2244C9.52109 29.8808 10.201 30.2727 10.9046 30.1799L13.0357 29.8981Z\" stroke=\"#00A77F\" stroke-width=\"2.26667\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+              "heading": "No Credit Check"
+            }
+          },
+          "be00eb69-2f16-4612-8e01-19d5524285bb": {
+            "type": "item",
+            "settings": {
+              "icon": "<svg width=\"34\" height=\"35\" viewbox=\"0 0 34 35\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M16.9998 28.3398H17.014M32.3089 13.0409C28.2758 9.34516 22.9011 7.08984 16.9997 7.08984C11.0982 7.08984 5.7235 9.34516 1.69043 13.0409M6.70341 18.0591C9.44908 15.6404 13.0531 14.1732 16.9998 14.1732C20.9465 14.1732 24.5505 15.6404 27.2962 18.0591M22.2391 23.0629C20.7954 21.9312 18.9763 21.2565 16.9997 21.2565C14.9931 21.2565 13.1489 21.9518 11.6949 23.1146\" stroke=\"#00A77F\" stroke-width=\"2.26667\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+              "heading": "Unlimited Nationwide Data"
+            }
+          }
+        },
+        "block_order": [
+          "282d810e-ded6-4ba5-a691-9c5747d88176",
+          "de80f43e-22ec-4629-b8d6-cf9824814df6",
+          "be00eb69-2f16-4612-8e01-19d5524285bb"
+        ],
+        "settings": {
+          "bg_color": "#000000"
+        }
+      },
+      "faq": {
+        "type": "faq",
+        "blocks": {
+          "dd3a2a15-8b6a-493a-86a7-6cd2e0b9ee9a": {
+            "type": "item",
+            "settings": {
+              "title": "What is Nomad Internet?",
+              "answer": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High-Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+            }
+          },
+          "198930af-e27b-46e5-b8c2-8e0b9ca3f530": {
+            "type": "item",
+            "settings": {
+              "title": "How does Nomad Internet work?",
+              "answer": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with the nation's largest network to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs.<\/p>"
+            }
+          },
+          "a16410d2-e70a-4f52-a034-d0de857fa358": {
+            "type": "item",
+            "settings": {
+              "title": "Do I need to sign a contract to use Nomad Internet?",
+              "answer": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+            }
+          },
+          "bb0747f8-e99f-4da6-a93e-dc0ad1c61f29": {
+            "type": "item",
+            "settings": {
+              "title": "Is Nomad Internet secure?",
+              "answer": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features to deliver strong security at every level.<\/p>"
+            }
+          },
+          "377f0bd0-4e9c-4e29-b9b9-61d45054bdfa": {
+            "type": "item",
+            "settings": {
+              "title": "Can I use Nomad Internet for gaming?",
+              "answer": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+            }
+          },
+          "23568ccf-a4a5-4eda-93df-f885c9184290": {
+            "type": "item",
+            "settings": {
+              "title": "Can I use Nomad Internet for RVing?",
+              "answer": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "dd3a2a15-8b6a-493a-86a7-6cd2e0b9ee9a",
+          "198930af-e27b-46e5-b8c2-8e0b9ca3f530",
+          "a16410d2-e70a-4f52-a034-d0de857fa358",
+          "bb0747f8-e99f-4da6-a93e-dc0ad1c61f29",
+          "377f0bd0-4e9c-4e29-b9b9-61d45054bdfa",
+          "23568ccf-a4a5-4eda-93df-f885c9184290"
+        ],
+        "settings": {
+          "title": "Frequently Asked Questions (FAQs)",
+          "subheading": ""
+        }
+      },
+      "lp-16": {
+        "type": "lp-16",
+        "blocks": {
+          "f9221898-4de5-4fff-aa35-0ae2d786d430": {
+            "type": "block",
+            "settings": {
+              "title": "What is Nomad Internet?",
+              "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High-Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+            }
+          },
+          "a5e95bd9-8417-4aa1-9ec9-536e29482b87": {
+            "type": "block",
+            "settings": {
+              "title": "How does Nomad Internet work?",
+              "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with the nation's largest network to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs.<\/p>"
+            }
+          },
+          "96495c33-bcd8-4067-80e6-d98f8bcc456d": {
+            "type": "block",
+            "settings": {
+              "title": "Do I need to sign a contract to use Nomad Internet?",
+              "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+            }
+          },
+          "e969f358-929a-4ec1-babf-aaa5b44b5fdb": {
+            "type": "block",
+            "settings": {
+              "title": "Is Nomad Internet secure?",
+              "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features to deliver strong security at every level.<\/p>"
+            }
+          },
+          "b1b850e9-a9ad-4b49-b56f-bbee251eeeb4": {
+            "type": "block",
+            "settings": {
+              "title": "Can I use Nomad Internet for gaming?",
+              "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+            }
+          },
+          "0f250ee2-3a00-4c21-80e8-b7f37bb78e30": {
+            "type": "block",
+            "settings": {
+              "title": "Can I use Nomad Internet for RVing?",
+              "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "f9221898-4de5-4fff-aa35-0ae2d786d430",
+          "a5e95bd9-8417-4aa1-9ec9-536e29482b87",
+          "96495c33-bcd8-4067-80e6-d98f8bcc456d",
+          "e969f358-929a-4ec1-babf-aaa5b44b5fdb",
+          "b1b850e9-a9ad-4b49-b56f-bbee251eeeb4",
+          "0f250ee2-3a00-4c21-80e8-b7f37bb78e30"
+        ],
+        "settings": {
+          "title": "Frequently Asked Questions (FAQs)",
+          "button_text": "",
+          "button_url": "shopify:\/\/pages\/faq"
+        }
+      },
+      "google-maps": {
+        "type": "google-maps",
+        "settings": {}
+      },
+      "vending-banner-slideshow": {
+        "type": "vending-banner-slideshow",
+        "blocks": {
+          "7775d29c-18ac-4c42-85d2-07d8ec8f00cf": {
+            "type": "slide-item",
+            "settings": {
+              "show_gradient_color": false,
+              "show_bg_color": false,
+              "bg_color": "#00271f",
+              "content_image_radius": true,
+              "image": "shopify:\/\/shop_images\/RV_Travel_Slider_1_1_1.webp",
+              "image_mobile": "shopify:\/\/shop_images\/RV_Travel_Slider_1_1_2.png",
+              "content_alignment": "inner--left",
+              "sub_heading": "Where Speed Meets Freedom!",
+              "sub_heading_color": "#00a77f",
+              "bold_color": "#ff4040",
+              "heading": "<p>Rural or On-the-Road Internet, We've Got You Covered! <\/p>",
+              "heading_color": "#ffffff",
+              "desc": "<p>Sign Up Today and Experience Internet Without Boundaries!<\/p>",
+              "button_text1": "How it works",
+              "button_link1": "#how-it-works",
+              "text_color1": "#ffffff",
+              "button_bg_color1": "#008b69",
+              "button_text_color1": "#ffffff",
+              "enable_new_tab1": false,
+              "button_text2": "",
+              "button_link2": "",
+              "text_color2": "#ffffff",
+              "button_bg_color2": "#e12727",
+              "button_text_color2": "#ffffff",
+              "enable_new_tab2": true,
+              "show_contract": true,
+              "contract_header": "",
+              "contract_phonenumber": "+1 210 598 5949"
+            }
+          }
+        },
+        "block_order": [
+          "7775d29c-18ac-4c42-85d2-07d8ec8f00cf"
+        ],
+        "settings": {}
+      }
+    },
+    "content_for_index": [
+      "hero-section-video",
+      "424a2c42-be04-4b17-8a5f-2a85f98ac528",
+      "2d1ef16c-355d-46a8-a755-0e4e700670d8",
+      "5eee5e35-be81-4d52-b530-6b7f5ec67d81",
+      "5a18751f-115b-4890-8b39-fbb443a43de5",
+      "8633f943-5531-4d91-bc78-157a324c2aac",
+      "d9b41cdf-3265-4112-b17d-796808ce0e71",
+      "f9d7071b-4948-448d-98ba-a21ecbbcd7f3",
+      "b0ac1826-214c-411e-bd5c-72e7315c6764",
+      "76a9d12c-6cf9-48a6-9795-f27fe57029f6",
+      "29661ba4-9a0e-41be-b465-731ee84a1cd1",
+      "e9007a93-21c1-416c-9819-b60d104680c2",
+      "1e1349e5-9154-4605-9193-c11efe7a7360",
+      "12a835f9-776b-4047-aedc-d61b4cebbede",
+      "fb2a0f4b-3e2a-4587-b1d0-84b72554b0ad",
+      "c34aaf82-6b1b-4789-a723-f26ca78d7024",
+      "bc79d62a-5df3-40ee-97ce-3293555f4188",
+      "73b4aead-b5ad-4300-8718-b152fa89b474",
+      "76d3c963-6791-4eac-8c0f-31fd3726243a",
+      "6acc91b4-7ab5-4134-a057-1428ab399f57",
+      "5718381a-3233-472b-be3a-8dbc6201bff1",
+      "87ec0fac-6181-4f5c-bc15-be929c4b9572",
+      "cd4d2845-8143-41d7-ad22-a32dd0a91551",
+      "77c84788-4111-49d8-a56b-769f4ec2f6a1",
+      "7445cc9a-c0d7-40a8-a371-bc9c786195ba"
+    ],
+    "blocks": {
+      "12107416968155278870": {
+        "type": "shopify:\/\/apps\/paywhirl\/blocks\/paywhirl-customer-portal\/41e95d60-82cf-46e8-84de-618d7e4c37b7",
+        "disabled": false,
+        "settings": {
+          "show_subscriptions_link": true,
+          "show_customer_login_note": false,
+          "show_address_change_note": false,
+          "container_selector": "main"
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "ajax_cart_method": "drawer",
+      "cart_notes_enable": true,
+      "color_body_bg": "#fff",
+      "color_body_text": "#333333",
+      "color_borders": "#e5e5e5",
+      "color_footer_bg": "#f2f2f2",
+      "color_footer_social_link": "#bbbbbb",
+      "color_footer_text": "#636363",
+      "color_primary": "#747474",
+      "color_secondary": "#bbb",
+      "favicon_enable": false,
+      "footer_newsletter_enable": true,
+      "footer_social_enable": true,
+      "logo_use_image": false,
+      "social_facebook_link": "",
+      "social_twitter_link": ""
+    }
+  }
+}

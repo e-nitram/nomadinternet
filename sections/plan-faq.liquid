@@ -1,0 +1,136 @@
+<section class="wizard__section wizard__section--faq">
+<h1 class="wizard__title">Choose your high-speed wireless Internet</h1>
+<div class="faq__description">
+<div class="row v-gutters" style="--gutter-y: 50px; --gutter-x: 20px">
+<div class="col-sm-4 col-12">
+<div class="wizard-plan wizard__item wizard__item--noprice">
+<img src="//cdn.shopify.com/s/files/1/0103/2847/3658/t/130/assets/faq-01.jpg?v=140601820471777833041679746530" alt="Nomad Internet" width="562" height="362" loading="lazy" class="item__image">
+<div class="item__content">
+<h3 class="item__title">Which Plan Is Right for Me?</h3>
+
+<div class="item__description" data-collapse="... View more" data-collapse-height="70" style="overflow: hidden; height: 70px; transition: all 0.6s ease 0s;">
+<p>
+Each plan is designed to fit a different primary use. While all plans have unlimited 4G and 5G data,
+it is best to pick a plan based on what your needs! The primary difference between each plan is
+outlined below:
+</p>
+
+<ul>
+<li>
+Residential Plan: Designed for home use, includes unlimited data, and download speeds of up to
+100Mbps.
+</li>
+<li>
+Travel Plan: Designed for use in the home and on the go, includes unlimited data and download
+speeds of up to 100Mbps, AND you can pause and unpause your monthly billing!
+</li>
+<li>
+Business Plan: Designed for high demand uses such as business and gaming. Includes unlimited data
+and download speeds of up to 200Mbps!
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4 col-12">
+<div class="wizard-plan wizard__item wizard__item--noprice">
+<img src="//cdn.shopify.com/s/files/1/0103/2847/3658/t/130/assets/faq-02.jpg?v=116919464870281962681679746531" alt="Nomad Internet" width="562" height="362" loading="lazy" class="item__image">
+
+<div class="item__content">
+<h3 class="item__title">Which Device Is Right for Me?</h3>
+
+<div class="item__description" data-collapse="... View more" data-collapse-height="70" style="overflow: hidden; height: 70px; transition: all 0.6s ease 0s;">
+<p>
+The three main Nomad Modems we offer can be used at the same places but have significant
+differences.
+</p>
+
+<ul>
+<li>The Nomad Air is small, light, and can be used anywhere you are.</li>
+<li>
+The Nomad Raptor is larger than the Air, but still portable, and is built with the strongest
+indoor antennas to achieve faster speeds.
+</li>
+<li>
+The Nomad Ark is an “Outdoor Modem” with the furthest range a wireless modem can possibly
+provide. Using Nomad Ark is more powerful than a cell booster. Simply put, if it is “possible”
+to get the internet in a remote location, it will happen with a Nomad Ark.
+</li>
+</ul>
+
+<p>All our devices ship pre-configured ready to plug in.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4 col-12">
+<div class="wizard-plan wizard__item wizard__item--noprice">
+<img src="//cdn.shopify.com/s/files/1/0103/2847/3658/t/130/assets/faq-03.jpg?v=142142617986317178731679746531" alt="Nomad Internet" width="562" height="362" loading="lazy" class="item__image">
+
+<div class="item__content">
+<h3 class="item__title">What if it Doesn’t Work for Me?</h3>
+
+<div class="item__description" data-collapse="... View more" data-collapse-height="70" style="overflow: hidden; height: 70px; transition: all 0.6s ease 0s;">
+<p>
+If the plan you initially choose does not connect or is slower than expected, we have you covered!
+You can change plans until you get the speeds you need, and we will ship you a new Nomad Modem until
+allows you to return your device for a full refund.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="wizard__section-footer">
+<a id="btn-1" class="btn outline" href="#wizard-plans">Continue to plan selection →</a>
+</div>
+</section>
+
+<style>
+.faq__description .wizard-plan{padding:0;}
+.faq__description .wizard__item .item__content{padding:1rem;}
+.wizard__section--faq{padding: 50px 0!important;min-height: unset;}
+</style>
+
+<script>
+let anchorSelector = 'a[href="#wizard-plans"]';
+let anchorList =
+document.querySelectorAll(anchorSelector);
+anchorList.forEach(link => {
+link.onclick = function (e) {
+e.preventDefault();
+let destination =
+document.querySelector(this.hash);
+destination.scrollIntoView({
+behavior: 'smooth'
+});
+}
+});
+</script>
+
+
+{% schema %}
+{
+"name": "Plan FAQ",
+"class": "container",
+"presets": [
+{
+"name": "Plan FAQ"
+}
+],
+"settings": [
+
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

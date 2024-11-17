@@ -1,0 +1,624 @@
+{
+  "wrapper": "div.cube.cube--template",
+  "sections": {
+    "b066259f-90bb-4570-90aa-aa09612eb946": {
+      "type": "banner-slideshow",
+      "blocks": {
+        "6a499462-6e19-4142-980f-0c4b4ac396f4": {
+          "type": "slide-item",
+          "settings": {
+            "show_gradient_color": false,
+            "show_bg_color": true,
+            "bg_color": "#00271f",
+            "shape_image": "shopify:\/\/shop_images\/6020104_1.png",
+            "content_image": "shopify:\/\/shop_images\/banner1.png",
+            "image": "shopify:\/\/shop_images\/RV_Travel_Slider_1_1_d48d1fa7-fbd7-4dc9-b85b-91a29d4a30a8.png",
+            "image_mobile": "shopify:\/\/shop_images\/RV_Travel_Slider_1_1_1_f57d3158-c772-4e51-a9b0-150ad8078743.png",
+            "content_alignment": "inner--left",
+            "sub_heading": "Cyber Monday Exclusive: Unleash Boundless Connectivity",
+            "heading": "<p><strong>Nomadpalooza:<\/strong>  40% Off + Up to 12 Months Free Internet with Nomad<\/p>",
+            "desc": "<p>Act Fast & Save: 40% Off + Up to 12 Months Free Internet. Connect seamlessly with Nomad Omega and Nomad Air.<\/p>",
+            "button_text1": "View plans",
+            "button_link1": "\/pages\/plans",
+            "text_color1": "#ffffff",
+            "button_bg_color1": "#00a77f",
+            "button_text_color1": "#ffffff",
+            "enable_new_tab1": true,
+            "button_text2": "Nomadpalooza Sales",
+            "button_link2": "#featured-section",
+            "text_color2": "#ffffff",
+            "button_bg_color2": "#ff4c00",
+            "button_text_color2": "#ffffff",
+            "enable_new_tab2": false,
+            "show_contract": false,
+            "contract_header": "Have Questions?",
+            "contract_phonenumber": "+1 210 598 5949"
+          }
+        }
+      },
+      "block_order": [
+        "6a499462-6e19-4142-980f-0c4b4ac396f4"
+      ],
+      "settings": {}
+    },
+    "ad612dc8-cc95-4bf9-85eb-c0a51a245ac4": {
+      "type": "usp-banner",
+      "blocks": {
+        "3c432ef3-d251-4971-9295-dcb7c4ebd228": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"60\" height=\"60\" viewbox=\"0 0 60 60\" fill=\"none\">\n          <path d=\"M35 27.498H20M25 37.498H20M40 17.498H20M50 29.998V16.998C50 12.7977 50 10.6975 49.1825 9.09312C48.4635 7.6819 47.3161 6.53455 45.9049 5.8155C44.3006 4.99805 42.2004 4.99805 38 4.99805H22C17.7996 4.99805 15.6994 4.99805 14.0951 5.8155C12.6839 6.53455 11.5365 7.6819 10.8175 9.09312C10 10.6975 10 12.7977 10 16.998V42.9981C10 47.1984 10 49.2986 10.8175 50.903C11.5365 52.3142 12.6839 53.4615 14.0951 54.1806C15.6994 54.9981 17.7996 54.9981 22 54.9981H30M40 39.9981L52.5 52.4981M52.5 39.9981L40 52.4981\" stroke=\"#00A77F\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n        <\/svg>",
+            "heading": "No Contract\/Cancel Anytime"
+          }
+        },
+        "4d5a4a59-b9f6-4ba9-9122-c604c91a761f": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"61\" height=\"60\" viewbox=\"0 0 61 60\" fill=\"none\">\n  <path d=\"M22.9995 29.998L27.9995 34.998L39.2495 23.748M23.5043 51.5002C24.3236 51.3919 25.1513 51.6141 25.8041 52.1169L28.8122 54.4252C29.8065 55.189 31.1897 55.189 32.1813 54.4252L35.3033 52.028C35.8866 51.5808 36.6226 51.3836 37.3503 51.4808L41.2556 51.9947C42.4971 52.1585 43.6942 51.4669 44.1748 50.3086L45.6774 46.6754C45.958 45.9948 46.4968 45.456 47.1773 45.1754L50.8103 43.6727C51.9686 43.1949 52.6602 41.9949 52.4963 40.7533L52.0019 36.9895C51.8936 36.1701 52.1158 35.3423 52.6185 34.6896L54.9266 31.6813C55.6905 30.6869 55.6905 29.3036 54.9266 28.312L52.5296 25.1898C52.0824 24.6065 51.8852 23.8704 51.9825 23.1427L52.4963 19.2372C52.6602 17.9956 51.9686 16.7984 50.8103 16.3179L47.1773 14.8151C46.4968 14.5346 45.958 13.9957 45.6774 13.3152L44.1748 9.68194C43.697 8.52364 42.4971 7.832 41.2556 7.99588L37.3503 8.50975C36.6226 8.60975 35.8866 8.41253 35.3061 7.9681L32.1841 5.57095C31.1897 4.80708 29.8065 4.80708 28.8149 5.57095L25.693 7.9681C25.1097 8.41253 24.3736 8.60975 23.6459 8.51531L19.7407 8.00143C18.4991 7.83755 17.302 8.5292 16.8215 9.6875L15.3216 13.3207C15.0383 13.9985 14.4995 14.5374 13.8217 14.8207L10.1887 16.3207C9.03047 16.8012 8.33886 17.9984 8.50273 19.24L9.01658 23.1455C9.11102 23.8732 8.91381 24.6093 8.4694 25.1898L6.07238 28.312C5.30856 29.3064 5.30856 30.6897 6.07238 31.6813L8.4694 34.8035C8.91659 35.3868 9.11379 36.1229 9.01658 36.8506L8.50273 40.7561C8.33886 41.9977 9.03047 43.1949 10.1887 43.6754L13.8217 45.1782C14.5022 45.4587 15.0411 45.9976 15.3216 46.6781L16.8243 50.3114C17.302 51.4697 18.5019 52.1613 19.7435 51.9974L23.5043 51.5002Z\" stroke=\"#00A77F\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "heading": "No Credit Check"
+          }
+        },
+        "aec8626f-d657-47f4-bc8f-d494a34e1578": {
+          "type": "item",
+          "settings": {
+            "icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"60\" height=\"60\" viewbox=\"0 0 60 60\" fill=\"none\">\n  <path d=\"M29.9995 48.75H30.0245M57.0155 21.7519C49.8984 15.23 40.4136 11.25 29.9992 11.25C19.5849 11.25 10.1001 15.23 2.98291 21.7519M11.8293 30.6074C16.6747 26.3391 23.0347 23.75 29.9995 23.75C36.9642 23.75 43.3243 26.3391 48.1696 30.6074M39.2453 39.4378C36.6976 37.4407 33.4874 36.25 29.9992 36.25C26.4582 36.25 23.2038 37.477 20.6379 39.529\" stroke=\"#00A77F\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "heading": "Unlimited Nationwide Data"
+          }
+        }
+      },
+      "block_order": [
+        "3c432ef3-d251-4971-9295-dcb7c4ebd228",
+        "4d5a4a59-b9f6-4ba9-9122-c604c91a761f",
+        "aec8626f-d657-47f4-bc8f-d494a34e1578"
+      ],
+      "settings": {
+        "bg_color": "#013127"
+      }
+    },
+    "37c37e7c-d084-4b23-98bf-fc1493815d36": {
+      "type": "featured-section",
+      "blocks": {
+        "8ed10887-b8fd-4109-b00f-51b6de4957ef": {
+          "type": "product-item",
+          "settings": {
+            "pre_text": "ORDER NOW & SAVE $80",
+            "image": "shopify:\/\/shop_images\/01_12671cbb-f8c7-416f-bda5-3b27f43aafbc.png",
+            "title": "Nomad Omega $99 + 3 Months Subscription at $73.95\/mo",
+            "price": "$319.95 - $399.95",
+            "product": "nomad-omega-3-months-subscription",
+            "text1": "<p>High-speed download up to <strong>200Mbps<\/strong><\/p>",
+            "icon1": "shopify:\/\/shop_images\/icon1.svg",
+            "text2": "<p>Ultra HD 4K video streaming<\/p>",
+            "icon2": "shopify:\/\/shop_images\/icon2.svg",
+            "text3": "<p>Excellent gaming latency<\/p>",
+            "icon3": "shopify:\/\/shop_images\/icon3.svg",
+            "text4": "<p>No Contract, No Credit Check<\/p>",
+            "icon4": "shopify:\/\/shop_images\/icon4.svg",
+            "text5": "<p>Unlimited & Unthrottled<\/p>",
+            "icon5": "shopify:\/\/shop_images\/icon5.svg"
+          }
+        },
+        "647905b7-b2ff-4e24-8a7d-d31daca60872": {
+          "type": "product-item",
+          "settings": {
+            "pre_text": "ORDER NOW & SAVE $210",
+            "image": "shopify:\/\/shop_images\/02_d9cb5ab0-0092-4a1e-90cd-de831e08d5ee.png",
+            "title": "Nomad Omega $99 + 6 Months Subscription at $64.95\/mo",
+            "price": "$489.95 - $699.95",
+            "product": "copy-of-nomad-omega-6-months-subscription",
+            "text1": "<p>High-speed download up to <strong>200Mbps<\/strong><\/p>",
+            "icon1": "shopify:\/\/shop_images\/icon1.svg",
+            "text2": "<p>Ultra HD 4K video streaming<\/p>",
+            "icon2": "shopify:\/\/shop_images\/icon2.svg",
+            "text3": "<p>Excellent gaming latency<\/p>",
+            "icon3": "shopify:\/\/shop_images\/icon3.svg",
+            "text4": "<p>No Contract, No Credit Check<\/p>",
+            "icon4": "shopify:\/\/shop_images\/icon4.svg",
+            "text5": "<p>Unlimited & Unthrottled<\/p>",
+            "icon5": "shopify:\/\/shop_images\/icon5.svg"
+          }
+        },
+        "484ff6ac-174d-4d84-96bf-d0b1e6880ac6": {
+          "type": "product-item",
+          "settings": {
+            "pre_text": "ORDER NOW & SAVE $520",
+            "image": "shopify:\/\/shop_images\/03_b55aad17-b6fd-431f-a92c-c56ac901a8dc.png",
+            "title": "Nomad Omega $99 + 12 Months Subscription at $56.95\/mo",
+            "price": "$779.95 - $1,299.95",
+            "product": "nomad-omega-12-months-subscription",
+            "text1": "<p>High-speed download up to <strong>200Mbps<\/strong><\/p>",
+            "icon1": "shopify:\/\/shop_images\/icon1.svg",
+            "text2": "<p>Ultra HD 4K video streaming<\/p>",
+            "icon2": "shopify:\/\/shop_images\/icon2.svg",
+            "text3": "<p>Excellent gaming latency<\/p>",
+            "icon3": "shopify:\/\/shop_images\/icon3.svg",
+            "text4": "<p>No Contract, No Credit Check<\/p>",
+            "icon4": "shopify:\/\/shop_images\/icon4.svg",
+            "text5": "<p>Unlimited & Unthrottled<\/p>",
+            "icon5": "shopify:\/\/shop_images\/icon5.svg"
+          }
+        },
+        "7ceb7f39-3146-46c0-8000-34d76ea01ddb": {
+          "type": "product-item",
+          "settings": {
+            "pre_text": "ORDER NOW & SAVE $110",
+            "image": "shopify:\/\/shop_images\/04_0436b729-8c8a-462f-b772-5c512035b316.png",
+            "title": "Nomad Air $249.95 + 3 Months Subscription at $63.95\/mo",
+            "price": "$439.95 - $549.95",
+            "product": "nomad-air-3-months-subscription",
+            "text1": "<p>High-speed download up to <strong>200Mbps<\/strong><\/p>",
+            "icon1": "shopify:\/\/shop_images\/icon1.svg",
+            "text2": "<p>Ultra HD 4K video streaming<\/p>",
+            "icon2": "shopify:\/\/shop_images\/icon2.svg",
+            "text3": "<p>Excellent gaming latency<\/p>",
+            "icon3": "shopify:\/\/shop_images\/icon3.svg",
+            "text4": "<p>No Contract, No Credit Check<\/p>",
+            "icon4": "shopify:\/\/shop_images\/icon4.svg",
+            "text5": "<p>Unlimited & Unthrottled<\/p>",
+            "icon5": "shopify:\/\/shop_images\/icon5.svg"
+          }
+        },
+        "95b17886-967f-43e2-9464-2e2682f3e91e": {
+          "type": "product-item",
+          "settings": {
+            "pre_text": "ORDER NOW & SAVE $255",
+            "image": "shopify:\/\/shop_images\/05_77a87dd0-1869-4dd6-8036-d9784da9e9f9.png",
+            "title": "Nomad Air $249.95+ 6 Months Subscription at $67.95\/mo",
+            "price": "$594.95 - $849.95",
+            "product": "copy-of-nomad-air-6-months-subscription",
+            "text1": "<p>High-speed download up to <strong>200Mbps<\/strong><\/p>",
+            "icon1": "shopify:\/\/shop_images\/icon1.svg",
+            "text2": "<p>Ultra HD 4K video streaming<\/p>",
+            "icon2": "shopify:\/\/shop_images\/icon2.svg",
+            "text3": "<p>Excellent gaming latency<\/p>",
+            "icon3": "shopify:\/\/shop_images\/icon3.svg",
+            "text4": "<p>No Contract, No Credit Check<\/p>",
+            "icon4": "shopify:\/\/shop_images\/icon4.svg",
+            "text5": "<p>Unlimited & Unthrottled<\/p>",
+            "icon5": "shopify:\/\/shop_images\/icon5.svg"
+          }
+        },
+        "f54167c2-443b-42c3-9e98-0cead44ca057": {
+          "type": "product-item",
+          "settings": {
+            "pre_text": "ORDER NOW & SAVE $580",
+            "image": "shopify:\/\/shop_images\/06_913c3f18-b126-4e97-b687-158ff2ee1e5f.png",
+            "title": "Nomad Air $249.95 + 12 Months Subscription at $51.95\/mo",
+            "price": "$869.95 - $1,499.95",
+            "product": "nomad-air-6-months-subscription",
+            "text1": "<p>High-speed download up to <strong>200Mbps<\/strong><\/p>",
+            "icon1": "shopify:\/\/shop_images\/icon1.svg",
+            "text2": "<p>Ultra HD 4K video streaming<\/p>",
+            "icon2": "shopify:\/\/shop_images\/icon2.svg",
+            "text3": "<p>Excellent gaming latency<\/p>",
+            "icon3": "shopify:\/\/shop_images\/icon3.svg",
+            "text4": "<p>No Contract, No Credit Check<\/p>",
+            "icon4": "shopify:\/\/shop_images\/icon4.svg",
+            "text5": "<p>Unlimited & Unthrottled<\/p>",
+            "icon5": "shopify:\/\/shop_images\/icon5.svg"
+          }
+        }
+      },
+      "block_order": [
+        "8ed10887-b8fd-4109-b00f-51b6de4957ef",
+        "647905b7-b2ff-4e24-8a7d-d31daca60872",
+        "484ff6ac-174d-4d84-96bf-d0b1e6880ac6",
+        "7ceb7f39-3146-46c0-8000-34d76ea01ddb",
+        "95b17886-967f-43e2-9464-2e2682f3e91e",
+        "f54167c2-443b-42c3-9e98-0cead44ca057"
+      ],
+      "settings": {
+        "heading": "Nomad Cyber Monday Bundles",
+        "content": "Experience lightning-fast Internet speeds and Advanced WiFi featuring state-of-the-art security."
+      }
+    },
+    "0f33cb4d-ff5a-4f50-8fc9-ff2acb092448": {
+      "type": "02plan-page-4in1-v2",
+      "settings": {}
+    },
+    "4c89e33f-1968-4b2e-9ad2-e318d6f8d76b": {
+      "type": "02plan-page-4in1",
+      "disabled": true,
+      "settings": {}
+    },
+    "e30aa949-dee0-4873-b991-f724f74fab05": {
+      "type": "01plan-banner",
+      "disabled": true,
+      "settings": {}
+    },
+    "40b30833-1187-43e8-b4fb-2e80bd963394": {
+      "type": "01plan-modem",
+      "disabled": true,
+      "settings": {}
+    },
+    "08fab0b0-0374-4992-b6d6-7bfe529f953e": {
+      "type": "01home-reviews",
+      "disabled": true,
+      "settings": {}
+    },
+    "3776871e-a576-4136-bf69-43a936b128d8": {
+      "type": "01home-faq",
+      "disabled": true,
+      "settings": {}
+    },
+    "2aec265e-de3b-4e8b-b325-0ef78b195489": {
+      "type": "video-section",
+      "blocks": {
+        "1a2499ee-5339-48ce-b73f-5eeef38a0a01": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a4953d6e27cd438a9903bd55d6572eeb.mp4",
+            "video_image": "shopify:\/\/shop_images\/Nomad_Internet_in_30secs_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "1a2499ee-5339-48ce-b73f-5eeef38a0a01"
+      ],
+      "disabled": true,
+      "settings": {
+        "main_title": "",
+        "sub_title": ""
+      }
+    },
+    "c5f1ca1c-a371-4599-bfbc-ef3c01393983": {
+      "type": "awesome-video",
+      "disabled": true,
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+      }
+    },
+    "ee905fc6-98c0-4310-b2f4-e7b0772b06e3": {
+      "type": "awesome-html",
+      "disabled": true,
+      "custom_css": [
+        "h1 {max-width: 970px; margin-inline: auto;}"
+      ],
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h1 class=\"text-center uppercase h3\">HI-SPEED WIRELESS DATA PLANS:<\/h1>"
+      }
+    },
+    "e878a1df-1fb6-425e-b2ea-1487c354d26e": {
+      "type": "plan-faq",
+      "disabled": true,
+      "settings": {}
+    },
+    "4948c64b-ba7c-45c4-8558-8c775002a531": {
+      "type": "wizard-first-screen",
+      "blocks": {
+        "a0d3fba9-57c6-47d9-8dcb-1cc9018f69f8": {
+          "type": "plan",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nomad_Business_2934aa72-142c-4fca-b963-fcc415f97da1.jpg",
+            "title": "Nomad Unlimited Residential 4G",
+            "plan_id": "Nomad Residential 4G",
+            "description": "<p>Hi-Speed Wireless Data for “home use.”<br\/><br\/>Features:<br\/>- Monthly 300GB of Premium 4G LTE Network Access*<br\/><em>- Download speeds up to 25Mbps<\/em><br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- Anywhere You Are<br\/>- 14-Day No Risk Trial<\/p>",
+            "description_height": 55,
+            "footer": "<p>$89 a month<\/p>",
+            "memberships_ids": "Netgear Nighthawk LAX20 Residential 4G,\nNetgear Orbi LBR20 Residential 4G"
+          }
+        },
+        "fc3097f5-f73c-4449-8a19-b1af2d28954d": {
+          "type": "plan",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_d2f70953-700e-4b00-bbc1-56db889ab297.jpg",
+            "title": "Nomad Unlimited Residential",
+            "plan_id": "Residential Plan 5g",
+            "description": "<p>Up to Unlimited Hi-Speed Wireless Data for “home use.”<br\/><br\/>Features:<br\/>- Download speeds up to 100Mbps<br\/>- 5G LTE<br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- No Data Limit<br\/>- Anywhere You Are<br\/>- 14-Day No Risk Trial<\/p>",
+            "description_height": 55,
+            "footer": "<p>$109 a month<\/p>",
+            "memberships_ids": "Nomad Cube Residential 5G,\nNomad AIR Residential 5G,\nNomad ARK Residential 5G"
+          }
+        },
+        "890dec8b-01ea-427d-83a7-98eb99a23de3": {
+          "type": "plan",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_9565f6cd-e6da-440d-a596-904ac3d07e78.jpg",
+            "title": "Nomad Unlimited Travel",
+            "plan_id": "Travel Plan 5g",
+            "description": "<p>Up to Unlimited Hi-Speed Wireless Data for “travel use.”<br\/><br\/>Features:<br\/>- Download speeds up to 100Mbps<br\/>- 5G LTE<br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- No Data Limit<br\/>- Anywhere You Are<br\/>- 14-Day No Risk Trial<br\/><em>- Pause Plan<\/em><\/p>",
+            "description_height": 55,
+            "footer": "<p>$129 a month<\/p>",
+            "memberships_ids": "Nomad Cube Travel 5G,\nNomad AIR Travel 5G,"
+          }
+        },
+        "1790d20e-e2cf-4928-b2c0-9a0b20888d94": {
+          "type": "plan",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/medium-shot-man-working-laptop.jpg",
+            "title": "Nomad Unlimited Power",
+            "plan_id": "Nomad Power Plan",
+            "description": "<p>Up to Unlimited Hi-Speed Wireless Data for “office use.”<br\/><br\/>Features:<br\/>- Download speeds up to 200Mbps<br\/>- 5G LTE<br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- No Data Limit<br\/>- Anywhere You Are<br\/>- 14-Day No Risk Trial<\/p>",
+            "description_height": 50,
+            "footer": "<p>$199 a month<\/p>",
+            "memberships_ids": "Nomad RAPTOR Power,\nNomad ARK Power"
+          }
+        }
+      },
+      "block_order": [
+        "a0d3fba9-57c6-47d9-8dcb-1cc9018f69f8",
+        "fc3097f5-f73c-4449-8a19-b1af2d28954d",
+        "890dec8b-01ea-427d-83a7-98eb99a23de3",
+        "1790d20e-e2cf-4928-b2c0-9a0b20888d94"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "title": "Step One: Choose a plan"
+      }
+    },
+    "f347c498-05d7-4a55-8b4e-6b32a1e990cf": {
+      "type": "wizard-memberships",
+      "blocks": {
+        "2a7e981d-7e8f-485e-979b-be5c988b5703": {
+          "type": "membership",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_4_ea155058-037f-4ec0-b4bb-f79a2fb9ea0a.jpg",
+            "display_name": "Nomad Rural One",
+            "title": "Rural One Residential 4G",
+            "description": "<p>The Nomad Residential 4G Plan uses the nations best network with most reliable 4G speeds! with 300gb of data and no 5G coverage required! It comes with the Nomad Rural One Modem - The most rugged, reliable, and customizable rural modem ever!<br\/><br\/>Features:<br\/>- Download speeds up to 25Mbps<br\/>- 4G LTE<br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- 300GB of Premium 4G LTE Network Access<br\/>- Anywhere You Are<br\/>- 14-Day No Risk Trial<\/p>",
+            "description_height": 500,
+            "alternate": "",
+            "products": [
+              "nomad-air-modem-sim-activation",
+              "nomad-rural-one-one-time-membership-fee",
+              "copy-of-nomad-residential-4g-plan-no-trial"
+            ]
+          }
+        },
+        "0d9d0ef1-267b-4fde-bf9e-2ffce80146aa": {
+          "type": "membership",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_440063_058cac5f-284a-4526-a062-98f60d49f6f6.jpg",
+            "display_name": "Netgear Nighthawk LAX20",
+            "title": "Netgear Nighthawk LAX20 Residential 4G",
+            "description": "<p>Netgear Nighthawk is a new entry-level Wireless Modem with Up to Unlimited Data!<br\/><br\/>Features:<br\/>- Download speeds up to 25Mbps<br\/>- 4G LTE<br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- 300GB of Premium 4G LTE Network Access<br\/>- Anywhere You Are<br\/>- 14-Day No Risk Trial<\/p>",
+            "description_height": 500,
+            "alternate": "",
+            "products": [
+              "nomad-air-modem-sim-activation",
+              "copy-of-nomad-residential-4g-plan-no-trial",
+              "nomad-nighthawk-lax20-one-time-membership-fee"
+            ]
+          }
+        },
+        "4c4a80d6-cb04-407d-bd1e-2af4faddec7e": {
+          "type": "membership",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_1_0793f49e-d400-43fa-b8da-7ae89c24f1d5.jpg",
+            "display_name": "Netgear Orbi LBR20",
+            "title": "Netgear Orbi LBR20 Residential 4G",
+            "description": "<p>Netgear Orbi LBR20 is a new entry-level Wireless Modem with Up to Unlimited Data!<br\/><br\/>Features:<br\/>- Download speeds up to 25Mbps<br\/>- 4G LTE<br\/>- Connect all Your Devices<br\/>- No Credit Check<br\/>- 300GB of Premium 4G LTE Network Access<br\/>- Anywhere You Are<br\/>- 14-Day No Risk Trial<\/p>",
+            "description_height": 500,
+            "alternate": "",
+            "products": [
+              "nomad-air-modem-sim-activation",
+              "copy-of-nomad-residential-4g-plan-no-trial",
+              "nomad-orbi-one-time-membership-fee"
+            ]
+          }
+        },
+        "93a0529c-6f09-42c7-9e5a-7cfcd9a0e558": {
+          "type": "membership",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cube_239b184f-285c-44e6-a003-2f1e4442a9c9.jpg",
+            "display_name": "The Nomad Cube - Unlimited Edition",
+            "title": "Nomad Cube Residential 5G",
+            "description": "<p>The Nomad Cube - Unlimited Edition is a new entry-level Wireless Modem with up to Unlimited Data!<br\/><br\/>Features:<br\/>- Works anywhere in the USA with up to unlimited 5G<br\/>- Download speeds up to 100Mbps!<br\/>- Easy self-install: activates in less than 60 seconds!<br\/>- Dual-band Wi-Fi 6 for up to 15 connected devices<br\/>- Ethernet LAN port to use your own router!<br\/>- Great for light gaming!<\/p>",
+            "description_height": 100,
+            "alternate": "",
+            "products": [
+              "nomad-cube",
+              "nomad-air-modem-sim-activation",
+              "nomad-residential-5g-plan-no-trial"
+            ]
+          }
+        },
+        "1c268f02-f0b8-4680-b1af-00b5e366599f": {
+          "type": "membership",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cube_239b184f-285c-44e6-a003-2f1e4442a9c9.jpg",
+            "display_name": "The Nomad Cube - Unlimited Edition",
+            "title": "Nomad Cube Travel 5G",
+            "description": "<p>The Nomad Cube - Unlimited Edition is a new entry-level Wireless Modem with Up to Unlimited Data!<br\/><br\/>Features:<br\/>- Works anywhere in the USA with up to unlimited 5G<br\/>- Download speeds up to 100Mbps!<br\/>- Easy self-install: activates in less than 60 seconds!<br\/>- Dual-band Wi-Fi 6 for up to 15 connected devices<br\/>- Ethernet LAN port to use your own router!<br\/>- Great for light gaming!<\/p>",
+            "description_height": 100,
+            "alternate": "",
+            "products": [
+              "nomad-cube",
+              "nomad-air-modem-sim-activation",
+              "nomad-travel-5g-plan-no-trial"
+            ]
+          }
+        },
+        "42835943-9d31-45d9-9ac5-ab045d109261": {
+          "type": "membership",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Air_c14c84b6-b8ef-457b-894d-9489249af680.jpg",
+            "display_name": "Nomad AIR",
+            "title": "Nomad AIR Travel 5G",
+            "description": "<p>The Nomad Air is our travel-sized, portable wireless modem designed for use in your home and RV. The Nomad Air is small but mighty.<br\/><br\/>Features:<br\/>- Works anywhere in the USA with up to unlimited 5G<br\/>- Download speeds up to 250Mbps!<br\/>- Easy self-install: activates in less than 60 seconds!<br\/>- Dual-band Wi-Fi 6 for up to 30 connected devices<br\/>- Ethernet LAN port to use your own router!<br\/>- Great for light gaming!<\/p>",
+            "description_height": 120,
+            "alternate": "",
+            "products": [
+              "nomad-air-modem-sim-activation",
+              "199-one-time-membership-fee",
+              "nomad-travel-5g-plan-no-trial"
+            ]
+          }
+        },
+        "b0c103c9-983b-485b-8eca-3e2290ef6323": {
+          "type": "membership",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BAG.jpg",
+            "display_name": "Nomad Air Travel Kit",
+            "title": "Nomad Air Travel Kit Travel",
+            "description": "<p>The Nomad Air Travel Bag includes a \"one week\" back up battery, up to unlimited wifi internet, and a fast charging solar panel!<br\/><br\/>Features:<br\/>- Nomad AIR Hotspot<br\/>- Nomad AIR Travel Bag<br\/>- One Week Backup Battery<br\/>- On\/Off Switch With Blue Led<br\/>- Space Saver Power Adapter<br\/>- Fast Ac Wall Charger<br\/><\/p>",
+            "description_height": 100,
+            "alternate": "",
+            "products": [
+              "nomad-air-modem-sim-activation",
+              "nomad-air-plan",
+              "199-one-time-membership-fee",
+              "the-nomad-air-travel-bag"
+            ]
+          }
+        },
+        "a4d4cba4-d242-4045-bb07-e3c6a59d6b74": {
+          "type": "membership",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Raptor_b9ee0354-a6fd-4653-9dc7-db8ae6282452.jpg",
+            "display_name": "Nomad RAPTOR",
+            "title": "Nomad RAPTOR Travel",
+            "description": "<p>The Nomad Raptor is our fastest portable wireless modem designed for more demanding home, office, and gaming environments.<br\/><br\/>Features:<br\/>- Works anywhere in the USA with up to unlimited 5G and 4G LTE<br\/>- Download speeds up to 250Mbps!<br\/>- Easy self-install: activates in less than 60 seconds!<br\/>- Dual-band Wi-Fi 6 for up to 128 connected devices<br\/>- Multiple ethernet LAN ports and 1 Gbps WAN port that can also be used as a wireless backup system<\/p>",
+            "description_height": 130,
+            "alternate": "",
+            "products": [
+              "nomad-air-plan",
+              "nomad-air-modem-sim-activation",
+              "299-one-time-membership-fee"
+            ]
+          }
+        },
+        "5da66b7d-690d-4243-82f1-c76ca6f041b8": {
+          "type": "membership",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Air_c14c84b6-b8ef-457b-894d-9489249af680.jpg",
+            "display_name": "Nomad AIR",
+            "title": "Nomad AIR Residential 5G",
+            "description": "<p>The Nomad Air is our travel-sized, portable wireless modem designed for use in your home and RV. The Nomad Air is small but mighty.<br\/><br\/>Features:<br\/>- Works anywhere in the USA with up to unlimited 5G<br\/>- Download speeds up to 250Mbps!<br\/>- Easy self-install: activates in less than 60 seconds!<br\/>- Dual-band Wi-Fi 6 for up to 30 connected devices<br\/>- Ethernet LAN port to use your own router!<br\/>- Great for light gaming!<\/p>",
+            "description_height": 120,
+            "alternate": "",
+            "products": [
+              "nomad-air-modem-sim-activation",
+              "199-one-time-membership-fee",
+              "nomad-residential-5g-plan-no-trial"
+            ]
+          }
+        },
+        "e681476e-4580-4285-bd4c-06de639923b2": {
+          "type": "membership",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Raptor_b9ee0354-a6fd-4653-9dc7-db8ae6282452.jpg",
+            "display_name": "Nomad RAPTOR",
+            "title": "Nomad RAPTOR Power",
+            "description": "<p>The Nomad Raptor is our fastest portable wireless modem designed for more demanding home, office, and gaming environments.<br\/><br\/>Features:<br\/>- Works anywhere in the USA with up to unlimited 5G and 4G LTE<br\/>- Download speeds up to 250Mbps!<br\/>- Easy self-install: activates in less than 60 seconds!<br\/>- Dual-band Wi-Fi 6 for up to 128 connected devices<br\/>- Multiple ethernet LAN ports and 1 Gbps WAN port that can also be used as a wireless backup system<\/p>",
+            "description_height": 130,
+            "alternate": "",
+            "products": [
+              "nomad-raptor-plan",
+              "nomad-air-modem-sim-activation",
+              "299-one-time-membership-fee"
+            ]
+          }
+        },
+        "d9bfb6ad-e6cd-4b84-b8e4-f3e673c96ebc": {
+          "type": "membership",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ARK_575f0596-f41b-462d-843d-b89ef27db9c8.jpg",
+            "display_name": "Nomad ARK",
+            "title": "Nomad ARK Residential 5G",
+            "description": "<p>The Nomad Ark is our most powerful “outdoor” wireless modem, designed for use in your home, office and for gamers! The Ark is designed to pick up and provide up to unlimited internet anywhere you live or work, even in the most remote locations! *Professional outdoor installation recommended<br\/><br\/>Features:<br\/>- Designed to extend your wireless signal to anywhere in the USA with up to unlimited 5G and 4G LTE<br\/>- Download speeds up to 450Mbps!<br\/>- Made for professional outdoor installations<br\/>- Powerful 14 dBi outdoor antenna<br\/>- Provides a direct Ethernet LAN port to connect to your own network!<\/p>",
+            "description_height": 180,
+            "alternate": "",
+            "products": [
+              "nomad-air-modem-sim-activation",
+              "399-one-time-membership-fee",
+              "nomad-residential-5g-plan-no-trial"
+            ]
+          }
+        },
+        "04598933-04bd-4ed0-ab8c-50f9d1b99a03": {
+          "type": "membership",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ARK_575f0596-f41b-462d-843d-b89ef27db9c8.jpg",
+            "display_name": "Nomad ARK",
+            "title": "Nomad ARK Power",
+            "description": "<p>The Nomad Ark is our most powerful “outdoor” wireless modem, designed for use in your home, office and for gamers! The Ark is designed to pick up and provide up to unlimited internet anywhere you live or work, even in the most remote locations! *Professional outdoor installation recommended<br\/><br\/>Features:<br\/>- Designed to extend your wireless signal to anywhere in the USA with up to unlimited 5G and 4G LTE<br\/>- Download speeds up to 450Mbps!<br\/>- Made for professional outdoor installations<br\/>- Powerful 14 dBi outdoor antenna<br\/>- Provides a direct Ethernet LAN port to connect to your own network!<\/p>",
+            "description_height": 180,
+            "alternate": "",
+            "products": [
+              "nomad-raptor-plan",
+              "nomad-air-modem-sim-activation",
+              "399-one-time-membership-fee"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "2a7e981d-7e8f-485e-979b-be5c988b5703",
+        "0d9d0ef1-267b-4fde-bf9e-2ffce80146aa",
+        "4c4a80d6-cb04-407d-bd1e-2af4faddec7e",
+        "93a0529c-6f09-42c7-9e5a-7cfcd9a0e558",
+        "1c268f02-f0b8-4680-b1af-00b5e366599f",
+        "42835943-9d31-45d9-9ac5-ab045d109261",
+        "b0c103c9-983b-485b-8eca-3e2290ef6323",
+        "a4d4cba4-d242-4045-bb07-e3c6a59d6b74",
+        "5da66b7d-690d-4243-82f1-c76ca6f041b8",
+        "e681476e-4580-4285-bd4c-06de639923b2",
+        "d9bfb6ad-e6cd-4b84-b8e4-f3e673c96ebc",
+        "04598933-04bd-4ed0-ab8c-50f9d1b99a03"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".wizard-membership__description strong {color: var(--theme-color);}"
+      ],
+      "settings": {
+        "title": "Step Two: Choose a modem",
+        "description": "Nomad Internet has no contracts! You may cancel your subscription with us at any time by simply returning your device and we never charge any cancellation fees! Easy, Simple, Clean!"
+      }
+    },
+    "2ff390c5-017f-4beb-b35b-685010eba789": {
+      "type": "awesome-html",
+      "disabled": true,
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 30,
+        "border-radius": 0,
+        "html": "<p>14-Day Risk Free Trial! If it does not work, for any reason, send it back for a full refund. No questions asked.<\/p>\n\n<p>Each membership includes a 14-day risk-free trial from the date you receive the DEVICE to test the device and service without risk. If the devic or service does not meet your expectations and you want a full refund for the modem, then let us know and after we receive the modem in proper condition we will refund you.<\/p>\n\n<p>Are you looking for the best, most affordable way to surf the internet? Look no further than Nomad Internet! With our prepaid data plans, you can choose the amount of data and speed that is right for you - without having to commit to a long-term contract. Prices are low and connection speeds are fast, so it's easy to compare different plans and find the perfect one for your needs.<\/p>\n\n<p>Whether you're a home user or a commercial customer, we have an inexpensive plan that meets your demands. We offer different plans on a monthly or prepaid basis so you can pick the one that fits your lifestyle and budget. By choosing Nomad Internet, you'll get all the power of an internet connection without spending too much - now that's a great choice!<\/p>\n\n<p>At Nomad Internet, we strive to provide customers with the best service possible at an unbeatable price. We understand how important it is for everyone to have reliable access to the internet at a price they can afford - and that's why we work hard to ensure our customers get just that.<\/p>\n\n<p>So if you're looking for cheap internet access with no strings attached, look no further than Nomad Internet! With our reliable connection speeds and range of flexible options, we guarantee satisfaction every time – no matter what type of user you are. Get connected today and start surfing like never before – with Nomad Internet!<\/p>"
+      }
+    },
+    "37ff00af-5e48-47ad-bcca-92ad6297aff9": {
+      "type": "01home-reviews",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "b066259f-90bb-4570-90aa-aa09612eb946",
+    "ad612dc8-cc95-4bf9-85eb-c0a51a245ac4",
+    "37c37e7c-d084-4b23-98bf-fc1493815d36",
+    "0f33cb4d-ff5a-4f50-8fc9-ff2acb092448",
+    "4c89e33f-1968-4b2e-9ad2-e318d6f8d76b",
+    "e30aa949-dee0-4873-b991-f724f74fab05",
+    "40b30833-1187-43e8-b4fb-2e80bd963394",
+    "08fab0b0-0374-4992-b6d6-7bfe529f953e",
+    "3776871e-a576-4136-bf69-43a936b128d8",
+    "2aec265e-de3b-4e8b-b325-0ef78b195489",
+    "c5f1ca1c-a371-4599-bfbc-ef3c01393983",
+    "ee905fc6-98c0-4310-b2f4-e7b0772b06e3",
+    "e878a1df-1fb6-425e-b2ea-1487c354d26e",
+    "4948c64b-ba7c-45c4-8558-8c775002a531",
+    "f347c498-05d7-4a55-8b4e-6b32a1e990cf",
+    "2ff390c5-017f-4beb-b35b-685010eba789",
+    "37ff00af-5e48-47ad-bcca-92ad6297aff9"
+  ]
+}

@@ -1,0 +1,130 @@
+<div class="text-with-image">
+  <div class="container-wrapper">
+    <div class="new-row">
+         <div class="col-5">
+      <div class="video-wrapper">
+     {% if section.blocks.size > 0 %}
+      {% for block in section.blocks %}
+        <div class="video-items">
+          <div class="video-inner">
+            {% if block.settings.video_url != blank %}
+               <video id="video-pop-ele" loop playsinline poster="{{ block.settings.video_image  | img_url: 'master' }}">
+                  <source src="{{ block.settings.video_url }}" type="video/mp4">
+                  <p>Your browser does not support the video tag.</p>
+              </video>
+              <div class="video-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 107 107" fill="none">
+                <path d="M53.3333 106.667C23.8773 106.667 0 82.7893 0 53.3333C0 23.8773 23.8773 0 53.3333 0C82.7893 0 106.667 23.8773 106.667 53.3333C106.635 82.7733 82.7733 106.635 53.3333 106.667ZM10.6667 54.2507C10.7879 65.5262 15.3677 76.2952 23.4052 84.2041C31.4427 92.1131 42.2842 96.5187 53.5602 96.458C64.8362 96.3974 75.6297 91.8755 83.5817 83.8807C91.5337 75.8858 95.9975 65.0682 95.9975 53.792C95.9975 42.5158 91.5337 31.6982 83.5817 23.7033C75.6297 15.7084 64.8362 11.1866 53.5602 11.1259C42.2842 11.0653 31.4427 15.4709 23.4052 23.3798C15.3677 31.2888 10.7879 42.0578 10.6667 53.3333V54.2507ZM42.6667 77.3333V29.3333L74.6667 53.3333L42.6667 77.3333Z" fill="white" fill-opacity="0.79"/>
+                </svg>            
+              </div>
+            {% else %}
+               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      {% for i in (1..3) %}
+        <div class="col-3 video-items">
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {% endfor %}
+    {% endif %}
+    </div>
+</div>
+      <div class="col-5">
+        <div class="review_pg_ttl">
+        <div class="nmof">
+        <h4>Trey Paul</h4>
+        <p>Senior Editor</p>
+          </div>
+        <div>
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/da21dde662a19a4b8a6e17048660983a_5efed853-7974-4b8d-a6dc-ee5c1f836144.png?v=1668169777">
+        </div>
+      </div>
+        <h2 class="title">{{ section.settings.title }}</h2>
+        <p class="description">{{ section.settings.description }}</p>
+        {% if section.settings.button_url != blank %}
+          <div class="main-button">
+            <a href="{{ section.settings.button_url }}">
+              {{ section.settings.button_text }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+   
+
+{% schema %}
+  {
+    "name": "video text review",
+    "settings": [
+      {
+        "type": "html",
+        "id": "title",
+        "label": "Title",
+        "default": "Join today for the largest and best <span>rural coverage</span> available."
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Everyone should be able to connect to the internet, no matter where they live. Fast, reliable internet isn't just nice to have – it's essential.  Get connected today and get access to the important things like working, learning, banking, and more, online."
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Label",
+        "default": "Check Your Location"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link"
+      },
+      {
+        "type": "color",
+        "id": "button_background",
+        "label": "Button background",
+        "default": "#109D59"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button color",
+        "default": "#FFFFFF"
+      }
+      ],
+      "max_blocks": 3,
+    "blocks": [
+     {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "text",
+          "id": "video_url",
+          "label": "Video Url"
+        },
+        {
+          "type": "image_picker",
+          "id": "video_image",
+          "label": "Video Image"
+        }
+      ]
+     }
+   ],
+    
+    "presets": [
+		{
+			"category": "Image",
+			"name": "video text review"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

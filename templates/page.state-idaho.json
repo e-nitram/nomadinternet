@@ -1,0 +1,508 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/TOP_1.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in Idaho"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "Enjoy Up to Unlimited Broadband Internet Connection in Idaho. Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in Idaho?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/DrddrpqMeNo?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The internet provider with the most features in Idaho has been identified.",
+        "description": "Find your city in Idaho",
+        "content": "Blackfoot,\nBoise,\nBonners Ferry,\nCaldwell,\nCoeur d’Alene,\nIdaho City,\nIdaho Falls,\nKellogg,\nLewiston,\nMoscow,\nNampa,\nPocatello,\nPriest River,\nRexburg,\nSun Valley,\nTwin Falls"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BLOG_1_9b599fe1-34fa-421d-af85-94b8b9d2dc7e.jpg",
+        "title_tag": "h2",
+        "title": "Maximizing Internet Connectivity for Remote Work in Rural Idaho",
+        "description": "<p>With its spectacular landscapes, rural Idaho is a great option for anyone looking to combine their remote job with the state's unique attractions. Here are some tips on how to maximize your internet connectivity while making the most of what rural Idaho has to offer:If you're after outdoor activities and breathtaking scenery – head over to the Sawtooth National Forest located in Central Idaho. <\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p>From exploring its incredible mountains, lakes and reservoirs to discovering hidden trails - there are plenty of adventures waiting for you here! Plus, Nomad Internet provides reliable <a href=\"https:\/\/nomadinternet.com\/pages\/wireless-internet\" title=\"high-speed internet\">high-speed internet<\/a> even in remote locations, so you'll never miss an email or call when you're on the go.Experience the iconic Yellowstone National Park which is situated close to Idaho’s western region. Not only will you get easy access to one of America's greatest treasures but also benefit from Nomad Internet offering unbeatable speeds outside of urban locations too - <\/p>",
+        "text_2": "<p>no matter where your adventures take you – it won't affect your connection speed either!Finally, explore Yellowstone-Teton Territory located in Northern <a href=\"\/pages\/states\" title=\"States\">Idaho<\/a> – offering scenic vistas like nowhere else in the world. If you're looking for a unique escape - this is the perfect place! Thanks to Nomad Internet providing lightning-fast speeds throughout rural Idaho –you can stay connected while discovering all that these stunning sites have to offer today!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Camilla_Chase.jpg",
+            "name": "Camilla Chase",
+            "text": "As a digital nomad in rural Idaho, I'm so glad I can still pursue my work online with reliable internet thanks to Nomad internet! The download speeds are great and they aren't throttled like other providers. I was able to easily stream content without any buffering or lag, and uploads were quick too. Overall, the service is really efficient and with great customer service. Even though I'm living out in the countryside of Idaho, I get a fast connection that lets me work from anywhere with confidence. Highly recommend for digital nomads who need their internet on the go!",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Ann_Weltie_50ba50db-8d02-4b9b-be5b-76488fc6d5ca.jpg",
+            "name": "Ann Weltie",
+            "text": "Living in a rural area in Idaho, I've had to put up with slow and throttled internet for far too long. But recently I discovered Nomad internet, which has completely changed my life as a digital nomad. With their fast andt reliable connection, I no longer have to worry about my work being disrupted by poor coverage. The customer service is also top-notch - they are always incredibly helpful whenever I need assistance. Thanks to Nomad internet, I am now able to do my job without any interruptions or distractions while relaxing in the comfort of my home!",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/April_Russel.jpg",
+            "name": "April Russel",
+            "text": "As a digital nomad, I couldn't be more pleased with the rural internet options in Idaho! With great download speeds and reliable connection, I'm able to stay productive no matter where I work. As a remote worker, it's so helpful to have access to high-quality internet service wherever I go. It's easy to set up, and customer service is always there if I ever need help. Overall, nomad internet helps me continue my job without worrying about connectivity issues.",
+            "link": ""
+          }
+        },
+        "a448f662-93e4-4b59-97e5-d1e23c02af91": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Vicky_Dalton.jpg",
+            "name": "Vicky Dalton",
+            "text": "I recently moved to a rural area in Idaho with my family and needed high-speed internet for our kids' online education. We'd heard about Nomad Internet and decided to give it a try and I'm so glad we did! It has been a lifesaver! The setup process was easy and fast, with their techs helping us out every step of the way. Plus, the modems they sent were top-of-the-line and worked great, providing us with more than enough bandwidth for all of our needs. Overall, I am really happy with Nomad Internet--the service is reliable and fast, perfect for our rural home. Highly recommend it!",
+            "link": ""
+          }
+        },
+        "e90c69b6-1565-4854-bc7a-a2e88dde4a79": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Ashley_Claire.jpg",
+            "name": "Ashley Claire",
+            "text": "I recently signed up for Nomad Internet in rural Idaho, and I couldn't be more pleased! As a family with school-age kids, having high speed internet was essential to our daily lives. We need it for everything from streaming movies and TV shows on the weekend to having access to reliable online education. Nomad Internet provides us with a strong connection that is fast enough to keep up with all of our needs. It's amazing how much better their service is compared to what other providers in the area offer. The customer service has also been excellent; they take the time to answer all my questions, no matter how small. All in all, I'm thrilled we decided to go with Nomad Internet!",
+            "link": ""
+          }
+        },
+        "f650db10-d81b-4b9e-9cb8-0d353fef5243": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Amanda_Price.png",
+            "name": "Amanda Price",
+            "text": "Nomad Internet is a great option for families living in rural areas of Idaho looking for high speed internet. With Nomad Internet, parents can rest assured that their kids have access to the best online education opportunities. The company offers reliable internet speeds of up to 25 Mbps so that users can easily stream videos, share large files, and stay connected with friends and family. Additionally, Nomad Internet provides customer service 24 hours a day, 7 days a week to make sure that any problems are solved quickly and efficiently. The setup process is easy and straightforward and the wireless connection allows users to go completely mobile without being tethered down by cables or wires. All in all, Nomad Internet is an excellent choice for families living in rural Idaho looking for an affordable and dependable high-speed internet connection.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "a448f662-93e4-4b59-97e5-d1e23c02af91",
+        "e90c69b6-1565-4854-bc7a-a2e88dde4a79",
+        "f650db10-d81b-4b9e-9cb8-0d353fef5243"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "dab9c2bc-c25d-491f-9298-ad1155585009": {
+          "type": "block",
+          "settings": {
+            "title": "What can I do to improve my internet speed in Idaho's rural communities?",
+            "content": "<p>If you're living in a rural area of Idaho and experiencing slow internet speeds, there are a few things you can do to improve your connection. Firstly, consider switching to a fixed wireless internet provider like Nomad Internet. Our company offers speeds up to 200 Mbps with a starting price of $99 per month (with an annual plan), which can be much faster than DSL or dial-up connections.<br\/><br\/>Secondly, optimize your internet connection by upgrading your router, clearing your browser cache and cookies, or reducing the number of devices connected to your network. These small changes can often make a big difference in your internet speed.<br\/><br\/>Another option to consider is using a modem that can accumulate and boost the internet signal. Our company's modems are designed to receive and store the internet signal, which can result in a more stable and faster internet connection. Keep in mind that the effectiveness of this solution can vary depending on your location and other factors, so it's worth researching and comparing different options to find the best solution for your needs.<br\/><br\/>Overall, improving rural internet speed in Idaho may require some effort and research, but we're here to help. At Nomad Internet, we're dedicated to providing fast and reliable internet service to rural communities across the United States.<\/p>"
+          }
+        },
+        "90cfc685-cfc8-4319-b719-c25be173bbd2": {
+          "type": "block",
+          "settings": {
+            "title": "Is 5G technology available through Nomad Internet in Idaho?",
+            "content": "<p>Yes, Nomad Internet provides 5G coverage in Idaho.<br\/><br\/>5G is the latest generation of mobile network technology that promise faster download and upload speeds, lower latency, and improved network reliability. With 5G, users can enjoy faster downloads and streaming, smoother video calls, and improved connectivity for smart home devices. <br\/><br\/>Nomad Internet's high-speed, low-latency service is made possible through the use of the Nomad Air's advanced high-power directional antennas that extend the reach of cellular networks, while also supporting 5G sub-6GHz and 4G LTE fallback for the perfect balance of network coverage and performance. <br\/><br\/>Nomad Internet offers various tariff plans, including unlimited data plans and plans with varying data caps, all designed to provide affordable high-speed internet access to residents in rural areas of Idaho. Nomad Internet's modems, the Nomad Air and Nomad Cube, amplify and accumulate the signal to provide stable and fast internet to users.<\/p>"
+          }
+        },
+        "4b82f306-6a3d-46a7-819e-6aa2e21acf30": {
+          "type": "block",
+          "settings": {
+            "title": "What internet service plans does Nomad Internet offer in Idaho?",
+            "content": "<p>Nomad Internet provides various internet service plans in Idaho, catering to the different needs of customers. Depending on your usage requirements, you can choose a plan that best suits you. <br\/><br\/>If you plan to use the internet at home for streaming movies, playing video games, social networking, or work, there are different plans to choose from. <br\/><br\/>Similarly, if you travel frequently or use the internet while on the move, Nomad Internet also has suitable plans. You should also consider the number of devices you want to connect because different plans offer varying numbers of devices that can be connected. <br\/><br\/>Nomad Internet also provides plans that are suitable for businesses that need internet services for a large number of employees or restaurants. <br\/><br\/>Additionally, if you require fast internet, there are plans that can provide that. <br\/><br\/>To learn more about the available plans, you can visit the Nomad Internet website.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "dab9c2bc-c25d-491f-9298-ad1155585009",
+        "90cfc685-cfc8-4319-b719-c25be173bbd2",
+        "4b82f306-6a3d-46a7-819e-6aa2e21acf30"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

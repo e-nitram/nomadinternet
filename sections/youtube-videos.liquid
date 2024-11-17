@@ -1,0 +1,386 @@
+{{ 'youtube-videos.css' | asset_url | stylesheet_tag }}
+
+<div 
+  class="youtube-videos" 
+  style="
+    --bg-color: {{ section.settings.bg_color }};
+    --text-color: {{ section.settings.text_color }};
+  "
+>
+  <div class="youtube-videos__top" js-video-top>
+    <div class="container">
+      {% if section.settings.heading != blank %}
+        <h3 class="heading">{{ section.settings.heading }}</h3>
+      {% endif %}
+
+      <div class="search-form">    
+        <input type="text" placeholder="Search" js-search-input/>
+        <button js-search-button>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon">
+            <path d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke="#878787" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="youtube-videos__wrapper container">
+    {% if section.blocks.size > 0 %}
+      <div class="main-content"></div>      
+    {% endif %}
+
+    <div class="side-content"></div>
+  </div>
+</div>
+
+{% if section.blocks.size > 0 %}
+  {% assign shop_url = shop.url | append: '/pages/' | append: page.handle  %}
+  {% assign results = '' %}
+  {% for block in section.blocks %}
+    {% assign video_thumb_image = "" %}
+    {% assign video_id = block.settings.video_url.id %}
+
+    {% if block.settings.video_thumbs != blank %}
+      {% assign video_thumb_image = block.settings.video_thumbs | img_url: 'master' %}  
+    {% else %}
+      {% if video_id != blank %}
+        {% assign youtube_image = 'http://img.youtube.com/vi/' | append: video_id | append: '/maxresdefault.jpg' %}
+        {% assign video_thumb_image = youtube_image %}
+      {% endif %}
+    {% endif %}
+
+    {% assign item_val = '' %}
+    {% assign item_val = item_val | append: 'video_id:' | append: block.settings.video_url.id | append: ',' %}
+    {% assign item_val = item_val | append: 'video_thumbnail:' | append: video_thumb_image | append: ',' %}
+    {% assign item_val = item_val | append: 'video_title:' | append: block.settings.title | append: ',' %}
+
+    {% unless forloop.last %}
+      {% assign item_val = item_val | append: '####' %}
+    {% endunless %}
+    {% if block.settings.video_url != blank %}
+      {% assign results = results | append: item_val %}
+    {% endif %}
+  {% endfor %}  
+{% endif %}
+
+<script>
+  const results = {{ results | json }};
+  const shop_url = {{ shop_url | json }};
+  let video_list = [];
+  let active_id = '', continue_playing = true, is_muted = false;
+
+  const url = window.location.href.split('?video_id=')[1];
+  if (url) {
+    active_id = url.split('&')[0];
+  }
+  const videoMainContent = document.querySelector('.youtube-videos__wrapper .main-content');
+  const videoSideContent = document.querySelector('.youtube-videos__wrapper .side-content');
+  const videoHeader = document.querySelector('[js-video-top]');
+  let prevScrollPos1 = window.pageYOffset;
+
+  document.addEventListener('DOMContentLoaded', (e) => {
+
+    if (sessionStorage.getItem('continue_playing_video') == '1') {
+      is_muted = false;
+      sessionStorage.setItem('continue_playing_video', '0');
+    } else {
+      is_muted = true;
+    }
+
+    getVideoItems();
+    if (video_list.length > 0) {
+      if (active_id == '') {
+        active_id = video_list[0].video_id;
+      }
+
+      setMainContent();
+      setSideContent();
+    }
+  });
+
+  function scrollEvents () {
+    document.addEventListener("scroll", videoHeaderScrolled);
+  }
+
+  function videoHeaderScrolled() {
+    setTimeout(() => {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollPos1 > currentScrollPos) {
+        videoHeader.classList.remove('scrolled-top');
+      } else if (prevScrollPos1 < currentScrollPos){
+        if (prevScrollPos1 > 200) {
+          videoHeader.classList.add('scrolled-top');
+        }
+      }
+
+      if (currentScrollPos === 0) {
+        videoHeader.classList.remove('scrolled-top');
+      }
+
+      prevScrollPos1 = currentScrollPos;
+    }, 250);
+    if (window.scrollY > 100) {
+      videoHeader.classList.add('scrolled');
+    } else {
+      videoHeader.classList.remove('scrolled');
+    }
+  }
+
+  function events () {
+    if (continue_playing) {
+      const autoVideoElement = videoMainContent.querySelector('.video-thumbs');
+      const autoVideo = videoMainContent.querySelector('iframe');
+      if (is_muted) {
+        autoVideo.setAttribute('src', autoVideo.getAttribute('src') + "?autoplay=1&mute=1&fs=1&rel=0&enablejsapi=1&html5=1")
+      } else {
+        autoVideo.setAttribute('src', autoVideo.getAttribute('src') + "?autoplay=1&fs=1&rel=0&enablejsapi=1&html5=1")
+      }
+
+      setTimeout(() => {
+        autoVideoElement.classList.add('hidden');
+      }, 300);
+    }
+
+    if (videoMainContent) {
+      const videoThumb = videoMainContent.querySelector('.video-thumbs');
+      const video = videoMainContent.querySelector('iframe');
+
+      videoThumb.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        setTimeout(() => {
+          videoThumb.classList.add('hidden');  
+        }, 250);
+        
+        video.setAttribute('src', video.getAttribute('src') + "?autoplay=1")
+      });
+    }
+
+    const videoItems = document.querySelectorAll('.youtube-videos__wrapper .side-content .video-item');
+    videoItems.forEach(video_item => {
+      video_item.addEventListener('click', (e) => {
+        const id = video_item.getAttribute('data-video-id');
+        sessionStorage.setItem('continue_playing_video', '1');
+        window.location.href = `${shop_url}?video_id=${id}`;
+      });
+    });
+
+    const searchButton = document.querySelector('[js-search-button]');
+
+    if (searchButton) {
+      searchButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        const searchInput = document.querySelector('[js-search-input]');
+        if (searchInput.value == '') {
+          videoItems.forEach(item => {
+            item.classList.remove('hidden');
+          });
+        } else {
+          videoItems.forEach(item => {
+            const title = item.getAttribute('data-title');
+            if (title.toLowerCase().includes(searchInput.value.toLowerCase())) {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        }
+      });
+    }
+  }
+
+  function getChannelIcons (active_item) {
+    const hostname = 'https://www.googleapis.com/youtube/v3';
+    const key = 'AIzaSyCKCPNDYG--H-1Y6O5DwXT25wARwGeDS00';
+    const part = 'snippet';
+
+    fetch(`${hostname}/videos?part=${part}&key=${key}&id=${active_item.video_id}`).then(res => res.json()).then(response => {
+      if (response && response.items.length > 0) {
+        const channelId = response.items[0].snippet.channelId;
+
+        fetch(`${hostname}/channels?part=${part}&key=${key}&id=${channelId}`).then(res => res.json()).then(channelInfo => {
+          if (channelInfo && channelInfo.items.length > 0) {
+            getMainContent(active_item, channelInfo.items[0].snippet.thumbnails.high.url);
+          }
+        }).catch(error => {
+          getMainContent(active_item, '');
+        })
+      }
+    }).catch(e => {
+      getMainContent(active_item, '');
+    })
+  }
+
+  function getMainContent(active_item, cIcon) {
+    const html = `
+      <div class="video-thumbs">
+        <img src="${active_item.video_thumbnail}" alt="${active_item.video_title}"/>
+        <div class="play-button-icon">
+          <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="4" width="43" height="43" rx="21.5" fill="white"/>
+            <rect x="2" y="2" width="47" height="47" rx="23.5" stroke="white" stroke-opacity="0.5" stroke-width="4"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 25.5C4 13.6259 13.6259 4 25.5 4C37.3742 4 47 13.6259 47 25.5C47 37.3742 37.3742 47 25.5 47C13.6259 47 4 37.3742 4 25.5ZM28.514 19.473L28.6772 19.5739C30.0406 20.4173 31.1774 21.1205 32.001 21.7756C32.849 22.45 33.5958 23.2472 33.8642 24.3584C34.0452 25.1074 34.0452 25.8932 33.8642 26.6422C33.5958 27.7532 32.849 28.5504 32.001 29.2248C31.1774 29.88 30.0406 30.5832 28.6772 31.4266L28.514 31.5276C27.2008 32.3402 26.0986 33.0218 25.1844 33.4452C24.2572 33.8746 23.2 34.1988 22.0976 33.8586C21.3689 33.6336 20.7216 33.2118 20.2104 32.65C19.4666 31.833 19.2214 30.765 19.1105 29.6976C18.9999 28.634 19 27.2596 19 25.5862V25.4142C19 23.7408 18.9999 22.3666 19.1105 21.3029C19.2214 20.2355 19.4666 19.1676 20.2104 18.3505C20.7216 17.7888 21.3689 17.3668 22.0976 17.142C23.2 16.8018 24.2572 17.1259 25.1844 17.5553C26.0986 17.9787 27.2006 18.6604 28.514 19.473Z" fill="#008061"/>
+          </svg>
+        </div>
+      </div>
+
+      <iframe
+        src="https://www.youtube.com/embed/${active_item.video_id}"
+        class="js-youtube"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+      <h3 class="video-title">
+        ${cIcon == '' ? '': `<img src="${cIcon}"/>`}
+        ${active_item.video_title}
+      </h3>
+    `;
+
+    if (videoMainContent) {
+      videoMainContent.innerHTML = html;
+    }
+
+    setTimeout(() => {
+      events();
+      scrollEvents();
+    }, 1000);
+  }
+
+  function setMainContent() {
+    let active_item;
+
+    video_list.forEach(item => {
+      if (item.video_id == active_id) {
+        active_item = item;
+      }
+    });
+
+    if (active_item == undefined) {
+      active_item = video_list[0];
+    }
+
+    getChannelIcons(active_item);
+  }
+
+  function setSideContent() {
+    let item_content = '';
+    if (video_list.length > 1) {
+      video_list.forEach((item, index) => {
+        if (active_id != item.video_id) {
+          const item_html = `
+            <div class="video-item" data-video-id="${item.video_id}" data-title="${item.video_title}">
+              <div class="video-thumbs">
+                <img src="${item.video_thumbnail}" alt="${item.video_title}"/>
+                <div class="play-button-icon">
+                  <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="4" width="43" height="43" rx="21.5" fill="white"/>
+                    <rect x="2" y="2" width="47" height="47" rx="23.5" stroke="white" stroke-opacity="0.5" stroke-width="4"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 25.5C4 13.6259 13.6259 4 25.5 4C37.3742 4 47 13.6259 47 25.5C47 37.3742 37.3742 47 25.5 47C13.6259 47 4 37.3742 4 25.5ZM28.514 19.473L28.6772 19.5739C30.0406 20.4173 31.1774 21.1205 32.001 21.7756C32.849 22.45 33.5958 23.2472 33.8642 24.3584C34.0452 25.1074 34.0452 25.8932 33.8642 26.6422C33.5958 27.7532 32.849 28.5504 32.001 29.2248C31.1774 29.88 30.0406 30.5832 28.6772 31.4266L28.514 31.5276C27.2008 32.3402 26.0986 33.0218 25.1844 33.4452C24.2572 33.8746 23.2 34.1988 22.0976 33.8586C21.3689 33.6336 20.7216 33.2118 20.2104 32.65C19.4666 31.833 19.2214 30.765 19.1105 29.6976C18.9999 28.634 19 27.2596 19 25.5862V25.4142C19 23.7408 18.9999 22.3666 19.1105 21.3029C19.2214 20.2355 19.4666 19.1676 20.2104 18.3505C20.7216 17.7888 21.3689 17.3668 22.0976 17.142C23.2 16.8018 24.2572 17.1259 25.1844 17.5553C26.0986 17.9787 27.2006 18.6604 28.514 19.473Z" fill="#008061"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="video-title">${item.video_title}</h3>
+            </div>
+          `;
+
+          item_content += item_html;
+        }
+      });
+
+      const html = `
+        <div class="side-content__wrapper">
+          ${item_content}
+        </div>
+      `;
+
+      if (videoSideContent) {
+        videoSideContent.innerHTML = html;
+      }
+    }
+  }
+
+  function getVideoItems() {
+    const videos = results.split('####');
+
+    videos.forEach(video_info => {
+      if (video_info != '') {
+        const info = video_info.split(',');
+        let obj = {}, video_id, video_thumbnail, video_title;
+
+        if (info[0].includes('video_id:')) {
+          video_id = info[0].split('video_id:')[1];
+        }
+
+        if (info[1].includes('video_thumbnail:')) {
+          video_thumbnail = info[1].split('video_thumbnail:')[1];
+        }
+
+        if (info[2].includes('video_title:')) {
+          video_title = info[2].split('video_title:')[1];
+        }
+
+        obj = {
+          video_id: video_id,
+          video_thumbnail: video_thumbnail,
+          video_title: video_title
+        }
+        video_list.push(obj);
+      }
+    });
+  }
+
+</script>
+{% schema %}
+{
+  "name": "Youtube Videos",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Nomad Video Wall"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "transparent"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": ["youtube"],
+          "label": "Video"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "video_thumbs",
+          "label": "Video thumbnail"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Youtube Videos"
+    }
+  ]
+}
+{% endschema %}

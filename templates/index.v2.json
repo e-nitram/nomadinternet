@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "77b14520-bef3-4e24-b93f-6b92f4590abf": {
+      "type": "01home-banner",
+      "settings": {}
+    },
+    "383c8367-bb73-4e9d-a52d-cdf6097d6e57": {
+      "type": "01home-whychoose",
+      "settings": {}
+    },
+    "a00a20f5-afa0-4870-9729-780d36b0f7c8": {
+      "type": "01home-videos",
+      "settings": {}
+    },
+    "c8fe824c-0adb-4b9c-9ed2-963e8e755fc4": {
+      "type": "01home-featured",
+      "settings": {}
+    },
+    "8709dced-1a4d-492e-bf1c-98ce51a12b7e": {
+      "type": "01home-tab",
+      "disabled": true,
+      "settings": {}
+    },
+    "e9ebbf70-4913-4722-b361-3ce0481447ce": {
+      "type": "01home-tab-mobile",
+      "disabled": true,
+      "settings": {}
+    },
+    "f7a007a3-a9e6-48f5-8086-b52ffcc3b9c8": {
+      "type": "01home-blog",
+      "settings": {}
+    },
+    "dbc829dd-1d9b-45c4-9ca2-049a31df8b92": {
+      "type": "01home-getthebest",
+      "disabled": true,
+      "settings": {}
+    },
+    "788ec865-1796-46b4-baa0-84b30e00efe5": {
+      "type": "01home-getfastinternet",
+      "settings": {}
+    },
+    "6693c6f0-5694-447c-9bfc-6990691a883c": {
+      "type": "01home-reviews",
+      "settings": {}
+    },
+    "30b1d3a9-a576-476a-ab46-f2b9ba5f7869": {
+      "type": "01home-faq",
+      "settings": {}
+    },
+    "22e2c332-232d-4478-9867-cc37b3ae877f": {
+      "type": "01home-contact",
+      "settings": {}
+    }
+  },
+  "order": [
+    "77b14520-bef3-4e24-b93f-6b92f4590abf",
+    "383c8367-bb73-4e9d-a52d-cdf6097d6e57",
+    "a00a20f5-afa0-4870-9729-780d36b0f7c8",
+    "c8fe824c-0adb-4b9c-9ed2-963e8e755fc4",
+    "8709dced-1a4d-492e-bf1c-98ce51a12b7e",
+    "e9ebbf70-4913-4722-b361-3ce0481447ce",
+    "f7a007a3-a9e6-48f5-8086-b52ffcc3b9c8",
+    "dbc829dd-1d9b-45c4-9ca2-049a31df8b92",
+    "788ec865-1796-46b4-baa0-84b30e00efe5",
+    "6693c6f0-5694-447c-9bfc-6990691a883c",
+    "30b1d3a9-a576-476a-ab46-f2b9ba5f7869",
+    "22e2c332-232d-4478-9867-cc37b3ae877f"
+  ],
+  "layout": "theme"
+}

@@ -1,0 +1,149 @@
+{{ '03raptor-multicolumn.css' | asset_url | stylesheet_tag }}
+
+{% assign desktop_bg = section.settings.bg_image %}
+{% assign mobile_bg = section.settings.mobile_bg_image | default: section.settings.bg_image %}
+
+<div 
+  class="raptor-multicolumn"
+  style="
+    --bg-image: url({{ desktop_bg | img_url: 'master' }});
+    --bg-mobile-image: url({{ mobile_bg | img_url: 'master' }})
+  "
+>
+  <div class="container">
+    {% if section.settings.top_icon != blank %}
+      <img src="{{ section.settings.top_icon | img_url: '300x300' }}" alt="top_icon" class="top-icon"/>
+    {% endif %}
+
+    {% if section.settings.sub_heading != blank %}
+      <div class="sub-heading" style="color: {{ section.settings.sub_heading_color }};">{{ section.settings.sub_heading }}</div>
+    {% endif %}
+
+    {% if section.settings.heading != blank %}
+      <h3 class="heading" style="color: {{ section.settings.heading_color }};">{{ section.settings.heading }}</h3>
+    {% endif %}
+
+    <div class="list">
+      {% for block in section.blocks %}
+        {% if block.settings.icon != blank %}
+          <div class="item">
+            {% if block.settings.icon != blank %}
+              <img src="{{ block.settings.icon | img_url: '500x500' }}" alt="{{ block.settings.heading }}"/>
+            {% endif %}
+
+            <div class="wrapper">
+              {% if block.settings.heading != blank %}
+                <h4 class="title" style="color: {{ section.settings.heading_color }};">{{ block.settings.heading }}</h4>
+              {% endif %}
+
+              {% if block.settings.sub_heading != blank %}
+                <div class="sub-title">{{ block.settings.sub_heading }}</div>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+      <a href="{{ section.settings.button_link }}" class="btn btn--customize" target="_blank">
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Rator multicolumn",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Desktop bg image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_bg_image",
+      "label": "Mobile bg image"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "top_icon",
+      "label": "Top icon"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "header",
+      "content": "Color settings"
+    },
+    {
+      "type": "color",
+      "id": "sub_heading_color",
+      "label": "Sub heading color",
+      "default": "#00B589"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default" : "#fff"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content-item",
+      "name": "Content item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "sub_heading",
+          "label": "Sub heading"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Raptor multicolumn"
+    }
+  ]
+}
+{% endschema %}

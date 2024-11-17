@@ -1,0 +1,55 @@
+<!-- /templates/customers/register.liquid -->
+
+<div id="CustomerRegisterForm" class="grid admin-page-wrapper">
+
+  <div class="grid__item large--one-third push--large--one-third container">
+	<div class="card-admin">
+      <div class="card-header border-0">
+      	<h1 class="card-title">{{ 'customer.register.title' | t }}</h1>
+      </div>
+      
+      <div class="form-verticals">
+        {% form 'create_customer' %}
+		 <div class="row">
+          <div class="col col-12 col-sm-12 col-lg-5 m-auto">
+            {{ form.errors | default_errors }}
+            <div class="form-row mb-4">
+              {% comment %}
+            	<label for="FirstName" class="form-label signup-form-label hidden-label">{{ 'customer.register.first_name' | t }}</label>
+          {% endcomment %}
+            	<input type="text" name="customer[first_name]" id="FirstName" class="form-control input-full" placeholder="{{ 'customer.register.first_name' | t }}" {% if form.first_name %}value="{{ form.first_name }}"{% endif %} autocapitalize="words" autofocus>
+            </div>
+            <div class="form-row mb-4">
+          {% comment %}
+              <label for="LastName" class="form-label signup-form-label hidden-label">{{ 'customer.register.last_name' | t }}</label>
+          {% endcomment %}
+              <input type="text" name="customer[last_name]" id="LastName" class="form-control input-full" placeholder="{{ 'customer.register.last_name' | t }}" {% if form.last_name %}value="{{ form.last_name }}"{% endif %} autocapitalize="words">
+            </div>
+            <div class="form-row mb-4">
+            {% comment %}
+              <label for="Email" class="form-label signup-form-label hidden-label">{{ 'customer.register.email' | t }}</label>
+          {% endcomment %}
+              <input type="email" name="customer[email]" id="Email" class="form-control input-full{% if form.errors contains 'email' %} error{% endif %}" placeholder="{{ 'customer.register.email' | t }}" {% if form.email %} value="{{ form.email }}"{% endif %} autocorrect="off" autocapitalize="off">
+            </div>
+            <div class="form-group mb-4">
+          {% comment %}
+              <label for="CreatePassword" class="form-label signup-form-label hidden-label">{{ 'customer.register.password' | t }}</label>
+          {% endcomment %}
+              <input type="password" name="customer[password]" id="CreatePassword" class="form-control input-full{% if form.errors contains 'password' %} error{% endif %}" placeholder="{{ 'customer.register.password' | t }}">
+            </div>
+            {% comment %}
+            <div class="form-row align-items-center mb-4"><input type="checkbox"value="" required class="mr-2" /> <strong style="font-weight:600; color:#000">I agree to the privacy policy</strong></div>
+          {% endcomment %}
+            <p>
+              <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn rounded text-capitalize btn-primary btn--full" style="font-weight:600;letter-spacing: normal;">
+            </p>
+           <!-- <a href="{{ shop.url }}">{{ 'customer.register.cancel' | t }}</a>-->
+           <p style="font-weight:600; color:#000">Already have an account? {{ 'Sign in now' | customer_login_link }}</p>
+           </div>
+        </div>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+
+</div>

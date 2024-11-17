@@ -1,0 +1,357 @@
+<div class="text-with-image">
+  <div class="container-wrapper">
+    <div class="new-row">
+      <div class="col-4">
+     <!-- <h4 class="title">{{ section.settings.title }}</h4>-->
+       <!-- <p class="description">{{ section.settings.description }}</p>-->
+       <!-- {% if section.settings.button_url != blank %}-->
+        <!--  <div class="main-button">-->
+         <!--   <a href="{{ section.settings.button_url }}">
+              {{ section.settings.button_text }}
+            </a>-->
+         <!-- </div>
+        {% endif %}-->
+    <script>
+function openTab(tabName) {
+  // handle active button state
+  $('#tab-holder .tab-' + tabName).addClass('active').siblings('.active').removeClass('active');
+  // handle tab content switching
+  $('.tab-content').hide().filter('#' + tabName).show()
+}
+
+var vars = {}, hash;
+    var q = document.URL.split('?')[1];
+    if(q != undefined){
+        q = q.split('&');
+        for(var i = 0; i < q.length; i++){
+            hash = q[i].split('=');
+            vars[hash[0]] = hash[1];
+        }
+}
+
+$(document).ready(function(){
+   var tabName = vars['passTab'];
+   // commented out because it won't work in this demo
+   // openTab(tabName);
+   openTab('everyday')
+})
+</script>
+<style>
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tabs.active {
+   outline: solid #109D59 1px; 
+}
+</style>
+<div id="tab-holder">
+    <a href="#everyday"><button class="tabs tab-everyday active" onclick="openTab('everyday')"><span><div class="txt_icon"><div class="text_img"><h5>1.</h5></div><div class="center_txt"><h4>New customer Referral</h4><br><h2>Free Month</h2><p>one time discount of next month's Bill</p></div></div></span></button></a>
+    <a href="#sunday"> <button class="tabs tab-sunday" onclick="openTab('sunday')"><span><div class="txt_icon"><div class="text_img"><h5>2.</h5></div><div class="center_txt"><h4>New customer Referral</h4><br><h2>Free Month</h2><p>one time discount of next month's Bill</p></div></div></span></button></a>
+     <a href="#buffet"><button class="tabs tab-buffet " onclick="openTab('buffet')"><span><div class="txt_icon"><div class="text_img"><h5>3.</h5></div><div class="center_txt"><h4>New customer Referral</h4><br><h2>Free Month</h2><p>one time discount of next month's Bill</p></div></div></span></button></a>   
+     <a href="#xmas"><button class="tabs tab-xmas" onclick="openTab('xmas')"><span><div class="txt_icon"><div class="text_img"><h5>4.</h5></div><div class="center_txt"><h4>New customer Referral</h4><br><h2>Free Month</h2><p>one time discount of next month's Bill</p></div></div></span></button> </a>
+ <a href="#xmas"><button class="tabs tab-xmas" onclick="openTab('xmas')"><span><div class="txt_icon"><div class="text_img"><h5>5.</h5></div><div class="center_txt"><h4>New customer Referral</h4><br><h2>Free Service</h2><p> *TAXES & FEE APPLY</p></div></div></span></button></a>
+</div>   
+
+        
+      </div>
+   <div class="col-6"> 
+
+        
+
+<div id="everyday" class="tab-content active">
+<br>
+<div class="head_txt1">
+<h2>Get In Touch With Us</h2>
+<p>We Are Always Here To Help Your Business</p>
+</div>
+   {% form 'contact' %}
+  {{ form.errors | default_errors }}
+<div class="form_11">
+  <div class="frm_flx">
+  <div class="first-name">  
+    
+    <input type="text" name="contact[first_name]" id="first-name" placeholder="First Name" />
+  </div>
+
+  <div class="last-name">
+    
+    <input type="text" name="contact[last_name]" id="last-name" placeholder="Last Name" />
+  </div>
+  </div>
+ <div class="message">
+    
+    <textarea name="contact[body]" id="message" placeholder="Street Address"></textarea>
+  </div> 
+   <div class="frm_flx_1">
+    <div class="city">
+    
+    <input type="text" name="contact[city]" id="city" placeholder="city" />
+  </div> 
+   <div class="state">
+    
+    <input type="text" name="contact[state]" id="state" placeholder="State" />
+  </div> 
+    <div class="zip">
+    
+    <input type="text" name="contact[zip]" id="zip" placeholder="Zip" />
+  </div>  
+</div>
+   <div class="frm_flx">
+  <div class="phone">
+    
+    <input type="tel" name="contact[phone]" id="phone" placeholder="Phone" />
+  </div>
+
+  <div class="email"> 
+   
+    <input type="email" name="contact[email]" id="email" placeholder="Email" />
+  </div>
+   </div>
+  <div class="submit">  
+    <input type="submit" value="Send Message" />
+  </div>
+</div>
+{% endform %}
+</div>
+<div id="sunday" class="tab-content">
+  New customer Referral<br>
+<h2>2.Free Month</h2>
+<p>one time discount of next month's Bill</p>
+  {% form 'contact' %}
+  {{ form.errors | default_errors }}
+<div class="form_11">
+  <div class="frm_flx">
+  <div class="first-name">
+    
+    <input type="text" name="contact[first_name]" id="first-name" placeholder="First Name" />
+  </div>
+
+  <div class="last-name">
+    
+    <input type="text" name="contact[last_name]" id="last-name" placeholder="Last Name" />
+  </div>
+  </div>
+ <div class="message">
+   
+    <textarea name="contact[body]" id="message" placeholder="Street Address"></textarea>
+  </div>   
+    <div class="frm_flx_1">
+    <div class="city">
+    
+    <input type="text" name="contact[city]" id="city" placeholder="city" />
+  </div> 
+   <div class="state">
+   
+    <input type="text" name="contact[state]" id="state" placeholder="State" />
+  </div> 
+    <div class="zip">
+    
+    <input type="text" name="contact[zip]" id="zip" placeholder="Zip" />
+  </div>   
+    </div>
+   <div class="frm_flx">
+  <div class="phone">
+    
+    <input type="tel" name="contact[phone]" id="phone" placeholder="Phone" />
+  </div>
+
+  <div class="email">
+   
+    <input type="email" name="contact[email]" id="email" placeholder="Email" />
+  </div>
+   </div>
+  <div class="submit">  
+    <input type="submit" value="Send Message" />
+  </div>
+</div>
+{% endform %}
+</div>
+<div id="buffet" class="tab-content">
+   New customer Referral<br>
+<h2>3.Free Month</h2>
+<p>one time discount of next month's Bill</p>
+  {% form 'contact' %}
+  {{ form.errors | default_errors }}
+<div class="form_11">
+  <div class="frm_flx">
+  <div class="first-name">
+    
+    <input type="text" name="contact[first_name]" id="first-name" placeholder="First Name" />
+  </div>
+
+  <div class="last-name">
+  
+    <input type="text" name="contact[last_name]" id="last-name" placeholder="Last Name" />
+  </div>
+      </div>
+ <div class="message">
+  
+    <textarea name="contact[body]" id="message" placeholder="Street Address"></textarea>
+  </div>   
+        <div class="frm_flx_1">
+    <div class="city">
+   
+    <input type="text" name="contact[city]" id="city" placeholder="city" />
+  </div> 
+   <div class="state">
+    
+    <input type="text" name="contact[state]" id="state" placeholder="State" />
+  </div> 
+    <div class="zip">
+   
+    <input type="text" name="contact[zip]" id="zip" placeholder="Zip" />
+  </div>  
+      </div>
+       <div class="frm_flx">  
+  <div class="phone">
+    
+    <input type="tel" name="contact[phone]" id="phone" placeholder="Phone" />
+  </div>
+
+  <div class="email">
+    
+    <input type="email" name="contact[email]" id="email" placeholder="Email" />
+  </div>
+      </div>
+  <div class="submit">  
+    <input type="submit" value="Send Message" />
+  </div>
+      </div>
+{% endform %}
+</div>
+<div id="xmas" class="tab-content">
+  New customer Referral<br>
+<h2>4.Free Month</h2>
+<p>one time discount of next month's Bill</p>
+  {% form 'contact' %}
+  {{ form.errors | default_errors }}
+<div class="form_11">
+  <div class="frm_flx">
+  <div class="first-name">
+    
+    <input type="text" name="contact[first_name]" id="first-name" placeholder="First Name" />
+  </div>
+
+  <div class="last-name">
+   
+    <input type="text" name="contact[last_name]" id="last-name" placeholder="Last Name" />
+  </div>
+      </div>
+ <div class="message">
+    
+    <textarea name="contact[body]" id="message" placeholder="Street Address"></textarea>
+  </div>   
+      <div class="frm_flx_1">   
+    <div class="city">
+    
+    <input type="text" name="contact[city]" id="city" placeholder="city" />
+  </div> 
+   <div class="state">
+    
+    <input type="text" name="contact[state]" id="state" placeholder="State" />
+  </div> 
+    <div class="zip">
+   
+    <input type="text" name="contact[zip]" id="zip" placeholder="Zip" />
+  </div>
+      </div>
+         <div class="frm_flx">
+  <div class="phone">
+    
+    <input type="tel" name="contact[phone]" id="phone" placeholder="Phone" />
+  </div>
+
+  <div class="email">
+   
+    <input type="email" name="contact[email]" id="email" placeholder="Email" />
+  </div>
+      </div>
+  <div class="submit">  
+    <input type="submit" value="Send Message" />
+  </div>
+      </div>
+{% endform %}
+</div>
+        
+       
+      </div>
+    </div>
+  </div>
+</div> 
+
+  
+{% schema %}
+  {
+    "name": "Get in touch form",
+    "settings": [
+      {
+        "type": "html",
+        "id": "title",
+        "label": "Title",
+        "default": "Join today for the largest and best <span>rural coverage</span> available."
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Everyone should be able to connect to the internet, no matter where they live. Fast, reliable internet isn't just nice to have – it's essential.  Get connected today and get access to the important things like working, learning, banking, and more, online."
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Label",
+        "default": "Check Your Location"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link"
+      },
+      {
+        "type": "text",
+        "id": "right_text",
+        "label": "Right Text",
+        "default": "Fast, Reliable Internet"
+      },
+      {
+        "type": "text",
+        "id": "left_text",
+        "label": "left Text",
+        "default": "Just$99"
+      },
+      {
+        "type": "color",
+        "id": "button_background",
+        "label": "Button background",
+        "default": "#109D59"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button color",
+        "default": "#FFFFFF"
+      }
+    ],
+    "presets": [
+    {
+        "name": "text with email"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

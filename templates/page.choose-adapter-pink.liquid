@@ -1,0 +1,133 @@
+<div class="container page_content">
+  <div class="col-md-12"> 
+    <!-- Stepers Wrapper -->
+    <ul id="progressbar" class="row justify-content-center w-100 mb-5 mt-5">
+      <li id="account"></li>
+      <li class="active" id="personal"></li>
+      <li id="payment"></li>
+    </ul>
+    <!-- fieldsets --> 
+  </div>
+  <div class="row align-items-end mb-5">
+    <div class="col-md-9">
+      <h1 class="mb-4" style="color:#000;font-weight:600">Choose a router type</h1>
+      <p class="mb-0" style="color:#000; font-weight:500">The first step is identifying which of these carriers has the best LTE signal strength in your area.</p>
+    </div>
+    <div class="col-md-3 d-flex justify-content-md-end"> <a href="#" class="btn btn-primary rounded text-uppercase text-white">Result</a> </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <div class="rounded border text-center p-4" style="background: url({{ 'travel-router.png' | asset_url }}) center center no-repeat #fff; background-size:contain"> <i class="fas fa-battery-half mb-4" style="color:#19191B; font-size:2.5rem;"></i>
+        <h3 class="font-600 text-black mb-4">Travel WiFi Router</h3>
+        <p>Travel routers don’t have to be as powerful as stationary networking equipment. Because if you’re traveling, it’s not likely you’re carrying an entire network with you. In most cases, what most people need is a router that can get them online, do it securely, and without a big hassle.</p>
+        <div class="d-flex justify-content-around align-items-center mt-4"><a href="/pages/compare-devices" class="text-uppercase" style="color:#0F9E59; font-weight:600">Compare Devices <i class="fas fa-chevron-right"></i></a> <a href="/products/strong-pink-plan?variant=31851636228154" class="btn rounded btn-primary" style="font-weight:600">Choose</a></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="rounded border text-center p-4" style="background: url({{ 'router-bg.png' | asset_url }}) center center no-repeat #fff; background-size:contain"> <i class="fas fa-tachometer-alt mb-4" style="color:#19191B; font-size:2.5rem;"></i>
+        <h3 class="font-600 text-black mb-4">WiFi Router</h3>
+        <p>Travel routers don’t have to be as powerful as stationary networking equipment. Because if you’re traveling, it’s not likely you’re carrying an entire network with you. In most cases, what most people need is a router that can get them online, do it securely, and without a big hassle.</p>
+        <div class="d-flex justify-content-around align-items-center mt-4"><a href="/pages/compare-devices" class="text-uppercase" style="color:#0F9E59; font-weight:600">Compare Devices <i class="fas fa-chevron-right"></i></a> <a href="/products/strong-pink-plan?variant=31403862327354" class="btn rounded btn-primary" style="font-weight:600">Choose</a></div>
+      </div>
+    </div>
+  </div> 
+</div>
+<style>
+    .text-black{
+        color:#000;
+    }
+    .font-600{
+        font-weight:600;
+    }
+    .btn-outlines-info{
+        border:1px solid #0F9E59;
+        background:#fff;
+        padding:10px 0
+    }
+    #choose-router{
+        background: #F9F9F9;
+    } 
+    #progressbar .active {
+        color: rgba(15,158,89,0.3)
+    }
+    
+    #progressbar li {
+        list-style-type: none;
+        font-size: 12px;
+        width: 30%;
+        position: relative
+    }
+    
+    #progressbar #account:before {
+        text-align:center;
+        content: "1"
+    }
+    
+    #progressbar #personal:before {
+        text-align:center;
+        content: "2"
+    }
+    
+    #progressbar #payment:before {
+        text-align:center;
+        content: "3"
+    }
+    
+     
+    #progressbar li:before {
+        width: 60px;
+        height: 60px;
+        display: block;
+        font-size: 18px;
+        
+        border-radius: 50%;
+        margin: 0 auto 10px auto;
+        padding: 2px;
+        border: 1px solid rgba(15,158,89,0.3);
+        color:rgba(15,158,89,0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #progressbar li:after {
+        content: '';
+        width: 65%;
+        height: 1px;
+        border-top: 1px solid rgba(15,158,89,0.3);
+        position: absolute;
+        left: 65%;
+        top: 30px;
+        z-index: -1;
+    }
+    #progressbar li:last-child:after{
+        display:none;
+    }
+     #progressbar li.active:before{
+        border-color:rgba(15,158,89,1);
+        color: rgba(15,158,89,1)
+    }
+    
+    .plan-coverage{
+    letter-spacing: normal;
+    display: block;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: .5rem 0;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 600;
+      letter-spacing: normal;
+	  font-size: 14px;
+} 
+.btn-cart{
+    border: 0;
+    padding: .5rem 0;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+  letter-spacing: normal;
+}
+  
+     
+    </style>

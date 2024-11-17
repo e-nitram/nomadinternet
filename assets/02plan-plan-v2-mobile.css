@@ -1,0 +1,1471 @@
+
+@media screen and (max-width: 990px) {
+  .omen_mobile_only{display:block!important;}
+  .omen_desktop_only{display:none!important;}
+  .mobile_raptor_info{display:block!important;}
+  .desktop_raptor_info{display:none!important;}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+  }
+.modem-main.nomad-raptor .info .monthly{justify-content: flex-start;}
+.wireless-internet-modem .modem-grid .modem-main.nomad-raptor .info span{padding-left:0px;margin-bottom: 0;}
+.master{max-width:100%;}
+.footer-checkout.mobile-hide{display:none!important;}
+.plan_section{
+     margin-top: 10px;
+    background: #fff;
+    padding-top: 10px;
+}
+  .wireless-internet-modem .container {
+    display: block;
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 20px 16px 100px;
+  }
+  .wireless-internet-modem .mobile-version__header .heading {
+    margin: 0 0 18px;
+  }
+  .wireless-internet-modem .heading h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    color: #222;
+    margin: 0 0 4px;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+  }
+  .wireless-internet-modem .heading p.offer-text {
+    display: flex;
+    padding: 4px 8px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 500px;
+    background-color: #f5f5f5;
+    color: #ff4d00;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: -0.12px;
+    width: max-content;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+        color: #f5f5f5;
+    background-color: #ff4d00;
+  }
+  .wireless-internet-modem .slider-main .img img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .wireless-internet-modem .slick-next {
+    right: 15px;
+  }
+  .wireless-internet-modem .slick-prev {
+    left: 15px;
+  }
+  .wireless-internet-modem .slick-prev img {
+    transform: rotate(180deg);
+  }
+  .wireless-internet-modem .slick-next,
+  .wireless-internet-modem .slick-prev {
+    z-index: 1;
+    width: 34px;
+    height: 34px;
+  }
+  .wireless-internet-modem .slick-next:before,
+  .wireless-internet-modem .slick-prev:before {
+    content: none;
+  }
+  .wireless-internet-modem .slick-dots {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wireless-internet-modem .slick-dots li {
+    margin: 0;
+    height: 15px;
+  }
+  .wireless-internet-modem .slick-dots li button {
+    background: #a3a3a3;
+    border-radius: 50px;
+    padding: 0;
+    width: 5px;
+    height: 5px;
+    transition: 0.3s all;
+  }
+  .wireless-internet-modem .slick-dots li.slick-active button {
+    background-color: #000;
+    width: 12px;
+  }
+  .wireless-internet-modem .slick-dots li button:before {
+    content: none;
+  }
+  .wireless-internet-modem .steps {
+    margin: 33px 0 20px;
+  }
+  .wireless-internet-modem .steps .step-title h2,
+  .wireless-internet-modem .unlimited-plan .plan-title h2 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 0 4px;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+  }
+  .wireless-internet-modem .steps .step-title p,
+  .wireless-internet-modem .unlimited-plan .plan-title p {
+    color: #4D5166;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    margin: 0 0 12px;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+  }
+  .wireless-internet-modem .unlimited-plan .img {
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  .wireless-internet-modem .unlimited-plan .img img{width:100%;}
+  .wireless-internet-modem .modem-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wireless-internet-modem .modem-grid .modem-main {
+    text-align: center;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px;
+    padding: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  /*.wireless-internet-modem .modem-grid .modem-main.nomad-raptor {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+    grid-column: 1 / 3;
+    align-items: center;
+  }
+
+  .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .img {
+    width: 150px;
+    height: 95px;
+    margin: 0;
+  }
+   .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .monthly {
+            width: fit-content;
+    margin-top: 5px;
+    padding-left: 0;
+      }
+
+  .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .info {
+    text-align: left;
+    width: calc(100% - 110px);
+  }*/
+
+  .wireless-internet-modem .modem-grid .modem-main.nomad-raptor {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+    grid-column: 1 / 3;
+    align-items: center;
+  }
+
+  .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .img {
+    width: 150px;
+    height: 95px;
+    margin: 0;
+  }
+   .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .monthly {
+            width: fit-content;
+    margin-top: 5px;
+    padding-left: 0;
+      }
+
+  .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .info {
+    text-align: left;
+    width: calc(100% - 110px);
+  }
+
+
+  .wireless-internet-modem .modem-grid .modem-main.active {
+    border-color: #008061;
+    background-color: #0080610d;
+    border: 2px solid #008061;
+  }
+  .wireless-internet-modem .modem-grid .modem-main .info h2 {
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'AktivGrotesk', sans-serif !important;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #000;
+    margin: 0;
+  }
+
+  .wireless-internet-modem .modem-grid .modem-main .info span {
+    font-size: 14px;
+    font-style: normal;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+    font-weight: normal;
+    line-height: normal;
+    color: #008061;
+  }
+  .wireless-internet-modem .unlimited-plan {
+    display: block;
+    margin: 40px 0 0;
+  }
+  .wireless-internet-modem
+    .unlimited-plan
+    .modem-grid
+    .modem-main
+    .info
+    span {
+    color: #4D5166;
+  }
+  .wireless-internet-modem .unlimited-plan .modem-grid .modem-main .info p {
+   color: #4D5166;
+  text-align: center;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 15px;
+  margin-top:10px;
+  }
+  .wireless-internet-modem .modem-grid .modem-main .info p.price {
+    display: block;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    color: #4D5166;
+    margin:0;
+    margin-top: 2px;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+  }
+
+  .wireless-internet-modem .modem-grid .modem-main .info p.price span {
+    color: #4D5166;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-left: 2px;
+  }
+  .wireless-internet-modem .modem-grid .modem-main span.yellow-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 600;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+    line-height: normal;
+    color: #A33100;
+    margin: 0 0 8px;
+  }
+
+  .wireless-internet-modem .help-info .help-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .wireless-internet-modem .help-info .help-text p {
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 214.286% */
+    text-decoration-line: underline;
+    color: #525252;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+  }
+  .wireless-internet-modem .footer-checkout {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /*padding: 24px 16px 12px;
+    border-top: 1px solid #e5e5e5;*/
+    z-index: 99;
+    background: #fff;
+        flex-direction: column;
+  }
+  .wireless-internet-modem .footer-checkout .top_flex{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 16px 12px;
+    border-top: 1px solid #e5e5e5;
+    z-index: 99;
+    background: #fff;
+  }
+
+  .wireless-internet-modem .footer-checkout .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .wireless-internet-modem .footer-checkout .product-info h2 {
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    color: #000;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+  }
+  .sale_price{
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  font-weight: bold;
+  }
+  .original_price{
+    font-family: 'AktivGrotesk', sans-serif !important;;
+    font-weight: 500;
+  }
+  .wireless-internet-modem .footer-checkout .product-info p.price {
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    gap:4px;
+  }
+
+  .wireless-internet-modem .footer-checkout .product-info p.price .original_price {
+    color: #4D5166;
+    text-decoration: line-through;
+    display: block;
+  }
+
+  .wireless-internet-modem
+    .footer-checkout
+    .product-info
+    p.price
+    span.yellow-text {
+    color: #ff4d00;
+    text-decoration: none;
+  }
+
+  .wireless-internet-modem .footer-checkout .product-info span.fee {
+    display: block;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+    line-height: normal;
+    color: #000;
+  }
+
+  .wireless-internet-modem .footer-checkout .payment-btn a {
+    display: flex;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #017C5F;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+    font-weight: bold;
+    line-height: 22.68px;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width:150px;
+  }
+  .wireless-internet-modem .footer-checkout .payment-btn.checkout-btn a {
+    background-color: #017C5F;
+    color: #fff;
+    cursor: pointer;
+  }
+  .wireless-internet-modem .payment-btns {
+    /*display: flex;*/
+    gap: 4px;
+  }
+  .hidden-popup-overlay {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000bf;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all;
+  }
+  .hidden-popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .hidden-popup {
+    padding: 26px;
+    background: #fff;
+    border-radius: 30px 30px 0 0;
+    position: fixed;
+    width: 100%;
+    bottom: -150vh;
+    left: 0;
+    z-index: 100;
+    transition: 0.6s all;
+  }
+  .hidden-popup.active {
+    bottom: 0%;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .hidden-popup.payment-popup.active{
+    max-height: 670px;
+  }
+  .hidden-popup .close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 16px;
+    position: relative;
+  }
+
+  .hidden-popup .close-btn:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: #4D5166;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    top: 0;
+  }
+  .hidden-popup .title h2 {
+    color: #222;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+    line-height: normal;
+    margin: 0 0 24px;
+  }
+  .hidden-popup .list {
+    padding: 16px 10px 16px 20px;
+    border-radius: 12px;
+    background: #e9f2e4;
+    margin: 0 0 12px;
+  }
+  .hidden-popup .list h2.list-title {
+    display: block;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+    line-height: normal;
+    margin: 0 0 16px;
+  }
+
+  .hidden-popup .list li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+    line-height: 0%;
+    color: #292929;
+    opacity: 0.8;
+  }
+
+  .hidden-popup .list li svg {
+    width: 20px;
+  }
+
+  .hidden-popup .list li p {
+    width: calc(100% - 28px);
+    line-height: 1.4;
+  }
+
+  .hidden-popup .list span.badge {
+    display: block;
+    text-align: right;
+    color: #ff4c00;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    background: #fff;
+    width: max-content;
+    padding: 8px;
+    border-radius: 500px;
+    margin-left: auto;
+  }
+
+  .hidden-popup .list span.badge.badge-transparent {
+    height: 30px;
+    background-color: transparent;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .modem-main .img{
+    margin:0px auto 16px;
+    height: 95px;
+  }
+
+    /* .wireless-internet-modem .modem-grid .modem-main.nomad-air .yellow-text {
+    margin:0;
+    margin-top: 10px;
+  }
+   */
+
+  .modem-main .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .hidden-popup .list li p{line-height:normal;}
+  .slider-main-plan .slick-dots{bottom:20px;}
+  body .siq_bR {
+    bottom: 100px;
+    right: 10px;
+  }
+   /*.product-info{opacity:1;}
+      .product-info.hide_info{opacity:0;} */
+  .wireless-internet-modem p{
+        font-family: 'AktivGrotesk', sans-serif !important;;
+        font-weight: 700;
+      }
+  .activation_text{
+  color: var(--colors-gray-true-600, #525252);
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+  text-align:center;
+  cursor: pointer;
+  }
+  .activation_text span{text-decoration-line: underline;}
+   .activation-popup ul{
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #FFF;
+    padding: 23px 16px 25px 16px;
+    max-width:660px;
+    margin:0 auto;
+    list-style: disc;
+  }
+  .activation-popup ul li{
+    color: var(--gray-true-600, var(--colors-gray-true-600, #525252));
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  line-height: 137.023%;
+  }
+  .activation-popup ul li b{
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  line-height: 137.023%; /* 16.443px */
+  }
+   .footer_main_info{
+    font-size: 12px;
+  font-style: normal;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  font-weight: normal;
+  }
+  .footer_main_info svg {
+    width: 11.779px;
+    height: 11.779px;
+  }
+  .selected_info.hide{display:none;}
+  .unselected_info.hide{display:none;}
+  .selected_info{display:block;}
+  .unselected_info{display:flex;}
+  .unselected_info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  }
+  .unselected_info span{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-true-800, var(--colors-gray-true-800, #292929));
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity:0.8;
+  }
+  .unselected_info span svg{
+  width: 14px;
+  height: 14px;
+  }
+  .free_price{font-size:14px;}
+  .plan-info-popup {
+    max-width: 100%;
+    padding-bottom: 50px;
+  }
+  .plan-info-popup svg.plan_svg{
+  max-width:500px;
+  margin:16px auto 24px auto;
+  }
+  .plan-info-popup h3{
+    color: var(--Heading, #000);
+  text-align: center;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom:12px;
+  }
+  .plan-info-popup span{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+  }
+  .plan-info-popup .popup_checkout{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 0 20px;
+   flex-direction: column;
+  }
+  .plan-info-popup .popup_checkout a{
+    background-color: #017C5F;
+    color: #fff;
+    min-width: 300px;
+    cursor: pointer;
+   padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #017C5F;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+    font-weight: bold;
+    text-align:center;
+    line-height: 22.68px;
+  }
+  .plan-info-popup p{
+  color: #000;
+  text-align: center;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 137.023%; /* 16.443px */
+  }
+  .main_info{
+        display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 8px;
+    color: #4D5166;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: -0.28px;
+    cursor: pointer;
+  }
+  .main_info svg{
+    width: 14.779px;
+  height: 14.779px;
+  }
+   .main-info-popup ul{
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #FFF;
+    list-style: disc;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .main-info-popup ul li{
+    color: var(--gray-true-600, var(--colors-gray-true-600, #525252));
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  line-height: 137.023%;
+  }
+  .main-info-popup ul li b{
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  line-height: 137.023%; /* 16.443px */
+  }
+  .wireless-internet-modem .heading em{
+  color: #4D5166;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  margin: 0 0 4px;
+  font-family: 'AktivGrotesk', sans-serif !important;;
+  }
+
+  }
+
+  #icon-text {
+    display: flex;
+    align-items: center;
+    color: #008061;
+    justify-content: flex-start;
+    align-self: center;
+  }
+
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  @media (min-width: 768px) {
+    .steps-list {
+      flex-direction: row;
+    }
+  }
+
+  .steps-item.payment-type {
+    border: 1px solid #a0a0a0;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  @media (max-width: 767px) {
+    .steps-item.payment-type {
+      width: 100%;
+    }
+  }
+
+  .steps-item.payment-type.active {
+    border-width: 2px;
+    border-color: #008061;
+    background-color: #e6edef;
+  }
+
+  .steps-item.payment-type .icon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px 8px;
+    font-size: 13.5px;
+    line-height: 16.83px !important;
+    font-family: AktivGrotesk !important;
+    font-weight: 600 !important;
+    color: #fff;
+    gap: 4px;
+    border-radius: 500px;
+    background: #106595;
+
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 8px 12px;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  .steps-item.payment-type .icon.icon-subscribe {
+    background: #ff6b16;
+  }
+
+  .steps-item.payment-type .payment-type__prices {
+    border-bottom: 0.5px solid rgba(205,204,209,1);
+    /*display: flex;*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px 12px;
+    margin-bottom: 8px;
+    margin-top: 12px;
+  }
+
+  .steps-item.payment-type .price {
+    font-family: AktivGrotesk !important;
+    color: #000;
+    font-size: 16px;
+    line-height: 21.28px;
+    font-weight: 700;
+    display: block !important;
+    margin-right:2px;
+    margin-bottom:-5px;
+  }
+
+  .steps-item.payment-type .price span {
+    font-size: 16px;
+    font-family: AktivGrotesk !important;
+    line-height: 18.61px;
+    font-weight: 400;
+    color: #4D5166;
+    text-decoration: line-through;
+    margin-left: 4px;
+    /*display:block;*/
+  }
+
+  .steps-item.payment-type .content {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: AktivGrotesk !important;
+    color: #282828cc;
+    display: flex;
+    line-height: 16.8px;
+    padding: 0 12px 16px;
+    width:100%;
+  }
+
+  .steps-item.payment-type.disabled {
+    pointer-events: none;
+    opacity: 0.65;
+  }
+
+  .payment-popup .list .list-title {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .payment-popup .list.list-0 {
+    background: #3ba2db40;
+  }
+
+  .payment-popup .list.list-1 {
+    background: #ff6b1640;
+  }
+
+  .payment-popup .list .list-title span {
+    max-width: 80%;
+    font-size: 16px;
+    font-family: AktivGrotesk !important;
+    font-weight: 700;
+  }
+
+  .payment-popup .list.list-0 .list-title span {
+    color: #0E557C;
+  }
+
+  .payment-popup .list.list-1 .list-title span {
+    color: #d45308;
+  }
+
+  .modem-main .info .monthly{
+    color: #0d0d0d !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    margin-bottom: 0px;
+  }
+
+  .slider-main .slick-list {
+    overflow: hidden;
+  }
+
+  @media (max-width: 990px) {
+    /*.wireless-internet-modem .modem-grid .modem-main.nomad-raptor {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 24px;
+      grid-column: 1 / 3;
+      align-items: center;
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .img {
+      width: 150px;
+      height: 95px;
+      margin: 0;
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .info {
+      text-align: left;
+      width: calc(100% - 110px);
+    }*/
+    .wireless-internet-modem .modem-grid .modem-main.nomad-raptor {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 24px;
+      grid-column: 1 / 3;
+      align-items: center;
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .img {
+      width: 150px;
+      height: 95px;
+      margin: 0;
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main.nomad-raptor .info {
+      text-align: left;
+      width: calc(100% - 110px);
+    }
+  }
+
+  .plan-info-popup img {
+    margin: auto;
+    margin-bottom: 8px;
+  }
+
+  .plans-read-more {
+      pointer-events: visible;
+    margin-top: 8px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 14.5px;
+    font-family: 'AktivGrotesk', sans-serif !important;;
+    text-decoration-line: underline;
+    color: #544d48;
+    font-weight: 700;
+  }
+
+  @media (max-width: 990px) {
+    .wireless-internet-modem .mobile-version__container {
+      background: #F2F1F6;
+      padding-top: 1px;
+    }
+
+    .wireless-internet-modem .modem-grid .modem-main {
+      background-color: #fff;
+    }
+
+    .steps-item.payment-type {
+      background-color: #fff;
+    }
+
+    /*.mobile-version__header {
+      padding: 0 16px;
+    }*/
+  }
+.steps-item.payment-type .subscribe-type {
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+.steps-item.payment-type .subscribe-icons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-bottom: 4px;
+  }
+.steps-item.payment-type .subscribe-icons span {
+    border: 1px solid #ccc;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    width: 70px;
+    text-align: center;
+    justify-content: center;
+  }
+
+.steps-item.payment-type .payment-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 0 12px 8px;
+  }
+  .steps-item.payment-type .payment-icon {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+
+.price_new {
+
+  font-family: AktivGrotesk !important;
+    color: #000;
+    font-size: 18px;
+    line-height: 21.28px;
+    font-weight: 700;
+    display: block !important;
+
+}
+
+.frame5252 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px;
+  position: relative;
+  border-top-width: 0.5px;
+  border-top-style: solid;
+  border-color: #cdccd1;
+}
+.frame5252 .text-wrapper {
+  position: relative;
+  flex: 1;
+  font-family: AktivGrotesk!important;
+  font-weight: bold;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 19.6px;
+}
+.frame5252 .div {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+.frame5252 .img {
+  position: relative;
+  width: 19.33px;
+  height: 21.34px;
+  margin-top: -0.79px;
+}
+.frame5252 .img-2 {
+  position: relative;
+  width: 23.33px;
+  height: 23.33px;
+}
+.flex-read-more{
+color: var(--accent, #008061);
+font-family: AktivGrotesk!important;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+text-decoration-line: underline;
+display: contents;
+}
+
+.frame3636 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+
+.frame3636 .div {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+.frame3636 .img {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.frame3636 .div-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+.frame3636 .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: AktivGrotesk!important;
+  font-weight: bold;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 17px;
+  white-space: nowrap;
+}
+.frame3636 .p {
+  position: relative;
+  align-self: stretch;
+  font-weight: 400;
+  color: #797c8e;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+.flex-read-more-popup {max-width:450px;}
+.flex-checkout_icon{
+  position:relative;
+}
+.flex-checkout_popup{
+  top: -60px;
+  padding: 10px;
+  width: 123px;
+}
+.flex-checkout_popup h6{
+  margin-bottom:0!important;
+  font-size: 14px!important;
+  font-style: normal!important;
+  line-height: 17px!important;
+}
+.flex-checkout_popup.customize-notify:after{
+    height: 24px;
+}
+
+
+.frame4445 {
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.frame4445 .div {
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+}
+
+.frame4445 .div-wrapper {
+  height: 42px;
+  align-items: center;
+  gap: 3.56px;
+  padding: 6px;
+  align-self: stretch;
+  width: 100%;
+  border: 1px solid;
+  border-color: #dddddd;
+  display: flex;
+  position: relative;
+}
+
+.frame4445 .text-wrapper {
+  position: relative;
+  flex: 1;
+  font-family: AktivGrotesk!important;
+  font-weight: bold;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16.8px;
+}
+
+.frame4445 .div-2 {
+  min-height: 48px;
+  align-items: center;
+  gap: 3.56px;
+  padding: 6px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  margin-top: -1px;
+  border: 1px solid;
+  border-color: #dddddd;
+  display: flex;
+  position: relative;
+}
+
+.frame4445 .yes {
+  position: relative;
+  flex: 1;
+  font-family: AktivGrotesk!important;
+  font-weight: 500;
+  color: #101828;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.frame4445 .div-3 {
+  height: 48px;
+  align-items: center;
+  gap: 3.56px;
+  padding: 6px;
+  align-self: stretch;
+  width: 100%;
+  margin-top: -1px;
+  border: 1px solid;
+  border-color: #dddddd;
+  display: flex;
+  position: relative;
+}
+
+.frame4445 .yes-2 {
+  margin-top: -1px;
+  font-family: AktivGrotesk!important;
+  position: relative;
+  flex: 1;
+  font-weight: 500;
+  color: #101828;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.frame4445 .div-4 {
+ /* width: 200px;*/
+  align-items: flex-start;
+  margin-left: -1px;
+  display: flex;
+  position: relative;
+}
+
+.frame4445 .div-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.frame4445 .div-6 {
+  padding: 8px 8px 4px;
+  background-color: #106595;
+  display: flex;
+  height: 42px;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.frame4445 .coins {
+  position: relative;
+  width: 21px;
+  height: 21px;
+}
+
+.frame4445 .text-wrapper-2 {
+  width: 54px;
+  position: relative;
+  margin-top: -0.63px;
+  font-family: AktivGrotesk!important;
+  font-weight: 400;
+  color: #f5f5f5;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14.4px;
+}
+
+.frame4445 .div-7 {
+  min-height: 48px;
+  flex: 0 0 auto;
+  background-color: #1065950d;
+  display: flex;
+  align-items: center;
+  gap: 3.56px;
+  padding: 6px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  margin-top: -1px;
+  border: 1px solid;
+  border-color: #dddddd;
+}
+
+.frame4445 .CHECK {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  background-image: url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/check-square.svg?v=1712487128');
+  background-size: 100% 100%;
+}
+
+.frame4445 .text-wrapper-3 {
+  font-family: AktivGrotesk!important;
+  position: relative;
+  flex: 1;
+  font-weight: 500;
+  color: #101828;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.frame4445 .div-8 {
+  height: 48px;
+  background-color: #1065950d;
+  display: flex;
+  align-items: center;
+  gap: 3.56px;
+  padding: 6px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  margin-top: -1px;
+  border: 1px solid;
+  border-color: #dddddd;
+}
+
+.frame4445 .div-9 {
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  flex-grow: 1;
+  margin-left: -1px;
+  display: flex;
+  position: relative;
+}
+
+.frame4445 .div-10 {
+  padding: 8px;
+  background-color: #da5b12;
+  display: flex;
+  height: 42px;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.frame4445 .economy {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.frame4445 .text-wrapper-4 {
+  flex: 1;
+  margin-bottom: -1.37px;
+  position: relative;
+  margin-top: -0.63px;
+  font-family: AktivGrotesk!important;
+  font-weight: 400;
+  color: #f5f5f5;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14.4px;
+}
+
+.frame4445 .div-11 {
+  min-height: 48px;
+  flex: 0 0 auto;
+  background-color: #da5b120d;
+  display: flex;
+  align-items: center;
+  gap: 3.56px;
+  padding: 6px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  margin-top: -1px;
+  border: 1px solid;
+  border-color: #dddddd;
+}
+
+.frame4445 .CHECK-2 {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  background-image: url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/check-square.svg?v=1712487128');
+  background-size: 100% 100%;
+}
+
+.frame4445 .yes-3 {
+  margin-top: -1px;
+  font-family: AktivGrotesk!important;
+  position: relative;
+  flex: 1;
+  font-weight: 500;
+  color: #101828;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.frame4445 .div-12 {
+  height: 48px;
+  background-color: #da5b120d;
+  display: flex;
+  align-items: center;
+  gap: 3.56px;
+  padding: 6px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  margin-top: -1px;
+  border: 1px solid;
+  border-color: #dddddd;
+}
+
+@media screen and (max-width: 410px) {
+  .frame4445 .div-7, .frame4445 .div-3, .frame4445 .div-2, .frame4445 .div-8, .frame4445 .div-11, .frame4445 .div-12{min-height:66px;}
+}
+
+.steps-wrapper:not(.active) {
+  display: none;
+}
+
+.footer-checkout:not(.active) {
+  /* display: none; */
+}
+
+.footer-checkout:not(.active) .product-info:not(.empty-content) {
+  display: none;
+}
+
+.footer-checkout.active .product-info.empty-content {
+  display: none;
+}
+
+.footer-checkout.active .product-info:not(.empty-content) {
+  display: block;
+}
+
+.prevent-showing-contents .confidence-section,
+.prevent-showing-contents .cube--template .shopify-section:not(:first-child),
+.prevent-showing-contents .footer-checkout {
+  /* display: none !important; */
+}

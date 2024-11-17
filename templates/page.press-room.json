@@ -1,0 +1,730 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "aaf7a86b-ab78-4d5c-8bce-56585a0c5050": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "590e0e45-446d-4d80-a318-6ab862fa4687": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_5094e14a-2480-46b4-8e76-e22b1a8b2eb0.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "590e0e45-446d-4d80-a318-6ab862fa4687"
+      ],
+      "settings": {
+        "title": "Nomad in the News",
+        "description": "",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "3545db27-1e2b-419d-9090-370c29af1ec2": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+      }
+    },
+    "d0153cb2-7ea4-4092-b5a0-6b70d4af86fa": {
+      "type": "lp-26",
+      "blocks": {
+        "card_yeVgDn": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1._Associated_Press.webp",
+            "date": "May 1, 2024",
+            "title": "Nomad Raptor, Nomad Internet’s Fastest Modem Yet, is Now Available for Just $25 a Month",
+            "url": "https:\/\/apnews.com\/press-release\/marketersmedia\/texas-dd93ffa53e645267f9b75c52b457438b",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "1b557058-f512-4819-a923-0e39f3a91934": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ag_b7e644a6-6fe8-4b5a-bc75-07db516ae592.png",
+            "date": "August 15, 2023",
+            "title": "Nomad Internet Launches Nomad Prime Store with Advanced Internet Products",
+            "url": "https:\/\/www.androidguys.com\/promoted-news\/nomad-internet-launches-nomad-prime-store-with-advanced-internet-products\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "e5cdbe76-35a7-4275-960d-24c5181babb5": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cision.png",
+            "date": "AUGUST 14, 2023",
+            "title": "Nomad Internet Unveils Nomad Prime Store: An Exclusive Members-Only Hub Offering the Most Advanced Internet Products and Rewarding Experiences",
+            "url": "https:\/\/www.prnewswire.com\/news-releases\/nomad-internet-unveils-nomad-prime-store-an-exclusive-members-only-hub-offering-the-most-advanced-internet-products-and-rewarding-experiences-301898395.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "fce46dcd-e044-434a-a95f-b02305704321": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/isp-today.png",
+            "date": "AUGUST 14, 2023",
+            "title": "Nomad Internet Launches Nomad Prime Store for Exclusive Members",
+            "url": "https:\/\/isp.page\/news\/nomad-internet-unveils-nomad-prime-store-an-exclusive-members-only-hub-offering-the-most-advanced-internet-products-and-rewarding-experiences-2\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "a7ac168f-83f8-49c9-b097-33eb56d806b6": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/techtimes.png",
+            "date": "August 11, 2023",
+            "title": "Nomad Internet's Exclusive Prime Store Revolutionizes Internet Services",
+            "url": "https:\/\/www.techtimes.com\/articles\/295001\/20230811\/nomad-internets-exclusive-prime-store-revolutionizes-internet-services.htm",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "e62bb833-7b50-437b-90f8-838ee3c07cec": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_8ada844a-7781-45a8-92ed-a982f6453c68.png",
+            "date": "JULY 14, 2023",
+            "title": "Nomad Internet CEO’s Unlikely Journey from Customer to Leader",
+            "url": "https:\/\/enewsexpress.com\/nomad-internet-ceos-unlikely-journey-from-customer-to-leader\/",
+            "target_blank": false,
+            "nofollow": false
+          }
+        },
+        "e7317c11-d13f-4ad5-9ca1-f11717884cc5": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_161e8a8b-a26b-4f49-8933-8aa6677e5558.png",
+            "date": "JULY 14, 2023",
+            "title": "How Nomad Internet is Innovating Internet Delivery and Technical Support",
+            "url": "https:\/\/sanantonioscore.org\/how-nomad-internet-is-innovating-internet-delivery-and-technical-support\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "8abb3200-e4bc-46e0-b5cd-a299e7445b93": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_453e1b06-d043-48ff-a175-f7f64f930324.png",
+            "date": "JULY 14, 2023",
+            "title": "The Customer Devotion that Drives (and Sometimes Leads) Nomad Internet’s Growth",
+            "url": "https:\/\/thisisithouston.com\/the-customer-devotion-that-drives-and-sometimes-leads-nomad-internets-growth\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "3f1c7c49-d693-4262-b8e4-95f915ec7ccf": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_1_1e70bec6-d0f1-4dc0-a614-4eefddcf5b36.png",
+            "date": "JULY 14, 2023",
+            "title": "Nomad Internet Returns to Roots in Latest Product Releases Designed to Help Underserved Rural Populations ",
+            "url": "https:\/\/newsnmediarelease.com\/post\/nomad-internet-returns-to-roots-in-latest-product-releases-designed-to-help-underserved-rural-populations\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "a1140526-98d5-4a23-867e-2017fb9fc4bb": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_0992e891-b51f-47dc-9bce-323cf7772964.png",
+            "date": "JULY 14, 2023",
+            "title": "Nomad Internet CEO on How the Pandemic Accelerated the Need for High-Speed Internet Access in Rural Areas",
+            "url": "https:\/\/thenewspublicist.com\/nomad-internet-ceo-on-how-the-pandemic-accelerated-the-need-for-high-speed-internet-access-in-rural-areas\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "fa52312b-57dd-4868-b919-682295580e3f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_5.png",
+            "date": "June 10, 2023",
+            "title": "Nomad Internet delivers 5G internet speeds with new modems powered by C-band spectrum",
+            "url": "https:\/\/www.vanillaplus.com\/2023\/06\/10\/80085-nomad-internet-delivers-5g-internet-speeds-with-new-modems-powered-by-c-band-spectrum\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "828dd6de-3aa0-49f9-bdae-3985aa1e80ff": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_3_1f3b8fa4-8a77-453c-bbe7-8c02a11c46f8.png",
+            "date": "June 5, 2023",
+            "title": "Nomad Internet delivers unprecedented 5G internet speeds to America's rural communities with new modems powered by C-band spectrum",
+            "url": "https:\/\/www.marketwatch.com\/press-release\/nomad-internet-delivers-unprecedented-5g-internet-speeds-to-americas-rural-communities-with-new-modems-powered-by-c-band-spectrum-2023-06-05",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "0aa9288b-55d5-48a9-98dc-5d9ef6ebda06": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_2_b501f234-23ea-429b-82a3-33597c80eaaf.png",
+            "date": "June 5, 2023",
+            "title": "Nomad Internet delivers unprecedented 5G internet speeds to America's rural communities with new modems powered by C-band spectrum",
+            "url": "https:\/\/www.prnewswire.com\/news-releases\/nomad-internet-delivers-unprecedented-5g-internet-speeds-to-americas-rural-communities-with-new-modems-powered-by-c-band-spectrum-301842446.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "5a553ca3-7ee2-4af4-9194-7cf054538875": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_1_27ef7f81-5095-4f52-bd8e-ea1cbb88a452.png",
+            "date": "June 5, 2023",
+            "title": "Nomad Internet delivers unprecedented 5G internet speeds to America's rural communities with new modems powered by C-band spectrum",
+            "url": "https:\/\/www.benzinga.com\/pressreleases\/23\/06\/n32718353\/nomad-internet-delivers-unprecedented-5g-internet-speeds-to-americas-rural-communities-with-new-mo",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "ed6b2153-bc1b-4771-85c7-7d78bcfdf1d8": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design.png",
+            "date": "June 5, 2023",
+            "title": "Nomad Internet delivers unprecedented 5G internet speeds to America's rural communities with new modems powered by C-band spectrum",
+            "url": "https:\/\/finance.yahoo.com\/news\/nomad-internet-delivers-unprecedented-5g-152000696.html?.tsrc=fin-srch",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "e6667c44-260f-4375-8d1a-1b685370b6ef": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_93288293-a082-4c4a-b060-15eedff6a85c.jpg",
+            "date": "March 27, 2023",
+            "title": "Kiosk offers Internet access time",
+            "url": "https:\/\/www.vendingtimes.com\/news\/kiosk-offers-internet-access-time\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "21c704fb-ae12-4782-8d90-6c5253142cc1": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_be5fa29b-943a-42fa-be1e-85ce7c85c0b7.jpg",
+            "date": "March 27, 2023",
+            "title": "Kiosk offers Internet access time",
+            "url": "https:\/\/www.marketscreener.com\/quote\/stock\/APPLE-INC-4849\/news\/Kiosk-offers-Internet-access-time-43350500\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "fc9d5ce5-c923-4914-8312-567879d090ae": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_5252655b-4218-4d98-aaee-16e7060bd688.jpg",
+            "date": "March 27, 2023",
+            "title": "Kiosk offers Internet access time",
+            "url": "https:\/\/www.kioskmarketplace.com\/news\/kiosk-offers-internet-access-time\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "44a1029b-97e3-4f40-8c6c-9cfaa66556ce": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_9a762db0-d73c-4e1b-8e12-d09d44ffe299.jpg",
+            "date": "March 27, 2023",
+            "title": "Nomad Internet Introduces Nomad Air Rental Kiosk to Make High-Speed Internet Accessible on the Move",
+            "url": "https:\/\/www.newsfilecorp.com\/release\/159940\/Nomad-Internet-Introduces-Nomad-Air-Rental-Kiosk-to-Make-HighSpeed-Internet-Accessible-on-the-Move",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "240493f2-2829-45ef-8ead-cf859c7cfe8d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_1a5aabb8-1f54-43e6-a185-e7966477f6bf.jpg",
+            "date": "March 27, 2023",
+            "title": "Nomad Internet Introduces Nomad Air Rental Kiosk to Make High-Speed Internet Accessible on the Move",
+            "url": "https:\/\/news.yahoo.com\/nomad-internet-introduces-nomad-air-130000749.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "67deed6a-f2c8-4eb7-8a56-5c1b0ab21179": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/28.jpg",
+            "date": "March 9, 2023",
+            "title": "Nomad Internet Launches Nomad Cube: The Ultimate Solution for Indoor Connectivity in the C Band Spectrum",
+            "url": "https:\/\/finance.yahoo.com\/news\/nomad-internet-launches-nomad-cube-063800353.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "c6b2188d-d155-4bca-8824-29dd46538ca8": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/26.jpg",
+            "date": "March 9, 2023",
+            "title": "Nomad Internet Unveils Cutting-Edge Fixed Wireless Network for High-Quality Internet Connection in 2023",
+            "url": "https:\/\/www.digitaljournal.com\/pr\/news\/nomad-internet-unveils-cutting-edge-fixed-wireless-network-for-high-quality-internet-connection-in-2023",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "d088f7a3-a1e2-4b09-9214-4d115d17a582": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/27.jpg",
+            "date": "March 9, 2023",
+            "title": "Nomad Internet Launches Nomad Cube: The Ultimate Solution for Indoor Connectivity in the C Band Spectrum",
+            "url": "https:\/\/www.investorsobserver.com\/news\/qm-pr\/6652110725721811",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "9b1b1176-f185-404e-9f51-05d872c11a20": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_78402071-258d-41a0-9e8a-66bcbdfc7a5f.jpg",
+            "date": "March 8, 2023",
+            "title": "Nomad Internet Launches Work Trailer Connectivity Solutions for Transportation Industry",
+            "url": "https:\/\/www.benzinga.com\/pressreleases\/23\/03\/31255700\/nomad-internet-launches-work-trailer-connectivity-solutions-for-transportation-industry",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "49d59722-9489-4d13-bfa9-f8f384268645": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_02c4df76-caaf-4daa-8727-15c2366d827d.jpg",
+            "date": "March 8, 2023",
+            "title": "Nomad Internet Launches Work Trailer Connectivity Solutions for Transportation Industry",
+            "url": "https:\/\/finance.yahoo.com\/news\/nomad-internet-launches-trailer-connectivity-130000074.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "1718f266-571d-47cc-8f1c-3bef41e3cf76": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_a17d43f3-1c03-4eb5-81f8-9e5fe7c2712f.jpg",
+            "date": "March 8, 2023",
+            "title": "Nomad Internet Launches Work Trailer Connectivity Solutions for Transportation Industry",
+            "url": "https:\/\/www.bloomberg.com\/press-releases\/2023-03-08\/nomad-internet-launches-work-trailer-connectivity-solutions-for-transportation-industry",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "1904ce96-624d-4786-846f-afde0238f3b4": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_700e3fa9-d44e-4826-a7f0-2371d16fd4b7.jpg",
+            "date": "MARCH 8, 2023",
+            "title": "Nomad Internet Launches Work Trailer Connectivity Solutions for Transportation Industry",
+            "url": "https:\/\/www.marketwatch.com\/press-release\/nomad-internet-launches-work-trailer-connectivity-solutions-for-transportation-industry-2023-03-08?mod=mw_quote_news_seemore",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "29674177-c9da-4aa6-a1f2-51511469aa2a": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_af75d876-1bd9-462a-8ea3-2934f234529d.jpg",
+            "date": "MARCH 1, 2023",
+            "title": "Nomad Internet Launches The Limited Edition Of Its Traveling Wireless Modem Nomad Cube",
+            "url": "https:\/\/www.digitaljournal.com\/pr\/news\/nomad-internet-launches-the-limited-edition-of-its-traveling-wireless-modem-nomad-cube",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "3379806a-a30c-49fe-a317-72145b14531e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_7a7b4dc8-76d8-4811-bfbb-26ea445dddf1.jpg",
+            "date": "Jan 03, 2023",
+            "title": "Nomad Internet Pioneers Transparency With Launch of Real-Time Activation Page",
+            "url": "https:\/\/finance.yahoo.com\/news\/nomad-internet-pioneers-transparency-launch-163000876.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "830cb257-44b6-4b64-a7da-316a0fb81371": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7.jpg",
+            "date": "Jan 03, 2023",
+            "title": "Nomad Internet Pioneers Transparency With Launch of Real-Time Activation Page",
+            "url": "https:\/\/www.prnewswire.com\/news-releases\/nomad-internet-pioneers-transparency-with-launch-of-real-time-activation-page-301712026.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "8791ff78-96aa-4b0f-9fd7-6d761262cd20": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8.jpg",
+            "date": "Jan 03, 2023",
+            "title": "Nomad Internet will become the largest National Rural WISP in America",
+            "url": "https:\/\/www.prnewswire.com\/news-releases\/nomad-internet-will-become-the-largest-national-rural-wisp-in-america-301712647.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "8df8928e-1c1d-493e-9e45-ece8c5aaac7b": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9.jpg",
+            "date": "Jan 12, 2023",
+            "title": "Nomad Internet Providing the Highest Quality Rural Internet",
+            "url": "https:\/\/finance.yahoo.com\/news\/nomad-internet-providing-highest-quality-164000514.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "522d3e25-e1e1-44bf-9f95-2c7d7aa8f746": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10.jpg",
+            "date": "Jan 12, 2023",
+            "title": "Nomad Internet Aims to Bring Internet Service to 60 million Rural Homes",
+            "url": "https:\/\/www.einpresswire.com\/article\/610753681\/nomad-internet-aims-to-bring-internet-service-to-60-million-rural-homes",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "e1837e8e-9104-4126-96c2-1a90f750a7f7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11.jpg",
+            "date": "Jan 12, 2023",
+            "title": "Nomad Internet Launches Real-Time Activation Page to Improve Transparency and Build Connections with Customer Base",
+            "url": "https:\/\/finance.yahoo.com\/news\/nomad-internet-launches-real-time-105600449.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "7bfbb72c-142c-40ba-9d10-a44546efbe9c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/12.jpg",
+            "date": "Jan 13, 2023",
+            "title": "Nomad Internet's Groundbreaking 4G\/5G Outdoor Wireless Modem Brings Lightning-Fast Speeds to Rural Homes and Businesses",
+            "url": "https:\/\/finance.yahoo.com\/news\/nomad-internets-groundbreaking-4g-5g-165000214.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "9de9c573-830b-4346-aa50-31fa5cf18917": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/13.jpg",
+            "date": "Jan 13, 2023",
+            "title": "Jaden Garza and Nomad Internet are keeping people connected on the road",
+            "url": "https:\/\/www.androidguys.com\/promoted-news\/jaden-garza-and-nomad-internet-are-keeping-people-connected-on-the-road\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "bb2219d9-d130-4c55-be67-101506adf63d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/14.jpg",
+            "date": "Jan 18, 2023",
+            "title": "Nomad Internet to offer high quality rural internet in US",
+            "url": "https:\/\/www.vanillaplus.com\/2023\/01\/18\/75941-nomad-internet-to-offer-high-quality-rural-internet-in-us\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "c35d5d3b-ceef-45e1-8758-eb25d84edb15": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/15.jpg",
+            "date": "Jan 19, 2023",
+            "title": "Nomad Internet: America's Largest Wireless Internet Service Provider Launched New Plans.",
+            "url": "https:\/\/www.einnews.com\/pr_news\/612247072\/nomad-internet-america-s-largest-wireless-internet-service-provider-launched-new-plans",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "7f503424-d5b7-41de-8dfe-47654f990236": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16.jpg",
+            "date": "Feb 14, 2023",
+            "title": "Nomad Internet Introduces the New Nomad Air Travel Bag - Take Off-Grid with Wifi",
+            "url": "https:\/\/finance.yahoo.com\/news\/nomad-internet-introduces-nomad-air-201700462.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "114de4f4-3ab5-4417-8e8f-4295cf1e635e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/17.jpg",
+            "date": "Feb 18, 2023",
+            "title": "Review of Nomad Internet for RV travelers (2023)",
+            "url": "https:\/\/rvlifestyle.com\/nomad-internet\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "80dc9c09-8428-4209-aad1-323a7fb8d111": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/18.jpg",
+            "date": "Feb 19, 2023",
+            "title": "Nomad Internet Introduces the Innovative Nomad Air Travel Bag",
+            "url": "https:\/\/finance.yahoo.com\/news\/nomad-internet-introduces-innovative-nomad-202600395.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "73a1aebb-553f-4deb-9925-44134847943c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/19.jpg",
+            "date": "Feb 26, 2023",
+            "title": "Nomad Internet Launches New C Band Indoor Modem – Nomad Cube (Limited Edition)",
+            "url": "https:\/\/www.prunderground.com\/nomad-internet-launches-new-c-band-indoor-modem-nomad-cube-limited-edition\/00290897\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "fc321bf5-3e47-41fb-ab75-c6efd812dbff": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20.jpg",
+            "date": "Feb 27, 2023",
+            "title": "Nomad Internet Launches New C Band Indoor Modem - Nomad Cube (Limited Edition)",
+            "url": "https:\/\/finance.yahoo.com\/news\/nomad-internet-launches-c-band-213900255.html",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "dc75c07e-178b-4621-8a9b-bf1a6ac769cb": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/21.jpg",
+            "date": "Feb 27, 2023",
+            "title": "Nomad Internet Becomes a Verizon Partner to Bring 5G Internet Service to Rural Areas",
+            "url": "https:\/\/www.prunderground.com\/nomad-internet-becomes-a-verizon-partner-to-bring-5g-unlimited-internet-service-to-rural-areas\/00285809\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "229c2d66-372e-46b8-bf33-28899bb894ef": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/22.jpg",
+            "date": "Dec 14, 2022",
+            "title": "Nomad Internet is a unique proposition to provide reliable internet...",
+            "url": "https:\/\/www.forbes.com\/home-improvement\/internet\/nomad-internet-review\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "b3104429-aa30-461e-8207-b31c1bf5e1f9": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/23.jpg",
+            "date": "Nov 2, 2022",
+            "title": "Rural Communities, RV Parks, Digital Nomads: How Founder Jaden Garza Started Nomad Internet",
+            "url": "https:\/\/www.tmcnet.com\/topics\/articles\/2022\/11\/02\/453959-rural-communities-rv-parks-digital-nomads-how-founder.htm",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "cfa4991f-4ae8-41e4-8a2b-8048114ec638": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/24.jpg",
+            "date": "Jul 7, 2022",
+            "title": "How Jaden Garza of Nomad Internet is Freeing the Next Generation of Digital Nomads",
+            "url": "https:\/\/suiting-up.medium.com\/how-jaden-garza-of-nomad-internet-is-freeing-the-next-generation-of-digital-nomads-d7236a5a799a",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "81760a2c-c656-41a2-9574-a4d0344aa46e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25.jpg",
+            "date": "Mar 07, 2023",
+            "title": "Nomad Internet Launches Wireless Modem for Rural Nomads",
+            "url": "https:\/\/www.thewhig.com\/newsfile\/157329-nomad-internet-launches-wireless-modem-for-rural-nomads",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "card_cnXenV": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2._Tech_Announcer.webp",
+            "date": "May 1, 2024",
+            "title": "Price Drop Alert- For Just $25\/month, Get Nomad Raptor, Nomad Internet’s Fastest Modem Yet",
+            "url": "https:\/\/techannouncer.com\/price-drop-alert-for-just-25-month-get-nomad-raptor-nomad-internets-fastest-modem-yet\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        },
+        "card_YR4AnX": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3._VentsMagazine.webp",
+            "date": "May 01, 2024",
+            "title": "Nomad Raptor, Nomad Internet’s Fastest Modem Ever, Now Available for Just $25 a Month ",
+            "url": "https:\/\/ventsmagazine.com\/2024\/04\/18\/nomad-raptor-nomad-internets-fastest-modem-ever-now-available-for-just-25-a-month\/",
+            "target_blank": true,
+            "nofollow": true
+          }
+        }
+      },
+      "block_order": [
+        "card_yeVgDn",
+        "1b557058-f512-4819-a923-0e39f3a91934",
+        "e5cdbe76-35a7-4275-960d-24c5181babb5",
+        "fce46dcd-e044-434a-a95f-b02305704321",
+        "a7ac168f-83f8-49c9-b097-33eb56d806b6",
+        "e62bb833-7b50-437b-90f8-838ee3c07cec",
+        "e7317c11-d13f-4ad5-9ca1-f11717884cc5",
+        "8abb3200-e4bc-46e0-b5cd-a299e7445b93",
+        "3f1c7c49-d693-4262-b8e4-95f915ec7ccf",
+        "a1140526-98d5-4a23-867e-2017fb9fc4bb",
+        "fa52312b-57dd-4868-b919-682295580e3f",
+        "828dd6de-3aa0-49f9-bdae-3985aa1e80ff",
+        "0aa9288b-55d5-48a9-98dc-5d9ef6ebda06",
+        "5a553ca3-7ee2-4af4-9194-7cf054538875",
+        "ed6b2153-bc1b-4771-85c7-7d78bcfdf1d8",
+        "e6667c44-260f-4375-8d1a-1b685370b6ef",
+        "21c704fb-ae12-4782-8d90-6c5253142cc1",
+        "fc9d5ce5-c923-4914-8312-567879d090ae",
+        "44a1029b-97e3-4f40-8c6c-9cfaa66556ce",
+        "240493f2-2829-45ef-8ead-cf859c7cfe8d",
+        "67deed6a-f2c8-4eb7-8a56-5c1b0ab21179",
+        "c6b2188d-d155-4bca-8824-29dd46538ca8",
+        "d088f7a3-a1e2-4b09-9214-4d115d17a582",
+        "9b1b1176-f185-404e-9f51-05d872c11a20",
+        "49d59722-9489-4d13-bfa9-f8f384268645",
+        "1718f266-571d-47cc-8f1c-3bef41e3cf76",
+        "1904ce96-624d-4786-846f-afde0238f3b4",
+        "29674177-c9da-4aa6-a1f2-51511469aa2a",
+        "3379806a-a30c-49fe-a317-72145b14531e",
+        "830cb257-44b6-4b64-a7da-316a0fb81371",
+        "8791ff78-96aa-4b0f-9fd7-6d761262cd20",
+        "8df8928e-1c1d-493e-9e45-ece8c5aaac7b",
+        "522d3e25-e1e1-44bf-9f95-2c7d7aa8f746",
+        "e1837e8e-9104-4126-96c2-1a90f750a7f7",
+        "7bfbb72c-142c-40ba-9d10-a44546efbe9c",
+        "9de9c573-830b-4346-aa50-31fa5cf18917",
+        "bb2219d9-d130-4c55-be67-101506adf63d",
+        "c35d5d3b-ceef-45e1-8758-eb25d84edb15",
+        "7f503424-d5b7-41de-8dfe-47654f990236",
+        "114de4f4-3ab5-4417-8e8f-4295cf1e635e",
+        "80dc9c09-8428-4209-aad1-323a7fb8d111",
+        "73a1aebb-553f-4deb-9925-44134847943c",
+        "fc321bf5-3e47-41fb-ab75-c6efd812dbff",
+        "dc75c07e-178b-4621-8a9b-bf1a6ac769cb",
+        "229c2d66-372e-46b8-bf33-28899bb894ef",
+        "b3104429-aa30-461e-8207-b31c1bf5e1f9",
+        "cfa4991f-4ae8-41e4-8a2b-8048114ec638",
+        "81760a2c-c656-41a2-9574-a4d0344aa46e",
+        "card_cnXenV",
+        "card_YR4AnX"
+      ],
+      "settings": {
+        "title": "Recent news"
+      }
+    },
+    "5984b59c-eee3-4f59-bcdd-ae71fada5acc": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<div class=\"row justify-center\">\n  <div class=\"col-lg-3 col-sm-6 col-12\">\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Forbes.png?v=1678309465\" alt=\"logo\">\n  <\/div>\n  <div class=\"col-lg-3 col-sm-6 col-12\">\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Yahoo.png?v=1678309465\" alt=\"logo\">\n  <\/div>\n  <div class=\"col-lg-3 col-sm-6 col-12\">\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Bloomberg.png?v=1678309464\" alt=\"logo\">\n  <\/div>\n  <div class=\"col-lg-3 col-sm-6 col-12\">\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Digital_Jornal.png?v=1678309465\" alt=\"logo\">\n  <\/div>\n  <div class=\"col-lg-3 col-sm-6 col-12\">\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/MarketWatch.png?v=1678309465\" alt=\"logo\">\n  <\/div>\n  <div class=\"col-lg-3 col-sm-6 col-12\">\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/EIN_Presswire.png?v=1678309465\" alt=\"logo\">\n  <\/div>\n  <div class=\"col-lg-3 col-sm-6 col-12\">\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/Medium_f2e0a2c1-c9c2-44a6-95c8-7cfb1365f5eb.png?v=1678309465\" alt=\"logo\">\n  <\/div>\n  <div class=\"col-lg-3 col-sm-6 col-12\">\n\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0103\/2847\/3658\/files\/TMCnet_ab2daa35-12e2-4a7a-84c1-2ec3bf31dbe5.png?v=1678309465\" alt=\"logo\">\n  <\/div>\n<\/div>"
+      }
+    },
+    "fc02267c-e402-4d15-92dd-cb61f0c0f688": {
+      "type": "lp-19",
+      "blocks": {
+        "48ca4df5-6f7b-4ae1-9bbc-b595c9c1e59e": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/VofPk5ovt9g?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "bb3cc006-3d0c-4ed4-a2e8-a1ab399b0c4c": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/QUJuBvK93nA?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "787925c9-b497-446c-88d0-a9dc42d941c0": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/_ZRgJW-UOJc?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "39495c31-d478-4e98-a0bc-fc702d31eb71": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/__8S667m1ME?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "de9a0589-e9e6-43de-887c-26d250747d4a": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/UmDW7ZooIhM?controls=0&start=215\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        },
+        "d816b34f-d236-4d99-b1a2-7b8d3bb04826": {
+          "type": "card",
+          "settings": {
+            "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/vhw0lGXQa0U?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+          }
+        }
+      },
+      "block_order": [
+        "48ca4df5-6f7b-4ae1-9bbc-b595c9c1e59e",
+        "bb3cc006-3d0c-4ed4-a2e8-a1ab399b0c4c",
+        "787925c9-b497-446c-88d0-a9dc42d941c0",
+        "39495c31-d478-4e98-a0bc-fc702d31eb71",
+        "de9a0589-e9e6-43de-887c-26d250747d4a",
+        "d816b34f-d236-4d99-b1a2-7b8d3bb04826"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Nomad Internet video reviews"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "aaf7a86b-ab78-4d5c-8bce-56585a0c5050",
+    "3545db27-1e2b-419d-9090-370c29af1ec2",
+    "d0153cb2-7ea4-4092-b5a0-6b70d4af86fa",
+    "5984b59c-eee3-4f59-bcdd-ae71fada5acc",
+    "fc02267c-e402-4d15-92dd-cb61f0c0f688",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e"
+  ]
+}

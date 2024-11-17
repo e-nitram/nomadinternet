@@ -1,0 +1,64 @@
+{{ '03raptor-third-columns.css' | asset_url | stylesheet_tag }}
+<div class="raptor-third-columns" style="--bg-color: {{ section.settings.bg_color }};">
+  <div class="container">
+    {% if section.settings.heading != blank %}
+      <h3 class="heading">{{ section.settings.heading }}</h3>
+    {% endif %}
+
+    <div class="list">
+      {% for block in section.blocks %}
+        <div class="item">
+          {% if block.settings.icon != blank %}
+            <img src="{{ block.settings.icon | img_url: 'master' }}"/>
+          {% endif %}
+
+          {% if block.settings.title != blank %}
+            <p class="title">{{ block.settings.title }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Raptor Third Columns",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#0c0c0c"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon_item",
+      "name": "Icon item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Raptor Third Columns"
+    }
+  ]
+}
+{% endschema %}

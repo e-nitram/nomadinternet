@@ -1,0 +1,67 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+<div class="lp-19">
+	<div class="lp-19__content">
+		{% if section.settings.title %}
+			<h2 class="lp-19__title">{{ section.settings.title }}</h2>
+		{% endif %}
+		{% if section.blocks %}
+			<div class="swiper lp-19__swiper">
+				<div class="swiper-wrapper">
+					{% for block in section.blocks %}
+						{% if block.settings.video %}
+							<div class="swiper-slide">
+								<div class="lp-19__card">
+									<div class="ratio">
+										{{ block.settings.video }}
+									</div>
+								</div>
+							</div>
+						{% endif %}
+					{% endfor %}
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		{% endif %}
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-19",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 19"
+    }
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		}
+	],
+	"blocks": [
+		{
+			"type": "card",
+			"name": "Card",
+			"limit": 24,
+			"settings": [
+				{
+					"type": "textarea",
+					"id": "video",
+					"label": "Video Embed Code"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

@@ -1,0 +1,62 @@
+.raptor-third-columns {
+  padding: 40px 0;
+  background-color: var(--bg-color);
+}
+
+.raptor-third-columns .container .heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.raptor-third-columns .container .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.raptor-third-columns .container .list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.raptor-third-columns .container .list .item .title {
+  font-family: DIN;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .raptor-third-columns {
+    padding: 60px 0;
+  }
+
+  .raptor-third-columns .container .heading {
+    font-size: 48px;
+    line-height: 70px;
+  }
+
+  .raptor-third-columns .container .list {
+    flex-direction: row;
+    gap: 140px;
+  }
+
+  .raptor-third-columns .container .list .item .title {
+    font-size: 32px;
+    line-height: 44.8px;
+  }
+}

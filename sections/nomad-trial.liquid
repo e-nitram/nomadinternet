@@ -1,0 +1,283 @@
+{%- if section.settings.nt-background-image -%}
+  <div class="nomad-trial__bg" style="background-image: url({{ section.settings.nt-background-image | img_url: 'master' }})"></div>
+{%- endif -%}
+
+<div class="nomad-trial__container">
+  <div class="nomad-trial__content">
+
+    <div class="nomad-trial__left">
+      {%- if section.settings.nomad-trial__caption -%}
+        <div class="nomad-trial__caption">{{ section.settings.nomad-trial__caption }}</div>
+      {%- endif -%}
+      {%- if section.settings.nomad-trial__subcaption -%}
+        <div class="nomad-trial__subcaption">{{ section.settings.nomad-trial__subcaption }}</div>
+      {%- endif -%}
+      <h1 class="nomad-trial__title">
+        <span>7</span>
+        <span>day</span>
+        <span>free</span>
+        <span>trial</span>
+      </h1>
+      {%- if section.settings.nt-button-text and section.settings.nt-button-url -%}
+        <div class="nomad-trial__btns">
+          <a href="{{ section.settings.nt-button-url }}" class="nomad-trial__btn">{{ section.settings.nt-button-text }}</a>
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="nomad-trial__right">
+      {%- if section.settings.nt-image -%}
+        <img src="{{ section.settings.nt-image | img_url: 'master' }}" alt="Nomad Internet" class="nomad-trial__img">
+      {%- endif -%}
+      {%- if section.settings.nomad-trial__img-caption -%}
+        <div class="nomad-trial__img-caption">{{ section.settings.nomad-trial__img-caption }}</div>
+      {%- endif -%}
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Nomad trial",
+  "class": "nomad-trial",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "nt-background-image",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "nt-image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "nomad-trial__img-caption",
+      "label": "Image Caption",
+      "default": "*the offer is valid for all new users upon registration"
+    },
+    {
+      "type": "text",
+      "id": "nomad-trial__caption",
+      "label": "Caption",
+      "default": "Limited time*"
+    },
+    {
+      "type": "text",
+      "id": "nomad-trial__subcaption",
+      "label": "Sub Caption",
+      "default": "for the \"Prime Plans\" only"
+    },
+    {
+      "type": "text",
+      "id": "nt-button-text",
+      "label": "Button text"
+    },  
+    {
+      "type": "url",
+      "id": "nt-button-url",
+      "label": "Button URL"
+    }
+  ]
+}
+{% endschema %}
+
+{%- style -%}
+:root {
+    --nt-green-color: #109D59;
+    --nt-orange-color: #ff8a00;
+  }
+  .nomad-trial {
+    background-color: #011225;
+    min-height: 875px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    color: #fff;
+    padding: 100px 0;
+  }
+  .nomad-trial * {
+    font-family: 'Poppins', sans-serif !important;
+  }
+  .nomad-trial > * {
+    position: relative;
+    z-index: 1;
+  }
+  .nomad-trial__bg {
+    display: block !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .nomad-trial__container {
+    width: 100%;
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .nomad-trial__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 60px;
+  }
+  .nomad-trial__left {
+  }
+  .nomad-trial__caption {
+    color: var(--nt-green-color);
+    font-weight: 100;
+    font-size: 67px;
+    line-height: 1;
+  }
+  .nomad-trial__subcaption {
+    font-weight: 300;
+    font-size: 19px;
+    margin-bottom: 20px;
+    padding-left: 6px;
+  }
+  .nomad-trial__title {
+    font-weight: 500;
+    font-size: 109px;
+    line-height: 85.5%;
+    max-width: 422px;
+    display: -ms-grid;
+    display: grid;
+    white-space: nowrap;
+  }
+  .nomad-trial__title span {
+    line-height: 0.9;
+  }
+  .nomad-trial__title span:nth-child(1) {
+    font-weight: 700;
+    font-size: 376px;
+    color: var(--nt-orange-color);
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/4;
+    line-height: 0.8;
+  }
+  .nomad-trial__title span:nth-child(2) {
+    color: var(--nt-orange-color);
+    font-weight: 700;
+    font-size: 100px;
+    text-transform: uppercase;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .nomad-trial__title span:nth-child(3),
+  .nomad-trial__title span:nth-child(4) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .nomad-trial__btn,
+  .nomad-trial__btn:active {
+    color: #fff;
+  }
+  .nomad-trial__btn {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--nt-green-color);
+    border-radius: 10em;
+    padding: 20px 54px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    margin-top: 55px;
+  }
+  .nomad-trial__btn:hover {
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+  }
+  .nomad-trial__right {
+    padding-top: 170px;
+  }
+  .nomad-trial__img {
+    max-width: 704px;
+  }
+  .nomad-trial__img-caption {
+    text-align: right;
+    padding-right: 15px;
+    margin-top: 30px;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+@media (max-width: 992px) {
+  .nomad-trial {
+    padding-top: 70px;
+  }
+  .nomad-trial__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nomad-trial__content {
+    padding-top: 0;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .nomad-trial__container {
+    max-width: 890px;
+  }
+  .nomad-trial__right {
+    padding-top: 40px;
+  }
+  .nomad-trial__img-caption {
+    text-align: center;
+  }
+  .nomad-trial__img {
+    max-width: 486px;
+  }
+}
+@media (max-width: 480px) {
+  .nomad-trial {
+    font-size: 90%;
+  }
+  .nomad-trial__title {
+    font-size: 87px;
+  }
+  .nomad-trial__title span:nth-child(1) {
+    font-size: 300px;
+  }
+  .nomad-trial__title span:nth-child(2) {
+    font-size: 85px;
+  }
+  .nomad-trial__caption {
+    font-size: 50px;
+  }
+  .nomad-trial__btns {
+    text-align: center;
+  }
+}
+{%- endstyle -%}
+
+{% javascript %}
+{% endjavascript %}

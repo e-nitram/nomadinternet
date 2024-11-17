@@ -1,0 +1,55 @@
+<!-- Sales Rep -->
+
+{% if customer.tags contains "sales_rep" %}
+<link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/latest/polaris.css" />
+
+<div class="sr_account" style="padding-top: 0;margin: inherit;">
+{%include'SR_Dashboard'%}
+{%include'SR_PagesScriptCode'%}
+</div>
+{% else %}
+<!-- End of Sales Rep --><!-- /templates/customers/account.liquid -->{% comment %}For all available customer liquid tags:- http://docs.shopify.com/themes/liquid-variables/customer{% endcomment %}<div class="admin-page-wrapper">
+    <div class="container">
+        <div class="card-admin">
+            <div class="card-header">
+                <h1 class="card-title">{{ 'customer.account.title' | t }}</h1>
+              <a class="logout_button btn" href="/account/logout">LOGOUT</a> <a class="logout_button btn" href="/account/login#recover">RESET PASSWORD</a> <a class="btn" href="/pages/prime-store">PRIME STORE</a><br>
+            </div>
+            <div class="grid">
+                <div class="grid__item two-thirds medium-down--one-whole">
+                    <h2 class="h4">{{ 'customer.orders.title' | t }}</h2>{% comment %}If we have past orders, loop through each one{% endcomment %}{% paginate customer.orders by 20 %}{% if customer.orders.size != 0 %}<div class="table-wrap">
+                        <table class="full table">
+                            <thead>
+                                <tr>
+                                    <th>{{ 'customer.orders.order_number' | t }}</th>
+                                    <th>{{ 'customer.orders.date' | t }}</th>
+                                    <th>{{ 'customer.orders.payment_status' | t }}</th>
+                                    <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
+                                    <th>{{ 'customer.orders.total' | t }}</th>
+                                    <th scope="col">Return / Exchange</th>
+                                </tr>
+                            </thead>
+                            <tbody>{% for order in customer.orders %}<tr>
+                                    <td>{{ order.name | link_to: order.customer_url }}</td>
+                                    <td>{{ order.created_at | date: format: 'month_day_year' }}</td>
+                                    <td>{{ order.financial_status_label }}</td>
+                                    <td>{{ order.fulfillment_status_label }}</td>
+                                    <td>{{ order.total_price | money }}</td>
+                                    <td data-order_name={{order.id}} data-label="Return" class="return__exchange">{% if order.fulfillment_status == 'unfulfilled' %}<p class="js-return-exchange disabled"> Not Available
+                                        <p>{% else %}<a href="#" class="js-return-exchange {% if order.fulfillment_status == 'unfulfilled' %} disabled{% endif %}" data-order="{{ order.name }}" data-customer="{{ customer.email }}">Return / Exchange</a>{% endif %}
+                                    </td>
+                                </tr>{%- endfor -%}</tbody>
+                        </table>
+                    </div>{% else %}<p>{{ 'customer.orders.none' | t }}</p>{% endif %}{% if paginate.pages > 1 %}
+                    <hr>
+                    <div class="pagination">{{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}</div>{% endif %}{% endpaginate %}
+                </div>
+                <div class="grid__item one-third medium-down--one-whole">
+                    <h2 class="h4">{{ 'customer.account.details' | t }}</h2>
+                    <h3 class="h5">{{ customer.name }}</h3>{% if customer.default_address != nil %}<p>{{ customer.default_address.address1 }}<br>{% if customer.default_address.address2 != "" %}{{ customer.default_address.address2 }}<br>{% endif %}{% if customer.default_address.city != "" %}{{ customer.default_address.city }}<br>{% endif %}{% if customer.default_address.province_code != "" %}{{ customer.default_address.province_code | upcase }}<br>{% endif %}{% if customer.default_address.zip != "" %}{{ customer.default_address.zip | upcase }}<br>{% endif %}{% if customer.default_address.country != "" %}{{ customer.default_address.country }}<br>{% endif %}{% if customer.default_address.phone != "" %}{{ customer.default_address.phone }}{% endif %}</p>{% endif %}<p><a href="/account/addresses">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'returnprime_script' %}<!-- Sales Rep Closing -->{% endif %}<!-- End Sales Rep Closing -->

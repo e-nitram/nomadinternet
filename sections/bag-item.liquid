@@ -1,0 +1,48 @@
+{% assign ss = section.settings %}
+
+<div class="bag-item">
+	<div class="bag-item__preview">
+		{% if ss.image %}
+			{{ ss.image | image_url: width: 800 | image_tag }}
+		{% endif %}
+	</div>
+
+	<div class="bag-item__body">
+		{% if ss.title %}
+			<h3 class="bag-item__title">{{ ss.title }}</h3>
+		{% endif %}
+		{% if ss.text %}
+			<p class="bag-item__text">{{ ss.text }}</p>
+		{% endif %}
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "Bag item",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "Bag item"
+    }
+  ],
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    }
+  ]
+}
+{% endschema %}

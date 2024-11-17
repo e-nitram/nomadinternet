@@ -1,0 +1,104 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+<div class="lp-6">
+	<div class="lp-6__content">
+		{% if section.settings.title %}
+			<h2 class="lp-6__title">{{ section.settings.title }}</h2>
+		{% endif %}
+		{% if section.blocks %}
+			<div class="row v-gutters justify-center">
+				{% for block in section.blocks %}
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="lp-6__card">
+							{% if block.settings.image %}
+								<div class="card__image">
+									{% assign img = block.settings.image %}
+									{{ img | image_url: width: img.width | image_tag }}
+								</div>
+							{% endif %}
+							{% if block.settings.title %}
+								<h3 class="card__title">{{ block.settings.title }}</h3>
+							{% endif %}
+							{% if block.settings.description %}
+								<div class="card__description">
+									<p>{{ block.settings.description }}</p>
+								</div>
+							{% endif %}
+							{% if block.settings.bottom_text %}
+								<strong class="card__bottom-text">{{ block.settings.bottom_text }}</strong>
+							{% endif %}
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		{% endif %}
+		{% if section.settings.button_text != blank %}
+			<div class="text-center">
+				<a href="{{ section.settings.button_url }}" id="button-{{ section.id }}" class="btn lg red">{{ section.settings.button_text }}</a>
+			</div>
+		{% endif %}
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-6",
+  "class": "container",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 6"
+    }
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "button_text",
+			"label": "Button Text"
+		},
+		{
+			"type": "url",
+			"id": "button_url",
+			"label": "Button URL"
+		}
+	],
+	"blocks": [
+		{
+			"type": "card",
+			"name": "Card",
+			"limit": 3,
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Title"
+				},
+				{
+					"type": "richtext",
+					"id": "description",
+					"label": "Description"
+				},
+				{
+					"type": "text",
+					"id": "bottom_text",
+					"label": "Bottom Text"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

@@ -1,0 +1,195 @@
+<section class="nomad-plans">
+  <div class="container">
+    <h2 class="text-center">Choose Your Equipment</h2>
+
+    <div class="nomad-plans__list">
+      <div class="np-col">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Rectangle-1143-_1.png?v=1670394810"
+            alt="Choose Your Equipment"
+            loading="lazy"
+            width="500"
+            height="auto"
+          >
+
+          <div class="card-body text-center">
+            <h3 class="card-title">Nomad Residential</h3>
+            <h4>as low as $399</h4>
+            <p class="card-text">+ $110/month for a plan</p>
+            <a href="/products/nomad-residential" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="np-col">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Rectangle-1143-_2.png?v=1670394816"
+            alt="Choose Your Equipment"
+            loading="lazy"
+            width="500"
+            height="auto"
+          >
+
+          <div class="card-body text-center">
+            <h3 class="card-title">Nomad Business</h3>
+            <h4>as low as $799</h4>
+            <p class="card-text">+ $250/month for a plan</p>
+            <a href="/products/nomad-business" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="np-col">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Rectangle-1143-_1.png?v=1670394810"
+            alt="Choose Your Equipment"
+            loading="lazy"
+            width="500"
+            height="auto"
+          >
+
+          <div class="card-body text-center">
+            <h3 class="card-title">Nomad Travel</h3>
+            <h4>as low as $399</h4>
+            <p class="card-text">+ $130/month for a plan</p>
+            <a href="/products/nomad-travel" class="btn btn-primary">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="np-col">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/sim-black.png?v=1670623261"
+            alt="Choose Your Equipment"
+            loading="lazy"
+            width="500"
+            height="auto"
+          >
+
+          <div class="card-body text-center">
+            <h3 class="card-title">Bring your own Equipment</h3>
+            <p class="card-text">$150/mo</p>
+            <a data-href="/cart/39798047277114:1,39798709813306:1" class="btn btn-primary"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="plans-cta">
+    <div class="container">
+      <div class="plans-cta__content">
+        <h3>Buy & Manage <span>Your Plans</span> Using Mobile App</h3>
+        <div class="plans-cta__buttons">
+          <a href="https://play.google.com/store/apps/details?id=co.shopney.everywhereinternet&hl=en_US&gl=US">
+            <img
+              src="{{ 'image-icon12.png' | file_img_url: 'medium' }}"
+              alt="play.google"
+              width="150"
+              height="auto"
+              loading="lazy"
+            >
+          </a>
+          <a href="https://apps.apple.com/us/app/nomad-internet/id6444594379">
+            <img
+              src="{{ 'image-icon31.png' | file_img_url: 'medium' }}"
+              alt="play.google"
+              width="150"
+              height="auto"
+              loading="lazy"
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+var $j = jQuery.noConflict();  
+$j(".btn").click(function(event){
+  event.preventDefault();
+  var cart_link = $j(this).attr('data-href'),
+    url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?items=https://nomadinternet.com"+cart_link+" &jsonize=1";
+  $j.ajax({
+    type: "GET",
+    url: url,
+    dataType: "json",
+    success: function(response){
+location.href = response[0];
+    }
+  });
+});
+</script>
+
+{% style %}
+  .nomad-plans {
+    padding: 5rem 0;
+  }
+
+  .nomad-plans__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0 0;
+  }
+
+  .np-col {
+    padding: 0 15px 30px;
+    flex: 1 0 320px;
+  }
+
+  .card {
+    display: flex;
+    flex-derection: column;
+    height: 100%;
+  }
+
+  .card-img-top {
+    display: block;
+    margin-inline: auto;
+    height: 300px;
+    object-fit: contain;
+    object-position: top;
+    padding: 15px 15px 0;
+  }
+
+  .plans-cta__content {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .plans-cta__content h3 {
+    flex: 0 1 400px;
+  }
+
+  .plans-cta__content h3 span {
+    color: #0f9d59;
+  }
+
+  .plans-cta__buttons {
+    display: flex;
+  }
+
+  @media (max-width: 992px) {
+    .plans-cta__content h3 {
+      flex: 0 1 auto;
+      text-align: center;
+    }
+
+    .plans-cta__content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+{% endstyle %}

@@ -1,0 +1,2455 @@
+<div id="customise">
+  {% render 'activate' %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="{{ 'jquery.cookie.js' | asset_url }}"></script>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script
+  id="pap_x2s6df8d"
+  src="https://reseller.nomadinternet.com/scripts/trackjs.js"
+  type="text/javascript"></script>
+<script>
+  function floatToString(t,r){var e=t.toFixed(r).toString();return e.match(/^\.\d+/)?"0"+e:e}function attributeToString(t){return"string"!=typeof t&&"undefined"===(t+="")&&(t=""),jQuery.trim(t)}"undefined"==typeof window.Shopify&&(window.Shopify={}),Shopify.money_format="${{amount}}",Shopify.onError=function(t,r){var e=eval("("+t.responseText+")");e.message?alert(e.message+"("+e.status+"): "+e.description):alert("Error : "+Shopify.fullMessagesFromErrors(e).join("; ")+".")},Shopify.fullMessagesFromErrors=function(t){var o=[];return jQuery.each(t,function(e,t){jQuery.each(t,function(t,r){o.push(e+" "+r)})}),o},Shopify.onCartUpdate=function(t){alert("There are now "+t.item_count+" items in the cart.")},Shopify.onCartShippingRatesUpdate=function(t,r){var e="";r.zip&&(e+=r.zip+", "),r.province&&(e+=r.province+", "),e+=r.country,alert("There are "+t.length+" shipping rates available for "+e+", starting at "+Shopify.formatMoney(t[0].price)+".")},Shopify.onItemAdded=function(t){alert(t.title+" was added to your shopping cart.")},Shopify.onProduct=function(t){alert("Received everything we ever wanted to know about "+t.title)},Shopify.formatMoney=function(t,r){function n(t,r){return void 0===t?r:t}function e(t,r,e,o){if(r=n(r,2),e=n(e,","),o=n(o,"."),isNaN(t)||null==t)return 0;var a=(t=(t/100).toFixed(r)).split(".");return a[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g,"$1"+e)+(a[1]?o+a[1]:"")}"string"==typeof t&&(t=t.replace(".",""));var o="",a=/\{\{\s*(\w+)\s*\}\}/,i=r||this.money_format;switch(i.match(a)[1]){case"amount":o=e(t,2);break;case"amount_no_decimals":o=e(t,0);break;case"amount_with_comma_separator":o=e(t,2,".",",");break;case"amount_with_space_separator":o=e(t,2," ",",");break;case"amount_with_period_and_space_separator":o=e(t,2," ",".");break;case"amount_no_decimals_with_comma_separator":o=e(t,0,".",",");break;case"amount_no_decimals_with_space_separator":o=e(t,0,".","");break;case"amount_with_space_separator":o=e(t,2,",","");break;case"amount_with_apostrophe_separator":o=e(t,2,"'",".")}return i.replace(a,o)},Shopify.resizeImage=function(t,r){try{if("original"==r)return t;var e=t.match(/(.*\/[\w\-\_\.]+)\.(\w{2,4})/);return e[1]+"_"+r+"."+e[2]}catch(o){return t}},Shopify.addItem=function(t,r,e){var o={type:"POST",url:"/cart/add.js",data:"quantity="+(r=r||1)+"&id="+t,dataType:"json",success:function(t){"function"==typeof e?e(t):Shopify.onItemAdded(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(o)},Shopify.addItemFromForm=function(t,r){var e={type:"POST",url:"/cart/add.js",data:jQuery("#"+t).serialize(),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onItemAdded(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.getCart=function(r){jQuery.getJSON("/cart.js",function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)})},Shopify.pollForCartShippingRatesForDestination=function(o,a,t){t=t||Shopify.onError;var n=function(){jQuery.ajax("/cart/async_shipping_rates",{dataType:"json",success:function(t,r,e){200===e.status?"function"==typeof a?a(t.shipping_rates,o):Shopify.onCartShippingRatesUpdate(t.shipping_rates,o):setTimeout(n,500)},error:t})};return n},Shopify.getCartShippingRatesForDestination=function(t,r,e){e=e||Shopify.onError;var o={type:"POST",url:"/cart/prepare_shipping_rates",data:Shopify.param({shipping_address:t}),success:Shopify.pollForCartShippingRatesForDestination(t,r,e),error:e};jQuery.ajax(o)},Shopify.getProduct=function(t,r){jQuery.getJSON("/products/"+t+".js",function(t){"function"==typeof r?r(t):Shopify.onProduct(t)})},Shopify.changeItem=function(t,r,e){var o={type:"POST",url:"/cart/change.js",data:"quantity="+r+"&id="+t,dataType:"json",success:function(t){"function"==typeof e?e(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(o)},Shopify.removeItem=function(t,r){var e={type:"POST",url:"/cart/change.js",data:"quantity=0&id="+t,dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.clear=function(r){var t={type:"POST",url:"/cart/clear.js",data:"",dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(t)},Shopify.updateCartFromForm=function(t,r){var e={type:"POST",url:"/cart/update.js",data:jQuery("#"+t).serialize(),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.updateCartAttributes=function(t,r){var o="";jQuery.isArray(t)?jQuery.each(t,function(t,r){var e=attributeToString(r.key);""!==e&&(o+="attributes["+e+"]="+attributeToString(r.value)+"&")}):"object"==typeof t&&null!==t&&jQuery.each(t,function(t,r){o+="attributes["+attributeToString(t)+"]="+attributeToString(r)+"&"});var e={type:"POST",url:"/cart/update.js",data:o,dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},Shopify.updateCartNote=function(t,r){var e={type:"POST",url:"/cart/update.js",data:"note="+attributeToString(t),dataType:"json",success:function(t){"function"==typeof r?r(t):Shopify.onCartUpdate(t)},error:function(t,r){Shopify.onError(t,r)}};jQuery.ajax(e)},"1.4"<=jQuery.fn.jquery?Shopify.param=jQuery.param:(Shopify.param=function(t){var e=[],r=function(t,r){r=jQuery.isFunction(r)?r():r,e[e.length]=encodeURIComponent(t)+"="+encodeURIComponent(r)};if(jQuery.isArray(t)||t.jquery)jQuery.each(t,function(){r(this.name,this.value)});else for(var o in t)Shopify.buildParams(o,t[o],r);return e.join("&").replace(/%20/g,"+")},Shopify.buildParams=function(e,t,o){jQuery.isArray(t)&&t.length?jQuery.each(t,function(t,r){rbracket.test(e)?o(e,r):Shopify.buildParams(e+"["+("object"==typeof r||jQuery.isArray(r)?t:"")+"]",r,o)}):null!=t&&"object"==typeof t?Shopify.isEmptyObject(t)?o(e,""):jQuery.each(t,function(t,r){Shopify.buildParams(e+"["+t+"]",r,o)}):o(e,t)},Shopify.isEmptyObject=function(t){for(var r in t)return!1;return!0});
+</script>
+<script>
+  var $j = jQuery.noConflict(); 
+
+   var order_email;
+   var order_number; 
+   var order_product;
+   var fatched_imei;
+   var fatched_iccid;
+   var final_imei;
+   var final_iccid; 
+   var order_type;
+
+  function order_info_fatch(order_number){
+    
+    const settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://np.nomadinternet.com/sy-order-products.php?order_number="+order_number,
+    "method": "GET",
+    "headers": {
+    "Accept": "application/vnd.api+json"
+    },
+    beforeSend: function() {  
+    //$j('.rr_loader').show();
+    },  
+    success: function(data){
+    
+    },
+    complete: function() {  
+    //$j('.rr_loader').hide();
+    },  
+    error: function(xhr, status, error) {
+      console.log('Error:', xhr.status, error);
+    }
+    };  
+    $j.ajax(settings).done(function(response){
+      console.log('response = ', response);
+      
+      if(response.error == 0){
+
+          if(response.data[0].line_items.length == 1){
+            order_product = response.data[0].line_items[0].name;
+          }
+          else if(response.data[0].line_items.length == 2){
+            order_product = response.data[0].line_items[1].name;
+          }
+          else if(response.data[0].line_items.length == 3){
+            order_product = response.data[0].line_items[2].name;
+          }
+           else if(response.data[0].line_items.length == 4){
+            order_product = response.data[0].line_items[3].name;
+          }  
+          else{
+            order_product = '';
+          }
+        
+        if(response.data[0].zoho_subscribed == true){
+          // $j('.active_your_plan').hide();
+
+          if(response.data[0].is_already_activated == true){
+            $j('.order_info_screen').hide();
+            $j('.already_activated_screen').show();
+          }
+          else{
+            $j('.already_activated_screen').hide();
+            if(response.data[0].is_shipped == false){
+              $j('.order_info_screen').hide();
+              $j('.not_shipped_yet').show();
+            }
+            else{
+              $j('.not_shipped_yet').hide();
+              if(response.data[0].is_allowed_to_activate == false){
+                $j('.order_info_screen').hide();
+                $j('.not_allow_to_activate').show();
+              }
+              else{
+                $j('.not_allow_to_activate').hide();
+                $j('.order_info_screen').hide();
+                // $j('.active_your_plan').show();
+                $j('.active_your_plan').hide();
+
+                let t_imei = response.data[0].ss_imei;
+                let t_iccid = response.data[0].ss_iccid;
+                if(t_imei != '' && t_iccid != ''){
+                  $j('.rr_loader').show();
+                  $j('.rr_loader h2').text('Activating...');
+                  $j('.rr_loader h2').css({
+                    left: '51%'
+                  });
+                  /*console.log(fatched_imei);
+                  console.log(fatched_iccid);
+                  console.log(order_number);*/
+                  
+                  console.log('fatched IMEI: '+t_imei);
+                  console.log('fatched ICCID: '+t_iccid);
+                  console.log('final IMEI: '+imei);
+                  console.log('final ICCID: '+iccid);
+                  $j.ajax({
+                    url: "https://np.nomadinternet.com/pre-subscribe.php?state=activate&imei="+t_imei+"&iccid="+t_iccid+"&order_number="+order_number,
+                    method: "POST",
+                    dataType: "json",
+                    success: function(data) {
+                      setTimeout(() => {
+                        if(data.status == 'ok'){
+                          $j('.active_your_plan').hide();
+                          $j('.thank_you_screen').show();
+                        }
+                        else{
+                          $j('.active_your_plan').show();
+                          $j('.thank_you_screen').hide();
+                        }
+                        $j('.rr_loader').hide();
+                      }, 500);
+                    },
+                    error: function(xhr, status, error) {
+                      alert("AJAX request error: " + error);
+                    }
+                  });
+                }
+                else{
+                  $j('.modem_info_screen').show();
+                }
+              }
+            }
+            
+          }
+         
+          //$j('.order_info_screen').hide();
+          //$j('.active_your_plan').show();
+          
+          if (order_product.indexOf("Nomad Omen") > -1) {
+              $j('.omen_images').show();
+              $j('.air_images, .raptor_images').hide();
+          } else if (order_product.indexOf("Nomad Air") > -1) {
+              $j('.air_images').show();
+              $j('.omen_images, .raptor_images').hide();
+          } else if (order_product.indexOf("Nomad Raptor") > -1) {
+              $j('.raptor_images').show();
+              $j('.omen_images, .air_images').hide();
+          } else {
+              $j('.air_images').show();
+              $j('.omen_images, .raptor_images').hide();
+          }
+          
+        }
+        else{
+          $j('.order-detail-section').hide();
+          $j('.modem-section').show();
+          //$j('.modem-section .steps').hide();
+          //$j('.modem-select').show();
+        }
+
+
+        if(response.data[0].ss_imei != '' && response.data[0].ss_iccid != ''){
+          fatched_imei = response.data[0].ss_imei;
+          fatched_iccid = response.data[0].ss_iccid;
+        }
+        else if(response.data[0].zoho_subscription_imei != '' && response.data[0].zoho_subscription_iccid != ''){
+          fatched_imei = response.data[0].zoho_subscription_imei;
+          fatched_iccid = response.data[0].zoho_subscription_iccid;
+        }
+        else{
+          fatched_imei = '';
+          fatched_iccid = '';
+        }
+
+        if(response.data[0].email != ''){
+          order_email = response.data[0].email;
+          //$j.cookie("order_email", order_email);
+        }
+        else{
+          order_email = response.data[0].customer.email;
+          //$j.cookie("order_email", order_email);
+        }
+        if (response.data[0].is_flexpay5 == true || response.data[0].line_items[1].variant_id == '40375589634106' || response.data[0].line_items[1].variant_id == '40375594418234' || response.data[0].line_items[1].variant_id == '40375598448698'){
+          order_type = 'flex';
+        }
+        else{
+          order_type = 'non-flex';
+        }
+
+        
+      }
+      else{
+        alert('Order not found.');
+      }
+      
+    });
+    
+  }
+
+  $j('.order_info_btn').click(function(){
+    order_number = $j('.order_number').val().trim();
+    //$j.cookie("order_number", order_number);
+    order_emaill = $j('.order_email').val().trim();
+    //console.log(order_number);
+    var emailPattern = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
+    var digitsPattern = /^\w+$/;
+    if (!emailPattern.test(order_emaill) && !digitsPattern.test(order_number)) {
+      alert('Please enter correct email address & order number.');
+      return;
+    } else if (!emailPattern.test(order_emaill)) {
+       alert('Please enter correct email address.'); 
+       return;
+    }
+    else if(!digitsPattern.test(order_number)) {
+       alert('Please enter an order number.'); 
+       return;
+    } 
+    else{
+      order_info_fatch(order_number);
+    }
+  });
+
+  $j('.active_your_plan_btn').click(function(){
+    $j('.active_your_plan').hide();
+    if(fatched_imei != '' && fatched_iccid != ''){
+       /*console.log(fatched_imei);
+      console.log(fatched_iccid);
+      console.log(order_number);*/
+      console.log('fatched IMEI: '+fatched_imei);
+      console.log('fatched ICCID: '+fatched_iccid);
+      console.log('final IMEI: '+imei);
+      console.log('final ICCID: '+iccid);
+      $j.ajax({
+        url: "https://np.nomadinternet.com/pre-subscribe.php?state=activate&imei="+fatched_imei+"&iccid="+fatched_iccid+"&order_number="+order_number,
+        method: "POST",
+        dataType: "json",
+        success: function(data) {
+          console.log(data);
+          if(data.status == 'ok'){
+            $j('.active_your_plan').hide();
+            $j('.thank_you_screen').show();
+          }
+          else{
+            $j('.active_your_plan').show();
+            $j('.thank_you_screen').hide();
+          }
+          
+        },
+        error: function(xhr, status, error) {
+          alert("AJAX request error: " + error);
+        }
+      });
+    }
+    else{
+      $j('.modem_info_screen').show();
+    }
+  });
+
+   $j('.modem_proceed').click(function(){
+    
+    var imei = $j('#imei').val();
+    var iccid = $j('#iccid').val();  
+    
+    $j('.modem-info-error').empty();
+    
+    if (imei === "" && iccid === "") {
+        $j('.modem-info-error').show();
+        $j('.modem-info-error').text("Please add IMEI & SIM ID.");
+    } else if (imei === "") {
+        $j('.modem-info-error').show();  
+        $j('.modem-info-error').text("Please add IMEI Number.");
+    } else if (iccid === "") {
+        $j('.modem-info-error').show();  
+        $j('.modem-info-error').text("Please add SIM ID Number.");
+    } else if (imei.length < 15 || imei.length > 15) {
+        $j('.modem-info-error').show();  
+        $j('.modem-info-error').text("Please add Valid IMEI Number.");
+    } else if (iccid.length < 20 || iccid.length > 20) {
+        $j('.modem-info-error').show();  
+        $j('.modem-info-error').text("Please add Valid SIM ID Number.");
+    } else {
+
+      var id_flag = false;
+      if(fatched_imei != '' && fatched_iccid != ''){
+        if (imei == fatched_imei && iccid == fatched_iccid){
+          id_flag = true;
+          final_imei = fatched_imei;
+          final_iccid = fatched_iccid;
+        }
+        else{
+          id_flag = false;
+        }
+      }
+      else{
+        final_imei = imei;
+        final_iccid = iccid;
+        id_flag = true;
+      }
+        
+      if(id_flag == true){
+        $j('.modem-info-error').hide();
+        console.log('IMEI: '+imei);
+        console.log('ICCID: '+iccid);
+        $j.ajax({
+          url: "https://np.nomadinternet.com/pre-subscribe.php?state=activate&imei="+imei+"&iccid="+iccid+"&order_number="+order_number,
+          method: "POST",
+          dataType: "json",
+          success: function(data) {
+            /*$j('.rr_loader').hide();
+            $j('.rr_loader h2').text('Checking...');*/
+            console.log(data);
+            if(data.status == 'ok'){
+              $j('.modem_info_screen').hide();
+              $j('.thank_you_screen').show();
+            }
+            else{
+              $j('.modem_info_screen').show();
+              $j('.thank_you_screen').hide();
+            }
+            
+          },
+          error: function(xhr, status, error) {
+            alert("AJAX request error: " + error);
+            /*$j('.rr_loader').hide();
+            $j('.rr_loader h2').text('Checking out');*/
+          }
+        });
+      }
+      else{
+        $j('.modem-info-error').show();  
+        $j('.modem-info-error').text("Invalid IMEI & SIM ID.");
+      }
+
+      
+    }  
+  });  
+
+  $j('.backto_1').click(function(){
+     $j('.order_info_screen').show();
+     $j('.active_your_plan').hide();
+  });
+
+  $j('.backto_2').click(function(){
+     $j('.active_your_plan').show();
+     $j('.modem_info_screen').hide();
+  });
+
+  $j('.done_btn').click(function(){
+  window.location.href = "/";
+  });
+
+
+    
+  var continue_error_status = false;  
+  var friend_name = '';
+  var discount_code = '';  
+  var status_rr_ref = false;
+  var status_rr_friend_ref = false;  
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get('rr_ref');
+  const myParam_rr_friend_ref = urlParams.get('rr_friend_ref');
+  
+    
+  if (window.location.href.indexOf("rr_ref=") > -1) {
+  const settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://programs.nomadinternet.com/api/v1/users/-actions/friend-details?referral_code="+myParam+"&referral_type=titus",
+  "method": "GET",
+  "headers": {
+  "Accept": "application/vnd.api+json"
+  },
+  success: function(data){
+  $j('.modem-switch1').attr('data-id', '40024373198906');
+  $j('.modem-switch1').attr('data-price', '0.00');
+  $j('.normal_customer').hide();
+  $j('.referral_customer').show();
+  $j('.modem_price').text("Free Gift from : "+friend_name);
+  status_rr_ref = true;
+  },  
+  error: function(er){
+  console.log(er);
+  $j('.normal_customer').show();
+  $j('.referral_customer').hide();
+  }
+  };  
+  $j.ajax(settings).done(function(response){
+  //console.log(myParam);
+  //console.log(response);
+  friend_name = response.data.attributes.name;
+  $j('.referral_customer_friendname').text(friend_name);
+  $j('.referral_customer_friendname_modem').text(friend_name);
+  $j('.referral_customer_greeting_msg').show();
+  
+  fetch('/cart/update.js', {
+  method: "POST",
+  headers: {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Content-Type': 'application/json;'
+  },
+  body: JSON.stringify({
+      "attributes": {
+        "rr_ref": myParam
+      }
+  })
+  });
+  
+  });
+  
+  }
+  else if (window.location.href.indexOf("rr_friend_ref=") > -1) {
+  const settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://programs.nomadinternet.com/api/v1/users/-actions/friend-details?referral_code="+myParam_rr_friend_ref+"&referral_type=trojan",
+  "method": "GET",
+  "headers": {
+  "Accept": "application/vnd.api+json"
+  },
+  success: function(data){
+  $j('.normal_customer').show();
+  $j('.referral_customer').hide();
+  $j('.fon_referral_discount').show();
+  discount_code = 'FONX3YUNN1';
+  status_rr_friend_ref = true;
+  },  
+  error: function(er){
+  console.log(er);
+  $j('.normal_customer').show();
+  $j('.referral_customer').hide();
+  $j('.fon_referral_discount').hide();
+  }
+  };  
+  $j.ajax(settings).done(function(response){
+  friend_name = response.data.attributes.name;
+  $j('.referral_invited_friendname').text(friend_name);
+  $j('.fon_friend_name').text(friend_name);
+  $j('.referral_customer_greeting_msg').show();
+  $j('.normal_customer').show();
+  $j('.referral_customer').hide();
+  
+  fetch('/cart/update.js', {
+  method: "POST",
+  headers: {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Content-Type': 'application/json;'
+  },
+  body: JSON.stringify({
+      "attributes": {
+        "rr_friend_ref": myParam_rr_friend_ref
+      }
+  })
+  });
+  
+  });
+  
+  } 
+  else{
+  $j('.normal_customer').show();
+  $j('.referral_customer').hide();
+  $j('.referral_customer_greeting_msg').hide();
+  $j('.fon_referral_discount').hide();
+  
+  fetch('/cart/update.js', {
+  method: "POST",
+  headers: {
+      'X-Requested-With': 'XMLHttpRequest',
+      'Content-Type': 'application/json;'
+  },
+  body: JSON.stringify({
+      "attributes": {
+        "rr_ref": "",
+        "rr_friend_ref": "",
+        "rr_invited_emails": ""
+      }
+  })
+  });
+  
+  }  
+  $j('.see_faq').click(function(){
+  $j('.ip_block').hide();
+  $j('.first_block').hide();
+  $j('.faq_screen').show();
+  });
+  $j('.prev_faq').click(function(){
+  $j('.ip_block').show();
+  $j('.first_block').show();
+  $j('.faq_screen').hide();
+  });
+  
+  $j(document).on('click', '.accordion-header', function () {
+  // Toggle the visibility of the content
+  var isVisible = $j(this).next('.accordion-content').is(':visible');
+  
+  // Hide all accordion content
+  $j('.accordion-content').slideUp();
+  $j('.accordion').removeClass('open');
+  // If the clicked header's content was not visible, show it
+  if (!isVisible) {
+  $j(this).next('.accordion-content').slideDown();
+  $j(this).parents('.accordion').addClass('open');
+  }
+  }); 
+  
+  $j(document).on('click','#referral-welcom-popup-btn',function(){
+  $j(".referral-welcom-popup").removeClass("active");
+  $j('body').removeClass('stopscroll');    
+  });
+  $j(document).on('click','#referral-invitred-popup-btn',function(){
+  $j(".referral-invitred-friend-popup").removeClass("active");
+  $j('body').removeClass('stopscroll');    
+  });  
+  $j(document).on('click','.open-popup',function(){
+  $j(".popup").addClass("active");
+  $j('body').addClass('stopscroll');  
+  }); 
+  $j(document).on('click','.plan-info-popup',function(){
+  $j(".plan_compare").addClass("active");
+  $j('body').addClass('stopscroll');
+  }); 
+  $j(document).on('click','.modem-info-popup',function(){
+  $j(".modem_compare").addClass("active");
+  $j('body').addClass('stopscroll');  
+  }); 
+  $j(document).on('click','.first-popup-open',function(){
+  $j(".first-popup").addClass("active");
+  $j('body').addClass('stopscroll');  
+  });
+  $j(document).on('click','.second-popup-open',function(){
+  $j(".second-popup").addClass("active");
+  $j('body').addClass('stopscroll');  
+  }); 
+  $j(document).on('click','.open-work-popup',function(){
+  $j(".introducing-popup").addClass("active");
+  $j('body').addClass('stopscroll');  
+  });
+  /*$j(document).on('click','.how_it_work_btn',function(){
+  //$j('.introducing-popup video').play();  
+  $j(".introducing-popup").addClass("active");
+  $j('body').addClass('stopscroll');  
+  });*/
+  $j(document).on('click','.faq_btn',function(){
+  $j(".faq-popup").addClass("active");
+  $j('body').addClass('stopscroll');  
+  });  
+  $j(document).on('click','.membership-fee-popup',function(){
+  $j(".membership-faq-popup").addClass("active");
+  $j('body').addClass('stopscroll');  
+  });  
+  
+    
+  
+  $j(document).on('click','.close-button',function(){  
+  $j('body').removeClass('stopscroll');  
+  $j(".referral-welcom-popup").removeClass("active");
+  $j(".faq-popup").removeClass("active");  
+  $j(".addon_trial_popup").removeClass("active");  
+  $j(".how-it-work-popup").removeClass("active");
+  $j(".introducing-popup").removeClass("active");
+  $j(".second-popup").removeClass("active");
+  $j(".first-popup").removeClass("active");
+  $j(".modem_compare").removeClass("active");
+  $j(".plan_compare").removeClass("active");
+  $j('.referral-invitred-friend-popup').removeClass("active");
+  $j(".popup").removeClass("active"); 
+  $j(".membership-faq-popup").removeClass("active");  
+  $j('.ip_block').show();
+  $j('.faq_screen').hide();  
+  });  
+  
+  function clearall(){
+  /*$j.removeCookie('invited-friends_1');
+  $j.removeCookie('invited-friends_2');
+  $j.removeCookie('invited-friends_3');
+  $j.removeCookie('invited-friends_4');
+  $j.removeCookie('invited-friends_5');
+  $j.removeCookie('email_body');
+  $j.removeCookie('customer_name');
+  $j.removeCookie('customer_email');
+  $j.removeCookie("currentUserId");
+  $j.removeCookie("accessTokenValue");
+  $j.removeCookie("invited-friends_1_referralID");
+  $j.removeCookie("invited-friends_2_referralID");
+  $j.removeCookie("invited-friends_3_referralID");
+  $j.removeCookie("invited-friends_4_referralID");
+  $j.removeCookie("invited-friends_5_referralID");*/
+  }
+  clearall();  
+  
+  function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+  }
+  
+  function plan_required(){
+  if($j('.plan-box').hasClass('active')){  
+  $j('.plan_required').text('DONE');
+  $j('.plan_required').removeClass('required');
+  $j('.plan_required').addClass('done');
+  }
+  else{
+  $j('.plan_required').text('REQUIRED');
+  $j('.plan_required').addClass('required');
+  $j('.plan_required').removeClass('done'); 
+  }  
+  }
+  
+  function modem_required(){
+  if($j('.modem-box').hasClass('active')){  
+  $j('.modem_required').text('DONE');
+  $j('.modem_required').removeClass('required');
+  $j('.modem_required').addClass('done');
+  $j('.addon_tab .title_tab').addClass('active');
+  $j('.addon_tab .inner_content').show();
+  }
+  else{
+  $j('.modem_required').text('REQUIRED');
+  $j('.modem_required').addClass('required');
+  $j('.modem_required').removeClass('done');
+  $j('.addon_tab .title_tab').removeClass('active');
+  $j('.addon_tab .inner_content').hide();
+  }  
+  }
+  
+  function addon_required(){
+  if($j('.addon-box').hasClass('active')){  
+  $j('.addon_required').text('DONE');
+  $j('.addon_required').removeClass('required');
+  $j('.addon_required').addClass('done');
+  }
+  else{
+  $j('.addon_required').text('REQUIRED');
+  $j('.addon_required').addClass('required');
+  $j('.addon_required').removeClass('done');
+  }  
+  }
+    
+  
+  function customise_continue(){
+    
+  const elementsToCheck = [
+    { selector: '.plan-box', message: 'Internet Plans' },
+    { selector: '.addon-box', message: 'Nomad Upgrades' }
+  ];
+  const continue_errors = [];
+  $j.each(elementsToCheck, function (index, element) {
+    if (!$j(element.selector).hasClass('active')) {
+      continue_errors.push(element.message);
+    }
+  });
+    
+  if($j('.plan-box').hasClass('active') && $j('.addon-box').hasClass('active')){
+  continue_error_status = false;  
+  }
+  else{
+  if($j('.customise_continue').hasClass('active')){
+  
+  }
+  else{
+  //$j('.customise_continue').addClass('disable');
+  //$j('.continue-button-error').show(); 
+  continue_error_status = true;  
+  var total_friend = $j.cookie("total_friend");  
+  if(total_friend > 0){  
+  $j('.continue-button-error').text('Please select: '+continue_errors.join(" ,")+'.');  
+  }
+  else{
+  $j('.continue-button-error').text('You selected Friends of Nomad Discount with no friends added yet. & select: '+continue_errors.join(" ,")+'.');  
+  }
+  
+  if($j('.plan-features-details.save-plan-box').hasClass('active')){
+  $j('.continue-button-error').text('Please select: '+continue_errors.join(" ,")+'.');  
+  }
+    
+  }
+  } 
+    
+  }  
+  
+  customise_continue();   
+  
+  function getCookie(c_name) {
+    var c_value = document.cookie,
+        c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1) c_start = c_value.indexOf(c_name + "=");
+    if (c_start == -1) {
+        c_value = null;
+    } else {
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1) {
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start, c_end));
+    }
+    return c_value;
+  }  
+    
+  /*$j(document).on('click','#discount-switch1',function(){
+  $j('.save-plan-box').removeClass("active");
+  if($j(this).is(":checked")){
+  $j(this).parents('.save-plan-box').addClass("active");
+  $j('#discount-switch2').prop('checked', false);
+  $j('#discount-switch2').parents('.save-plan-box').removeClass("active");
+  $j('.monthly-discount-details').show();
+  $j.cookie("selected_fon", 'fon');
+  check_friends();  
+  } else{
+  $j(this).parents('.save-plan-box').removeClass("active");
+  $j('#discount-switch2').prop('checked', true);
+  $j('#discount-switch2').parents('.save-plan-box').addClass("active");  
+  $j('.monthly-discount-details').hide();
+  $j('.invite-friend-content').hide();
+  $j('.dy_discount').text('50');  
+  $j('.dy_finalpriceof100').html('99<span>.95/mo</span>');
+  $j('.dy_finalpriceof200').html('119<span>.95/mo</span>');
+  $j('.hide_when_fullprice').hide();
+  $j('.saved_text').text('Save'); 
+  }
+  customise_continue(); 
+  });
+  
+  $j(document).on('click', '.save-plan', function (e) {
+    var containersToCheck = [
+      $j(".open-work-popup"),
+      $j(".add_discount"),
+      $j(".add_friend"),
+      $j(".friend_email"),
+      $j(".friend_action"),
+      $j(".toggle-switch")
+    ];
+    var clickedOutsideContainers = containersToCheck.every(function (container) {
+      return !container.is(e.target) && container.has(e.target).length === 0;
+    });
+    if (clickedOutsideContainers) {
+      $j('#discount-switch1').click();
+    }
+  });
+    
+  
+  $j(document).on('click','#discount-switch2',function(){
+  $j('.save-plan-box').removeClass("active");
+  if($j('#discount-switch1').is(":checked")) {
+  $j('#discount-switch1').prop('checked', false);  
+  }   
+  if($j(this).is(":checked")) {
+  $j(this).parents('.save-plan-box').addClass("active");
+  $j('#discount-switch1').prop('checked', false);
+  $j('#discount-switch1').parents('.save-plan-box').removeClass("active"); 
+  $j('.monthly-discount-details').hide();
+  $j('.invite-friend-content').hide();
+  $j('.dy_discount').text('50');
+  $j('.dy_finalpriceof100').html('99<span>.95/mo</span>');
+  $j('.dy_finalpriceof200').html('119<span>.95/mo</span>');
+  $j('.hide_when_fullprice').hide();
+  $j('.saved_text').text('Save');
+  $j.cookie("selected_fon", 'nofon');  
+  } else {
+  $j(this).parents('.save-plan-box').removeClass("active");
+  $j('#discount-switch1').prop('checked', true);
+  $j('#discount-switch1').parents('.save-plan-box').addClass("active");  
+  $j('.monthly-discount-details').show(); 
+  check_friends();
+  }
+  customise_continue();  
+  });
+  
+  $j(document).on('click','.plan-features-details',function(e){
+    var container2 = $j(".toggle-switch");
+    if (!container2.is(e.target) && container2.has(e.target).length === 0) {
+      $j('#discount-switch2').click(); // Trigger a click on the checkbox
+    }
+  }); */ 
+  
+  
+  $j('#plan_switch1').change(function(){
+  $j('.plan-box').removeClass("active");
+  if($j('#plan_switch2').is(":checked")) {
+  $j('#plan_switch2').prop('checked', false);  
+  }   
+  if($j(this).is(":checked")) {
+  $j(this).parents('.plan-box').addClass("active");
+  $j.cookie("selected_plan", '100mbps');  
+  } else {
+  $j(this).parents('.plan-box').removeClass("active");
+  }
+  plan_required();
+  customise_continue();  
+  });
+  
+  $j(document).on('click','.plan_switch1',function(e){  
+  var checkbox = $j('#plan_switch1');
+  var container1 = $j(".first-popup-open");
+  var container2 = $j(".toggle-switch");
+  if (!checkbox.is(e.target) && !container1.is(e.target) && !container2.is(e.target) && container2.has(e.target).length === 0) {
+    checkbox.trigger('click');
+  }
+  });
+  
+  $j('#plan_switch2').change(function(){
+  $j('.plan-box').removeClass("active");
+  if($j('#plan_switch1').is(":checked")) {
+  $j('#plan_switch1').prop('checked', false);  
+  }   
+  if($j(this).is(":checked")) {
+  $j(this).parents('.plan-box').addClass("active");
+  $j.cookie("selected_plan", '200mbps');    
+  } else {
+  $j(this).parents('.plan-box').removeClass("active");
+  }
+  plan_required();
+  customise_continue();  
+  });
+  
+  $j(document).on('click','.plan_switch2',function(e){  
+  var checkbox = $j('#plan_switch2');
+  var container1 = $j(".first-popup-open");
+  var container2 = $j(".toggle-switch");
+  if (!checkbox.is(e.target) && !container1.is(e.target) && !container2.is(e.target) && container2.has(e.target).length === 0) {
+    checkbox.trigger('click');
+  }
+  });
+   
+  
+  $j('#modem-switch1').change(function(){
+  $j('.modem-box').removeClass("active");
+  if($j('#modem-switch2').is(":checked") || $j('#modem-switch3').is(":checked") || $j('#modem-switch3-desktop').is(":checked")) {
+  $j('#modem-switch2').prop('checked', false);
+  $j('#modem-switch3').prop('checked', false);
+  $j('#modem-switch3-desktop').prop('checked', false);  
+  }  
+  if($j(this).is(":checked")) {
+  $j(this).parents('.modem-box').addClass("active");
+  $j.cookie("selected_modem", 'omega');
+  } else {
+  $j(this).parents('.modem-box').removeClass("active");
+  }
+  modem_required();
+  customise_continue();  
+  });
+  
+  $j(document).on('click','.modem-switch1',function(e){
+    var container1 = $j(".toggle-switch");
+    if (!container1.is(e.target) && container1.has(e.target).length === 0) {
+      $j('#modem-switch1').click(); // Trigger a click on the checkbox
+    }
+  });
+  
+  $j('#modem-switch2').change(function(){
+  $j('.modem-box').removeClass("active");
+  if($j('#modem-switch1').is(":checked") || $j('#modem-switch3').is(":checked") || $j('#modem-switch3-desktop').is(":checked")) {
+  $j('#modem-switch1').prop('checked', false);
+  $j('#modem-switch3').prop('checked', false);
+  $j('#modem-switch3-desktop').prop('checked', false);  
+  }   
+  if($j(this).is(":checked")) {
+  $j(this).parents('.modem-box').addClass("active");
+  $j.cookie("selected_modem", 'air');  
+  } else {
+  $j(this).parents('.modem-box').removeClass("active");
+  }
+  modem_required();
+  customise_continue();  
+  });
+  
+  $j(document).on('click','.modem-switch2',function(e){
+    var container1 = $j(".toggle-switch");
+    if (!container1.is(e.target) && container1.has(e.target).length === 0) {
+      $j('#modem-switch2').click(); // Trigger a click on the checkbox
+    }
+  }); 
+  
+  
+  $j('#modem-switch3').change(function(){
+  $j('.modem-box').removeClass("active");
+  if($j('#modem-switch1').is(":checked") || $j('#modem-switch2').is(":checked") || $j('#modem-switch3-desktop').is(":checked")) {
+  $j('#modem-switch1').prop('checked', false);
+  $j('#modem-switch2').prop('checked', false);
+  $j('#modem-switch3-desktop').prop('checked', false);
+  }   
+  if($j(this).is(":checked")) {
+  $j(this).parents('.modem-box').addClass("active");
+  $j.cookie("selected_modem", 'bag');  
+  } else {
+  $j(this).parents('.modem-box').removeClass("active");
+  }
+  modem_required();
+  customise_continue();  
+  });
+  
+  $j(document).on('click','.modem-switch3',function(e){
+    var container1 = $j(".toggle-switch");
+    if (!container1.is(e.target) && container1.has(e.target).length === 0) {
+      $j('#modem-switch3').click(); // Trigger a click on the checkbox
+    }
+  });   
+  
+  $j('#modem-switch3-desktop').change(function(){
+  $j('.modem-box').removeClass("active");
+  if($j('#modem-switch1').is(":checked") || $j('#modem-switch2').is(":checked") || $j('#modem-switch3').is(":checked")) {
+  $j('#modem-switch1').prop('checked', false);
+  $j('#modem-switch2').prop('checked', false);
+  $j('#modem-switch3').prop('checked', false);  
+  }   
+  if($j(this).is(":checked")) {
+  $j(this).parents('.modem-box').addClass("active");
+  $j.cookie("selected_modem", 'bag');  
+  } else {
+  $j(this).parents('.modem-box').removeClass("active");
+  }
+  modem_required();
+  customise_continue();  
+  });
+  
+  $j(document).on('click','.modem-switch3-desktop',function(e){
+    var container1 = $j(".toggle-switch");
+    if (!container1.is(e.target) && container1.has(e.target).length === 0) {
+      $j('#modem-switch3-desktop').click(); // Trigger a click on the checkbox
+    }
+  });   
+   
+  //console.log($j.cookie('selected_addon3'));
+  $j('#addon-switch1').change(function(){
+  if($j(this).is(":checked")) {
+    //alert('hi');
+  $j(this).parents('.addon-box').addClass("active");
+    if($j.cookie("selected_addon3") == 'addontrial'){
+      $j.cookie("selected_addon1", 'ontrial');
+    }
+    else if($j.cookie("selected_addon3") == 'noaddon'){
+      $j.cookie("selected_addon1", 'nothing');
+    }  
+    else{
+      $j.cookie("selected_addon1", 'notrial');
+    }
+  
+  var sa1 = getCookie("selected_addon1");
+  if (!sa1) {
+  $j.cookie("selected_addon1", 'notrial');
+  }  
+    
+  } else{
+  $j(this).parents('.addon-box').removeClass("active");
+  $j.cookie("selected_addon1", 'nothing');  
+  }
+  if($j('#addon-switch3').is(":checked")){
+  $j('#addon-switch3').prop('checked', false);
+  $j.cookie("selected_addon3", 'nothing');  
+  $j('.addon-box-3').removeClass('active');
+  }
+     
+  addon_required();
+  customise_continue();  
+  });
+  
+  $j(document).on('click','.addon-box-1',function(e){
+    var container1 = $j(".toggle-switch");
+    if (!container1.is(e.target) && container1.has(e.target).length === 0) {
+      $j('#addon-switch1').click(); // Trigger a click on the checkbox
+    }
+  });
+  
+  $j('#addon-switch2').change(function(){ 
+  if($j(this).is(":checked")) {
+  $j(this).parents('.addon-box').addClass("active");
+  if($j.cookie("selected_addon3") == 'addontrial'){
+      $j.cookie("selected_addon2", 'ontrial');
+    }
+    else if($j.cookie("selected_addon3") == 'noaddon'){
+      $j.cookie("selected_addon2", 'nothing');
+    }  
+    else{
+      $j.cookie("selected_addon2", 'notrial');
+    } 
+  
+  var sa2 = getCookie("selected_addon2");
+  if (!sa2) {
+  $j.cookie("selected_addon2", 'notrial');
+  }
+    
+  } else {
+  $j(this).parents('.addon-box').removeClass("active");
+  $j.cookie("selected_addon2", 'nothing');  
+  }
+  if($j('#addon-switch3').is(":checked")) {
+  $j('#addon-switch3').prop('checked', false);
+  $j.cookie("selected_addon3", 'nothing');
+  $j('.addon-box-3').removeClass('active');  
+  }
+  
+  addon_required();
+  customise_continue();  
+  }); 
+   
+  $j(document).on('click','.addon-box-2',function(e){
+    var container1 = $j(".toggle-switch");
+    if (!container1.is(e.target) && container1.has(e.target).length === 0) {
+      $j('#addon-switch2').click(); // Trigger a click on the checkbox
+    }
+  });  
+  
+  $j('#addon-switch3').change(function(){
+    //alert('hi');
+  $j('.addon-box').removeClass("active");
+  if($j('#addon-switch1').is(":checked")) {
+  $j('#addon-switch1').prop('checked', false);
+  $j.cookie("selected_addon1", 'nothing');  
+  }
+  if($j('#addon-switch2').is(":checked")) {
+  $j('#addon-switch2').prop('checked', false);
+  $j('.addon-box-2').removeClass('addone-trials');  
+  $j.cookie("selected_addon2", 'nothing');  
+  }   
+  if($j(this).is(":checked")) {
+  $j.cookie("selected_addon3", 'noaddon');
+  $j.cookie("selected_addon1", 'nothing');
+  $j.cookie("selected_addon2", 'nothing');  
+  $j('.addon_trial_popup').addClass('active');  
+  $j(this).parents('.addon-box').addClass("active");
+  $j('.free-trials').hide();
+  $j('.free_text').hide();  
+  $j('.addon-box-1').removeClass('addone-trials');
+  $j('.addon-box-2').removeClass('addone-trials');  
+  } else {
+  $j(this).parents('.addon-box').removeClass("active");
+  $j.cookie("selected_addon3", 'nothing');  
+  }
+  addon_required();
+  customise_continue();  
+  });
+  
+  $j(document).on('click','.addon-box-3',function(e){
+    var container7 = $j(".toggle-switch");
+    if (!container7.is(e.target) && container7.has(e.target).length === 0) {
+      $j('#addon-switch3').click(); // Trigger a click on the checkbox
+    }
+  });
+  
+  /*var sa1 = getCookie("selected_addon1");
+  if (!sa1) {
+  $j('#addon-switch1').click();
+  }
+  var sa2 = getCookie("selected_addon2");
+  if (!sa2) {
+  $j('#addon-switch2').click();
+  }  */
+  
+    
+  
+  if (window.location.href.indexOf("find=100-air") > -1) {
+    $j('#plan_switch1').trigger('click');
+    $j('#modem-switch2').trigger('click');
+  }
+  if (window.location.href.indexOf("find=200-air") > -1) {
+    $j('#plan_switch2').trigger('click');
+    $j('#modem-switch2').trigger('click');
+  }
+  if (window.location.href.indexOf("find=100-omega") > -1) {
+    $j('#plan_switch1').trigger('click');
+    $j('#modem-switch1').trigger('click');
+  }
+  if (window.location.href.indexOf("find=air-backup") > -1) {
+    $j('#plan_switch1').trigger('click');
+    $j('#modem-switch3-desktop').click();
+    $j('#modem-switch3').click();
+  }
+  console.log(order_email);
+  /* var customer_email;
+   var order_number; 
+   var order_product;
+   var fatched_imei;
+   var fatched_iccid;
+   var order_type; */
+  
+  const ps_plan = $j('.plan-details .plan-box.active').attr('data-plan-name');
+  const ps_order_number = $j.cookie("order_number");
+  const ps_customer_email = $j.cookie("order_email");
+    console.log( $j.cookie("order_number"));
+  const ps_imei = fatched_imei;
+  const ps_iccid = fatched_iccid;  
+  const ps_order_type = order_type;
+  var ps_coupon_code = '';
+  
+  var selected_modem = $j('.modem-list .box.active').attr('data-id');  
+  var redirect_url = '';
+
+  if(ps_plan == 'nomad-rural-unlimited-100-Mbps-9995'){
+    $j('.plan-details .plan-box').removeClass('active');
+    $j('[data-plan-name="nomad-rural-unlimited-100-Mbps-9995"]').addClass('active');
+  }
+  else if(ps_plan == 'nomad-rural-unlimited-ultra-200-Mbps'){
+    $j('.plan-details .plan-box').removeClass('active');
+    $j('[data-plan-name="nomad-rural-unlimited-ultra-200-Mbps"]').addClass('active');
+  }
+  else{
+      
+  }
+    
+  $j(document).on('click','.customise_continue',function(e){
+  e.preventDefault(); 
+  
+  //console.log('checkout');  
+     
+  var plan_name = $j('.plan-box.active').attr('data-plan-name');
+  $j('input.selected_plan').val(plan_name);
+  
+  if(plan_name == 'nomad-rural-unlimited-ultra-200-Mbps'){
+  $j('input[name="coupon_code"]').val(''); 
+  }
+  else{
+  $j('input[name="coupon_code"]').val('');  
+  }  
+    
+  if($j('.addon-box-1').hasClass('active') && $j('.addon-box-2').hasClass('active')){
+  $j('.selected_addon1').val('nomad-prime-add-on-trial');
+  $j('.selected_addon2').val('nomad-internet-travel-add-on-trial');    
+  }
+  else{
+  if($j('.addon-box-1').hasClass('active')){
+  $j('.selected_addon1').val('nomad-prime-add-on-trial');  
+  }
+  else{
+  $j('.selected_addon1').val('');    
+  }  
+  if($j('.addon-box-2').hasClass('active')){
+  $j('.selected_addon2').val('nomad-internet-travel-add-on-trial'); 
+  }
+  else{
+  $j('.selected_addon2').val('');  
+  }  
+  }
+
+  var selected_modem = $j('.modem-list .box.active').attr('data-id');  
+   
+  if($j('.addon-box-1').hasClass('active') && $j('.addon-box-2').hasClass('active')){
+    if($j('.addon-box-1').hasClass('addone-trials') && $j('.addon-box-2').hasClass('addone-trials')){
+      redirect_url = 'https://np.nomadinternet.com/pre-subscribe.php?&plan='+plan_name+'&order_number='+order_number+'&email='+order_email+'&imei='+final_imei+'&iccid='+final_iccid+'&addons[]=nomad-prime-add-on-trial&addons[]=nomad-internet-travel-add-on-trial';    
+    }
+    else{
+      redirect_url = 'https://np.nomadinternet.com/pre-subscribe.php?&plan='+plan_name+'&order_number='+order_number+'&email='+order_email+'&imei='+final_imei+'&iccid='+final_iccid+'&addons[]=nomad-prime-add-on-2&addons[]=nomad-internet-travel-add-on';
+    }
+  }
+  else{
+  if($j('.addon-box-1').hasClass('active')){
+    if($j('.addon-box-1').hasClass('addone-trials')){
+      redirect_url = 'https://np.nomadinternet.com/pre-subscribe.php?&plan='+plan_name+'&order_number='+order_number+'&email='+order_email+'&imei='+final_imei+'&iccid='+final_iccid+'&addons[]=nomad-prime-add-on-trial';
+    }
+    else{
+      redirect_url = 'https://np.nomadinternet.com/pre-subscribe.php?&plan='+plan_name+'&order_number='+order_number+'&email='+order_email+'&imei='+final_imei+'&iccid='+final_iccid+'&addons[]=nomad-prime-add-on-2';
+    }
+  }
+  else{
+   redirect_url = 'https://np.nomadinternet.com/pre-subscribe.php?&plan='+plan_name+'&order_number='+order_number+'&email='+order_email+'&imei='+final_imei+'&iccid='+final_iccid;
+  }  
+  if($j('.addon-box-2').hasClass('active')){
+    if($j('.addon-box-1').hasClass('addone-trials')){
+      redirect_url = 'https://np.nomadinternet.com/pre-subscribe.php?&plan='+plan_name+'&order_number='+order_number+'&email='+order_email+'&imei='+final_imei+'&iccid='+final_iccid+'&addons[]=nomad-internet-travel-add-on-trial';
+    }
+    else{
+      redirect_url = 'https://np.nomadinternet.com/pre-subscribe.php?&plan='+plan_name+'&order_number='+order_number+'&email='+order_email+'&imei='+final_imei+'&iccid='+final_iccid+'&addons[]=nomad-internet-travel-add-on';
+    }
+  
+  }
+  else{
+  redirect_url = 'https://np.nomadinternet.com/pre-subscribe.php?&plan='+plan_name+'&order_number='+order_number+'&email='+order_email+'&imei='+final_imei+'&iccid='+final_iccid;
+  }  
+  }
+    console.log(redirect_url);
+   if(ps_order_type == 'flex'){
+     if(selected_modem == 'omen'){
+       //window.location.href = redirect_url+'&addons[]=fp5-omen-monthly-price-skip-first-month'; 
+       window.open(redirect_url+'&addons[]=fp5-omen-monthly-price-skip-first-month', '_blank');
+     }
+     else if(selected_modem == 'air'){
+       //window.location.href = redirect_url+'&addons[]=fp5-air-monthly-price-skip-first-month';  
+       window.open(redirect_url+'&addons[]=fp5-air-monthly-price-skip-first-month', '_blank');
+     }
+     else if(selected_modem == 'raptor'){
+       //window.location.href = redirect_url+'&addons[]=fp5-raptor-monthly-price-skip-first-month';  
+       window.open(redirect_url+'&addons[]=fp5-raptor-monthly-price-skip-first-month', '_blank');
+     }
+     else{
+       
+     }
+     
+   } 
+   else{
+     //window.location.href = redirect_url;
+      window.open(redirect_url, '_blank');
+   }
+  
+    
+  /*$j('.rr_loader').show();
+  $j('#activation_form').submit();  
+  setTimeout(function() {
+    $j('.rr_loader').hide();
+  }, 3000);*/
+  
+    
+  }); 
+  
+  
+  var $titleTab = $j('.title_tab');
+  $j('.Accordion_item:eq(0)').find('.title_tab').addClass('active').next().stop().slideDown(300);
+  $j('.Accordion_item:eq(0)').find('.inner_content').find('p').addClass('show');
+  $titleTab.on('click', function(e) {
+  e.preventDefault();
+  if ( $j(this).hasClass('active') ) {
+  $j(this).removeClass('active');
+  $j(this).next().stop().slideUp(500);
+  $j(this).next().find('p').removeClass('show');
+  } else {
+  $j(this).addClass('active');
+  $j(this).next().stop().slideDown(500);
+  $j(this).parent().siblings().children('.title_tab').removeClass('active');
+  $j(this).parent().siblings().children('.inner_content').slideUp(500);
+  $j(this).parent().siblings().children('.inner_content').find('p').removeClass('show');
+  $j(this).next().find('p').addClass('show');
+  } 
+  });
+  
+  $j(document).on('click','.chat_text',function(e){
+  $zoho.salesiq.floatwindow.visible("show");
+  });
+  
+   
+  
+  function customer_details(){
+  var c_name = $j.cookie("customer_name");
+  var c_email = $j.cookie("customer_email");
+  $j('.customer_name').val(c_name);
+  $j('.customer_email').val(c_email);
+  /*$j('.email_body').removeAttr('contenteditable'); */
+  $j('.customer_name_email').text(c_name);
+  /*$j('.email_body').attr('contenteditable',true);*/
+  var mail = $j('.email_body').html();
+  $j.cookie("email_body", mail);  
+  var customer_email = $j.cookie("email_body");
+  $j('.email_body').html(customer_email);
+  }
+  
+  $j(document).on('click','.add_discount',function(e){
+  if(typeof $j.cookie("customer_name") != 'undefined' && typeof $j.cookie("customer_email") != 'undefined'){
+  $j('.invite-friend-content').show();
+  $j('.discount_main').hide(); 
+  }
+  else{
+  $j('.invite-friend-content').hide();
+  $j('.discount_main').show();
+  }
+  $j('.how-it-work-popup').addClass('active'); 
+  $j('.first_block').show();
+  $j('.faq_screen').hide();  
+  customer_details(); 
+  });
+  
+  $j(document).on('click','.tab-details.first',function(){  
+  $j('.tab-details.first').addClass('active');
+  $j('.tab-details.second').removeClass('active');
+  $j('.tab-details.third').removeClass('active');
+  $j('.first-stap-popup').show();
+  $j('.second-stap-popup').hide();
+  $j('.third-stap-popup').hide();
+  $j('.faq_screen').hide();
+  $j('.first_block').show();  
+  });
+  $j(document).on('click','.tab-details.second',function(){
+  $j('.tab-details.second').addClass('active');
+  $j('.tab-details.first').removeClass('active');
+  $j('.tab-details.third').removeClass('active');
+  $j('.first-stap-popup').hide();
+  $j('.second-stap-popup').show();
+  $j('.third-stap-popup').hide();
+  $j('.faq_screen').hide();    
+  });
+  $j(document).on('click','.faq_discount_btn',function(){
+  $j('.tab-details.second').addClass('active');
+  $j('.tab-details.first').removeClass('active');
+  $j('.tab-details.third').removeClass('active');
+  $j('.first-stap-popup').hide();
+  $j('.second-stap-popup').show();
+  $j('.third-stap-popup').hide();
+  $j('.faq_screen').hide();     
+  });
+  $j(document).on('click','.tab-details.third',function(){
+  if(typeof $j.cookie("customer_name") != 'undefined' && typeof $j.cookie("customer_email") != 'undefined'){  
+  $j('.tab-details.third').addClass('active');
+  $j('.tab-details.first').removeClass('active');
+  $j('.tab-details.second').removeClass('active');
+  $j('.first-stap-popup').hide();
+  $j('.second-stap-popup').hide();
+  $j('.third-stap-popup').show();
+  $j('.faq_screen').hide();
+  }  
+  });
+  $j(document).on('click','.how-it-work-popup-proceed',function(){  
+  $j('.tab-details.second').addClass('active');
+  $j('.tab-details.first').removeClass('active');
+  $j('.tab-details.third').removeClass('active');
+  $j('.first-stap-popup').hide();
+  $j('.second-stap-popup').show();
+  $j('.third-stap-popup').hide();
+  });
+  $j(document).on('click','.second-stap-popup .previous-button',function(){  
+  $j('.tab-details.first').addClass('active');
+  $j('.tab-details.second').removeClass('active');
+  $j('.tab-details.third').removeClass('active');
+  $j('.first-stap-popup').show();
+  $j('.second-stap-popup').hide();
+  $j('.third-stap-popup').hide();
+  $j('.faq_screen').hide();
+  $j('.first_block').show();   
+  });
+  $j(document).on('click','.third-stap-popup .previous-button',function(){
+  $j('.tab-details.second').addClass('active');
+  $j('.tab-details.first').removeClass('active');
+  $j('.tab-details.third').removeClass('active');
+  $j('.first-stap-popup').hide();
+  $j('.second-stap-popup').show();
+  $j('.third-stap-popup').hide();
+  $j('.faq_screen').hide();
+  $j('.first_block').show();   
+  });
+  
+  
+  $j(document).on('click','.customer_details_proceed',function(){
+  var customer_name = $j('.customer_name').val();
+  var customer_email = $j('.customer_email').val();
+  if(customer_name == '' || customer_email == ''){
+  $j('.customer_details_error').text('Please add all details to personalize your friend invites.');
+  $j('.customer_details_error').show();
+  }
+  else{
+  if(!isEmail(customer_email)){
+  $j('.customer_details_error').text('Please add valid email address.');
+  $j('.customer_details_error').show();
+  }
+  else{
+  const settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://programs.nomadinternet.com/api/v1/users?include=referrals",
+  "method": "POST",
+  "headers": {
+  "Content-Type": "application/vnd.api+json",
+  "Accept": "application/vnd.api+json"
+  },
+  "processData": false,
+  "data": JSON.stringify({
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": {
+    "type": "users",
+    "attributes": {
+        "name": customer_name,
+        "email": customer_email
+    }
+  }
+  }),
+  beforeSend: function() {
+   // $j('.rr_loader').show();
+  },
+  success: function(data){
+  $j.cookie("customer_name", customer_name);
+  $j.cookie("customer_email", customer_email);
+  $j('.tab-details.third').addClass('active');
+  $j('.tab-details.first').removeClass('active');
+  $j('.tab-details.second').removeClass('active');
+  $j('.first-stap-popup').hide();
+  $j('.second-stap-popup').hide();
+  $j('.third-stap-popup').show();
+  $j('.dynamic_discount').html('<span class="dollar">$</span>0<span class="month">/mo</span>');
+  //$j('.dy_finalpriceof100').html('99<span>.95/mo</span>');
+  //$j('.dy_finalpriceof200').html('119<span>.95/mo</span>');
+  $j('.hide_when_fullprice').hide();
+  $j('.saved_text').text('Saved');
+  $j('.dy_discount').text('0');
+  $j('.color_bg').css('display','none');
+  $j('.color_bg.zero_friend').css('display','flex');
+  //$j('.rr_loader').hide();  
+  customer_details();
+  },  
+  error: function(er){
+  console.log(er);
+  $j('.customer_details_error').show();
+  $j('.customer_details_error').text(er.responseJSON.errors[0].detail);
+  console.log(er.responseJSON.errors[0].detail);
+  },
+  complete: function() {
+  
+  }
+  };
+  
+  $j.ajax(settings).done(function(response){
+  //console.log('test');
+    //console.log(response);
+  //console.log(response.included.length);
+    //console.log(response.data.id);
+  //console.log(response.meta.access_token.value);
+  $j.cookie("currentUserId", response.data.id);
+  $j.cookie("accessTokenValue", response.meta.access_token.value);
+    
+  for (let i = 1; i <= Math.min(response.included.length, 5); i++) {
+    const friendIndex = i;
+    const cookieName = 'invited-friends_'+friendIndex;
+    const cookieReferralIDName = 'invited-friends_'+friendIndex+'_referralID';
+    const friendEmail = response.included[friendIndex - 1].attributes.email;
+    if (typeof $j.cookie(cookieName) === 'undefined') {
+      $j.cookie(cookieName, friendEmail);
+      $j('.invited-friends_'+friendIndex+' .friend_email_'+friendIndex).text(friendEmail);
+      console.log(friendEmail);
+    }
+  
+    if (typeof $j.cookie(cookieReferralIDName) === 'undefined') {
+      $j.cookie(cookieReferralIDName, response.included[friendIndex - 1].id);
+    }
+  }
+  
+  check_friends();  
+  });
+  
+  
+  }
+  customer_details();
+  }  
+  });  
+  
+  $j(document).on('click','.email_save',function(){
+  var mail = $j('.email_body').html();
+  $j.cookie("email_body", mail);
+  $j(".how-it-work-popup").removeClass("active");
+  if(typeof $j.cookie("customer_name") != 'undefined' && typeof $j.cookie("customer_email") != 'undefined'){
+  $j('.invite-friend-content').show();
+  $j('.discount_main').hide();
+  //$j('.rr_loader').hide();  
+  }
+  else{
+  $j('.invite-friend-content').hide();
+  $j('.discount_main').show();
+  }  
+  });  
+  
+  function check_friends(){
+  if(typeof $j.cookie("invited-friends_1") != 'undefined' || typeof $j.cookie("invited-friends_2") != 'undefined' || typeof $j.cookie("invited-friends_3") != 'undefined' || typeof $j.cookie("invited-friends_4") != 'undefined' || typeof $j.cookie("invited-friends_5") != 'undefined'){
+  $j('.no-friend-details').hide();
+  if(typeof $j.cookie("invited-friends_1") != 'undefined'){
+  $j('.invited-friends_1').show();
+  if ($j('.invited-friends_1').hasClass('active')){}else{$j('.invited-friends_1').addClass('active');}
+  $j('.invited-friends_1 .friend_email_1').text($j.cookie("invited-friends_1"));
+  $j('.discount-box-1').addClass('active');
+  }
+  if(typeof $j.cookie("invited-friends_2") != 'undefined'){
+  $j('.invited-friends_2').show();
+  if ($j('.invited-friends_2').hasClass('active')){}else{$j('.invited-friends_2').addClass('active');}
+  $j('.invited-friends_2 .friend_email_2').text($j.cookie("invited-friends_2"));
+  $j('.discount-box-2').addClass('active');
+  }
+  if(typeof $j.cookie("invited-friends_3") != 'undefined'){
+  $j('.invited-friends_3').show();
+  if ($j('.invited-friends_3').hasClass('active')){}else{$j('.invited-friends_3').addClass('active');}
+  $j('.invited-friends_3 .friend_email_3').text($j.cookie("invited-friends_3"));
+  $j('.discount-box-3').addClass('active');
+  }
+  if(typeof $j.cookie("invited-friends_4") != 'undefined'){
+  $j('.invited-friends_4').show();
+  if ($j('.invited-friends_4').hasClass('active')){}else{$j('.invited-friends_4').addClass('active');}
+  $j('.invited-friends_4 .friend_email_4').text($j.cookie("invited-friends_4"));
+  $j('.discount-box-4').addClass('active');
+  }
+  if(typeof $j.cookie("invited-friends_5") != 'undefined'){
+  $j('.invited-friends_5').show();
+  if ($j('.invited-friends_5').hasClass('active')){}else{$j('.invited-friends_5').addClass('active');}
+  $j('.invited-friends_5 .friend_email_5').text($j.cookie("invited-friends_5"));
+  $j('.discount-box-5').addClass('active');
+  }
+  }
+  
+  var total_friend = 0;
+  $j(".invited-friends-list.active").each(function() {
+  total_friend++;
+  });
+  $j.cookie("total_friend", total_friend);
+  if(total_friend == 5){
+  $j('.email-form').hide();
+  $j('.all_done').show();
+  } 
+  
+  if(total_friend == 1){
+  $j('.dynamic_discount').html('<span class="dollar">$</span>10<span class="month">/mo</span>');
+  $j('.dy_discount').text('10');
+  $j('.hide_when_fullprice').show();  
+  $j('.color_bg').css('display','flex');
+  $j('.color_bg.zero_friend').css('display','none');    
+  //$j('.dy_finalpriceof100').html('89<span>.95/mo</span>');
+  //$j('.dy_finalpriceof200').html('109<span>.95/mo</span>');
+  $j('.sub_dis_text').show();
+  $j('.saved_text').text('Saved');
+  $j('.nomad_friends').show();    
+  $j('.nomad_friend_count').text('1 Nomad Friends');  
+  $j('.nomad_discount').text('- $10.00');
+  $j.cookie("nomad_friend_count", '1 Nomad Friends'); 
+  $j.cookie("nomad_discount", '- $10.00');
+  $j('.nomad_discount').attr('data-price', '10.00');
+  $j('.no-friend-details').hide();
+  $j('.discount-box').removeClass('active');
+  $j('.discount-box-1').addClass('active');  
+  }
+  else if(total_friend == 2){
+  $j('.dynamic_discount').html('<span class="dollar">$</span>20<span class="month">/mo</span>');
+  $j('.dy_discount').text('20');
+  $j('.hide_when_fullprice').show();  
+  $j('.color_bg').css('display','flex');
+  $j('.color_bg.zero_friend').css('display','none');    
+  //$j('.dy_finalpriceof100').html('79<span>.95/mo</span>');
+  //$j('.dy_finalpriceof200').html('99<span>.95/mo</span>');
+  $j('.sub_dis_text').show();
+  $j('.saved_text').text('Saved');  
+  $j('.nomad_friends').show();    
+  $j('.nomad_friend_count').text('2 Nomad Friends');  
+  $j('.nomad_discount').text('- $20.00');
+  $j.cookie("nomad_friend_count", '2 Nomad Friends'); 
+  $j.cookie("nomad_discount", '- $20.00');  
+  $j('.nomad_discount').attr('data-price', '20.00');  
+  $j('.no-friend-details').hide();
+  $j('.discount-box').removeClass('active');
+  $j('.discount-box-1').addClass('active');
+  $j('.discount-box-2').addClass('active');  
+  }
+  else if(total_friend == 3){
+  $j('.dynamic_discount').html('<span class="dollar">$</span>30<span class="month">/mo</span>');
+  $j('.dy_discount').text('30');
+  $j('.hide_when_fullprice').show(); 
+  $j('.color_bg').css('display','flex');
+  $j('.color_bg.zero_friend').css('display','none');    
+  //$j('.dy_finalpriceof100').html('69<span>.95/mo</span>');
+  //$j('.dy_finalpriceof200').html('89<span>.95/mo</span>');
+  $j('.sub_dis_text').show();
+  $j('.saved_text').text('Saved');  
+  $j('.nomad_friends').show();    
+  $j('.nomad_friend_count').text('3 Nomad Friends');  
+  $j('.nomad_discount').text('- $30.00');
+  $j.cookie("nomad_friend_count", '3 Nomad Friends'); 
+  $j.cookie("nomad_discount", '- $30.00');  
+  $j('.nomad_discount').attr('data-price', '30.00');  
+  $j('.no-friend-details').hide();   
+  $j('.discount-box').removeClass('active');
+  $j('.discount-box-1').addClass('active');
+  $j('.discount-box-2').addClass('active'); 
+  $j('.discount-box-3').addClass('active');   
+  }
+  else if(total_friend == 4){
+  $j('.dynamic_discount').html('<span class="dollar">$</span>40<span class="month">/mo</span>');
+  $j('.dy_discount').text('40');
+  $j('.hide_when_fullprice').show();
+  $j('.color_bg').css('display','flex');
+  $j('.color_bg.zero_friend').css('display','none');    
+  //$j('.dy_finalpriceof100').html('59<span>.95/mo</span>');
+  //$j('.dy_finalpriceof200').html('79<span>.95/mo</span>');
+  $j('.sub_dis_text').show();
+  $j('.saved_text').text('Saved');  
+  $j('.nomad_friends').show();    
+  $j('.nomad_friend_count').text('4 Nomad Friends');  
+  $j('.nomad_discount').text('- $40.00');
+  $j.cookie("nomad_friend_count", '4 Nomad Friends'); 
+  $j.cookie("nomad_discount", '- $40.00');  
+  $j('.nomad_discount').attr('data-price', '40.00');  
+  $j('.no-friend-details').hide();  
+  $j('.discount-box').removeClass('active');
+  $j('.discount-box-1').addClass('active');
+  $j('.discount-box-2').addClass('active'); 
+  $j('.discount-box-3').addClass('active');
+  $j('.discount-box-4').addClass('active');  
+  }
+  else if(total_friend == 5){
+  $j('.dynamic_discount').html('<span class="dollar">$</span>50<span class="month">/mo</span>');
+  $j('.dy_discount').text('50');
+  $j('.hide_when_fullprice').show();
+  $j('.color_bg').css('display','flex');
+  $j('.color_bg.zero_friend').css('display','none');  
+  //$j('.dy_finalpriceof100').html('49<span>.95/mo</span>');
+  //$j('.dy_finalpriceof200').html('69<span>.95/mo</span>');
+  $j('.sub_dis_text').show();
+  $j('.saved_text').text('Saved');  
+  $j('.nomad_friends').show();    
+  $j('.nomad_friend_count').text('5 Nomad Friends'); 
+  $j('.nomad_discount').text('- $50.00');
+  $j.cookie("nomad_friend_count", '5 Nomad Friends'); 
+  $j.cookie("nomad_discount", '- $50.00');  
+  $j('.nomad_discount').attr('data-price', '50.00');  
+  $j('.no-friend-details').hide(); 
+  $j('.discount-box').removeClass('active');
+  $j('.discount-box-1').addClass('active');
+  $j('.discount-box-2').addClass('active'); 
+  $j('.discount-box-3').addClass('active');
+  $j('.discount-box-4').addClass('active');
+  $j('.discount-box-5').addClass('active');  
+  }  
+  else{ 
+  if(typeof $j.cookie("customer_name") != 'undefined' && typeof $j.cookie("customer_email") != 'undefined'){
+  //$j('.dy_finalpriceof100').html('99<span>.95/mo</span>');
+  //$j('.dy_finalpriceof200').html('119<span>.95/mo</span>');
+  $j('.hide_when_fullprice').hide();
+  $j('.saved_text').text('Saved');
+  $j('.dy_discount').text('0');
+  $j('.dynamic_discount').html('<span class="dollar">$</span>0<span class="month">/mo</span>');
+  $j('.color_bg').css('display','none');
+  $j('.color_bg.zero_friend').css('display','flex');
+  }
+  else{  
+  //$j('.dy_finalpriceof100').html('49<span>.95/mo</span>');
+  //$j('.dy_finalpriceof200').html('69<span>.95/mo</span>');
+  $j('.hide_when_fullprice').show();
+  $j('.saved_text').text('Save');
+  $j('.dy_discount').text('50');
+  $j('.dynamic_discount').html('<span class="dollar">$</span>50<span class="month">/mo</span>');
+  }
+  /*$j('.sub_dis_text').hide();*/ 
+  $j('.nomad_friends').hide();
+  $j('.no-friend-details').show();
+  $j('.discount-box').removeClass('active');
+  }
+  
+  }
+  
+  check_friends();
+  
+  $j(document).on('click','.add_friend',function(){
+  if($j('.friend_email').val().length != 0){
+  var f_email = $j('.friend_email').val();
+  if(!isEmail(f_email)){
+  $j('.invite_email_error').text('Please add valid email address.');
+  $j('.invite_email_error').show();
+  }
+  else{
+  $j('.invite_email_error').hide();
+  if($j.cookie("invited-friends_1") == f_email || $j.cookie("invited-friends_2") == f_email || $j.cookie("invited-friends_3") == f_email || $j.cookie("invited-friends_4") == f_email || $j.cookie("invited-friends_5") == f_email){
+  $j('.same_email_error').show();
+  }
+  else{
+  $j('.same_email_error').hide();
+  
+  var currentUserId =  $j.cookie("currentUserId");
+    //console.log('userid'+currentUserId);
+  var accessTokenValue =  $j.cookie("accessTokenValue");  
+  const settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://programs.nomadinternet.com/api/v1/users",
+  "method": "POST",
+  "headers": {
+  "Content-Type": "application/vnd.api+json",
+  "Accept": "application/vnd.api+json",
+  "Authorization": "Bearer "+accessTokenValue
+  },
+  "processData": false,
+  "data": JSON.stringify({
+  "jsonapi": {
+    "version": "1.0"
+  },
+  "data": {
+    "type": "users",
+    "attributes": {
+        "email": f_email
+    },
+    "relationships": {
+        "referredBy": {
+            "data": {
+                "type": "users",
+                "id": currentUserId
+            }
+        }
+    }
+  },
+  }),
+  beforeSend: function() {
+  //$j('.rr_loader').show();
+  },
+  success: function(data){
+  if(typeof $j.cookie("invited-friends_1") == 'undefined'){
+  $j.cookie("invited-friends_1", $j('.friend_email').val());
+  $j('.invited-friends_1 .friend_email_1').text($j('.friend_email').val()); 
+  }
+  else if(typeof $j.cookie("invited-friends_2") == 'undefined'){
+  $j.cookie("invited-friends_2", $j('.friend_email').val());
+  $j('.invited-friends_2 .friend_email_2').text($j('.friend_email').val());  
+  }
+  else if(typeof $j.cookie("invited-friends_3") == 'undefined'){
+  $j.cookie("invited-friends_3", $j('.friend_email').val());
+  $j('.invited-friends_3 .friend_email_3').text($j('.friend_email').val()); 
+  }
+  else if(typeof $j.cookie("invited-friends_4") == 'undefined'){
+  $j.cookie("invited-friends_4", $j('.friend_email').val());
+  $j('.invited-friends_4 .friend_email_4').text($j('.friend_email').val());  
+  }
+  else if(typeof $j.cookie("invited-friends_5") == 'undefined'){
+  $j.cookie("invited-friends_5", $j('.friend_email').val());
+  $j('.invited-friends_5 .friend_email_5').text($j('.friend_email').val()); 
+  }  
+  else{
+  
+  }
+  $j('.friend_email').val('');
+  check_friends();
+  },  
+  error: function(er){
+  $j('.invite_email_error').show();
+  $j('.invite_email_error').text(er.responseJSON.errors[0].detail);
+  console.log(er);
+  },
+  complete: function() {
+  //$j('.rr_loader').hide();
+  }
+  };
+  
+  $j.ajax(settings).done(function (response) {
+  console.log('add friend response');
+    console.log(response);
+  if(typeof $j.cookie("invited-friends_1_referralID") == 'undefined'){
+  $j.cookie("invited-friends_1_referralID", response.data.id);
+  }
+  else if(typeof $j.cookie("invited-friends_2_referralID") == 'undefined'){
+  $j.cookie("invited-friends_2_referralID", response.data.id);
+  }
+  else if(typeof $j.cookie("invited-friends_3_referralID") == 'undefined'){
+  $j.cookie("invited-friends_3_referralID", response.data.id);
+  }
+  else if(typeof $j.cookie("invited-friends_4_referralID") == 'undefined'){
+  $j.cookie("invited-friends_4_referralID", response.data.id);
+  }
+  else if(typeof $j.cookie("invited-friends_5_referralID") == 'undefined'){
+  $j.cookie("invited-friends_5_referralID", response.data.id);
+  }  
+  else{
+  
+  }
+  }); 
+  
+  
+  
+  }
+  }
+  
+  }
+  check_friends();  
+  }); 
+  
+  $j(document).on('click','.friend_action_1',function(){
+  var currentUserId =  $j.cookie("currentUserId");
+  var accessTokenValue =  $j.cookie("accessTokenValue");  
+  var referralID1 = $j.cookie("invited-friends_1_referralID");
+  const settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://programs.nomadinternet.com/api/v1/users/"+ currentUserId +"/relationships/referrals",
+  "method": "DELETE",
+  "headers": {
+  "Accept": "application/vnd.api+json",
+  "Content-Type": "application/vnd.api+json",
+  "Authorization": "Bearer "+accessTokenValue
+  },
+  "processData": false,
+  "data": JSON.stringify({
+  "data": [
+    {
+        "type": "users",
+        "id": referralID1
+    }
+  ]
+  }),
+  success: function(data){
+  $j.removeCookie('invited-friends_1');
+  $j.removeCookie("invited-friends_1_referralID");
+  $j('.invited-friends_1').removeClass('active');
+  $j('.invited-friends_1').hide();
+  check_friends();
+  },  
+  error: function(er){
+  console.log(er.responseJSON.errors[0].detail);
+  }
+  };
+  //alert("https://programs.nomadinternet.com/api/v1/users/"+ currentUserId +"/relationships/referrals");
+  $.ajax(settings).done(function (response) {
+  console.log(response);
+  });
+  });
+  $j(document).on('click','.friend_action_2',function(){
+  var currentUserId =  $j.cookie("currentUserId");
+  var accessTokenValue =  $j.cookie("accessTokenValue");  
+  var referralID2 = $j.cookie("invited-friends_2_referralID");
+  const settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://programs.nomadinternet.com/api/v1/users/"+ currentUserId +"/relationships/referrals",
+  "method": "DELETE",
+  "headers": {
+  "Accept": "application/vnd.api+json",
+  "Content-Type": "application/vnd.api+json",
+  "Authorization": "Bearer "+accessTokenValue
+  },
+  "processData": false,
+  "data": JSON.stringify({
+  "data": [
+    {
+        "type": "users",
+        "id": referralID2
+    }
+  ]
+  }),
+  success: function(data){
+  $j.removeCookie('invited-friends_2');
+  $j.removeCookie("invited-friends_2_referralID");
+  $j('.invited-friends_2').removeClass('active');
+  $j('.invited-friends_2').hide();
+  check_friends();
+  },  
+  error: function(er){
+  console.log(er.responseJSON.errors[0].detail);
+  }
+  };
+  
+  $.ajax(settings).done(function (response) {
+  console.log(response);
+  });
+  });
+  $j(document).on('click','.friend_action_3',function(){
+  var currentUserId =  $j.cookie("currentUserId");
+  var accessTokenValue =  $j.cookie("accessTokenValue");  
+  var referralID3 = $j.cookie("invited-friends_3_referralID");
+  const settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://programs.nomadinternet.com/api/v1/users/"+ currentUserId +"/relationships/referrals",
+  "method": "DELETE",
+  "headers": {
+  "Accept": "application/vnd.api+json",
+  "Content-Type": "application/vnd.api+json",
+  "Authorization": "Bearer "+accessTokenValue
+  },
+  "processData": false,
+  "data": JSON.stringify({
+  "data": [
+    {
+        "type": "users",
+        "id": referralID3
+    }
+  ]
+  }),
+  success: function(data){
+  $j.removeCookie('invited-friends_3');
+  $j.removeCookie("invited-friends_3_referralID");
+  $j('.invited-friends_3').removeClass('active');
+  $j('.invited-friends_3').hide();
+  check_friends();
+  },  
+  error: function(er){
+  console.log(er.responseJSON.errors[0].detail);
+  }
+  };
+  
+  $.ajax(settings).done(function (response) {
+  console.log(response);
+  });
+  });
+  $j(document).on('click','.friend_action_4',function(){
+  var currentUserId =  $j.cookie("currentUserId");
+  var accessTokenValue =  $j.cookie("accessTokenValue");  
+  var referralID4 = $j.cookie("invited-friends_4_referralID");
+  const settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://programs.nomadinternet.com/api/v1/users/"+ currentUserId +"/relationships/referrals",
+  "method": "DELETE",
+  "headers": {
+  "Accept": "application/vnd.api+json",
+  "Content-Type": "application/vnd.api+json",
+  "Authorization": "Bearer "+accessTokenValue
+  },
+  "processData": false,
+  "data": JSON.stringify({
+  "data": [
+    {
+        "type": "users",
+        "id": referralID4
+    }
+  ]
+  }),
+  success: function(data){
+  $j.removeCookie('invited-friends_4');
+  $j.removeCookie("invited-friends_4_referralID");
+  $j('.invited-friends_4').removeClass('active');
+  $j('.invited-friends_4').hide();
+  check_friends();
+  },  
+  error: function(er){
+  console.log(er.responseJSON.errors[0].detail);
+  }
+  };
+  
+  $.ajax(settings).done(function (response) {
+  console.log(response);
+  });
+  });
+  $j(document).on('click','.friend_action_5',function(){
+  var currentUserId =  $j.cookie("currentUserId");
+  var accessTokenValue =  $j.cookie("accessTokenValue");  
+  var referralID5 = $j.cookie("invited-friends_5_referralID");
+  const settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://programs.nomadinternet.com/api/v1/users/"+ currentUserId +"/relationships/referrals",
+  "method": "DELETE",
+  "headers": {
+  "Accept": "application/vnd.api+json",
+  "Content-Type": "application/vnd.api+json",
+  "Authorization": "Bearer "+accessTokenValue
+  },
+  "processData": false,
+  "data": JSON.stringify({
+  "data": [
+    {
+        "type": "users",
+        "id": referralID5
+    }
+  ]
+  }),
+  success: function(data){
+  $j.removeCookie('invited-friends_5');
+  $j.removeCookie("invited-friends_5_referralID");
+  $j('.invited-friends_5').removeClass('active');
+  $j('.invited-friends_5').hide();
+  check_friends();
+  },  
+  error: function(er){
+  console.log(er.responseJSON.errors[0].detail);
+  }
+  };
+  
+  $.ajax(settings).done(function (response) {
+  console.log(response);
+  });
+  });  
+  
+  /* $j(document).on('click','.addon_trial_btn',function(){
+  $j('.addon_trial_popup').removeClass('active');
+  $j('.addon-box-1').addClass('addone-trials');
+  $j('.addon-box-2').addClass('addone-trials');
+  $j('#addon-switch3').prop('checked', false);
+  $j('.addon-box-3').removeClass('active');
+  $j('#addon-switch1').prop('checked', true);
+  $j('#addon-switch2').prop('checked', true)
+  $j('.addon-box-1').addClass('active');
+  $j('.addon-box-2').addClass('active');
+  $j('.free-trials').show();
+  $j('.free_text').show();
+  $j.cookie("selected_addon3", 'addontrial');
+  if($j.cookie("selected_addon1") !== 'nothing'){
+    $j.cookie("selected_addon1", 'ontrial');
+  }
+  else{
+    //$j('#addon-switch1').trigger('click');
+    //$j.cookie("selected_addon1", 'ontrial');
+  }  
+  if($j.cookie("selected_addon2") !== 'nothing'){
+    console.log('step3-2');
+    $j.cookie("selected_addon2", 'ontrial');
+  }  
+  else{
+    //$j('#addon-switch2').trigger('click');
+    //$j.cookie("selected_addon2", 'ontrial');  
+  }
+  
+  var sa1 = getCookie("selected_addon1");
+  if (!sa1) {
+  $j.cookie("selected_addon1", 'ontrial');
+  }  
+  var sa2 = getCookie("selected_addon2");
+  if (!sa2) {
+  $j.cookie("selected_addon2", 'ontrial');
+  }
+  if(typeof $j.cookie("selected_addon3") == 'addontrial'){  
+  if(typeof $j.cookie("selected_addon1") !== 'nothing'){
+    $j.cookie("selected_addon1", 'ontrial');
+  }
+  if(typeof $j.cookie("selected_addon2") !== 'nothing'){
+    $j.cookie("selected_addon2", 'ontrial');
+  }
+  }
+  });*/
+  
+  
+  
+  if($j.cookie("selected_plan") == '100mbps'){
+  $j('#plan_switch1').trigger('click');  
+  }
+  if($j.cookie("selected_plan") == '200mbps'){
+  $j('#plan_switch2').trigger('click');
+  }
+  if($j.cookie("selected_fon") == 'fon'){
+  //$j('#discount-switch1').trigger('click'); 
+  }
+  else if($j.cookie("selected_fon") == 'nofon'){
+  /*$j('#discount-switch1').click(); */
+  $j('.monthly-discount-details').hide();
+  $j('#discount-switch2').trigger('click'); 
+  }
+  else{}  
+  if($j.cookie("selected_modem") == 'omega'){
+  $j('#modem-switch1').trigger('click');  
+  }
+  if($j.cookie("selected_modem") == 'air'){
+  $j('#modem-switch2').trigger('click');
+  }
+  if($j.cookie("selected_modem") == 'bag'){
+  $j('#modem-switch3').trigger('click');
+  $j('#modem-switch3-desktop').trigger('click');  
+  }
+  
+  var sa1 = getCookie("selected_addon1");
+  if (!sa1) {
+  $j('#addon-switch1').trigger('click');
+  }
+  else{
+    if($j.cookie("selected_addon1") == 'notrial'){
+  $j('#addon-switch1').trigger('click');
+  }
+  }  
+  var sa2 = getCookie("selected_addon2");
+  if (!sa2) {
+  $j('#addon-switch2').trigger('click');
+  }
+    else{
+      if($j.cookie("selected_addon2") == 'notrial'){
+  $j('#addon-switch2').trigger('click');
+  } 
+    }
+    
+  
+  
+  if($j.cookie("selected_addon3") == 'addontrial'){
+    console.log('step1');
+   // $j('.addon_trial_btn').trigger('click');
+  } 
+  if($j.cookie("selected_addon3") == 'noaddon'){
+    $j('#addon-switch3').trigger('click');
+  $j('.addon_trial_popup').removeClass('active');   
+  }
+  
+  var modem_selected = '';
+  $j(".box").click(function(){
+  $j(".box").removeClass("active");
+  $j(this).addClass("active");
+  var dataid = $j(this).attr("data-id");
+  $j(".proceed-button-a,.got-it-button a").attr("data-id", dataid);
+  });
+  
+    
+  $j(".proceed-button-a").click(function(){
+  if($j(this).attr("data-id") == "air"){
+      $j(".steps").hide();
+      $j(".air-info").show();
+      modem_selected = 'air'; 
+  }else if($j(this).attr("data-id") == "omen"){
+      $j(".steps").hide();
+      $j(".omega-info").show();
+      modem_selected = 'omen';
+  } else if ($j(this).attr("data-id") == "raptor") {
+      $j(".steps").hide();
+      $j(".raptor-info").show();
+      modem_selected = 'raptor'; 
+  } else{
+      $j(".steps").hide();
+      $j(".omega-info").hide();
+      $j(".air-info").hide();
+      modem_selected = 'own';
+      $j(".steps").hide();
+      $j(".air-info-form.screen-4").show();
+      $j(".imei-popup-open").hide();
+      $j(".iccid-popup-open").hide();
+  }  
+  }); 
+  
+  /*$j(document).on('click','.customise_continue',function(e){
+    $j('.step-section').hide();
+    $j('#accessories_product').show();
+  });
+  $j(document).on('click','.back_btn',function(e){
+    $j('.step-section').show();
+    $j('#accessories_product').hide();
+  });  */
+    
+  
+  $j(".modem-section .air-info a.back-arrow").click(function(){
+    $j(".steps").hide();
+    $j(".modem-select").show();
+  });
+  $j(".modem-section .omega-info a.back-arrow").click(function(){
+    $j(".steps").hide();
+    $j(".modem-select").show();
+  });
+
+  $j(".modem-section .raptor-info a.back-arrow").click(function(){
+    $j(".steps").hide();
+    $j(".modem-select").show();
+  });
+    
+  $j(".got-it-button a").click(function(){
+  $j(".steps").hide();
+  $j(".air-info-form.screen-4").show();
+  });
+  
+   
+  $j(".modem-section .air-info-form a.back-arrow").click(function(){
+    $j(".steps").hide();
+
+    if(modem_selected == 'air'){
+      $j(".air-info").show(); 
+    }
+    else if(modem_selected == 'omen'){
+      $j(".omega-info").show(); 
+    }
+    else if(modem_selected == 'raptor') {
+      $j(".raptor-info").show(); 
+    } else{
+      $j(".steps").hide();
+      $j(".modem-select").show();
+    }  
+  });
+  
+  
+  $j(".imei-popup-open").click(function() {
+    console.log(order_product);
+    if(modem_selected == 'air' || order_product.indexOf("Nomad Air") > -1){
+      $j(".air-imei-popup, .hidden-popup-overlay").addClass("active");
+    }
+    else if(modem_selected == 'omen' || order_product.indexOf("Nomad Omen") > -1){
+      $j(".omega-imei-popup, .hidden-popup-overlay").addClass("active");
+    }
+    else if (modem_selected == 'raptor' || order_product.indexOf("Nomad Raptor") > -1) {
+      $j(".raptor-imei-popup, .hidden-popup-overlay").addClass("active");
+    } else{
+      
+    } 
+  });
+    
+  $j(".iccid-popup-open").click(function() {
+    if(modem_selected == 'air' || order_product.indexOf("Nomad Air") > -1){
+      $j(".air-iccid-popup, .hidden-popup-overlay").addClass("active");
+    }
+    else if(modem_selected == 'omen' || order_product.indexOf("Nomad Omen") > -1){
+      $j(".omega-iccid-popup, .hidden-popup-overlay").addClass("active");
+    }
+    else if(modem_selected == 'raptor' || order_product.indexOf("Nomad Raptor") > -1){
+      $j(".raptor-iccid-popup, .hidden-popup-overlay").addClass("active");
+    } else {
+      
+    }   
+  });
+    
+  $j(".close-popup").click(function() {
+  $j(".omega-iccid-popup, .hidden-popup-overlay").removeClass("active");
+  $j(".omega-imei-popup, .hidden-popup-overlay").removeClass("active");
+  $j(".air-iccid-popup, .hidden-popup-overlay").removeClass("active");
+  $j(".air-imei-popup, .hidden-popup-overlay").removeClass("active");  
+  $j(".raptor-iccid-popup, .hidden-popup-overlay").removeClass("active");
+  $j(".raptor-imei-popup, .hidden-popup-overlay").removeClass("active");  
+  });
+
+  $j(".form-details .imei-input #imei").keydown(function() {
+    setTimeout(() => {
+      if ($j(this).val() != '') {
+        $j(this).addClass('active');
+        if ($j(this).val().length == 15) {
+          $j(this).next().show();
+        } else {
+          $j(this).next().hide();
+        }
+      } else {
+        $j(this).removeClass('active');
+        $j(this).next().hide();
+      }
+    }, 100);
+  });
+
+  $j(".form-details .email-input #email").keydown(function() {
+    setTimeout(() => {
+      if ($j(this).val() != '') {
+        $j(this).addClass('active');
+        if (isEmail($j(this).val())) {
+          $j(this).next().show();
+        } else {
+          $j(this).next().hide();
+        }
+      } else {
+        $j(this).removeClass('active');
+      }
+    }, 100);
+  });
+
+  $j(".form-details .iccid-input #iccid").keydown(function() {
+    setTimeout(() => {
+      $j(this).removeClass('error');
+      $j(".form-details .iccid-input #is-error").hide();
+      $j(".form-details .iccid-input #is-checked").hide();
+
+      if ($j(this).val() != '') {
+        $j(this).addClass('active');
+        if ($j(this).val().length == 20) {
+          $j(this).next().show();
+        } else {
+          $j(this).next().hide();
+        }
+      } else {
+        $j(this).removeClass('active');
+        $j(this).next().hide();
+      }
+    }, 100);
+  });
+
+  $j('[js-activate-btn]').click(function() {
+    $j('.plan-checkout .customise_continue').click();
+  })
+  
+  $j('.modem_proceed_zoho_false').click(function(){
+    
+    var imei = "";
+    var iccid = "";
+
+    $j('input[name="imei"]').each(function(i, e) { var v = $(e).val(); if (v) { imei = v; } });
+    $j('input[name="iccid"]').each(function(i, e) { var v = $(e).val(); if (v) { iccid = v; } });
+    $j('.modem-info-error').empty();
+    
+    if (imei === "" && iccid === "") {
+        $j('.modem-info-error').show();
+        $j('.modem-info-error').text("Please add IMEI & SIM ID.");
+    } else if (imei === "") {
+        $j('.modem-info-error').show();  
+        $j('.modem-info-error').text("Please add IMEI Number.");
+    } else if (iccid === "") {
+        $j('.modem-info-error').show();  
+        $j('.modem-info-error').text("Please add SIM ID Number.");
+    } else if (imei.length < 15 || imei.length > 15) {
+        $j('.modem-info-error').show();  
+        $j('.modem-info-error').text("Please add Valid IMEI Number.");
+    } else if (iccid.length < 20 || iccid.length > 20) {
+        $j('.modem-info-error').show();  
+        $j('.modem-info-error').text("Please add Valid SIM ID Number.");  
+    } else {
+
+      function initSlider() {
+        $j(".image-slider").slick({
+          initialSlide: 1,  
+          dots: true,
+          infinite: true,
+          speed: 500,
+          prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M18.1634 11.1902L3.90625 11.1902M3.90625 11.1902L9.2527 16.5366M3.90625 11.1902L9.2527 5.84375" stroke="black" stroke-width="1.29611" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+          nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: inline-block;"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3.83266 11.1907L18.0898 11.1907M18.0898 11.1907L12.7434 5.84422M18.0898 11.1907L12.7434 16.5371" stroke="black" stroke-width="1.29611" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+          });
+          $j(".image-slider").on(
+            "afterChange",
+            function (event, slick, currentSlide, nextSlide) {
+              $j(".plan-box").removeClass("active");
+              $j(
+                ".plan-box[slide-id='" + currentSlide + "']"
+              ).addClass("active");
+              if($j('.plan-box.active').attr('data-plan') == '100mbps'){
+                $j('.selected_plan').text('Unlimited Plan');
+                $j('.selected_plan_sale').text('$99.95/Mo');
+                $j('.compare_plan_price').text('$129.95');
+                $j('.selected_plan_original').hide();
+                $j('.selected_plan_off').show();
+                $j('.selected_plan_off').text('$30 Off');
+              }
+              if($j('.plan-box.active').attr('data-plan') == '200mbps'){
+                $j('.selected_plan').text('Unlimited Ultra Plan');
+                $j('.selected_plan_sale').text('$149.95/Mo');
+                $j('.compare_plan_price').text('$179.95');
+                $j('.selected_plan_original').hide();
+                $j('.selected_plan_off').show();
+                $j('.selected_plan_off').text('$30 Off');
+              }
+
+              window.scrollTo({
+                top: $j(".step-wrapper .step-details .step-2").offset().top,
+                behavior: 'smooth'
+              });
+            }
+          );
+
+          setTimeout(() => {
+            $j(".step-section .image-slider").show();
+          }, 100);
+      }
+      
+     // $j('.rr_loader').show();
+     /* $j('.rr_loader h2').text('Registering');
+      $j('.rr_loader h2').css({
+        left: '51%'
+      });*/
+
+      var id_flag = false;
+      if(fatched_imei != '' && fatched_iccid != ''){
+        if (imei == fatched_imei && iccid == fatched_iccid){
+          id_flag = true;
+          final_imei = fatched_imei;
+          final_iccid = fatched_iccid;
+        }
+        else{
+          id_flag = false;
+        }
+      }
+      else{
+        id_flag = true;
+        final_imei = imei;
+        final_iccid = iccid;
+      }
+        console.log(id_flag);
+      if(id_flag == true){
+        $j(".image-slider").slick("refresh");
+        $j('.modem-section').hide();
+        $j('.step-section').show();
+      }
+      else{
+        
+      }
+
+    }  
+  });
+  
+
+  $j(document).on("click", ".plan-box", function () {
+    $j(".plan-box").removeClass("active");
+    $j(this).addClass("active");
+    const slideIndex = $j(this).attr("slide-id");
+    $j(".image-slider").slick(
+      "slickGoTo",
+      slideIndex
+    );
+    if($j('.plan-box.active').attr('data-plan') == '100mbps'){
+      $j('.selected_plan').text('Unlimited Plan');
+      $j('.selected_plan_sale').text('$99.95/Mo');
+      $j('.compare_plan_price').text('$129.95');
+      $j('.selected_plan_original').hide();
+      $j('.selected_plan_off').show();
+      $j('.selected_plan_off').text('$30 Off');
+    }
+    if($j('.plan-box.active').attr('data-plan') == '200mbps'){
+      $j('.selected_plan').text('Unlimited Ultra Plan');
+      $j('.selected_plan_sale').text('$149.95/Mo');
+      $j('.compare_plan_price').text('$179.95');
+      $j('.selected_plan_original').show();
+     $j('.selected_plan_original').hide();
+      $j('.selected_plan_off').show();
+      // $j('.selected_plan_off').text('Popular');
+      $j('.selected_plan_off').text('$30 Off');
+    }
+
+    window.scrollTo({
+      top: $j(".step-wrapper .step-details .step-2").offset().top,
+      behavior: 'smooth'
+    });
+  });
+  
+  
+    $j('.free-trial-box').click(function(){
+      if($j(this).hasClass('active')){
+        $j(this).removeClass('active');
+      }
+      else{
+        $j(this).addClass('active');
+      }
+  
+      if($j(".addon-box-1").hasClass("active") || $j(".addon-box-2").hasClass("active")){
+        
+      } else {
+         $j('.addon_trial_popup').addClass('active');
+      }
+      
+    });
+
+    $j('.close-button').click(function(){
+      $j('.addon_trial_popup').removeClass('active');
+    });
+    
+    
+  $j(".choosing-plan-popup-open").click(function() {
+    $j(".which-internet-plan-popup, .hidden-popup-overlay").addClass("active");
+  });
+  $j(".close-popup").click(function() {
+    $j(".which-internet-plan-popup").removeClass("active");
+  });
+  $j(".prime-popup-open").click(function() {
+    $j(".prime-popup, .hidden-popup-overlay").addClass("active");
+  });
+  $j(".close-popup").click(function() {
+    $j(".prime-popup").removeClass("active");
+  });
+  $j(".upgrade-popup-open").click(function() {
+    $j(".upgrade-popup, .hidden-popup-overlay").addClass("active");
+  });
+  $j(".close-popup").click(function() {
+    $j(".upgrade-popup").removeClass("active");
+  });
+  $j(".thankyou-popup-open").click(function() {
+    $j(".thankyou-popup, .hidden-popup-overlay").addClass("active");
+  });
+  $j(".thankyou-popup-close").click(function() {
+    $j(".thankyou-popup").removeClass("active");
+  });  
+  
+   /* $j(window).load(function() {
+   $j('.image-slider').slick('refresh');
+  });*/ 
+
+  $j(document).on('click','.addon_trial_btn',function(){
+  $j('.addon_trial_popup').removeClass('active');
+  $j('.addon-box-1').addClass('addone-trials');
+  $j('.addon-box-2').addClass('addone-trials');
+  $j('.addon-box-1').addClass('active');
+  $j('.addon-box-2').addClass('active');
+  $j('.free-trials').show();
+  $j('.free_text').show();
+  });
+
+  $j(".image-slider").slick({
+    arrows: true,
+    dots: true,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><img src='https://cdn.shopify.com/s/files/1/0103/2847/3658/files/arrow.png?v=1697824273' width='35px' height='35px' alt='slick-prev'/></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><img src='https://cdn.shopify.com/s/files/1/0103/2847/3658/files/arrow.png?v=1697824273' width='35px' height='35px' alt='slick-right'/></button>",
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        const orderInfoButton = document.querySelector('.order_info_btn');
+        if (orderInfoButton) {
+            event.preventDefault();
+            orderInfoButton.click();
+        }
+    }
+  });
+</script>

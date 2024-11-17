@@ -1,0 +1,1185 @@
+:root {
+  --display-2xl-regular-font-family: "Graphie-Regular", Helvetica;
+  --display-2xl-regular-font-weight: 400;
+  --display-2xl-regular-font-size: 72px;
+  --display-2xl-regular-letter-spacing: -1.44px;
+  --display-2xl-regular-line-height: 90px;
+  --display-2xl-regular-font-style: normal;
+  --display-2xl-medium-font-family: "Inter-Medium", Helvetica;
+  --display-2xl-medium-font-weight: 500;
+  --display-2xl-medium-font-size: 72px;
+  --display-2xl-medium-letter-spacing: -1.44px;
+  --display-2xl-medium-line-height: 90px;
+  --display-2xl-medium-font-style: normal;
+  --display-2xl-semibold-font-family: "Graphie-SemiBold", Helvetica;
+  --display-2xl-semibold-font-weight: 600;
+  --display-2xl-semibold-font-size: 72px;
+  --display-2xl-semibold-letter-spacing: -1.44px;
+  --display-2xl-semibold-line-height: 90px;
+  --display-2xl-semibold-font-style: normal;
+  --display-2xl-bold-font-family: "Graphie-Bold", Helvetica;
+  --display-2xl-bold-font-weight: 700;
+  --display-2xl-bold-font-size: 72px;
+  --display-2xl-bold-letter-spacing: -1.44px;
+  --display-2xl-bold-line-height: 90px;
+  --display-2xl-bold-font-style: normal;
+  --display-xl-regular-font-family: "Graphie-Regular", Helvetica;
+  --display-xl-regular-font-weight: 400;
+  --display-xl-regular-font-size: 60px;
+  --display-xl-regular-letter-spacing: -1.2px;
+  --display-xl-regular-line-height: 72px;
+  --display-xl-regular-font-style: normal;
+  --display-xl-medium-font-family: "Inter-Medium", Helvetica;
+  --display-xl-medium-font-weight: 500;
+  --display-xl-medium-font-size: 60px;
+  --display-xl-medium-letter-spacing: -1.2px;
+  --display-xl-medium-line-height: 72px;
+  --display-xl-medium-font-style: normal;
+  --display-xl-semibold-font-family: "Graphie-SemiBold", Helvetica;
+  --display-xl-semibold-font-weight: 600;
+  --display-xl-semibold-font-size: 60px;
+  --display-xl-semibold-letter-spacing: -1.2px;
+  --display-xl-semibold-line-height: 72px;
+  --display-xl-semibold-font-style: normal;
+  --display-xl-bold-font-family: "Graphie-Bold", Helvetica;
+  --display-xl-bold-font-weight: 700;
+  --display-xl-bold-font-size: 60px;
+  --display-xl-bold-letter-spacing: -1.2px;
+  --display-xl-bold-line-height: 72px;
+  --display-xl-bold-font-style: normal;
+  --display-lg-regular-font-family: "Graphie-Regular", Helvetica;
+  --display-lg-regular-font-weight: 400;
+  --display-lg-regular-font-size: 48px;
+  --display-lg-regular-letter-spacing: -0.96px;
+  --display-lg-regular-line-height: 60px;
+  --display-lg-regular-font-style: normal;
+  --display-lg-medium-font-family: "Inter-Medium", Helvetica;
+  --display-lg-medium-font-weight: 500;
+  --display-lg-medium-font-size: 48px;
+  --display-lg-medium-letter-spacing: -0.96px;
+  --display-lg-medium-line-height: 60px;
+  --display-lg-medium-font-style: normal;
+  --display-lg-semibold-font-family: "Graphie-SemiBold", Helvetica;
+  --display-lg-semibold-font-weight: 600;
+  --display-lg-semibold-font-size: 48px;
+  --display-lg-semibold-letter-spacing: -0.96px;
+  --display-lg-semibold-line-height: 60px;
+  --display-lg-semibold-font-style: normal;
+  --display-lg-bold-font-family: "Graphie-Bold", Helvetica;
+  --display-lg-bold-font-weight: 700;
+  --display-lg-bold-font-size: 48px;
+  --display-lg-bold-letter-spacing: -0.96px;
+  --display-lg-bold-line-height: 60px;
+  --display-lg-bold-font-style: normal;
+  --display-md-regular-font-family: "Graphie-Regular", Helvetica;
+  --display-md-regular-font-weight: 400;
+  --display-md-regular-font-size: 36px;
+  --display-md-regular-letter-spacing: -0.72px;
+  --display-md-regular-line-height: 44px;
+  --display-md-regular-font-style: normal;
+  --display-md-medium-font-family: "Inter-Medium", Helvetica;
+  --display-md-medium-font-weight: 500;
+  --display-md-medium-font-size: 36px;
+  --display-md-medium-letter-spacing: -0.72px;
+  --display-md-medium-line-height: 44px;
+  --display-md-medium-font-style: normal;
+  --display-md-semibold-font-family: "Graphie-SemiBold", Helvetica;
+  --display-md-semibold-font-weight: 600;
+  --display-md-semibold-font-size: 36px;
+  --display-md-semibold-letter-spacing: -0.72px;
+  --display-md-semibold-line-height: 44px;
+  --display-md-semibold-font-style: normal;
+  --display-md-bold-font-family: "Graphie-Bold", Helvetica;
+  --display-md-bold-font-weight: 700;
+  --display-md-bold-font-size: 36px;
+  --display-md-bold-letter-spacing: -0.72px;
+  --display-md-bold-line-height: 44px;
+  --display-md-bold-font-style: normal;
+  --display-sm-regular-font-family: "Graphie-Regular", Helvetica;
+  --display-sm-regular-font-weight: 400;
+  --display-sm-regular-font-size: 30px;
+  --display-sm-regular-letter-spacing: 0px;
+  --display-sm-regular-line-height: 38px;
+  --display-sm-regular-font-style: normal;
+  --display-sm-medium-font-family: "Inter-Medium", Helvetica;
+  --display-sm-medium-font-weight: 500;
+  --display-sm-medium-font-size: 30px;
+  --display-sm-medium-letter-spacing: 0px;
+  --display-sm-medium-line-height: 38px;
+  --display-sm-medium-font-style: normal;
+  --display-sm-semibold-font-family: "Graphie-SemiBold", Helvetica;
+  --display-sm-semibold-font-weight: 600;
+  --display-sm-semibold-font-size: 30px;
+  --display-sm-semibold-letter-spacing: 0px;
+  --display-sm-semibold-line-height: 38px;
+  --display-sm-semibold-font-style: normal;
+  --display-sm-bold-font-family: "Graphie-Bold", Helvetica;
+  --display-sm-bold-font-weight: 700;
+  --display-sm-bold-font-size: 30px;
+  --display-sm-bold-letter-spacing: 0px;
+  --display-sm-bold-line-height: 38px;
+  --display-sm-bold-font-style: normal;
+  --display-sm-medium-italic-font-family: "Inter-MediumItalic", Helvetica;
+  --display-sm-medium-italic-font-weight: 500;
+  --display-sm-medium-italic-font-size: 30px;
+  --display-sm-medium-italic-letter-spacing: 0px;
+  --display-sm-medium-italic-line-height: 44px;
+  --display-sm-medium-italic-font-style: italic;
+  --display-xs-regular-font-family: "Graphie-Regular", Helvetica;
+  --display-xs-regular-font-weight: 400;
+  --display-xs-regular-font-size: 24px;
+  --display-xs-regular-letter-spacing: 0px;
+  --display-xs-regular-line-height: 32px;
+  --display-xs-regular-font-style: normal;
+  --display-xs-medium-font-family: "Graphie-SemiBold", Helvetica;
+  --display-xs-medium-font-weight: 600;
+  --display-xs-medium-font-size: 24px;
+  --display-xs-medium-letter-spacing: 0px;
+  --display-xs-medium-line-height: 32px;
+  --display-xs-medium-font-style: normal;
+  --display-xs-semibold-font-family: "Graphie-SemiBold", Helvetica;
+  --display-xs-semibold-font-weight: 600;
+  --display-xs-semibold-font-size: 24px;
+  --display-xs-semibold-letter-spacing: 0px;
+  --display-xs-semibold-line-height: 32px;
+  --display-xs-semibold-font-style: normal;
+  --display-xs-bold-font-family: "Graphie-Bold", Helvetica;
+  --display-xs-bold-font-weight: 700;
+  --display-xs-bold-font-size: 24px;
+  --display-xs-bold-letter-spacing: 0px;
+  --display-xs-bold-line-height: 32px;
+  --display-xs-bold-font-style: normal;
+  --display-xs-medium-italic-font-family: "Inter-MediumItalic", Helvetica;
+  --display-xs-medium-italic-font-weight: 500;
+  --display-xs-medium-italic-font-size: 24px;
+  --display-xs-medium-italic-letter-spacing: 0px;
+  --display-xs-medium-italic-line-height: 36px;
+  --display-xs-medium-italic-font-style: italic;
+  --text-xl-regular-font-family: "Graphie-Regular", Helvetica;
+  --text-xl-regular-font-weight: 400;
+  --text-xl-regular-font-size: 20px;
+  --text-xl-regular-letter-spacing: 0px;
+  --text-xl-regular-line-height: 30px;
+  --text-xl-regular-font-style: normal;
+  --text-xl-medium-font-family: "Graphie-SemiBold", Helvetica;
+  --text-xl-medium-font-weight: 600;
+  --text-xl-medium-font-size: 20px;
+  --text-xl-medium-letter-spacing: 0px;
+  --text-xl-medium-line-height: 30px;
+  --text-xl-medium-font-style: normal;
+  --text-xl-semibold-font-family: "Graphie-SemiBold", Helvetica;
+  --text-xl-semibold-font-weight: 600;
+  --text-xl-semibold-font-size: 20px;
+  --text-xl-semibold-letter-spacing: 0px;
+  --text-xl-semibold-line-height: 30px;
+  --text-xl-semibold-font-style: normal;
+  --text-xl-bold-font-family: "Graphie-Bold", Helvetica;
+  --text-xl-bold-font-weight: 700;
+  --text-xl-bold-font-size: 20px;
+  --text-xl-bold-letter-spacing: 0px;
+  --text-xl-bold-line-height: 30px;
+  --text-xl-bold-font-style: normal;
+  --text-xl-regular-italic-font-family: "Graphie-Italic", Helvetica;
+  --text-xl-regular-italic-font-weight: 400;
+  --text-xl-regular-italic-font-size: 20px;
+  --text-xl-regular-italic-letter-spacing: 0px;
+  --text-xl-regular-italic-line-height: 30px;
+  --text-xl-regular-italic-font-style: italic;
+  --text-xl-medium-italic-font-family: "Inter-MediumItalic", Helvetica;
+  --text-xl-medium-italic-font-weight: 500;
+  --text-xl-medium-italic-font-size: 20px;
+  --text-xl-medium-italic-letter-spacing: 0px;
+  --text-xl-medium-italic-line-height: 30px;
+  --text-xl-medium-italic-font-style: italic;
+  --text-xl-semibold-italic-font-family: "Inter-SemiBold Italic", Helvetica;
+  --text-xl-semibold-italic-font-weight: 600;
+  --text-xl-semibold-italic-font-size: 20px;
+  --text-xl-semibold-italic-letter-spacing: 0px;
+  --text-xl-semibold-italic-line-height: 30px;
+  --text-xl-semibold-italic-font-style: italic;
+  --text-xl-bold-italic-font-family: "Graphie-BoldItalic", Helvetica;
+  --text-xl-bold-italic-font-weight: 700;
+  --text-xl-bold-italic-font-size: 20px;
+  --text-xl-bold-italic-letter-spacing: 0px;
+  --text-xl-bold-italic-line-height: 30px;
+  --text-xl-bold-italic-font-style: italic;
+  --text-xl-regular-underlined-font-family: "Graphie-Regular", Helvetica;
+  --text-xl-regular-underlined-font-weight: 400;
+  --text-xl-regular-underlined-font-size: 20px;
+  --text-xl-regular-underlined-letter-spacing: 0px;
+  --text-xl-regular-underlined-line-height: 30px;
+  --text-xl-regular-underlined-font-style: normal;
+  --text-lg-regular-font-family: "Graphie-Regular", Helvetica;
+  --text-lg-regular-font-weight: 400;
+  --text-lg-regular-font-size: 18px;
+  --text-lg-regular-letter-spacing: 0px;
+  --text-lg-regular-line-height: 28px;
+  --text-lg-regular-font-style: normal;
+  --text-lg-medium-font-family: "Graphie-SemiBold", Helvetica;
+  --text-lg-medium-font-weight: 600;
+  --text-lg-medium-font-size: 18px;
+  --text-lg-medium-letter-spacing: 0px;
+  --text-lg-medium-line-height: 28px;
+  --text-lg-medium-font-style: normal;
+  --text-lg-semibold-font-family: "Graphie-SemiBold", Helvetica;
+  --text-lg-semibold-font-weight: 600;
+  --text-lg-semibold-font-size: 18px;
+  --text-lg-semibold-letter-spacing: 0px;
+  --text-lg-semibold-line-height: 28px;
+  --text-lg-semibold-font-style: normal;
+  --text-lg-bold-font-family: "Graphie-Bold", Helvetica;
+  --text-lg-bold-font-weight: 700;
+  --text-lg-bold-font-size: 18px;
+  --text-lg-bold-letter-spacing: 0px;
+  --text-lg-bold-line-height: 28px;
+  --text-lg-bold-font-style: normal;
+  --text-lg-regular-italic-font-family: "Graphie-Italic", Helvetica;
+  --text-lg-regular-italic-font-weight: 400;
+  --text-lg-regular-italic-font-size: 18px;
+  --text-lg-regular-italic-letter-spacing: 0px;
+  --text-lg-regular-italic-line-height: 28px;
+  --text-lg-regular-italic-font-style: italic;
+  --text-lg-medium-italic-font-family: "Inter-MediumItalic", Helvetica;
+  --text-lg-medium-italic-font-weight: 500;
+  --text-lg-medium-italic-font-size: 18px;
+  --text-lg-medium-italic-letter-spacing: 0px;
+  --text-lg-medium-italic-line-height: 28px;
+  --text-lg-medium-italic-font-style: italic;
+  --text-lg-semibold-italic-font-family: "Inter-SemiBold Italic", Helvetica;
+  --text-lg-semibold-italic-font-weight: 600;
+  --text-lg-semibold-italic-font-size: 18px;
+  --text-lg-semibold-italic-letter-spacing: 0px;
+  --text-lg-semibold-italic-line-height: 28px;
+  --text-lg-semibold-italic-font-style: italic;
+  --text-lg-bold-italic-font-family: "Graphie-BoldItalic", Helvetica;
+  --text-lg-bold-italic-font-weight: 700;
+  --text-lg-bold-italic-font-size: 18px;
+  --text-lg-bold-italic-letter-spacing: 0px;
+  --text-lg-bold-italic-line-height: 28px;
+  --text-lg-bold-italic-font-style: italic;
+  --text-lg-regular-underlined-font-family: "Graphie-Regular", Helvetica;
+  --text-lg-regular-underlined-font-weight: 400;
+  --text-lg-regular-underlined-font-size: 18px;
+  --text-lg-regular-underlined-letter-spacing: 0px;
+  --text-lg-regular-underlined-line-height: 28px;
+  --text-lg-regular-underlined-font-style: normal;
+  --text-lg-medium-underlined-font-family: "Inter-Medium", Helvetica;
+  --text-lg-medium-underlined-font-weight: 500;
+  --text-lg-medium-underlined-font-size: 18px;
+  --text-lg-medium-underlined-letter-spacing: 0px;
+  --text-lg-medium-underlined-line-height: 28px;
+  --text-lg-medium-underlined-font-style: normal;
+  --text-lg-semibold-underlined-font-family: "Graphie-SemiBold", Helvetica;
+  --text-lg-semibold-underlined-font-weight: 600;
+  --text-lg-semibold-underlined-font-size: 18px;
+  --text-lg-semibold-underlined-letter-spacing: 0px;
+  --text-lg-semibold-underlined-line-height: 28px;
+  --text-lg-semibold-underlined-font-style: normal;
+  --text-md-regular-font-family: "Graphie-Regular", Helvetica;
+  --text-md-regular-font-weight: 400;
+  --text-md-regular-font-size: 16px;
+  --text-md-regular-letter-spacing: 0px;
+  --text-md-regular-line-height: 24px;
+  --text-md-regular-font-style: normal;
+  --text-md-medium-font-family: "Inter-Medium", Helvetica;
+  --text-md-medium-font-weight: 500;
+  --text-md-medium-font-size: 16px;
+  --text-md-medium-letter-spacing: 0px;
+  --text-md-medium-line-height: 24px;
+  --text-md-medium-font-style: normal;
+  --text-md-semibold-font-family: "Graphie-SemiBold", Helvetica;
+  --text-md-semibold-font-weight: 600;
+  --text-md-semibold-font-size: 16px;
+  --text-md-semibold-letter-spacing: 0px;
+  --text-md-semibold-line-height: 24px;
+  --text-md-semibold-font-style: normal;
+  --text-md-bold-font-family: "Graphie-Bold", Helvetica;
+  --text-md-bold-font-weight: 700;
+  --text-md-bold-font-size: 16px;
+  --text-md-bold-letter-spacing: 0px;
+  --text-md-bold-line-height: 24px;
+  --text-md-bold-font-style: normal;
+  --text-md-regular-italic-font-family: "Graphie-Italic", Helvetica;
+  --text-md-regular-italic-font-weight: 400;
+  --text-md-regular-italic-font-size: 16px;
+  --text-md-regular-italic-letter-spacing: 0px;
+  --text-md-regular-italic-line-height: 24px;
+  --text-md-regular-italic-font-style: italic;
+  --text-md-medium-italic-font-family: "Inter-MediumItalic", Helvetica;
+  --text-md-medium-italic-font-weight: 500;
+  --text-md-medium-italic-font-size: 16px;
+  --text-md-medium-italic-letter-spacing: 0px;
+  --text-md-medium-italic-line-height: 24px;
+  --text-md-medium-italic-font-style: italic;
+  --text-md-semibold-italic-font-family: "Inter-SemiBold Italic", Helvetica;
+  --text-md-semibold-italic-font-weight: 600;
+  --text-md-semibold-italic-font-size: 16px;
+  --text-md-semibold-italic-letter-spacing: 0px;
+  --text-md-semibold-italic-line-height: 24px;
+  --text-md-semibold-italic-font-style: italic;
+  --text-md-bold-italic-font-family: "Graphie-BoldItalic", Helvetica;
+  --text-md-bold-italic-font-weight: 700;
+  --text-md-bold-italic-font-size: 16px;
+  --text-md-bold-italic-letter-spacing: 0px;
+  --text-md-bold-italic-line-height: 24px;
+  --text-md-bold-italic-font-style: italic;
+  --text-md-regular-underlined-font-family: "Graphie-Regular", Helvetica;
+  --text-md-regular-underlined-font-weight: 400;
+  --text-md-regular-underlined-font-size: 16px;
+  --text-md-regular-underlined-letter-spacing: 0px;
+  --text-md-regular-underlined-line-height: 24px;
+  --text-md-regular-underlined-font-style: normal;
+  --text-md-medium-underlined-font-family: "Inter-Medium", Helvetica;
+  --text-md-medium-underlined-font-weight: 500;
+  --text-md-medium-underlined-font-size: 16px;
+  --text-md-medium-underlined-letter-spacing: 0px;
+  --text-md-medium-underlined-line-height: 24px;
+  --text-md-medium-underlined-font-style: normal;
+  --text-md-semibold-underlined-font-family: "Graphie-SemiBold", Helvetica;
+  --text-md-semibold-underlined-font-weight: 600;
+  --text-md-semibold-underlined-font-size: 16px;
+  --text-md-semibold-underlined-letter-spacing: 0px;
+  --text-md-semibold-underlined-line-height: 24px;
+  --text-md-semibold-underlined-font-style: normal;
+  --text-sm-regular-font-family: "Graphie-Regular", Helvetica;
+  --text-sm-regular-font-weight: 400;
+  --text-sm-regular-font-size: 14px;
+  --text-sm-regular-letter-spacing: 0px;
+  --text-sm-regular-line-height: 20px;
+  --text-sm-regular-font-style: normal;
+  --text-sm-medium-font-family: "Graphie-Regular", Helvetica;
+  --text-sm-medium-font-weight: 400;
+  --text-sm-medium-font-size: 14px;
+  --text-sm-medium-letter-spacing: 0px;
+  --text-sm-medium-line-height: 20px;
+  --text-sm-medium-font-style: normal;
+  --text-sm-semibold-font-family: "Graphie-SemiBold", Helvetica;
+  --text-sm-semibold-font-weight: 600;
+  --text-sm-semibold-font-size: 14px;
+  --text-sm-semibold-letter-spacing: 0px;
+  --text-sm-semibold-line-height: 20px;
+  --text-sm-semibold-font-style: normal;
+  --text-sm-bold-font-family: "Graphie-Bold", Helvetica;
+  --text-sm-bold-font-weight: 700;
+  --text-sm-bold-font-size: 14px;
+  --text-sm-bold-letter-spacing: 0px;
+  --text-sm-bold-line-height: 20px;
+  --text-sm-bold-font-style: normal;
+  --text-sm-regular-underlined-font-family: "Graphie-Regular", Helvetica;
+  --text-sm-regular-underlined-font-weight: 400;
+  --text-sm-regular-underlined-font-size: 14px;
+  --text-sm-regular-underlined-letter-spacing: 0px;
+  --text-sm-regular-underlined-line-height: 20px;
+  --text-sm-regular-underlined-font-style: normal;
+  --text-sm-medium-underlined-font-family: "Inter-Medium", Helvetica;
+  --text-sm-medium-underlined-font-weight: 500;
+  --text-sm-medium-underlined-font-size: 14px;
+  --text-sm-medium-underlined-letter-spacing: 0px;
+  --text-sm-medium-underlined-line-height: 20px;
+  --text-sm-medium-underlined-font-style: normal;
+  --text-sm-semibold-underlined-font-family: "Graphie-SemiBold", Helvetica;
+  --text-sm-semibold-underlined-font-weight: 600;
+  --text-sm-semibold-underlined-font-size: 14px;
+  --text-sm-semibold-underlined-letter-spacing: 0px;
+  --text-sm-semibold-underlined-line-height: 20px;
+  --text-sm-semibold-underlined-font-style: normal;
+  --text-xs-regular-font-family: "Graphie-Regular", Helvetica;
+  --text-xs-regular-font-weight: 400;
+  --text-xs-regular-font-size: 12px;
+  --text-xs-regular-letter-spacing: 0px;
+  --text-xs-regular-line-height: 18px;
+  --text-xs-regular-font-style: normal;
+  --text-xs-medium-font-family: "Inter-Medium", Helvetica;
+  --text-xs-medium-font-weight: 500;
+  --text-xs-medium-font-size: 12px;
+  --text-xs-medium-letter-spacing: 0px;
+  --text-xs-medium-line-height: 18px;
+  --text-xs-medium-font-style: normal;
+  --text-xs-semibold-font-family: "Graphie-SemiBold", Helvetica;
+  --text-xs-semibold-font-weight: 600;
+  --text-xs-semibold-font-size: 12px;
+  --text-xs-semibold-letter-spacing: 0px;
+  --text-xs-semibold-line-height: 18px;
+  --text-xs-semibold-font-style: normal;
+  --text-xs-bold-font-family: "Graphie-Bold", Helvetica;
+  --text-xs-bold-font-weight: 700;
+  --text-xs-bold-font-size: 12px;
+  --text-xs-bold-letter-spacing: 0px;
+  --text-xs-bold-line-height: 18px;
+  --text-xs-bold-font-style: normal;
+  --product: 0px 18.504981994628906px 13.87873649597168px 0px rgba(59, 101, 91, 0.28);
+  --card: 4.722809314727783px 4.71999979019165px 20px 10px rgba(222, 222, 222, 0.29);
+  --testing: 0px 18.504981994628906px 13.87873649597168px 0px rgba(0, 0, 0, 0.15);
+  --tooltip: 0px 8px 16px -2px rgba(27, 33, 44, 0.12);
+  --test: 0px 7.89539098739624px 15.396012306213379px 0px rgba(1, 81, 62, 0.25);
+  --ssss: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  --collection-1-accent: rgba(0, 167, 127, 1);
+  --collection-1-heading: rgba(0, 0, 0, 1);
+  --collection-1-sub-heading: rgba(40, 40, 40, 1);
+  --collection-1-white: rgba(255, 255, 255, 1);
+  --collection-1-dark-green: rgba(1, 49, 39, 1);
+}
+
+
+.template-reseller{padding-top:0px!important;background-color:#fff;}
+
+.frame38 {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0px;
+    position: relative;
+    background-color: #fff;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #00000030;
+    margin: 0 auto;
+}
+
+.frame38 .img {
+  position: relative;
+  width: 169px;
+}
+
+.frame38 .div {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame38 .div-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10.08px;
+  padding: 10.08px 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame38 .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.01px;
+  font-family: "Graphie-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--collection-1-heading);
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  line-height: normal;
+}
+
+.frame38 .frame38-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 32.26px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame38 .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8.07px;
+  padding: 15px 40px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #27ae61;
+  border-radius: 8.07px;
+}
+
+.frame38 .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.01px;
+  font-family: "Graphie-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--collection-1-white);
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.reseller-banner{
+	background-image: url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Desktop.webp?v=1699350205');
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 125px 0;
+    margin-top:65px;
+}
+.reseller-banner .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+.reseller-banner .section-content h3 {
+    color: #27AE61;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin: 0 0 24px;
+  margin:0;
+}
+.reseller-banner .section-content h2 {
+    color: #fff;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: -1.2px;
+    margin: 8px 0 8px;
+    max-width: 695px;
+}
+.reseller-banner .section-content p {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 0.9;
+    max-width: 623px;
+    margin: 0 0 16px;
+}
+.reseller-banner .section-content ul {
+    display: flex;
+    gap: 16px;
+    margin: 0 0 24px;
+}
+.reseller-banner .section-content ul li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.reseller-banner .section-content a {
+    display: inline-block;
+    padding: 18px 51px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 8px;
+    background: #008061;
+    text-decoration: none;
+}
+
+.frame6528 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 60px;
+  padding: 64px 0px;
+  position: relative;
+  background-color: #ffffff;
+  margin:0 auto;
+}
+
+.frame6528 .text-wrapper {
+  position: relative;
+  width: 549px;
+  max-width:100%;
+  margin-top: -1px;
+  font-weight: 700;
+  color: var(--collection-1-dark-green);
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 46.8px;
+  margin:0;
+}
+
+.frame6528 .div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame6528 .div-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame6528 .div-3 {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+}
+
+.frame6528 .div-4 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame6528 .img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.frame6528 .text-wrapper-2 {
+  width: 242px;
+  height: 27px;
+  color: var(--gray-true800);
+  font-size: 20px;
+  line-height: 23px;
+  position: relative;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame6528 .p {
+  position: relative;
+  align-self: stretch;
+  font-weight: 400;
+  color: var(--gray-true700);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin:0;
+}
+
+.frame6528 .div-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame6528 .text-wrapper-3 {
+  width: fit-content;
+  margin-top: -1px;
+  color: #27ae61;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: underline;
+  position: relative;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.frame6528 .text-wrapper-4 {
+  position: relative;
+  width: 242px;
+  height: 54px;
+  font-weight: 600;
+  color: var(--gray-true800);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+
+.frame6528 .group {
+  position: relative;
+  width: 72.36px;
+  height: 50px;
+}
+
+.frame6528 .overlap-group {
+  position: relative;
+  width: 72px;
+  height: 50px;
+}
+
+.frame6528 .sign-up-wrapper {
+  display: flex;
+  width: 72px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 6.91px;
+  padding: 2.76px 5.53px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5.53px;
+  border: 3.5px solid;
+  border-color: #27ae61;
+}
+
+.frame6528 .sign-up {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.42px;
+  font-weight: 700;
+  color: #27ae61;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.frame6528 .rectangle {
+  position: absolute;
+  width: 3px;
+  height: 6px;
+  top: 26px;
+  left: 50px;
+  background-color: #ffffff;
+}
+
+.frame6528 .vector {
+  position: absolute;
+  width: 21px;
+  height: 28px;
+  top: 22px;
+  left: 45px;
+}
+
+.frame6528 .text-wrapper-5 {
+  position: relative;
+  width: 225px;
+  font-weight: 600;
+  color: var(--gray-true800);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 23px;
+  margin:0;
+}
+
+.frame6528 .div-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame6528 .img-2 {
+  position: relative;
+  width: 55.45px;
+  flex: 0 0 auto;
+}
+
+.frame6528 .text-wrapper-6 {
+  position: relative;
+  width: 212px;
+  font-weight: 600;
+  color: var(--gray-true800);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 23px;
+  margin:0;
+}
+
+.frame6528 .div-6 {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 189px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.frame6528 .overlap-group-wrapper {
+  position: relative;
+  width: 39px;
+  height: 42px;
+  top: 5px;
+  left: 6px;
+}
+
+.frame6528 .currency-dollar-wrapper {
+  position: relative;
+  width: 40px;
+  height: 43px;
+  top: -1px;
+  background-size: 100% 100%;
+}
+
+.frame6528 .currency-dollar {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 10px;
+  left: 7px;
+}
+
+.frame6528 .text-wrapper-7 {
+  position: relative;
+  width: 230px;
+  font-weight: 600;
+  color: var(--gray-true800);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+.frame6535 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 26px;
+  padding: 48px 0px;
+  position: relative;
+  background: var(--dark-green, #013127);
+  margin:0 auto;
+}
+
+.frame6535 .div {
+  flex-direction: column;
+  gap: 16px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame6535 .check-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.frame6535 .that-s-it-you-use {
+  position: relative;
+  max-width:100%;
+  font-weight: 700;
+  color: var(--collection-1-white);
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 41.4px;
+  margin:0;
+}
+
+.frame6535 .signing-up-and {
+  position: relative;
+  opacity: 0.9;
+  font-weight: 400;
+  color: var(--collection-1-white);
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 27px;
+  margin:0;
+}
+
+.frame6535 .div-wrapper {
+  justify-content: center;
+  gap: 8.07px;
+  padding: 15px 40px;
+  background-color: #008061;
+  border-radius: 8.07px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+  cursor:pointer;
+}
+
+.frame6535 .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.01px;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 27.2px;
+  white-space: nowrap;
+}
+
+.frame6544 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 64px 0px;
+  position: relative;
+  background-color: #f3f3f3;
+}
+
+.frame6544 .text-wrapper {
+  position: relative;
+  margin-top: -1px;
+  font-weight: 700;
+  color: var(--collection-1-dark-green);
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 46.8px;
+}
+
+.frame6544 .div {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  position: relative;
+  flex: 0 0 auto;
+      max-width: 90%;
+    width: 1440px;
+}
+
+.frame6544 .div-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 32px 16px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-top-width: 8px;
+  border-top-style: solid;
+  border-color: #27ae61;
+  box-shadow: 0px 4px 4px #0000000a;
+}
+
+.frame6544 .div-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame6544 .p {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin:0;
+}
+
+.frame6544 .div-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ /* gap: 12px;*/
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame6544 .div-4 {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame6544 .check {
+  position: relative;
+  width: 21px;
+  height: 21px;
+}
+
+.frame6544 .div-5 {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-weight: 400;
+  color: var(--gray-true600);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.frame6544 .span {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1440px){
+	.how-it-work-banner{
+		padding: 100px 0;
+	}
+    .frame6544 .div {
+    display: flex;
+    flex-direction: column;
+  }
+  .reseller-banner .container {
+    max-width: calc(56rem + var(--gutter-x));
+  }
+}
+
+
+@media screen and (max-width: 991px){
+	.how-it-work-banner{
+		padding: 100px 0;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .frame38 {
+    width: 100%;
+    max-width: 85%;
+  }
+  .reseller-banner .container {
+    max-width: 1440px;
+    width: 85%;
+}
+  .frame6528 .div-2{gap:40px;}
+  .frame6528 .div-3{width:200px;}
+  .frame6544 .div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    position: relative;
+    flex: 0 0 auto;
+    max-width: 90%;
+    width: 1440px;
+    flex-direction: column;
+}
+  .frame6544 .div-2{width:70%;}
+}
+
+@media screen and (max-width: 767px){
+  .template-reseller {
+    padding-top: 0px!important;
+    background-color: #fff;
+}
+	.how-it-work-banner .section-content ul{
+		flex-wrap: wrap;
+	}
+	.how-it-work-banner .section-content h2{
+		font-size: 2rem;
+		line-height: normal;
+	}
+	.how-it-work-banner .section-content p,
+	.how-it-work-banner .section-content ul li{
+		font-size: 1rem;
+		line-height: 26px;
+	}
+	.how-it-work-banner .section-content a{
+		font-size: 1.125rem;
+	}
+  .reseller-banner .container {
+    max-width: 90%;
+  }
+  .reseller-banner .section-content h2{font-size:2.25rem;}
+  .reseller-banner .section-content h3{font-size:0.8125rem;}
+  .reseller-banner .section-content p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .frame6528{
+    padding: 48px 24px;
+  }
+  .frame6528 .text-wrapper{
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    marin:0;
+  }
+  .frame6528 .div-2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    flex: 0 0 auto;
+    flex-direction: column;
+ }
+  .frame6528 .text-wrapper-2, .frame6528 .text-wrapper-4, .frame6528 .text-wrapper-5, .frame6528 .text-wrapper-6, .frame6528 .text-wrapper-7{
+    font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 115%;
+  }
+  .frame6528 .p{
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+  }
+  .frame6535{
+    padding: 64px 24px;
+  }
+  .frame6535 .that-s-it-you-use{
+        font-size: 24px;
+    line-height: 115%;
+  }
+  .frame6535 .signing-up-and{
+    font-size: 1rem;
+    line-height: 150%;
+  }
+  .frame6535 .text-wrapper{
+    font-size: 1rem;
+    line-height: 27.163px;
+  }
+  .frame6544{
+    padding: 48px 24px;
+  }
+  .frame6544 .text-wrapper{
+    font-size: 28px;
+    line-height: 130%;
+  }
+  .frame6544 .div {
+    display: flex;
+    flex-direction: column;
+  }
+  .frame38{padding:16px;}
+  .frame38 .text-wrapper-2{font-size:14px;}
+  .frame38 .div-wrapper{padding: 8px 20px;}
+  .frame38 .text-wrapper{
+    font-size:14px;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+  .frame38 .img {
+    position: relative;
+    width: 100px;
+}
+  .reseller-banner{
+	background-image: url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Mobile.webp?v=1699350204');
+	background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 85px 0;
+    margin-top:56px;
+}
+}

@@ -1,0 +1,594 @@
+{{ 'accessories.css' | asset_url | stylesheet_tag }}
+
+<div class="homepage-details">
+<div class="container">
+    <section class="banner-section">
+        <div class="banner-content">
+            <div class="banner-slide" style="background-image: url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/01.webp?v=1699268750');">
+                <h2>Nomad Air Travel System!</h2>
+                <p>Unlock connectivity on the go. Bag, Power Bank, and Essential Cables – 25% off for ultimate travel readiness.</p>
+                <a href="#tab-1">Shop Bundle</a>
+            </div>
+            <div class="banner-slide" style="background-image: url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/02.webp?v=1699268749');">
+                <h2>Nomad Air Travel System!</h2>
+                <p>Unlock connectivity on the go. Bag, Power Bank, and Essential Cables – 25% off for ultimate travel readiness.</p>
+                <a href="#tab-1">Shop Bundle</a>
+            </div>
+            <div class="banner-slide" style="background-image: url('https://cdn.shopify.com/s/files/1/0103/2847/3658/files/03.webp?v=1699268750');">
+                <h2>Nomad Air Travel System!</h2>
+                <p>Unlock connectivity on the go. Bag, Power Bank, and Essential Cables – 25% off for ultimate travel readiness.</p>
+                <a href="#tab-1">Shop Bundle</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products-section">
+        <div class="featured-product-details">
+            <div class="section-title">
+                <h2>Featured Products</h2>
+            </div>
+            <div class="product-list-tabing">
+                <div class="tabs">
+                    <div class="tab-list">
+                        <ul class="tabs-nav">
+                            <li><a href="#tab-1">All</a></li>
+                            <li><a href="#tab-2">Camping</a></li>
+                            <li><a href="#tab-3">Car Trip</a></li>
+                            <li><a href="#tab-4">Boating</a></li>
+                            <li><a href="#tab-5">Hiking</a></li>
+                        </ul>
+                    </div>
+                    <div class="tabs-stage">
+                        <div id="tab-1" class="tabing-details">
+                            <div class="results-and-filter">
+                                <p><span class="pro_count_1">{{ collections.accessories-all.all_products_count }}</span> results</p>
+                                <a href="javascript:;" class="filter-popup-open">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 8.48401H12M2 4.48401H14M6 12.484H10" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Filter
+                                </a>
+                            </div>
+                            <div class="product-list">
+                               {% for product in collections.accessories-all.products %}
+                                    {% for tag in product.tags %}
+                                    {% if tag contains 'modem_' %}
+                                         {% assign modem = tag | split:'_' %}
+                                         {% break %}
+                                    {% endif %}  
+                                    {% endfor %}
+                                    {% for tag in product.tags %}
+                                    {% if tag contains 'category_' %}
+                                         {% assign tag = tag | split:'_' %}
+                                         {% break %}
+                                    {% endif %}  
+                                    {% endfor %}  
+                                <div class="product-box" data-modem="{{ modem[1] }}" data-category="{{ tag[1] }}">
+                                 {% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}  
+                                 <div class="preorder-text">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+                                        <path id="Fill-21" fill-rule="evenodd" clip-rule="evenodd" d="M2.96663 6.25067H6.69996V4.384H2.96663V6.25067ZM7.16663 7.184H2.49996C2.24236 7.184 2.03329 6.97493 2.03329 6.71733V3.91733C2.03329 3.65973 2.24236 3.45067 2.49996 3.45067H7.16663C7.42423 3.45067 7.63329 3.65973 7.63329 3.91733V6.71733C7.63329 6.97493 7.42423 7.184 7.16663 7.184ZM9.49996 6.25067H11.3666V4.384H9.49996V6.25067ZM12.3 6.25067H15.2782L14.3449 4.384H12.3V6.25067ZM5.70783 9.984H8.56663V3.91733C8.56663 3.65973 8.77569 3.45067 9.03329 3.45067H15.2045C15.3566 3.45067 15.4948 3.37973 15.5834 3.25653C15.6721 3.13333 15.6964 2.98027 15.6478 2.83653L15.337 1.9032C15.2736 1.71187 15.0953 1.584 14.8937 1.584H1.09996V9.984H2.09209C2.30023 9.17947 3.03196 8.584 3.89996 8.584C4.76796 8.584 5.49969 9.17947 5.70783 9.984ZM9.49996 9.984H11.3666V7.184H9.49996V9.984ZM16.9078 9.984H17.4333C17.6909 9.984 17.9 9.77493 17.9 9.51733V8.28253C17.9 8.09307 17.7824 7.91947 17.6069 7.8504L15.9437 7.184H12.3V9.984H13.2921C13.5002 9.17947 14.232 8.584 15.1 8.584C15.968 8.584 16.6997 9.17947 16.9078 9.984ZM3.89996 9.51733C3.38569 9.51733 2.96663 9.9364 2.96663 10.4507C2.96663 10.9649 3.38569 11.384 3.89996 11.384C4.41423 11.384 4.83329 10.9649 4.83329 10.4507C4.83329 9.9364 4.41423 9.51733 3.89996 9.51733ZM15.1 9.51733C14.5857 9.51733 14.1666 9.9364 14.1666 10.4507C14.1666 10.9649 14.5857 11.384 15.1 11.384C15.6142 11.384 16.0333 10.9649 16.0333 10.4507C16.0333 9.9364 15.6142 9.51733 15.1 9.51733ZM15.1 12.3173C14.232 12.3173 13.5002 11.7219 13.2921 10.9173H5.70783C5.49969 11.7219 4.76796 12.3173 3.89996 12.3173C3.03196 12.3173 2.30023 11.7219 2.09209 10.9173H0.633293C0.375693 10.9173 0.166626 10.7083 0.166626 10.4507V1.11733C0.166626 0.859732 0.375693 0.650665 0.633293 0.650665H14.8937C15.4976 0.650665 16.0314 1.03613 16.2228 1.60827L16.5336 2.5416C16.6773 2.97373 16.6073 3.43293 16.3404 3.80253C16.1098 4.1236 15.7664 4.3252 15.3828 4.3728L16.3712 6.3496L17.9532 6.98333C18.487 7.1952 18.8333 7.70573 18.8333 8.28253V9.51733C18.8333 10.2892 18.2052 10.9173 17.4333 10.9173H16.9078C16.6997 11.7219 15.968 12.3173 15.1 12.3173Z" fill="#00A77F"/>
+                                      </svg>
+                                      <span>Delivered in 2 to 4 weeks</span>   
+                                    </div>
+                                          {% endif %}
+                                    <a href="javascript:;" class="product-box-popup-open" data-product="{{ product.handle }}">
+                                        <div class="image">
+                                            <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}">
+                                        </div>
+                                        <div class="product-title">
+                                            <div class="review">
+                                                <span>{{ tag[1] }}</span>
+                                                <p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                                        <path d="M5.05764 0.509114C5.18396 0.12032 5.734 0.120319 5.86033 0.509113L6.83279 3.50203C6.88928 3.6759 7.05131 3.79363 7.23414 3.79363H10.3811C10.7899 3.79363 10.9598 4.31674 10.6291 4.55703L8.08319 6.40676C7.93529 6.51422 7.8734 6.70469 7.92989 6.87857L8.90235 9.87148C9.02868 10.2603 8.58368 10.5836 8.25296 10.3433L5.70703 8.49357C5.55912 8.38611 5.35884 8.38611 5.21094 8.49357L2.66501 10.3433C2.33428 10.5836 1.88929 10.2603 2.01562 9.87148L2.98808 6.87857C3.04457 6.7047 2.98268 6.51422 2.83478 6.40676L0.288849 4.55703C-0.0418788 4.31675 0.128092 3.79363 0.536894 3.79363H3.68383C3.86665 3.79363 4.02868 3.6759 4.08518 3.50203L5.05764 0.509114Z" fill="#FFA800"/>
+                                                    </svg>
+                                                    4.5 (20)
+                                                </p>
+                                            </div>
+                                            <h3>{{ product.title | escape }}</h3>
+                                            <p>{{ product.price | money }}</p>
+                                            <a class="buy_now_product" data-id="{{ product.selected_or_first_available_variant.id }}">{% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}Preorder Now{% else %}}Buy Now{% endif %}</a>
+                                            <a class="add_to_cart_product" data-id="{{ product.selected_or_first_available_variant.id }}">Add to cart</a>              
+                                        </div>
+                                    </a>
+                                </div>
+                                {% endfor %} 
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tabing-details">
+                            <div class="results-and-filter">
+                                <p><span class="pro_count_2">{{ collections.camping.all_products_count }}</span> results</p>
+                                <a href="javascript:;" class="filter-popup-open">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 8.48401H12M2 4.48401H14M6 12.484H10" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Filter
+                                </a>
+                            </div>
+                            <div class="product-list">
+
+                                    {% for product in collections.camping.products %}
+                                       {% for tag in product.tags %}
+                                    {% if tag contains 'modem_' %}
+                                         {% assign modem = tag | split:'_' %}
+                                         {% break %}
+                                    {% endif %}  
+                                    {% endfor %} 
+                              {% for tag in product.tags %}
+                                                {% if tag contains 'category_' %}
+                                                     {% assign tag = tag | split:'_' %}
+                                                     {% break %}
+                                                {% endif %}  
+                                                {% endfor %}  
+                                <div class="product-box" data-modem="{{ modem[1] }}" data-category="{{ tag[1] }}">
+                                   {% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}  
+                                 <div class="preorder-text">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+                                        <path id="Fill-21" fill-rule="evenodd" clip-rule="evenodd" d="M2.96663 6.25067H6.69996V4.384H2.96663V6.25067ZM7.16663 7.184H2.49996C2.24236 7.184 2.03329 6.97493 2.03329 6.71733V3.91733C2.03329 3.65973 2.24236 3.45067 2.49996 3.45067H7.16663C7.42423 3.45067 7.63329 3.65973 7.63329 3.91733V6.71733C7.63329 6.97493 7.42423 7.184 7.16663 7.184ZM9.49996 6.25067H11.3666V4.384H9.49996V6.25067ZM12.3 6.25067H15.2782L14.3449 4.384H12.3V6.25067ZM5.70783 9.984H8.56663V3.91733C8.56663 3.65973 8.77569 3.45067 9.03329 3.45067H15.2045C15.3566 3.45067 15.4948 3.37973 15.5834 3.25653C15.6721 3.13333 15.6964 2.98027 15.6478 2.83653L15.337 1.9032C15.2736 1.71187 15.0953 1.584 14.8937 1.584H1.09996V9.984H2.09209C2.30023 9.17947 3.03196 8.584 3.89996 8.584C4.76796 8.584 5.49969 9.17947 5.70783 9.984ZM9.49996 9.984H11.3666V7.184H9.49996V9.984ZM16.9078 9.984H17.4333C17.6909 9.984 17.9 9.77493 17.9 9.51733V8.28253C17.9 8.09307 17.7824 7.91947 17.6069 7.8504L15.9437 7.184H12.3V9.984H13.2921C13.5002 9.17947 14.232 8.584 15.1 8.584C15.968 8.584 16.6997 9.17947 16.9078 9.984ZM3.89996 9.51733C3.38569 9.51733 2.96663 9.9364 2.96663 10.4507C2.96663 10.9649 3.38569 11.384 3.89996 11.384C4.41423 11.384 4.83329 10.9649 4.83329 10.4507C4.83329 9.9364 4.41423 9.51733 3.89996 9.51733ZM15.1 9.51733C14.5857 9.51733 14.1666 9.9364 14.1666 10.4507C14.1666 10.9649 14.5857 11.384 15.1 11.384C15.6142 11.384 16.0333 10.9649 16.0333 10.4507C16.0333 9.9364 15.6142 9.51733 15.1 9.51733ZM15.1 12.3173C14.232 12.3173 13.5002 11.7219 13.2921 10.9173H5.70783C5.49969 11.7219 4.76796 12.3173 3.89996 12.3173C3.03196 12.3173 2.30023 11.7219 2.09209 10.9173H0.633293C0.375693 10.9173 0.166626 10.7083 0.166626 10.4507V1.11733C0.166626 0.859732 0.375693 0.650665 0.633293 0.650665H14.8937C15.4976 0.650665 16.0314 1.03613 16.2228 1.60827L16.5336 2.5416C16.6773 2.97373 16.6073 3.43293 16.3404 3.80253C16.1098 4.1236 15.7664 4.3252 15.3828 4.3728L16.3712 6.3496L17.9532 6.98333C18.487 7.1952 18.8333 7.70573 18.8333 8.28253V9.51733C18.8333 10.2892 18.2052 10.9173 17.4333 10.9173H16.9078C16.6997 11.7219 15.968 12.3173 15.1 12.3173Z" fill="#00A77F"/>
+                                      </svg>
+                                      <span>Delivered in 2 to 4 weeks</span>   
+                                    </div>
+                                          {% endif %}
+                                    <a href="javascript:;" class="product-box-popup-open" data-product="{{ product.handle }}">
+                                        <div class="image">
+                                            <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}">
+                                        </div>
+                                        <div class="product-title">
+                                            <div class="review">
+
+                                                <span>{{ tag[1] }}</span>
+                                                <p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                                        <path d="M5.05764 0.509114C5.18396 0.12032 5.734 0.120319 5.86033 0.509113L6.83279 3.50203C6.88928 3.6759 7.05131 3.79363 7.23414 3.79363H10.3811C10.7899 3.79363 10.9598 4.31674 10.6291 4.55703L8.08319 6.40676C7.93529 6.51422 7.8734 6.70469 7.92989 6.87857L8.90235 9.87148C9.02868 10.2603 8.58368 10.5836 8.25296 10.3433L5.70703 8.49357C5.55912 8.38611 5.35884 8.38611 5.21094 8.49357L2.66501 10.3433C2.33428 10.5836 1.88929 10.2603 2.01562 9.87148L2.98808 6.87857C3.04457 6.7047 2.98268 6.51422 2.83478 6.40676L0.288849 4.55703C-0.0418788 4.31675 0.128092 3.79363 0.536894 3.79363H3.68383C3.86665 3.79363 4.02868 3.6759 4.08518 3.50203L5.05764 0.509114Z" fill="#FFA800"/>
+                                                    </svg>
+                                                    4.5 (20)
+                                                </p>
+                                            </div>
+                                            <h3>{{ product.title | escape }}</h3>
+                                            <p>{{ product.price | money }}</p>
+                                            <a class="buy_now_product" data-id="{{ product.selected_or_first_available_variant.id }}">{% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}Preorder Now{% else %}}Buy Now{% endif %}</a>
+                                            <a class="add_to_cart_product" data-id="{{ product.selected_or_first_available_variant.id }}">Add to cart</a>              
+                                        </div>
+                                    </a>
+                                </div>
+                                {% endfor %} 
+                              
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tabing-details">
+                            <div class="results-and-filter">
+                                <p><span class="pro_count_3">{{ collections.car-trip.all_products_count }}</span> results</p>
+                                <a href="javascript:;" class="filter-popup-open">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 8.48401H12M2 4.48401H14M6 12.484H10" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Filter
+                                </a>
+                            </div>
+                            <div class="product-list">
+                                 {% for product in collections.car-trip.products %}
+                                    {% for tag in product.tags %}
+                                    {% if tag contains 'modem_' %}
+                                         {% assign modem = tag | split:'_' %}
+                                         {% break %}
+                                    {% endif %}  
+                                    {% endfor %} 
+                              {% for tag in product.tags %}
+                                                {% if tag contains 'category_' %}
+                                                     {% assign tag = tag | split:'_' %}
+                                                     {% break %}
+                                                {% endif %}  
+                                                {% endfor %}  
+                                <div class="product-box" data-modem="{{ modem[1] }}" data-category="{{ tag[1] }}">
+                                   {% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}  
+                                 <div class="preorder-text">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+                                        <path id="Fill-21" fill-rule="evenodd" clip-rule="evenodd" d="M2.96663 6.25067H6.69996V4.384H2.96663V6.25067ZM7.16663 7.184H2.49996C2.24236 7.184 2.03329 6.97493 2.03329 6.71733V3.91733C2.03329 3.65973 2.24236 3.45067 2.49996 3.45067H7.16663C7.42423 3.45067 7.63329 3.65973 7.63329 3.91733V6.71733C7.63329 6.97493 7.42423 7.184 7.16663 7.184ZM9.49996 6.25067H11.3666V4.384H9.49996V6.25067ZM12.3 6.25067H15.2782L14.3449 4.384H12.3V6.25067ZM5.70783 9.984H8.56663V3.91733C8.56663 3.65973 8.77569 3.45067 9.03329 3.45067H15.2045C15.3566 3.45067 15.4948 3.37973 15.5834 3.25653C15.6721 3.13333 15.6964 2.98027 15.6478 2.83653L15.337 1.9032C15.2736 1.71187 15.0953 1.584 14.8937 1.584H1.09996V9.984H2.09209C2.30023 9.17947 3.03196 8.584 3.89996 8.584C4.76796 8.584 5.49969 9.17947 5.70783 9.984ZM9.49996 9.984H11.3666V7.184H9.49996V9.984ZM16.9078 9.984H17.4333C17.6909 9.984 17.9 9.77493 17.9 9.51733V8.28253C17.9 8.09307 17.7824 7.91947 17.6069 7.8504L15.9437 7.184H12.3V9.984H13.2921C13.5002 9.17947 14.232 8.584 15.1 8.584C15.968 8.584 16.6997 9.17947 16.9078 9.984ZM3.89996 9.51733C3.38569 9.51733 2.96663 9.9364 2.96663 10.4507C2.96663 10.9649 3.38569 11.384 3.89996 11.384C4.41423 11.384 4.83329 10.9649 4.83329 10.4507C4.83329 9.9364 4.41423 9.51733 3.89996 9.51733ZM15.1 9.51733C14.5857 9.51733 14.1666 9.9364 14.1666 10.4507C14.1666 10.9649 14.5857 11.384 15.1 11.384C15.6142 11.384 16.0333 10.9649 16.0333 10.4507C16.0333 9.9364 15.6142 9.51733 15.1 9.51733ZM15.1 12.3173C14.232 12.3173 13.5002 11.7219 13.2921 10.9173H5.70783C5.49969 11.7219 4.76796 12.3173 3.89996 12.3173C3.03196 12.3173 2.30023 11.7219 2.09209 10.9173H0.633293C0.375693 10.9173 0.166626 10.7083 0.166626 10.4507V1.11733C0.166626 0.859732 0.375693 0.650665 0.633293 0.650665H14.8937C15.4976 0.650665 16.0314 1.03613 16.2228 1.60827L16.5336 2.5416C16.6773 2.97373 16.6073 3.43293 16.3404 3.80253C16.1098 4.1236 15.7664 4.3252 15.3828 4.3728L16.3712 6.3496L17.9532 6.98333C18.487 7.1952 18.8333 7.70573 18.8333 8.28253V9.51733C18.8333 10.2892 18.2052 10.9173 17.4333 10.9173H16.9078C16.6997 11.7219 15.968 12.3173 15.1 12.3173Z" fill="#00A77F"/>
+                                      </svg>
+                                      <span>Delivered in 2 to 4 weeks</span>   
+                                    </div>
+                                          {% endif %}
+                                    <a href="javascript:;" class="product-box-popup-open" data-product="{{ product.handle }}">
+                                        <div class="image">
+                                            <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}">
+                                        </div>
+                                        <div class="product-title">
+                                            <div class="review">
+
+                                                <span>{{ tag[1] }}</span>
+                                                <p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                                        <path d="M5.05764 0.509114C5.18396 0.12032 5.734 0.120319 5.86033 0.509113L6.83279 3.50203C6.88928 3.6759 7.05131 3.79363 7.23414 3.79363H10.3811C10.7899 3.79363 10.9598 4.31674 10.6291 4.55703L8.08319 6.40676C7.93529 6.51422 7.8734 6.70469 7.92989 6.87857L8.90235 9.87148C9.02868 10.2603 8.58368 10.5836 8.25296 10.3433L5.70703 8.49357C5.55912 8.38611 5.35884 8.38611 5.21094 8.49357L2.66501 10.3433C2.33428 10.5836 1.88929 10.2603 2.01562 9.87148L2.98808 6.87857C3.04457 6.7047 2.98268 6.51422 2.83478 6.40676L0.288849 4.55703C-0.0418788 4.31675 0.128092 3.79363 0.536894 3.79363H3.68383C3.86665 3.79363 4.02868 3.6759 4.08518 3.50203L5.05764 0.509114Z" fill="#FFA800"/>
+                                                    </svg>
+                                                    4.5 (20)
+                                                </p>
+                                            </div>
+                                            <h3>{{ product.title | escape }}</h3>
+                                            <p>{{ product.price | money }}</p>
+                                            <a class="buy_now_product" data-id="{{ product.selected_or_first_available_variant.id }}">{% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}Preorder Now{% else %}}Buy Now{% endif %}</a>
+                                            <a class="add_to_cart_product" data-id="{{ product.selected_or_first_available_variant.id }}">Add to cart</a>              
+                                        </div>
+                                    </a>
+                                </div>
+                                {% endfor %} 
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tabing-details">
+                            <div class="results-and-filter">
+                                <p><span class="pro_count_4">{{ collections.boating.all_products_count }}</span> results</p>
+                                <a href="javascript:;" class="filter-popup-open">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 8.48401H12M2 4.48401H14M6 12.484H10" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Filter
+                                </a>
+                            </div>
+                            <div class="product-list">
+                                  {% for product in collections.boating.products %}
+                                     {% for tag in product.tags %}
+                                    {% if tag contains 'modem_' %}
+                                         {% assign modem = tag | split:'_' %}
+                                         {% break %}
+                                    {% endif %}  
+                                    {% endfor %} 
+                              {% for tag in product.tags %}
+                                                {% if tag contains 'category_' %}
+                                                     {% assign tag = tag | split:'_' %}
+                                                     {% break %}
+                                                {% endif %}  
+                                                {% endfor %}  
+                                <div class="product-box" data-modem="{{ modem[1] }}" data-category="{{ tag[1] }}">
+                                   {% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}  
+                                 <div class="preorder-text">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+                                        <path id="Fill-21" fill-rule="evenodd" clip-rule="evenodd" d="M2.96663 6.25067H6.69996V4.384H2.96663V6.25067ZM7.16663 7.184H2.49996C2.24236 7.184 2.03329 6.97493 2.03329 6.71733V3.91733C2.03329 3.65973 2.24236 3.45067 2.49996 3.45067H7.16663C7.42423 3.45067 7.63329 3.65973 7.63329 3.91733V6.71733C7.63329 6.97493 7.42423 7.184 7.16663 7.184ZM9.49996 6.25067H11.3666V4.384H9.49996V6.25067ZM12.3 6.25067H15.2782L14.3449 4.384H12.3V6.25067ZM5.70783 9.984H8.56663V3.91733C8.56663 3.65973 8.77569 3.45067 9.03329 3.45067H15.2045C15.3566 3.45067 15.4948 3.37973 15.5834 3.25653C15.6721 3.13333 15.6964 2.98027 15.6478 2.83653L15.337 1.9032C15.2736 1.71187 15.0953 1.584 14.8937 1.584H1.09996V9.984H2.09209C2.30023 9.17947 3.03196 8.584 3.89996 8.584C4.76796 8.584 5.49969 9.17947 5.70783 9.984ZM9.49996 9.984H11.3666V7.184H9.49996V9.984ZM16.9078 9.984H17.4333C17.6909 9.984 17.9 9.77493 17.9 9.51733V8.28253C17.9 8.09307 17.7824 7.91947 17.6069 7.8504L15.9437 7.184H12.3V9.984H13.2921C13.5002 9.17947 14.232 8.584 15.1 8.584C15.968 8.584 16.6997 9.17947 16.9078 9.984ZM3.89996 9.51733C3.38569 9.51733 2.96663 9.9364 2.96663 10.4507C2.96663 10.9649 3.38569 11.384 3.89996 11.384C4.41423 11.384 4.83329 10.9649 4.83329 10.4507C4.83329 9.9364 4.41423 9.51733 3.89996 9.51733ZM15.1 9.51733C14.5857 9.51733 14.1666 9.9364 14.1666 10.4507C14.1666 10.9649 14.5857 11.384 15.1 11.384C15.6142 11.384 16.0333 10.9649 16.0333 10.4507C16.0333 9.9364 15.6142 9.51733 15.1 9.51733ZM15.1 12.3173C14.232 12.3173 13.5002 11.7219 13.2921 10.9173H5.70783C5.49969 11.7219 4.76796 12.3173 3.89996 12.3173C3.03196 12.3173 2.30023 11.7219 2.09209 10.9173H0.633293C0.375693 10.9173 0.166626 10.7083 0.166626 10.4507V1.11733C0.166626 0.859732 0.375693 0.650665 0.633293 0.650665H14.8937C15.4976 0.650665 16.0314 1.03613 16.2228 1.60827L16.5336 2.5416C16.6773 2.97373 16.6073 3.43293 16.3404 3.80253C16.1098 4.1236 15.7664 4.3252 15.3828 4.3728L16.3712 6.3496L17.9532 6.98333C18.487 7.1952 18.8333 7.70573 18.8333 8.28253V9.51733C18.8333 10.2892 18.2052 10.9173 17.4333 10.9173H16.9078C16.6997 11.7219 15.968 12.3173 15.1 12.3173Z" fill="#00A77F"/>
+                                      </svg>
+                                      <span>Delivered in 2 to 4 weeks</span>   
+                                    </div>
+                                          {% endif %}
+                                    <a href="javascript:;" class="product-box-popup-open" data-product="{{ product.handle }}">
+                                        <div class="image">
+                                            <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}">
+                                        </div>
+                                        <div class="product-title">
+                                            <div class="review">
+                                                <span>{{ tag[1] }}</span>
+                                                <p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                                        <path d="M5.05764 0.509114C5.18396 0.12032 5.734 0.120319 5.86033 0.509113L6.83279 3.50203C6.88928 3.6759 7.05131 3.79363 7.23414 3.79363H10.3811C10.7899 3.79363 10.9598 4.31674 10.6291 4.55703L8.08319 6.40676C7.93529 6.51422 7.8734 6.70469 7.92989 6.87857L8.90235 9.87148C9.02868 10.2603 8.58368 10.5836 8.25296 10.3433L5.70703 8.49357C5.55912 8.38611 5.35884 8.38611 5.21094 8.49357L2.66501 10.3433C2.33428 10.5836 1.88929 10.2603 2.01562 9.87148L2.98808 6.87857C3.04457 6.7047 2.98268 6.51422 2.83478 6.40676L0.288849 4.55703C-0.0418788 4.31675 0.128092 3.79363 0.536894 3.79363H3.68383C3.86665 3.79363 4.02868 3.6759 4.08518 3.50203L5.05764 0.509114Z" fill="#FFA800"/>
+                                                    </svg>
+                                                    4.5 (20)
+                                                </p>
+                                            </div>
+                                            <h3>{{ product.title | escape }}</h3>
+                                            <p>{{ product.price | money }}</p>
+                                            <a class="buy_now_product" data-id="{{ product.selected_or_first_available_variant.id }}">{% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}Preorder Now{% else %}}Buy Now{% endif %}</a>
+                                            <a class="add_to_cart_product" data-id="{{ product.selected_or_first_available_variant.id }}">Add to cart</a>              
+                                        </div>
+                                    </a>
+                                </div>
+                                {% endfor %} 
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tabing-details">
+                            <div class="results-and-filter">
+                                <p><span class="pro_count_5">{{ collections.hiking.all_products_count }}</span> results</p>
+                                <a href="javascript:;" class="filter-popup-open">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 8.48401H12M2 4.48401H14M6 12.484H10" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Filter
+                                </a>
+                            </div>
+                            <div class="product-list">
+                                  {% for product in collections.hiking.products %}
+                                     {% for tag in product.tags %}
+                                    {% if tag contains 'modem_' %}
+                                         {% assign modem = tag | split:'_' %}
+                                         {% break %}
+                                    {% endif %}  
+                                    {% endfor %} 
+                              {% for tag in product.tags %}
+                                                {% if tag contains 'category_' %}
+                                                     {% assign tag = tag | split:'_' %}
+                                                     {% break %}
+                                                {% endif %}  
+                                                {% endfor %}  
+                                <div class="product-box" data-modem="{{ modem[1] }}" data-category="{{ tag[1] }}">
+                                   {% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}  
+                                 <div class="preorder-text">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+                                        <path id="Fill-21" fill-rule="evenodd" clip-rule="evenodd" d="M2.96663 6.25067H6.69996V4.384H2.96663V6.25067ZM7.16663 7.184H2.49996C2.24236 7.184 2.03329 6.97493 2.03329 6.71733V3.91733C2.03329 3.65973 2.24236 3.45067 2.49996 3.45067H7.16663C7.42423 3.45067 7.63329 3.65973 7.63329 3.91733V6.71733C7.63329 6.97493 7.42423 7.184 7.16663 7.184ZM9.49996 6.25067H11.3666V4.384H9.49996V6.25067ZM12.3 6.25067H15.2782L14.3449 4.384H12.3V6.25067ZM5.70783 9.984H8.56663V3.91733C8.56663 3.65973 8.77569 3.45067 9.03329 3.45067H15.2045C15.3566 3.45067 15.4948 3.37973 15.5834 3.25653C15.6721 3.13333 15.6964 2.98027 15.6478 2.83653L15.337 1.9032C15.2736 1.71187 15.0953 1.584 14.8937 1.584H1.09996V9.984H2.09209C2.30023 9.17947 3.03196 8.584 3.89996 8.584C4.76796 8.584 5.49969 9.17947 5.70783 9.984ZM9.49996 9.984H11.3666V7.184H9.49996V9.984ZM16.9078 9.984H17.4333C17.6909 9.984 17.9 9.77493 17.9 9.51733V8.28253C17.9 8.09307 17.7824 7.91947 17.6069 7.8504L15.9437 7.184H12.3V9.984H13.2921C13.5002 9.17947 14.232 8.584 15.1 8.584C15.968 8.584 16.6997 9.17947 16.9078 9.984ZM3.89996 9.51733C3.38569 9.51733 2.96663 9.9364 2.96663 10.4507C2.96663 10.9649 3.38569 11.384 3.89996 11.384C4.41423 11.384 4.83329 10.9649 4.83329 10.4507C4.83329 9.9364 4.41423 9.51733 3.89996 9.51733ZM15.1 9.51733C14.5857 9.51733 14.1666 9.9364 14.1666 10.4507C14.1666 10.9649 14.5857 11.384 15.1 11.384C15.6142 11.384 16.0333 10.9649 16.0333 10.4507C16.0333 9.9364 15.6142 9.51733 15.1 9.51733ZM15.1 12.3173C14.232 12.3173 13.5002 11.7219 13.2921 10.9173H5.70783C5.49969 11.7219 4.76796 12.3173 3.89996 12.3173C3.03196 12.3173 2.30023 11.7219 2.09209 10.9173H0.633293C0.375693 10.9173 0.166626 10.7083 0.166626 10.4507V1.11733C0.166626 0.859732 0.375693 0.650665 0.633293 0.650665H14.8937C15.4976 0.650665 16.0314 1.03613 16.2228 1.60827L16.5336 2.5416C16.6773 2.97373 16.6073 3.43293 16.3404 3.80253C16.1098 4.1236 15.7664 4.3252 15.3828 4.3728L16.3712 6.3496L17.9532 6.98333C18.487 7.1952 18.8333 7.70573 18.8333 8.28253V9.51733C18.8333 10.2892 18.2052 10.9173 17.4333 10.9173H16.9078C16.6997 11.7219 15.968 12.3173 15.1 12.3173Z" fill="#00A77F"/>
+                                      </svg>
+                                      <span>Delivered in 2 to 4 weeks</span>   
+                                    </div>
+                                          {% endif %}
+                                    <a href="javascript:;" class="product-box-popup-open" data-product="{{ product.handle }}">
+                                        <div class="image">
+                                            <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape }}">
+                                        </div>
+                                        <div class="product-title">
+                                            <div class="review">
+                                                <span>{{ tag[1] }}</span>
+                                                <p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                                        <path d="M5.05764 0.509114C5.18396 0.12032 5.734 0.120319 5.86033 0.509113L6.83279 3.50203C6.88928 3.6759 7.05131 3.79363 7.23414 3.79363H10.3811C10.7899 3.79363 10.9598 4.31674 10.6291 4.55703L8.08319 6.40676C7.93529 6.51422 7.8734 6.70469 7.92989 6.87857L8.90235 9.87148C9.02868 10.2603 8.58368 10.5836 8.25296 10.3433L5.70703 8.49357C5.55912 8.38611 5.35884 8.38611 5.21094 8.49357L2.66501 10.3433C2.33428 10.5836 1.88929 10.2603 2.01562 9.87148L2.98808 6.87857C3.04457 6.7047 2.98268 6.51422 2.83478 6.40676L0.288849 4.55703C-0.0418788 4.31675 0.128092 3.79363 0.536894 3.79363H3.68383C3.86665 3.79363 4.02868 3.6759 4.08518 3.50203L5.05764 0.509114Z" fill="#FFA800"/>
+                                                    </svg>
+                                                    4.5 (20)
+                                                </p>
+                                            </div>
+                                            <h3>{{ product.title | escape }}</h3>
+                                            <p>{{ product.price | money }}</p>
+                                            <a class="buy_now_product" data-id="{{ product.selected_or_first_available_variant.id }}">{% if product.selected_or_first_available_variant.inventory_quantity <= 0 %}Preorder Now{% else %}}Buy Now{% endif %}</a>
+                                            <a class="add_to_cart_product" data-id="{{ product.selected_or_first_available_variant.id }}">Add to cart</a>              
+                                        </div>
+                                    </a>
+                                </div>
+                                {% endfor %} 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+ <span class="hidden-popup-overlay"></span>
+<div class="filter-popup">
+<div class="filter-content">
+    <div class="title">
+        <h2>Filter</h2>
+        <a href="javascript:;" class="close-popup">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                <path d="M24.75 8.25L8.25 24.75M8.25 8.25L24.75 24.75" stroke="black" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+    <div class="filter-list">
+        <div id="modem_filter" class="modem-filter">
+            <h3>Modem</h3>
+            <div class="filter-box">
+                <input type="checkbox" name="modem_filter" id="nomad_air" class="modem_filter" value="Nomad Air" data-modem="air">
+                <label for="nomad_air">Nomad Air</label>
+            </div>
+            <div class="filter-box">
+                <input type="checkbox" name="modem_filter" id="nomad_omega" class="modem_filter" value="Nomad Omega" data-modem="omega">
+                <label for="nomad_omega">Nomad Omega</label>
+            </div>
+        </div>
+        <div id="category_filter" class="modem-filter">
+            <h3>Products</h3>
+            <div class="filter-box">
+                <input type="checkbox" name="category_filter" id="nomad_bag" class="category_filter" value="Nomad Bags">
+                <label for="nomad_bag">Bags & Enclosures</label>
+            </div>
+            <div class="filter-box">
+                <input type="checkbox" name="category_filter" id="nomad_batteries" class="category_filter" value="Nomad Batteries">
+                <label for="nomad_batteries">Batteries</label>
+            </div>
+            <div class="filter-box">
+                <input type="checkbox" name="category_filter" id="nomad_connectors" class="category_filter" value="Nomad Connectors">
+                <label for="nomad_connectors">Connectors</label>
+            </div>
+            <div class="filter-box">
+                <input type="checkbox" name="category_filter" id="nomad_auto_power" class="category_filter" value="Nomad Auto Power">
+                <label for="nomad_auto_power">Auto Power</label>
+            </div>
+        </div>
+        <div class="view-result-button">
+            <a class="result-button">View result</a>
+            <a class="clear-button">Clear all</a>
+        </div>
+    </div>
+</div>
+</div>
+
+              
+<div class="product-box-popup">
+{% for product in collections.accessories-all.products %}  
+<div class="product-content {{ product.handle }}" style="display:none;">
+    <div class="close-icon">
+        <a href="javascript:;" class="close-popup">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+  <path d="M22.4999 7.50001L7.49994 22.5M7.49994 7.50001L22.4999 22.5" stroke="#797C8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </a>
+    </div>
+    <div class="top_heading">              
+      <h2>{{ product.title }}</h2>
+      <span>{{ product.price | money }}</span>              
+    </div>
+    <div class="product-image-slider">
+       {% for image in product.images %}
+        <div class="image">
+            <img src="{{ image | img_url: 'master' }}" alt="{{ image.alt | escape }}">	
+        </div>
+       {% endfor %}
+    </div>
+    <div class="buy-and-add-button">
+        <a class="buy-button" data-id="{{ product.selected_or_first_available_variant.id }}">Buy Now</a>
+        <a class="add-to-cart-button" data-id="{{ product.selected_or_first_available_variant.id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path d="M14.0413 7.21456C14.0413 8.08756 13.6945 8.92481 13.0772 9.54212C12.4599 10.1594 11.6226 10.5062 10.7496 10.5062C9.8766 10.5062 9.03935 10.1594 8.42205 9.54212C7.80474 8.92481 7.45794 8.08756 7.45794 7.21456M3.86444 6.72195L3.2884 13.6344C3.16465 15.1194 3.10278 15.8619 3.35379 16.4347C3.57434 16.9379 3.95645 17.3532 4.43963 17.6148C4.98958 17.9125 5.73464 17.9125 7.22476 17.9125H14.2745C15.7646 17.9125 16.5096 17.9125 17.0596 17.6148C17.5428 17.3532 17.9249 16.9379 18.1454 16.4347C18.3964 15.8619 18.3346 15.1194 18.2108 13.6344L17.6348 6.72195C17.5283 5.44426 17.4751 4.80542 17.1921 4.32189C16.943 3.8961 16.572 3.55472 16.1269 3.34179C15.6216 3.09998 14.9805 3.09998 13.6984 3.09998L7.8008 3.09998C6.51868 3.09998 5.87762 3.09998 5.37227 3.34178C4.92726 3.55472 4.55625 3.8961 4.30709 4.32189C4.02415 4.80541 3.97092 5.44426 3.86444 6.72195Z" stroke="black" stroke-opacity="0.8" stroke-width="1.23438" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Add to Cart
+        </a>
+    </div>              
+    <div class="product-title">
+        <div class="product-description">
+            <h3>Description</h3>
+            <p>{{ product.description }}</p>
+        </div>
+    </div>
+    
+</div>
+{% endfor %}                  
+</div>
+
+<!-- Add To Cart Popup Start -->
+	<div class="add-to-cart-popup">
+		<div class="popup-content">
+			<p>
+				<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+				  	<path d="M19.3105 10.8925V7.285C19.3105 4.62852 17.157 2.47501 14.5005 2.47501C11.8441 2.47501 9.69054 4.62852 9.69054 7.285V10.8925M4.38993 12.5182L3.66843 20.2142C3.46329 22.4024 3.36072 23.4965 3.7238 24.3416C4.04276 25.084 4.60171 25.6978 5.31106 26.0846C6.11855 26.525 7.21744 26.525 9.41523 26.525H19.5859C21.7836 26.525 22.8825 26.525 23.69 26.0846C24.3994 25.6978 24.9583 25.084 25.2773 24.3416C25.6404 23.4965 25.5378 22.4024 25.3327 20.2142L24.6112 12.5182C24.4379 10.6705 24.3513 9.74656 23.9358 9.04806C23.5698 8.43289 23.0291 7.9405 22.3824 7.63354C21.6482 7.28501 20.7202 7.28501 18.8644 7.28501L10.1367 7.285C8.28084 7.285 7.3529 7.285 6.61866 7.63354C5.97201 7.9405 5.4313 8.43289 5.06532 9.04806C4.64977 9.74656 4.56316 10.6705 4.38993 12.5182Z" stroke="white" stroke-width="2.16018" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+				Product added to cart
+			</p>
+		</div>
+	</div>
+	<!-- Add To Cart Popup End -->                  
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+<script src="{{ 'jquery.cookie.js' | asset_url }}"></script>
+<script src="{{ 'jquery.serialize-object.min.js' | asset_url }}"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  var $j = jQuery.noConflict();
+
+function update_count(){
+  $j('.pro_count_1').text($j("#tab-1").find(".product-list .product-box:visible").length);
+  $j('.pro_count_2').text($j("#tab-2").find(".product-list .product-box:visible").length);
+  $j('.pro_count_3').text($j("#tab-3").find(".product-list .product-box:visible").length);
+  $j('.pro_count_4').text($j("#tab-4").find(".product-list .product-box:visible").length);
+  $j('.pro_count_5').text($j("#tab-5").find(".product-list .product-box:visible").length);
+}  
+
+  
+    $j('.banner-content').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+    });
+    $j('.product-image-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+    });
+
+    $j(".filter-popup-open").click(function() {
+        $j(".filter-popup").addClass("active");
+        $j(".hidden-popup-overlay").addClass("active");
+      $j('body').addClass('stopscroll');
+    });
+    $j(".close-popup").click(function() {
+        $j(".filter-popup").removeClass("active");
+        $j(".hidden-popup-overlay").removeClass("active");
+        $j('body').removeClass('stopscroll');
+    });
+    $j(".product-box-popup-open").click(function() {
+        $j('.product-content').hide();
+        $j(".product-box-popup").addClass("active");
+        $j(".hidden-popup-overlay").addClass("active");
+        var pro_selecter = $j(this).attr('data-product');
+        $j('.'+pro_selecter).show();
+        $j('body').addClass('stopscroll');
+    });
+    $j(".close-popup").click(function() {
+        $j(".product-box-popup").removeClass("active");
+        $j('body').removeClass('stopscroll');
+    });
+
+    $j('.tabs-stage .tabing-details').hide();
+    $j('.tabs-stage div:first').show();
+    $j('.tabs-nav li:first').addClass('tab-active');
+    // Change tab class and display content
+    $j('.tabs-nav a').on('click', function(event){
+      event.preventDefault();
+      $j('.tabs-nav li').removeClass('tab-active');
+      $j(this).parent().addClass('tab-active');
+      $j('.tabs-stage .tabing-details').hide();
+      $j($j(this).attr('href')).show();
+      update_count();
+    });
+
+$j('.buy_now_product, .buy-button').on('click', function(){
+$j.ajax({
+type: 'POST',
+url: '/cart/add.js',
+data: {
+  quantity: 1,
+  id: $j(this).attr("data-id")
+},
+dataType: 'json', 
+success: function (data) { 
+  document.location = '/checkout';
+} 
+});
+});  
+
+$j('.add_to_cart_product, .add-to-cart-button').on('click', function(){
+$j.ajax({
+type: 'POST',
+url: '/cart/add.js',
+data: {
+  quantity: 1,
+  id: $j(this).attr("data-id")
+},
+dataType: 'json', 
+success: function (data) { 
+  $j.ajax({
+    type: 'GET',
+    url: '/cart.js',
+    dataType: 'json',
+    success: function(cartData) {
+      $j('.header__cart-count').text(cartData.item_count);
+    }
+  });
+  $j('.add-to-cart-popup').addClass('active');
+  setTimeout(function(){ 
+     $j('.add-to-cart-popup').removeClass('active');
+  }, 2000);
+} 
+});
+});
+
+$j('input[type="checkbox"]').change(function () {
+  var filter2Values = $j('input[name="modem_filter"]:checked').map(function () {
+    return $j(this).attr('data-modem');
+  }).get();
+  var filter1Values = $j('input[name="category_filter"]:checked').map(function () {
+    return $j(this).val();
+  }).get();
+  if(filter2Values.length > 0){
+    filter2Values.push('air-omega');
+  }
+  console.log(filter2Values);
+  $j(".product-box").hide();
+  $j(".product-box").each(function () {
+    var category = $j(this).data('category');
+    var modem = $j(this).data('modem');
+    var showProduct = (filter1Values.length === 0 || filter1Values.includes(category)) &&
+                     (filter2Values.length === 0 || filter2Values.includes(modem));
+    if (showProduct) {
+      $j(this).show();
+    }
+  });
+ update_count();
+});
+
+$j('.result-button').click(function(){
+  $j(".filter-popup").removeClass("active");
+  $j(".hidden-popup-overlay").removeClass("active");
+});
+  
+$j('.clear-button').click(function(){
+  $j('.category_filter').removeClass('active');
+  $j('.modem_filter').removeClass('active');
+  $('.category_filter').prop('checked', false);
+  $('.modem_filter').prop('checked', false);
+  $j('.product-box').show();
+  $j(".filter-popup").removeClass("active");
+  $j(".hidden-popup-overlay").removeClass("active");
+  update_count();
+});  
+  
+</script>

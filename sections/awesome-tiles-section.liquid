@@ -1,0 +1,91 @@
+{% assign ss = section.settings %}
+
+<div class="awesome-tiles">
+	{% if ss.title %}
+		<h2 class="awesome-tiles__title">{{ ss.title }}</h2>
+	{% endif %}
+	{% if ss.description %}
+		<div class="awesome-tiles__description">
+			<p>{{ ss.description }}</p>
+		</div>
+	{% endif %}
+	{% if section.blocks %}
+		<div class="row v-gutters">
+			{% for card in section.blocks %}
+				<div class="col-md-6 col-12">
+					<div class="awesome-tiles__card card">
+						{% if card.settings.image %}
+							<div class="card__image">
+								<div class="ratio">
+									{% assign image = card.settings.image %}
+									{{ image | image_url: width: image.width | image_tag }}
+								</div>
+							</div>
+						{% endif %}
+						{% if card.settings.title %}
+							<h3 class="card__title">{{ card.settings.title }}</h3>
+						{% endif %}
+						{% if card.settings.button_text %}
+							<div class="card__button">
+								<a href="{{ card.settings.button_url }}" id="button-{{ card.id }}" class="btn outline stretch">{{ card.settings.button_text }}</a>
+							</div>
+						{% endif %}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+</div>
+
+{% schema %}
+{
+	"name": "Awesome tiles section",
+	"class": "container",
+	"tag": "div",
+	"presets": [
+		{
+			"name": "Awesome Tiles Section"
+		}
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "description",
+			"label": "Description"
+		}
+	],
+	"blocks": [
+		{
+			"type": "card",
+			"name": "Card",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Title"
+				},
+				{
+					"type": "text",
+					"id": "button_text",
+					"label": "Button Text"
+				},
+				{
+					"type": "url",
+					"id": "button_url",
+					"label": "Button URL"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

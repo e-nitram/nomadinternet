@@ -1,0 +1,117 @@
+.raptor-banner {
+  background-image: var(--bg-mobile-image);
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.raptor-banner::before {
+  content: " ";
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000B2;
+  z-index: 0;
+}
+
+.raptor-banner .container {
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.raptor-banner .sub-heading {
+  font-size: 18px;
+  font-family: "Rajdhani";
+  line-height: 20.42px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.raptor-banner .heading {
+  font-size: 36px;
+  font-family: "Rajdhani";
+  line-height: 32.4px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.raptor-banner .content {
+  font-size: 18px;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  line-height: 24.3px;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.raptor-banner .content * {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.raptor-banner .raptor-banner__image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+@media (min-width: 991px) {
+  .raptor-banner .content {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .raptor-banner {
+    background-image: var(--bg-image);
+    height: 900px;
+  }
+
+  .raptor-banner .sub-heading {
+    font-size: 24px;
+    line-height: 30.63px;
+  }
+
+  .raptor-banner .heading {
+    font-size: 70px;
+    line-height: 63px;
+  }
+
+  .raptor-banner .content {
+    font-size: 28px;
+    line-height: 36.4px;
+  }
+
+  .raptor-banner .raptor-banner__image {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* @media (min-width: 1200px) {
+  .raptor-banner .heading {
+    max-width: 750px;
+  }
+} */
+
+@media (max-width: 400px) {
+  .raptor-banner .container {
+    margin-top: 50px;
+  }
+}

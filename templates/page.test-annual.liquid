@@ -1,0 +1,1221 @@
+{% section 'hero-section' %}
+{% section 'internet-plans-section' %}
+<!-- THIS IS THE LIVE MEMBERSHIP PLANS PAGE-->
+{% comment %}
+<section class="section-membership section-overlay-plan pb-5 mb-5">
+	<div class="container">
+		<div class="section-title text-center pt-3 pb-3">
+          <h1 class="title text-white pt-5 pb-5 mb-0">Internet For Every Area</h1>
+		</div>
+		<div class="row">
+			<div class="col col-12 col-sm-12 col-lg-4 mb-3 mb-lg-0">
+				<div class="card card-body h-100 rounded">
+					<h4 class="mb-3 mt-1"><i class="far fa-circle"></i> <span>Which Plan Is Right for Me?</span></h4>
+					<p>Each color represents one of the major cellular carrier networks. Therefore, the primary difference between each plan is the coverage each network provides. View each of our plans’ coverage to identify which is most likely to work at your usage location(s). For help with selecting a plan, visit the <a href="/pages/help-me-choose"> Help Me Choose </a> page. If you need help just “chat” us.</p>
+				</div>
+			</div>
+			<div class="col col-12 col-sm-12 col-lg-4 mb-3 mb-lg-0">
+				<div class="card card-body h-100 rounded">
+					<h4 class="mb-3 mt-1"><i class="far fa-circle"></i> Which Device Is Right for Me?</h4>
+					<p>The two main device types we offer can be used at the same places but have slight differences. The “Travel WiFi Router” has a battery and can be used anywhere you are, but the “WiFi Router” has external antennas so it can achieve faster speeds. All of our devices ship pre-configured ready to plug in. Keep in mind the device you receive might differ from the ones displayed here as we choose the one that works best in your area.</p>
+				</div>
+			</div>
+			<div class="col col-12 col-sm-12 col-lg-4 mb-3 mb-lg-0">
+				<div class="card card-body h-100 rounded">
+					<h4 class="mb-3 mt-1"><i class="far fa-circle"></i> What if It Doesn’t Work for Me?</h4>
+					<p>If the plan you initially choose does not connect or is slower than expected we have you covered! You can change plans until you get the speeds you need and we will ship you new plans until we find the best one for you. Finally, if you are not 100% happy our 7-Day No-Risk Return Policy allows you to return your device for a full refund.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endcomment %}
+
+<section class="container membership-plans pb-lg-5 pt-lg-5 mt-5 mb-lg-5">
+	<div class="container">
+		<div class="section-title col-12 col-lg-6 pl-lg-0 pt-lg-5 pb-5">
+			<h2 class="title">Membership Plans</h2>
+			<p style="color:#000; font-weight:500;">Our support team is ready to help you find the right plan. Connect with us via the chat function at the bottom of the page.</p>
+			<ul class="list-unstyled row mt-5">
+				<li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> High-Speed 4G LTE</li>
+				<li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> No Contract</li>
+				<li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> Up to Unlimited Data</li>
+				<li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> No Credit Check</li>
+				<li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> Home & On-The-Go</li>
+				<li class="col-md-4 col-lg-6 mb-4 d-flex align-items-center"><i class="fas fa-check"></i> 7-Day No Risk</li>
+			</ul>
+		</div>
+		<div class="col-12 d-block d-lg-none">
+			{% render 'image' with imageSrc: 'membership-plan.png', classes: 'img-fluid', altTag: 'membership plan', isAsset: 'true' %}
+        </div>
+	</div>
+</section> 
+
+<section class="section-availability ">
+	<div class="container">
+	<div class="section-availability-bg border rounded">
+		<div class="col-lg-5 p-5">
+			<h2 class="unsure-title font-weight-bold text-black">
+			Unsure of which plan is best at your address?</h2>
+			<p class="text-black mb-5">Let us recommend the right plan for you.</p>
+				<a href="#address-lookup-request"  data-toggle="modal"  class="modal-link btn btn-primary rounded text-uppercase mb-5 font-weight-bold">Check availability</a>
+		</div>
+		</div>
+	</div>
+</section>
+<div class="modal fade modal-theme modal-fee" tabindex="-1" role="dialog" id="fee_modal" aria-hidden="true">
+	<button class="close" data-dismiss="modal" title="Close">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg>
+	</button>
+	<div class="modal-dialog modal-md" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="modal-fee__content">
+					<h2 class="title">One Time Membership Fee</h2>
+					<p>When becoming a member, you are responsible for paying a One-Time Membership Fee that covers the administration and support of your account. Therefore, you are the owner of the membership but you don’t own the device or the carrier account your line is on. Upon receipt of your item, you will be charged for your first month of service.</p>
+					<p>You may of course cancel your subscription with us at any time by simply returning your device and we never charge any cancellation fees! Easy, Simple, Clean!</p>
+                  	<p style="font-size: 12px; color: #313131;">*Items pictured are for illustrative purposes only and the final product received may vary slightly.</p>
+              </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	 
+{{ 'option_selection.js' | shopify_asset_url | script_tag }}
+<script>
+
+	window.timber = window.timber || {};
+
+	timber.switchImage = function (src, imgObject, el) {
+		// Make sure element is a jquery object
+		var $el = $(el);
+		$el.attr('src', src);
+	};
+
+	timber.productPagepink = function (options) {
+		var moneyFormat = options.money_format,
+				variant = options.variant,
+				selector = options.selector;
+
+		// Selectors
+		var $productImage = $('.card-pink img'),
+				$productPrice = $('.card-pink .fee .price-amount'),
+				$productwasPrice = $('.card-pink .fee .price-amount_was');
+
+		if (variant) {
+			// Update variant image, if one is set
+			if (variant.featured_image) {
+				var newImg = variant.featured_image,
+						el = $productImage[0];
+				Shopify.Image.switchImage(newImg, el, timber.switchImage);
+			}
+			console.log(variant);
+			if(variant.title  == 'Sim Only (bring your own device)'){
+				$productwasPrice.html('Free');
+				$('#product-form-pink .fee .price-amount').css('color','red');
+				$('#product-form-pink .fee del').css('text-decoration','none');
+				$('.card-pink .fee .hide_on_sim').hide();
+			}
+			else{
+				$('.card-pink .fee .hide_on_sim').show();
+				$productPrice.html(Shopify.formatMoney(variant.price, moneyFormat));
+				$productwasPrice.html(Shopify.formatMoney(variant.compare_at_price, moneyFormat));
+				$('#product-form-pink .fee .price-amount').css('color','#515151');
+				$('#product-form-pink .fee del').css('text-decoration','line-through');
+			}
+
+		}
+	};
+
+	timber.productPageblue = function (options) {
+		var moneyFormat = options.money_format,
+				variant = options.variant,
+				selector = options.selector;
+
+		// Selectors
+		var $productImage = $('.card-blue img'),
+				$productPrice = $('.card-blue .fee .price-amount'),
+				$productwasPrice = $('.card-blue .fee .price-amount_was');
+
+		if (variant) {
+			// Update variant image, if one is set
+			if (variant.featured_image) {
+				var newImg = variant.featured_image,
+						el = $productImage[0];
+				Shopify.Image.switchImage(newImg, el, timber.switchImage);
+			}
+
+			if(variant.title  == 'Sim Only (bring your own device)'){
+				$productwasPrice.html('Free');
+				$('#product-form-blue .fee .price-amount').css('color','red');
+				$('#product-form-blue .fee del').css('text-decoration','none');
+				$('.card-blue .fee .hide_on_sim').hide();
+			}
+			else{
+				$('.card-blue .fee .hide_on_sim').show();
+				$productPrice.html(Shopify.formatMoney(variant.price, moneyFormat));
+				$productwasPrice.html(Shopify.formatMoney(variant.compare_at_price, moneyFormat));
+				$('#product-form-blue .fee .price-amount').css('color','#515151');
+				$('#product-form-blue .fee del').css('text-decoration','line-through');
+			}
+		}
+	};
+
+	/* timber.productPagered = function (options) {
+		var moneyFormat = options.money_format,
+				variant = options.variant,
+				selector = options.selector;
+
+		// Selectors
+		var $productImage = $('.card-red img'),
+				$productPrice = $('.card-red .fee .price-amount');
+
+		if (variant) {
+			// Update variant image, if one is set
+			if (variant.featured_image) {
+				var newImg = variant.featured_image,
+						el = $productImage[0];
+				Shopify.Image.switchImage(newImg, el, timber.switchImage);
+			}
+
+			// Regardless of stock, update the product price
+			$productPrice.html(Shopify.formatMoney(variant.price, moneyFormat));
+		}
+	};*/
+
+	timber.productPageyellow = function (options) {
+		var moneyFormat = options.money_format,
+				variant = options.variant,
+				selector = options.selector;
+
+		// Selectors
+		var $productImage = $('.card-yellow img'),
+				$productPrice = $('.card-yellow .fee .price-amount'),
+				$productwasPrice = $('.card-yellow .fee .price-amount_was');
+
+		if (variant) {
+			// Update variant image, if one is set
+			if (variant.featured_image) {
+				var newImg = variant.featured_image,
+						el = $productImage[0];
+				Shopify.Image.switchImage(newImg, el, timber.switchImage);
+			}
+
+			// Regardless of stock, update the product price
+			$productPrice.html(Shopify.formatMoney(variant.price, moneyFormat));
+			//$productwasPrice.html(Shopify.formatMoney(variant.compare_at_price, moneyFormat));
+		}
+	};
+
+
+
+	var selectCallbackpink = function(variant, selector) {
+		timber.productPagepink({
+			money_format: "{{ shop.money_format }}",
+			variant: variant,
+			selector: selector
+		});
+	};
+	var selectCallbackblue = function(variant, selector) {
+		timber.productPageblue({
+			money_format: "{{ shop.money_format }}",
+			variant: variant,
+			selector: selector
+		});
+	};
+	var selectCallbackred = function(variant, selector) {
+		timber.productPagered({
+			money_format: "{{ shop.money_format }}",
+			variant: variant,
+			selector: selector
+		});
+	};
+	var selectCallbackyellow = function(variant, selector) {
+		timber.productPageyellow({
+			money_format: "{{ shop.money_format }}",
+			variant: variant,
+			selector: selector
+		});
+	};
+ 
+</script>
+
+
+<script>
+	$(document).ready(function(){
+		$("#sim-activator").click(function(){
+			var already_have = 0;
+	         ttq.track('AddToCart');
+			 
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+						$.each(cart.items, function(index, cartItem){
+							if(cartItem.product_title == 'Very Blue Plan'){
+								already_have = 1;
+							}
+						});
+						if(already_have == 0)
+						 {
+							var params = {
+								type: 'POST',
+								url: '/cart/add.js',
+								data: $("#add-item-form-blue-sim").serialize(),
+								dataType: 'json',
+								success: function(line_item) { 
+										var data = {
+											"id" : 31607888773178,
+											"quantity" : 1,
+											"properties[Note]": "After 30 days $149/month",
+											"properties[shipping_interval_unit_type]": 'days',
+											"properties[shipping_interval_frequency]": 30,
+											"properties[subscription_id]": 252048
+										}; 
+									$.ajax({
+										type: 'POST',
+										url: '/cart/add.js',
+										dataType: 'json',
+										data: data,
+										success: function(){
+											window.location.href='/cart';
+										},
+										error: function (request, status, error) {
+											console.log(request.responseText);
+										}
+									});
+								},
+								error: function(XMLHttpRequest, textStatus) {
+									console.error(XMLHttpRequest, textStatus);
+								}
+							};
+							jQuery.ajax(params); 
+
+						}
+					else{
+						$('.already_have_plan').trigger('click');
+					}
+				},
+			});
+		});
+		
+		$("#Nighthawk-activator").click(function(){
+			var already_have = 0;
+	         ttq.track('AddToCart');
+			 
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+						$.each(cart.items, function(index, cartItem){
+							if(cartItem.product_title == 'Very Blue Plan'){
+								already_have = 1;
+							}
+						});
+
+						if(already_have == 0) {
+							var params = {
+								type: 'POST',
+								url: '/cart/add.js',
+								data: $("#add-item-form-blue-Nighthawk").serialize(),
+								dataType: 'json',
+								success: function(line_item) { 
+										var data = {
+											"id" : 31501542064186,
+											"quantity" : 1,
+											"properties[Note]": "After 30 days $149/month",
+											"properties[shipping_interval_unit_type]": 'days',
+											"properties[shipping_interval_frequency]": 30,
+											"properties[subscription_id]": 240698
+										}; 
+									$.ajax({
+										type: 'POST',
+										url: '/cart/add.js',
+										dataType: 'json',
+										data: data,
+										success: function(){
+											window.location.href='/cart';
+										},
+										error: function (request, status, error) {
+											console.log(request.responseText);
+										}
+									});
+								},
+								error: function(XMLHttpRequest, textStatus) {
+									console.error(XMLHttpRequest, textStatus);
+								}
+							};
+							jQuery.ajax(params); 
+						}
+						else{
+							$('.already_have_plan').trigger('click');
+						}
+				},
+			});
+		});
+
+
+		
+		$("#blue-wifi-router").click(function(){
+			var already_have = 0;
+	         ttq.track('AddToCart');
+			 
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+					$.each(cart.items, function(index, cartItem){
+						if(cartItem.product_title == 'Very Blue Plan'){
+							already_have = 1;
+						}
+					});
+						
+					if(already_have == 0){
+						var params = {
+							type: 'POST',
+							url: '/cart/add.js',
+							data: $("#blue-GL-WiFi-Router-form").serialize(),
+							dataType: 'json',
+							success: function(line_item) { 
+									var data = {
+										"id" : 31501542064186,
+										"quantity" : 1,
+										"properties[Note]": "After 30 days $149/month",
+										"properties[shipping_interval_unit_type]": 'days',
+										"properties[shipping_interval_frequency]": 30,
+										"properties[subscription_id]": 240698
+									}; 
+								$.ajax({
+									type: 'POST',
+									url: '/cart/add.js',
+									dataType: 'json',
+									data: data,
+									success: function(){
+										window.location.href='/cart';
+									},
+									error: function (request, status, error) {
+										console.log(request.responseText);
+									}
+								});
+							},
+							error: function(XMLHttpRequest, textStatus) {
+								console.error(XMLHttpRequest, textStatus);
+							}
+						};
+						jQuery.ajax(params); 
+					}
+					else{
+						$('.already_have_plan').trigger('click');
+					}
+
+
+				},
+			});
+		});
+
+
+
+		
+		$("#blue-travel-wifi-router").click(function(){
+			var already_have = 0;
+	         ttq.track('AddToCart');
+			 
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+					$.each(cart.items, function(index, cartItem){
+						if(cartItem.product_title == 'Very Blue Plan'){
+							already_have = 1;
+						}
+					});
+
+					if(already_have == 0){
+						
+						var params = {
+							type: 'POST',
+							url: '/cart/add.js',
+							data: $("#blue--travel-GL-WiFi-Router-form").serialize(),
+							dataType: 'json',
+							success: function(line_item) { 
+									var data = {
+										"id" : 31501542064186,
+										"quantity" : 1,
+										"properties[Note]": "After 30 days $149/month",
+										"properties[shipping_interval_unit_type]": 'days',
+										"properties[shipping_interval_frequency]": 30,
+										"properties[subscription_id]": 240698
+									}; 
+								$.ajax({
+									type: 'POST',
+									url: '/cart/add.js',
+									dataType: 'json',
+									data: data,
+									success: function(){
+										window.location.href='/cart';
+									},
+									error: function (request, status, error) {
+										console.log(request.responseText);
+									}
+								});
+							},
+							error: function(XMLHttpRequest, textStatus) {
+								console.error(XMLHttpRequest, textStatus);
+							}
+						};
+						jQuery.ajax(params); 
+					}
+					else{
+						$('.already_have_plan').trigger('click');
+					}
+
+				},
+			});
+		});
+
+
+		$("#red-wifi-router").click(function(){
+			var already_have = 0;
+	         ttq.track('AddToCart');
+			 
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+						$.each(cart.items, function(index, cartItem){
+							if(cartItem.product_title == 'Deep Red Plan'){
+								already_have = 1;
+							}
+						});
+					if( already_have == 0 ) {	
+						var data = {
+							"id" : 31403939921978,
+							"quantity" : 1,
+							"properties[Note]": "After 30 days $149/month",
+							"properties[shipping_interval_unit_type]": 'days',
+							"properties[shipping_interval_frequency]": 30,
+							"properties[subscription_id]": 240698
+						};
+						$.ajax({
+							type: 'POST',
+							url: '/cart/add.js',
+							dataType: 'json',
+							data: data,
+							success: function(){
+								window.location.href='/cart';
+							},
+							error: function (request, status, error) {
+								console.log(request.responseText);
+							}
+						});
+					}
+					else {
+						$('.already_have_plan').trigger('click');
+					}
+
+				},
+			});
+		});
+      
+      		$("#annual-plan").click(function(){
+			var already_have = 0;
+			 console.log('annual plan add to cart');
+	         ttq.track('AddToCart');
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+					$.each(cart.items, function(index, cartItem){
+						if(cartItem.product_title == 'SIM Only (Bring Your Own Device) Annual Plan'){
+							already_have = 1;
+						}
+					});
+				
+					if(already_have == 0) {
+                        var data = {
+                          	"id" : 39520954515514,
+                          	"quantity" : 1,
+                          	"properties[Note]": "Annual price for 1 year of coverage",
+							"properties[shipping_interval_unit_type]": 'days',
+							"properties[shipping_interval_frequency]": 365,
+							"properties[subscription_id]": 123456
+                        };
+						$.ajax({
+							type: 'POST',
+							url: '/cart/add.js',
+							dataType: 'json',
+							data: data,
+							success: function(){
+								window.location.href='/cart';
+							},
+							error: function (request, status, error) {
+								console.log(request.responseText);
+							}
+						});						
+					}
+					else{
+						$('.already_have_plan').trigger('click');
+					}
+
+				},
+			});
+		});
+      
+      
+      	$("#work-anywhere-router").click(function(){
+			var already_have = 0;
+			 console.log('work-anywhere-router add to cart');
+	         ttq.track('AddToCart');
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+					$.each(cart.items, function(index, cartItem){
+						if(cartItem.product_title == 'Work Anywhere Plan'){
+							already_have = 1;
+						}
+					});
+				
+					if(already_have == 0) {
+						var data = {
+							"id" : 39534050017338,
+							"quantity" : 1,
+							"properties[Note]": "After 30 days $149/month",
+							"properties[shipping_interval_unit_type]": 'days',
+							"properties[shipping_interval_frequency]": 30,
+							"properties[subscription_id]": 240698
+						};
+						$.ajax({
+							type: 'POST',
+							url: '/cart/add.js',
+							dataType: 'json',
+							data: data,
+							success: function(){
+								window.location.href='/cart';
+							},
+							error: function (request, status, error) {
+								console.log(request.responseText);
+							}
+						});						
+					}
+					else{
+						$('.already_have_plan').trigger('click');
+					}
+
+				},
+			});
+		});
+      
+      	    $("#work-anywhere-router-travel").click(function(){
+			var already_have = 0;
+			 console.log('work-anywhere-router-travel add to cart');
+	         ttq.track('AddToCart');
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+					$.each(cart.items, function(index, cartItem){
+						if(cartItem.product_title == 'Works Anywhere Plan – Travel WiFi Router'){
+							already_have = 1;
+						}
+					});
+				
+					if(already_have == 0) {
+						var data = {
+							"id" : 39591263862842,
+							"quantity" : 1,
+							"properties[Note]": "After 30 days $149/month",
+							"properties[shipping_interval_unit_type]": 'days',
+							"properties[shipping_interval_frequency]": 30,
+							"properties[subscription_id]": 240698
+						};
+						$.ajax({
+							type: 'POST',
+							url: '/cart/add.js',
+							dataType: 'json',
+							data: data,
+							success: function(){
+								window.location.href='/cart';
+							},
+							error: function (request, status, error) {
+								console.log(request.responseText);
+							}
+						});						
+					}
+					else{
+						$('.already_have_plan').trigger('click');
+					}
+
+				},
+			});
+		});
+		
+		$("#pink-wifi-router").click(function(){
+			var already_have = 0;
+			 console.log('pink-wifi-router add to cart');
+	         ttq.track('AddToCart');
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+					$.each(cart.items, function(index, cartItem){
+						if(cartItem.product_title == 'Strong Pink Plan'){
+							already_have = 1;
+						}
+					});
+				
+					if(already_have == 0) {
+						var data = {
+							"id" : 31403862327354,
+							"quantity" : 1,
+							"properties[Note]": "After 30 days $149/month",
+							"properties[shipping_interval_unit_type]": 'days',
+							"properties[shipping_interval_frequency]": 30,
+							"properties[subscription_id]": 240698
+						};
+						$.ajax({
+							type: 'POST',
+							url: '/cart/add.js',
+							dataType: 'json',
+							data: data,
+							success: function(){
+								window.location.href='/cart';
+							},
+							error: function (request, status, error) {
+								console.log(request.responseText);
+							}
+						});						
+					}
+					else{
+						$('.already_have_plan').trigger('click');
+					}
+
+				},
+			});
+		});
+
+
+		
+		$("#pink-travel-wifi-router").click(function(){
+			var already_have = 0;
+			 console.log('pink travel router add to cart');
+	         ttq.track('AddToCart');
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+						$.each(cart.items, function(index, cartItem){
+							if(cartItem.product_title == 'Strong Pink Plan'){
+								already_have = 1;
+							}
+						});
+						
+
+						if(already_have == 0){
+							var data = {
+								"id" : 31851636228154,
+								"quantity" : 1,
+								"properties[Note]": "After 30 days $149/month",
+								"properties[shipping_interval_unit_type]": 'days',
+								"properties[shipping_interval_frequency]": 30,
+								"properties[subscription_id]": 240698
+							};
+							$.ajax({
+								type: 'POST',
+								url: '/cart/add.js',
+								dataType: 'json',
+								data: data,
+								success: function(){
+									window.location.href='/cart';
+								},
+								error: function (request, status, error) {
+									console.log(request.responseText);
+								}
+							});              
+						}
+						else{
+							$('.already_have_plan').trigger('click');
+						}
+
+				},
+			});
+		});
+
+		$('.single_add_to_cart_button_pink').click(function(){
+
+			var already_have = 0;
+	         ttq.track('AddToCart');
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+					$.each(cart.items, function(index, cartItem){
+						if(cartItem.product_title == 'Strong Pink Plan'){
+							already_have = 1;
+						}
+					});
+
+					if(already_have == 0){
+						var params = {
+							type: 'POST',
+							url: '/cart/add.js',
+							data: $('#product-form-pink').serialize(),
+							dataType: 'json',
+							success: function(line_item) {
+
+								if($('#productSelect_pink option:selected').text() == 'Sim Only (bring your own device)'){
+									var data = {
+										"id" : 31723159519290,
+										"quantity" : 1,
+										"properties[Note]": "After 30 days $129/month",
+										"properties[shipping_interval_unit_type]": 'days',
+										"properties[shipping_interval_frequency]": 30,
+										"properties[subscription_id]": 256060
+									};
+								}
+								else{
+									var data = {
+										"id" : 32242202279994,
+										"quantity" : 1,
+										"properties[Note]": "After 30 days $99/month",
+										"properties[shipping_interval_unit_type]": 'days',
+										"properties[shipping_interval_frequency]": 30,
+										"properties[subscription_id]": 240698
+									};
+								}
+								$.ajax({
+									type: 'POST',
+									url: '/cart/add.js',
+									dataType: 'json',
+									data: data,
+									success: function(){
+										window.location.href='/cart';
+									},
+									error: function (request, status, error) {
+										console.log(request.responseText);
+									}
+								});
+							},
+							error: function(XMLHttpRequest, textStatus) {
+								console.error(XMLHttpRequest, textStatus);
+							}
+						};
+						jQuery.ajax(params);
+					}
+					else{
+						$('.already_have_plan').trigger('click');
+					}
+
+				},
+			});
+
+		});
+		$('.single_add_to_cart_button_blue').click(function(){
+			var already_have = 0;
+	         ttq.track('AddToCart');
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+					$.each(cart.items, function(index, cartItem){
+						if(cartItem.product_title == 'Very Blue Plan'){
+							already_have = 1;
+						}
+					});
+
+					if(already_have == 0){
+						var params = {
+							type: 'POST',
+							url: '/cart/add.js',
+							data: $('#product-form-blue').serialize(),
+							dataType: 'json',
+							success: function(line_item) {
+								if($('#productSelect_blue option:selected').text() == 'Sim Only (bring your own device)'){
+									var data = {
+										"id" : 31607888773178,
+										"quantity" : 1,
+										"properties[Note]": "After 30 days $149/month",
+										"properties[shipping_interval_unit_type]": 'days',
+										"properties[shipping_interval_frequency]": 30,
+										"properties[subscription_id]": 252048
+									};
+								}
+								else{
+									var data = {
+										"id" : 31501542064186,
+										"quantity" : 1,
+										"properties[Note]": "After 30 days $149/month",
+										"properties[shipping_interval_unit_type]": 'days',
+										"properties[shipping_interval_frequency]": 30,
+										"properties[subscription_id]": 240698
+									};
+								}
+								$.ajax({
+									type: 'POST',
+									url: '/cart/add.js',
+									dataType: 'json',
+									data: data,
+									success: function(){
+										window.location.href='/cart';
+									},
+									error: function (request, status, error) {
+										console.log(request.responseText);
+									}
+								});
+							},
+							error: function(XMLHttpRequest, textStatus) {
+								console.error(XMLHttpRequest, textStatus);
+							}
+						};
+						jQuery.ajax(params);
+					}
+					else{
+						$('.already_have_plan').trigger('click');
+					}
+
+				},
+			});
+
+		});
+		$('.single_add_to_cart_button_red').click(function(){
+
+			var already_have = 0;
+	         ttq.track('AddToCart');
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+					$.each(cart.items, function(index, cartItem){
+						if(cartItem.product_title == 'Deep Red Plan'){
+							already_have = 1;
+						}
+					});
+
+					if(already_have == 0){
+						var params = {
+							type: 'POST',
+							url: '/cart/add.js',
+							data: $('#product-form-red').serialize(),
+							dataType: 'json',
+							success: function(line_item) {
+								var data = {
+									"id" : 31407604400186,
+									"quantity" : 1,
+									"properties[Note]": "After 30 days $149/month",
+									"properties[shipping_interval_unit_type]": 'days',
+									"properties[shipping_interval_frequency]": 30,
+									"properties[subscription_id]": 240698
+								};
+
+								$.ajax({
+									type: 'POST',
+									url: '/cart/add.js',
+									dataType: 'json',
+									data: data,
+									success: function(){
+										window.location.href='/cart';
+									},
+									error: function (request, status, error) {
+										console.log(request.responseText);
+									}
+								});
+							},
+							error: function(XMLHttpRequest, textStatus) {
+								console.error(XMLHttpRequest, textStatus);
+							}
+						};
+						jQuery.ajax(params);
+					}
+					else{
+						$('.already_have_plan').trigger('click');
+					}
+
+				},
+			});
+
+		});
+		
+		$('.single_add_to_cart_button_yellow').click(function(){
+			var already_have = 0;
+	         ttq.track('AddToCart');
+			$.ajax({
+				type: 'GET',
+				url: '/cart.js',
+				dataType: 'json',
+				success: function(cart) {
+					$.each(cart.items, function(index, cartItem){
+						if(cartItem.product_title == 'Bright Yellow Plan'){
+							already_have = 1;
+						}
+					});
+
+					if(already_have == 0){
+						var params = {
+							type: 'POST',
+							url: '/cart/add.js',
+							data: $('#product-form-yellow').serialize(),
+							dataType: 'json',
+							success: function(line_item) {
+								var data = {
+									"id" : 31407605448762,
+									"quantity" : 1,
+									"properties[Note]": "After 30 days $179/month",
+									"properties[shipping_interval_unit_type]": 'days',
+									"properties[shipping_interval_frequency]": 30,
+									"properties[subscription_id]": 240698
+								};
+
+								$.ajax({
+									type: 'POST',
+									url: '/cart/add.js',
+									dataType: 'json',
+									data: data,
+									success: function(){
+										window.location.href='/cart';
+									},
+									error: function (request, status, error) {
+										console.log(request.responseText);
+									}
+								});
+							},
+							error: function(XMLHttpRequest, textStatus) {
+								console.error(XMLHttpRequest, textStatus);
+							}
+						};
+						jQuery.ajax(params);
+					}
+					else{
+						$('.already_have_plan').trigger('click');
+					}
+
+				},
+			});
+
+
+		});
+	});
+
+
+</script>
+<a class="already_have_plan" href="#already_have_plan" data-toggle="modal" style="display:none;">Already Have Plan</a>
+<div class="modal fade modal-theme modal-guarantee" tabindex="-1" role="dialog" id="already_have_plan" aria-hidden="true">
+	<button class="close" data-dismiss="modal" title="Close">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg>
+	</button>
+	<div class="modal-dialog modal-md" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="modal-fee__content" style="text-align:center">
+					<h2 class="title mb-4">Attention!!</h2>
+					<p>You already have this plan in your cart.</p>
+					<a href="/cart" class="btn btn-primary">View Cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade modal-theme" tabindex="-1" role="dialog" id="address-lookup-request" aria-hidden="true">
+	<button class="close" data-dismiss="modal" title="Close">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z"></path></svg>
+	</button>
+	<div class="modal-dialog modal-xl" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="modal-fee">
+					<section class="d-flex align-items-center">
+						<div class="container">
+							<div class="section-title text-center mb-4">
+								<h1 class="title mb-3">Address Lookup Request</h1>
+								<meta charset="utf-8" />
+								<p>Unsure of which plan is best at your address? <br /> Fill out the form below and let our in-house team of experts recommend the right plan for you!</p>
+							</div>
+						</div>
+					</section>
+	<div class="get-touch-formrounded form-verticals mb-5"> {% form 'contact' %}
+		
+		{% comment %}
+		Successful message
+		{% endcomment %}
+		{% if form.posted_successfully? %}
+		<script>
+window.location = "/pages/address-found";
+</script>
+		{% endif %}
+		
+		{{ form.errors | default_errors }}
+		<div class="form-row">
+			<div class="col col-12 col-md-6 form-group">
+				<input type="text" class="form-control" name="contact[First Name]" placeholder="First Name" value="">
+			</div>
+			<div class="col col-12 col-md-6 form-group">
+				<input type="text" class="form-control" name="contact[Last Name]" placeholder="Last Name" value="">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="col form-group">
+				<input type="text" class="form-control" name="contact[Street Address]" placeholder="Street Address" value="">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="col col-12 col-md-4 form-group">
+				<input type="text" class="form-control" name="contact[City]" placeholder="City" value="">
+			</div>
+			<div class="col col-12 col-md-4 form-group">
+				<select name="contact[State]" class="form-control" aria-required="true" aria-invalid="false">
+					<option value="">State…</option>
+					<option value="Alabama">Alabama</option>
+					<option value="Alaska">Alaska</option>
+					<option value="Arizona">Arizona</option>
+					<option value="Arkansas">Arkansas</option>
+					<option value="California">California</option>
+					<option value="Colorado">Colorado</option>
+					<option value="Connecticut">Connecticut</option>
+					<option value="Delaware">Delaware</option>
+					<option value="District Of Columbia">District Of Columbia</option>
+					<option value="Florida">Florida</option>
+					<option value="Georgia">Georgia</option>
+					<option value="Hawaii">Hawaii</option>
+					<option value="Idaho">Idaho</option>
+					<option value="Illinois">Illinois</option>
+					<option value="Indiana">Indiana</option>
+					<option value="Iowa">Iowa</option>
+					<option value="Kansas">Kansas</option>
+					<option value="Kentucky">Kentucky</option>
+					<option value="Louisiana">Louisiana</option>
+					<option value="Maine">Maine</option>
+					<option value="Maryland">Maryland</option>
+					<option value="Massachusetts">Massachusetts</option>
+					<option value="Michigan">Michigan</option>
+					<option value="Minnesota">Minnesota</option>
+					<option value="Mississippi">Mississippi</option>
+					<option value="Missouri">Missouri</option>
+					<option value="Montana">Montana</option>
+					<option value="Nebraska">Nebraska</option>
+					<option value="Nevada">Nevada</option>
+					<option value="New Hampshire">New Hampshire</option>
+					<option value="New Jersey">New Jersey</option>
+					<option value="New Mexico">New Mexico</option>
+					<option value="New York">New York</option>
+					<option value="North Carolina">North Carolina</option>
+					<option value="North Dakota">North Dakota</option>
+					<option value="Ohio">Ohio</option>
+					<option value="Oklahoma">Oklahoma</option>
+					<option value="Oregon">Oregon</option>
+					<option value="Pennsylvania">Pennsylvania</option>
+					<option value="Rhode Island">Rhode Island</option>
+					<option value="South Carolina">South Carolina</option>
+					<option value="South Dakota">South Dakota</option>
+					<option value="Tennessee">Tennessee</option>
+					<option value="Texas">Texas</option>
+					<option value="Utah">Utah</option>
+					<option value="Vermont">Vermont</option>
+					<option value="Virginia">Virginia</option>
+					<option value="Washington">Washington</option>
+					<option value="West Virginia">West Virginia</option>
+					<option value="Wisconsin">Wisconsin</option>
+					<option value="Wyoming">Wyoming</option>
+				</select>
+			</div>
+			<div class="col col-12 col-md-4 form-group">
+				<input type="text" name="contact[Zip]" class="form-control" placeholder="Zip" value="">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="col col-12 col-md-6 form-group">
+				<input type="tel" name="contact[Phone]" class="form-control" placeholder="Phone" value="">
+			</div>
+			<div class="col col-12 col-md-6 form-group">
+				<input type="email" name="contact[email]" class="form-control" placeholder="Email" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+			</div>
+		</div>
+		<div class="mt-4"> 
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+		{% endform %}
+		 </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	.button-add-to-cart {
+		background: #0e9e59;
+		color: #fff;
+		text-align: center;
+		padding: 7px 6px;
+		border-radius: 13px;
+		font-size: 14px;
+		cursor: pointer;
+}
+</style>
+
+<script>
+ 
+
+	jQuery(document).ready(function() {
+		
+		jQuery.validator.addMethod('allowalphabetandspace',
+				function (value, element) {
+					return this.optional(element) || /^[a-z\s]+$/i.test(value);
+				}, "Only alphabetical characters"
+		);
+		
+		 
+		// validate signup form on keyup and submit
+		$("#contact_form").validate({
+			 rules: {
+			"contact[First Name]": {
+				required: true,
+				 
+			},
+			"contact[Last Name]": {
+				required: true,
+				 
+			},
+			"contact[email]": {
+				required: true,
+				 
+			},
+			"contact[Phone]": {
+				required: true,
+				 
+			},
+			 
+		},messages: {
+			"contact[First Name]": {
+				required: "First Name is required",
+			},
+			"contact[Last Name]": {
+				required: "Last Name is required",
+			},
+			"contact[email]": {
+				required: "Email is required",
+			},
+			"contact[Phone]": {
+				required: "Phone is required",
+				 
+			}, 
+			 
+		}
+				
+		});
+		
+		 
+	})
+</script>

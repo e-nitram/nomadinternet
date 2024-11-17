@@ -1,0 +1,500 @@
+{
+  "wrapper": "div.landing.landing--home",
+  "sections": {
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec": {
+      "type": "lp-23",
+      "settings": {
+        "backgound_image": "shopify:\/\/shop_images\/TOP_Montana_Veterans_Memorial-MONTANA-state.jpg",
+        "background_color": "#014870",
+        "title": "Internet Service Provider in Montana"
+      }
+    },
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243": {
+      "type": "lp-2",
+      "blocks": {
+        "1b94af72-f709-431e-b9d7-413bbcd9be65": {
+          "type": "card",
+          "settings": {
+            "title": "Regular internet with low speed",
+            "background_color": "#ffffff",
+            "title_color": "#004a6a",
+            "image": "shopify:\/\/shop_images\/Infographic_1.png"
+          }
+        },
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22": {
+          "type": "card",
+          "settings": {
+            "title": "High-speed Internet with Nomad",
+            "background_color": "#ffffff",
+            "title_color": "#00a77f",
+            "image": "shopify:\/\/shop_images\/Infographic_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1b94af72-f709-431e-b9d7-413bbcd9be65",
+        "1f131832-ee5e-44ed-bf7f-729a5bf72a22"
+      ],
+      "settings": {
+        "title": "High Speed Internet for All of Your Montana Needs. Do you want to know how it work?"
+      }
+    },
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f": {
+      "type": "awesome-tiles-section",
+      "blocks": {
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_5ed5c62a-2340-4e47-823c-4966e4048c08.jpg",
+            "title": "Rural Internet",
+            "button_text": "Learn More",
+            "button_url": "\/"
+          }
+        },
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_a48d7242-1cf2-4fe0-95de-bed51a03594e.jpg",
+            "title": "Travelers & RV Internet",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan"
+          }
+        },
+        "db130862-0b75-4d5f-be98-c5f6445d7991": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_687ac28a-ec57-44e7-adeb-1e46f47c1108.jpg",
+            "title": "Internet for Business",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan"
+          }
+        },
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/road-middle-desert-with-magnificent-mountains-california_2_24a97137-3c55-40a3-926d-bdd1adc778e8.jpg",
+            "title": "Everywhere",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans"
+          }
+        }
+      },
+      "block_order": [
+        "0e8b0036-362f-4480-81b5-cfb68b1b519c",
+        "8f11e89a-3310-4d7b-9273-321c14e5fb95",
+        "db130862-0b75-4d5f-be98-c5f6445d7991",
+        "66cf4cc1-3ed8-423d-83f7-d00d80e3a01e"
+      ],
+      "settings": {
+        "title": "Why do you need internet in Montana?",
+        "description": "Choose the option that suits you"
+      }
+    },
+    "5e635119-11bf-405e-838e-455861942491": {
+      "type": "lp-24",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/KhAtNE5E3qE?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "title": "Constant problems with internet speed?",
+        "button_text": "Show results",
+        "button_url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68": {
+      "type": "lp-22",
+      "settings": {
+        "title": "The internet provider with the most comprehensive service in Montana has been identified.",
+        "description": "Find your city in Montana",
+        "content": "Anaconda,\nBillings,\nBozeman,\nButte,\nDillon,\nFort Benton,\nGlendive,\nGreat Falls,\nHavre,\nHelena,\nKalispell,\nLewistown,\nLivingston,\nMiles City,\nMissoula,\nVirginia City"
+      }
+    },
+    "9a51b2d4-b777-4c83-9786-db30789ad32c": {
+      "type": "awesome-section",
+      "blocks": {
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca": {
+          "type": "hc-button",
+          "settings": {
+            "class": "solid",
+            "text": "Choose a Plan",
+            "url": "shopify:\/\/pages\/plans",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f706a9d-8296-4ffe-8574-e023fa7f3aca"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/BLOG_Grinnell_Glacier_Trailhead-MONTANA-state.jpg",
+        "title_tag": "h2",
+        "title": "Remote Work and the Great Outdoors: A Guide to Montana's Best Work Spots",
+        "description": "<p>Working remotely doesn’t have to mean sitting behind a computer all day! If you’re looking for the best Montana spots to stay productive while enjoying the great outdoors - here are some suggestions:Start off in Billings by exploring Montana's largest city – boasting unique shopping experiences, art galleries, museums and more. <\/p>"
+      }
+    },
+    "f7850f32-f806-4962-b299-b2086ae3af6e": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "2",
+        "heading_text": "",
+        "text": "<p>Plus with multiple coworking spaces located around town - you can always find a spot to get online and take advantage of reliable high-speed internet services provided by Nomad Internet!Head further east towards Bozeman - known for its breathtaking views of the Bridger Mountains and plenty of cultural offerings too. Don't forget to check out various coworking spots scattered around town providing <a href=\"https:\/\/nomadinternet.com\/pages\/wireless-internet\" title=\"fast WiFi speeds\">fast WiFi speeds<\/a> as well – or if you’re looking for something different, why not try one of Bozeman's many national parks? With Nomad Internet's wireless internet also available throughout rural areas -<\/p>",
+        "text_2": "<p>you can count on remaining productive no matter where your journey takes you!Finally, venture south to Missoula - home of panther peak and ten mile creek offering some stunning scenic views plus an array of excellent cultural offerings. Make sure to take advantage of any business hot spots scattered around town as well – with access to Nomad Internet ensuring flawless connections in even the most remote areas. So whether you're nestled within one of Missoula's breathtaking peaks or simply exploring all that the city has to offer - make sure your journey is both productive and enjoyable when it comes to remote work in <a href=\"\/pages\/states\" title=\"States\">Montana<\/a>!<\/p>",
+        "text_align": "left"
+      }
+    },
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef": {
+      "type": "lp-15",
+      "blocks": {
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/27.1.jpg",
+            "title": "",
+            "url": ""
+          }
+        },
+        "456a8e22-499e-467a-a39b-53b6ea49974d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/27.2.jpg",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d4c53491-8e07-4c2d-90ce-cea60ce4c82c",
+        "456a8e22-499e-467a-a39b-53b6ea49974d"
+      ],
+      "settings": {
+        "title": "Why is Nomad Internet better than regular internet?",
+        "description": ""
+      }
+    },
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb": {
+      "type": "lp-20",
+      "blocks": {
+        "507fc141-95a1-4874-8db0-2c85e3160ef0": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Veronica_Wallace.jpg",
+            "name": "Veronica Wallace",
+            "text": "I’ve recently had the opportunity to experience the wonders of Nomad internet while living in small Montana towns. I was able to use both the Nomad Air and Ark modems, which allowed me flexibility to work and stay in touch with friends and family. With these modems, I could access up to 4G speeds if there was service available, with enough coverage for my remote location. The Nomad Raptor has even greater connection capabilities, allowing its users to experience a reliable connection no matter how rural their environment is. All three are suitable for nomadic lifestyles, giving me the freedom to move around without worrying about internet access.",
+            "link": ""
+          }
+        },
+        "ef0c707d-969c-4994-848c-59874ccb048e": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/image_2023-02-25_00-47-00.png",
+            "name": "Poppy May",
+            "text": "Living in a small rural town in Montana without any internet access was tough. But when I got a nomad internet service, it changed everything! I went with the Nomad Raptor modem, and the download speeds were really impressive - I could get my work done quickly and watch movies without buffering. The setup was easy too, and I'm so glad that Nomad Air and Ark are available for folks who need different services. Nomad Internet has enabled me to keep up with family members living far away and complete my tasks on time. It's been a great experience overall!",
+            "link": ""
+          }
+        },
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Allesandra_Doyle.jpg",
+            "name": "Allesandra Doyle",
+            "text": "Living in a rural area of Montana, I was used to having slow internet and little to no connection. That all changed when I got Nomad Internet. With their innovative modems like the Air, Ark and Raptor, I'm able to have download speeds much faster than ever before. The modem is easy to install and set up within minutes, letting me get online quickly. It even works great in remote areas where most ISPs can't reach. Overall, Nomad has revolutionized my internet experience - it's reliable, fast and always there when I need it.",
+            "link": ""
+          }
+        },
+        "529948cc-ea75-47c7-a3a2-9f0dddf8e616": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Rory_Hardy.jpg",
+            "name": "Rory Hardy",
+            "text": "With Nomad Internet, I've had the pleasure of being able to connect in some really remote places. I've used all 3 models - the Nomad Air, Ark and Raptor - over the past few months. The Air is great for connecting on-the-go due to its state-of-the-art portability while the Ark is a good all-round choice with its wide coverage area. The Raptor offers superior speed and performance compared to the other two but it's a bit more bulky. All three provide reliable and stable connections even in rural areas and small towns where there usually isn't much access to other sources of WiFI or data. It's been an awesome experience so far, allowing me to stay connected even when I'm on holiday from time to time and most importantly, not having to worry about those pesky data roaming charges!",
+            "link": ""
+          }
+        },
+        "9ec2c974-068d-468f-8e36-2526cf07cbc3": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Celine_Moss.jpg",
+            "name": "Celine Moss",
+            "text": "My nomad internet experience has been amazing. I recently tried out the Nomad Air modem while on vacation in a small town in Montana, and it was perfect for my needs. The connection was surprisingly fast considering the rural area we were in. I was able to keep up with work emails and even stream video from time to time - something I never expected would be possible without access to a high-speed connection. I also found from my friends that the Nomad Ark and Raptor modems offered some great features for more intensive usage such as gaming or streaming, though they have slightly higher price points. All in all, nomad internet provides a great way to stay connected no matter where you are!",
+            "link": ""
+          }
+        },
+        "6a3dbf9f-8d9f-4e9f-92e4-65409a2b8b3a": {
+          "type": "review",
+          "settings": {
+            "style": "one",
+            "icon": "no",
+            "avatar": "shopify:\/\/shop_images\/Kenna_Watkins.jpg",
+            "name": "Kenna Watkins",
+            "text": "Living in rural Montana my whole life, I never thought I'd have access to fast internet. But thanks to Nomad, I am now connected with ease. From streaming movies on my laptop to uploading artwork online, the speeds are more than satisfactory. Even better, the ease of installation and setup make this product an ideal choice for anyone looking for high-speed internet in a rural or remote area. Plus, the robustness of their modems guarantee that you'll stay connected no matter what! All things considered, Nomad is definitely worth checking out if you're looking for an accessible and reliable way to get connected.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "507fc141-95a1-4874-8db0-2c85e3160ef0",
+        "ef0c707d-969c-4994-848c-59874ccb048e",
+        "6127a885-5f5e-4f74-a0d1-ff06e1edbb8a",
+        "529948cc-ea75-47c7-a3a2-9f0dddf8e616",
+        "9ec2c974-068d-468f-8e36-2526cf07cbc3",
+        "6a3dbf9f-8d9f-4e9f-92e4-65409a2b8b3a"
+      ],
+      "settings": {
+        "title": "Nomad Internet reviews from our site"
+      }
+    },
+    "9ec25f08-c872-440e-96bc-c2f2401b0994": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 2em; text-transform: uppercase; margin: 0 auto 1.5em; line-height: 1.3; max-width: 600px;}"
+      ],
+      "settings": {
+        "background-color": "#014870",
+        "color": "#ffffff",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 20,
+        "padding-y": 50,
+        "border-radius": 4,
+        "html": "<div class=\"text-center\">\n  <h2>Interested in Learning more about Nomad Internet in your area?<\/h2>\n<div class=\"row v-gutters justify-center\">\n<div class=\"col-auto\">\n<a href=\"tel:+1%20385%20257%202809\" class=\"btn theme\">Call: +1 385 257 2809<\/a>\n<\/div>\n<div class=\"col-auto\">\n<a href=\"javascript:void(0);\" class=\"btn orange\" onclick=\"zE('messenger', 'open');\">Chat Life<\/a>\n<\/div>\n<\/div>\n<\/div>"
+      }
+    },
+    "a5bee9ed-1051-44e6-9e9a-419caa834124": {
+      "type": "lp-16",
+      "blocks": {
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        },
+        "75283694-f9b3-4d88-94c0-18f8290ba571": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Does Nomad Internet have 5G coverage?",
+            "content": "<p>Yes, we do.<\/p>"
+          }
+        },
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How many WiFi devices can connect to Nomad AIR?",
+            "content": "<p>Nomad AIR allows you to connect with up to 30 devices at a time.<\/p>"
+          }
+        },
+        "7dce682e-d232-4c6f-b322-caee417d972c": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "How does Nomad Internet’s latency compare to other ISPs?",
+            "content": "<p>By using any of our modems, you are guaranteed the lowest latency in the country. Nomad Internet users can expect latency of 20-40ms.<\/p>"
+          }
+        },
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "title": "Can I use Nomad Modems with a 3rd Party service?",
+            "content": "<p>No! We don’t sell modems alone. They must be purchased with a plan. Our Reseller Program is only available to WISPs.<\/p>"
+          }
+        },
+        "aa084456-f620-45be-b82a-e3a69625c8cb": {
+          "type": "block",
+          "settings": {
+            "title": "How can I boost my internet speed in Montana's rural locations?",
+            "content": "<p>Slow internet speeds in rural areas of Montana can be frustrating, but there are a few things you can do to improve your internet speed:<\/p><p>Consider switching to a fixed wireless internet provider like Nomad Internet, which can offer speeds up to 200 Mbps and plans starting at $99 per month (with an annual plan). Nomad Internet's goal is to provide affordable high-speed internet to residents in rural areas of Montana.<\/p><p><strong>Make sure your router is in a central location<\/strong> and not obstructed by walls or other objects that can interfere with the Wi-Fi signal. Also, try to keep your router away from other electronics or appliances that can cause interference.<\/p><p><strong>Upgrade your equipment<\/strong><br\/>Old or outdated equipment like routers, modems, and Wi-Fi adapters can slow down your internet speed. Consider upgrading to newer, faster equipment to get the best performance.<\/p><p><strong>Monitor your data usage<\/strong><br\/>Some internet providers may slow down your internet speed if you go over a certain amount of data each month. Try to limit your data usage and make sure you are not exceeding any limits set by your provider.<\/p><p>By following these tips and considering a reliable internet provider like Nomad Internet, you can improve your internet speed and enjoy a better online experience in rural areas of Montana.<\/p>"
+          }
+        },
+        "8a48b7eb-1384-4108-b58c-80c0e92724ea": {
+          "type": "block",
+          "settings": {
+            "title": "Is 5G coverage provided by Nomad Internet in the state of Montana?",
+            "content": "<p>Yes, Nomad Internet does provide 5G coverage in the state of Montana.<br\/><br\/>5G is the fifth generation of wireless technology that offers faster data speeds, lower latency, and greater capacity than its predecessors. With 5G, users can download and upload large files quickly, stream high-quality videos with no buffering, and experience better connectivity in crowded areas. <br\/><br\/>Nomad Internet's 5G service is powered by the advanced high-power directional antennas of their Nomad Air modem, which extends the reach of cellular networks and provides stable and fast internet. In addition to 5G, Nomad Internet also offers 4G LTE fallback for the perfect balance of network coverage and performance. <br\/><br\/>Nomad Internet offers various tariff plans, so customers can choose the one that best fits their needs and budget. The name of the modems provided by Nomad Internet are Nomad Air and Nomad Cube, both of which amplify and accumulate the signal to provide stable and fast internet to rural areas.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09f6ec35-5417-4d9d-8c98-e9b9e105ef27",
+        "75283694-f9b3-4d88-94c0-18f8290ba571",
+        "2f7886b7-605c-4d97-8bcd-c1fecd22b66d",
+        "7dce682e-d232-4c6f-b322-caee417d972c",
+        "12367d20-bb80-43c3-9b1e-eb575ad5bfc7",
+        "aa084456-f620-45be-b82a-e3a69625c8cb",
+        "8a48b7eb-1384-4108-b58c-80c0e92724ea"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "87deca2a-8530-4645-9111-27498b194abd": {
+      "type": "lp-25",
+      "blocks": {
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_cfb0111f-4f2e-4378-96e9-e28e64c0b7e6.jpg",
+            "text": "How to easily exchange and upgrade your Nomad Modem",
+            "url": "shopify:\/\/pages\/nomad-trust"
+          }
+        },
+        "575d038c-5c25-4cb8-85ca-d596c50d9717": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_0efdca7d-0144-4fdf-9156-2bf1b61b526e.jpg",
+            "text": "Read interesting news about the Internet in your region",
+            "url": "shopify:\/\/blogs\/countrynomad"
+          }
+        },
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Streaming-2.jpg",
+            "text": "Chat and find out about the best Internet providers near you",
+            "url": "https:\/\/community.nomadinternet.com\/"
+          }
+        },
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_0f3659da-d0b6-46be-a82e-05b7a364cb5e.jpg",
+            "text": "Download the Nomad Internet mobile app",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379"
+          }
+        }
+      },
+      "block_order": [
+        "325ce2f5-5cae-4f21-b897-0dfc56fb3994",
+        "575d038c-5c25-4cb8-85ca-d596c50d9717",
+        "07915a2d-82a8-4c7b-9169-b5f7e1c3dc87",
+        "1f3bd568-eedc-40c4-a61a-ae1da11224f3"
+      ],
+      "settings": {
+        "title": "Learn more about the Internet that Nomad Internet offers you"
+      }
+    },
+    "242c978b-98d9-42f9-92c4-8d7416d699f9": {
+      "type": "lp-16",
+      "blocks": {
+        "b6465fdb-0b63-4164-9101-089cffe04a02": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service Provider. We are focused on providing High- Speed wireless Internet to rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "f153998a-0da0-45c2-87f8-460e0b0f771c": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by transmitting wireless Internet access directly to your home, business, and even while traveling! We combine the latest technology with Verizon’s service to provide high-speed internet to rural locations and traveling nomads. We offer a variety of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d": {
+          "type": "block",
+          "settings": {
+            "title": "Are there data caps?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. Multiple layers of encryption, enhanced Wi-Fi security, firewall filtering, built-in VPN support, IT admin controls, and other features deliver strong security at every level.<\/p>"
+          }
+        },
+        "94382057-d005-40db-9e1c-981fd7bef47b": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will provide you with robust and reliable internet for all your gaming needs. No matter your plan, you can expect fast internet with low ping rates and latency.<\/p>"
+          }
+        },
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, low-latency service they have at home to any location Nomad Internet has coverage. Nomad Internet for RVers\/travelers will allow users to pause and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b6465fdb-0b63-4164-9101-089cffe04a02",
+        "f153998a-0da0-45c2-87f8-460e0b0f771c",
+        "786d9e04-4a98-4192-8f57-7ddc8bd45fbd",
+        "7ed9d49d-5bf5-45f8-a48d-80eec8faac2d",
+        "94382057-d005-40db-9e1c-981fd7bef47b",
+        "29cac46f-3f51-43ca-a8e1-b1da996be9d1"
+      ],
+      "settings": {
+        "title": "Common Moving Questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    },
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2": {
+      "type": "awesome-html",
+      "custom_css": [
+        "h2 {font-size: 50px; line-height: 120%; text-align: center; color: #00a77f; margin: 0;}",
+        "h3 {text-align: center; margin: 0; line-height: 120%; font-size: 40px;}",
+        ".text {padding: 20px; border-radius: 4px; margin-top: 40px;}"
+      ],
+      "settings": {
+        "background-color": "#ffffff",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2>Mobility. Speed. Safety. Feel good.<\/h2>\n\n<h3>With Nomad Internet it's a guarantee<\/h3>\n\n<div class=\"text\" style=\"box-shadow: 0 0 8px rgba(0, 0, 0, 0.15)\">\n<p>* Actual speed may vary depending on network activity, configuration and other factors. Subject to availability. Some prices shown may be indicative only. Equipment fees, taxes, and other fees and restrictions may apply.<\/p>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "d58624ba-3c8d-4fce-94c9-9ed20d9331ec",
+    "fd3ddbf3-dec3-45e4-b386-8fa795d2c243",
+    "223c3e87-ccd7-435a-a5a9-70bff68c600f",
+    "5e635119-11bf-405e-838e-455861942491",
+    "9dbc372e-4301-4a16-b819-cc8ef7044b68",
+    "9a51b2d4-b777-4c83-9786-db30789ad32c",
+    "f7850f32-f806-4962-b299-b2086ae3af6e",
+    "367c5dbd-c419-40cc-903d-0ddc3ead53ef",
+    "5fbfc276-398d-4d1f-8003-cbd4d18935cb",
+    "9ec25f08-c872-440e-96bc-c2f2401b0994",
+    "a5bee9ed-1051-44e6-9e9a-419caa834124",
+    "87deca2a-8530-4645-9111-27498b194abd",
+    "242c978b-98d9-42f9-92c4-8d7416d699f9",
+    "cfede7e1-184f-4407-b6d6-19d5fa07784e",
+    "f42db4d5-522d-4d50-95f0-8c169be8d2c2"
+  ]
+}

@@ -1,0 +1,1156 @@
+{{ 'coverage-map.css' | asset_url | stylesheet_tag }}
+
+<div class="main_heading">
+<span>Check if Nomad Internet works at your location</span>  
+<h2 class="main_title">NOMAD Internet Coverage Map</h2> 
+</div>
+<div id="iframe-wrapper" style="position: relative;overflow: hidden;height: 950px;margin:30px 0;width:85%;margin:0 auto;">
+<p style="text-align:center;margin-bottom:12px;">Input your address for a detailed coverage map of your area.</p>
+<iframe id="coverage-map" scrolling="no" src="//www.mintmobile.com/stripped-coverage-map/?variation=noroam-5g" style="z-index: 2; position: absolute; background-color: #ffffff; left: 50%; transform: translateX(-50%); right:0; margin-left: 0px; margin-top: 0px; height:900px;width: 100%; /*max-width: 1100px !important;*/ border: none !important;"></iframe>
+<div id="iframe-overlay-temp" scrolling="no" style="z-index: 4; overflow: hidden; position: absolute; left: 0px; right: 0px; height: 100%; width: 100%; background: url(https://www.thervitguy.com/wp-content/uploads/2022/09/RVITmapmarker75.png) no-repeat center center; background-color: #2a2a2a; -moz-animation: cssAnimation 1s ease-in 4s forwards; -webkit-animation: cssAnimation 1s ease-in 4s forwards; -o-animation: cssAnimation 1s ease-in 4s forwards; animation: cssAnimation 1s ease-in 4s forwards; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; display: flex; align-items: center; text-align: center;"><p style="width: 100%; text-align: center; text-color: #ffffff;"> <br><br><br><br> Loading coverage map&#8230;</p></div>
+<div id="iframe-overlay-bottom" style="z-index: 3; height: 75px; width: 100%; position: absolute; bottom: 0px; left: 0px;"></div>
+</div>
+
+<script>
+var coverageMap = document.getElementById('coverage-map');
+var iframeOverlay = document.getElementById('iframe-overlay-temp');
+var iframeOverlayBottom = document.getElementById('iframe-overlay-bottom');
+
+if (coverageMap) {
+  coverageMap.addEventListener('load', function () {
+    if (iframeOverlay) {
+      iframeOverlay.style.display = 'none';
+    }
+
+    if (iframeOverlayBottom) {
+      iframeOverlayBottom.style.display = 'none';
+    }
+  });
+}
+</script>
+
+
+{% comment %}
+<div class="plan_com">
+<h2>Nomad Plan Availability</h2>
+<p class="top_p">Select a plan base on the coverage in your area. All our plans features Unlimited Internet Data,  Unthrottled and high speed internet</p>  
+
+<div class="plan-list">
+<div class="plan-box plan_switch1">
+  
+<div class="plan-title-new">
+<div class="title-div">  
+<h3>Compatible Coverage Area</h3> 
+<div class="tool-tip">
+  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+  <g clip-path="url(#clip0_3443_1777)">
+    <path d="M8.49984 5.66663V8.49996M8.49984 11.3333H8.50692M15.5832 8.49996C15.5832 12.412 12.4119 15.5833 8.49984 15.5833C4.58782 15.5833 1.4165 12.412 1.4165 8.49996C1.4165 4.58794 4.58782 1.41663 8.49984 1.41663C12.4119 1.41663 15.5832 4.58794 15.5832 8.49996Z" stroke="#013127" stroke-width="1.41667" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_3443_1777">
+      <rect width="17" height="17" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>
+<div class="tooltip">
+<p class="show">This versatile plan operates across 5G, 4G, 3G, and 2G networks, providing a dependable 100mbps connection in a variety of locations and network conditions.</p>
+<div class="icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none">
+<path d="M9 9L7.86805e-07 -1.57361e-06L18 0L9 9Z" fill="#013127"></path>
+</svg>
+</div>
+</div>        
+</div>        
+</div>  
+<div class="avail-div">
+  <div class="top-part">
+    <div class="avail-block">
+      <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+        <rect x="0.620153" y="0.620275" width="31.0766" height="31.0766" rx="3.9011" fill="#054E34" stroke="black" stroke-width="0.661204"/>
+      </svg>
+      <p>5G mid-band</p>    
+    </div>
+    <div class="avail-block">
+      <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+        <rect x="1.12015" y="0.620275" width="31.0766" height="31.0766" rx="3.9011" fill="#258E69" stroke="black" stroke-width="0.661204"/>
+      </svg>
+      <p>5G low-band</p>    
+    </div>
+  </div>
+  <div class="bottom-part">
+    <div class="avail-block">
+      <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+        <rect x="0.620153" y="0.937414" width="31.0766" height="31.0766" rx="3.9011" fill="#85F5CB" stroke="black" stroke-width="0.661204"/>
+      </svg>
+      <p>4G LTE</p> 
+    </div>
+    <div class="avail-block">
+     <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+       <rect x="1.12015" y="0.937414" width="31.0766" height="31.0766" rx="3.9011" fill="#DBF5EB" stroke="black" stroke-width="0.661204"/>
+     </svg>
+      <p>3G/2G</p> 
+    </div>
+  </div>
+</div>        
+</div>
+        
+<div class="mbps-title">
+<div class="title">
+<h3>Nomad Rural Unlimited</h3>
+<p class="show">100Mbps</p>
+</div>
+</div>
+         
+<div class="plan-price">
+<div class="price">
+<h3><span class="dollar">$</span><span class="dy_finalpriceof100">49<span>.95/mo</span></span></h3>
+<div class="text_view">
+<p class="sub_dis_text show">
+<span>Saved <em>$50</em> with Nomad Friends</span>
+<span><em>$99.95</em> without Nomad friend</span>
+</p>
+<a href="javascript:;" class="first-popup-open">View Specification</a>  
+</div>  
+</div>
+</div>
+
+<a href="javascript:;" class="check-btn">Check Availability</a> 
+         
+</div>
+         
+
+         
+<div class="plan-box plan_switch1">
+  
+<div class="plan-title-new">
+<div class="title-div">  
+<h3>Compatible Coverage Area</h3>
+<div class="tool-tip">
+  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+  <g clip-path="url(#clip0_3443_1777)">
+    <path d="M8.49984 5.66663V8.49996M8.49984 11.3333H8.50692M15.5832 8.49996C15.5832 12.412 12.4119 15.5833 8.49984 15.5833C4.58782 15.5833 1.4165 12.412 1.4165 8.49996C1.4165 4.58794 4.58782 1.41663 8.49984 1.41663C12.4119 1.41663 15.5832 4.58794 15.5832 8.49996Z" stroke="#013127" stroke-width="1.41667" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_3443_1777">
+      <rect width="17" height="17" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>
+<div class="tooltip">
+<p class="show">This plan exclusively utilizes 5G networks, delivering 200mbps speeds in 5G areas for lightning-fast internet. Keep in mind that it won't function in non-5G regions.</p>
+<div class="icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none">
+<path d="M9 9L7.86805e-07 -1.57361e-06L18 0L9 9Z" fill="#013127"></path>
+</svg>
+</div>
+</div>        
+</div> 
+</div>  
+<div class="avail-div">
+  <div class="top-part">
+    <div class="avail-block">
+      <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+        <rect x="0.620153" y="0.620275" width="31.0766" height="31.0766" rx="3.9011" fill="#054E34" stroke="black" stroke-width="0.661204"/>
+      </svg>
+      <p>5G mid-band</p>    
+    </div>
+    <div class="avail-block">
+      <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+        <rect x="1.12015" y="0.620275" width="31.0766" height="31.0766" rx="3.9011" fill="#258E69" stroke="black" stroke-width="0.661204"/>
+      </svg>
+      <p>5G low-band</p>    
+    </div>
+  </div>
+</div>        
+</div>
+        
+<div class="mbps-title">
+<div class="title">
+<h3>Nomad Rural Unlimited Ultra</h3>
+<p class="show">200Mbps</p>
+</div>
+</div>
+         
+<div class="plan-price">
+<div class="price">
+<h3><span class="dollar">$</span><span class="dy_finalpriceof100">69<span>.95/mo</span></span></h3>
+<div class="text_view">
+<p class="sub_dis_text show">
+<span>Saved <em>$50</em> with Nomad Friends</span>
+<span><em>$119.95</em> without Nomad friend</span>
+</p>
+<a href="javascript:;" class="second-popup-open">View Specification</a>  
+</div>  
+</div>
+</div>
+
+<a href="javascript:;" class="check-btn">Check Availability</a> 
+         
+</div>
+
+         
+</div>
+  
+</div>
+{% endcomment %}
+
+
+
+<section class="home-pricing">
+  <div class="container">
+        <div class="section-title">
+            <h2 class="page-title">Pricing</h2>
+            <p>Experience lightning-fast Internet speeds and Advanced WiFi featuring state-of-the-art security.</p>
+            <a class="open-popup">What plan is good for me?</a>
+        </div>
+
+<div class="plan-box-list">
+            <div class="plan-box first-box">
+                <div class="plan-offer">
+                  <span>MOST POPULAR</span>
+                </div>
+                <div class="plan-title">
+                    <h3><span>100Mbps</span> Rural Unlimited Internet</h3>
+                   <h4>
+                        <span class="dollar">$</span>99
+                        <div>
+                            <span class="month-text">.95</span>
+                            {% comment %}<p>$99.95/Mo</p>{% endcomment %}
+                        </div>
+                    </h4>
+                    {% comment %}<span class="color_bg" style="opacity:0;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <path d="M9 9.23242H9.01M15 15.2324H15.01M16 8.23242L8 16.2324M17.9012 5.23093C18.1071 5.72895 18.5024 6.12482 19.0001 6.33149L20.7452 7.0544C21.2433 7.2607 21.639 7.65642 21.8453 8.15448C22.0516 8.65255 22.0516 9.21217 21.8453 9.71023L21.1229 11.4542C20.9165 11.9525 20.9162 12.5127 21.1236 13.0107L21.8447 14.7542C21.9469 15.0009 21.9996 15.2653 21.9996 15.5324C21.9997 15.7994 21.9471 16.0639 21.8449 16.3106C21.7427 16.5573 21.5929 16.7815 21.4041 16.9703C21.2152 17.1591 20.991 17.3088 20.7443 17.4109L19.0004 18.1333C18.5023 18.3392 18.1065 18.7345 17.8998 19.2322L17.1769 20.9774C16.9706 21.4755 16.575 21.8712 16.0769 22.0775C15.5789 22.2838 15.0193 22.2838 14.5212 22.0775L12.7773 21.3551C12.2792 21.1493 11.7198 21.1498 11.2221 21.3563L9.47689 22.0782C8.97912 22.284 8.42001 22.2838 7.92237 22.0777C7.42473 21.8716 7.02925 21.4763 6.82281 20.9788L6.09972 19.233C5.8938 18.735 5.49854 18.3391 5.00085 18.1324L3.25566 17.4095C2.75783 17.2033 2.36226 16.8079 2.15588 16.3101C1.94951 15.8123 1.94923 15.253 2.1551 14.755L2.87746 13.011C3.08325 12.5129 3.08283 11.9535 2.8763 11.4557L2.15497 9.70921C2.0527 9.46252 2.00004 9.1981 2 8.93105C1.99996 8.66401 2.05253 8.39957 2.15472 8.15285C2.25691 7.90614 2.40671 7.68197 2.59557 7.49317C2.78442 7.30438 3.00862 7.15464 3.25537 7.05253L4.9993 6.33014C5.49687 6.12439 5.89248 5.72962 6.0993 5.23248L6.82218 3.48723C7.02848 2.98917 7.42418 2.59346 7.92222 2.38715C8.42027 2.18085 8.97987 2.18085 9.47792 2.38715L11.2218 3.10954C11.7199 3.31533 12.2793 3.31491 12.7771 3.10837L14.523 2.38827C15.021 2.18208 15.5804 2.18212 16.0784 2.38839C16.5763 2.59465 16.972 2.99025 17.1783 3.48819L17.9014 5.23395L17.9012 5.23093ZM9.5 9.23242C9.5 9.50856 9.27614 9.73242 9 9.73242C8.72386 9.73242 8.5 9.50856 8.5 9.23242C8.5 8.95628 8.72386 8.73242 9 8.73242C9.27614 8.73242 9.5 8.95628 9.5 9.23242ZM15.5 15.2324C15.5 15.5086 15.2761 15.7324 15 15.7324C14.7239 15.7324 14.5 15.5086 14.5 15.2324C14.5 14.9563 14.7239 14.7324 15 14.7324C15.2761 14.7324 15.5 14.9563 15.5 15.2324Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+  $50 off first month today</span>{% endcomment %}
+                </div>
+                <div class="plan-details">
+                     <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+<g id="wifi">
+<path id="Icon" d="M15 24.375H15.0125M28.508 10.876C24.9494 7.61499 20.207 5.625 14.9999 5.625C9.79268 5.625 5.05029 7.61499 1.4917 10.876M5.91492 15.3037C8.33757 13.1696 11.5176 11.875 15 11.875C18.4824 11.875 21.6624 13.1696 24.085 15.3037M19.6229 19.7189C18.349 18.7203 16.744 18.125 14.9999 18.125C13.2294 18.125 11.6022 18.7385 10.3192 19.7645" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</svg>
+                            <p style="margin:0;" class="show">High-speed download up to <b style="color:#00a77f;">100Mbps</b></p>
+                        </li>
+                        <li>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+<g id="video-recorder">
+<g id="Icon">
+<path d="M27.5 11.1642C27.5 10.4069 27.5 10.0283 27.3503 9.85298C27.2203 9.70085 27.0254 9.62011 26.826 9.63581C26.5961 9.6539 26.3284 9.92164 25.7929 10.4571L21.25 15L25.7929 19.5429C26.3284 20.0784 26.5961 20.3461 26.826 20.3642C27.0254 20.3799 27.2203 20.2992 27.3503 20.147C27.5 19.9717 27.5 19.5931 27.5 18.8358V11.1642Z" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M2.5 12.25C2.5 10.1498 2.5 9.0997 2.90873 8.29754C3.26825 7.59193 3.84193 7.01825 4.54754 6.65873C5.3497 6.25 6.3998 6.25 8.5 6.25H15.25C17.3502 6.25 18.4003 6.25 19.2025 6.65873C19.9081 7.01825 20.4817 7.59193 20.8413 8.29754C21.25 9.0997 21.25 10.1498 21.25 12.25V17.75C21.25 19.8502 21.25 20.9003 20.8413 21.7025C20.4817 22.4081 19.9081 22.9817 19.2025 23.3413C18.4003 23.75 17.3502 23.75 15.25 23.75H8.5C6.3998 23.75 5.3497 23.75 4.54754 23.3413C3.84193 22.9817 3.26825 22.4081 2.90873 21.7025C2.5 20.9003 2.5 19.8502 2.5 17.75V12.25Z" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</g>
+</svg>
+                            1080p HD video streaming
+                        </li>
+                        <li>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+<g id="gaming-pad-01">
+<path id="Icon" d="M7.49993 13.75H12.4999M9.99993 11.25V16.25M18.7499 15H18.7624M22.4999 12.5H22.5124M13.0611 6.25H16.9387C20.2198 6.25 21.8604 6.25 23.1481 6.87179C24.2819 7.41925 25.2239 8.29636 25.8507 9.38824C26.5627 10.6284 26.6796 12.2648 26.9133 15.5375L27.2209 19.8431C27.3717 21.9543 25.6996 23.75 23.5831 23.75C22.5007 23.75 21.4743 23.2692 20.7814 22.4377L20.3124 21.875C19.8835 21.3603 19.669 21.1029 19.4248 20.8949C18.9128 20.459 18.2931 20.1687 17.6304 20.0545C17.3143 20 16.9793 20 16.3092 20H13.6906C13.0206 20 12.6856 20 12.3695 20.0545C11.7068 20.1687 11.087 20.459 10.5751 20.8949C10.3308 21.1029 10.1164 21.3603 9.68742 21.875L9.21847 22.4377C8.52556 23.2692 7.49911 23.75 6.41675 23.75C4.30022 23.75 2.62819 21.9543 2.77899 19.8431L3.08653 15.5375C3.3203 12.2648 3.43718 10.6284 4.14914 9.38824C4.77598 8.29636 5.71798 7.41925 6.85175 6.87179C8.13945 6.25 9.78001 6.25 13.0611 6.25Z" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</svg>
+                           Good gaming latency
+                        </li>
+                        <li>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+<g id="file-x-02">
+<path id="Icon" d="M17.5 13.75H10M12.5 18.75H10M20 8.75H10M25 15V8.5C25 6.3998 25 5.3497 24.5913 4.54754C24.2317 3.84193 23.6581 3.26825 22.9525 2.90873C22.1503 2.5 21.1002 2.5 19 2.5H11C8.8998 2.5 7.8497 2.5 7.04754 2.90873C6.34193 3.26825 5.76825 3.84193 5.40873 4.54754C5 5.3497 5 6.3998 5 8.5V21.5C5 23.6002 5 24.6503 5.40873 25.4525C5.76825 26.1581 6.34193 26.7318 7.04754 27.0913C7.8497 27.5 8.8998 27.5 11 27.5H15M20 20L26.25 26.25M26.25 20L20 26.25" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</svg>
+                           No Contract, No Credit Check
+                        </li>
+                        <li>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+<g id="x-circle">
+<path id="Icon" d="M18.75 11.25L11.25 18.75M11.25 11.25L18.75 18.75M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</svg>
+                            Unlimited &amp; Unthrottled
+                        </li>
+                    </ul>
+  <a href="javascript:;" class="check-btn">Check Availability</a> 
+                </div>
+            </div>
+            <div class="plan-box second-box">
+                <div class="plan-offer">
+                  <span>TURBO SPEED</span>
+                </div>
+                <div class="plan-title">
+                    <h3><span>200Mbps</span> Rural Unlimited Internet</h3>
+                     <h4>
+                        <span class="dollar">$</span>149
+                        <div>
+                            <span class="month-text">.95</span>
+                            {% comment %}<p>$119.95/Mo</p>{% endcomment %}
+                        </div>
+                    </h4>
+                  {% comment %}  <span class="color_bg">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <path d="M9 9.23242H9.01M15 15.2324H15.01M16 8.23242L8 16.2324M17.9012 5.23093C18.1071 5.72895 18.5024 6.12482 19.0001 6.33149L20.7452 7.0544C21.2433 7.2607 21.639 7.65642 21.8453 8.15448C22.0516 8.65255 22.0516 9.21217 21.8453 9.71023L21.1229 11.4542C20.9165 11.9525 20.9162 12.5127 21.1236 13.0107L21.8447 14.7542C21.9469 15.0009 21.9996 15.2653 21.9996 15.5324C21.9997 15.7994 21.9471 16.0639 21.8449 16.3106C21.7427 16.5573 21.5929 16.7815 21.4041 16.9703C21.2152 17.1591 20.991 17.3088 20.7443 17.4109L19.0004 18.1333C18.5023 18.3392 18.1065 18.7345 17.8998 19.2322L17.1769 20.9774C16.9706 21.4755 16.575 21.8712 16.0769 22.0775C15.5789 22.2838 15.0193 22.2838 14.5212 22.0775L12.7773 21.3551C12.2792 21.1493 11.7198 21.1498 11.2221 21.3563L9.47689 22.0782C8.97912 22.284 8.42001 22.2838 7.92237 22.0777C7.42473 21.8716 7.02925 21.4763 6.82281 20.9788L6.09972 19.233C5.8938 18.735 5.49854 18.3391 5.00085 18.1324L3.25566 17.4095C2.75783 17.2033 2.36226 16.8079 2.15588 16.3101C1.94951 15.8123 1.94923 15.253 2.1551 14.755L2.87746 13.011C3.08325 12.5129 3.08283 11.9535 2.8763 11.4557L2.15497 9.70921C2.0527 9.46252 2.00004 9.1981 2 8.93105C1.99996 8.66401 2.05253 8.39957 2.15472 8.15285C2.25691 7.90614 2.40671 7.68197 2.59557 7.49317C2.78442 7.30438 3.00862 7.15464 3.25537 7.05253L4.9993 6.33014C5.49687 6.12439 5.89248 5.72962 6.0993 5.23248L6.82218 3.48723C7.02848 2.98917 7.42418 2.59346 7.92222 2.38715C8.42027 2.18085 8.97987 2.18085 9.47792 2.38715L11.2218 3.10954C11.7199 3.31533 12.2793 3.31491 12.7771 3.10837L14.523 2.38827C15.021 2.18208 15.5804 2.18212 16.0784 2.38839C16.5763 2.59465 16.972 2.99025 17.1783 3.48819L17.9014 5.23395L17.9012 5.23093ZM9.5 9.23242C9.5 9.50856 9.27614 9.73242 9 9.73242C8.72386 9.73242 8.5 9.50856 8.5 9.23242C8.5 8.95628 8.72386 8.73242 9 8.73242C9.27614 8.73242 9.5 8.95628 9.5 9.23242ZM15.5 15.2324C15.5 15.5086 15.2761 15.7324 15 15.7324C14.7239 15.7324 14.5 15.5086 14.5 15.2324C14.5 14.9563 14.7239 14.7324 15 14.7324C15.2761 14.7324 15.5 14.9563 15.5 15.2324Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+  $50 off first month today</span>{% endcomment %}
+                </div>
+                <div class="plan-details">
+                  <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+<g id="wifi">
+<path id="Icon" d="M15 24.375H15.0125M28.508 10.876C24.9494 7.61499 20.207 5.625 14.9999 5.625C9.79268 5.625 5.05029 7.61499 1.4917 10.876M5.91492 15.3037C8.33757 13.1696 11.5176 11.875 15 11.875C18.4824 11.875 21.6624 13.1696 24.085 15.3037M19.6229 19.7189C18.349 18.7203 16.744 18.125 14.9999 18.125C13.2294 18.125 11.6022 18.7385 10.3192 19.7645" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</svg>
+                            <p style="margin:0;" class="show">High-speed download up to <b style="color:#00a77f;">200Mbps</b></p>
+                        </li>
+                        <li>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+<g id="video-recorder">
+<g id="Icon">
+<path d="M27.5 11.1642C27.5 10.4069 27.5 10.0283 27.3503 9.85298C27.2203 9.70085 27.0254 9.62011 26.826 9.63581C26.5961 9.6539 26.3284 9.92164 25.7929 10.4571L21.25 15L25.7929 19.5429C26.3284 20.0784 26.5961 20.3461 26.826 20.3642C27.0254 20.3799 27.2203 20.2992 27.3503 20.147C27.5 19.9717 27.5 19.5931 27.5 18.8358V11.1642Z" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M2.5 12.25C2.5 10.1498 2.5 9.0997 2.90873 8.29754C3.26825 7.59193 3.84193 7.01825 4.54754 6.65873C5.3497 6.25 6.3998 6.25 8.5 6.25H15.25C17.3502 6.25 18.4003 6.25 19.2025 6.65873C19.9081 7.01825 20.4817 7.59193 20.8413 8.29754C21.25 9.0997 21.25 10.1498 21.25 12.25V17.75C21.25 19.8502 21.25 20.9003 20.8413 21.7025C20.4817 22.4081 19.9081 22.9817 19.2025 23.3413C18.4003 23.75 17.3502 23.75 15.25 23.75H8.5C6.3998 23.75 5.3497 23.75 4.54754 23.3413C3.84193 22.9817 3.26825 22.4081 2.90873 21.7025C2.5 20.9003 2.5 19.8502 2.5 17.75V12.25Z" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</g>
+</svg>
+                           Ultra HD 4K video streaming
+                        </li>
+                        <li>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+<g id="gaming-pad-01">
+<path id="Icon" d="M7.49993 13.75H12.4999M9.99993 11.25V16.25M18.7499 15H18.7624M22.4999 12.5H22.5124M13.0611 6.25H16.9387C20.2198 6.25 21.8604 6.25 23.1481 6.87179C24.2819 7.41925 25.2239 8.29636 25.8507 9.38824C26.5627 10.6284 26.6796 12.2648 26.9133 15.5375L27.2209 19.8431C27.3717 21.9543 25.6996 23.75 23.5831 23.75C22.5007 23.75 21.4743 23.2692 20.7814 22.4377L20.3124 21.875C19.8835 21.3603 19.669 21.1029 19.4248 20.8949C18.9128 20.459 18.2931 20.1687 17.6304 20.0545C17.3143 20 16.9793 20 16.3092 20H13.6906C13.0206 20 12.6856 20 12.3695 20.0545C11.7068 20.1687 11.087 20.459 10.5751 20.8949C10.3308 21.1029 10.1164 21.3603 9.68742 21.875L9.21847 22.4377C8.52556 23.2692 7.49911 23.75 6.41675 23.75C4.30022 23.75 2.62819 21.9543 2.77899 19.8431L3.08653 15.5375C3.3203 12.2648 3.43718 10.6284 4.14914 9.38824C4.77598 8.29636 5.71798 7.41925 6.85175 6.87179C8.13945 6.25 9.78001 6.25 13.0611 6.25Z" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</svg>
+                            Excellent gaming latency
+                        </li>
+                        <li>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+<g id="file-x-02">
+<path id="Icon" d="M17.5 13.75H10M12.5 18.75H10M20 8.75H10M25 15V8.5C25 6.3998 25 5.3497 24.5913 4.54754C24.2317 3.84193 23.6581 3.26825 22.9525 2.90873C22.1503 2.5 21.1002 2.5 19 2.5H11C8.8998 2.5 7.8497 2.5 7.04754 2.90873C6.34193 3.26825 5.76825 3.84193 5.40873 4.54754C5 5.3497 5 6.3998 5 8.5V21.5C5 23.6002 5 24.6503 5.40873 25.4525C5.76825 26.1581 6.34193 26.7318 7.04754 27.0913C7.8497 27.5 8.8998 27.5 11 27.5H15M20 20L26.25 26.25M26.25 20L20 26.25" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</svg>
+                            No Contract, No Credit Check
+                        </li>
+                        <li>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+<g id="x-circle">
+<path id="Icon" d="M18.75 11.25L11.25 18.75M11.25 11.25L18.75 18.75M27.5 15C27.5 21.9036 21.9036 27.5 15 27.5C8.09644 27.5 2.5 21.9036 2.5 15C2.5 8.09644 8.09644 2.5 15 2.5C21.9036 2.5 27.5 8.09644 27.5 15Z" stroke="#00A77F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</g>
+</svg>
+                            Unlimited &amp; Unthrottled
+                        </li>
+                    </ul>
+   <a href="javascript:;" class="check-btn">Check Availability</a> 
+                </div>
+            </div>
+        </div>
+
+    
+  </div>
+</section>
+
+<div class="home_pricing popup">
+  <div class="overlay"></div>
+ {% include 'plan-specification' %}
+</div>
+</div>
+
+
+
+
+          
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="container-md container">
+
+{% form 'contact' %} 
+<input type="hidden" name="Timestamp" value="{{ "now" | date: "%Y-%m-%d %H:%M" }}">  
+<input type="hidden" name="contact[address]" value="none" placeholder="Type Your Address Here" class="form-control pac-target-input autofill_address" autocomplete="off">
+{% comment %}
+<h2 class="text-primary h3 text-center">Shop the best deal with Nomad</h2>
+<p class="first_input_title lead font-weight-300 text-center tracking-wider mt-32"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+  <path d="M10.4999 10.9167C11.8806 10.9167 12.9999 9.79746 12.9999 8.41675C12.9999 7.03604 11.8806 5.91675 10.4999 5.91675C9.11921 5.91675 7.99992 7.03604 7.99992 8.41675C7.99992 9.79746 9.11921 10.9167 10.4999 10.9167Z" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M10.4999 18.8334C12.1666 15.5001 17.1666 13.3486 17.1666 8.83342C17.1666 5.15152 14.1818 2.16675 10.4999 2.16675C6.81802 2.16675 3.83325 5.15152 3.83325 8.83342C3.83325 13.3486 8.83325 15.5001 10.4999 18.8334Z" stroke="#00A77F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> Where will you primarily use this&nbsp;service?</p>
+<div class="form-group">
+<input id="autocomplete" type="text" name="contact[address]" placeholder="Enter Address" class="form-control pac-target-input autofill_address" autocomplete="off">
+<div class="form-text smaller text-uppercase position-absolute l-0 r-0 text-center text-gray-600">
+</div>
+</div>
+<p id="address_error">Please enter you address for the best recommendation.</p>
+
+<div class="mx-auto text-center" style="max-width: 333px;">
+<button type="button" class="form_btn btn-primary btn-block open-work-popup">Proceed</button>
+</div>
+{% endcomment %}
+{% comment %}  
+<p class="bottom_faq_q">Why do I need to enter my exact address?</p>
+<p class="bottom_faq_a">We need your address to find offers in your specific location. We will never sell or distribute your information. Specific location data is necessary to determine what you may already have and other services you can get with Nomad Internet</p>
+{% endcomment %}
+
+{% section '01home-faq' %}  
+
+
+<div class="introducing-popup">
+<div class="background-overlay"></div>
+<div class="popup-details ip_block">
+  <a href="javascript:;" class="close-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+        <path d="M13.6225 12.4167L23.7331 2.306C24.0891 1.95003 24.0891 1.3729 23.7331 1.01698C23.3771 0.661053 22.8 0.661008 22.4441 1.01698L12.3334 11.1277L2.22275 1.01698C1.86678 0.661008 1.28965 0.661008 0.933725 1.01698C0.577801 1.37295 0.577756 1.95008 0.933725 2.306L11.0444 12.4166L0.933725 22.5273C0.577756 22.8833 0.577756 23.4604 0.933725 23.8164C1.11169 23.9943 1.34497 24.0833 1.57826 24.0833C1.81155 24.0833 2.04479 23.9943 2.2228 23.8164L12.3334 13.7057L22.444 23.8164C22.622 23.9943 22.8553 24.0833 23.0886 24.0833C23.3219 24.0833 23.5551 23.9943 23.7331 23.8164C24.0891 23.4604 24.0891 22.8833 23.7331 22.5273L13.6225 12.4167Z" fill="black"/>
+      </svg>
+  </a>
+
+
+
+<div class="second_part">
+
+<h3>Let’s personalized your offer</h3>
+
+<div class="form-row">
+<div class="col-12">
+<div class="form-group"><label for="first_name" class="sr-only">First Name</label> <input type="hidden" name="contact[first_name]" placeholder="First Name" required class="form-control" value="None"></div>
+</div>
+<div class="col-12">
+<div class="form-group"><label for="phone_number" class="">Phone</label> <input type="tel" name="contact[phone_number]" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="form-control"></div>
+</div>  
+<div class="col-12">
+<div class="form-group"><label for="email" class="">Email</label> <input type="email" name="contact[email]" wire:model.lazy="inquiry.email" placeholder="Email" required="required" class="form-control"></div>
+</div>
+</div> 
+
+<p class="second_input_title lead font-weight-300 mt-6 tracking-wider">Where do you plan to primarily need internet?</p>
+<div class="radio-tile-group">
+<div class="input-container" style="margin-left:0px;">
+<input id="walk" class="radio-button" type="radio" name="contact[plan_need]" value="At Home">
+<div class="radio-tile">
+<div class="icon walk-icon">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="460.298px" height="460.297px" viewBox="0 0 460.298 460.297" style="enable-background:new 0 0 460.298 460.297;" xml:space="preserve">
+<g>
+<g>
+<path d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041    c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629    c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939    z"/>
+<path d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816    c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245    c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136    c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998    L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125    c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z"/>
+</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+</div>
+<label for="walk" class="radio-tile-label">At Home</label>
+</div>
+</div>
+<div class="input-container">
+<input id="bike" class="radio-button" type="radio" name="contact[plan_need]" value="On the Go">
+<div class="radio-tile">
+<div class="icon bike-icon">
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 512 512"><title>Delivery Truck</title><path d="M72.078,341.333H21.334a32,32,0,0,0,32,32h5.6A58.374,58.374,0,0,1,72.078,341.333Z"/><path d="M320,341.333H162.589a58.374,58.374,0,0,1,13.142,32H320a10.667,10.667,0,0,0,10.667-10.667V352A10.667,10.667,0,0,0,320,341.333Z"/><circle cx="117.334" cy="378.667" r="37.333"/><path d="M507.219,275.173,466.234,185.01A42.749,42.749,0,0,0,427.4,160H362.667A10.667,10.667,0,0,0,352,170.667V338.484a58.588,58.588,0,0,1,101.064,34.849H480a32,32,0,0,0,32-32V297.242A53.32,53.32,0,0,0,507.219,275.173Zm-48.633-8.507H389.333A10.667,10.667,0,0,1,378.667,256V213.333a10.667,10.667,0,0,1,10.667-10.667h42.991a21.333,21.333,0,0,1,19.421,12.5L468.3,251.586A10.667,10.667,0,0,1,458.586,266.667Z"/><circle cx="394.667" cy="378.667" r="37.333"/><path d="M298.667,96H53.333a32,32,0,0,0-32,32V256h-10.1C5.925,256,1,259.63.146,264.875a10.675,10.675,0,0,0,10.521,12.459h26.1c5.314,0,10.238,3.63,11.092,8.875a10.675,10.675,0,0,1-10.521,12.459h-26.1C5.925,298.667,1,302.3.146,307.541A10.675,10.675,0,0,0,10.667,320H320a10.667,10.667,0,0,0,10.667-10.667V128A32,32,0,0,0,298.667,96Z"/></svg>
+</div>
+<label for="bike" class="radio-tile-label">On the Go</label>
+</div>
+</div>
+<div class="input-container" style="margin-right:0px;">
+<input id="drive" class="radio-button" type="radio" name="contact[plan_need]" value="At Work">
+<div class="radio-tile">
+<div class="icon car-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"/></svg>
+</div>
+<label for="drive" class="radio-tile-label">Office</label>
+</div>
+</div>
+</div>  
+
+<input type="hidden" name="contact[call_us_now]" value="no">
+
+
+  
+{{ form.errors | default_errors }}
+<p id="errorwarn"></p>  
+{% comment %}  
+<p id="invalid_phone">Please enter valid phone number.</p>
+<p id="invalid_email">Please enter valid email address.</p>  
+{% endcomment %}
+ 
+<div class="mx-auto text-center">
+<button type="button" class="form_submit btn-primary btn-block">Find Offers</button>
+</div>
+
+<div class="call-us-now">
+  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+  <path d="M12.2045 5.2806C13.0184 5.4394 13.7665 5.83748 14.3529 6.42388C14.9393 7.01028 15.3373 7.75832 15.4961 8.57227M12.2045 1.94727C13.8955 2.13513 15.4725 2.89241 16.6763 4.09477C17.8802 5.29713 18.6395 6.87311 18.8295 8.56393M9.01862 11.8332C8.0173 10.8318 7.22665 9.69964 6.64665 8.49162C6.59676 8.38772 6.57182 8.33576 6.55265 8.27002C6.48455 8.03639 6.53347 7.74951 6.67514 7.55165C6.71501 7.49597 6.76264 7.44834 6.8579 7.35308C7.14924 7.06174 7.29491 6.91608 7.39015 6.76959C7.74931 6.21718 7.74931 5.50503 7.39015 4.95263C7.29491 4.80614 7.14924 4.66048 6.8579 4.36914L6.69551 4.20674C6.25264 3.76388 6.03121 3.54244 5.79339 3.42215C5.32042 3.18293 4.76187 3.18293 4.2889 3.42215C4.05108 3.54244 3.82965 3.76388 3.38678 4.20674L3.25542 4.33811C2.81406 4.77946 2.59339 5.00014 2.42485 5.30016C2.23783 5.63308 2.10336 6.15016 2.1045 6.53201C2.10552 6.87613 2.17228 7.11132 2.30578 7.58169C3.02326 10.1095 4.37699 12.4948 6.36697 14.4848C8.35695 16.4748 10.7423 17.8285 13.2701 18.546C13.7405 18.6795 13.9756 18.7463 14.3198 18.7473C14.7016 18.7484 15.2187 18.6139 15.5516 18.4269C15.8516 18.2584 16.0723 18.0377 16.5137 17.5964L16.645 17.465C17.0879 17.0221 17.3093 16.8007 17.4296 16.5629C17.6688 16.0899 17.6688 15.5314 17.4296 15.0584C17.3093 14.8206 17.0879 14.5991 16.645 14.1563L16.4826 13.9939C16.1913 13.7025 16.0456 13.5569 15.8992 13.4616C15.3467 13.1025 14.6346 13.1025 14.0822 13.4616C13.9357 13.5569 13.79 13.7025 13.4987 13.9939C13.4034 14.0891 13.3558 14.1368 13.3001 14.1766C13.1023 14.3183 12.8154 14.3672 12.5818 14.2991C12.516 14.28 12.4641 14.255 12.3602 14.2051C11.1521 13.6251 10.0199 12.8345 9.01862 11.8332Z" stroke="#013127" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  Call us today at <a href="tel:+1-570-729-5983">+1 210 598 5949</a>
+</div>  
+
+<p class="submit_terms">By submitting this form, you agree to receive communication from Nomad Internet.</p>  
+</div>
+    
+
+
+  
+{% endform %}
+
+<div class="offer_section">
+  <h2>Available Offers</h2>
+ 
+  <div class="offer_block omega-100">
+    <div class="offer_block_header most">
+      <p>most popular</p>
+    </div>
+    <div class="offer_block_content">
+      <div class="left_conetnt">
+        <h2>100Mbps Nomad Rural Unlimited</h2>
+        <ul>
+          <li>Our entry Internet plan for single floor rural homes and travelers made for browsing, online learning and live streaming with speeds up to 100 Mbps</li>
+          <li>Nomad Omega Wireless Modem, Nomad Prime and Travel Addons</li>
+          <li>No Contracts, No Credit Check & No Cancellation Fee</li>
+        </ul>
+  {% comment %}     
+  <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+            <path d="M11.25 11.3818H11.2625M18.75 18.8818H18.7625M20 10.1318L10 20.1318M11.5024 25.8829C11.9121 25.8288 12.3259 25.9399 12.6523 26.1913L14.1563 27.3454C14.6535 27.7273 15.3451 27.7273 15.8409 27.3454L17.4019 26.1468C17.6935 25.9232 18.0616 25.8246 18.4254 25.8732L20.378 26.1301C20.9988 26.2121 21.5974 25.8663 21.8376 25.2871L22.589 23.4705C22.7292 23.1302 22.9986 22.8608 23.3389 22.7205L25.1554 21.9691C25.7345 21.7303 26.0803 21.1303 25.9984 20.5095L25.7512 18.6276C25.697 18.2179 25.8081 17.804 26.0595 17.4776L27.2136 15.9735C27.5955 15.4763 27.5955 14.7846 27.2136 14.2888L26.0151 12.7277C25.7915 12.4361 25.6929 12.068 25.7415 11.7042L25.9984 9.75143C26.0803 9.13062 25.7345 8.53202 25.1554 8.29175L23.3389 7.54038C22.9986 7.40011 22.7292 7.13067 22.589 6.7904L21.8376 4.97378C21.5988 4.39463 20.9988 4.04881 20.378 4.13075L18.4254 4.38769C18.0616 4.43769 17.6935 4.33908 17.4033 4.11686L15.8423 2.91829C15.3451 2.53635 14.6535 2.53635 14.1577 2.91829L12.5967 4.11686C12.3051 4.33908 11.9371 4.43769 11.5732 4.39047L9.62059 4.13353C8.99981 4.05159 8.40125 4.39741 8.16099 4.97656L7.41105 6.79318C7.26939 7.13206 6.99997 7.4015 6.66111 7.54316L4.8446 8.29314C4.26548 8.53341 3.91967 9.132 4.00161 9.75282L4.25853 11.7055C4.30575 12.0694 4.20715 12.4375 3.98495 12.7277L2.78643 14.2888C2.40452 14.786 2.40452 15.4777 2.78643 15.9735L3.98495 17.5345C4.20854 17.8262 4.30714 18.1943 4.25853 18.5581L4.00161 20.5109C3.91967 21.1317 4.26548 21.7303 4.8446 21.9705L6.66111 22.7219C7.00136 22.8622 7.27078 23.1316 7.41105 23.4719L8.16238 25.2885C8.40125 25.8677 9.0012 26.2135 9.62198 26.1315L11.5024 25.8829ZM11.875 11.3818C11.875 11.727 11.5952 12.0068 11.25 12.0068C10.9048 12.0068 10.625 11.727 10.625 11.3818C10.625 11.0367 10.9048 10.7568 11.25 10.7568C11.5952 10.7568 11.875 11.0367 11.875 11.3818ZM19.375 18.8818C19.375 19.227 19.0952 19.5068 18.75 19.5068C18.4048 19.5068 18.125 19.227 18.125 18.8818C18.125 18.5367 18.4048 18.2568 18.75 18.2568C19.0952 18.2568 19.375 18.5367 19.375 18.8818Z" stroke="#00A77F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>Save up to $50/mo with Friends of Nomad Discount</p>    
+        </h3>{% endcomment %}
+      </div>
+      <div class="right_conetnt">
+        <div class="offer_price">
+          <h3>
+            <span class="left">
+              <em class="doller">$</em>
+              <em class="price">99</em>
+            </span>
+            <span class="right">
+              <em class="up_last">.95/mo</em>
+              {% comment %}<em class="lo_last">with 5 Friends</br>of Nomad</em>{% endcomment %}
+            </span>
+          </h3>
+          {% comment %}
+          <p>
+            <span class="bottom_text">
+              <em>+$99.95</em> One-Time</br>Membership Fee
+            </span>
+          </p>
+          {% endcomment %}
+        </div>
+        <div class="offer_button">
+          <a href="/pages/plans">Claim Offer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="offer_block omega-200">
+    <div class="offer_block_header turbo">
+      <p>turbo speed</p>
+    </div>
+    <div class="offer_block_content">
+      <div class="left_conetnt">
+        <h2>200Mbps Nomad Rural Unlimited</h2>
+        <ul>
+          <li>Turbocharged Internet that powers rural multi-floor rural homes and travelers with smart devices and streaming on multiple screens at once with speeds up to 200 Mbps</li>
+          <li>Nomad Omega Wireless Modem, Nomad Prime and Travel Addons</li>
+          <li>No Contracts, No Credit Check & No Cancellation Fee</li>
+        </ul>
+       {% comment %} <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+            <path d="M11.25 11.3818H11.2625M18.75 18.8818H18.7625M20 10.1318L10 20.1318M11.5024 25.8829C11.9121 25.8288 12.3259 25.9399 12.6523 26.1913L14.1563 27.3454C14.6535 27.7273 15.3451 27.7273 15.8409 27.3454L17.4019 26.1468C17.6935 25.9232 18.0616 25.8246 18.4254 25.8732L20.378 26.1301C20.9988 26.2121 21.5974 25.8663 21.8376 25.2871L22.589 23.4705C22.7292 23.1302 22.9986 22.8608 23.3389 22.7205L25.1554 21.9691C25.7345 21.7303 26.0803 21.1303 25.9984 20.5095L25.7512 18.6276C25.697 18.2179 25.8081 17.804 26.0595 17.4776L27.2136 15.9735C27.5955 15.4763 27.5955 14.7846 27.2136 14.2888L26.0151 12.7277C25.7915 12.4361 25.6929 12.068 25.7415 11.7042L25.9984 9.75143C26.0803 9.13062 25.7345 8.53202 25.1554 8.29175L23.3389 7.54038C22.9986 7.40011 22.7292 7.13067 22.589 6.7904L21.8376 4.97378C21.5988 4.39463 20.9988 4.04881 20.378 4.13075L18.4254 4.38769C18.0616 4.43769 17.6935 4.33908 17.4033 4.11686L15.8423 2.91829C15.3451 2.53635 14.6535 2.53635 14.1577 2.91829L12.5967 4.11686C12.3051 4.33908 11.9371 4.43769 11.5732 4.39047L9.62059 4.13353C8.99981 4.05159 8.40125 4.39741 8.16099 4.97656L7.41105 6.79318C7.26939 7.13206 6.99997 7.4015 6.66111 7.54316L4.8446 8.29314C4.26548 8.53341 3.91967 9.132 4.00161 9.75282L4.25853 11.7055C4.30575 12.0694 4.20715 12.4375 3.98495 12.7277L2.78643 14.2888C2.40452 14.786 2.40452 15.4777 2.78643 15.9735L3.98495 17.5345C4.20854 17.8262 4.30714 18.1943 4.25853 18.5581L4.00161 20.5109C3.91967 21.1317 4.26548 21.7303 4.8446 21.9705L6.66111 22.7219C7.00136 22.8622 7.27078 23.1316 7.41105 23.4719L8.16238 25.2885C8.40125 25.8677 9.0012 26.2135 9.62198 26.1315L11.5024 25.8829ZM11.875 11.3818C11.875 11.727 11.5952 12.0068 11.25 12.0068C10.9048 12.0068 10.625 11.727 10.625 11.3818C10.625 11.0367 10.9048 10.7568 11.25 10.7568C11.5952 10.7568 11.875 11.0367 11.875 11.3818ZM19.375 18.8818C19.375 19.227 19.0952 19.5068 18.75 19.5068C18.4048 19.5068 18.125 19.227 18.125 18.8818C18.125 18.5367 18.4048 18.2568 18.75 18.2568C19.0952 18.2568 19.375 18.5367 19.375 18.8818Z" stroke="#00A77F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>Save up to $50/mo with Friends of Nomad Discount</p>    
+        </h3>{% endcomment %}
+      </div>
+      <div class="right_conetnt">
+        <div class="offer_price">
+          <h3>
+            <span class="left">
+              <em class="doller">$</em>
+              <em class="price">149</em>
+            </span>
+            <span class="right">
+              <em class="up_last">.95/mo</em>
+              {% comment %}<em class="lo_last">with 5 Friends</br>of Nomad</em>{% endcomment %}
+            </span>
+          </h3>
+          {% comment %}
+          <p>
+            <span class="bottom_text">
+              <em>+$99.95</em> One-Time</br>Membership Fee
+            </span>
+          </p>
+          {% endcomment %}
+        </div>
+        <div class="offer_button">
+          <a href="/pages/plans">Claim Offer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="offer_block air-100">
+    <div class="offer_block_header most">
+      <p>most popular</p>
+    </div>
+    <div class="offer_block_content">
+      <div class="left_conetnt">
+        <h2>100Mbps Nomad Rural Unlimited</h2>
+        <ul>
+          <li>Our entry Internet plan for single floor rural homes and travelers made for browsing, online learning and live streaming with speeds up to 100 Mbps</li>
+          <li>Nomad Air Wireless Modem, Nomad Prime and Travel Addons</li>
+          <li>No Contracts, No Credit Check & No Cancellation Fee</li>
+        </ul>
+      {% comment %} <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+            <path d="M11.25 11.3818H11.2625M18.75 18.8818H18.7625M20 10.1318L10 20.1318M11.5024 25.8829C11.9121 25.8288 12.3259 25.9399 12.6523 26.1913L14.1563 27.3454C14.6535 27.7273 15.3451 27.7273 15.8409 27.3454L17.4019 26.1468C17.6935 25.9232 18.0616 25.8246 18.4254 25.8732L20.378 26.1301C20.9988 26.2121 21.5974 25.8663 21.8376 25.2871L22.589 23.4705C22.7292 23.1302 22.9986 22.8608 23.3389 22.7205L25.1554 21.9691C25.7345 21.7303 26.0803 21.1303 25.9984 20.5095L25.7512 18.6276C25.697 18.2179 25.8081 17.804 26.0595 17.4776L27.2136 15.9735C27.5955 15.4763 27.5955 14.7846 27.2136 14.2888L26.0151 12.7277C25.7915 12.4361 25.6929 12.068 25.7415 11.7042L25.9984 9.75143C26.0803 9.13062 25.7345 8.53202 25.1554 8.29175L23.3389 7.54038C22.9986 7.40011 22.7292 7.13067 22.589 6.7904L21.8376 4.97378C21.5988 4.39463 20.9988 4.04881 20.378 4.13075L18.4254 4.38769C18.0616 4.43769 17.6935 4.33908 17.4033 4.11686L15.8423 2.91829C15.3451 2.53635 14.6535 2.53635 14.1577 2.91829L12.5967 4.11686C12.3051 4.33908 11.9371 4.43769 11.5732 4.39047L9.62059 4.13353C8.99981 4.05159 8.40125 4.39741 8.16099 4.97656L7.41105 6.79318C7.26939 7.13206 6.99997 7.4015 6.66111 7.54316L4.8446 8.29314C4.26548 8.53341 3.91967 9.132 4.00161 9.75282L4.25853 11.7055C4.30575 12.0694 4.20715 12.4375 3.98495 12.7277L2.78643 14.2888C2.40452 14.786 2.40452 15.4777 2.78643 15.9735L3.98495 17.5345C4.20854 17.8262 4.30714 18.1943 4.25853 18.5581L4.00161 20.5109C3.91967 21.1317 4.26548 21.7303 4.8446 21.9705L6.66111 22.7219C7.00136 22.8622 7.27078 23.1316 7.41105 23.4719L8.16238 25.2885C8.40125 25.8677 9.0012 26.2135 9.62198 26.1315L11.5024 25.8829ZM11.875 11.3818C11.875 11.727 11.5952 12.0068 11.25 12.0068C10.9048 12.0068 10.625 11.727 10.625 11.3818C10.625 11.0367 10.9048 10.7568 11.25 10.7568C11.5952 10.7568 11.875 11.0367 11.875 11.3818ZM19.375 18.8818C19.375 19.227 19.0952 19.5068 18.75 19.5068C18.4048 19.5068 18.125 19.227 18.125 18.8818C18.125 18.5367 18.4048 18.2568 18.75 18.2568C19.0952 18.2568 19.375 18.5367 19.375 18.8818Z" stroke="#00A77F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>Save up to $50/mo with Friends of Nomad Discount</p>    
+        </h3>{% endcomment %}
+      </div>
+      <div class="right_conetnt">
+        <div class="offer_price">
+          <h3>
+            <span class="left">
+              <em class="doller">$</em>
+              <em class="price">99</em>
+            </span>
+            <span class="right">
+              <em class="up_last">.95/mo</em>
+             {% comment %} <em class="lo_last">with 5 Friends</br>of Nomad</em>{% endcomment %}
+            </span>
+          </h3>
+          {% comment %}
+          <p>
+            <span class="bottom_text">
+              <em>+$399.95</em> One-Time</br>Membership Fee
+            </span>
+          </p>
+          {% endcomment %}
+        </div>
+        <div class="offer_button">
+          <a href="/pages/plans">Claim Offer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="offer_block air-200">
+    <div class="offer_block_header turbo">
+      <p>turbo speed</p>
+    </div>
+    <div class="offer_block_content">
+      <div class="left_conetnt">
+        <h2>200Mbps Nomad Rural Unlimited</h2>
+        <ul>
+          <li>Turbocharged Internet that powers rural multi-floor rural homes and travelers with smart devices and streaming on multiple screens at once with speeds up to 200 Mbps</li>
+          <li>Nomad Air Wireless Modem, Nomad Prime and Travel Addons</li>
+          <li>No Contracts, No Credit Check & No Cancellation Fee</li>
+        </ul>
+       {% comment %} <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+            <path d="M11.25 11.3818H11.2625M18.75 18.8818H18.7625M20 10.1318L10 20.1318M11.5024 25.8829C11.9121 25.8288 12.3259 25.9399 12.6523 26.1913L14.1563 27.3454C14.6535 27.7273 15.3451 27.7273 15.8409 27.3454L17.4019 26.1468C17.6935 25.9232 18.0616 25.8246 18.4254 25.8732L20.378 26.1301C20.9988 26.2121 21.5974 25.8663 21.8376 25.2871L22.589 23.4705C22.7292 23.1302 22.9986 22.8608 23.3389 22.7205L25.1554 21.9691C25.7345 21.7303 26.0803 21.1303 25.9984 20.5095L25.7512 18.6276C25.697 18.2179 25.8081 17.804 26.0595 17.4776L27.2136 15.9735C27.5955 15.4763 27.5955 14.7846 27.2136 14.2888L26.0151 12.7277C25.7915 12.4361 25.6929 12.068 25.7415 11.7042L25.9984 9.75143C26.0803 9.13062 25.7345 8.53202 25.1554 8.29175L23.3389 7.54038C22.9986 7.40011 22.7292 7.13067 22.589 6.7904L21.8376 4.97378C21.5988 4.39463 20.9988 4.04881 20.378 4.13075L18.4254 4.38769C18.0616 4.43769 17.6935 4.33908 17.4033 4.11686L15.8423 2.91829C15.3451 2.53635 14.6535 2.53635 14.1577 2.91829L12.5967 4.11686C12.3051 4.33908 11.9371 4.43769 11.5732 4.39047L9.62059 4.13353C8.99981 4.05159 8.40125 4.39741 8.16099 4.97656L7.41105 6.79318C7.26939 7.13206 6.99997 7.4015 6.66111 7.54316L4.8446 8.29314C4.26548 8.53341 3.91967 9.132 4.00161 9.75282L4.25853 11.7055C4.30575 12.0694 4.20715 12.4375 3.98495 12.7277L2.78643 14.2888C2.40452 14.786 2.40452 15.4777 2.78643 15.9735L3.98495 17.5345C4.20854 17.8262 4.30714 18.1943 4.25853 18.5581L4.00161 20.5109C3.91967 21.1317 4.26548 21.7303 4.8446 21.9705L6.66111 22.7219C7.00136 22.8622 7.27078 23.1316 7.41105 23.4719L8.16238 25.2885C8.40125 25.8677 9.0012 26.2135 9.62198 26.1315L11.5024 25.8829ZM11.875 11.3818C11.875 11.727 11.5952 12.0068 11.25 12.0068C10.9048 12.0068 10.625 11.727 10.625 11.3818C10.625 11.0367 10.9048 10.7568 11.25 10.7568C11.5952 10.7568 11.875 11.0367 11.875 11.3818ZM19.375 18.8818C19.375 19.227 19.0952 19.5068 18.75 19.5068C18.4048 19.5068 18.125 19.227 18.125 18.8818C18.125 18.5367 18.4048 18.2568 18.75 18.2568C19.0952 18.2568 19.375 18.5367 19.375 18.8818Z" stroke="#00A77F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>Save up to $50/mo with Friends of Nomad Discount</p>    
+        </h3>{% endcomment %}
+      </div>
+      <div class="right_conetnt">
+        <div class="offer_price">
+          <h3>
+            <span class="left">
+              <em class="doller">$</em>
+              <em class="price">149</em>
+            </span>
+            <span class="right">
+              <em class="up_last">.95/mo</em>
+             {% comment %} <em class="lo_last">with 5 Friends</br>of Nomad</em>{% endcomment %}
+            </span>
+          </h3>
+          {% comment %}
+          <p>
+            <span class="bottom_text">
+              <em>+$399.95</em> One-Time</br>Membership Fee
+            </span>
+          </p>
+          {% endcomment %}
+        </div>
+        <div class="offer_button">
+          <a href="/pages/plans">Claim Offer</a>
+        </div>
+      </div>
+    </div>
+  </div>           
+<p class="success_message">Thanks for submitting the form. We will reach out to you within one hour or less.</p> 
+</div>
+</div>
+</div>              
+</div>
+  
+
+{% comment %}
+<div class="recom_plan">
+<h2 class="text-primary h3 text-uppercase text-center">Recommended Plan with Limited Offer</h2>
+<div id="countdown">Offer Expires in <span id="time"></span></div>  
+<div class="at_home_plan">
+{% include 'popup-at-home' %}
+</div>
+<div class="on_the_go_plan">
+{% include 'popup-on-the-go' %}
+</div>
+<div class="at_work_plan">
+{% include 'popup-at-work' %}
+</div>
+</div>
+{% endcomment %}
+
+</div>
+ 
+<div class="first-popup popup-content">
+<div class="background-overlay"></div>
+<div class="popup-details">
+<a href="javascript:;" class="close-button">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+<path d="M13.6222 12.4167L23.7329 2.306C24.0888 1.95003 24.0888 1.3729 23.7329 1.01698C23.3769 0.661053 22.7998 0.661008 22.4438 1.01698L12.3331 11.1277L2.22251 1.01698C1.86654 0.661008 1.2894 0.661008 0.933481 1.01698C0.577557 1.37295 0.577512 1.95008 0.933481 2.306L11.0441 12.4166L0.933481 22.5273C0.577512 22.8833 0.577512 23.4604 0.933481 23.8164C1.11144 23.9943 1.34473 24.0833 1.57802 24.0833C1.8113 24.0833 2.04455 23.9943 2.22255 23.8164L12.3331 13.7057L22.4438 23.8164C22.6217 23.9943 22.855 24.0833 23.0883 24.0833C23.3216 24.0833 23.5549 23.9943 23.7329 23.8164C24.0888 23.4604 24.0888 22.8833 23.7329 22.5273L13.6222 12.4167Z" fill="white"/>
+</svg>
+</a>
+<div class="title">
+<h3>Rural Unlimited Plan</h3>
+<h2>100 Mbps</h2>
+<span>Internet Speed</span>
+</div>
+<ul>
+<li>Our most popular rural Internet for remote work, online learning and live streaming with speeds up to <b> 100 Mbps</b></li>
+<li>Built in Wireless C-Band works even where your Cell Phone doesn't! C-band is specifically designed to work in rural areas</li>
+<li>No Contracts, No Credit Check, No Cancelation Fees</li>
+<li>Truly Unlimited Internet, No Data Caps, No Throttling</li>
+<li>Free Live 24/7 USA based Phone Support</li>
+</ul>
+</div>
+</div>
+<div class="second-popup popup-content">
+<div class="background-overlay"></div>
+<div class="popup-details">
+<a href="javascript:;" class="close-button">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+<path d="M13.6222 12.4167L23.7329 2.306C24.0888 1.95003 24.0888 1.3729 23.7329 1.01698C23.3769 0.661053 22.7998 0.661008 22.4438 1.01698L12.3331 11.1277L2.22251 1.01698C1.86654 0.661008 1.2894 0.661008 0.933481 1.01698C0.577557 1.37295 0.577512 1.95008 0.933481 2.306L11.0441 12.4166L0.933481 22.5273C0.577512 22.8833 0.577512 23.4604 0.933481 23.8164C1.11144 23.9943 1.34473 24.0833 1.57802 24.0833C1.8113 24.0833 2.04455 23.9943 2.22255 23.8164L12.3331 13.7057L22.4438 23.8164C22.6217 23.9943 22.855 24.0833 23.0883 24.0833C23.3216 24.0833 23.5549 23.9943 23.7329 23.8164C24.0888 23.4604 24.0888 22.8833 23.7329 22.5273L13.6222 12.4167Z" fill="white"/>
+</svg>
+</a>
+<div class="title">
+<h3>Rural Unlimited Plan</h3>
+<h2>200 Mbps</h2>
+<span>Internet Speed</span>
+</div>
+<ul>
+<li>Turbocharged Internet that powers rural households with smart home devices and streaming on multiple screens with speeds up to <b> 200 Mbps</b></li>
+<li>Built in Wireless C-Band works even where your Cell Phone doesn't! C-band is specifically designed to work in rural areas</li>
+<li>No Contracts, No Credit Check, No Cancelation Fees</li>
+<li>Truly Unlimited Internet, No Data Caps, No Throttling</li>
+<li>Free Live 24/7 USA based Phone Support</li>
+</ul>
+</div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA2-CZ2tXlJS7J-vFtsOmTnBButfTLgBg&amp;libraries=places&amp;callback=initAutocomplete" async="" defer=""></script>
+<script>
+let autocomplete;
+
+function initAutocomplete() {
+autocomplete = new google.maps.places.Autocomplete(
+document.getElementById('autocomplete'), {
+types: ['address'],
+componentRestrictions: {
+country: ['US']
+},
+fields: ['place_id', 'geometry', 'name', 'address_components']
+});
+autocomplete.addListener('place_changed', onPlaceChanged);
+}
+
+if(document.getElementById("autocomplete").value == ""){
+document.getElementsByClassName('second_part')[0].style.display = 'none';
+}
+else{
+document.getElementsByClassName('second_part')[0].style.display = 'block';  
+}
+
+function onPlaceChanged() {
+const place = autocomplete.getPlace();
+let streetAddress = '';
+let newAddress = {
+address: '',
+city: '',
+state: '',
+zip: ''
+};
+
+if(document.getElementById("autocomplete").value == ""){
+document.getElementsByClassName('second_part')[0].style.display = 'block';
+}
+else{
+document.getElementsByClassName('second_part')[0].style.display = 'block';  
+}
+
+}
+
+window.addEventListener('resized', (event) => {
+window.parent.dispatchEvent(new Event('resize'));
+});
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+<script src="{{ 'jquery.serialize-object.min.js' | asset_url }}"></script>
+<script src="{{ 'jquery.cookie.js' | asset_url }}"></script>
+
+<script> 
+var $j = jQuery.noConflict();
+function isEmail(email) {
+var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+return regex.test(email);
+}
+
+/*$j(document).on('change input propertychange paste', 'body .mapboxgl-ctrl-geocoder--input', function(){
+  alert('hi');
+  console.log($j(this).val());
+   $j('.autofill_address').val($j(this).val());
+});*/
+
+$j(document).on('click', '.accordion-header', function () {
+  // Toggle the visibility of the content
+  var isVisible = $j(this).next('.accordion-content').is(':visible');
+
+  // Hide all accordion content
+  $j('.accordion-content').slideUp();
+  $j('.accordion').removeClass('open');
+  // If the clicked header's content was not visible, show it
+  if (!isVisible) {
+    $j(this).next('.accordion-content').slideDown();
+    $j(this).parents('.accordion').addClass('open');
+  }
+});
+  
+$j(document).on('click','.first-popup-open',function(){
+$j(".first-popup").addClass("active");
+$j('body').addClass('stopscroll');  
+});
+$j(document).on('click','.second-popup-open',function(){
+$j(".second-popup").addClass("active");
+$j('body').addClass('stopscroll');  
+}); 
+  
+$j(document).on('click','.close-button',function(){  
+$j('body').removeClass('stopscroll');
+$j(".introducing-popup").removeClass("active");
+$j(".first-popup").removeClass("active");
+$j(".second-popup").removeClass("active");  
+});    
+
+$j(document).on('click','.open-popup',function(){
+$j(".popup").addClass("active");
+$j('body').addClass('stopscroll');  
+});
+  
+$j(document).on('click','.close-button',function(){  
+$j('body').removeClass('stopscroll');
+$j(".popup").removeClass("active"); 
+}); 
+  
+$j( ".wizard-membership__btn" ).click(function( event ) {
+event.preventDefault();
+var cart_link = $j(this).attr('data-href');
+var discount_code = $j.cookie("discount_code");
+if (discount_code){  
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?discount_code="+discount_code+"&items=https://nomadinternet.com"+cart_link+"&jsonize=1";
+}
+else{
+url = "https://np.nomadinternet.com/recharge-generate-checkout-url.php?items=https://nomadinternet.com"+cart_link+"&jsonize=1";
+}
+  console.log('url = ', url);
+$j.ajax({
+type: "GET",
+url: url,
+dataType: "json",
+success: function(response){
+location.href = response[0];
+}
+});
+});
+
+$j(".autofill_address").keyup(function(){
+var value = $j(this).val();
+if (value.length > 20){
+$j('.second_part').show();
+}else{
+$j('.second_part').hide();
+}
+});
+$j('.autofill_address').change(function(){
+var value = $j(this).val();
+if (value.length > 20){
+$j('.second_part').show();
+}else{
+$j('.second_part').hide();
+} 
+});
+
+$j('.expander').click(function(){
+$j(this).parents().find('.wizard-membership__description').css('max-height','none');
+$j(this).hide();
+});
+
+
+var $jform = $j('form#contact_form'),
+url = 'https://script.google.com/macros/s/AKfycbznfugA4Geyk69dTFiiWsGYsvrU8LrFAThphufQw056YOs5axU2dwinXSMomzP9Mn4nsg/exec'
+
+$j('.check-btn').on('click', function(e) {  
+$j(".introducing-popup").addClass("active");
+$j('body').addClass('stopscroll'); 
+});
+
+
+/*$j('.call-us-now').on('click', function(e) {
+//alert('hi');
+var isValid = true;
+var validphone = true;
+var validemail = true;
+const elementsToCheck = [
+  { selector: '[name="contact[first_name]"]', message: 'First name' },
+  { selector: '[name="contact[phone_number]"]', message: 'Phone number' },
+  { selector: '[name="contact[email]"]', message: 'Email address' },
+];
+const continue_errors = [];
+$j.each(elementsToCheck, function (index, element) {
+  if ($j(element.selector).val() == "") {
+    continue_errors.push(element.message);
+  }
+}); 
+$(".form-control").each(function() {
+var element = $(this);
+if (element.val() == "") {
+isValid = false;
+}
+});
+var mail = $j("input[name='contact[email]']").val();
+if(!isEmail(mail)){
+validemail = false;
+}
+else{
+validemail = true;  
+}
+var a = $j("input[name='contact[phone_number]']").val();
+var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+if (filter.test(a)) {
+validphone = true;
+}
+else {
+validphone = false;
+}
+if(!$('.radio-button').is(':checked')){
+  isValid = false;
+  continue_errors.push('and Select where you will primarily use internet');
+}
+if(isValid == false){
+$j('#errorwarn').show();
+$j('#errorwarn').text('Please input your '+continue_errors.join(" ,")+'.');    
+}
+else{ 
+if(validphone == false){ 
+$j('#errorwarn').show();
+$j('#errorwarn').text('Please enter valid phone number.'); 
+}
+else if(validemail == false){
+$j('#errorwarn').show();
+$j('#errorwarn').text('Please enter valid email address.');   
+}   
+else{
+//$j('#invalid_phone').hide();  
+if (!$("input[name='contact[plan_need]']:checked").val()) {
+$j('#errorwarn').show();
+return false;
+}
+else {
+$j('#errorwarn').hide();
+$j.ajax({
+url: url,
+method: "GET",
+dataType: "json",
+data: $jform.serializeObject(),
+beforeSend: function() {  
+$j('.rr_loader').show();
+},
+success: function(html){
+$j.cookie('lookup_popup', 'submitted');  
+},
+complete: function() {  
+$j('.rr_loader').hide();
+}
+});
+
+}  
+}
+}
+}); 
+*/
+
+
+  
+$j('.form_submit').on('click', function(e) {
+//alert('hi');
+var isValid = true;
+var validphone = true;
+var validemail = true;
+
+const elementsToCheck = [
+  { selector: '[name="contact[first_name]"]', message: 'First name' },
+  { selector: '[name="contact[phone_number]"]', message: 'Phone number' },
+  { selector: '[name="contact[email]"]', message: 'Email address' },
+];
+const continue_errors = [];
+$j.each(elementsToCheck, function (index, element) {
+  if ($j(element.selector).val() == "") {
+    continue_errors.push(element.message);
+  }
+});
+  
+$j(".form-control").each(function() {
+var element = $j(this);
+if (element.val() == "") {
+isValid = false;
+}
+});
+
+var mail = $j("input[name='contact[email]']").val();
+if(!isEmail(mail)){
+validemail = false;
+}
+else{
+validemail = true;  
+}
+  
+var a = $j("input[name='contact[phone_number]']").val();
+var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+if (filter.test(a)) {
+validphone = true;
+}
+else {
+validphone = false;
+}
+
+
+if(!$j('.radio-button').is(':checked')){
+  isValid = false;
+  continue_errors.push('and Select where you will primarily use internet');
+}
+
+if(isValid == false){
+$j('#errorwarn').show();
+$j('#errorwarn').text('Please input your '+continue_errors.join(" ,")+'.');    
+}
+else{
+    
+if(validphone == false){ 
+$j('#errorwarn').show();
+$j('#errorwarn').text('Please enter valid phone number.'); 
+}
+else if(validemail == false){
+$j('#errorwarn').show();
+$j('#errorwarn').text('Please enter valid email address.');   
+}   
+else{
+//$j('#invalid_phone').hide();  
+if (!$j("input[name='contact[plan_need]']:checked").val()) {
+$j('#errorwarn').show();
+return false;
+}
+else {
+$j('#errorwarn').hide();
+$j.ajax({
+url: url,
+method: "GET",
+dataType: "json",
+data: $jform.serializeObject(),
+beforeSend: function() {  
+$j('.rr_loader').show();
+},
+success: function(html){
+$j.cookie('lookup_popup', 'submitted');  
+//alert($j.cookie('lookup_popup'));
+//$j('.close').trigger('click');  
+//$j('form').hide();
+//$j('.success_message').show(); 
+//$j('.recom_plan').show();
+$j('.second_part').hide();
+$j('.offer_section').show(); 
+$j('.introducing-popup .popup-details').addClass('offer_screen');  
+if($j("input[name='contact[plan_need]']:checked").val() == 'At Home'){
+//window.location.href = "/pages/plans?find=100-omega";
+$j('.second_part').hide();
+$j('.omega-100').show();
+$j('.omega-200').show();
+}
+if($j("input[name='contact[plan_need]']:checked").val() == 'On the Go'){
+//window.location.href = "/pages/plans?find=100-air";
+$j('.second_part').hide();
+$j('.air-100').show();
+$j('.air-200').show();  
+}
+if($j("input[name='contact[plan_need]']:checked").val() == 'At Work'){
+//window.location.href = "/pages/plans?find=200-air";
+$j('.second_part').hide();
+$j('.omega-200').show();  
+}
+
+function startTimer(duration, display) {
+var timer = duration, minutes, seconds;
+setInterval(function () {
+minutes = parseInt(timer / 60, 10)
+seconds = parseInt(timer % 60, 10);
+
+minutes = minutes < 10 ? "0" + minutes : minutes;
+seconds = seconds < 10 ? "0" + seconds : seconds;
+
+display.textContent = minutes + ":" + seconds;
+
+if (--timer < 0) {
+timer = duration;
+}
+}, 1000);
+}
+var fiveMinutes = 60 * 10,
+display = document.querySelector('#time');
+startTimer(fiveMinutes, display);
+},
+complete: function() {  
+$j('.rr_loader').hide();
+}
+});
+
+}  
+}
+
+}
+}); 
+</script>

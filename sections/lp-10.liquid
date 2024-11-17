@@ -1,0 +1,63 @@
+{% comment %}
+File name:
+	lp - landing page
+	number - section number
+{% endcomment %}
+
+<div style="background-color: {{ section.settings.bg_color }}">
+	<div class="container">
+		<div class="lp-10__content">
+			{% if section.settings.icon %}
+				<div class="lp-10__icon">
+					{% assign img = section.settings.icon %}
+					{{ img | image_url: width: img.width | image_tag }}
+				</div>
+			{% endif %}
+			<h1 class="lp-10__title">{{ section.settings.title }}</h1>
+			<div class="lp-10__description">
+				<p>{{ section.settings.description }}</p>
+			</div>
+			<div>
+				{% for btn in section.blocks %}
+					<a href="{{ btn.settings.url }}" class="btn lg red">{{ btn.settings.text }}</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+  "name": "lp-10",
+  "class": "lp-10",
+  "tag": "div",
+  "presets": [
+    {
+      "name": "LP / SECT 10"
+    }
+	],
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "icon",
+			"label": "Icon"
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "description",
+			"label": "Description"
+		},
+		{
+			"type": "color",
+			"id": "bg_color",
+			"label": "Background color",
+			"default": "#ffffff"
+		}
+	]
+}
+{% endschema %}

@@ -1,0 +1,132 @@
+<!-- Reamaze Config file - DO NOT REMOVE -->
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support.account = "nomad";
+</script>
+
+
+
+
+
+
+
+<!-- reamaze_cue_3539_s -->
+<!-- Cue - Plans -->
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support.outbounds = _support.outbounds || [];
+  _support.outbounds.push({
+    id: "3539",
+    name: "Plans",
+    message: "Hi, do you need some help deciding what plan to choose?  Let's start your cell phone. \n\nWho provides your cell phone service and how well does it work?",
+    sound: true,
+    transient: false,
+    botsEnabled: false,
+    disableCueClick: false,
+    enableCustomFields: false,
+    start: "",
+    end: "",
+    user: {
+      type: "staff",
+      name: "Mike",
+      staffName: "Mike Tyler",
+    },
+    rules: [
+      {
+        type: "url",
+        op: "contains",
+        value: "https://nomadinternet.com/pages/plans#wizard-plans",
+      },
+      {
+        type: "timeOnPage",
+        op: "greaterThan",
+        value: "10s",
+      },
+      {
+        type: "inOfficeHour",
+        op: "isTrue",
+      },
+    ],
+  });
+</script>
+<!-- reamaze_cue_3539_e -->
+
+
+
+
+
+
+<!-- reamaze_cue_3541_s -->
+<!-- Cue - Real Person -->
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support.outbounds = _support.outbounds || [];
+  _support.outbounds.push({
+    id: "3541",
+    name: "Real Person",
+    message: "Hi! This is a real person :) Do you have any questions?",
+    sound: true,
+    transient: false,
+    botsEnabled: false,
+    disableCueClick: false,
+    enableCustomFields: false,
+    start: "",
+    end: "",
+    user: {
+      type: "staff",
+      name: "Mike",
+      staffName: "Mike Tyler",
+    },
+    rules: [
+      {
+        type: "timeOnSite",
+        op: "greaterThan",
+        value: "15s",
+      },
+      {
+        type: "inOfficeHour",
+        op: "isTrue",
+      },
+    ],
+  });
+</script>
+<!-- reamaze_cue_3541_e -->
+
+
+
+
+
+<!-- reamaze_cue_3540_s -->
+<!-- Cue - Coupon Code -->
+<script type="text/javascript">
+  var _support = _support || { 'ui': {}, 'user': {} };
+  _support.outbounds = _support.outbounds || [];
+  _support.outbounds.push({
+    id: "3540",
+    name: "Coupon Code",
+    message: "Thank you for your purchase! Use this coupon in the next 15 min and get $25 off your order :)\n\nPlease enter this Coupon Code on the final checkout page: Q28WJJRW",
+    sound: true,
+    transient: true,
+    botsEnabled: false,
+    disableCueClick: false,
+    enableCustomFields: false,
+    start: "",
+    end: "",
+    user: {
+      type: "team"
+    },
+    rules: [
+      {
+        type: "timeOnPage",
+        op: "greaterThan",
+        value: "15s",
+      },
+      {
+        type: "url",
+        op: "contains",
+        value: "https://nomadinternet.com/cart",
+      },
+    ],
+  });
+</script>
+<!-- reamaze_cue_3540_e -->

@@ -1,0 +1,561 @@
+{
+  "sections": {
+    "794fd556-bd2d-4170-ab1b-876635623d0d": {
+      "type": "awesome-video",
+      "settings": {
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/-HIGjWvEnpg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>"
+      }
+    },
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "cddedc9f-6304-4e41-9395-ce7dd3bb79db": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Main_photo.jpg",
+            "link": "shopify:\/\/pages\/nomad-enterprise",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "cddedc9f-6304-4e41-9395-ce7dd3bb79db"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Wireless internet rural areas",
+        "description": "",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "",
+        "button_url": "",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "67c6f7c6-f74e-42b9-90a2-aac434b19793": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#222222",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": "<h2 class=\"text-center\" style=\"text-transform: uppercase\">Get High-Speed Wireless Internet Today<\/h2>"
+      }
+    },
+    "36bbdae6-b8d6-4939-acdd-83c5b62ac634": {
+      "type": "awesome-text",
+      "settings": {
+        "heading_size": "2",
+        "title_align": "left",
+        "columns": "1",
+        "heading_text": "",
+        "text": "<p>WISPs are a great choice for those seeking an affordable yet reliable connection. Their wireless networks offer users access to the latest information, making them ideal not just for everyday activities but also for business and educational use too! So don't let internet restrictions keep you from experiencing all that's available on the web – <a href=\"\/pages\/plans\" title=\"Nomad Internet Plans\">get connected with WISP<\/a> services today.<\/p><p>Experience the freedom of high-speed internet with WISP services today! Get superior coverage from a reliable provider and stay connected no matter where you go. With Nomad Internet's easy setup process and affordable rates, enjoy faster speeds than ever before for everyday activities or even business use. Don't let restrictions keep you from accessing anything on the web – try this top <a href=\"\/\" title=\"\/\">wireless internet provider<\/a> now to get fast, secure Wi-Fi everywhere!<\/p>",
+        "text_2": "",
+        "text_align": "left"
+      }
+    },
+    "29fa111b-deec-4de0-882e-2cba10502174": {
+      "type": "awesome-section",
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/LOGO_BOOK.jpg",
+        "title_tag": "h2",
+        "title": "Get High-Speed Wireless Internet Today",
+        "description": "<ul><li>Experience faster and better coverage than ever before<\/li><li>Don't settle for slow speeds - enjoy superior connection with Nomad Internet<\/li><li>Get access to fast and secure Wi-Fi wherever you go<\/li><li>Easy Setup and Affordable Rates - Try Nomad Today!<\/li><li>Enjoy Freedom with the <a href=\"\/pages\/offers\" title=\"Current offers from Nomad\">Best Wireless Internet Provider<\/a><\/li><\/ul>"
+      }
+    },
+    "62c87fc0-20c5-4a8c-bac7-67b5b18e85f8": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "d5f8eaa7-d9bc-4314-8bf6-8ad033b0672c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_b79eaba5-8905-4833-93c0-9f20a790e598.jpg",
+            "title_tag": "h3",
+            "title": "Wireless internet provider",
+            "text": "<p>Wireless internet providers allow users to connect to the internet without a physical connection. To use them, you need a wireless-enabled device, like a laptop or smartphone. Providers offer routers or hotspots to connect to their network. Consider coverage, speed, and reliability when choosing a provider. Some offer faster speeds with limited coverage, while others have slower speeds but more extensive coverage. Check for data limits or restrictions. <a href=\"\/\" title=\"\/\">Wireless internet<\/a> providers offer a convenient way to stay connected on the go. With the right plan, you can enjoy all the benefits of the internet from anywhere at any time.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "\/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "2d4d6070-36d8-4c9a-be57-72908dfd523c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_08ec178b-59fc-4245-b338-e9e0050b7e1e.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet service",
+            "text": "<p>Wireless internet service is a convenient way to access the internet without the need for a physical connection. To use this service, you need a wireless-enabled device such as a smartphone, tablet, or laptop. Most service providers offer <a href=\"\/pages\/offers\" title=\"Current offers from Nomad\">routers or hotspots<\/a> to connect to their network. When selecting a provider, consider factors such as coverage, speed, and reliability. Keep in mind any data limits or restrictions that may affect your ability to use the internet. With the <a href=\"\/pages\/plans\" title=\"Nomad Internet Plans\">right plan<\/a>, wireless internet service can provide a flexible and convenient way to stay connected to the internet on the go.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "\/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "0c98d28a-e33b-4de6-a436-b642395ae55a": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_1854b0f8-5266-4e76-b85a-231f879f9328.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet for business",
+            "text": "<p>Are you tired of being tethered to your desk by a wired internet connection? Wireless internet is the solution you've been searching for. With wireless internet, businesses can enjoy the freedom to connect from almost anywhere. Whether your team is on the go or working remotely, wireless internet service providers offer a range of options to suit your needs. Consider factors such as coverage, speed, and reliability when selecting a provider. With wireless internet, you can unlock new levels of productivity and creativity, enabling your business to thrive in today's dynamic world. Say goodbye to the constraints of wired internet and embrace the freedom of wireless internet.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "818b176a-ebca-476a-b6ff-41347a825246": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_d8fb7144-6546-4ccd-ad30-a4fe9403d8f7.jpg",
+            "title_tag": "h2",
+            "title": "Residential wireless internet",
+            "text": "<p>Residential wireless internet is a popular option for homeowners who want the convenience of internet access without the need for physical connections. With a wireless-enabled device such as a laptop or smartphone, you can connect to your wireless internet service provider's network using a router or hotspot. When selecting a provider, consider factors such as coverage, speed, and reliability, as well as any data limits or restrictions that may impact your internet usage. With the right plan, residential wireless internet can provide a reliable and convenient way to stay connected to the internet for your home needs.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "\/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "58aca795-4e9c-45d9-8e10-2a150a692486": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_6aafeca3-1845-4f0a-b555-c12a381444c7.jpg",
+            "title_tag": "h2",
+            "title": "Rural wireless internet",
+            "text": "<p>With wireless internet, people living in rural areas can enjoy high-speed internet connections, which can be used for various purposes such as streaming, browsing, and downloading. To use rural wireless internet, a person needs to have a wireless-enabled device such as a smartphone or laptop and a wireless router. Some internet service providers offer data plans, making it easy and affordable to stay connected online. Rural wireless internet can be a game-changer for those who live and work in remote areas, enabling them to stay connected with the world and access important information.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/rural-1",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "fec5fbaa-a0f8-4e3b-a022-e7850ddef12a": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_1181bf75-4b11-4639-b6ad-3cb05f18836c.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet travel",
+            "text": "<p>Wireless internet is a great way to stay connected while traveling. Many hotels, airports, and cafes offer free Wi-Fi, making it easy to stay connected on the go. A person can also use their smartphone as a mobile hotspot, providing internet access for their other devices. To avoid unexpected charges, it's essential to check roaming and data charges with the mobile service provider before using the internet abroad. It's also important to be mindful of security and use a virtual private network (VPN) to protect personal information when using public Wi-Fi. With wireless internet travel, a person can stay connected with friends, family, and work while exploring new destinations.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "d5f8eaa7-d9bc-4314-8bf6-8ad033b0672c",
+        "2d4d6070-36d8-4c9a-be57-72908dfd523c",
+        "0c98d28a-e33b-4de6-a436-b642395ae55a",
+        "818b176a-ebca-476a-b6ff-41347a825246",
+        "58aca795-4e9c-45d9-8e10-2a150a692486",
+        "fec5fbaa-a0f8-4e3b-a022-e7850ddef12a"
+      ],
+      "settings": {
+        "columns_count": "2"
+      }
+    },
+    "42862353-e8a3-47d3-8f4e-3545dc499101": {
+      "type": "awesome-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Blog_Banner_3_with_BTN.jpg",
+        "url": "shopify:\/\/pages\/cube",
+        "target_blank": false,
+        "nofollow": false
+      }
+    },
+    "614c1961-8f75-47e9-aeb9-003cd90a92f8": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "20cb6752-4be3-41e7-b5ed-6654ccdefd2d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7_a34fa163-46af-462a-9f03-1864bf93fc1e.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet for rv",
+            "text": "<p>Wireless internet for RVs is a must-have for those who love to travel and stay connected. RVers can use wireless internet to browse the web, stream movies, and connect with friends and family. There are several options for wireless internet for RVs, including mobile hotspots, satellite internet, and Wi-Fi extenders. Mobile hotspots provide internet access through a cellular network, while satellite internet requires a dish to be installed on the RV's roof. Wi-Fi extenders can be used to boost signals from nearby Wi-Fi networks. It's important to choose a reliable provider and plan with enough data for the user's needs to stay connected on the road.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "11de99b3-835c-43be-851b-ffbfd9523d4d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8_fd0b9f67-ecc5-49ff-b64e-a8f772c3b9ca.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet on the go",
+            "text": "<p>Wireless internet on the go allows people to stay connected while on the move. With the availability of mobile hotspots and smartphone tethering, a person can access the internet from almost anywhere. Mobile hotspots work by providing a wireless internet connection through a cellular network, while smartphone tethering allows a person to share their phone's internet connection with other devices. It's important to be aware of data usage and potential roaming charges when using wireless internet on the go. However, this technology enables people to work remotely, access important information, and stay connected with loved ones while on the move.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "19a345a4-fe37-4c4b-86c3-9cf9e14e7684": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9_4bf1818b-0154-407d-94df-fa4df8805fd9.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet plans",
+            "text": "<p>Wireless internet plans offer a variety of options to suit different needs and budgets. The most common plans include  data, shared data, and pay-as-you-go. Data plans are ideal for heavy internet users who require constant access. Shared data plans are suitable for families or groups who share a single data pool. Pay-as-you-go plans allow a person to pay only for the data they use. It's essential to choose a plan that offers adequate data and speeds for the user's needs. It's also important to check coverage in the area where the wireless internet will be used to ensure a reliable connection.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "bb460b7b-80ca-4f39-8a96-a11cf156efd3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10_9c76a579-f896-4ec5-991d-46d9e25c0791.jpg",
+            "title_tag": "h2",
+            "title": "Find wireless internet",
+            "text": "<p>Finding wireless internet is easy and convenient with many options available. Wi-Fi networks are available in many public places such as cafes, airports, and hotels. A person can also use their smartphone as a mobile hotspot or purchase a mobile hotspot device to connect to the internet on the go. Many internet service providers offer wireless internet plans for home use. It's important to ensure that the Wi-Fi network is secure and encrypted before connecting to avoid potential security risks. With wireless internet readily available, a person can stay connected and access information, entertainment, and communication tools wherever they go.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "9e7a88d7-6f11-439f-9790-0ba1ce39f0fe": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11_c2572de8-bf6e-4faa-80be-463911ce26dc.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet options",
+            "text": "<p>Wireless internet offers flexibility and convenience, with various options available to suit different needs. Wi-Fi networks are prevalent in public places, while mobile hotspots provide access through a cellular network. Satellite internet is ideal for remote areas, and fixed wireless internet uses radio waves to provide internet access to homes and businesses. When choosing an option, consider factors like coverage, speed, and data limits. It's crucial to ensure that the network is secure before connecting. With wireless internet, a person can stay connected and access information, entertainment, and communication tools wherever they go.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "ede8c501-7a79-4e4e-ada4-ee9229894ee8": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/12_ecbbff4e-22fa-4da1-87f1-68cd49b36b97.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet compare",
+            "text": "<p>Selecting a wireless internet provider can be challenging, but comparing options based on coverage, speed, data limits, cost, and customer service can simplify the process. Wi-Fi networks offer a reliable option, while mobile hotspots cater to those always on the go. Satellite internet is ideal for remote areas, and fixed wireless internet is known for its lightning-fast speeds. It's crucial to research promotions, discounts, and contract terms to find the best deal. Also, consider the quality and reliability of customer service from each provider. With a bit of effort and comparison, a person can find the perfect wireless internet provider that meets their needs and budget.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "20cb6752-4be3-41e7-b5ed-6654ccdefd2d",
+        "11de99b3-835c-43be-851b-ffbfd9523d4d",
+        "19a345a4-fe37-4c4b-86c3-9cf9e14e7684",
+        "bb460b7b-80ca-4f39-8a96-a11cf156efd3",
+        "9e7a88d7-6f11-439f-9790-0ba1ce39f0fe",
+        "ede8c501-7a79-4e4e-ada4-ee9229894ee8"
+      ],
+      "settings": {
+        "columns_count": "2"
+      }
+    },
+    "911352e7-0030-4150-a156-0db8231ab2f9": {
+      "type": "awesome-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Blog_Banner_3_with_BTN_Hor.jpg",
+        "url": "shopify:\/\/pages\/ice",
+        "target_blank": false,
+        "nofollow": false
+      }
+    },
+    "aa94b42b-5649-4684-be4e-bdd8ec67ee6c": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "c494e046-b48f-4cc6-8bda-704ff56310c9": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/13_97454ef0-d301-439a-83b1-1b0fa0ff4ddf.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet for gaming",
+            "text": "<p>Wireless internet for gaming is like a knight's sword, a Jedi's lightsaber, or a wizard's wand. It's a crucial tool in a gamer's arsenal that can make or break the gaming experience. A stable and fast connection is vital to keep the action moving smoothly and prevent frustrating lags and disconnects. Upgrading to a router with the latest Wi-Fi standards and dual-band capabilities is like obtaining a magical talisman that unleashes the full power of gaming. Prioritizing gaming traffic and reducing interference from other devices is like casting a spell that wards off distractions. With a reliable and high-speed wireless internet connection, gamers can immerse themselves in their virtual worlds and emerge victorious.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-business-plan",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "81d9af26-27bb-46d0-a191-7992ef7dff38": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/14_492af011-b5e0-4e89-aceb-51c9a39d5af3.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet for laptop",
+            "text": "<p>Wireless internet for laptops is an essential tool for staying connected and productive on the go. With a wireless network, laptops can access the internet without the need for cables or Ethernet ports. It's essential to have a reliable and high-speed connection to prevent interruptions during work or entertainment. Upgrading to a router with the latest Wi-Fi standards and dual-band capabilities can improve speed and stability. Laptops can also benefit from using a mobile hotspot to access the internet in areas without Wi-Fi coverage. With a stable and fast wireless internet connection, laptops can be used for work, communication, entertainment, and more, wherever you go.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-enterprise",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "0c5c6a15-85d0-4ddd-8719-75fa4340252c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/15_e68b02b8-93ae-4eac-9ccb-606e644a226c.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet tablet",
+            "text": "<p>Wireless internet for tablets is an essential component for staying connected and productive on the go. With a wireless network, tablets can access the internet without the need for cables or Ethernet ports. It's important to have a reliable and fast connection to prevent interruptions during work or entertainment. Tablets can also benefit from using a mobile hotspot to access the internet in areas without Wi-Fi coverage. With a stable and fast wireless internet connection, tablets can be used for work, communication, entertainment, and more, wherever you go.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-travel-plan",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "fba6cae7-676b-4ca0-a32e-b588ce9ea15a": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_7c067d64-8031-41f5-9389-96ebd82e6a89.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet for truckers",
+            "text": "<p>Wireless internet for truckers is a must-have in today's connected world. With access to the internet, truckers can stay in touch with their families, access maps and directions, and stay informed about news and weather conditions. To use wireless internet, a trucker needs a mobile hotspot device and a data plan from a wireless carrier. These devices can provide internet access to laptops, smartphones, and tablets, allowing truckers to work and stay connected while on the road. With wireless internet, truckers can stay productive and connected, making their time on the road more efficient and enjoyable.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-transportation",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "5f2bfa48-19e2-448a-b0ba-32ea2f75be26": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/17_6a3653cd-be15-434f-85aa-c2c30a62184d.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet for hotel",
+            "text": "<p>Wireless internet has become an essential amenity in the hotel industry. Offering guests access to high-speed Wi-Fi can provide your hotel with a competitive edge, improve guest satisfaction, and increase revenue. To provide wireless internet, hotels need to install a reliable Wi-Fi network throughout their property. This will require investing in quality equipment, such as routers and access points, and hiring professionals to install and configure the network. Offering wireless internet can also create opportunities for upselling, such as premium Wi-Fi packages with faster speeds and greater data allowances.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-retail",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "e930286b-8313-4139-9f44-21f43d62737c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/18_39441eea-e94d-4d18-9a1c-ea81cd48587c.jpg",
+            "title_tag": "h2",
+            "title": "Wi-Fi wireless internet",
+            "text": "<p>Wi-Fi is a wireless networking technology that allows you to connect your devices to the internet without the need for physical cables. With Wi-Fi, you can easily connect your smartphone, laptop, or tablet to the internet, making it possible to access information and entertainment from anywhere in your home or office. To use Wi-Fi, you need a Wi-Fi-enabled device and a wireless router or access point. Once you've connected to the Wi-Fi network, you can browse the web, stream videos, check email, and more, all without the hassle of cables or cords.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-wifi",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "c494e046-b48f-4cc6-8bda-704ff56310c9",
+        "81d9af26-27bb-46d0-a191-7992ef7dff38",
+        "0c5c6a15-85d0-4ddd-8719-75fa4340252c",
+        "fba6cae7-676b-4ca0-a32e-b588ce9ea15a",
+        "5f2bfa48-19e2-448a-b0ba-32ea2f75be26",
+        "e930286b-8313-4139-9f44-21f43d62737c"
+      ],
+      "settings": {
+        "columns_count": "2"
+      }
+    },
+    "2298d74c-441a-417e-b453-70f592f41194": {
+      "type": "awesome-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Blog_Banner_3_with_BTN_aa5a7002-ff9c-4256-8109-398efc355785.jpg",
+        "url": "shopify:\/\/pages\/cube",
+        "target_blank": false,
+        "nofollow": false
+      }
+    },
+    "01d4615b-5bf8-4447-93da-3cd20c906c62": {
+      "type": "awesome-horisontal-section",
+      "blocks": {
+        "66399d06-3818-4084-bef6-d86195fc119e": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/19_4f84e3cf-696d-4a2d-8b50-3de6312fc1d0.jpg",
+            "title_tag": "h2",
+            "title": "Hotspot for wireless internet",
+            "text": "<p>A hotspot for wireless internet is a location where you can connect to the internet wirelessly using your laptop, smartphone or tablet. These hotspots are usually found in public places like cafes, airports, hotels, and libraries. You can connect to the internet using the Wi-Fi network provided by the hotspot. Many mobile network providers offer hotspots through their data plans as well. With a hotspot, you can access the internet anywhere without having to use your cellular data. It's a great way to stay connected when you're on the go, whether you need to work or just browse the web.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "e72641d7-2014-4930-b3a0-68d2f2c12211": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20_26aef5f0-2daa-491c-b8fa-da2f1938fde5.jpg",
+            "title_tag": "h2",
+            "title": "High speed wireless internet",
+            "text": "<p>High speed wireless internet, also known as broadband, provides faster internet connectivity than traditional dial-up connections. This type of internet connection is delivered wirelessly through various technologies such as DSL, cable, and fiber optics. With high speed wireless internet, you can enjoy faster download and upload speeds, smoother video streaming, and quicker web browsing. You can also connect multiple devices to the same network simultaneously without experiencing slow speeds. Whether you need to work from home, stream your favorite shows, or play online games, high speed wireless internet can provide the fast and reliable connection you need to get things done.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/rural-2",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "15c0545f-4935-4ea2-9dc0-3671c554f67c": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/21_df7333b1-2899-4af9-bb93-d917ef776312.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet speed",
+            "text": "<p>Wireless internet speed refers to the rate at which data is transmitted wirelessly from your device to the internet and vice versa. This speed can vary depending on several factors, including the type of wireless technology used, the distance between your device and the wireless access point, and the number of devices connected to the same network. The speed of your wireless internet can be measured in megabits per second (Mbps). Faster speeds can provide a smoother and more seamless internet experience, allowing you to stream videos, download files, and browse the web without lag or interruption.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "\/",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "48b0aeb5-3df6-496e-b16e-1cd17409caa8": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/22_35c79268-ffbc-4261-a5a2-8dc5a897b4bd.jpg",
+            "title_tag": "h2",
+            "title": "Fast wireless internet",
+            "text": "<p>Fast wireless internet refers to high speed internet connectivity delivered wirelessly through various technologies such as Wi-Fi, 4G LTE, and 5G. Fast wireless internet offers faster download and upload speeds, smoother video streaming, and quicker web browsing, allowing you to stay connected with ease. With faster internet speeds, you can upload and download files more quickly, stream your favorite movies and TV shows without buffering, and enjoy online gaming without lag. Whether you're working from home or just browsing the web, fast wireless internet can provide the speed and reliability you need to stay connected and get things done.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/plans",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "dff882c3-40ac-417d-b7f8-9c91518d7276": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/23_640521f8-8193-4f14-ac94-49a41af81a6d.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet device",
+            "text": "<p>A wireless internet device is like a magical portal that connects you to the endless possibilities of the digital world. It's a gateway to explore new ideas, learn new things, and connect with people from around the globe. Whether you're using a smartphone, laptop, or tablet, a wireless internet device allows you to stay connected with the world at all times. It opens the door to endless entertainment options, from streaming your favorite TV shows and movies to playing online games with friends. With a wireless internet device in hand, the sky's the limit - you can work, play, learn, and create from anywhere with an internet connection.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/cube",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        },
+        "cd1353c5-991e-4857-b429-f464d1f2fc74": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/24_052efd56-b87c-4a45-8bd8-6daddeb3aa26.jpg",
+            "title_tag": "h2",
+            "title": "Wireless internet connection",
+            "text": "<p>A wireless internet connection is a type of internet connection that allows you to access the internet wirelessly through Wi-Fi or mobile data. With a wireless internet connection, you can connect multiple devices to the same network without the need for cables or cords. This makes it easy to stay connected on-the-go, whether you're at home, work, or on vacation. Wireless internet connections offer fast and reliable internet connectivity, allowing you to stream videos, download files, and browse the web with ease. Whether you're using a smartphone, tablet, or laptop, a wireless internet connection is the key to staying connected in the modern digital world.<\/p>",
+            "button_text": "Learn More",
+            "button_url": "shopify:\/\/pages\/nomad-technology",
+            "button_text_2": "",
+            "button_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "66399d06-3818-4084-bef6-d86195fc119e",
+        "e72641d7-2014-4930-b3a0-68d2f2c12211",
+        "15c0545f-4935-4ea2-9dc0-3671c554f67c",
+        "48b0aeb5-3df6-496e-b16e-1cd17409caa8",
+        "dff882c3-40ac-417d-b7f8-9c91518d7276",
+        "cd1353c5-991e-4857-b429-f464d1f2fc74"
+      ],
+      "settings": {
+        "columns_count": "2"
+      }
+    },
+    "981c5590-e29e-48b5-b739-e30c45ca2e24": {
+      "type": "lp-16",
+      "blocks": {
+        "c51f718c-a8b0-40c9-b496-cff111108713": {
+          "type": "block",
+          "settings": {
+            "title": "What is Nomad Internet?",
+            "content": "<p>Nomad Internet is America's largest Wireless Internet Service<br\/> Provider. We are focused on providing High-Speed wireless Internet to <br\/>rural communities all over the country and on-the-road travelers!<\/p>"
+          }
+        },
+        "bd879e32-8743-4cf8-930d-ed4f2282298f": {
+          "type": "block",
+          "settings": {
+            "title": "How does Nomad Internet work?",
+            "content": "<p>Instead of using traditional Internet wires, we do it by <br\/>transmitting wireless Internet access directly to your home, business, <br\/>and even while traveling! We combine the latest technology with <br\/> service to provide high-speed internet to rural locations and <br\/>traveling nomads. We offer a variety <br\/>of internet plans, allowing you to choose one that fits your needs. <\/p>"
+          }
+        },
+        "9482b981-8bae-4ff1-853e-814f8db1982e": {
+          "type": "block",
+          "settings": {
+            "title": "Do I need to sign a contract to use Nomad Internet?",
+            "content": "<p>No contract with Nomad Internet. You get to choose the subscription plan that’s best for you.<\/p>"
+          }
+        },
+        "4f04fa4c-8af2-4fee-9a8c-25d725bc2b0c": {
+          "type": "block",
+          "settings": {
+            "title": "Is Nomad Internet secure?",
+            "content": "<p>Yes, all Nomad Internet modems let you use public IPs. <br\/>Multiple layers of encryption, enhanced Wi-Fi security, firewall <br\/>filtering, built-in VPN support, IT admin controls, and other features <br\/>deliver strong security at every level.<\/p>"
+          }
+        },
+        "45ed784a-9117-46d9-8681-49f0e51ac9b7": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for gaming?",
+            "content": "<p>Yes. Even if you are in the most remote location, we will <br\/>provide you with robust and reliable internet for all your gaming needs.<br\/> No matter your plan, you can expect fast internet with low ping rates <br\/>and latency.<\/p>"
+          }
+        },
+        "441cb6c4-e2cb-49cc-96f1-ee2f83eedfe6": {
+          "type": "block",
+          "settings": {
+            "title": "Can I use Nomad Internet for RVing?",
+            "content": "<p>Nomad Internet users can take the same high-speed, <br\/>low-latency service they have at home to any location Nomad Internet has<br\/> coverage. Nomad Internet for RVers\/travelers will allow users to pause <br\/>and un-pause service based on their individual travel needs.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c51f718c-a8b0-40c9-b496-cff111108713",
+        "bd879e32-8743-4cf8-930d-ed4f2282298f",
+        "9482b981-8bae-4ff1-853e-814f8db1982e",
+        "4f04fa4c-8af2-4fee-9a8c-25d725bc2b0c",
+        "45ed784a-9117-46d9-8681-49f0e51ac9b7",
+        "441cb6c4-e2cb-49cc-96f1-ee2f83eedfe6"
+      ],
+      "settings": {
+        "title": "Answers to the most frequently asked questions",
+        "button_text": "More Answers",
+        "button_url": "https:\/\/support.nomadinternet.com\/"
+      }
+    },
+    "26094b96-379c-404b-95c5-26ac8a1d6d9c": {
+      "type": "lp-21",
+      "settings": {
+        "title": "You have questions?",
+        "description": "You can visit the FAQ page or send your question to us by filling out this form. Our specialists will contact you shortly and answer all your questions.",
+        "form_caption": "We guarantee to give answers to your questions."
+      }
+    }
+  },
+  "order": [
+    "794fd556-bd2d-4170-ab1b-876635623d0d",
+    "awesome-first-screen",
+    "67c6f7c6-f74e-42b9-90a2-aac434b19793",
+    "36bbdae6-b8d6-4939-acdd-83c5b62ac634",
+    "29fa111b-deec-4de0-882e-2cba10502174",
+    "62c87fc0-20c5-4a8c-bac7-67b5b18e85f8",
+    "42862353-e8a3-47d3-8f4e-3545dc499101",
+    "614c1961-8f75-47e9-aeb9-003cd90a92f8",
+    "911352e7-0030-4150-a156-0db8231ab2f9",
+    "aa94b42b-5649-4684-be4e-bdd8ec67ee6c",
+    "2298d74c-441a-417e-b453-70f592f41194",
+    "01d4615b-5bf8-4447-93da-3cd20c906c62",
+    "981c5590-e29e-48b5-b739-e30c45ca2e24",
+    "26094b96-379c-404b-95c5-26ac8a1d6d9c"
+  ]
+}

@@ -1,0 +1,153 @@
+<div class="awesome-horizontal-section">
+  <div class="row v-gutters justify-center">
+    {% for card in section.blocks %}
+      {% assign cs = card.settings %}
+      <div class="{% if section.settings.columns_count == "2" %}col-md-6{% elsif section.settings.columns_count == "3" %}col-md-4 col-sm-6{% endif %} col-12">
+        <div class="awesome-horizontal-section__card">
+          {% if cs.image %}
+            <div class="card__image">
+              <div class="ratio" style="--ratio: calc(9 / 16 * 100%)">
+                {{ cs.image | image_url: width: 1200 | image_tag }}
+              </div>
+            </div>
+          {% endif %}
+          {% if cs.title %}
+            <{{ cs.title_tag }} class="card__title">{{ cs.title }}</{{ cs.title_tag }}>
+          {% endif %}
+          {% if cs.text %}
+            <div class="card__text">
+              {{ cs.text }}
+            </div>
+          {% endif %}
+          <div class="row v-gutters">
+            {% if cs.button_text != blank %}
+              <div class="col-auto">
+                <a href="{{ cs.button_url | default: '#' }}" class="btn">{{ cs.button_text }}</a>
+              </div>
+            {% endif %}
+            {% if cs.button_text_2 != blank %}
+              <div class="col-auto">
+                <a href="{{ cs.button_url_2 | default: '#' }}" class="btn outline">{{ cs.button_text_2 }}</a>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Awesome Horiz... Section",
+  "tag": "div",
+  "class": "container",
+  "presets": [
+    {
+      "name": "Awesome Horizontal Section"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "columns_count",
+      "label": "Columns Count",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "default": "2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "title_tag",
+          "label": "Title TAG",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            },
+            {
+              "value": "h6",
+              "label": "H6"
+            },
+            {
+              "value": "p",
+              "label": "p"
+            },
+            {
+              "value": "span",
+              "label": "span"
+            }
+          ],
+          "default": "h2"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Learn More"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "text",
+          "id": "button_text_2",
+          "label": "Button Text 2"
+        },
+        {
+          "type": "url",
+          "id": "button_url_2",
+          "label": "Button URL 2"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

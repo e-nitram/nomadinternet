@@ -1,0 +1,83 @@
+{{ 'tiktok-video-list.css' | asset_url | stylesheet_tag }}
+
+<div class="container tiktok-video">
+  {% if section.settings.title != blank %}
+    <h3 class="title">{{ section.settings.title }}</h3>  
+  {% endif %}
+
+  <div class="tiktok-video-list" js-tiktok-video data-desktop-count="{{ section.settings.desktop_count }}" data-mobile-count="{{ section.settings.mobile_count }}">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% if block.settings.video_url %}
+          <div class="swiper-slide item" js-video-item data-video-url="{{ block.settings.video_url }}">
+            <video id="video-pop-ele" loop playsinline>
+              <source src="{{ block.settings.video_url }}" type="video/mp4">
+              <p>Your browser does not support the video tag.</p>
+            </video>
+  
+            <span class="slick-overlay">
+              <i class="fa fa-play-circle"></i>
+            </span>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="swiper-button-next tiktok-swiper-button-next">
+      <svg class="arrow-right slick-arrow" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg" style=""><path d="M20.5 16.4941L29.5 25.4941L20.5 34.4941" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><rect x="49" y="49.4941" width="48" height="48" rx="24" transform="rotate(-180 49 49.4941)" stroke="white" stroke-width="2"></rect></svg>
+    </div>
+    <div class="swiper-button-prev tiktok-swiper-button-prev">
+      <svg class="arrow-left slick-arrow" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg" style=""><path d="M29.5 34.4941L20.5 25.4941L29.5 16.4941" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><rect x="1" y="1.49414" width="48" height="48" rx="24" stroke="white" stroke-width="2"></rect></svg>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Tiktok video list",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "range",
+      "id": "desktop_count",
+      "label": "Desktop count",
+      "default": 4,
+      "step": 1,
+      "min": 1,
+      "max": 5
+    },
+    {
+      "type": "range",
+      "id": "mobile_count",
+      "label": "Mobile count",
+      "default": 2,
+      "step": 1,
+      "min": 1,
+      "max": 5
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_item",
+      "name": "Video item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "video_url",
+          "label": "Video url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tiktok video list"
+    }
+  ]
+}
+{% endschema %}

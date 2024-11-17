@@ -1,0 +1,70 @@
+<aside class="sidebar">
+      {%- comment -%}
+  <div class="widget widget--banner">
+
+    <div class="widget__body">
+      <a href="/pages/plans">
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omega_Vertical.jpg?v=1691503925" alt="Banner" width="" height="" loading="lazy">
+      </a>
+    </div>
+    
+  </div>
+  {%- endcomment -%}
+
+  <div class="widget">
+    <h4 class="widget__title">Recent articles</h4>
+    <div class="widget__body">
+      <ul class="recent-posts">
+        {% for article in blogs.countrynomad.articles limit: 4 %}
+          <li class="recent-posts__post">
+            <a href="{{ article.url }}">{{ article.title }}</a>
+            <time datetime="{{ article.published_at }}">
+              {{- article.published_at | date: format: 'month_day_year' -}}
+            </time>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% comment %}
+  <div class="widget widget--banner">
+    <div class="widget__body">
+      <a href="/pages/plans">
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Raptor_Vertical_2_1.jpg?v=1691263739" alt="Banner" width="" height="" loading="lazy">
+      </a>
+    </div>
+  </div>
+{% endcomment %}
+  <div class="widget">
+    <h4 class="widget__title">By tags</h4>
+    <div class="widget__body">
+      <ul class="tags-list">
+        {% for tag in blogs.countrynomad.all_tags %}
+          <li class="tags-list__item">
+            <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  {%- comment -%}
+  <div class="widget widget--banner">
+    <div class="widget__body">
+      <a href="/pages/plans">
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Omega.jpg?v=1691503924" alt="Banner" width="" height="" loading="lazy">
+      </a>
+    </div>
+  </div>
+  {%- endcomment -%}
+{% comment %}
+  <div class="widget widget--banner">
+    <div class="widget__body">
+      <a href="/pages/plans">
+        <img src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/Air._2_1.jpg?v=1691263594" alt="Banner" width="" height="" loading="lazy">
+      </a>
+    </div>
+  </div>
+{% endcomment %}
+  
+</aside>

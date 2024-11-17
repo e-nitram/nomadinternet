@@ -1,0 +1,206 @@
+{
+  "sections": {
+    "awesome-first-screen": {
+      "type": "awesome-first-screen",
+      "blocks": {
+        "5955b223-daf1-4da5-a1d9-0ddf13faaa70": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/main_screen_business.jpg",
+            "link": "",
+            "target_blank": false
+          }
+        }
+      },
+      "block_order": [
+        "5955b223-daf1-4da5-a1d9-0ddf13faaa70"
+      ],
+      "settings": {
+        "title": "NOMAD BUSINESS",
+        "description": "<p>High-speed, wireless low-latency broadband internet to remote and rural businesses across the USA.<\/p>",
+        "max_width": 550,
+        "button_class": "solid",
+        "button_text": "See Plans",
+        "button_url": "shopify:\/\/pages\/plans#btn-6",
+        "button_blank": false,
+        "on_click": ""
+      }
+    },
+    "b93c2e77-4702-4325-b4e2-cc1299560829": {
+      "type": "awesome-section",
+      "blocks": {
+        "3bf9f140-b5d8-4857-8c79-2de05b79bdcf": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Choose a Plan",
+            "url": "https:\/\/nomadinternet.com\/pages\/plans#btn-6",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "3bf9f140-b5d8-4857-8c79-2de05b79bdcf"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1195_f04ac006-0cee-4eca-bc88-50d882cff334.jpg",
+        "title_tag": "h2",
+        "title": "HIGHER RELIABILITY FOR HIGH DEMAND USERS",
+        "description": "<p>The Nomad Raptor Modem has a much higher gain antenna, additional speed allocation, made for business use and better extreme weather performance, Nomad Internet Business helps ensure bandwidth for critical operations 24\/7.<\/p>"
+      }
+    },
+    "87a97ef4-c318-426b-a5d9-958d769daf68": {
+      "type": "awesome-section",
+      "blocks": {
+        "1761ed4c-23b6-472a-91c3-f1dd8a007425": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Choose a Plan",
+            "url": "https:\/\/nomadinternet.com\/pages\/plans#btn-6",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "1761ed4c-23b6-472a-91c3-f1dd8a007425"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Raptor_2.jpg",
+        "title_tag": "h2",
+        "title": "HIGHER SPEED, LOW LATENCY",
+        "description": "<p>Nomad Internet Business users can expect download speeds of up to 200Mbps and latency of 20-40ms, enabling high throughput connectivity for offices of up to 20 users, storefronts, and demanding workloads across the globe.<\/p><p>With Nomad Internet, there are no long-term contracts and no exclusivity requirements. Learn more about Nomad Internet specifications here.<\/p>"
+      }
+    },
+    "5e73c9c7-b848-4699-aeed-6010e280f675": {
+      "type": "awesome-section",
+      "blocks": {
+        "6869c770-0ebf-4fa6-8ff9-d13b9efc464e": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Choose a Plan",
+            "url": "https:\/\/nomadinternet.com\/pages\/plans#btn-6",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "6869c770-0ebf-4fa6-8ff9-d13b9efc464e"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1201_7231bcc5-b27e-4bd1-aec9-52ff6cd93a4c.jpg",
+        "title_tag": "h2",
+        "title": "EASY SETUP & PRIORITY SUPPORT",
+        "description": "<p>Your Nomad Business kit arrives with everything you need to get online in minutes including your Nomad Internet Service, Nomad Raptor with built-in WiFi router and power cable.<\/p><p>Nomad Internet Business customers will benefit from 24\/7, prioritized support and a publicly routable IPv4 address.<\/p><p>Download the app to determine activate your service, manage and set up your Nomad Modem.<\/p>"
+      }
+    },
+    "d5c4823b-8639-4f73-ad01-1e23304996a5": {
+      "type": "awesome-section",
+      "blocks": {
+        "2542f75a-b86c-4beb-811b-34ba960af384": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Choose a Plan",
+            "url": "https:\/\/nomadinternet.com\/pages\/plans#btn-6",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "2542f75a-b86c-4beb-811b-34ba960af384"
+      ],
+      "settings": {
+        "reversed": true,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_1195-1_efe54008-b3ce-4e52-84f5-dfdae0fa32e6.jpg",
+        "title_tag": "h2",
+        "title": "SERVICE LOCATIONS",
+        "description": "<p>Nomad Internet is ideal for rural and remote locations. Order as many Nomad Internet Modems as needed and manage all of them from a single centralized account.<\/p>"
+      }
+    },
+    "6df11a4b-ae1f-45fc-9857-87491a2318aa": {
+      "type": "awesome-section",
+      "blocks": {
+        "dc169545-f5f4-49f7-8e1b-63a603b9f12f": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "download for android",
+            "url": "https:\/\/play.google.com\/store\/apps\/details?id=co.shopney.everywhereinternet&hl=en_US&gl=US",
+            "blank": false,
+            "on_click": ""
+          }
+        },
+        "e304082e-4a7f-4af4-afde-a4247fbb83e7": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "download for ios",
+            "url": "https:\/\/apps.apple.com\/us\/app\/nomad-internet\/id6444594379",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "dc169545-f5f4-49f7-8e1b-63a603b9f12f",
+        "e304082e-4a7f-4af4-afde-a4247fbb83e7"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": false,
+        "image": "shopify:\/\/shop_images\/010203.jpg",
+        "title_tag": "h2",
+        "title": "Download Nomad App",
+        "description": "<p>Download the Nomad App buy Modems and to Activate, Pause, Resume, and Deactivate your plans. <\/p>"
+      }
+    },
+    "a537e228-ed5d-4574-a87c-516036049b45": {
+      "type": "awesome-section",
+      "blocks": {
+        "73a019a4-7c0b-4b2d-a768-3b26247eb9c8": {
+          "type": "hc-button",
+          "settings": {
+            "class": "outline",
+            "text": "Learn More",
+            "url": "shopify:\/\/pages\/help-me-choose",
+            "blank": false,
+            "on_click": ""
+          }
+        }
+      },
+      "block_order": [
+        "73a019a4-7c0b-4b2d-a768-3b26247eb9c8"
+      ],
+      "settings": {
+        "reversed": false,
+        "image-as-bg": true,
+        "image": "shopify:\/\/shop_images\/Group_1000006985.jpg",
+        "title_tag": "h2",
+        "title": "Talk to our experts",
+        "description": "<p>Give your customers the fastest, easiest, most reliable broadband solutions.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "awesome-first-screen",
+    "b93c2e77-4702-4325-b4e2-cc1299560829",
+    "87a97ef4-c318-426b-a5d9-958d769daf68",
+    "5e73c9c7-b848-4699-aeed-6010e280f675",
+    "d5c4823b-8639-4f73-ad01-1e23304996a5",
+    "6df11a4b-ae1f-45fc-9857-87491a2318aa",
+    "a537e228-ed5d-4574-a87c-516036049b45"
+  ]
+}

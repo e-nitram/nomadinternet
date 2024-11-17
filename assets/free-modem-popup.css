@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'DIN';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url({{ 'D-DIN-Regular.woff2' | asset_url }}) format('woff2');
+}
+
+.free-modem-popup * {
+  font-family: 'DIN';
+}
+
+.free-modem-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.free-modem-popup__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000008c;
+}
+
+.free-modem-popup__content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  position: relative;
+}
+
+@media (max-width: 749px) {
+  .free-modem-popup__content {
+    height: 100%;
+  }
+}
+
+#termsAndConditionsTxt {
+  margin: 0 auto;
+  text-decoration: underline;
+  display: block;
+  max-width: 250px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.free-modem-popup__content .list h2 {
+  font-family: DIN;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 26px;
+  letter-spacing: 0.3px;
+}
+
+.free-modem-popup__content .list p {
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.free-modem-popup__content .list ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.free-modem-popup__content .list ul li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+  padding: 10px 0;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: #f3f5f6;
+  border-color: #f3f5f6;
+  color: #000;
+  border-radius: 5px;
+  font-family: 'DIN';
+  font-weight: 500;
+}
+
+.free-modem-popup__content .list ul li button:hover {
+  color: #212529;
+  background-color: #dde3e6;
+  border-color: #d6dde0;
+}
+
+.free-modem-popup__content .list ul li button img {
+  width: 30px;
+  height: 30px;
+}
+
+.free-modem-popup__content .list ul li button svg {
+  width: 30px;
+  height: 30px;
+  fill: #000;
+}
+
+.free-modem-popup .form .btn {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.free-modem-popup .form input {
+  padding: 8px 16px;
+  margin-bottom: 10px;
+}
+
+.free-modem-popup .popup-close__btn {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  font-size: 26px;
+  font-family: monospace;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.free-modem-popup .backbtn {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.free-modem-popup .backbtn svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  fill: #00a77f;
+}

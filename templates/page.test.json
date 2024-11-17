@@ -1,0 +1,36 @@
+{
+  "wrapper": "div.cube.cube--template",
+  "sections": {
+    "ae48f63f-d419-438a-a3e3-048847859329": {
+      "type": "awesome-html",
+      "settings": {
+        "background-color": "#fafafa",
+        "color": "#111111",
+        "wide": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-x": 0,
+        "padding-y": 0,
+        "border-radius": 0,
+        "html": ""
+      }
+    },
+    "5469f15d-8a0e-4ee1-a47d-5706d0a0c7a0": {
+      "type": "awesome-section-collection",
+      "settings": {
+        "reversed": false,
+        "title_tag": "h2",
+        "title": "",
+        "description": "",
+        "collection": "nomad-residential-5g-yearly-plan",
+        "show_order_button": true,
+        "button_text": "",
+        "button_url": ""
+      }
+    }
+  },
+  "order": [
+    "ae48f63f-d419-438a-a3e3-048847859329",
+    "5469f15d-8a0e-4ee1-a47d-5706d0a0c7a0"
+  ]
+}

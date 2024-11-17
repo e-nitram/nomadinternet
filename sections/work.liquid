@@ -1,0 +1,56 @@
+<div class="container">
+	<div class="work__heading">
+		<h2 class="work__title">{{ section.settings.title }}</h2>
+		<p class="work__subtitle">{{ section.settings.subtitle }}</p>
+	</div>
+
+	{% if section.blocks %}
+		<div class="row v-gutters">
+			{% for block in section.blocks %}
+				<div class="col-xl-4 col-md-6 col-12">
+					<a href="{{ block.settings.page.url }}" class="ratio work__item">
+						<span>{{ block.settings.page.title }}</span>
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+</div>
+
+{% schema %}
+{
+	"name": "Work",
+	"class": "work",
+	"tag": "section",
+	"presets": [
+		{
+			"name": "Work"
+		}
+	],
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subtitle"
+		}
+	],
+	"blocks": [
+		{
+			"type": "page",
+			"name": "Page",
+			"settings": [
+				{
+					"type": "page",
+					"id": "page",
+					"label": "Page"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

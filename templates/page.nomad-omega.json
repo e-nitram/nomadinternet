@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "bb7d7b14-02f3-4fa7-9045-7b1d5f63acdb": {
+      "type": "nomad-omega",
+      "settings": {}
+    },
+    "8a6847cd-19e1-46d1-ab4e-241fea57bcca": {
+      "type": "01home-signup",
+      "settings": {}
+    }
+  },
+  "order": [
+    "bb7d7b14-02f3-4fa7-9045-7b1d5f63acdb",
+    "8a6847cd-19e1-46d1-ab4e-241fea57bcca"
+  ]
+}

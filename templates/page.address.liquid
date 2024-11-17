@@ -1,0 +1,185 @@
+ {{ page.content }}
+ 
+  <div class="get-touch-form col-11 col-md-11 col-lg-8 mx-auto p-3 p-md-5 rounded form-vertical mb-5"> {% form 'contact' %}
+    
+    {% comment %}
+    Successful message
+    {% endcomment %}
+    {% if form.posted_successfully? %}
+    <script>
+window.location = "/pages/address-found";
+</script>
+    {% endif %}
+    
+    {{ form.errors | default_errors }}
+    <div class="form-row">
+      <div class="col col-12 col-md-6 form-group">
+        <input type="text" class="form-control" name="contact[First Name]" placeholder="First Name" value="">
+      </div>
+      <div class="col col-12 col-md-6 form-group">
+        <input type="text" class="form-control" name="contact[Last Name]" placeholder="Last Name" value="">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col form-group">
+        <input type="text" class="form-control" name="contact[Street Address]" placeholder="Street Address" value="">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col col-12 col-md-4 form-group">
+        <input type="text" class="form-control" name="contact[City]" placeholder="City" value="">
+      </div>
+      <div class="col col-12 col-md-4 form-group">
+        <select name="contact[State]" class="form-control" aria-required="true" aria-invalid="false">
+          <option value="">State…</option>
+          <option value="Alabama">Alabama</option>
+          <option value="Alaska">Alaska</option>
+          <option value="Arizona">Arizona</option>
+          <option value="Arkansas">Arkansas</option>
+          <option value="California">California</option>
+          <option value="Colorado">Colorado</option>
+          <option value="Connecticut">Connecticut</option>
+          <option value="Delaware">Delaware</option>
+          <option value="District Of Columbia">District Of Columbia</option>
+          <option value="Florida">Florida</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Hawaii">Hawaii</option>
+          <option value="Idaho">Idaho</option>
+          <option value="Illinois">Illinois</option>
+          <option value="Indiana">Indiana</option>
+          <option value="Iowa">Iowa</option>
+          <option value="Kansas">Kansas</option>
+          <option value="Kentucky">Kentucky</option>
+          <option value="Louisiana">Louisiana</option>
+          <option value="Maine">Maine</option>
+          <option value="Maryland">Maryland</option>
+          <option value="Massachusetts">Massachusetts</option>
+          <option value="Michigan">Michigan</option>
+          <option value="Minnesota">Minnesota</option>
+          <option value="Mississippi">Mississippi</option>
+          <option value="Missouri">Missouri</option>
+          <option value="Montana">Montana</option>
+          <option value="Nebraska">Nebraska</option>
+          <option value="Nevada">Nevada</option>
+          <option value="New Hampshire">New Hampshire</option>
+          <option value="New Jersey">New Jersey</option>
+          <option value="New Mexico">New Mexico</option>
+          <option value="New York">New York</option>
+          <option value="North Carolina">North Carolina</option>
+          <option value="North Dakota">North Dakota</option>
+          <option value="Ohio">Ohio</option>
+          <option value="Oklahoma">Oklahoma</option>
+          <option value="Oregon">Oregon</option>
+          <option value="Pennsylvania">Pennsylvania</option>
+          <option value="Rhode Island">Rhode Island</option>
+          <option value="South Carolina">South Carolina</option>
+          <option value="South Dakota">South Dakota</option>
+          <option value="Tennessee">Tennessee</option>
+          <option value="Texas">Texas</option>
+          <option value="Utah">Utah</option>
+          <option value="Vermont">Vermont</option>
+          <option value="Virginia">Virginia</option>
+          <option value="Washington">Washington</option>
+          <option value="West Virginia">West Virginia</option>
+          <option value="Wisconsin">Wisconsin</option>
+          <option value="Wyoming">Wyoming</option>
+        </select>
+      </div>
+      <div class="col col-12 col-md-4 form-group">
+        <input type="text" name="contact[Zip]" class="form-control" placeholder="Zip" value="">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col col-12 col-md-6 form-group">
+        <input type="tel" name="contact[Phone]" class="form-control" placeholder="Phone" value="">
+      </div>
+      <div class="col col-12 col-md-6 form-group">
+        <input type="email" name="contact[email]" class="form-control" placeholder="Email" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+      </div>
+    </div>
+    <div class="mt-4">
+    <a href="javascript:void(0)" style="display:none" class="btn btn-primary pl-4 pr-4 pt-2 pb-2 rounded font-weight-bold con-from">Submit</a>
+      <input type="submit" class="btn btn-primary pl-4 pr-4 pt-2 pb-2 rounded font-weight-bold sub-from">
+    </div>
+    {% endform %} </div>
+ 
+<style>
+  .page_content h1 {
+    font-size: 1.5em;
+    margin: 10px;
+    font-weight: 100;
+    line-height: 1.2;
+  }
+  .page_content h2{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 100;
+    line-height: 1.2;
+    font-size: 2rem;
+  }
+  .page_content h3{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 100;
+    line-height: 1.2;
+    font-size: 1.75rem;
+  }
+</style>
+<script>
+ 
+
+	jQuery(document).ready(function() {
+		
+		jQuery.validator.addMethod('allowalphabetandspace',
+        function (value, element) {
+        	return this.optional(element) || /^[a-z\s]+$/i.test(value);
+        }, "Only alphabetical characters"
+    );
+		
+		 
+		// validate signup form on keyup and submit
+		$("#contact_form").validate({
+			 rules: {
+			"contact[First Name]": {
+				required: true,
+				 
+			},
+			"contact[Last Name]": {
+				required: true,
+				 
+			},
+			"contact[email]": {
+				required: true,
+				 
+			},
+			"contact[Phone]": {
+				required: true,
+				 
+			},
+			 
+		},messages: {
+			"contact[First Name]": {
+				required: "First Name is required",
+			},
+			"contact[Last Name]": {
+				required: "Last Name is required",
+			},
+			"contact[email]": {
+				required: "Email is required",
+			},
+			"contact[Phone]": {
+				required: "Phone is required",
+				 
+			}, 
+			 
+		}
+				
+		});
+		
+		 $('.con-from').click(function() {
+        if($("#contact_form").valid()){
+			$('.sub-from').trigger("click")
+		}
+    });
+	})
+</script>

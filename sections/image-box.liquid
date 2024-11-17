@@ -1,0 +1,385 @@
+{%- comment -%} Settings {%- endcomment -%}
+{%- assign show_nav_arrows = section.settings.show_nav_arrows -%}
+{%- assign dots_style = settings.dots_style -%}
+{%- if dots_style == 'hidden' -%}
+	{%- assign show_nav_dots = false -%}
+{%- else -%}
+	{%- assign show_nav_dots = true -%}
+{%- endif -%}
+{%- assign transition = section.settings.transition -%}
+{%- assign autoplay = section.settings.autoplay -%}
+{%- assign duration = section.settings.duration | times:1000 -%}
+{%- assign fadeMode = true -%}
+{%- if transition == 'slide' -%}
+	{%- assign fadeMode = false -%}
+{%- endif -%}
+{%- assign hover = true -%}
+{%- assign speed = 400 -%}
+{%- assign transition_text = settings.transition_text -%}
+{%- assign animation_delay = 0 -%}
+
+{%- assign imagePosition = section.settings.slide_image_position | default: 'left' -%}
+{%- assign imageWidth = section.settings.slide_image_width | split: '|' | first | default: 'med_s35' -%}
+{%- assign contentWidth = section.settings.slide_image_width | split: '|' | last | default: 'med_s25' -%}
+
+{%- comment -%} Check if Image Height setting is selected {%- endcomment -%}
+{%- assign image_height = false -%}
+{%- if section.settings.slide_height == 'original-height' -%}
+{%- assign image_height = true -%}
+{%- endif -%}
+
+{%- comment -%} Content {%- endcomment -%}
+{%- assign title = section.settings.title -%}
+{%- assign subheading = section.settings.subheading -%}
+{%- assign text = section.settings.content | truncatewords: 1000 -%}
+{%- assign button_text = section.settings.cta -%}
+{%- assign button_link = section.settings.link -%}
+{%- assign button_style = section.settings.button_style -%}
+
+<style>
+#gallery-module-{{ section.id }} .slick-arrow { color: {{ section.settings.color_style }}; }
+#gallery-module-{{ section.id }} .slick-dots li { border-color: {{ section.settings.color_style }}; }
+</style>
+
+{%- comment -%} Section {%- endcomment -%}
+<section class="gallery-wrap container-wrap" id="gallery-module-{{ section.id }}" data-section-type="gallery" data-dots-style="{{ dots_style }}">
+	<div class="gallery">
+		<div class="row {{ section.settings.slide_height }}">
+			{%- capture slider -%}
+			<div class="gallery-slider js-slider block s1 {{ imageWidth }}{% if transition == 'zoom-out' %} gallery-slider--zoom-out gallery-slider--is-loading{% endif %}" data-autoplay="{{ autoplay }}" data-slick="{ 'arrows':{{ show_nav_arrows }}, 'dots':{{ show_nav_dots }}, 'autoplaySpeed':{{ duration }}, 'speed':{{ speed }}, 'pauseOnHover':{{ hover }}, 'fade':{{ fadeMode }}, 'adaptiveHeight':{{ image_height }} }" data-image-height="{{section.settings.slide_height}}">
+				{%- for block in section.blocks -%}
+					{%- assign image = block.settings.slide -%}
+					{%- if image -%}
+						{%- if image_height -%}
+							{%- assign image_widths = '[295,394,590,700,800,1000,1200,1500,1800,2000,2400]' -%}
+							{%- assign image_url_pattern = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+							<div class="js-slide slide-image"
+								data-block="slide"
+								{% if transition == 'zoom-out' %}
+									data-animation="moZoomOut"
+								{% endif %}
+								{{ block.shopify_attributes }}>
+								<div class="slide-image__container" style="padding-top: {{ 100 | divided_by: image.aspect_ratio | append: '%' }}">
+									<img
+										 class="lazyload"
+										 src="{{ 'blank.gif' | asset_img_url: '1x1' }}"
+										 data-src="{{ image_url_pattern }}"
+										 data-widths="{{ image_widths }}"
+										 data-aspectratio="{{ image.aspect_ratio }}"
+										 data-sizes="auto"
+										 loading="lazy"
+										 alt="{{ image.alt | escape }}">
+									 <noscript>
+										<img src="{{ image | img_url: '1024x' }}" alt="{{ image.alt | escape }}">
+									</noscript>
+								</div>
+							</div>
+						{%- else -%}
+							<div class="js-slide slide-image"
+								data-block="slide"
+								{% if transition == 'zoom-out' %}
+									data-animation="moZoomOut"
+								{% endif %}
+								{{ block.shopify_attributes }}>
+								<div
+									class="slide-image-bg slide-background lazyload"
+									data-bgset="{% render 'bgset', image: image %}"
+									data-sizes="auto"
+									data-parent-fit="cover"
+									data-block="slide"
+									loading="lazy"
+									{{ block.shopify_attributes }}
+								>
+								</div>
+								<noscript>
+									<div class="slide-image-bg slide-background slide-background--placeholder no-js-slide"
+									style="background-image:url('{{ block.settings.slide | img_url: '1024x' }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;"
+									></div>
+								</noscript>
+							</div>
+						{%- endif -%}
+					{%- else -%}
+						<div class="js-slide slide-image slide-placeholder slide-background slide-background--placeholder"
+							data-block="slide"
+							{% if transition == 'zoom-out' %}
+								data-animation="moZoomOut"
+							{% endif %}
+							{{ block.shopify_attributes }}>
+							<div class="slide-background--blank">
+								{%- capture current -%}{% cycle 1, 2 %}{%- endcapture -%}
+								{{- 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' -}}
+							</div>
+						</div>
+					{%- endif -%}
+				{%- endfor -%}
+			</div>
+			{%- endcapture -%}
+
+			{%- if imagePosition == 'left' -%}
+				{{ slider }}
+			{%- endif -%}
+
+			{%- if title != blank or subheading != blank or text != blank or button_text != blank -%}
+			<div class="gallery-content block s1 {{ contentWidth }}">
+				<div class="gallery-content-inner">
+					{%- if subheading != blank -%}
+						<p class="subheading-text{% if transition_text %} will-animate{% endif %}"{% if transition_text %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
+							{{- subheading -}}
+						</p>
+						{%- assign animation_delay = animation_delay | plus: 250 -%}
+					{%- endif -%}
+
+					{%- if title != blank -%}
+						<h2{% if transition_text %} class="will-animate" data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
+							{{- title -}}
+						</h2>
+						{%- assign animation_delay = animation_delay | plus: 250 -%}
+					{%- endif -%}
+
+					{%- if text != blank -%}
+						<div class="gallery-content__text{% if transition_text %} will-animate{% endif %}"{% if transition_text %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
+							{{- text -}}
+						</div>
+						{%- assign animation_delay = animation_delay | plus: 250 -%}
+					{%- endif -%}
+                  
+                  
+                 	{%- assign logo = section.settings.logo_image -%}
+                  
+                  	{%- if logo -%}
+                  		<img style="margin-top:30px" src="{{ logo | img_url: 'small' }}" />
+                  	{%- endif -%}
+                  
+
+					{%- if button_text != blank -%}
+						<div class="gallery-content__button{% if transition_text %} will-animate{% endif %}"{% if transition_text %} data-animation="moPopUp" data-animation-delay="{{ animation_delay }}"{% endif %}>
+							<a {% if button_link != blank %}href="{{ button_link }}"{% endif %} class="button button--{{ button_style }}">{{ button_text }}</a>
+						</div>
+					{%- endif -%}
+				</div>
+			</div>
+			{%- endif -%}
+
+			{%- if imagePosition == 'right' -%}
+				{{- slider -}}
+			{%- endif -%}
+		</div>
+	</div>
+</section>
+
+{% comment %} Schema {% endcomment %}
+{% schema %}
+{
+	"name": "Image with text",
+	"class": "shopify-section--image-with-text",
+	"max_blocks": 6,
+	"settings": [
+		{
+			"type": "header",
+			"content": "Slideshow"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_nav_arrows",
+			"label": "Show navigation arrows",
+			"default": true
+		},
+		{
+			"type": "select",
+			"id": "color_style",
+			"label": "Arrows and dots color",
+			"default": "white",
+			"options": [
+				{
+					"value": "white",
+					"label": "Light"
+				},
+				{
+					"value": "black",
+					"label": "Dark"
+				}
+			]
+		},
+		{
+			"type": "select",
+			"id": "transition",
+			"label": "Transition style",
+			"default": "fade",
+			"options": [
+				{ "label": "Slide", "value": "slide" },
+				{ "label": "Fade", "value": "fade" },
+				{ "label": "Zoom out", "value": "zoom-out" }
+			]
+		},
+		{
+			"type": "checkbox",
+			"id": "autoplay",
+			"label": "Autoplay slideshow",
+			"default": true
+		},
+		{
+			"type": "range",
+			"id": "duration",
+			"min": 2,
+			"max": 5,
+			"step": 1,
+			"unit": "sec",
+			"label": "Change slides every",
+			"default": 4
+		},
+		{
+			"type": "checkbox",
+			"id": "show_margins",
+			"label": "Show padding",
+			"default": false
+		},
+		{
+			"type": "select",
+			"id": "slide_height",
+			"label": "Slide height",
+			"default": "five-fifty-height-hero",
+			"options": [
+				{
+					"value": "one-hundred-height-hero",
+					"label": "Full screen height"
+				},
+				{
+					"value": "original-height",
+					"label": "Image height"
+				},
+				{
+					"value": "seven-fifty-height-hero",
+					"label": "750px"
+				},
+				{
+					"value": "sixty-fifty-height-hero",
+					"label": "650px"
+				},
+				{
+					"value": "five-fifty-height-hero",
+					"label": "550px"
+				},
+				{
+					"value": "four-fifty-height-hero",
+					"label": "450px"
+				}
+			]
+		},
+		{
+			"type": "select",
+			"id": "slide_image_position",
+			"label": "Image position",
+			"options": [
+					{
+						"value": "left",
+						"label": "Left"
+					},
+					{
+						"value": "right",
+						"label": "Right"
+					}
+				],
+				"default": "left"
+		},
+		{
+			"type": "select",
+			"id": "slide_image_width",
+			"label": "Image width",
+			"options": [
+				{
+					"value": "med_s12|med_s12",
+					"label": "50%"
+				},
+				{
+					"value": "med_s35|med_s25",
+					"label": "60%"
+				},
+				{
+					"value": "med_s34|med_s14",
+					"label": "75%"
+				}
+			],
+			"default": "med_s12|med_s12"
+		},
+		{
+			"type": "header",
+			"content": "Content"
+		},
+		{
+			"type": "text",
+			"id": "subheading",
+			"label": "Subheading",
+			"default": "Humble Beginnings"
+		},
+		{
+			"type": "textarea",
+			"id": "title",
+			"label": "Heading",
+			"default": "Tell a Story"
+		},
+		{
+			"type": "richtext",
+			"id": "content",
+			"label": "Text",
+			"default": "<p>By showcasing a product, collection, or your brand.</p>"
+		},
+      {
+          "type": "image_picker",
+          "id": "logo_image",
+          "label": "Optional Logo"    
+        },
+		{
+			"type": "header",
+			"content": "Button"
+		},
+		{
+			"type": "text",
+			"id": "cta",
+			"label": "Label"
+		},
+		{
+			"type": "url",
+			"id": "link",
+			"label": "Link"
+		},
+		{
+			"type": "select",
+			"id": "button_style",
+			"label": "Style",
+			"default": "primary",
+			"options": [
+				{ "label": "Primary", "value": "primary" },
+				{ "label": "Secondary", "value": "secondary" }
+			]
+		}
+	],
+	"blocks": [
+		{
+			"type": "gallery_image",
+			"name": "Image",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "slide",
+					"label": "Image"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"category": "Image",
+			"name": "Image with text",
+			"blocks": [
+				{
+					"type": "gallery_image"
+				},
+				{
+					"type": "gallery_image"
+				}
+			]
+		}
+	]
+}
+{% endschema %}
